@@ -1684,7 +1684,7 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 [PR #15757のレビューはマスターの元コメントを明記してこの条件を採用するよう指摘](https://github.com/QwenLM/qwen-code/pull/15757#discussion_r4402027138)。実装者 **@2SinceJuly** は[その条件に合致すると確認し](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6485055684)、[コードと回帰テストを作り直しました](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6486120155)。さらに別のレビュー担当者 **@wenshao** が実際のツール通信経路で修正前後を調べ、最終的な問題点の修正も確認しています。
 
-**成果：** **[2026年10月31日、PR #15757はQwen Codeのmainへ正式マージ](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e)。** マスターが提起した「実行先を取り違えないための同名グループ全除外」という判断が、独立した開発者の実装・再発防止テスト、別のレビュアーの検証を経て正式に取り込まれました。元の問題報告は **@nipercop**、修正コードとテストの著者は **@2SinceJuly** です。正式版への収録や利用者側での結果は次の確認対象です。
+**成果：** **[2026年10月31日、PR #15757はQwen Codeのmainへ正式マージ](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e)。** マスターが提起した「実行先を取り違えないための同名グループ全除外」という判断が、独立した開発者の実装・再発防止テスト、別のレビュアーの検証を経て正式に取り込まれました。元の問題報告は **@nipercop**、修正コードとテストの著者は **@2SinceJuly** です。さらに、**[2026年11月1日公開のQwen Code nightly版にPR #15757が修正項目として収録](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5-nightly.20261101.7b4b353750)**され、リリースタグの履歴にも[マージコミットが含まれています](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e)。通常の安定版 v0.26.5 とは別のnightly配布であり、実利用者の結果は次の確認対象です。
 
 ## 公開された成果と、原典へ戻る道筋
 
