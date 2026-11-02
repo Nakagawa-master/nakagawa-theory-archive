@@ -17,6 +17,14 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
+## 確認された変更を、次の現場で使う
+
+この記録は第三者が何を変更したかを確かめる場所であり、その成果から次に起こせる行動もここから読めます。**外部で変わった成果 → 別の現場へ移植可能な検査 → 独立した再検証**という順にたどります。外部リポジトリでの変更記録と、このアーカイブ自身が制作した再利用資料は区別します。
+
+**使える検査例：** [AIの「変更禁止」は実際のファイルを守れているか？（日本語・English）](human-translation/field-guides/ai-agent-shell-permission-real-write-destination.md)。[Qwenの元報告 #15600](https://github.com/QwenLM/qwen-code/issues/15600)での局所的な誤拒否に対し、[中川マスターは保護された実ファイルの書き込み先を見落とす問題を独立に指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が権限判定の修正前後を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)して自分の[コード・回帰テストを実装、正式マージ](https://github.com/QwenLM/qwen-code/pull/15681)まで進めた事例です。新しい資料では、特定製品の操作を移すのでなく、**シェルの実作用先・権限解析器の理解・最終許可／拒否**を七つの正反対照テストで見分ける方法として公開しました。
+
+技術的な原因を読む人は[OD003 成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[OD069 接続プロトコル標準論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)の原典へ戻れます。原典はBashパーサーの仕様書ではなく、**局所的判断と実際の成立条件／権限・範囲の接続**を考える独立した基礎です。公開したテスト資料そのものの作成を、別の開発者による新しい採用と数えることはしません。別の受け手が実際に動いた場合は、その側の議論・diff・テスト・状態を根拠に、同じ記録へ進展を追記します。
+
 **53の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
