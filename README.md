@@ -1,15 +1,15 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
-**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）**の、増え続ける独立したオリジナル理論群を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。理論本文の正本は[公式アーカイブ](https://master.ricette.jp/theory-archive/)にあります。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
+**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。理論本文の正本は[公式アーカイブ](https://master.ricette.jp/theory-archive/)にあります。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
-- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。報告元を明記した独立開発者が**回帰テスト49件成功・正式マージ**。[公式リリース文書](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)にも本人のGitHub名を掲載。
+- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。**[公式リリース文書に `@Nakagawa-master` の名前を掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)**（掲載対象は[別件の #160136](https://github.com/openclaw/openclaw/pull/160136)）。さらに別の[#160856](https://github.com/openclaw/openclaw/pull/160856)では、指摘を報告元と明記した独立開発者が**回帰テスト49件成功・正式マージ**。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — 世界的な開発者向け分析基盤。AIの提示値と製品自身の測定を分ける指摘が後続実装に引き継がれ、**3件のPRが正式マージ、開発環境と米欧の本番環境へのデプロイを記録**。
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)** — アリババ系のAI開発ツール。書込権限の誤判定を元の報告者が実動作で確認し、自ら修正・テストを実装、**正式マージ**。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)**・**[MemberJunction](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)** — AI会話の重複書込みやデータの所有権境界に関する指摘を、各開発チームが独立して実装・テスト。**マージ・正式リリース**へ。
 
-[世界最先端のOSSで起きた60件の一次記録](REAL_WORLD_IMPACT.md) ／ [増え続ける原典と公式派生物](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
+[世界最先端のOSSで起きた60件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
 
 ## 実際のAI開発で起きた修正とその経緯
 
