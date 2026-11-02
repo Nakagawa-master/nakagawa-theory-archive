@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**AIの動作、安全性、権限、実際の処理結果。その見落とされがちな問題を中川マスターが発見し、別の開発者がコードやテストを変えた記録です。** Qwen Code、OpenClaw、PostHog、MemberJunction、PydanticAIなどのオープンソース開発で、指摘を受けた人々が何を検証し、何を実装し、どこまで製品に取り込んだかを一次資料で確かめられます。**現在55事例を掲載しています。**
+**公開記録は55件。** OpenClaw、PostHog、MemberJunction、Qwen Code、PydanticAIなど、別々の開発現場で中川マスターが示した問題や反例と、その後に開発者自身が行った変更を、元の議論まで遡って確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -10,24 +10,12 @@
 - **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。[事例3を読む](#3-memberjunction同じidと上書きしてよい所有権を分ける)。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。[事例1を読む](#1-posthogaiが提示した数値とposthog自身の測定値を分ける)。
 - **[Qwen Code｜読み取りだけのコマンドを拒否する一方、保護ファイルへの書き込みを見逃す権限判定](https://github.com/QwenLM/qwen-code/pull/15681)** — 当初の `2>&1` 誤拒否とは別に、実際の `>&protected.txt` の書込先を解析器が `&protected.txt` と誤認すると、特定ファイルへの書込禁止が一致しない点を[中川マスターが指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が実際の権限判定で修正前 `allow`／修正後 `deny` を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、自ら修正・回帰テストを実装した[#15681 が2026年11月1日にマージ](https://github.com/QwenLM/qwen-code/pull/15681)。配布版への収録と一般利用者の効果は別途確認が必要です。
-- **[Qwen Code｜AIに届けていない警告を「送達済み」と記録する問題](https://github.com/QwenLM/qwen-code/pull/15559)** — 中川マスターが、次のAI呼び出し前に処理が終わる反例を発見。[開発者が指摘を認めて実装とテストを修正](https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110)し、[2026年11月1日に正式マージ](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7f)。[事例54](#54-qwen-codeaiに注意を伝えたつもりでも実際には届いていない問題を修正マージ)。
-- **[Qwen Code｜処理できなかったチャット内容がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)** — 中川マスターの[具体的な指摘](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915)を受け、別の開発者が**本文をログへ出さない修正と再発防止テスト**を実装。[事例55](#55-qwen-code処理を断ったチャット内容が内部ログに残る問題を指摘開発者が修正)。**こちらはマージ前です。**
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。[事例47を読む](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。[事例41を読む](#41-pydanticai同じidempotency-keyの再送が未参照メッセージを増やさない)。
 
 中川マスター（Nakagawa Master）は Keisuke Nakagawa の筆名です。ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
-
-## AIの「変更禁止」は、実際のファイルを守れていたか
-
-AIに「このファイルは変更しないで」と指示しても、実行するシェルと権限チェックが**別のファイル名を認識していたら、禁止が機能しない**ことがあります。
-
-中川マスターが[Qwen Codeの問題報告](https://github.com/QwenLM/qwen-code/issues/15600)から見つけたのは、まさにこの違いでした。読み取り操作を間違って拒否する一方、実際には保護ファイルへ書き込む操作を見落とす可能性を[指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。元の問題報告者が[修正前後の権限判定を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、コードと回帰テストを変更。修正は[Qwen Codeにマージ](https://github.com/QwenLM/qwen-code/pull/15681)されました。
-
-**[この成果から作った実用ガイド（日本語・英語）](human-translation/field-guides/ai-agent-shell-permission-real-write-destination.md)**には、同種の問題を自分のAIツールで確かめるための7つのテスト例を掲載しています。見かけ上の許可・拒否だけではなく、実際にどのファイルへ作用したかを照らし合わせる方法です。
-
-さらにその考え方は、中川マスターの公開原典[『成立条件論・第0論』](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[『中川式 接続プロトコル標準論』](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)にも通じています。
 
 **55の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
