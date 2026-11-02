@@ -4099,6 +4099,97 @@
         "end-user realized benefit",
         "receiving author read the canonical original theory texts"
       ]
+    },
+    {
+      "case_id": "litellm-49359-mcp-error-type-contract-receiver-fork-commit",
+      "topic": "A missing MCP tool-error flag made tool failures appear successful; the repair itself accidentally made three established TypedDict fields optional, until Nakagawa Master's concrete review caused a fork-code correction.",
+      "external_repository": "BerriAI/litellm",
+      "issue": "https://github.com/BerriAI/litellm/issues/49359",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "type": "source_specific_review",
+        "url": "https://github.com/BerriAI/litellm/issues/49359#issuecomment-6536874606",
+        "finding": "Keep tool_call_id, result and name required. Only new is_error should use NotRequired; TypedDict(total=False) weakens all existing fields."
+      },
+      "explicit_receiver_return": {
+        "actor": "chauvuusvn",
+        "url": "https://github.com/BerriAI/litellm/issues/49359#issuecomment-6537951352",
+        "response": "Developer explicitly accepted the correction and implemented the proper required-field definition."
+      },
+      "receiver_implementation": {
+        "author": "chauvuusvn",
+        "commit": "https://github.com/chauvuusvn/litellm/commit/5aa335c834c91be35d8aab0393c4aa7096972902",
+        "details": "Fork commit changes whole TypedDict back to required and uses typing_extensions.NotRequired[bool] for only is_error; original propagation code and tests also receiving-authored."
+      },
+      "further_independent_receiver": {
+        "actor": "lester076",
+        "url": "https://github.com/BerriAI/litellm/issues/49359#issuecomment-6569430360",
+        "response": "Another developer offered to take over upstream submission and include credit to the source review; intention, not merged implementation."
+      },
+      "current_stage": "receiver_fork_code_corrected_after_explicit_person_acknowledgement__UPSTREAM_PR_UNCONFIRMED",
+      "human_case": "REAL_WORLD_IMPACT.md#56"
+    },
+    {
+      "case_id": "litellm-49313-cache-tenant-key-bypasses-implemented-pr49576",
+      "topic": "Cross-tenant exact-match AI response cache disclosure through generated keys and client-supplied cache_key/cache.namespace/preset_cache_key bypasses.",
+      "external_repository": "BerriAI/litellm",
+      "issue": "https://github.com/BerriAI/litellm/issues/49313",
+      "pull_request": "https://github.com/BerriAI/litellm/pull/49576",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "type": "source_specific_negative_test_analysis",
+        "url": "https://github.com/BerriAI/litellm/issues/49313#issuecomment-6538306120",
+        "finding": "Tenant prefix on generated cache keys is insufficient; direct client-key, namespace and preset paths must be scoped using trusted proxy identity."
+      },
+      "receiver_implementation": {
+        "author": "GellaNagaSaiKrishna",
+        "url": "https://github.com/BerriAI/litellm/pull/49576",
+        "head_sha": "71c07184e2f2b6b565bcfd728bac8be70a6de4d9",
+        "details": "Cache read/write, caller-key and preset paths were updated with tenant scope from key/team/org; independent tests exercise no client options and cross-tenant attempted reuse."
+      },
+      "receiving_tests": {
+        "source": "https://github.com/BerriAI/litellm/pull/49576",
+        "before": "7 failed",
+        "after": "7 passed",
+        "test_environment": "local unit tests",
+        "unverified_next": "Authenticated real proxy/Redis multitenant verification"
+      },
+      "current_stage": "independent_receiver_code_and_7_red_green_tests_OPEN_PR_UNMERGED",
+      "human_case": "REAL_WORLD_IMPACT.md#57"
+    },
+    {
+      "case_id": "hermes-146708-147746-origin-owner-safety-and-delivery-healing",
+      "topic": "Lost chat-origin metadata prevented background Hermes Agent results from reaching their real destination; owner-safety negatives prevent false delivery acknowledgements.",
+      "external_repository": "NousResearch/hermes-agent",
+      "issue": "https://github.com/NousResearch/hermes-agent/issues/146696",
+      "pull_requests": [
+        "https://github.com/NousResearch/hermes-agent/pull/146708",
+        "https://github.com/NousResearch/hermes-agent/pull/147746"
+      ],
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "type": "source_specific_pr_review",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/146708#pullrequestreview-5707357350",
+        "finding": "A missing origin must not substitute an incorrect logical owner or claim delivery; test LOCAL null-origin deferral and compression variant."
+      },
+      "first_receiver_implementation": {
+        "author": "linye157",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/146708#issuecomment-6522840887",
+        "details": "Added two LOCAL null-origin negative controls; 10 focused tests independently verified."
+      },
+      "successor_implementation": {
+        "author": "teknium1",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/147746",
+        "head_sha": "59c3137c73dd50b91477c05226f197e99deed426",
+        "details": "Original contribution cherry-picked with attribution; persisted chat origin reconstructed from database records and inbound turns; gateway/Telegram-adapter before/after delivery run reported with scripted model."
+      },
+      "independent_verification": {
+        "actor": "whyyagswhy",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/147746#issuecomment-6568004334",
+        "result": "15 focused tests passed on latest head; blocking lint checks clean"
+      },
+      "current_stage": "successor_receiver_origin_recovery_code_live_gateway_test_and_independent_15_PASS__OPEN_PR_UNMERGED",
+      "human_case": "REAL_WORLD_IMPACT.md#58"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
