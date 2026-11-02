@@ -32,7 +32,7 @@
 
 このアーカイブには、こうした**60件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
 
-**未マージの外部開発者による修正：** [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214)の開発者は、中川マスターによる顧客A/Bの独立課金・予算停止・作成者の不変性という具体的レビューを受け、**自分の回帰テストを4回改訂**。[最新の `3c3e422` では実際のDB列名 `unified_object_id` に合わせ、Aだけの課金ログ数と再参照後の課金不変を検査するコードを実装](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575973685)しました。ただし[追加GETは本来の非同期課金ポーラーを再実行しないため、マスターが次の正確な検証境界を提示](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6576129452)。開発者の修正は実在しますがPRは未マージ、正式結合テストの実行結果も未確認です。
+**未マージの外部開発者による修正：** [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214)では、中川マスターの顧客A/B別の課金・予算停止・作成者の不変性というレビューを受け、独立開発者が**5回にわたり実装・回帰テスト・検証表現を改訂**しました。[第四回 `3c3e422`](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575973685)は実DB列 `unified_object_id`、Aだけの課金ログ数、再取得後の金額不変を検査。[第五回 `c7bc0c6`](https://github.com/BerriAI/litellm/commit/c7bc0c60458a50d77dcab56cba564c1e12c0010b)では[マスターの正確な指摘](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6576129452)を受け、追加GETは**決済後の観測の冪等性**であって**会計ワーカーの二度目の実行ではない**と、開発者自身が[検証名を訂正](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6582281972)しました。未マージで、上流の結合テスト合格や実利用者への効果は確認されていません。
 
 
 </details>
