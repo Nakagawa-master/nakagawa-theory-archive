@@ -826,14 +826,16 @@
         "url": "https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355",
         "contribution": "Mapped #3326 onto the current branch with one shared backend deletion policy evaluated against current locked target state before mutation, including Mooclet and batch bypass prevention and distinct policy-refusal reason codes."
       },
-      "current_stage": "third_party_work_item_or_design_adoption",
+      "current_stage": "feature_3323_MERGED_DEV_C3__separate_reporter_acknowledged_backend_authority_issue_3326_OPEN_NOT_FIXED",
       "not_claimed": [
         "code implementation of #3326",
         "tests implementing the policy",
-        "merge",
+        "merge of #3326 authorization repair",
         "release",
         "deployment",
-        "user-scale effect"
+        "user-scale effect",
+        "a real customer attack or financial loss was prevented",
+        "merging feature #3323 fixed the UI/backend permission mismatch"
       ],
       "nakagawa_structural_os_mapping": {
         "applied_distinction": "UI presentation of Delete != current backend authority to perform a destructive action",
@@ -844,6 +846,24 @@
           "destructive operation governance"
         ],
         "canonical_source": "https://master.ricette.jp"
+      },
+      "feature_merge": {
+        "url": "https://github.com/CarnegieLearningWeb/UpGrade/pull/3323",
+        "merge_commit": "b5ce4805a8edf3685b270fdd3b105a2234681125",
+        "merged_at": "2026-11-02T17:05:09Z",
+        "target": "dev",
+        "boundary": "Feature merge only; PR description explicitly excludes backend role and state deletion authorization"
+      },
+      "unresolved_security_issue": {
+        "url": "https://github.com/CarnegieLearningWeb/UpGrade/issues/3326",
+        "state": "OPEN",
+        "backend_enforcement_verified": false,
+        "real_world_prevention_verified": false
+      },
+      "source_interpretation": {
+        "original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "official_derivative": "derivatives/011/human-entry.md",
+        "role": "A first-party analogous original-theory reading, NOT proof the outside engineers directly used this original."
       }
     },
     {
