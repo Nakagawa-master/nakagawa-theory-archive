@@ -4256,6 +4256,40 @@
         "git_ancestry_checked": "compare merge commit 8a2817ac8acbf9444c8a99549445c482caf1796e to nightly release tag shows ahead 29, behind 0",
         "important_scope": "This is a nightly release; stable v0.26.5 tag diverges from that merge commit (behind 4/ahead 1), so do not claim stable v0.26.5 inclusion."
       }
+    },
+    {
+      "case_id": "agent-approval-gate-issue1-stale-terminal-approval-ai-assisted-main",
+      "topic": "A stale/retired approval request was still re-approvable by late bound reply due to non-pending update guard.",
+      "external_repository": "tonydzi/agent-approval-gate",
+      "issue": "https://github.com/tonydzi/agent-approval-gate/issues/1",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "type": "SQL_state_transition_reproduction_and_positive_negative_regression_design",
+        "url": "https://github.com/tonydzi/agent-approval-gate/issues/1",
+        "finding": "Bound old-but-pending is allowed; already terminal stale must not be re-approved; decisive UPDATE must require pending."
+      },
+      "explicit_receiver_return": {
+        "actor": "tonydzi repository account (reply signed synthetic AI co-founder Mycroft)",
+        "url": "https://github.com/tonydzi/agent-approval-gate/issues/1#issuecomment-6345672883",
+        "details": "Outside receiving account explicitly accepted the issue's source finding and described its source/test fix."
+      },
+      "receiver_implementation": {
+        "actor": "tonydzi GitHub account, commit lists Claude Code/Claude Sonnet 5.5 as assistant and coauthor",
+        "main_commit": "https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4",
+        "code": "Decision UPDATE requires status='pending'; stale bound replies are ignored and journaled; three regression tests plus updated safety documentation.",
+        "repo_reported_tests": "46/46 tests passing; two of the three added tests failed before fix; neither live messenger nor production transaction independently tested.",
+        "ai_credit_scope": "AI-assisted outside work declared in commit metadata; does not establish autonomous retrieval/adoption of the original 313 theoretical works."
+      },
+      "public_origin_attribution": "https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md",
+      "current_stage": "independent_repo_main_code_tests_docs_C3__explicit_named_person_origin__outside_AI_assistance_recorded",
+      "human_case": "REAL_WORLD_IMPACT.md#60",
+      "not_claimed": [
+        "official release",
+        "real user deployment",
+        "actual unauthorized payment",
+        "mass public influence",
+        "unaided LLM discovery of original theory corpus"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
