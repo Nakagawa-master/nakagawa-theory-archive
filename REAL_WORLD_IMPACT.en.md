@@ -32,6 +32,12 @@ Each case traces:
 
 Follow the full course of each contribution: initial question, independent engineering decision, code and tests, integration, release and observed use.
 
+## Reuse an independently merged finding in another real project
+
+[**Practical field guide (Japanese + English): Does the AI agent protect the file the shell really writes?**](human-translation/field-guides/ai-agent-shell-permission-real-write-destination.md) This offers **seven portable positive/negative controls** and a five-step method for comparing the actual shell file effect, parser-attributed destination, and final authorization verdict. It is based on [Nakagawa Master's distinct finding](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134), the [independent original reporter's pre/post permission-manager verification](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175), and the [reporter's merged code and regression tests](https://github.com/QwenLM/qwen-code/pull/15681). The receiving engineer remains the author of that fix.
+
+The reusable *reasoning structure* connects two independently published originals: [OD003, Establishment Conditions](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) and [OD069, Connection Protocol](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/), both by Nakagawa Master (Keisuke Nakagawa). Those originals are not Bash implementation specifications. **Creating this guide is first-party distribution of verified evidence, not proof of a second team adopting it.** Future independent reuse requires its own receiving-side PR, code, tests, or other primary evidence.
+
 ## What these distinctions can mean in practice
 
 The cases below concern product behaviors such as:
