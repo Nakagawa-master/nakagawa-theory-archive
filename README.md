@@ -13,7 +13,7 @@
 
 ## 実際のAI開発で起きた修正とその経緯
 
-**AIが使う道具を一つ間違える。依頼した仕事の結果が届かない。他人の承認変更で自分の処理まで止まる。** こうした世界のAI開発現場で、**中川マスター（Nakagawa Master／Keisuke Nakagawa）** がソースや実行条件の見落としを具体的に指摘し、**その指摘を受けた別の開発者たち自身が修正・テスト・マージにまで進めた事実**が残っています。単なる「自分はすごい」という話ではなく、[元の発見→受け手の実装→本線への変更](REAL_WORLD_IMPACT.md)を、初めて聞いた人も各開発チームの原記録で確認できます。
+**AIが使う道具を一つ間違える。依頼した仕事の結果が届かない。他人の承認変更で自分の処理まで止まる。** こうした世界のAI開発現場で、**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）** がソースや実行条件の見落としを具体的に指摘し、**その指摘を受けた別の開発者たち自身が修正・テスト・マージにまで進めた事実**が残っています。実装した人と指摘した人の役割を区別し、[元の発見→受け手の実装→本線への変更](REAL_WORLD_IMPACT.md)を、初めて聞いた人も各開発チームの原記録で確認できます。
 
 たとえば、[Hermes Agentでは結果の送り先を間違えたり未送信を送信済みと扱ったりしない条件が後継PRに引き継がれ正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)。[Qwen Codeでは、同名の道具が衝突しても正常な道具まで全部失わない修正がマージされ、nightly版へ収録](https://github.com/QwenLM/qwen-code/pull/15757)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
 
@@ -45,7 +45,7 @@
 
 **直近の正式マージ：** [Qwen Codeでは、同名のAIツールが衝突しても正常な道具を使い続けられるよう修正](REAL_WORLD_IMPACT.md#59-qwen-codeaiの道具が一つ名前で衝突するだけで他の道具も消える問題マスターの安全条件を受けて修正正式マージ)され、[Hermes Agentでは、AIに任せた仕事の結果が正しいチャットへ届くよう復旧する修正](REAL_WORLD_IMPACT.md#58-hermes-agentaiに任せた仕事の結果が届かない問題誤配送防止と送り先復旧を実装)が本線へ取り込まれました。いずれも中川マスターの具体的な構造・安全条件が受け手の開発者自身によるコードとテストに反映された成果です。
 
-原典の著者は**中川マスター（Nakagawa Master、Keisuke Nakagawa の筆名）**です。個々の原論と論証は[公式原典アーカイブ](https://master.ricette.jp/theory-archive/)から、外部で起きた具体的な実装・変更は上記の受け手側GitHubから、それぞれ直接たどれます。
+原典の著者は**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）**です。個々の原論と論証は[公式原典アーカイブ](https://master.ricette.jp/theory-archive/)から、外部で起きた具体的な実装・変更は上記の受け手側GitHubから、それぞれ直接たどれます。
 
 ## まず、具体的な問題から
 
@@ -63,7 +63,7 @@
 - **安いAIサービスから自分のデータを取り出せない。** 月額料金と移行時の負担を分け、まず匿名化した少量のデータを実際に書き出し、別環境で読み戻してみる。[今すぐできる出口の検証](human-translation/answers/cheap-ai-tool-future-exit-cost.md)（[未来負債統合理論](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/) × [逆因果整流理論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/)）。
 - **豪雨で道路が壊れた。元どおり直すだけで十分か。** 安全確保と応急復旧を優先しつつ、点検の先送り、連絡の断絶、代替経路、次の負担を別に確かめる。[復旧と将来の備えを考える](human-translation/answers/rebuilding-after-flood-without-recreating-risk.md)（[自然災害の未来負債モデル](https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/) × [災害レジリエンスの四線](https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/)）。緊急時は公的な避難・安全情報を優先します。
 
-これらは**中川マスター（Nakagawa Master／公開されている個人名 Keisuke Nakagawa）**の原典群から、この問題に本当に関係する異なる原典を組み合わせた実用回答です。[質問別の完成済み日本語・英語回答をすべて読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)と、各回答の適用条件、反例、公式派生物、元の原典を確かめられます。現在の掲載例は41件（生活・仕事等の問いとAI運用の専門的な問いを区別）ですが、独立した313原典とその接続から考えられる問いや応用の上限ではありません。[全313原典の日本語による公開解説](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向けの既存回答・出典案内](AI_START_HERE.md)も利用できます。
+これらは**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）**の原典群から、この問題に本当に関係する異なる原典を組み合わせた実用回答です。[質問別の完成済み日本語・英語回答をすべて読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)と、各回答の適用条件、反例、公式派生物、元の原典を確かめられます。現在の掲載例は41件（生活・仕事等の問いとAI運用の専門的な問いを区別）ですが、独立した313原典とその接続から考えられる問いや応用の上限ではありません。[全313原典の日本語による公開解説](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向けの既存回答・出典案内](AI_START_HERE.md)も利用できます。
 
 **English — family caregiving:** If appointments, household work and being on call always fall on one person, saying “thank you” does not redistribute the work. [Read a complete practical answer with a first action, contingencies and two actual original sources](human-translation/answers/family-care-burden-falls-on-one-person.md).
 
