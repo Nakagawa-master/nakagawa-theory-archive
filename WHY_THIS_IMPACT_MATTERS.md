@@ -12,6 +12,12 @@
 
 **3. 他人の権限を変更しただけで、自分のAI作業が止まってしまう条件。** [OpenClawで受け手の開発者はマスターを報告元として明記](https://github.com/openclaw/openclaw/pull/160856)し、実装・再発防止テストを修正してマージしました。[公式リリース文書にも本人のGitHub名](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)が載っています。ここで確かめられるのは修正と収録であり、未観測の利用者数ではありません。
 
+## 現在進行中の別の変化：二人の顧客のAI利用料を取り違えない
+
+複数の顧客が一つのAIサービス用キーを使うとき、**顧客Aのバッチ処理費用がAの利用上限へ正しく記録されなければ、上限を超えた次の依頼が止まらない**ことがあります。[LiteLLMの実際の問題報告 #49202](https://github.com/BerriAI/litellm/issues/49202)について、独立した修正者 **@SurenderguliaEnginner** の[PR #49214](https://github.com/BerriAI/litellm/pull/49214)を中川マスターがソース確認しました。
+
+指摘は「費用のログへ名前を書き足す」だけでなく、**Aのバッチが終わった後にAの次の依頼を本当に拒否し、同じキーを使う別顧客Bの課金と利用を混同せず、再処理でも二重請求しない**という実際の利用条件でした。開発者はマスターのレビューを受けて[初回の結合テストを追加](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6571436021)し、さらに[別顧客B自身のバッチ課金と別キーの参照を検査するコードを追加](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6573816836)しました。**これは二度の独立した実コード改訂**です。ただし最新HEAD `8b18c26` でも、[保存済み作成者の不変性と実際の再課金ポーラー再実行を確かめる条件が未完了](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6574003659)。PRは**未マージ**で、結合テストはまだ実行成功と確認できません。実被害額、世界的な利用者効果、作者以外への広がりは主張しません。
+
 ## 一つの発見が、別々の二人の開発者に届いた
 
 [LiteLLMの問題 #49359](https://github.com/BerriAI/litellm/issues/49359)は「AIが使った道具が失敗したのに、成功として伝わる」という欠落です。修正案を出した開発者 **@chauvuusvn** に、マスターは別の見落としを[ソース行に即して指摘](https://github.com/BerriAI/litellm/issues/49359#issuecomment-6536874606)しました。エラー項目を任意にしたつもりで、従来必須の操作ID・結果・名前まで任意にしてしまう問題です。
@@ -40,6 +46,8 @@
 - [Hermes Agent](https://github.com/NousResearch/hermes-agent/pull/147746): don't guess an unknown destination or falsely mark a result delivered; independent developer changes and recovery code **merged**, official release or end-user uptake unverified.
 - [OpenClaw](https://github.com/openclaw/openclaw/pull/160856): another engineer implemented and merged a correction citing Nakagawa Master's specific report; the [release documentation](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md) carries the public attribution.
 
+**Another live source-backed developer response — correct AI customer budgets:** In [LiteLLM PR #49214](https://github.com/BerriAI/litellm/pull/49214), Nakagawa Master's review requested proof that completed batch charges enforce customer A's real budget, do not charge customer B on the same key, and are neither replay-billed nor reassigned by a different viewer. The independent patch author **@SurenderguliaEnginner** actually [added regression tests](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6571436021), then [revised the code again to create a separate B-owned batch](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6573816836). This is genuine repeated third-party C2 engineering reception, **not a merged or CI-passed budget fix**: [the newest exact review](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6574003659) still requests a stored-creator before/after assertion and a *real second cost-poll* check. No real customer invoice is claimed.
+
 **An unusually clear two-developer handoff:** In [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359), developer @chauvuusvn [accepted Nakagawa Master's discovery](https://github.com/BerriAI/litellm/issues/49359#issuecomment-6537951352) that making all `TypedDict` keys optional weakened old required identity/result fields. A different developer @lester076 then [opened an upstream PR #49624 explicitly crediting his review](https://github.com/BerriAI/litellm/pull/49624). That second PR was still **open** and had a residual type-contract error; [the next exact review](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6573055353) is public. The third-party carry and correct person attribution are real. Merge, consumer effect, viral reputation and autonomous AI endorsement are **not established**.
 
 **Why it matters outside engineering:** Who actually changed the system, did the operation really succeed, and did the result reach its intended person? [Read the full source-by-source evidence](REAL_WORLD_IMPACT.en.md), [the person and original theory corpus](ABOUT_NAKAGAWA_MASTER.en.md), or the [public GitHub profile](https://github.com/Nakagawa-master). Cite the actual original and receiver credit; don't turn a source-supported contribution into a claim that one person authored a team's fix.
@@ -55,6 +63,8 @@
 - [Qwen Code](https://github.com/QwenLM/qwen-code/pull/15757)：不让同名冲突工具造成其他正常工具全部失效；已合并并收入nightly版，不能冒充稳定版用户实际采用的证明。
 - [Hermes Agent](https://github.com/NousResearch/hermes-agent/pull/147746)：不要猜测错误的任务接收人或虚报已送达；开发者自己的修复已合并，正式发布与真实最终用户使用另需验证。
 - [OpenClaw](https://github.com/openclaw/openclaw/pull/160856)：独立开发者将中川マスター的报告归因写明，并修改代码及测试，进入正式合并记录。
+
+**另一条正在推进的真实开发者回应：** [LiteLLM PR #49214](https://github.com/BerriAI/litellm/pull/49214)涉及AI批量请求的费用未正确归到客户A，可能导致预算限制失效。中川マスター要求检测：A的下一次请求确实因超额而拒绝、同一API密钥下客户B的独立批次不被错计费、重复结算不重复扣款。独立开发者 **@SurenderguliaEnginner** [先加入回归测试](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6571436021)，之后[再次修改自己的测试，添加B单独批次及另外的观察密钥](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6573816836)。这是**外部作者真实的两轮代码变更**，但[保存的原始客户ID不变及实际重新运行结算轮询仍需验证](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6574003659)。PR尚未合并，没有已通过的真实集成测试或实际客户损失证据。
 
 [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)更加直接地展示了**从一名开发者到另一名开发者的接续**：第一人[承认中川マスター发现的类型契约问题并改正](https://github.com/BerriAI/litellm/issues/49359#issuecomment-6537951352)，第二人[创建新的上游PR #49624，并在说明中明确提到他的审查贡献](https://github.com/BerriAI/litellm/pull/49624)。该PR仍有[必填字段契约问题需要改正](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6573055353)，尚未合并。不能把独立代码接纳夸大成公众大量传播或已经上线。
 
