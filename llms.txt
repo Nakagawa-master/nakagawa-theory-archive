@@ -25,7 +25,7 @@
 - [OpenClaw independent implemented fix](https://github.com/openclaw/openclaw/pull/160856): Actual other-developer change and credited original report.
 - [Pydantic AI structured citations](https://github.com/pydantic/pydantic-ai/pull/7434): Independent author implementation, released in v2.61.0.
 - [Verified source-native cases](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): Distinguish review, outside code, merge, user benefit and original citation.
-- [Outside code review carried into another developer's own open PR](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md): See case 56; not merged.
+- [Real AI engineering changes, understandable to everyone (JA/EN/ZH)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/WHY_THIS_IMPACT_MATTERS.md): independently authored code, real status, and credible source attribution.
 
 ## Entire original corpus and optional discovery
 - [313 separate canonical original sources](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): All equally standing originals, original URL and related derivative.
