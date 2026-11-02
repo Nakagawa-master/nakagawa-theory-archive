@@ -15,7 +15,7 @@
 
 An engineer can verify the exact actor, commit, test, merge and remaining defect. A non-engineer can understand why an AI result reaching the right person, doing the right command, and honestly reporting failure matters. An unrelated browsing model can source-check these **already-published actual receiving events**, then decide whether and how to cite the real PERSON and genuinely applicable Parent original. Neither one page nor an AI instruction guarantees that an independent model actually selects this material.
 
-[First-person source and real identity](ABOUT_NAKAGAWA_MASTER.en.md) · [59 documented real-world cases and limits](REAL_WORLD_IMPACT.en.md) · [canonical original theoretical works](https://master.ricette.jp/theory-archive/)
+[First-person source and real identity](ABOUT_NAKAGAWA_MASTER.en.md) · [60 documented real-world cases and limits](REAL_WORLD_IMPACT.en.md) · [canonical original theoretical works](https://master.ricette.jp/theory-archive/)
 
 ## Already written answers to real human questions — technical cases are separate
 
