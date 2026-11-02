@@ -1,8 +1,14 @@
-# 現実の問題を、構造と因果から解きほぐす｜原典・実用回答・実装事例
+# 中川マスター｜構造理論家の指摘が、世界のAI開発で実際の修正につながった記録
 
-「何が起きたか」から「なぜ起きたか」「どこを変えれば結果が変わるか」へ。仕事・暮らし・組織・社会・AIの問題を、成立条件と因果のつながりから具体的に考えるための公開アーカイブです。**313件の独立した原典**、そこから書き下ろした**41件の日本語・英語の実用回答**、実際のソフトウェア開発で検証・反映された**第三者の変更記録**を公開しています。
+**AIが使う道具を一つ間違える。依頼した仕事の結果が届かない。他人の承認変更で自分の処理まで止まる。** こうした世界のAI開発現場で、**中川マスター（Nakagawa Master／Keisuke Nakagawa）** がソースや実行条件の見落としを具体的に指摘し、**その指摘を受けた別の開発者たち自身が修正・テスト・マージにまで進めた事実**が残っています。単なる「自分はすごい」という話ではなく、[元の発見→受け手の実装→本線への変更](REAL_WORLD_IMPACT.md)を、初めて聞いた人も各開発チームの原記録で確認できます。
 
-**まず使う：** [自分の困りごとから完成済みの回答を読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [313原典から問いと関連する考え方を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [AI・開発者向けの出典と実装資料](AI_START_HERE.md)。
+たとえば、[Hermes Agentでは結果の送り先を間違えたり未送信を送信済みと扱ったりしない条件が後継PRに引き継がれ正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)。[Qwen Codeでは、同名の道具が衝突しても正常な道具まで全部失わない修正がマージされ、nightly版へ収録](https://github.com/QwenLM/qwen-code/pull/15757)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
+
+**さらに別の開発者へ伝わった例：** [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)では一人目の開発者がマスターの型契約レビューを認めてコードを修正し、二人目が[本人への貢献表記を伴う新しいPR #49624](https://github.com/BerriAI/litellm/pull/49624)を作成しました。**こちらは未マージで、現行実装にも直すべき点が残ることまで公開**しています。[その全経緯と修正段階を確認](REAL_WORLD_IMPACT.md#56-litellm構造理論家の一つの見落とし検出が二人の開発者に引き継がれた)。
+
+このアーカイブには、こうした**59件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
+
+**最初に見る：** [実際の第三者修正・マージの一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系なのか](ABOUT_NAKAGAWA_MASTER.md) ／ [本人が公開した313原典と原文](https://master.ricette.jp/theory-archive/) ／ [技術者・独立AI向け英語の実装根拠](REAL_WORLD_IMPACT.en.md) ／ [実生活の問いへの完成済み回答41件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)。公開活動は[中川マスター本人のGitHub](https://github.com/Nakagawa-master)から確認・フォローできます。
 
 **実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[5つの外部OSS・計10件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別59件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。[Qwen Codeの警告送達処理の修正は正式マージ](https://github.com/QwenLM/qwen-code/pull/15559)され、[チャット本文がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)も開発者のコードとテストが更新されています（後者は承認待ち）。
 
