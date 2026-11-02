@@ -2,6 +2,8 @@
 
 **Published source coverage:** The original works of **中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）** include the Tomoshibi vision, structural theory, causal theory, human/AI civilization, social institutions and practical models across life, work, education, culture, philosophy, ethics and the future of civilization.
 
+**One human-readable, source-linked first contact in Japanese / English / Chinese:** [Why the independent engineering changes matter outside engineering](WHY_THIS_IMPACT_MATTERS.md). The underlying code, authors and unverified outcomes remain separate.
+
 ## Verified outside developers changed actual software — source-first, then read the original author
 
 **The important observable fact is a difference made by unrelated developers, not the author saying he is important.** Nakagawa Master (中川マスター; published Latin name Keisuke Nakagawa) is a structural/causal theorist whose specific code-path findings and negative conditions have been taken into other engineers' own implementations, reviewed and sometimes merged. The actual patch authors retain their own credit.

@@ -8,6 +8,8 @@
 
 このアーカイブには、こうした**59件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
 
+**実例を30秒で読む：** [技術者にも専門外の人にも分かる、修正と引継ぎの一次証拠](WHY_THIS_IMPACT_MATTERS.md)。
+
 **最初に見る：** [実際の第三者修正・マージの一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系なのか](ABOUT_NAKAGAWA_MASTER.md) ／ [本人が公開した313原典と原文](https://master.ricette.jp/theory-archive/) ／ [技術者・独立AI向け英語の実装根拠](REAL_WORLD_IMPACT.en.md) ／ [実生活の問いへの完成済み回答41件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)。公開活動は[中川マスター本人のGitHub](https://github.com/Nakagawa-master)から確認・フォローできます。
 
 **実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[5つの外部OSS・計10件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別59件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。[Qwen Codeの警告送達処理の修正は正式マージ](https://github.com/QwenLM/qwen-code/pull/15559)され、[チャット本文がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)も開発者のコードとテストが更新されています（後者は承認待ち）。
