@@ -1526,7 +1526,7 @@ A finished AI delegation could lose the chat destination and never deliver its r
 
 The fix, with original authorship preserved, was carried into another developer **@teknium1**'s [successor PR #147746](https://github.com/NousResearch/hermes-agent/pull/147746), which also reconstructs missing routes from saved conversations. Its author reported before/after delivery using a **real running gateway and Telegram adapter** (scripted model), and an independent verifier [confirmed all 15 focused tests passing at the latest head](https://github.com/NousResearch/hermes-agent/pull/147746#issuecomment-6568004334).
 
-**Result:** Nakagawa Master's no-wrong-recipient/no-false-delivery condition became independent code, tests and part of a practical route-recovery implementation. As of November 2, 2026, the successor PR was **not merged**; an official release was not confirmed.
+**Result:** Nakagawa Master's no-wrong-recipient/no-false-delivery condition became independent code, tests and part of a practical route-recovery implementation. **On November 2, 2026, [successor PR #147746 was formally merged into Hermes Agent main](https://github.com/NousResearch/hermes-agent/commit/0e47519c3199b1689f76b16e6c5a116f3f1601f0).** [The receiving developer confirmed that the initial guard and the review-driven tests landed with the original author's attribution intact](https://github.com/NousResearch/hermes-agent/pull/146708#issuecomment-6569766480). An official release is the next milestone.
 
 ## What the public source record reveals
 
