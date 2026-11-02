@@ -10,7 +10,7 @@
 - **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。[事例3を読む](#3-memberjunction同じidと上書きしてよい所有権を分ける)。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。[事例1を読む](#1-posthogaiが提示した数値とposthog自身の測定値を分ける)。
 - **[Qwen Code｜読み取りだけのコマンドを拒否する一方、保護ファイルへの書き込みを見逃す権限判定](https://github.com/QwenLM/qwen-code/pull/15681)** — 当初の `2>&1` 誤拒否とは別に、実際の `>&protected.txt` の書込先を解析器が `&protected.txt` と誤認すると、特定ファイルへの書込禁止が一致しない点を[中川マスターが指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が実際の権限判定で修正前 `allow`／修正後 `deny` を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、自ら修正・回帰テストを実装した[#15681 が2026年11月1日にマージ](https://github.com/QwenLM/qwen-code/pull/15681)。配布版への収録と一般利用者の効果は別途確認が必要です。
-- **[Qwen Code｜AIに届けていない警告を「送達済み」と記録する問題](https://github.com/QwenLM/qwen-code/pull/15559)** — 中川マスターが、次のAI呼び出し前に処理が終わる反例を発見。[開発者が指摘を認めて実装とテストを修正](https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110)し、[2026年11月1日に正式マージ](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7)。[事例54](#54-qwen-codeaiに注意を伝えたつもりでも実際には届いていない問題を修正マージ)。
+- **[Qwen Code｜AIに届けていない警告を「送達済み」と記録する問題](https://github.com/QwenLM/qwen-code/pull/15559)** — 中川マスターが、次のAI呼び出し前に処理が終わる反例を発見。[開発者が指摘を認めて実装とテストを修正](https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110)し、[2026年11月1日に正式マージ](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7f)。[事例54](#54-qwen-codeaiに注意を伝えたつもりでも実際には届いていない問題を修正マージ)。
 - **[Qwen Code｜処理できなかったチャット内容がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)** — 中川マスターの[具体的な指摘](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915)を受け、別の開発者が**本文をログへ出さない修正と再発防止テスト**を実装。[事例55](#55-qwen-code処理を断ったチャット内容が内部ログに残る問題を指摘開発者が修正)。**こちらはマージ前です。**
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。[事例47を読む](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。[事例41を読む](#41-pydanticai同じidempotency-keyの再送が未参照メッセージを増やさない)。
@@ -1652,7 +1652,7 @@ AIが同じ操作を何度も繰り返したとき、システムは注意を促
 
 中川マスターは[PR #15559](https://github.com/QwenLM/qwen-code/pull/15559)で、処理回数の上限に達して次のモデル呼び出しが発生しない反例を[コードとテスト条件に即して示しました](https://github.com/QwenLM/qwen-code/pull/15559#pullrequestreview-5644089125)。これを受け開発者 **@suzhiguo7** は[指摘を認め](https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110)、実際にモデルからの応答が始まった時点で送達を記録するよう改修。**送っていない場合は記録しない／実際に届いた場合は一度だけ記録する**という両方向のテストも追加しました。
 
-**成果：** [2026年11月1日、修正はQwen Codeへ正式マージ](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7)。中川マスターの反例が、別の開発者自身によるコード変更と再発防止テストにつながったことを確認できます。特定の安定版への収録や実利用者の効果は別途確認が必要です。
+**成果：** [2026年11月1日、修正はQwen Codeへ正式マージ](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7f)。中川マスターの反例が、別の開発者自身によるコード変更と再発防止テストにつながったことを確認できます。特定の安定版への収録や実利用者の効果は別途確認が必要です。
 
 ## 55. Qwen Code｜処理を断ったチャット内容が内部ログに残る問題を指摘、開発者が修正
 

@@ -4045,8 +4045,8 @@
       "merge": {
         "claimed": true,
         "merged_at_utc": "2026-11-01T16:43:24Z",
-        "commit": "ae7901552e1907203e658e661499f0bfc1937f7",
-        "url": "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7"
+        "commit": "ae7901552e1907203e658e661499f0bfc1937f7f",
+        "url": "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7f"
       },
       "current_stage": "independent_receiver_implementation_tests_UPSTREAM_MERGED",
       "human_case": "REAL_WORLD_IMPACT.md#54",

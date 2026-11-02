@@ -535,7 +535,7 @@
           "citation": [
             "https://github.com/QwenLM/qwen-code/pull/15559#pullrequestreview-5644089125",
             "https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110",
-            "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7"
+            "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7f"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -564,8 +564,8 @@
             {
               "@type": "PropertyValue",
               "name": "Native GitHub merge commit",
-              "value": "ae7901552e1907203e658e661499f0bfc1937f7",
-              "url": "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7"
+              "value": "ae7901552e1907203e658e661499f0bfc1937f7f",
+              "url": "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7f"
             }
           ]
         }
