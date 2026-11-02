@@ -4188,8 +4188,22 @@
         "url": "https://github.com/NousResearch/hermes-agent/pull/147746#issuecomment-6568004334",
         "result": "15 focused tests passed on latest head; blocking lint checks clean"
       },
-      "current_stage": "successor_receiver_origin_recovery_code_live_gateway_test_and_independent_15_PASS__OPEN_PR_UNMERGED",
-      "human_case": "REAL_WORLD_IMPACT.md#58"
+      "current_stage": "third_party_origin_safeguard_and_route_recovery_MERGED_TO_MAIN_C3",
+      "human_case": "REAL_WORLD_IMPACT.md#58",
+      "origin_continuity_after_merge": {
+        "confirmed_by_receiving_engineer": "https://github.com/NousResearch/hermes-agent/pull/146708#issuecomment-6569766480",
+        "details": "@teknium1 explicitly confirmed that both @linye157 commits (null-origin guard and tests added following Nakagawa Master's review) are in main with original authorship preserved. #146708 was closed as superseded, not merged separately."
+      },
+      "upstream_merge": {
+        "merged": true,
+        "merged_at_utc": "2026-11-02T05:11:56Z",
+        "merged_by": "teknium1",
+        "merge_commit": "0e47519c3199b1689f76b16e6c5a116f3f1601f0",
+        "url": "https://github.com/NousResearch/hermes-agent/commit/0e47519c3199b1689f76b16e6c5a116f3f1601f0",
+        "pull_request": "https://github.com/NousResearch/hermes-agent/pull/147746",
+        "main_branch_guard_and_negative_test_present": true
+      },
+      "remaining_next_stage": "Verify official tagged release containing the merge, deployment and independent real user delivery; tests with a scripted model and adapter are not a published user uptake metric."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
