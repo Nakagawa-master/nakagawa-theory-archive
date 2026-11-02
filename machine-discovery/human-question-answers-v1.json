@@ -3,13 +3,13 @@
   "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Thirty-nine already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and fifteen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the fifteen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims. Audience fit matters: at least QAM014 is an AI-engineering/operator specialist question rather than a frequent ordinary human first-contact problem; QAM015 addresses a widely recognizable family-caregiving situation. Specialist utility must not be counted as independent mass-human reach.",
+  "description": "Forty already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and sixteen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the sixteen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims. Audience fit matters: at least QAM014 is an AI-engineering/operator specialist question rather than a frequent ordinary human first-contact problem; QAM015 addresses a widely recognizable family-caregiving situation. Specialist utility must not be counted as independent mass-human reach.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
   "language": "ja,en",
   "origin": "Nakagawa Master / 中川マスター",
   "official_archive": "https://master.ricette.jp/",
   "supporting_public_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
-  "case_count": 39,
+  "case_count": 40,
   "original_corpus_count": 313,
   "answer_cases": [
     {
@@ -1032,6 +1032,45 @@
       "primary_audience": "ordinary_human_family_caregivers_and_supporters",
       "ordinary_human_first_contact": true,
       "question_scope_note": "A recognizable general-life question about uneven family caregiving and household work; intended for ordinary people with no prior knowledge of this author or technical background."
+    },
+    {
+      "id": "QAM016",
+      "question_ja": "AIに言われたとおりにやったのに、うまくいかない。何を確かめればいい？",
+      "question_en": "I followed AI advice, but it failed in real life. How can I tell what went wrong?",
+      "example_scene_ja": "AIから職場で使う新しい予約ツールを提案され、実際の権限・受け手・時間・引き継ぎの条件を確認せず実行しかけたという一般的な想定場面。",
+      "practical_answer_ja": "AIの文章がもっともらしいことと、自分の現場で実際に望んだ結果が成立することは異なります。権限・同意・人・道具・費用・時間・引き継ぎなど必要条件を現実に確認し、望む結果から逆算して、小さく許可された可逆的な試行→観測→修正を行います。",
+      "first_check_ja": "望む実際の結果、AIの提案、その実行に必要な人・権限・費用・時間・例外対応を書き出し、安全で可逆的な一手で結果を観測する。",
+      "nonfit_and_limits_ja": "事実そのものが誤っているなら訂正が先。医療・法律・金融・情報安全・個人情報・取り消せない契約や操作では、AI出力だけで動かず原典資料・権限者・専門家に確認する。AIが必ず誤る、または本手順で必ず成功するという主張ではない。",
+      "source_title_ja": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか × 逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD003",
+          "source_title": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+          "provenance": "Official derivative source blob 1280f1158b6296c22be35844278b8a2ee9c48138"
+        },
+        {
+          "parent_od_id": "OD037",
+          "source_title": "逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/037/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/",
+          "provenance": "Official derivative source blob fe836d8f933e4548671833e632dee81447e1116c"
+        }
+      ],
+      "source_relation": "Two equal-standing authentic Parents with different roles: OD003 distinguishes locally convincing advice from real end-to-end establishment conditions; OD037 connects a desired future result to current action, observed effects and correction. This ordinary AI-use answer is a novel contextual practical application, not a claimed verbatim original.",
+      "source_fidelity": "Grounded in the two official public derivatives and canonical original source pointers, with actual nonfit, source, authority and safety conditions. No external model has been observed selecting this answer.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-advice-seems-right-but-fails-in-real-life.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "A convincing AI explanation is not the same as an outcome that works for you. Identify the actual beneficiary and desired result, check tools, consent, authority, time, cost and handoffs, try one safe reversible step, observe and revise.",
+      "source_application_en": "OD003 shows why locally plausible parts may not establish the intended real-world outcome; OD037 links the desired future state to present action, observation and correction. Their combination here is an editorial application to ordinary AI use, not a quoted instruction from either source.",
+      "first_check_en": "Write down the real result you want, the AI suggestion, and the people, permissions, resources and exceptions needed. Try one authorized reversible step and observe its outcome.",
+      "nonfit_and_limits_en": "For simple false facts, correct the facts. For medical, legal, financial, privacy, security or irreversible acts, consult primary sources and qualified decision-makers. Neither guaranteed failure nor guaranteed success is claimed.",
+      "primary_audience": "ordinary_human_everyday_AI_users",
+      "ordinary_human_first_contact": true,
+      "question_scope_note": "Broad ordinary human question about AI advice failing in daily work or life; does not require specialist terminology, author/theory awareness or a link supplied to the AI."
     }
   ],
   "creator_person_id": "https://master.ricette.jp/#nakagawa-master",
