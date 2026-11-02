@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共59例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共60例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1550,6 +1550,14 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 [PR #15757 的代码审查直接注明中川大师的原始评论并要求采用这一条件](https://github.com/QwenLM/qwen-code/pull/15757#discussion_r4402027138)。接收方开发者 **@2SinceJuly** [接受了该修复条件](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6485055684)，并[重写代码及回归测试](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6486120155)。另一位审查人员 **@wenshao** 还通过真实工具发现与分页流程进行了修复前后对照验证。
 
 **成果：** **[2026年10月31日（UTC），Qwen Code正式将PR #15757合并至main](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e)。** 中川大师提出的“不得把不同的真实执行对象当成同一个工具”这一判断，成为独立开发者的代码、测试与上游合并成果。最初的问题报告者为 **@nipercop**，具体代码及测试作者为 **@2SinceJuly**。随后，该修复还被**[2026年11月1日公开的Qwen Code nightly版本明确列为更新项目](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5-nightly.20261101.7b4b353750)**，对应的nightly标签也包含已合并的提交。这是与稳定版v0.26.5不同的nightly发布；真实用户的使用结果仍待核验。
+
+## 60. agent-approval-gate｜已失效的批准请求被旧回复重新批准：接收方使用AI辅助完成修复并注明中川マスター
+
+**一个请求已被标记为过期的 `stale`，旧的 `+ #id` 回复却仍有可能把它变成 `approved`。** 中川マスター在[公开问题#1](https://github.com/tonydzi/agent-approval-gate/issues/1)中核对了实际SQL状态转换，发现决策更新仅排除了已批准或已拒绝状态，并未要求请求必须仍为 `pending`。他用独立SQLite试验复现，并区分“很久以前提出、但仍在等待”的请求与“已经终止”的请求。这不是实际发生过非法转账的主张。
+
+[外部仓库账号 @tonydzi 明确认可该发现](https://github.com/tonydzi/agent-approval-gate/issues/1#issuecomment-6345672883)，并将[修复提交 `addeb43` 直接写入自己的main](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)。实际代码规定只有 `pending` 状态才可更新批准；补充测试分别覆盖引用旧消息、手动输入旧ID、尚未过期的有效回复及拒绝案例。接收方报告**46/46项测试通过**，但没有声称真实聊天平台或金钱交易经过独立验收。
+
+这一实现**属于接收方开发者**。提交元数据明确载有 `Assisted-by: Claude Code/Claude Sonnet 5.5` 以及 `Co-Authored-By: Claude Sonnet 5.5`；外部[安全文档写明 `Reported by @Nakagawa-master in issue #1`](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)。可确认的路径是：**中川マスター具体发现 → 外部接收方确认 → AI辅助的真实修复与测试 → main提交 → 公开归因**。不能由此推断外部AI自主发现了所有313项原典，或已经有大量最终用户实际使用。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
