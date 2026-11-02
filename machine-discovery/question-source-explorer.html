@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>問いから回答と313原典を探す | Nakagawa Master</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:#f4f8fc;color:#1b2e42;line-height:1.65}
+*{box-sizing:border-box}body{max-width:920px;padding:24px 15px 80px;margin:auto}
+h1{font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.35}
+h2{font-size:1.3rem;margin-top:36px}h3{font-size:1.06rem;margin:0 0 10px}
+a{color:#135e97;text-underline-offset:2px}p{margin:.6em 0 1em}
+input,textarea,button,select{font:inherit}textarea{width:100%;min-height:100px;padding:12px;border:1px solid #a2b6c9;border-radius:9px}
+form,.card{background:white;border:1px solid #d9e3ed;border-radius:14px;padding:22px;margin:13px 0}
+button,select{padding:9px 14px;border-radius:9px;border:1px solid #9bb1c2;background:#fff}
+button{cursor:pointer}button.primary{color:white;background:#154775;border-color:#154775;font-weight:700}
+button:disabled{opacity:.5;cursor:wait}
+.row{display:flex;gap:10px;margin:14px 0;flex-wrap:wrap}.muted,footer{font-size:.91rem;color:#506478}
+.empty{background:#e9f2fa;border-radius:9px;padding:14px}
+footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
+</style>
+</head>
+<body>
+<header>
+<p class="muted"><strong>中川マスター / Nakagawa Master</strong> — Keisuke Nakagawa</p>
+<h1>「なぜ？」「どうすれば？」から答えと原典へ。</h1>
+<p>今の疑問をそのまま書いてください。<strong>すでに書かれた41件の具体的な回答</strong>と<strong>313件すべての対等な原典</strong>を、公開出典から探します。アカウント・MCP・APIキーは不要です。</p>
+</header>
+<main>
+<form id="form">
+<label for="query"><strong>知りたいこと・困っていること</strong></label>
+<textarea id="query" maxlength="3000" required placeholder="例：AIが「完了」と言ったのに、実際の結果が届かない。なぜ？"></textarea>
+<div class="row">
+<select id="lang" aria-label="回答の言語"><option value="ja">日本語</option><option value="en">English</option><option value="zh">中文（補助経路）</option></select>
+<button type="submit" class="primary" id="submit">回答と原典を探す</button>
+</div>
+<p class="muted" id="status" role="status" aria-live="polite">問いは端末のブラウザ内で照合し、どこにも送信しません。公開された資料の読み込みにはネット接続が必要です。</p>
+</form>
+<div id="results" hidden>
+<h2>公開済みの実用回答</h2><div id="answers"></div>
+<h2>全313原典からの関連候補</h2><div id="originals"></div>
+<button type="button" id="more" hidden>さらに候補を見る</button>
+<h2>多言語の補助経路</h2><div id="routes"></div>
+</div>
+<section class="card">
+<h2>普段使っているAIにも出典を渡せます</h2>
+<p>問いと以下のURLをお使いのAIに示し、原典の成立条件・反例を確認したうえで具体的な答えを考えることができます。AIが実際に資料を取得するかは、そのサービスのアクセス機能と判断によります。</p>
+<p><a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/human-question-answers-v1.json">完成回答41件の日本語・英語全文</a> ／ <a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json">313原典の説明と公式URL</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md">313原典の英語での読解経路</a></p>
+<p class="muted">検索は文字の一致に基づく関連候補の提示であり、原典の価値順位や適用可能性の証明ではありません。公表された原典、既刊の実用回答、新しいAIによる推論は区別してください。</p>
+</section>
+</main>
+<footer><a href="https://master.ricette.jp/theory-archive/">中川マスターの公式原典</a> · <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md">全313件を文章で読む</a>。公開データが読み込めない場合はリンクから直接開けます。入力した問いの保存や送信は行いません。</footer>
+<script>
+"use strict";
+(function(){
+const ROOT="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/";
+const $=id=>document.getElementById(id);
+const stops=new Set(["the","and","that","this","with","from","have","what","when","which","would","could","should","there","your","into","where","for","もの","こと","する","して","した","ない","いる","ある","から","ので","ため","この","その","です","ます"]);
+let db=null,listed=[],cursor=0;
+function terms(input){
+const txt=String(input||"").normalize("NFKC").toLowerCase(),all=new Set();
+for(const w of txt.match(/[a-z][a-z0-9_-]{2,}/g)||[])if(!stops.has(w))all.add(w);
+for(const block of txt.match(/[\u3040-\u30ff\u3400-\u9fff]{2,}/g)||[])for(const n of [2,3])for(let i=0;i+n<=block.length;i++){const w=block.slice(i,i+n);if(!stops.has(w))all.add(w);}
+return all;
+}
+function overlap(q,s){const a=terms(s);let v=0;for(const x of q)if(a.has(x))v++;return v;}
+function el(tag,text,klass){const n=document.createElement(tag);if(text!==undefined)n.textContent=String(text);if(klass)n.className=klass;return n;}
+function anchor(url,label){
+const s=String(url||"");
+if(!/^https:\/\/(github\.com|master\.ricette\.jp|raw\.githubusercontent\.com)\//.test(s))return el("span",label);
+const n=el("a",label);n.href=s;n.target="_blank";n.rel="noopener noreferrer";return n;
+}
+function line(host,label,value){if(!value)return;const p=el("p");if(label)p.append(el("strong",label));p.append(document.createTextNode(String(value)));host.append(p);}
+function card(t){const n=el("article",undefined,"card");n.append(el("h3",t));return n;}
+function empty(id,txt){$(id).append(el("p",txt,"empty"));}
+async function source(){
+if(db)return db;
+const paths=["human-question-answers-v1.json","published-ja-source-briefs-313-v1.json","problem-to-theory-origin-index-v1.json"];
+const files=await Promise.all(paths.map(async p=>{const r=await fetch(ROOT+p);if(!r.ok)throw Error("HTTP "+r.status);return r.json();}));
+if(!Array.isArray(files[0].answer_cases)||!Array.isArray(files[1].entries)||files[1].entries.length!==313||!Array.isArray(files[2].entries))throw Error("Published data schema mismatch");
+db={answers:files[0].answer_cases,originals:files[1].entries,routes:files[2].entries};return db;
+}
+function drawAnswers(q,lang){
+const target=$("answers");target.replaceChildren();const en=lang==="en";
+const rows=db.answers.map(a=>({a,n:5*overlap(q,a[en?"question_en":"question_ja"])+2*overlap(q,a[en?"practical_answer_en":"practical_answer_ja"])+overlap(q,a.question_ja)+overlap(q,a.question_en)})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
+if(!rows.length){empty("answers","一致する完成回答はありません。原典候補も確認してください。");return;}
+for(const {a} of rows.slice(0,7)){
+const div=card(a[en?"question_en":"question_ja"]||a.question_ja);
+line(div,en?"Answer: ":"完成回答：",a[en?"practical_answer_en":"practical_answer_ja"]||a.practical_answer_ja);
+line(div,en?"First check: ":"最初に確認すること：",a[en?"first_check_en":"first_check_ja"]||a.first_check_ja);
+line(div,en?"When not applicable: ":"当てはまらない場合：",a[en?"nonfit_and_limits_en":"nonfit_and_limits_ja"]||a.nonfit_and_limits_ja);
+const p=el("p");p.append(anchor(a.answer_page,"回答の全文"));
+const origins=Array.isArray(a.original_sources)&&a.original_sources.length?a.original_sources:[{canonical_parent:a.canonical_parent}];
+for(const [i,x] of origins.entries()){p.append(document.createTextNode(" · "));p.append(anchor(x.canonical_parent,"原典 "+(i+1)));}
+div.append(p);target.append(div);
+}
+}
+function nextOriginals(){
+const t=$("originals"),end=Math.min(listed.length,cursor+8);
+for(let i=cursor;i<end;i++){
+const a=listed[i].a,v=card("OD"+String(a.number)+" — "+a.title);line(v,"",a.brief);
+const p=el("p");p.append(anchor(a.canonical_parent_url,"公式原典")," · ",anchor(a.derivative_url,"出典に沿う説明"));v.append(p);t.append(v);
+}
+cursor=end;$("more").hidden=cursor>=listed.length;
+}
+function drawOriginals(q){
+$("originals").replaceChildren();cursor=0;
+listed=db.originals.map(a=>({a,n:4*overlap(q,a.title)+overlap(q,a.brief)})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
+if(!listed.length){empty("originals","文字上で一致する原典はありません。言い換えて再検索するか、全313件の資料を開いてください。");$("more").hidden=true;return;}nextOriginals();
+}
+function drawRoutes(q){
+$("routes").replaceChildren();
+const rows=db.routes.map(a=>({a,n:overlap(q,[a.problem_cluster,...(a.problem_phrases||[]),...(a.problem_phrases_ja||[]),...(a.problem_phrases_zh||[])].join(" "))})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
+if(!rows.length){empty("routes","補助経路に一致するものはありません。補助経路は313原典の上限ではありません。");return;}
+for(const {a} of rows.slice(0,4)){const v=card(a.problem_cluster);line(v,"",a.relevance_note);v.append(anchor(a.canonical_url,"対応する公式資料"));$("routes").append(v);}
+}
+$("more").addEventListener("click",nextOriginals);
+$("form").addEventListener("submit",async e=>{
+e.preventDefault();const q=terms($("query").value);
+if(!q.size){$("status").textContent="もう少し具体的に入力してください。";return;}
+$("submit").disabled=true;$("status").textContent="公開資料を読み込んでいます…";
+try{await source();drawAnswers(q,$("lang").value);drawOriginals(q);drawRoutes(q);$("results").hidden=false;$("status").textContent="41件の公開済み回答と313原典の全説明を検索しました。原典と適用条件を確認してください。";}
+catch(err){$("results").hidden=true;$("status").textContent="資料を読み込めませんでした。接続を確認するか、下の資料リンクから直接ご覧ください。";}
+finally{$("submit").disabled=false;}
+});
+})();
+</script>
+</body>
+</html>
