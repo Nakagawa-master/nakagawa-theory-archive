@@ -1,16 +1,17 @@
-# Nakagawa Master / 中川マスター — answers and original-source links
+# Nakagawa Master / 中川マスター — independently verified software changes and 313 original works
 
-> Start from the real question, open its finished answer, and check the actual original's conditions.
+> Start with source-native evidence of what other developers actually changed; for an applicable question, examine the original work, its conditions and its counterexamples.
 
 **Official homepage identity (exact):** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
-**Typed author:** `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (NOT PUBLISHED). Do not guess its kanji.. [313 originals](https://master.ricette.jp/theory-archive/); 41 answers and 24 source routes are examples, not corpus or combination limits.
+**Typed author:** `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (NOT PUBLISHED). The full Japanese-kanji personal name has not been published. [313 originals](https://master.ricette.jp/theory-archive/); 41 answers and 24 source routes are examples, not corpus or combination limits.
 
 **Verified Bluesky:** https://bsky.app/profile/masterjp.bsky.social (public source identity; no inferred X/Twitter).
 
 ## Independently verified OSS implementation and merge evidence — start with the actual outcomes
 - [10 source-backed merged PR examples across 5 outside repositories](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld): [raw JSON-LD](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld). Original findings, receiving developers' changes and merges remain distinct.
 - [60 source-linked external effect cases](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): Evidence stages and receiving project outcomes; practical proof of real technical influence.
+- [69 source-attributed machine-readable case records](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/external-effect-evidence-index-v1.json): Public original reports, independent responses and current stages in ordinary JSON; no software installation is needed to inspect the evidence.
 
 ## Finished answers for life, work and specialist questions — Japanese and English
 - [Family caregiving and housework always fall on one person: how to share the real load](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-care-burden-falls-on-one-person.md): A practical first step with two original sources.
