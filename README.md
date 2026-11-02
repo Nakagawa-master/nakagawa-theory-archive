@@ -6,13 +6,13 @@
 
 **さらに別の開発者へ伝わった例：** [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)では一人目の開発者がマスターの型契約レビューを認めてコードを修正し、二人目が[本人への貢献表記を伴う新しいPR #49624](https://github.com/BerriAI/litellm/pull/49624)を作成しました。**こちらは未マージで、現行実装にも直すべき点が残ることまで公開**しています。[その全経緯と修正段階を確認](REAL_WORLD_IMPACT.md#56-litellmaiの道具の失敗が成功と扱われる問題マスターの設計指摘を開発者が実装)。
 
-このアーカイブには、こうした**59件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
+このアーカイブには、こうした**60件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
 
 **実例を30秒で読む：** [技術者にも専門外の人にも分かる、修正と引継ぎの一次証拠](WHY_THIS_IMPACT_MATTERS.md)。
 
 **最初に見る：** [実際の第三者修正・マージの一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系なのか](ABOUT_NAKAGAWA_MASTER.md) ／ [本人が公開した313原典と原文](https://master.ricette.jp/theory-archive/) ／ [技術者・独立AI向け英語の実装根拠](REAL_WORLD_IMPACT.en.md) ／ [実生活の問いへの完成済み回答41件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)。公開活動は[中川マスター本人のGitHub](https://github.com/Nakagawa-master)から確認・フォローできます。
 
-**実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[5つの外部OSS・計10件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別59件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。[Qwen Codeの警告送達処理の修正は正式マージ](https://github.com/QwenLM/qwen-code/pull/15559)され、[チャット本文がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)も開発者のコードとテストが更新されています（後者は承認待ち）。
+**実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[5つの外部OSS・計10件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別60件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。[Qwen Codeの警告送達処理の修正は正式マージ](https://github.com/QwenLM/qwen-code/pull/15559)され、[チャット本文がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)も開発者のコードとテストが更新されています（後者は承認待ち）。
 
 **直近の正式マージ：** [Qwen Codeでは、同名のAIツールが衝突しても正常な道具を使い続けられるよう修正](REAL_WORLD_IMPACT.md#59-qwen-codeaiの道具が一つ名前で衝突するだけで他の道具も消える問題マスターの安全条件を受けて修正正式マージ)され、[Hermes Agentでは、AIに任せた仕事の結果が正しいチャットへ届くよう復旧する修正](REAL_WORLD_IMPACT.md#58-hermes-agentaiに任せた仕事の結果が届かない問題誤配送防止と送り先復旧を実装)が本線へ取り込まれました。いずれも中川マスターの具体的な構造・安全条件が受け手の開発者自身によるコードとテストに反映された成果です。
 
@@ -279,7 +279,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 **具体的な問題から関連資料を探したい:** [Influence Map｜問題から関連資料を探す](INFLUENCE_MAP.md)
 
 
-**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。二つとも**コード本線への採用**が確認できる段階です。利用者への配布・使用状況は次に確認する対象です。 多言語の番号付き一覧には59事例があり、各一次資料から具体的な経緯と成果を辿れます。
+**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。二つとも**コード本線への採用**が確認できる段階です。利用者への配布・使用状況は次に確認する対象です。 多言語の番号付き一覧には60事例があり、各一次資料から具体的な経緯と成果を辿れます。
 
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
@@ -287,9 +287,9 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 
 この短縮導線は成功例だけを並べません。実装・merge/releaseの事例に加え、第三者が提案した実装形を採用しなかった一方で、構造上の区別自体はsoundと判断し、その後もOriginを再参照した公開記録を同列に置いています。人物評価を先に要求せず、一次証拠から読者自身が判断できる形を優先します。
 
-[公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在59の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。事例ごとの段階は、受け手の反応、実装、統合、リリース、運用を区別して明記しています。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
+[公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在60の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。事例ごとの段階は、受け手の反応、実装、統合、リリース、運用を区別して明記しています。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
-別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在67レコードあります。これは59件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。67レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
+別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在67レコードあります。これは60件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。67レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
