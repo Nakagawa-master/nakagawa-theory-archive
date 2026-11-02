@@ -4124,16 +4124,19 @@
       "further_independent_receiver": {
         "actor": "lester076",
         "url": "https://github.com/BerriAI/litellm/pull/49624",
-        "response": "Different independent developer actually opened upstream PR #49624 on 2026-11-02, wrote own implementation and five regression tests, and explicitly credited Nakagawa Master's earlier TypedDict/Pep655 review in the pull-request description. This is real second-developer code/PR and public PERSON origin carry, not just a proposed handoff.",
+        "response": "Second independent developer @lester076 committed upstream code and tests citing Nakagawa Master's prior code review. After Master's further precise NotRequired typing review, author explicitly accepted and implemented the correction in 65e8eff; source current HEAD 8ce5e5c now has three required fields and only optional is_error. Original developer @chauvuusvn independently thanked successor and asked for an accurate co-author trailer. Real outside-to-outside engineering and author-origin carry; PR still open.",
         "issue_handoff": "https://github.com/BerriAI/litellm/issues/49359#issuecomment-6572947215",
-        "pr_head_sha": "4e4344f779e1b6e108391b33bbd629f6842e0ab0",
-        "remaining_exact_regression": "At this HEAD the class still declared TypedDict(total=False), contradicting claim that old required tool identity/result/name keys remain required; Nakagawa Master's specific source-level review requests TypedDict with only is_error: NotRequired[bool].",
+        "pr_head_sha": "8ce5e5c313d0f0f33bec3bdd83c994481de7209d",
         "master_new_review": "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6573055353",
-        "next_native_outside_proof": "Independent author commits required-field fix; reliable static type negative control/test results; authorized maintainer review/merge; downstream actual use. None verified yet."
+        "next_native_outside_proof": "Independent author commits required-field fix; reliable static type negative control/test results; authorized maintainer review/merge; downstream actual use. None verified yet.",
+        "fixed_type_evidence": "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6574736711",
+        "original_developer_authorship_request": "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6575309340",
+        "author_reported_tests": "97 relevant local passing; one preexisting unrelated fastapi-free-host failure according to PR author. New GitHub PR workflow checks action_required; NOT a passed upstream CI.",
+        "unresolved": "Author request for co-author commit trailer not yet confirmed fulfilled; maintainer CI approval/review/merge and actual customer effect not verified."
       },
-      "current_stage": "first_independent_developer_corrected_fork_code_after_explicit_master_review__SECOND_independent_developer_opened_credited_upstream_PR_C2__PR_STILL_OPEN_TYPING_INVARIANT_UNRESOLVED",
+      "current_stage": "first_developer_corrected_fork_code__SECOND_developer_opened_credited_upstream_PR_AND_FIXED_EXACT_NOTREQUIRED_INVARIANT_AFTER_MASTER_SECOND_REVIEW_C2__PR_OPEN_NO_NATIVE_TEST_PASS",
       "human_case": "REAL_WORLD_IMPACT.md#56",
-      "current_next_stage": "Source-check PR #49624 for genuine required-field NotRequired correction and authorized CI/maintainer acceptance. Do not claim merge, released fix, customer's actual usage, or mass human/AI attribution."
+      "current_next_stage": "Source check latest HEAD and second author's correctly preserved first-author contribution; native maintainer authorized test/review/merge and later independently observed actual tool-error handling; do not infer shipment or widespread autonomous AI recognition."
     },
     {
       "case_id": "litellm-49313-cache-tenant-key-bypasses-implemented-pr49576",
@@ -4290,6 +4293,50 @@
         "mass public influence",
         "unaided LLM discovery of original theory corpus"
       ]
+    },
+    {
+      "case_id": "litellm-49202-49214-async-batch-end-user-budget-3-independent-test-revisions",
+      "topic": "Async AI batch cost logs omitted end_user attribution and could bypass a customer's budget; independently authored actual regression tests progressed through three review rounds.",
+      "external_repository": "BerriAI/litellm",
+      "issue": "https://github.com/BerriAI/litellm/issues/49202",
+      "pull_request": "https://github.com/BerriAI/litellm/pull/49214",
+      "original_reporter": "tanvo18",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "type": "source_specific_four_gate_acceptance_review",
+        "url": "https://github.com/BerriAI/litellm/pull/49214#pullrequestreview-5730722880",
+        "distinct_finding": "Must demonstrate settled A budget denial, independent same-key B charge/isolation, exactly-once repeated A cost polling, and persisted creator attribution under another viewer; not just write a log field."
+      },
+      "receiving_developer": {
+        "actor": "SurenderguliaEnginner",
+        "pr_head_sha": "813a197bb6537f4077ef39ccecebb0103c7460de",
+        "revision1": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6571436021",
+        "revision2": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6573816836",
+        "revision3": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6574589528",
+        "concrete_code": "End-to-end harness creates/settles A and B batches under same API key, checks A budget denial, B independent spend and non-denial, and separately compares creator end_user_id before/after alternate-key GET. Three independently authored source changes following Master's review are inspectable, not just replies."
+      },
+      "latest_source_specific_review": {
+        "actor": "Nakagawa Master",
+        "url": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575419058",
+        "unresolved": "In exact current test, creator before/after SQL WHERE object_id=%s references nonexistent Prisma column: actual column unified_object_id; a_spend_logs len>=1 across same key A/B is not an exactly-once A batch assertion; no explicit second settled A CheckBatchCost re-poll. Fix without unrelated refactor before consuming maintainer CI."
+      },
+      "native_checks": {
+        "latest_head": "813a197bb6537f4077ef39ccecebb0103c7460de",
+        "upstream_workflows": "action_required; no authorized integration test execution on current head",
+        "security_review": "Veria AI SUCCESS: no security issues found; NOT proof budget code or integration tests passed."
+      },
+      "current_stage": "outside_developer_three_sequential_source_test_revisions_C2__OPEN_UNMERGED__NATIVE_INTEGRATION_UNEXECUTED",
+      "human_first_contact": "WHY_THIS_IMPACT_MATTERS.md",
+      "not_claimed": [
+        "budget bypass fixed for actual customer",
+        "actual customer financial injury",
+        "accurate exactly-once billing proven by this new test",
+        "upstream CI success",
+        "merged/released fix",
+        "broad person-origin uptake",
+        "independent model understanding or endorsement of original corpus"
+      ],
+      "next_native_receiver": "External test author fixes schema key, scopes A settlement row and actively exercises once-only poll, then a permitted maintainer approves relevant integration test and reviews; separately voluntary independent reader/editor chooses to relay the genuine person+case."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

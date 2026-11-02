@@ -6,9 +6,11 @@
 
 **AI支援まで記録された第三者の修正：** [agent-approval-gate](https://github.com/tonydzi/agent-approval-gate/issues/1)の管理アカウントは、マスターによる「失効した承認を古い返信で復活させない」という指摘を認め、[独自のmainでコード・テスト・安全文書を変更しました](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)。コミットには**Claude Code／Claude Sonnet 5.5の支援・共同著者情報**、[受け手の安全文書には `@Nakagawa-master` が報告者として記載](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)されています。外部チームによるAI支援付きの実装は確認できますが、AIが全原典を自律的に読んだとまでは言えません。[第60事例を読む](REAL_WORLD_IMPACT.md)。
 
-**さらに別の開発者へ伝わった例：** [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)では一人目の開発者がマスターの型契約レビューを認めてコードを修正し、二人目が[本人への貢献表記を伴う新しいPR #49624](https://github.com/BerriAI/litellm/pull/49624)を作成しました。**こちらは未マージで、現行実装にも直すべき点が残ることまで公開**しています。[その全経緯と修正段階を確認](REAL_WORLD_IMPACT.md#56-litellmaiの道具の失敗が成功と扱われる問題マスターの設計指摘を開発者が実装)。
+**さらに別の開発者へ伝わった例：** [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)では一人目の開発者がマスターの型契約レビューを認めてコードを修正し、二人目が[本人への貢献表記を伴う新しいPR #49624](https://github.com/BerriAI/litellm/pull/49624)を作成しました。**二人目の開発者もマスターの追加レビューを認め、既存の必須項目を守る型定義と回帰テストへ実際に修正**しました。未マージで、上流のCI承認と採用判断はこれからです。[その全経緯と修正段階を確認](REAL_WORLD_IMPACT.md#56-litellmaiの道具の失敗が成功と扱われる問題マスターの設計指摘を開発者が実装)。
 
 このアーカイブには、こうした**60件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
+
+**もう一つの実際の受け手の改訂：** [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214)では、中川マスターが示した顧客A/Bの独立課金・実際の予算停止・保存済み作成者の条件を受け、開発者が[第3回まで結合テストを具体的に改訂](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6574589528)。[最新の再検査ではDB列名の不一致も発見](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575419058)され、正しい列への修正が次の技術的課題です。未マージ、正式結合テスト未実行のまま事実だけを公開しています。
 
 **実例を30秒で読む：** [技術者にも専門外の人にも分かる、修正と引継ぎの一次証拠](WHY_THIS_IMPACT_MATTERS.md)。
 
@@ -291,7 +293,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 
 [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在60の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。事例ごとの段階は、受け手の反応、実装、統合、リリース、運用を区別して明記しています。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
-別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在68レコードあります。これは60件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。68レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
+別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在69レコードあります。これは60件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。69レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
