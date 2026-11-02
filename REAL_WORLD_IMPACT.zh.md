@@ -32,6 +32,12 @@
 
 通过公开资料，可以沿着问题提出、第三方设计和实现、代码合并、正式发布以及实际使用的路径逐一核对。
 
+## 从已验证的外部修复走向其他团队可重复执行的检查
+
+[**实用指南（日语与英语）：AI代理所说的“禁止修改”，是否真正保护了Shell写入的文件？**](human-translation/field-guides/ai-agent-shell-permission-real-write-destination.md) 该指南提供七个正反对照用例，并要求同时检查：Shell实际操作的文件、权限解析器识别的目标、最终允许或拒绝的判定。其外部证据链是[中川大师提出的额外安全边界](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134) → [原问题报告者自行对比修复前后的权限判定](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175) → [原作者独立实施代码与回归测试并获合并](https://github.com/QwenLM/qwen-code/pull/15681)。修复代码的作者仍是接收项目开发者。
+
+检查方法还分别联系中川大师（Nakagawa Master，公开个人姓名 Keisuke Nakagawa）的[OD003成立条件论](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)与[OD069连接协议标准论](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)；这些独立原典用于解释局部正确性与实际结果、权限与作用对象之间的关系，并非Shell解析器的技术规范。本仓库提供指南本身并不代表已有另一家开发团队独立采用；新采用需要接收方自己的可核验记录。
+
 ## 对普通用户来说，这些区分可能意味着什么
 
 以下案例涉及的产品行为包括：
