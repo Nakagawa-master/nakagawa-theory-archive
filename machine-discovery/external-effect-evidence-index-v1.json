@@ -4239,9 +4239,17 @@
         "merge_commit": "8a2817ac8acbf9444c8a99549445c482caf1796e",
         "url": "https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e"
       },
-      "current_stage": "independent_receiver_implementation_tests_and_upstream_merge_C3",
+      "current_stage": "outside_implementation_upstream_merged_and_nightly_release_published_C3",
       "human_case": "REAL_WORLD_IMPACT.md#59",
-      "current_next_stage": "Identify tagged release with merged change, real downstream affected MCP user behavior, and any independent human/AI re-use of this finding."
+      "current_next_stage": "Verify later stable release ancestry, independently observed real MCP user correction and voluntary other-carrier reuse.",
+      "nightly_release": {
+        "tag": "v0.26.5-nightly.20261101.7b4b353750",
+        "published_at_utc": "2026-11-01T22:43:08Z",
+        "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5-nightly.20261101.7b4b353750",
+        "native_release_note": "fix(core): keep uniquely named MCP tools when names collide by @2SinceJuly in PR #15757",
+        "git_ancestry_checked": "compare merge commit 8a2817ac8acbf9444c8a99549445c482caf1796e to nightly release tag shows ahead 29, behind 0",
+        "important_scope": "This is a nightly release; stable v0.26.5 tag diverges from that merge commit (behind 4/ahead 1), so do not claim stable v0.26.5 inclusion."
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
