@@ -16,6 +16,10 @@
 
 **終わった承認依頼が、昔の「＋」返信で復活する。** マスターの[実コード上の発見](https://github.com/tonydzi/agent-approval-gate/issues/1)を[外部の管理アカウントが認め](https://github.com/tonydzi/agent-approval-gate/issues/1#issuecomment-6345672883)、[コード・テスト・安全文書をmainに反映](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)。修正コミットには**Claude Code／Claude Sonnet 5.5の支援・共同著者**、受け手の文書には**マスターへの出所帰属**が記録されています。これは外部側のAI支援付き実装の証拠であり、AIがマスターの全原典を自律的に発見した証拠ではありません。[第60事例の元資料](REAL_WORLD_IMPACT.md)。
 
+## 別の独立した著者も、自分のAI設計論へ引き継いだ
+
+**「あとで取り消せる変更」でも、AI自身の承認権限を増やしてよいとは限らない。** [Local Operatorの実際の問題報告 #1282・#1310](https://github.com/damianvtran/local-operator/issues/1310)で中川マスターが示したのは、操作の可逆性と、実行者が自分の承認条件を緩める権限は別だという境界です。[別の開発者の修正 #1324](https://github.com/damianvtran/local-operator/pull/1324)は[正式リリース v0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)に収録されました。さらに**独立した著者 @kishibashi3 が、自身の[AIエージェント設計論・第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)でこの二軸を説明し、報告者 @Nakagawa-master と実装者・リリースの出所を記録**しています。開発者による実装に加えて、別の著者自身の解説へ届いた具体例です。
+
 ## 現在進行中の別の変化：二人の顧客のAI利用料を取り違えない
 
 複数の顧客が一つのAIサービス用キーを使うとき、**顧客Aのバッチ処理費用がAの利用上限へ正しく記録されなければ、上限を超えた次の依頼が止まらない**ことがあります。[LiteLLMの実際の問題報告 #49202](https://github.com/BerriAI/litellm/issues/49202)について、独立した修正者 **@SurenderguliaEnginner** の[PR #49214](https://github.com/BerriAI/litellm/pull/49214)を中川マスターがソース確認しました。
@@ -52,6 +56,8 @@
 - [Hermes Agent](https://github.com/NousResearch/hermes-agent/pull/147746): don't guess an unknown destination or falsely mark a result delivered; independent developer changes and recovery code **merged**, official release or end-user uptake unverified.
 - [OpenClaw](https://github.com/openclaw/openclaw/pull/160856): another engineer implemented and merged a correction citing Nakagawa Master's specific report; the [release documentation](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md) carries the public attribution.
 
+**An independent author carried an actual engineering boundary into their own design chapter.** Reversing a change is not the same as authorizing an agent to increase its own privileges. In [a Japanese agent-design chapter written by @kishibashi3](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md), the author explains this distinction, credits the original Local Operator reporter **@Nakagawa-master**, and separately records the outside developer's [merged fix #1324](https://github.com/damianvtran/local-operator/pull/1324) and [release v0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11). The resulting independently authored chapter is a reader-facing continuation of the verified development record.
+
 **A separate outside engineering team also used AI assistance in its actual fix:** [agent-approval-gate issue #1](https://github.com/tonydzi/agent-approval-gate/issues/1) records Nakagawa Master's discovery that a terminal stale approval could be reactivated by a late bound reply. The [receiver accepted](https://github.com/tonydzi/agent-approval-gate/issues/1#issuecomment-6345672883) and [committed its own correction to main](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4); commit metadata lists **Claude Code/Claude Sonnet 5.5 assistance and co-authorship**, and public security docs credit @Nakagawa-master. This does not prove autonomous theory discovery. [Case 60](REAL_WORLD_IMPACT.en.md).
 
 **An outside developer independently revised the AI-budget regression four times in response to Nakagawa Master's source-specific reviews.** In [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214), the engineer **@SurenderguliaEnginner** added A's budget-stop regression, a separately settled same-key B batch, and a preserved creator-identity check. After Master's [schema-level objection](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575419058), the author's [fourth correction `3c3e422`](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575973685) fixed the actual `unified_object_id` SQL key, scoped the spend-log assertion to A and checked spend after a second GET. Master's [latest source review](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6576129452) shows why GET observation is not the asynchronous `CheckBatchCost` worker's own second poll. These are four real outside-authored engineering changes, not a shipped budget fix or a native integration-test pass.
@@ -71,6 +77,8 @@
 - [Qwen Code](https://github.com/QwenLM/qwen-code/pull/15757)：不让同名冲突工具造成其他正常工具全部失效；已合并并收入nightly版，不能冒充稳定版用户实际采用的证明。
 - [Hermes Agent](https://github.com/NousResearch/hermes-agent/pull/147746)：不要猜测错误的任务接收人或虚报已送达；开发者自己的修复已合并，正式发布与真实最终用户使用另需验证。
 - [OpenClaw](https://github.com/openclaw/openclaw/pull/160856)：独立开发者将中川マスター的报告归因写明，并修改代码及测试，进入正式合并记录。
+
+**独立作者也在自己的AI设计文章中接续了这一发现。** “操作可以撤销”与“AI可以自行提高权限”是两件事。[外部作者 @kishibashi3 的智能体设计第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)解释了两者的区别，并明确记载原问题报告者 **@Nakagawa-master**、另一开发者实施的[修复 #1324](https://github.com/damianvtran/local-operator/pull/1324)和[正式发布 v0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)。这是独立技术作者为自己的读者重新解释真实开发成果的公开记录。
 
 **另一个外部AI辅助修复：** 中川マスター在[agent-approval-gate问题#1](https://github.com/tonydzi/agent-approval-gate/issues/1)发现，过期的批准请求仍可能被旧回复重新批准。外部项目[确认后自行修复main中的代码和测试](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)，提交注明**Claude Code/Claude Sonnet 5.5共同作者和协助**，安全文档注明 @Nakagawa-master 原报告者。这是外部AI辅助开发的真实证据，并不证明模型自主阅读全部原典。[第60例](REAL_WORLD_IMPACT.zh.md)。
 
