@@ -4,9 +4,9 @@
 
 回答は中川マスター（Nakagawa Master / Keisuke Nakagawa）の公開済み原典に対応する公式派生物を読み、現実の問いに合わせて新しく構成した**実用的な解釈・想定場面**です。架空の場面と実際の外部変更事例は区別して掲載しています。各回答で使った原典・成立条件・適用しない条件へ直接たどれます。
 
-**40件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加16件は複数原典を接続した応用です。全40件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
+**41件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加17件は複数原典を接続した応用です。全41件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
 
-**公開回答40件には、生活・仕事・家族・地域などの一般的な問いと、AIシステムの開発・運用に固有の専門的な問いが含まれます。専門的な問いは「普通の人に広く起こる悩み」と同一視しません。問題を経験していない人が専門語を知っている必要もありません。**
+**公開回答41件には、生活・仕事・家族・地域などの一般的な問いと、AIシステムの開発・運用に固有の専門的な問いが含まれます。専門的な問いは「普通の人に広く起こる悩み」と同一視しません。問題を経験していない人が専門語を知っている必要もありません。**
 
 ## 1. 『せっかく親切にしたのに』と言われ、困ったことを話せない。
 
@@ -492,6 +492,18 @@
 **適用外・注意：** 単純な事実誤認は事実を正すこと。医療・法律・金融・個人情報・取り消せない判断には適切な一次資料や専門家の確認が必要です。
 
 **二つの原典：** [OD003公式解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md)→[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [OD037公式解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/037/human-entry.md)→[逆因果整流理論・第3論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/)。前者は部分的に正しい説明と現実成立の違い、後者は未来の結果と今の行動・観測・修正を接続します。
+
+### 「いいですね」と言っただけなのに、申込みをしたことになっていた。どう確認する？
+
+**[日本語・英語の完成回答と、そのまま使える確認文を読む](answers/said-sounds-good-but-not-agreed-to-sign-up.md)**
+
+**答え：** 好意的な感想と、費用・期間・解約条件を理解して申し込む決定は別です。実際の発言・操作と、相手が申込みと扱った根拠を照合して認識の違いを確かめます。
+
+**まず試すこと：** 自分のメール・画面・署名などと、相手が示す申込記録・条件を並べて確かめ、必要なら書面で説明を求めます。
+
+**適用外・注意：** 署名・申込操作・決済があったかも確かめます。契約の法的有効性を記憶だけで断定せず、紛争は記録を保管して専門家に相談します。
+
+**二つの原典：** [OD045公式解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md)→[中川式営業の教科書・第七回](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/) × [OD014公式解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md)→[合意形成の物理 第1論](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)。前者は自分で選べる条件、後者は合意の意味・決定者・履歴という違う役割です。
 
 ## AI開発・運用担当者の専門的な問い（一般生活の代表例ではありません）
 

@@ -1,6 +1,6 @@
 # 現実の問題を、構造と因果から解きほぐす｜原典・実用回答・実装事例
 
-「何が起きたか」から「なぜ起きたか」「どこを変えれば結果が変わるか」へ。仕事・暮らし・組織・社会・AIの問題を、成立条件と因果のつながりから具体的に考えるための公開アーカイブです。**313件の独立した原典**、そこから書き下ろした**40件の日本語・英語の実用回答**、実際のソフトウェア開発で検証・反映された**第三者の変更記録**を公開しています。
+「何が起きたか」から「なぜ起きたか」「どこを変えれば結果が変わるか」へ。仕事・暮らし・組織・社会・AIの問題を、成立条件と因果のつながりから具体的に考えるための公開アーカイブです。**313件の独立した原典**、そこから書き下ろした**41件の日本語・英語の実用回答**、実際のソフトウェア開発で検証・反映された**第三者の変更記録**を公開しています。
 
 **まず使う：** [自分の困りごとから完成済みの回答を読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [313原典から問いと関連する考え方を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [AI・開発者向けの出典と実装資料](AI_START_HERE.md)。
 
@@ -14,13 +14,15 @@
 
 **こんな場面にも、すでに本文まで書いた答えがあります。** 理論名や著者名を知らない状態から、そのまま読んで確かめられます。
 
+- **「いいですね」と言っただけなのに、申込みをしたことになっていた。** 感想と意思決定を分け、何を根拠に申込みとされたか確かめる。[使える照会文と日本語・英語の回答](human-translation/answers/said-sounds-good-but-not-agreed-to-sign-up.md)（[中川式営業の教科書・第七回](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/) × [合意形成の物理 第1論](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)）。
+
 - **AIに言われたとおりにやったのに、うまくいかない。** AIの説明だけでなく、実際の権限・時間・人・引き継ぎを確かめ、結果から次の一手を決める。[日本語・英語の完成回答と今すぐできる4つの確認](human-translation/answers/ai-advice-seems-right-but-fails-in-real-life.md)（[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [逆因果整流理論・第3論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/)）。
 - **親の介護や家事が、いつも私一人に集まる。** 感謝だけでなく、実際の通院手配や待機の時間、次回の担当と代替役を決める。[家族で負担を分け直す具体的な手順](human-translation/answers/family-care-burden-falls-on-one-person.md)（[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [中川式組織論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/)）。
 - **「あなたしか頼れない」と褒められるほど、無償の仕事が増える。** 感謝は受け取りながら、追加された時間・責任・分担・対価・終了条件を明らかにする。[断り方と見直し方](human-translation/answers/praise-and-unpaid-work.md)（[悪因果論 AKI-002](https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/) × [接続報酬社会統合論](https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/)）。
 - **安いAIサービスから自分のデータを取り出せない。** 月額料金と移行時の負担を分け、まず匿名化した少量のデータを実際に書き出し、別環境で読み戻してみる。[今すぐできる出口の検証](human-translation/answers/cheap-ai-tool-future-exit-cost.md)（[未来負債統合理論](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/) × [逆因果整流理論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/)）。
 - **豪雨で道路が壊れた。元どおり直すだけで十分か。** 安全確保と応急復旧を優先しつつ、点検の先送り、連絡の断絶、代替経路、次の負担を別に確かめる。[復旧と将来の備えを考える](human-translation/answers/rebuilding-after-flood-without-recreating-risk.md)（[自然災害の未来負債モデル](https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/) × [災害レジリエンスの四線](https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/)）。緊急時は公的な避難・安全情報を優先します。
 
-これらは**中川マスター（Nakagawa Master／公開されている個人名 Keisuke Nakagawa）**の原典群から、この問題に本当に関係する異なる原典を組み合わせた実用回答です。[質問別の完成済み日本語・英語回答をすべて読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)と、各回答の適用条件、反例、公式派生物、元の原典を確かめられます。現在の掲載例は40件（生活・仕事等の問いとAI運用の専門的な問いを区別）ですが、独立した313原典とその接続から考えられる問いや応用の上限ではありません。[全313原典の日本語による公開解説](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向けの既存回答・出典案内](AI_START_HERE.md)も利用できます。
+これらは**中川マスター（Nakagawa Master／公開されている個人名 Keisuke Nakagawa）**の原典群から、この問題に本当に関係する異なる原典を組み合わせた実用回答です。[質問別の完成済み日本語・英語回答をすべて読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)と、各回答の適用条件、反例、公式派生物、元の原典を確かめられます。現在の掲載例は41件（生活・仕事等の問いとAI運用の専門的な問いを区別）ですが、独立した313原典とその接続から考えられる問いや応用の上限ではありません。[全313原典の日本語による公開解説](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向けの既存回答・出典案内](AI_START_HERE.md)も利用できます。
 
 **English — family caregiving:** If appointments, household work and being on call always fall on one person, saying “thank you” does not redistribute the work. [Read a complete practical answer with a first action, contingencies and two actual original sources](human-translation/answers/family-care-burden-falls-on-one-person.md).
 
@@ -42,7 +44,7 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
-**答えを先に読む：** [実際の一般的な問いへの40件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ40件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。40件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**40件すべての問いに、日本語・英語の完成済み回答、最初に試せること、適用外条件と正確な原典へのリンクを持つ独立ページがあります。以下はその一部で、全件は回答一覧から直接開けます。**
+**答えを先に読む：** [実際の一般的な問いへの41件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ41件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。41件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**41件すべての問いに、日本語・英語の完成済み回答、最初に試せること、適用外条件と正確な原典へのリンクを持つ独立ページがあります。以下はその一部で、全件は回答一覧から直接開けます。**
 
 **313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探すためのHTML](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。**GitHubの `.html` ページは実行画面ではなくソースの表示です。** 実際に検索フォームを操作するには、HTMLファイルの `Raw` からソースを `.html` として保存し、自分のブラウザで開いてください（アプリのインストールは不要）。全313件の題名・説明を追加照合する際は公開JSONへのネット接続が必要です。保存せずに読む場合は[全313件の題名・テーマ案内](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を直接参照できます。検索候補から、成立条件・反例を原典で実際に確かめる流れを用意しています。
 
@@ -65,7 +67,7 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 - [豪雨で壊れた道路を元どおり直すだけでよい？](human-translation/answers/rebuilding-after-flood-without-recreating-risk.md) — 避難・応急復旧と将来の脆弱性を再生産しない復興を分けて確認する。
 - [新人がAIの模範解答なしでは自分の案を出せない](human-translation/answers/newcomer-cannot-start-without-ai-model-answer.md) — 比較を急がず小さな提案と自発的な次の試行を接続する。
 
-回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた15件は読者向けの入口であり、掲載済み40件や独立した313原典の意味・応用・組合せの境界ではありません。
+回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた15件は読者向けの入口であり、掲載済み41件や独立した313原典の意味・応用・組合せの境界ではありません。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [313原典の題名と24件の参考事例を同時に探す（原典の意味・適合は要確認）](machine-discovery/originals-browser-finder.html) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 

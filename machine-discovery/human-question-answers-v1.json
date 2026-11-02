@@ -3,13 +3,13 @@
   "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Forty already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and sixteen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the sixteen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims. Audience fit matters: at least QAM014 is an AI-engineering/operator specialist question rather than a frequent ordinary human first-contact problem; QAM015 addresses a widely recognizable family-caregiving situation. Specialist utility must not be counted as independent mass-human reach.",
+  "description": "Forty-one already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and seventeen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the seventeen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims. Audience fit matters: at least QAM014 is an AI-engineering/operator specialist question rather than a frequent ordinary human first-contact problem; QAM015 addresses a widely recognizable family-caregiving situation. Specialist utility must not be counted as independent mass-human reach.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
   "language": "ja,en",
   "origin": "Nakagawa Master / 中川マスター",
   "official_archive": "https://master.ricette.jp/",
   "supporting_public_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
-  "case_count": 40,
+  "case_count": 41,
   "original_corpus_count": 313,
   "answer_cases": [
     {
@@ -1071,6 +1071,45 @@
       "primary_audience": "ordinary_human_everyday_AI_users",
       "ordinary_human_first_contact": true,
       "question_scope_note": "Broad ordinary human question about AI advice failing in daily work or life; does not require specialist terminology, author/theory awareness or a link supplied to the AI."
+    },
+    {
+      "id": "QAM017",
+      "question_ja": "「いいですね」と言っただけなのに、申込みをしたことになっていた。どう確認する？",
+      "question_en": "I only said “That sounds good,” but they say I signed up. What can I do?",
+      "example_scene_ja": "架空のサービス説明会で好意的に応じたら申込確認が届いた想定場面。実際の個別事案との主張はしない。",
+      "practical_answer_ja": "興味・理解と申込み決定を区別し、実際に伝えた言葉・押したボタン・署名、相手が申込みと扱う根拠、金額・期間・解約条件・開始日を照合し、必要なら相違を書面で確認する。",
+      "first_check_ja": "自分の発言・操作と相手の申込根拠・条件を書面で照合する。",
+      "nonfit_and_limits_ja": "実際に署名・決済・利用している場合はその事実を含めて判断する。契約の有効無効を記憶だけで決めない。請求・解約の紛争は記録を保管し専門窓口へ。",
+      "source_title_ja": "中川式営業の教科書・第七回 × 合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD045",
+          "source_title": "中川式営業の教科書・第七回",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/",
+          "provenance": "Official public derivative blob 8a1355bc952f740cdbac48f20c2c830aefb0f978"
+        },
+        {
+          "parent_od_id": "OD014",
+          "source_title": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
+          "provenance": "Official public derivative blob e8fd7d263b1b4c7b2c0215b42c3c23e91765df10"
+        }
+      ],
+      "source_relation": "OD045 covers a freely understood comparison and actual self-owned choice; OD014 covers shared meaning, decision responsibility and traceable changes. Equal-standing distinct originals applied to a hypothetical consumer problem.",
+      "source_fidelity": "Bilingual finished answer from two official public human derivatives. Distinguishes legal claims, actual contract evidence and illustrative scene; first-party publication only.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/said-sounds-good-but-not-agreed-to-sign-up.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Distinguish positive feedback from agreeing to specific enrollment terms. Compare the actual words, clicks, signature, provider record, price, duration, renewal and cancellation conditions. Ask in writing for the basis of enrollment.",
+      "source_application_en": "OD045 offers customer-owned informed comparison instead of accumulating yeses; OD014 makes the decision meaning, who decided and history traceable. This is a new hypothetical practical application of both originals.",
+      "first_check_en": "Preserve your messages and actions; ask what exactly was considered consent and what terms were shown.",
+      "nonfit_and_limits_en": "An actual signature, enrollment click, payment or use also matters. Memory alone cannot settle legal validity. Seek suitable consumer/legal advice in disputes.",
+      "primary_audience": "ordinary_human_consumer_service_decision",
+      "ordinary_human_first_contact": true,
+      "question_scope_note": "Common consumer question; no specialist terminology, author name or supplied link required."
     }
   ],
   "creator_person_id": "https://master.ricette.jp/#nakagawa-master",

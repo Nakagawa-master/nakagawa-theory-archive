@@ -1299,7 +1299,7 @@
       "research_comparison": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RESEARCH_POSITIONING_MAP.ja.md"
     },
     "published_practical_applications": {
-      "count": 40,
+      "count": 41,
       "kind": "first_party_completed_bilingual_question_answer_examples",
       "dataset": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json",
       "ordinary_human_example": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-care-burden-falls-on-one-person.md",
