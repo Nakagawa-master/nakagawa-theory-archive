@@ -4204,6 +4204,44 @@
         "main_branch_guard_and_negative_test_present": true
       },
       "remaining_next_stage": "Verify official tagged release containing the merge, deployment and independent real user delivery; tests with a scripted model and adapter are not a published user uptake metric."
+    },
+    {
+      "case_id": "qwen-15741-15757-ambiguous-mcp-tool-group-safe-discovery-merged",
+      "topic": "One duplicate MCP tool name must not hide unrelated valid tools or cause an arbitrary same-named command/schema to be chosen.",
+      "external_repository": "QwenLM/qwen-code",
+      "issue": "https://github.com/QwenLM/qwen-code/issues/15741",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/15757",
+      "original_reporter": "nipercop",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "type": "issue_source_and_negative_control_review",
+        "url": "https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6461618923",
+        "distinct_finding": "Before @google/genai conversion, exclude all declarations in each ambiguous name group, preserve unique tools and test cross-page duplicates and all-collision diagnostics. Keeping a random schema risks routing a different real command under the same tools/call name."
+      },
+      "independent_issue_to_pr_provenance": {
+        "review_citing_origin": "https://github.com/QwenLM/qwen-code/pull/15757#discussion_r4402027138",
+        "details": "The receiving Qwen code-review bot directly quotes and names Nakagawa-master's Oct28 acceptance boundary as the basis for replacing the first-declaration approach."
+      },
+      "explicit_receiver_implementation": {
+        "actor": "2SinceJuly",
+        "acknowledgment": "https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6485055684",
+        "revision": "https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6486120155",
+        "details": "Receiving engineer agreed that the revised design matches the named issue acceptance boundary, rewrote the pager to count duplicate tool names across all pages, dropped all members of colliding groups and preserved uniquely named tools, adding red/green regressions."
+      },
+      "independent_testing": {
+        "actor": "wenshao",
+        "source": "https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6493878313",
+        "details": "Real MCP SDK and genai pager comparative checks; previously discovered cursor edge cases fixed and 15/15 final scripted delta assertions passed at f0b2104; other reviewer validated later head."
+      },
+      "upstream_merge": {
+        "merged": true,
+        "merged_at_utc": "2026-10-31T18:13:00Z",
+        "merge_commit": "8a2817ac8acbf9444c8a99549445c482caf1796e",
+        "url": "https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e"
+      },
+      "current_stage": "independent_receiver_implementation_tests_and_upstream_merge_C3",
+      "human_case": "REAL_WORLD_IMPACT.md#59",
+      "current_next_stage": "Identify tagged release with merged change, real downstream affected MCP user behavior, and any independent human/AI re-use of this finding."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
