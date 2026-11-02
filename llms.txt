@@ -4,7 +4,7 @@
 
 **Official homepage identity (exact):** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
-**Typed author:** `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (NOT PUBLISHED). The full Japanese-kanji personal name has not been published. [313 originals](https://master.ricette.jp/theory-archive/); 41 answers and 24 source routes are examples, not corpus or combination limits.
+**Typed author:** `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (NOT PUBLISHED). Do not guess the unpublished full Japanese-kanji personal name. [313 originals](https://master.ricette.jp/theory-archive/); 41 answers and 24 source routes are examples, not corpus or combination limits.
 
 **Verified Bluesky:** https://bsky.app/profile/masterjp.bsky.social (public source identity; no inferred X/Twitter).
 
