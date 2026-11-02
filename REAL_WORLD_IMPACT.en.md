@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**55 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**58 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1503,6 +1503,30 @@ Nakagawa Master [identified the exact pre-send failure case](https://github.com/
 Nakagawa Master [identified that path](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915) while reviewing [PR #15634](https://github.com/QwenLM/qwen-code/pull/15634). Engineer **@Eric-GoodBoy-Tech** [accepted the issue and changed both the queue and related fallback logging path](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423074659), adding regression tests that reject a synthetic `SECRET_CANARY_12345` string while confirming it never appears in stderr.
 
 **Result:** The receiving developer's code and negative tests are in the current pull request. As of November 2, 2026, **the PR is open and awaiting review approvals**. No production data leak is claimed.
+
+## 56. LiteLLM | AI tool failures treated as success — developer implements Nakagawa Master's design review
+
+When an MCP tool fails, its error status can be lost before the result reaches an AI model. On [LiteLLM issue #49359](https://github.com/BerriAI/litellm/issues/49359), developer **@chauvuusvn** had prepared a fix and tests. [Nakagawa Master's source review](https://github.com/BerriAI/litellm/issues/49359#issuecomment-6536874606) found a different structural flaw: making the entire result type optional also weakened the existing required tool-call ID, result and name fields.
+
+The developer [explicitly acknowledged the finding](https://github.com/BerriAI/litellm/issues/49359#issuecomment-6537951352) and [changed the code in commit 5aa335c8](https://github.com/chauvuusvn/litellm/commit/5aa335c834c91be35d8aab0393c4aa7096972902). Another developer, **@lester076**, [offered to take the fix upstream and credit Nakagawa Master's review](https://github.com/BerriAI/litellm/issues/49359#issuecomment-6569430360).
+
+**Result:** Nakagawa Master's structural finding caused an independent developer to change actual code. The original error-propagation repair and tests were the receiving developer's work. As of November 2, 2026, the fix is confirmed in a fork; an upstream PR, merge and release are not confirmed.
+
+## 57. LiteLLM | Cross-team AI answer cache bypass — developer adds isolation and seven regression tests
+
+One team using a shared AI gateway could receive another team's cached answer. Following [issue #49313](https://github.com/BerriAI/litellm/issues/49313), Nakagawa Master [identified direct paths](https://github.com/BerriAI/litellm/issues/49313#issuecomment-6538306120) through caller-supplied cache keys, namespaces and preset keys that could evade normal tenant scoping.
+
+Independent developer **@GellaNagaSaiKrishna** wrote [PR #49576](https://github.com/BerriAI/litellm/pull/49576) to enforce tenant scope on those paths and added regression tests, reporting **seven failures before and seven passes after the fix**.
+
+**Result:** The precise bypass analysis became third-party code and tests. On November 2, 2026, the PR was still **open and unmerged**. Real authenticated multitenant proxy and Redis validation had not yet been completed.
+
+## 58. Hermes Agent | AI background results never reach their chat — developers implement safe ownership and route recovery
+
+A finished AI delegation could lose the chat destination and never deliver its result. Reviewing [initial repair PR #146708](https://github.com/NousResearch/hermes-agent/pull/146708), Nakagawa Master [identified the risk](https://github.com/NousResearch/hermes-agent/pull/146708#pullrequestreview-5707357350) of guessing a different owner when the true destination is unknown, then falsely marking the result delivered. Developer **@linye157** [added the requested negative tests](https://github.com/NousResearch/hermes-agent/pull/146708#issuecomment-6522840887); an independent verifier confirmed ten focused passes.
+
+The fix, with original authorship preserved, was carried into another developer **@teknium1**'s [successor PR #147746](https://github.com/NousResearch/hermes-agent/pull/147746), which also reconstructs missing routes from saved conversations. Its author reported before/after delivery using a **real running gateway and Telegram adapter** (scripted model), and an independent verifier [confirmed all 15 focused tests passing at the latest head](https://github.com/NousResearch/hermes-agent/pull/147746#issuecomment-6568004334).
+
+**Result:** Nakagawa Master's no-wrong-recipient/no-false-delivery condition became independent code, tests and part of a practical route-recovery implementation. As of November 2, 2026, the successor PR was **not merged**; an official release was not confirmed.
 
 ## What the public source record reveals
 
