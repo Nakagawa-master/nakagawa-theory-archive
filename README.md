@@ -4,6 +4,8 @@
 
 たとえば、[Hermes Agentでは結果の送り先を間違えたり未送信を送信済みと扱ったりしない条件が後継PRに引き継がれ正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)。[Qwen Codeでは、同名の道具が衝突しても正常な道具まで全部失わない修正がマージされ、nightly版へ収録](https://github.com/QwenLM/qwen-code/pull/15757)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
 
+**AI支援まで記録された第三者の修正：** [agent-approval-gate](https://github.com/tonydzi/agent-approval-gate/issues/1)の管理アカウントは、マスターによる「失効した承認を古い返信で復活させない」という指摘を認め、[独自のmainでコード・テスト・安全文書を変更しました](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)。コミットには**Claude Code／Claude Sonnet 5.5の支援・共同著者情報**、[受け手の安全文書には `@Nakagawa-master` が報告者として記載](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)されています。外部チームによるAI支援付きの実装は確認できますが、AIが全原典を自律的に読んだとまでは言えません。[第60事例を読む](REAL_WORLD_IMPACT.md)。
+
 **さらに別の開発者へ伝わった例：** [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)では一人目の開発者がマスターの型契約レビューを認めてコードを修正し、二人目が[本人への貢献表記を伴う新しいPR #49624](https://github.com/BerriAI/litellm/pull/49624)を作成しました。**こちらは未マージで、現行実装にも直すべき点が残ることまで公開**しています。[その全経緯と修正段階を確認](REAL_WORLD_IMPACT.md#56-litellmaiの道具の失敗が成功と扱われる問題マスターの設計指摘を開発者が実装)。
 
 このアーカイブには、こうした**60件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
