@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は53件。** OpenClaw、PostHog、MemberJunction、Qwen Code、PydanticAIなど、別々の開発現場で中川マスターが示した問題や反例と、その後に開発者自身が行った変更を、元の議論まで遡って確かめられます。
+**AIの動作、安全性、権限、実際の処理結果。その見落とされがちな問題を中川マスターが発見し、別の開発者がコードやテストを変えた記録です。** Qwen Code、OpenClaw、PostHog、MemberJunction、PydanticAIなどのオープンソース開発で、指摘を受けた人々が何を検証し、何を実装し、どこまで製品に取り込んだかを一次資料で確かめられます。**現在55事例を掲載しています。**
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -10,6 +10,8 @@
 - **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。[事例3を読む](#3-memberjunction同じidと上書きしてよい所有権を分ける)。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。[事例1を読む](#1-posthogaiが提示した数値とposthog自身の測定値を分ける)。
 - **[Qwen Code｜読み取りだけのコマンドを拒否する一方、保護ファイルへの書き込みを見逃す権限判定](https://github.com/QwenLM/qwen-code/pull/15681)** — 当初の `2>&1` 誤拒否とは別に、実際の `>&protected.txt` の書込先を解析器が `&protected.txt` と誤認すると、特定ファイルへの書込禁止が一致しない点を[中川マスターが指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が実際の権限判定で修正前 `allow`／修正後 `deny` を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、自ら修正・回帰テストを実装した[#15681 が2026年11月1日にマージ](https://github.com/QwenLM/qwen-code/pull/15681)。配布版への収録と一般利用者の効果は別途確認が必要です。
+- **[Qwen Code｜AIに届けていない警告を「送達済み」と記録する問題](https://github.com/QwenLM/qwen-code/pull/15559)** — 中川マスターが、次のAI呼び出し前に処理が終わる反例を発見。[開発者が指摘を認めて実装とテストを修正](https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110)し、[2026年11月1日に正式マージ](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7)。[事例54](#54-qwen-codeaiに注意を伝えたつもりでも実際には届いていない問題を修正マージ)。
+- **[Qwen Code｜処理できなかったチャット内容がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)** — 中川マスターの[具体的な指摘](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915)を受け、別の開発者が**本文をログへ出さない修正と再発防止テスト**を実装。[事例55](#55-qwen-code処理を断ったチャット内容が内部ログに残る問題を指摘開発者が修正)。**こちらはマージ前です。**
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。[事例47を読む](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。[事例41を読む](#41-pydanticai同じidempotency-keyの再送が未参照メッセージを増やさない)。
 
@@ -17,15 +19,17 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-## 確認された変更を、次の現場で使う
+## AIの「変更禁止」は、実際のファイルを守れていたか
 
-この記録は第三者が何を変更したかを確かめる場所であり、その成果から次に起こせる行動もここから読めます。**外部で変わった成果 → 別の現場へ移植可能な検査 → 独立した再検証**という順にたどります。外部リポジトリでの変更記録と、このアーカイブ自身が制作した再利用資料は区別します。
+AIに「このファイルは変更しないで」と指示しても、実行するシェルと権限チェックが**別のファイル名を認識していたら、禁止が機能しない**ことがあります。
 
-**使える検査例：** [AIの「変更禁止」は実際のファイルを守れているか？（日本語・English）](human-translation/field-guides/ai-agent-shell-permission-real-write-destination.md)。[Qwenの元報告 #15600](https://github.com/QwenLM/qwen-code/issues/15600)での局所的な誤拒否に対し、[中川マスターは保護された実ファイルの書き込み先を見落とす問題を独立に指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が権限判定の修正前後を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)して自分の[コード・回帰テストを実装、正式マージ](https://github.com/QwenLM/qwen-code/pull/15681)まで進めた事例です。新しい資料では、特定製品の操作を移すのでなく、**シェルの実作用先・権限解析器の理解・最終許可／拒否**を七つの正反対照テストで見分ける方法として公開しました。
+中川マスターが[Qwen Codeの問題報告](https://github.com/QwenLM/qwen-code/issues/15600)から見つけたのは、まさにこの違いでした。読み取り操作を間違って拒否する一方、実際には保護ファイルへ書き込む操作を見落とす可能性を[指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。元の問題報告者が[修正前後の権限判定を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、コードと回帰テストを変更。修正は[Qwen Codeにマージ](https://github.com/QwenLM/qwen-code/pull/15681)されました。
 
-技術的な原因を読む人は[OD003 成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[OD069 接続プロトコル標準論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)の原典へ戻れます。原典はBashパーサーの仕様書ではなく、**局所的判断と実際の成立条件／権限・範囲の接続**を考える独立した基礎です。公開したテスト資料そのものの作成を、別の開発者による新しい採用と数えることはしません。別の受け手が実際に動いた場合は、その側の議論・diff・テスト・状態を根拠に、同じ記録へ進展を追記します。
+**[この成果から作った実用ガイド（日本語・英語）](human-translation/field-guides/ai-agent-shell-permission-real-write-destination.md)**には、同種の問題を自分のAIツールで確かめるための7つのテスト例を掲載しています。見かけ上の許可・拒否だけではなく、実際にどのファイルへ作用したかを照らし合わせる方法です。
 
-**53の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+さらにその考え方は、中川マスターの公開原典[『成立条件論・第0論』](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[『中川式 接続プロトコル標準論』](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)にも通じています。
+
+**55の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1641,6 +1645,22 @@ Qwen Codeの[修正PR #15515](https://github.com/QwenLM/qwen-code/pull/15515)は
 **現在段階：** 外部開発者 **`jabrailkhalil`** が独立リポジトリで実装・テストを作成し、CIの10ジョブが成功しています。元の公開議論で参照された中川マスターの[原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)から、判断の因果・関係・再合意可能性という理論上の背景も直接読めます。
 
 ---
+
+## 54. Qwen Code｜AIに注意を伝えたつもりでも、実際には届いていない問題を修正・マージ
+
+AIが同じ操作を何度も繰り返したとき、システムは注意を促す警告を用意します。しかし警告を用意した直後、次のAI呼び出しが始まる前に処理が終わっても、旧実装では**「警告を届けた」と記録される**可能性がありました。記録が現実と食い違う問題です。
+
+中川マスターは[PR #15559](https://github.com/QwenLM/qwen-code/pull/15559)で、処理回数の上限に達して次のモデル呼び出しが発生しない反例を[コードとテスト条件に即して示しました](https://github.com/QwenLM/qwen-code/pull/15559#pullrequestreview-5644089125)。これを受け開発者 **@suzhiguo7** は[指摘を認め](https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110)、実際にモデルからの応答が始まった時点で送達を記録するよう改修。**送っていない場合は記録しない／実際に届いた場合は一度だけ記録する**という両方向のテストも追加しました。
+
+**成果：** [2026年11月1日、修正はQwen Codeへ正式マージ](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7)。中川マスターの反例が、別の開発者自身によるコード変更と再発防止テストにつながったことを確認できます。特定の安定版への収録や実利用者の効果は別途確認が必要です。
+
+## 55. Qwen Code｜処理を断ったチャット内容が内部ログに残る問題を指摘、開発者が修正
+
+AIへ送った文章が、キューの容量を超えて受け付けられなかった。そのとき、**受け付けなかったはずの文章が開発者用ログに書き込まれてしまう**可能性がありました。個人的な内容や認証情報を含む会話では、重要なプライバシー上の見落としです。
+
+中川マスターは[開発中のPR #15634](https://github.com/QwenLM/qwen-code/pull/15634)を確認して[具体的なログ出力箇所を指摘](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915)。開発者 **@Eric-GoodBoy-Tech** は[問題を認め、修正しました](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423074659)。ログには容量や拒否理由だけを残し、メッセージの本文は出力しないよう変更。**架空の秘密文字列 `SECRET_CANARY_12345` がログに出現しないことを確かめるテスト**も加え、関連する別のログ経路も修正しています。
+
+**成果：** 開発者によるコードと再発防止テストの追加は、現在のPR差分で確認済みです。ただし**2026年11月2日時点では未マージで、レビュー承認待ち**。実利用者の情報が実際に漏れたことを示す記録ではありません。
 
 ## 公開された成果と、原典へ戻る道筋
 

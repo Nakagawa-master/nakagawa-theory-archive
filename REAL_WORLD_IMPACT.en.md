@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**53 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**55 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -14,6 +14,8 @@ You can also explore [Nakagawa Master's own GitHub activity](https://github.com/
 - **MemberJunction | Matching an ID is not authorization to overwrite a record.** The receiving team implemented the distinction and published [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2). See case 3.
 - **PostHog | Numbers asserted by a producer are not the same as measurements made by the product.** The receiving team split the work into [three merged successor PRs](https://github.com/PostHog/posthog/pull/107795) with recorded dev / US / EU production deployments. See case 1 for the current feature-flag and receiving deployment details.
 - **[Qwen Code | A permission parser both rejected read-only commands and could miss a protected write destination](https://github.com/QwenLM/qwen-code/pull/15681).** Beyond the original `2>&1` false denial, [Nakagawa Master pointed out](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134) that `>&protected.txt` writes `protected.txt`, while the old parser checked `&protected.txt`, so a path-specific deny could miss it. [The original reporter independently tested the actual permission decision, changing `allow` to `deny`](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175), wrote the fix and regression tests, and [PR #15681 merged on November 1, 2026](https://github.com/QwenLM/qwen-code/pull/15681). Inclusion in a release and independent end-user impact remain unverified.
+- **[Qwen Code | A prepared AI warning was falsely counted as delivered](https://github.com/QwenLM/qwen-code/pull/15559).** Nakagawa Master identified the missing send boundary; the [engineer acknowledged and fixed it with tests](https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110), and [PR #15559 merged on November 1](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7). See case 54.
+- **[Qwen Code | Rejected private chat text appeared in a diagnostic path](https://github.com/QwenLM/qwen-code/pull/15634).** Following [Nakagawa Master's finding](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915), the [developer changed the code and added canary-based privacy tests](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423074659). This PR is still open. See case 55.
 - **Qwen Code | A previously recorded stop is not proof that this particular AI call stopped.** Receiving developer `wenshao` implemented and [merged the correction on October 12](https://github.com/QwenLM/qwen-code/pull/13923). See case 47.
 - **PydanticAI | Skipping a duplicate AI history request can still leave unwanted writes.** The developer [reproduced and fixed the issue](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879); [the fix merged](https://github.com/pydantic/pydantic-ai/pull/9982). See case 41.
 
@@ -32,11 +34,13 @@ Each case traces:
 
 Follow the full course of each contribution: initial question, independent engineering decision, code and tests, integration, release and observed use.
 
-## Reuse an independently merged finding in another real project
+## When an AI says a file is protected, is it actually protected?
 
-[**Practical field guide (Japanese + English): Does the AI agent protect the file the shell really writes?**](human-translation/field-guides/ai-agent-shell-permission-real-write-destination.md) This offers **seven portable positive/negative controls** and a five-step method for comparing the actual shell file effect, parser-attributed destination, and final authorization verdict. It is based on [Nakagawa Master's distinct finding](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134), the [independent original reporter's pre/post permission-manager verification](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175), and the [reporter's merged code and regression tests](https://github.com/QwenLM/qwen-code/pull/15681). The receiving engineer remains the author of that fix.
+A coding agent may say it has blocked writes to a particular file. But its decision is only as reliable as its understanding of the **real destination the shell opens**.
 
-The reusable *reasoning structure* connects two independently published originals: [OD003, Establishment Conditions](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) and [OD069, Connection Protocol](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/), both by Nakagawa Master (Keisuke Nakagawa). Those originals are not Bash implementation specifications. **Creating this guide is first-party distribution of verified evidence, not proof of a second team adopting it.** Future independent reuse requires its own receiving-side PR, code, tests, or other primary evidence.
+While examining a [Qwen Code issue](https://github.com/QwenLM/qwen-code/issues/15600), Nakagawa Master identified the opposite side of an existing false-denial bug: a protected-file write could be mistaken for a write to another filename. The original reporter [verified the incorrect and corrected authorization decisions](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175), wrote the patch and regression tests, and [the fix was merged](https://github.com/QwenLM/qwen-code/pull/15681).
+
+The [practical Japanese/English guide](human-translation/field-guides/ai-agent-shell-permission-real-write-destination.md) turns this finding into **seven checks that other developers can use** to compare what the shell actually does with what the agent permits or denies. It also connects the reasoning to Nakagawa Master's published works on [Establishment Conditions](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) and the [Connection Protocol](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/).
 
 ## What these distinctions can mean in practice
 
@@ -1483,6 +1487,22 @@ The developer then built [pydantic-ai-decision-inbox](https://github.com/jabrail
 **Verified stage: an independent contributor's working repository and passing CI**, not an upstream PydanticAI merge, production tool installation, real payment, or universal exactly-once guarantee. [Nakagawa Master's *Agreement Memory* original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) appears as a conceptual provenance link in the original review: the record does **not** establish that the third-party author independently read that Parent or derived all engineering design from it. Code and test authorship belongs to **`jabrailkhalil`**.
 
 ---
+
+## 54. Qwen Code | An AI warning was recorded as delivered before the model received it — fixed and merged
+
+**The problem:** An agent can prepare a warning when a model repeats the same action. If the run ends before the next model request, merely preparing that warning does not mean it was delivered. Yet the previous implementation could record the warning as delivered too early.
+
+Nakagawa Master [identified the exact pre-send failure case](https://github.com/QwenLM/qwen-code/pull/15559#pullrequestreview-5644089125) in [PR #15559](https://github.com/QwenLM/qwen-code/pull/15559). Implementing engineer **@suzhiguo7** [agreed and changed the code and regression tests](https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110), so delivery is committed only after the next model response begins. The tests distinguish a run that stops before delivery from a warning actually received once.
+
+**Result:** [PR #15559 merged into Qwen Code on November 1, 2026](https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7). The implementer wrote the patch; Nakagawa Master contributed the concrete missing condition and test design. A stable release or measured end-user benefit is not yet established.
+
+## 55. Qwen Code | Chat content rejected at capacity could be written to logs — developer fixed and tested it
+
+**The problem:** When an AI agent cannot accept another message because its queue is full, it should log the refusal without printing the private user message. The existing diagnostic included the message text.
+
+Nakagawa Master [identified that path](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915) while reviewing [PR #15634](https://github.com/QwenLM/qwen-code/pull/15634). Engineer **@Eric-GoodBoy-Tech** [accepted the issue and changed both the queue and related fallback logging path](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423074659), adding regression tests that reject a synthetic `SECRET_CANARY_12345` string while confirming it never appears in stderr.
+
+**Result:** The receiving developer's code and negative tests are in the current pull request. As of November 2, 2026, **the PR is open and awaiting review approvals**. No production data leak is claimed.
 
 ## What the public source record reveals
 
