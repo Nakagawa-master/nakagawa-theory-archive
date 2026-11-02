@@ -2,6 +2,8 @@
 
 **Published source coverage:** The original works of **中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）** include the Tomoshibi vision, structural theory, causal theory, human/AI civilization, social institutions and practical models across life, work, education, culture, philosophy, ethics and the future of civilization.
 
+**A question-first path for people and browsing AI, without an MCP install:** [Download and open the local browser question explorer](machine-discovery/question-source-explorer.html) to search the **41 already authored bilingual answers** and **all 313 equally standing original Japanese source briefs** from a question the reader actually has. GitHub displays HTML as source: use **Raw → save as `.html` → open locally in a browser**. The question stays local; the public JSON is read-only. English/Chinese full-corpus lexical matches are limited, so [English original-source reading paths](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md) and [multilingual supplemental routes](machine-discovery/problem-to-theory-origin-index-v1.json) remain available. This is source discovery, not a claim that any unconnected model has visited or adopted the material.
+
 **One human-readable, source-linked first contact in Japanese / English / Chinese:** [Why the independent engineering changes matter outside engineering](WHY_THIS_IMPACT_MATTERS.md). The underlying code, authors and unverified outcomes remain separate.
 
 ## Verified outside developers changed actual software — source-first, then read the original author
