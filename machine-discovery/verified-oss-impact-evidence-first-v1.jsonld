@@ -21,7 +21,7 @@
         "https://zeroichi.media/author/masterjp"
       ],
       "disambiguatingDescription": "中川マスター / Nakagawa Master is the published pen name of Keisuke Nakagawa. MasterJP is his author-confirmed byline on ZEROICHI at https://zeroichi.media/author/masterjp. This mapping identifies that publisher's byline; it is not a name match to unrelated MasterJP accounts. Original works: https://master.ricette.jp/. GitHub author account: https://github.com/Nakagawa-master.",
-      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. Thirteen merged GitHub PRs in seven receiving repositories have evidence links in this dataset."
+      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. Fourteen merged GitHub PRs in eight receiving repositories have evidence links in this dataset."
     },
     {
       "@type": "CreativeWorkSeries",
@@ -44,7 +44,7 @@
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset",
       "name": "Nakagawa Master — verified independent OSS integration and merge evidence",
       "alternateName": "中川マスター：外部OSSへの実装・マージ実績の一次証拠",
-      "description": "Evidence-first map of 13 merged GitHub pull requests in 7 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Qwen and Hermes official release ancestry is separately confirmed. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 60 cases at different stages.",
+      "description": "Evidence-first map of 14 merged GitHub pull requests in 8 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM, Turboembed). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Qwen and Hermes official release ancestry is separately confirmed. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 61 cases at different stages.",
       "creator": {
         "@id": "https://master.ricette.jp/#nakagawa-master"
       },
@@ -66,17 +66,17 @@
         {
           "@type": "PropertyValue",
           "name": "Individually checked merged PRs in this dataset",
-          "value": 13
+          "value": 14
         },
         {
           "@type": "PropertyValue",
           "name": "Distinct independent receiving GitHub repositories in this dataset",
-          "value": 7
+          "value": 8
         },
         {
           "@type": "PropertyValue",
           "name": "Documented cases in the linked human impact record, across various evidence stages",
-          "value": 60
+          "value": 61
         },
         {
           "@type": "PropertyValue",
@@ -723,6 +723,56 @@
               "name": "Native GitHub merge commit",
               "value": "ae7901552e1907203e658e661499f0bfc1937f7f",
               "url": "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7f"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/ai-pipestream/turboembed/pull/1330",
+          "name": "Turboembed — reject token-ineligible NLI candidates before the max_pairs cap, keeping eligible claim relationships inspectable",
+          "url": "https://github.com/ai-pipestream/turboembed/pull/1330",
+          "dateModified": "2026-11-03",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/ai-pipestream/turboembed/issues/1285"
+          },
+          "citation": [
+            "https://github.com/ai-pipestream/turboembed/pull/1250#issuecomment-6393876473",
+            "https://github.com/ai-pipestream/turboembed/issues/1285",
+            "https://github.com/ai-pipestream/turboembed/pull/1330",
+            "https://github.com/ai-pipestream/turboembed/commit/1a984f0a3c0fa35363124b7fa9903de16c5886e7",
+            "https://github.com/ai-pipestream/turboembed/commit/06fff22398ef226f7500f14b98ace7790e3fca2e",
+            "https://github.com/ai-pipestream/turboembed/commit/6a2ba1d67ef7d92256d569dcd5125add676cc96e"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "ai-pipestream/turboembed"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master identified the filter-after-max_pairs truncation failure in a source-level PR #1250 review and authored upstream issue #1285. Independent @krickert explicitly closed that original issue in separate PR #1330, changed implementation order and red/green regressions, added real tokenizer/encoder budget tests, bumped CLAIM_VERSION to 2 with historical hash preservation, and merged. PR #1250 predates the implemented correction and is NOT counted as an additional source-driven merged fix. Actual installed-user benefit and an applicable shipped software release are not verified."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "turboembed-nli-eligible-claim-coverage"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "6a2ba1d67ef7d92256d569dcd5125add676cc96e",
+              "url": "https://github.com/ai-pipestream/turboembed/commit/6a2ba1d67ef7d92256d569dcd5125add676cc96e"
             }
           ]
         }
