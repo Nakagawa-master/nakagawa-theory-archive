@@ -54,9 +54,10 @@ def main():
     assert run.stderr == "", run.stderr
     replies = {obj["id"]: obj for line in run.stdout.splitlines()
                if (obj := json.loads(line)).get("id") is not None}
-    assert replies[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
+    assert replies[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "ai-answer-guard"
     assert len(replies[2]["result"]["tools"]) == 9
-    print("PASS: Antigravity+Qwen+Gemini manifests → SAME original real MCP, 9 tools, no new server")
+    assert [tool["name"] for tool in replies[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
+    print("PASS: Antigravity+Qwen+Gemini manifests → SAME AI Answer Guard MCP, 9 tools with preflight first")
 
 if __name__ == "__main__":
     main()
