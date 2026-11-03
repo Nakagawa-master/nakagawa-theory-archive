@@ -1,12 +1,35 @@
 # AI Answer Guard — everyday answer integrity, before your AI sends or acts
 
-**A default-ready, local integrity guard for AI assistants.** It helps assistants detect evidence copied from the same source, contradictory tool-success receipts, missing action authorization and difficult-to-reverse effects **before** confidently claiming completion. It gives concrete next checks and repair steps to help the assistant proceed.
+**A locally runnable integrity guard for AI assistants.** It helps assistants detect evidence copied from the same source, contradictory tool-success receipts, missing action authorization and difficult-to-reverse effects **before** confidently claiming completion. It gives concrete next checks and repair steps to help the assistant proceed.
 
 **Start with work you already do, without knowing any author's theories.** Three ordinary examples: **(1) Before reporting “sent”**, a provided `failed` or `pending` send receipt makes `preflight_ai_answer_and_action` return a hold/pending finding and a corrective next step. **(2) Before claiming “three independent sources”**, `audit_citation_independence` checks whether the supplied source-root IDs actually represent copied reports and whether a declared independent source refutes the claim. **(3) Before a consequential action**, the preflight flags missing current permission or unconfirmed arguments, and distinguishes irreversible effects that deserve review. It checks **only facts and receipts supplied by the host**, not live mail, live permissions or hidden model state. No proof of remote work is invented.
 
 **Optional depth, not a prerequisite:** The *same* MCP can also explore all **313 published official derivative→canonical Parent links** and 24 curated direct-original routes, if the user or independently deciding AI wants the original theoretical context. None of these searches is needed to run the everyday guard; no separate theory search app, second server or author-knowledge requirement exists. For a substantive source-based conclusion, actually read the Parent original.
 
 This tool is **local, read-only and Python standard-library only**. No API keys, accounts, paid services, outbound HTTP calls, data uploads or additional model/provider access. It evaluates the evidence and action status supplied by your AI/host. It doesn't intercept every answer or independently establish that a source is true; an installed AI host chooses whether and when to call it.
+
+## First, test the actual checker in your own terminal (no MCP client required)
+
+The following run the **same local Python preflight** exposed to third-party AI assistants. They require Python 3 and the GitHub source, not API credentials, a model subscription or knowledge of Nakagawa Master. The checker itself sends no message, purchases nothing and does not browse the network.
+
+```sh
+git clone https://github.com/Nakagawa-master/nakagawa-theory-archive.git
+cd nakagawa-theory-archive
+python3 machine-discovery/nakagawa-theory-mcp.py --guard-demo
+python3 machine-discovery/nakagawa-theory-mcp.py --self-test
+```
+
+The `--guard-demo` performs a real local preflight on **explicitly illustrative input**, not a claimed remote incident. It checks copied reports falsely counted as independent, a failed send, and an unauthorized external edit. It should return **three separate HOLD findings**, `RECHECK_BEFORE_USE`, and concrete next checks. You can see both the inputs and exact output.
+
+On your own supplied observation JSON (using `claims`, `tool_results`, `planned_actions` as applicable):
+
+```sh
+python3 machine-discovery/nakagawa-theory-mcp.py --guard-input your-observations.json
+```
+
+Exit **1** means HOLD/PENDING, **0** means none of these limited checks detected a conflict, **2** means input invalid. A zero is NOT a factual truth certificate, permission authentication or proof of a remote action. Compare the actual receipts yourself.
+
+**Version / delivery distinction:** GitHub **source checkout v1.2.1** includes this correction and practical demo. Published **MCPB v1.2.0** is an earlier immutable build without these later fixes. The reproducible **v1.2.1 release candidate** can be generated locally with `python3 machine-discovery/build-original-router-mcpb.py`, yielding `dist/ai-answer-guard-1.2.1.mcpb`. **A build script is not proof of a published release, external download or independent installation.** Do not market frozen v1.2.0 as current-source behavior.
 
 ## Antigravity CLI — install directly from GitHub
 
@@ -49,7 +72,7 @@ Requires a compatible Gemini CLI, `git`, and a usable `python3` executable. Rest
 
 <details><summary>Claude Desktop — download the MCPB and install</summary>
 
-1. Download **[AI Answer Guard MCPB v1.2.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb)** (published v1.2.0 release).
+1. **Older frozen build:** Download **[AI Answer Guard MCPB v1.2.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb)** (published v1.2.0 release).
 2. Claude Desktop → **Settings → Desktop app → Extensions → Manage → Advanced settings → Install Extension…** and choose the file.
 3. In Claude Desktop, check that the server and nine tools appear, and use it in regular sessions.
 
