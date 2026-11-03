@@ -46,7 +46,7 @@ A lower stage must not be reported as a higher one.
 
 ## Current reusable challenges
 
-You may use any public source in the archive. The current open challenge set is kept in the [public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) and the [machine-readable challenge set](machine-discovery/independent-reuse-challenges-v1.json). Those live routes should be preferred over a frozen count in this protocol.
+You may use any public source in the archive. The current open challenges are in the [machine-readable challenge set](machine-discovery/independent-reuse-challenges-v1.json). The former owner-updated issue #402 was **retired and closed**: its comments were not independent submissions. To report a real independent test or counterexample, use the [dedicated evidence form](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml). Those live routes should be preferred over a frozen count in this protocol.
 
 Current starting points include:
 
