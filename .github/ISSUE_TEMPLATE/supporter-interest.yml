@@ -1,0 +1,50 @@
+name: Supporter / sponsor interest (public, no payment details)
+description: Express optional interest in supporting independent OSS testing and public original research; NOT a payment, contract or endorsement.
+title: "[Support interest] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for considering support for Nakagawa Master's public source-based work.
+
+        **This issue is PUBLIC. Do not enter a real name, email address, telephone, payment details, banking/tax data, private organization plans, contracts or specific financial amounts.**
+        This form does not accept payments, establish any sponsorship or promise benefits.
+        For a confidential or financial proposal, use the [official author's private contact form](https://master.ricette.jp/contact/).
+        See the public [support and evidence overview](../../SUPPORT_THIS_WORK.md).
+  - type: dropdown
+    id: support_type
+    attributes:
+      label: What kind of support interests you?
+      description: An expression of interest only; no money is requested or accepted here.
+      options:
+        - Possible future recurring financial sponsorship
+        - Possible future one-time financial sponsorship
+        - Organization / institutional open-source support (initial interest only)
+        - In-kind testing, documentation, translation or accessibility
+        - Independent editorial or educational collaboration
+        - Other / still exploring
+    validations:
+      required: true
+  - type: textarea
+    id: public_value
+    attributes:
+      label: Which part of the public work is genuinely useful to you?
+      description: A brief, non-sensitive sentence or public source link is sufficient. No endorsement is required.
+      placeholder: "For example: source-grounded AI budget-window checks; reproduced tool-boundary bug; one original Parent that helped a real problem."
+    validations:
+      required: true
+  - type: textarea
+    id: nonfinancial_next_step
+    attributes:
+      label: Optional public, non-financial next step
+      description: What kind of publicly verifiable work would be most useful? Avoid commitments, contact details or confidential terms.
+      placeholder: "For example: a reproducible case or public issue URL to examine."
+    validations:
+      required: false
+  - type: checkboxes
+    id: public_boundary
+    attributes:
+      label: Public and independent decision boundary
+      options:
+        - label: I understand this is public, contains no personal/payment details, creates no contract and does not imply an existing sponsor or a paid endorsement.
+          required: true
