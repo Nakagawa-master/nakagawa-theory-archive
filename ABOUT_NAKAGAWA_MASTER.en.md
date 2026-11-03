@@ -12,6 +12,8 @@ Nakagawa Master is the pen name of **Keisuke Nakagawa**, whose personal name is 
 
 Explore the original works through their distinctive definitions, conditions, counterexamples, revisions and real applications.
 
+**An independent editor also carried one specific source contribution into a publicly deployed multilingual publication:** After Nakagawa Master submitted the story subject, [The Daily AI Pulse editor @GadDev authored and merged PR #253](https://github.com/GadDev/daily-ai-pulse/pull/253), with [an English article](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/) and [reviewed French version](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/) distinguishing the initial Qwen incident reporter from [Master's proposed test of pinned review-source integrity](https://github.com/QwenLM/qwen-code/issues/15507#issuecomment-6394240323). The [recipient-owned production Firebase deployment and live endpoint check succeeded](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382) for the exact merged commit. This is genuine third-party editorial publication, not third-party spontaneous discovery, measured readers, independently installed fixes or popularity.
+
 ## In 3–10 seconds
 
 ### Three everyday situations, three distinct questions
