@@ -56,9 +56,9 @@ The links contain the already-authored answer text, the true author and the orig
 
 **Specialist AI developer/operator answer (not a common everyday-human question):** [A response appears to contain another user's data: how to inspect cache and authorized recipient boundaries](human-translation/answers/ai-response-appears-to-belong-to-another-user.md). This case is relevant to engineers, platform operations and directly affected users, not a representative mass-audience first-contact concern.
 
-## AI Answer Guard — everyday checks for answers and actions
+## AI Answer Guard — concrete protection for any user's AI work
 
-Before your assistant publishes an answer, claims a tool call succeeded, or performs a consequential action, it can check declared independent evidence roots, actual reported tool outcomes and action boundaries and receive actionable next checks. The **same original MCP** includes all 313 published derivative→canonical Parent source links and preserves the 24 selected original routes. **[One local installation for Claude Desktop (.mcpb), Qwen Code and Codex](AI_ANSWER_GUARD_INSTALL.md)**. When useful, the assistant can inspect the original source, author and conditions inside the same installed tool.
+**A failed send is not a delivered message; three news stories copying one press release are not three independent observations; an unapproved external action is not safe because an AI proposed it.** In any domain, a connected assistant can call `preflight_ai_answer_and_action` or `audit_citation_independence` before confidently answering or acting. The local read-only tools compare caller-provided evidence roots, actual reported tool receipts and planned authority/irreversibility and return **specific HOLD/PENDING findings and next steps**. They do not require users to know any theory, intercept the AI automatically, authenticate unsupplied real permissions or establish factual truth. The **same original MCP** includes all 313 published derivative→canonical Parent source links and preserves the 24 selected original routes. **[One local installation for Claude Desktop (.mcpb), Qwen Code and Codex](AI_ANSWER_GUARD_INSTALL.md)**. When useful, the assistant can inspect the original source, author and conditions inside the same installed tool.
 
 ## まず実証：独立した開発者が現実に変えたこと / Verified changes by other developers
 
