@@ -4,8 +4,6 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**独立技术媒体也可审查：** [The Daily AI Pulse本身的编辑价值、第三方编辑采纳、英法两种语言的实际部署和未获证实的阅读量](INDEPENDENT_MEDIA_COVERAGE.md)；有关“Git最终状态正常不代表途中读到的源代码正确”的[实Git正反对照试验](machine-discovery/pinned-git-read-provenance-demo.py)不需要MCP或外部AI。媒体新闻并不增加14件独立软件修复PR的计数。
-
 **公开记录共62例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
@@ -1609,6 +1607,7 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 
 ## 相关公开资料
 
+- [独立AI技术媒体的英文及法文报道：外部编辑、正式部署及阅读量边界](INDEPENDENT_MEDIA_COVERAGE.md)
 - [中川大师是谁](ABOUT_NAKAGAWA_MASTER.zh.md)
 - [Start Here](START_HERE.md)
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
