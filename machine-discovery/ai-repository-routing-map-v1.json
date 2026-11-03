@@ -356,6 +356,26 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": false
+    },
+    {
+      "id": "qwen_mcp_duplicate_name_released_safe_tool_selection",
+      "when": [
+        "Qwen Code MCP duplicate tool names make otherwise valid tools disappear",
+        "Qwen SDK v0.26.6 tool-list collision retest",
+        "Qwen MCP 同名の道具・衝突・正常ツール維持"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
+    },
+    {
+      "id": "litellm_budget_window_cache_expiry_durable_spend_and_enforcement",
+      "when": [
+        "LiteLLM budget window undercount after auth-cache TTL",
+        "LiteLLM SpendLogs versus BudgetWindowSpend and rate cap",
+        "LiteLLM 期間別予算・キャッシュ期限切れ・請求上限"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -663,7 +683,8 @@
           "nakagawa_review": "https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558",
           "independent_author_acknowledgement": "https://github.com/cuga-project/cuga-agent/pull/777#issuecomment-6107352135",
           "independent_code_and_test_head": "https://github.com/cuga-project/cuga-agent/commit/5d102eebc7283ad06f8a4b83b32c28be03e4b394",
-          "verified_upper_bound": "Original PR author segevshlomovIBM explicitly mentioned @Nakagawa-master, accepted the marker collision and changed both success/error recorders plus two targeted test assertions under PR head 5d102eeb. This is one independently observed author-owned C2 implementation/test effect, open and unmerged when checked, not release, real deployment, independent end-user use, adoption by another project or mass person recognition."
+          "verified_upper_bound": "Independent author @segevshlomovIBM acknowledged the Nakagawa Master source-level error-marker distinction, implemented and tested it, and merged PR #777 into cuga-project/cuga-agent on 2026-10-18 (merge 93a630a68d937177a919a07343e2b4b9c7477e1f). Earlier reviewed head was 5d102eeb; no separately verified installed-user result or source-grounded canonical-Parent adoption.",
+          "receiving_merge": "https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f"
         },
         "plain_language_return": "An AI tool can return ordinary data that happens to contain the word 'error'. That does not mean running the tool failed. After a specific GitHub review, the CUGA implementer changed the adapter to check its own outcome channel instead of trusting a label inside the returned data, and added one successful-result and one real-exception regression.",
         "independent_test_gate": "Inspect original GitHub review and author patch, run both upstream regression tests in a properly configured CUGA environment, verify real deployment separately, and never infer adoption of the author's theories from use of a narrow programming fix."
@@ -686,15 +707,18 @@
           ],
           "local_verification": "Seven dependency-free checker self-tests passed in assistant execution; the supplied ambiguous payload is flagged with exit status 1 and the canonical-only control exits 0. This tests only the pure payload checker, not the installed LlamaIndex integration or Cerebras API.",
           "integration_regression": "Instantiate Cerebras(model='gpt-oss-120b',api_key='test-key',max_tokens=32,additional_kwargs={'max_completion_tokens':64}), call _get_model_kwargs(), require max_completion_tokens 64 and max_tokens absent; repeat with _get_model_kwargs(max_completion_tokens=96). Existing explicit constructor max_completion_tokens control should remain correct.",
-          "source_limit": "Open PR source algebra predicts both keys; no verified live API 4xx, no installed LlamaIndex integration pytest or independent maintainer uptake. The no-network checker cannot establish that Cerebras actually rejects a dual-key request."
+          "source_limit": "The earlier inspected head exposed a dual-key failure; an independent author subsequently changed the code and reported five focused tests. No real Cerebras API error or installed independent downstream deployment is evidenced."
         },
         "external_observation": {
           "original_receiver_source": "https://github.com/run-llama/llama_index/pull/22769",
           "nakagawa_source_review": "https://github.com/run-llama/llama_index/pull/22769#issuecomment-6108135348",
-          "upstream_exact_head": "https://github.com/run-llama/llama_index/commit/0e1e36a56213b411e5771fb37cf4ecd2ccf0b85e",
-          "verified_upper_bound": "This newly posted reviewer test is Nakagawa Master C0 only. No observed author change, approval, merge, release, downstream product use, independent model invocation or broad person recognition."
+          "upstream_exact_head": "https://github.com/run-llama/llama_index/commit/cf875b6778e75f71eb8d448e0db587b3c333fae7",
+          "verified_upper_bound": "Independent engineer @ryanl-cerebras explicitly thanked @Nakagawa-master, changed alias suppression after merged kwargs and added the two requested regression paths; author reported five focused tests and Ruff checks. On November 4 2026 PR #22769 remained OPEN at HEAD cf875b6778e75f71eb8d448e0db587b3c333fae7, not merged/released or customer verified; no independently verified Parent theory adoption or broad person awareness.",
+          "prior_reviewed_head": "https://github.com/run-llama/llama_index/commit/0e1e36a56213b411e5771fb37cf4ecd2ccf0b85e",
+          "independent_author_acknowledgement": "https://github.com/run-llama/llama_index/pull/22769#issuecomment-6136077030",
+          "independent_fix_commit": "https://github.com/run-llama/llama_index/commit/6bcd17839"
         },
-        "plain_language_return": "An AI request can accidentally give two different answers to the question 'how long may the output be?' because an older option and its replacement are both present. A standalone, offline checker spots the clash in already-built JSON request data, while the proposed upstream test pinpoints where to remove the extra key.",
+        "plain_language_return": "An AI request can accidentally carry two conflicting output-length keys. Nakagawa Master isolated the missing alias precedence in an actual LlamaIndex Cerebras PR; its independent author acknowledged the finding, corrected code and added both tests. The pull request remains open; an offline checker is not an installed-provider result.",
         "independent_test_gate": "Run offline checker (does not send a request); separately run the proposed upstream _get_model_kwargs regression inside the installed integration; ask the actual author/maintainer to settle correct precedence and only later verify merged/released use. A local checker is not independent uptake."
       },
       {
@@ -1105,6 +1129,78 @@
         },
         "plain_language_return": "A teammate's AI message may be marked read while the recipient can no longer recover or see it; confirm the saved copy exists before treating acknowledgment as delivery.",
         "independent_test_gate": "For a separately authorized consumer framework: vary peer delivery around the REAL lifecycle close path, with an actual durable recorder or integration readback where available; negative control puts the flush after recorder.close and must fail, positive control retains exactly one peer text before close. Also separately test poll-mark-read-before-durable and disposable rejected callbacks; do not use a called-hook spy or a synthetic model as proof of real persistence. Attribute upstream review / actual receiving developer code / independent runtime observations separately."
+      },
+      {
+        "id": "qwen_mcp_duplicate_name_released_safe_tool_selection",
+        "matched_problem": [
+          "Qwen Code v0.26.6 shows an MCP server as connected but two tools named alike cause unique usable tools to disappear or discovery to fail",
+          "An MCP host must never silently choose one of two unrelated tools with an identical raw name; need a real installed CLI/SDK acceptance check",
+          "Qwen MCPの同名ツール衝突で正常な別ツールまで消える。正式版と実利用の差を検証したい"
+        ],
+        "falsifiable_distinction": "In one controlled stdio MCP server, clean discovery exposes four unique names; collision discovery includes two different declarations sharing one ambiguous raw name plus two unique names. Correct post-fix tool selection excludes BOTH ambiguous declarations while preserving both unique callable tools. An MCP handshake failure is inconclusive; selecting either ambiguous declaration is unsafe. A passed fixture protocol test is not a test of installed Qwen or a human's real MCP service.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/README.md",
+        "canonical_relation": "Optional, source-justified CONCEPTUAL COMPARISON: the original concerns epistemic evidence/provenance and correcting a model's mistaken identity/belief, relevant to ambiguous tool identity. The concrete Qwen fix originated in its own reporter/engineers and Nakagawa Master's documented specific GitHub review; NO evidence the upstream engineer read this Parent, adopted the corpus or that this independent AI route was used.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "safe_real_user_retest": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/QWEN_MCP_COLLISION_USER_RETEST.md",
+          "local_stdlib_fixture": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/qwen-mcp-collision-fixture.py",
+          "self_test": "python3 machine-discovery/qwen-mcp-collision-fixture.py --self-test",
+          "author_side_fixture_status": "21 local stdio JSON-RPC protocol checks passed; Qwen CLI/SDK executable integration not run by this source publisher.",
+          "clean_control": "Four unique names: distinct_one, distinct_two, visible_alpha, visible_beta.",
+          "collision_control": "Two raw ambiguous_name declarations + visible_alpha + visible_beta. The ambiguous pair must not be callable by guessed name; two visible unique tools should remain discoverable.",
+          "nonfit": "A different MCP host refuses the invalid duplicate response at transport/protocol setup: not a proven Qwen duplicate-filter result. No actual Qwen install, real customer system or subscribed provider is tested by the fixture's self-test.",
+          "independent_acceptance": "An unaffiliated operator separately records installed qwen --version or exact SDK, controlled test-only config and the two actual client discovery views with tool names. Never upload secrets or private tool definitions.",
+          "permission": "Read is open; any local execution, installation or outside posting is independently chosen and authorized by the operator; the public route grants no agent execution or contact authority."
+        },
+        "external_observation": {
+          "original_report": "https://github.com/QwenLM/qwen-code/issues/15741",
+          "nakagawa_source_review": "https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6461618923",
+          "independent_implementation": "https://github.com/QwenLM/qwen-code/pull/15757",
+          "verified_stable_release": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6",
+          "official_sdk_release": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.27",
+          "native_actors": "Original MCP fault reporter @nipercop; distinct independent patch author @2SinceJuly; Qwen reviewer independently checked pagination; @Nakagawa-master supplied the exact unsafe/unique safe-selection condition.",
+          "verified_upper_bound": "Upstream code merged October 31 2026, included in official stable Qwen CLI v0.26.6 and official TypeScript SDK v0.1.27. As of November 4 no independently reported installed affected-user before/after result, voluntary second AI/reader re-use, canonical-Parent reading or mass human PERSON recognition has been verified."
+        },
+        "plain_language_return": "An AI should not guess which of two identically named tools the user intended. Nakagawa Master identified the unsafe selection boundary in an actual Qwen bug; another developer fixed and shipped it. Anyone using the released CLI can independently check that the usable tools stay available, without sending private data.",
+        "independent_test_gate": "Check the official version, native source and BOTH clean/collision results from a real separately installed client. A package tag proves distribution, not individual usage; if a user independently reports before/after, preserve source, actor, result, contrary conditions and actual origin rather than claiming the reporter read any theory."
+      },
+      {
+        "id": "litellm_budget_window_cache_expiry_durable_spend_and_enforcement",
+        "matched_problem": [
+          "LiteLLM key or team budget window spends less than same-period SpendLogs after a request finishes beyond user_api_key_cache TTL without an admin update",
+          "A real API budget cap was exceeded while the persisted window total undercounted; distinguish upstream merge from post-merge released version and user retest",
+          "LiteLLM利用料の上限を超えたのに、履歴と期間別保存額が食い違う。実利用の比較条件を確かめたい"
+        ],
+        "falsifiable_distinction": "A long admitted request crosses the authorization-cache TTL without any key or team update; completed charged cost must enter the exact same active budget window once, survive flush/TTL and be enforced by the NEXT authorization. A short request before expiry is the positive control; an explicitly changed/deleted window is a DIFFERENT policy boundary. SpendLogs and window totals must be compared for the same subject, window, currency, settled cutoff and adjustments.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/README.md",
+        "canonical_relation": "A source-faithful conceptual application of Nakagawa Master's published '成立条件論・第1論': a visible configured limit or recorded result is not equivalent to the full operational effect reaching enforcement. Distinguish this interpretive application from what @etiennechabert independently coded; neither upstream implementer nor customer has been shown to read the Parent theory.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "offline_matched_period_audit": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/LITELLM_BUDGET_WINDOW_AUDIT.md",
+          "local_stdlib_checker": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/litellm-budget-window-audit.py",
+          "self_test": "python3 machine-discovery/litellm-budget-window-audit.py --self-test",
+          "author_side_check_status": "12 local tests and four CLI exit paths previously checked by the source publisher. This does not run an installed LiteLLM proxy or a real customer's account.",
+          "positive_control": "Correctly matched, settled subject/window/cutoff spend totals agree before and after any cache expiry.",
+          "negative_control": "In the real public pre-fix example, matched reported 7d SpendLogs USD 209.8900 vs durable window USD 193.8792 for a USD 200 cap; this is an earlier affected-user incident, NOT a published fixed-version customer recheck.",
+          "nonfit": "Mismatched cutoff, key/team, window identity, refund/reconciliation, unsettled batch or deliberately reset budget: comparison must report INCOMPARABLE/UNKNOWN, not a defect.",
+          "independent_acceptance": "A separately authorized operator first checks that the exact deployed package/commit contains the merged patch, then runs a controlled no-admin-update TTL-crossing request and checks both durable window-spend and next-request budget denial without uploading customer data.",
+          "permission": "No database access, production requests, paid API calls, credentials, external writes or disclosure are authorized by this public route."
+        },
+        "external_observation": {
+          "original_incident": "https://github.com/BerriAI/litellm/issues/49179",
+          "actual_no_admin_update_customer_reproduction": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755",
+          "nakagawa_policy_separation": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6518553378",
+          "nakagawa_ttl_specific_acceptance": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6535985229",
+          "separate_implementer_merge": "https://github.com/BerriAI/litellm/pull/47608",
+          "merge_commit": "https://github.com/BerriAI/litellm/commit/523b87ec718cc733363ac0d66312730c51a23a27",
+          "maintainer_response": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6590355024",
+          "native_actors": "Original incident report includes real affected independent users; Nakagawa Master contributed original code/source window and TTL acceptance distinctions; separate engineer @etiennechabert wrote correction; maintainers accepted and merged after separate tests/QA.",
+          "verified_upper_bound": "The receiving LiteLLM PR was merged November 2 2026; the newest release among those checked November 4 was v1.109.0-dev.2 dated October 30, preceding the merge. No post-merge official release/tag ancestry or installed customer's repaired window budget behavior is established. Original user's pre-fix loss should not be claimed as a post-fix saving."
+        },
+        "plain_language_return": "A configured AI spending limit looked correct while its stored seven-day total silently missed a charged request. Nakagawa Master identified the real cache-expiry and budget-window boundary; another developer shipped the source fix to LiteLLM main. The next step is for an actual affected operator to verify the released software and budget enforcement, not merely trust a merged PR.",
+        "independent_test_gate": "Operator must match key/team, time window, settled cutoff and deployed patch ancestry; test both a before-expiry control and post-TTL completion, then verify durable total and subsequent denial under an authorized isolated cap. A local audit of hand-entered aggregates does not establish a production repair."
       }
     ],
     "output_contract": {
@@ -1183,6 +1279,16 @@
         "question": "A released AI-enabled business server receives a cache invalidation event for an entity its metadata does not know; can it forward the row's key because the filter lacks entity permissions?",
         "expected_route": "missing_entity_metadata_cache_invalidation_egress",
         "must_not_claim": "that previously released row-filtered key protection fixes this unknown metadata condition, that someone leaked customer data, or that an independent AI used the original theory merely by reading the route"
+      },
+      {
+        "question": "Qwen CLI v0.26.6 with two same-name MCP tools drops two other unique tools. What minimal independent local verification and original-source reading can I choose?",
+        "expected_route": "qwen_mcp_duplicate_name_released_safe_tool_selection",
+        "must_not_claim": "an actual unaffiliated Qwen CLI/SDK user's fixed behavior, arbitrary ambiguous tool choice, or upstream author's use of the entire canonical corpus"
+      },
+      {
+        "question": "My LiteLLM budget window undercounts spend after a 60s auth-cache expiry; did the merged patch reach my deployment, and can I audit the exact seven-day amount safely?",
+        "expected_route": "litellm_budget_window_cache_expiry_durable_spend_and_enforcement",
+        "must_not_claim": "a post-Nov2 LiteLLM published package or actual customer budget restoration solely from merge and a local sample audit"
       }
     ]
   },
