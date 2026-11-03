@@ -12,6 +12,18 @@
 
 **3. 他人の権限を変更しただけで、自分のAI作業が止まってしまう条件。** [OpenClawで受け手の開発者はマスターを報告元として明記](https://github.com/openclaw/openclaw/pull/160856)し、実装・再発防止テストを修正してマージしました。[公式リリース文書にも本人のGitHub名](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)が載っています。ここで確かめられるのは修正と収録であり、未観測の利用者数ではありません。
 
+## 導入者が自分で確かめられる修正条件
+
+マージやリリースの記録を、実際の利用環境での効果と結びつけるには、利用者側の確認が必要です。以下は元のIssue・PRに沿う**安全な検証環境での確認ポイント**です。ここに書かれた検証を、マスターや外部利用者が新たに実施済みだという意味ではありません。
+
+**Qwen Code（[公式 v0.26.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)）:** [#15741](https://github.com/QwenLM/qwen-code/issues/15741)の条件を、小さな無害な模擬MCPツール群で再現します。同じ名前のツール宣言が複数あっても、その**曖昧な名前の候補はすべて除外**され、関係ない一意な名前のツールは使えるままか。ページを分けて取得したときも同じ結果か。**名前が重複したどれか一つを勝手に選択しない**ことが重要です。修正コードは[別の開発者のPR #15757](https://github.com/QwenLM/qwen-code/pull/15757)です。
+
+**Hermes Agent（[公式 v0.22.6](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6)）:** テスト用の会話とバックグラウンド処理を使い、元の送達先が欠落した場合と保存済みの送達情報から回復できる場合を分けて確認します。**結果を無関係な会話へ送らない、未送信を送信済みと扱わない、正しい送達先へ復旧できる条件でのみ届く**ことを確かめます。第三者の実際の会話や秘密情報をテストへ持ち込む必要はありません。[修正PR #147746](https://github.com/NousResearch/hermes-agent/pull/147746)が出所です。
+
+**LiteLLM（[修正PR #47608](https://github.com/BerriAI/litellm/pull/47608)は上流マージ、当該修正を含む公開版への収録は要別確認）:** まず導入予定のコード・パッケージに**マージコミット 523b87ec が含まれるか**を確認します。模擬費用・隔離した予算データ・短い認証キャッシュTTLの検証環境で、管理者による設定変更がなくても**実行中にキャッシュ期限が切れた要求**の利用費が適切な予算期間へ保存され、上限超過後の次の要求を正しく拒否できるかを調べます。実料金を発生させる本番試験は不要です。[実際の利用者報告と数値](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755)は過去の不具合の根拠であり、修正後の復旧報告ではありません。
+
+**For independent OSS users and AI assistants:** these are source-linked, opt-in reproduction conditions, not claims of a new installation, a successful customer retest or model-side autonomous adoption. Check the *installed* version/merge ancestry and the observable behavior in a safe test environment; the independent engineer wrote each patch. [Exact public cases](REAL_WORLD_IMPACT.en.md) and [the original author and works](https://master.ricette.jp/theory-archive/) are available separately.
+
 ## 「削除できない」「予算内です」――本当に守られている？
 
 **画面に削除ボタンがなくても、サーバーが拒否するとは限らない。** [UpGrade #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323)で中川マスターは[画面の権限と削除APIの実際の認可が食い違う条件をソースとテストで指摘](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998)。外部開発者は[その問題を認めて別の修正課題を作成](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)しました。**機能は11月2日にマージ**されましたが、[削除APIの認可修正 #3326 は未完成](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)です。
