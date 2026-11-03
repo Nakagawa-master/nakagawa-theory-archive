@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**60 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**61 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1554,6 +1554,14 @@ The independent [repository account @tonydzi explicitly accepted the finding](ht
 
 This is **receiver-owned source code, documentation and tests**, not code authored by Nakagawa Master. The commit expressly records `Assisted-by: Claude Code/Claude Sonnet 5.5` and `Co-Authored-By: Claude Sonnet 5.5`. The outside account's [security documentation credits `Reported by @Nakagawa-master in issue #1`](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md). This is a verifiable **source finding → independent acceptance → AI-assisted outside code and tests → main commit → correct public person attribution**. It does **not** independently establish autonomous model discovery of all original theories, a release, actual user deployment, or large-scale popular recognition.
 
+## 61. Turboembed | A token-ineligible candidate masks an eligible AI claim relationship — separate developer fixes, tests, and merges
+
+**“No supporting or contradicting relationship found” need not mean no eligible relationship was available.** In the [turboembed](https://github.com/ai-pipestream/turboembed) claim-verification implementation, [Nakagawa Master's original source review on PR #1250](https://github.com/ai-pipestream/turboembed/pull/1250#issuecomment-6393876473) and [his subsequent issue #1285](https://github.com/ai-pipestream/turboembed/issues/1285) identify a concrete selection bug: candidates were ranked and truncated to `max_pairs` **before** filtering pairs that exceed the NLI scorer's token budget. An ineligible high-ranked pair could consume the entire allowance and suppress a lower-ranked valid pair. The original author supplied a four-unit negative control and a precise filter-before-cap repair, not an executed model benchmark.
+
+**A different software implementer, @krickert, wrote [PR #1330](https://github.com/ai-pipestream/turboembed/pull/1330) expressly `Closes #1285`.** Their [actual code change `1a984f0`](https://github.com/ai-pipestream/turboembed/commit/1a984f0a3c0fa35363124b7fa9903de16c5886e7) removed early truncation and added `.take(max_pairs)` **after token-budget filtering**, along with red-before/green-after regressions. Their [follow-up commit `06fff223`](https://github.com/ai-pipestream/turboembed/commit/06fff22398ef226f7500f14b98ace7790e3fca2e) extended coverage from a deterministic rule scorer to a real WordPiece tokenizer and encoder fixture, and bumped `CLAIM_VERSION` from 1 to 2 with tests preserving prior hash identities. The [receiving maintainer's PR was merged on October 26, 2026](https://github.com/ai-pipestream/turboembed/commit/6a2ba1d67ef7d92256d569dcd5125add676cc96e).
+
+**Observed provenance:** source-level finding by Nakagawa Master → explicit issue-to-PR handoff → external author's implementation, failing/passing tests, algorithm-version integrity → native merge. The earlier PR #1250 is **not** counted as a separate Nakagawa-influenced merge. No tested installed-user benefit, shipping software release or spontaneous second-party media carry has been established for this fix. A model reading the source may independently choose to use or reject the narrow distinction; this record is not evidence that it already has.
+
 ## What the public source record reveals
 
 ### Supported by the linked public record
@@ -1589,7 +1597,7 @@ Counterexamples, non-fit cases, and failed reproductions are also relevant evide
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
 - [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [Public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [Independent reproduction, counterexample and actual-use submission form](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)
 - [Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 Follow the original public contribution, the receiving developers' responses, their code and tests, and the resulting repository state to examine the real trajectory of each idea.
