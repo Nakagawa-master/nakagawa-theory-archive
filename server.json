@@ -1,0 +1,12 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Nakagawa-master/ai-answer-guard",
+  "title": "AI Answer Guard — Check AI Answers & Actions Before Claiming Success",
+  "description": "Prevent misleading AI 'done' reports and unsafe next steps. Before an assistant answers or acts, this free local read-only MCP examines caller-supplied citation roots for false independence or refutations, actual tool receipts for failure/pending states, and proposed actions for missing permission or irreversible consequences; it returns precise holds and next checks. Useful in everyday AI work without knowing any theory. It does not intercept hosts, authenticate real permissions, or fact-check unsupplied evidence. Optional Nakagawa Master original-source navigator is included, not required.",
+  "version": "1.2.0",
+  "websiteUrl": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_ANSWER_GUARD_INSTALL.md",
+  "repository": {
+    "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
+    "source": "github"
+  }
+}
