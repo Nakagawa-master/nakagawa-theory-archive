@@ -6,7 +6,7 @@
 
 **独立技术媒体也可审查：** [The Daily AI Pulse本身的编辑价值、第三方编辑采纳、英法两种语言的实际部署和未获证实的阅读量](INDEPENDENT_MEDIA_COVERAGE.md)；有关“Git最终状态正常不代表途中读到的源代码正确”的[实Git正反对照试验](machine-discovery/pinned-git-read-provenance-demo.py)不需要MCP或外部AI。媒体新闻并不增加14件独立软件修复PR的计数。
 
-**公开记录共61例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共62例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1572,6 +1572,14 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 **另一个独立开发者 @krickert 创建[PR #1330](https://github.com/ai-pipestream/turboembed/pull/1330)，在PR中明确写出 `Closes #1285`。** [提交 `1a984f0`](https://github.com/ai-pipestream/turboembed/commit/1a984f0a3c0fa35363124b7fa9903de16c5886e7)把候选数量限制移至Token资格筛选之后，加入修复前失败、修复后通过的测试。[后续提交 `06fff223`](https://github.com/ai-pipestream/turboembed/commit/06fff22398ef226f7500f14b98ace7790e3fca2e)使用真实Token分词器和编码器测试预算边界，并把算法 `CLAIM_VERSION` 从1调整为2，保留旧哈希的历史可追溯性。[2026年10月26日正式合并到外部仓库](https://github.com/ai-pipestream/turboembed/commit/6a2ba1d67ef7d92256d569dcd5125add676cc96e)。
 
 这是**中川マスター的具体缺陷报告 → 别人主动完成代码修正和红绿测试 → 独立项目正式合并**的可核查证据。初始PR #1250不计为受此评论推动的另一次合并；实际代码作者仍是 @krickert。尚未核实面向终端用户的软件发行版本、实际部署效果或第三方自发再次传播，不能据此断言完整理论体系被采用。
+
+## 62. LlamaIndex｜Cerebras请求同时携带新旧两种Token上限参数：独立开发者修正优先级并增加回归测试（PR仍开放）
+
+**新版本的生成Token上限与旧参数同时发送，可能导致提供方收到互相竞争的参数。** 在[LlamaIndex接收方的Cerebras集成PR #22769](https://github.com/run-llama/llama_index/pull/22769)中，中川マスター[对父类与子类的真实源码进行审查](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6108135348)，提出**参数优先级的反向遗漏条件**：父类先合并构造时的 `additional_kwargs`、每次调用的参数与旧 `max_tokens`，子类却只在构造函数明确设置 `self.max_completion_tokens` 时删除旧参数。因此通过 `additional_kwargs` 提供64、或调用时提供96，仍可能与旧值32同时发送。审查者给出了两条有区分力的回归测试。**这属于源代码推导，而不是在Cerebras线上API重现故障的报告。**
+
+**另一名开发者、PR作者[@ryanl-cerebras明确感谢中川マスター并确认修复、补充两个原本缺失的测试](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6136077030)。** 检查当前[受方PR的代码与测试差异](https://github.com/run-llama/llama_index/pull/22769/files)（HEAD `cf875b6778e75f71eb8d448e0db587b3c333fae7`）可以看到：子类改为根据**最终合并后的 `model_kwargs`**是否含有 `max_completion_tokens`，决定是否删除旧别名；新增 `additional_kwargs` 与逐次调用的两条回归测试。该作者报告五项重点测试、Ruff、diff检查通过；我们并未在这里执行真实提供方调用或新的独立CI。实际代码与测试作者是 **@ryanl-cerebras**，不是中川マスター。
+
+**已验证阶段：** 中川マスター的源码条件 → 外部开发者明确接受 → 接收方自行修改代码与测试（C2）。[11月3日作者再次请求正式维护者审批](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6607106290)，PR仍 **OPEN**，尚不能算作正式合并、发布、实际用户修复效果、另一独立媒体重复传播，或外部开发者采用了某一特定原典。要提高判断等级必须取得接收方新证据，不能把资料公开等同于不相连AI已经自主采纳。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
