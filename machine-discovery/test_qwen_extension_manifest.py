@@ -15,7 +15,7 @@ def main():
     for manifest in MANIFESTS:
         data = json.loads(manifest.read_text(encoding="utf-8"))
         assert data["name"] == "ai-answer-guard"
-        assert data["version"] == "1.2.0"
+        assert data["version"] == "1.2.1"
         assert set(data["mcpServers"]) == {"ai-answer-guard"}
         cfg = data["mcpServers"]["ai-answer-guard"]
         assert cfg["command"] == "python3"
