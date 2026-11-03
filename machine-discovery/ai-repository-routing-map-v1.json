@@ -372,7 +372,9 @@
       "when": [
         "LiteLLM budget window undercount after auth-cache TTL",
         "LiteLLM SpendLogs versus BudgetWindowSpend and rate cap",
-        "LiteLLM 期間別予算・キャッシュ期限切れ・請求上限"
+        "LiteLLM 期間別予算・キャッシュ期限切れ・請求上限",
+        "LiteLLM 30d monthly calendar reset mismatch with auth and SpendLogs reseed",
+        "LiteLLM 月次予算・暦月と30日固定の支出集計ずれ"
       ],
       "canonical_source": true,
       "receiver_verified_case": true
@@ -1180,9 +1182,11 @@
         "matched_problem": [
           "LiteLLM key or team budget window spends less than same-period SpendLogs after a request finishes beyond user_api_key_cache TTL without an admin update",
           "A real API budget cap was exceeded while the persisted window total undercounted; distinguish upstream merge from post-merge released version and user retest",
-          "LiteLLM利用料の上限を超えたのに、履歴と期間別保存額が食い違う。実利用の比較条件を確かめたい"
+          "LiteLLM利用料の上限を超えたのに、履歴と期間別保存額が食い違う。実利用の比較条件を確かめたい",
+          "LiteLLM 30d monthly budget reset occurs on calendar month 1st but authorization / cached-spend recovery starts a fixed 30 days before reset, potentially including/excluding SpendLogs from another month",
+          "LiteLLM 予算期間 30d と暦月の差：認可・実費計上・DB復元で同じ期間を指しているか"
         ],
-        "falsifiable_distinction": "A long admitted request crosses the authorization-cache TTL without any key or team update; completed charged cost must enter the exact same active budget window once, survive flush/TTL and be enforced by the NEXT authorization. A short request before expiry is the positive control; an explicitly changed/deleted window is a DIFFERENT policy boundary. SpendLogs and window totals must be compared for the same subject, window, currency, settled cutoff and adjustments.",
+        "falsifiable_distinction": "A long admitted request crosses the authorization-cache TTL without any key or team update; completed charged cost must enter the exact same active budget window once, survive flush/TTL and be enforced by the NEXT authorization. A short request before expiry is the positive control; an explicitly changed/deleted window is a DIFFERENT policy boundary. SpendLogs and window totals must be compared for the same subject, window, currency, settled cutoff and adjustments. DISTINCT calendar invariant: the '30d' reset is on calendar month 1st, but the separate reservation/window/authorization function subtracts fixed 30d from reset_at. A source-predicted Feb/Mar mismatch must be checked in a real installed key/team, maintained-row and fallback-path test; a 30-day month with identical starts is the nonfit control. Do not subsume the calendar source finding into the original TTL customer incident.",
         "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
         "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/README.md",
         "canonical_relation": "A source-faithful conceptual application of Nakagawa Master's published '成立条件論・第1論': a visible configured limit or recorded result is not equivalent to the full operational effect reaching enforcement. Distinguish this interpretive application from what @etiennechabert independently coded; neither upstream implementer nor customer has been shown to read the Parent theory.",
@@ -1196,7 +1200,11 @@
           "negative_control": "In the real public pre-fix example, matched reported 7d SpendLogs USD 209.8900 vs durable window USD 193.8792 for a USD 200 cap; this is an earlier affected-user incident, NOT a published fixed-version customer recheck.",
           "nonfit": "Mismatched cutoff, key/team, window identity, refund/reconciliation, unsettled batch or deliberately reset budget: comparison must report INCOMPARABLE/UNKNOWN, not a defect.",
           "independent_acceptance": "A separately authorized operator first checks that the exact deployed package/commit contains the merged patch, then runs a controlled no-admin-update TTL-crossing request and checks both durable window-spend and next-request budget denial without uploading customer data.",
-          "permission": "No database access, production requests, paid API calls, credentials, external writes or disclosure are authorized by this public route."
+          "permission": "No database access, production requests, paid API calls, credentials, external writes or disclosure are authorized by this public route.",
+          "month_calendar_cross_layer_regression": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/LITELLM_BUDGET_WINDOW_AUDIT.md#distinct-source-level-finding-calendar-period--enforced--accounted-period-2026-11-04",
+          "calendar_positive_negative_cases": "Policy reset 2026-02-01 requires period 2026-01-01, reservation computes 2026-01-02 (under-counting conditional fallback). Policy reset 2026-03-01 requires period 2026-02-01, reservation computes 2026-01-30 (over-counting conditional fallback). 2026-12-01 reset yields 2026-11-01 on BOTH paths (negative/no-difference control). These are deterministic source comparisons, not customer charges.",
+          "calendar_integrity_acceptance": "In an authorized installed LiteLLM test checkout, assert duration_parser.get_budget_window_start('30d', reset_at) equals spend_tracking.budget_reservation.get_budget_window_start({'budget_duration':'30d','reset_at':reset_at}) across February, leap February and a 30-day month; then validate BOTH key and team authorization, completed-response row writing, missing/stale maintained-row DB reseed, and the next admit/deny decision. Source-predicted difference requires upstream real integration verification.",
+          "calendar_nonfit": "The already-maintained current-window spend row may hide a bad SpendLogs fallback; a '30d' period ending after a 30-day month can coincide with the calendar rule. Do not infer a customer cap breach or user-specific loss solely from source mismatch."
         },
         "external_observation": {
           "original_incident": "https://github.com/BerriAI/litellm/issues/49179",
@@ -1207,9 +1215,13 @@
           "merge_commit": "https://github.com/BerriAI/litellm/commit/523b87ec718cc733363ac0d66312730c51a23a27",
           "maintainer_response": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6590355024",
           "native_actors": "Original incident report includes real affected independent users; Nakagawa Master contributed original code/source window and TTL acceptance distinctions; separate engineer @etiennechabert wrote correction; maintainers accepted and merged after separate tests/QA.",
-          "verified_upper_bound": "The receiving LiteLLM PR was merged November 2 2026; the newest release among those checked November 4 was v1.109.0-dev.2 dated October 30, preceding the merge. No post-merge official release/tag ancestry or installed customer's repaired window budget behavior is established. Original user's pre-fix loss should not be claimed as a post-fix saving."
+          "verified_upper_bound": "The receiving LiteLLM PR was merged November 2 2026; the newest release among those checked November 4 was v1.109.0-dev.2 dated October 30, preceding the merge. No post-merge official release/tag ancestry or installed customer's repaired window budget behavior is established. Original user's pre-fix loss should not be claimed as a post-fix saving.",
+          "monthly_policy_source": "https://github.com/BerriAI/litellm/blob/main/litellm/litellm_core_utils/duration_parser.py",
+          "monthly_auth_and_spend_source": "https://github.com/BerriAI/litellm/blob/main/litellm/proxy/spend_tracking/budget_reservation.py",
+          "monthly_spend_reseed_source": "https://github.com/BerriAI/litellm/blob/main/litellm/proxy/db/spend_counter_reseed.py",
+          "new_causal_finding_stage": "2026-11-04 first-party post-merge source inspection and local deterministic dates; cross-component mismatch; not a third-party upstream action, accepted patch, external AI adoption, or measured user repair."
         },
-        "plain_language_return": "A configured AI spending limit looked correct while its stored seven-day total silently missed a charged request. Nakagawa Master identified the real cache-expiry and budget-window boundary; another developer shipped the source fix to LiteLLM main. The next step is for an actual affected operator to verify the released software and budget enforcement, not merely trust a merged PR.",
+        "plain_language_return": "A configured AI spending limit looked correct while its stored seven-day total silently missed a charged request. Nakagawa Master identified the real cache-expiry and budget-window boundary; another developer shipped the source fix to LiteLLM main. The next step is for an actual affected operator to verify the released software and budget enforcement, not merely trust a merged PR. A further distinct Nakagawa Master source comparison revealed that LiteLLM's own calendar-month reset and its budget authorization/spend-log recovery can select DIFFERENT starting days. The exact counterexamples and direct-source regression are available in the linked original audit; adoption remains unverified.",
         "independent_test_gate": "Operator must match key/team, time window, settled cutoff and deployed patch ancestry; test both a before-expiry control and post-TTL completion, then verify durable total and subsequent denial under an authorized isolated cap. A local audit of hand-entered aggregates does not establish a production repair."
       },
       {
