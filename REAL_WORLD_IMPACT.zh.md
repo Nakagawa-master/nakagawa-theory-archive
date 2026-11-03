@@ -1553,7 +1553,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 [PR #15757 的代码审查直接注明中川大师的原始评论并要求采用这一条件](https://github.com/QwenLM/qwen-code/pull/15757#discussion_r4402027138)。接收方开发者 **@2SinceJuly** [接受了该修复条件](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6485055684)，并[重写代码及回归测试](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6486120155)。另一位审查人员 **@wenshao** 还通过真实工具发现与分页流程进行了修复前后对照验证。
 
-**成果：** **[2026年10月31日（UTC），Qwen Code正式将PR #15757合并至main](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e)。** 中川大师提出的“不得把不同的真实执行对象当成同一个工具”这一判断，成为独立开发者的代码、测试与上游合并成果。最初的问题报告者为 **@nipercop**，具体代码及测试作者为 **@2SinceJuly**。随后，该修复还被**[2026年11月1日公开的Qwen Code nightly版本明确列为更新项目](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5-nightly.20261101.7b4b353750)**，对应的nightly标签也包含已合并的提交。这是与稳定版v0.26.5不同的nightly发布；真实用户的使用结果仍待核验。
+**成果：** **[2026年10月31日（UTC），Qwen Code正式将PR #15757合并至main](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e)。** 中川大师提出的“不得把不同的真实执行对象当成同一个工具”这一判断，成为独立开发者的代码、测试与上游合并成果。最初的问题报告者为 **@nipercop**，具体代码及测试作者为 **@2SinceJuly**。修复首先进入[2026年11月1日公开的nightly](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5-nightly.20261101.7b4b353750)，随后进入**[11月2日正式稳定版CLI v0.26.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)**（该版本标签包含合并提交：ahead 64、behind 0）。**[同日官方TypeScript SDK v0.1.27](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.27)**明确说明捆绑CLI v0.26.6，SDK标签亦包含此修复（ahead 65、behind 0），同时包含另一个[保护文件写入权限修复 #15681](https://github.com/QwenLM/qwen-code/pull/15681)（ahead 39、behind 0）。这是受方将修复推进到**额外SDK发行渠道**的可验证事实；不能据此声称独立用户已安装、实际复现或主动采用所有原始理论。
 
 ## 60. agent-approval-gate｜已失效的批准请求被旧回复重新批准：接收方使用AI辅助完成修复并注明中川マスター
 
