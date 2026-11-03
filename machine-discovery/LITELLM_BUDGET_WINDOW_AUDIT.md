@@ -4,6 +4,54 @@
 
 **Free local checker:** [litellm-budget-window-audit.py](litellm-budget-window-audit.py) requires only Python 3.9+ and standard libraries. It does not query a database, call GitHub, send results to a model, run payments, change budgets or accept credentials or raw customer logs. The operator prepares **eight non-identifying aggregate fields** in a local JSON file. No GitHub/MCP connection is needed to run it.
 
+## Distinct source-level finding: calendar period ≠ enforced / accounted period (2026-11-04)
+
+**This is a second, separate boundary from the customer's auth-cache TTL issue above.** A merged fix to the latter cannot by itself establish that the *budget window* tested by authorization, updated by the cost callback and reconstituted from the database is the calendar period promised by the reset schedule.
+
+**Five source-native linked layers, checked against upstream main on 2026-11-04:**
+
+1. [The canonical calendar rules](https://github.com/BerriAI/litellm/blob/main/litellm/litellm_core_utils/duration_parser.py): the reset for '30d' is the **1st of the month**; this module's 'get_budget_window_start("30d", reset_at)' returns the **1st of the previous calendar month** (using '_shift_months(reset_at, -1)'). [Its own regression tests](https://github.com/BerriAI/litellm/blob/main/tests/unit/litellm_core_utils/test_duration_parser.py) cover the calendar behavior, including leap February.
+2. [A separate function with the same name](https://github.com/BerriAI/litellm/blob/main/litellm/proxy/spend_tracking/budget_reservation.py) instead calculates 'reset_at - timedelta(seconds=duration_in_seconds("30d"))': **exactly 30 × 24 hours**. [Its tests](https://github.com/BerriAI/litellm/blob/main/tests/unit/proxy/spend_tracking/test_budget_reservation.py) cover a JSON-encoded **1h** window but not equality with the canonical monthly schedule.
+3. [Key AND team authorization](https://github.com/BerriAI/litellm/blob/main/litellm/proxy/auth/auth_checks.py) import and use the **second** function when deciding whether the budget window is over cap.
+4. [Post-call spend counters and row writes](https://github.com/BerriAI/litellm/blob/main/litellm/proxy/proxy_server.py), including the merged #47608 path, use the **same second** function for the period origin of the counter and 'LiteLLM_BudgetWindowSpend' update.
+5. If the maintained row is missing/stale, [the reseed fallback](https://github.com/BerriAI/litellm/blob/main/litellm/proxy/db/spend_counter_reseed.py) aggregates SpendLogs subject to 'startTime >= window_start'. That origin can change the set of charges included in the next enforcement check, **not just a displayed label**.
+
+**Four controlled UTC counterexamples (exact '30d' source semantics, NO actual customer billing records):**
+
+| Reset at UTC midnight | Required calendar start | Authorization / cost writer computes | When fallback scans SpendLogs |
+| --- | --- | --- | --- |
+| 2026-02-01 | 2026-01-01 | **2026-01-02** | Jan 1 charges may be omitted |
+| 2026-03-01 | 2026-02-01 | **2026-01-30** | Jan 30–31 charges may be included |
+| 2026-04-01 | 2026-03-01 | **2026-03-02** | Mar 1 charges may be omitted |
+| 2026-12-01 | 2026-11-01 | **2026-11-01** | Negative control: no mismatch |
+
+**Positive/negative hypothetical impact controls:** Jan 1 USD 60 + Jan 2 USD 20 means USD 80 in January, but the misaligned fallback includes only USD 20. Jan 31 USD 70 + Feb 14 USD 20 means USD 20 in February, but the misaligned fallback includes USD 90. In normal operation a usable maintained row and healthy counters **can mask the fallback discrepancy**. The established finding is a **source-path temporal invariant mismatch**. Real customer loss, an installed-version cap bypass and a new outside developer's adoption of this observation are **NOT established**.
+
+**Direct-upstream regression to add to the existing test suite** (expected to fail on the *second* assertion on the inspected source; requires actual LiteLLM checkout and compatible environment):
+
+~~~python
+from datetime import datetime, timezone
+from litellm.litellm_core_utils.duration_parser import (
+    get_budget_window_start as calendar_start,
+)
+from litellm.proxy.spend_tracking.budget_reservation import (
+    get_budget_window_start as budget_enforcement_start,
+)
+
+reset_at = datetime(2026, 3, 1, tzinfo=timezone.utc)
+expected = datetime(2026, 2, 1, tzinfo=timezone.utc)
+assert calendar_start("30d", reset_at) == expected
+assert budget_enforcement_start({
+    "budget_duration": "30d", "reset_at": reset_at,
+}) == expected  # source-predicted FAIL: returns Jan 30
+~~~
+
+**Narrow corrective direction (NOT an upstream patch):** for a valid stored duration with explicit 'reset_at', delegate the spend-reservation start to the **already-tested, same-schedule** 'litellm.litellm_core_utils.duration_parser.get_budget_window_start(duration, reset_at)'. Preserve sliding 'reset_at is None' behavior and invalid-duration rejection. Check '30d', 'monthly' aliases and '1mo' across Feb/leap-year and other calendar boundaries; keep '7d' / '1h' controls. Test a missing/stale maintained row, Redis reseed, key **and** team counters, *both* over- and under-count directions, and the next admit/deny result. The source-inspection discrepancy survives even if an already-warm counter hides it.
+
+**Distinctively sourced conceptual interpretation, not manufactured upstream attribution:** [Nakagawa Master's original establishment-conditions theory](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/) distinguishes the existence of a configuration from all necessary causal links functioning; the [original epistemic-integrity theory](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) tracks the meaning, provenance and timescale of evidence as it feeds a later judgment. Their conditioned connection here is **promised period → authorization period → post-call spend identity → persisted/log-reseed provenance → next deny/admit decision**. The original upstream customer's report, separate implementer's merge #47608 and this later source comparison are **three different contributions**. There is **no evidence upstream implementers used either Parent**.
+
+---
+
 ## Run the genuine check
 
 From a local checkout of this public repository:
