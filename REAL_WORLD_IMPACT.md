@@ -13,6 +13,7 @@
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。[事例1を読む](#1-posthogaiが提示した数値とposthog自身の測定値を分ける)。
 - **[Qwen Code｜読み取りだけのコマンドを拒否する一方、保護ファイルへの書き込みを見逃す権限判定](https://github.com/QwenLM/qwen-code/pull/15681)** — 当初の `2>&1` 誤拒否とは別に、実際の `>&protected.txt` の書込先を解析器が `&protected.txt` と誤認すると、特定ファイルへの書込禁止が一致しない点を[中川マスターが指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が実際の権限判定で修正前 `allow`／修正後 `deny` を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、自ら修正・回帰テストを実装した[#15681 が2026年11月1日にマージ](https://github.com/QwenLM/qwen-code/pull/15681)。**[11月2日公開のQwen Code正式版 v0.26.6のリリースノートには #15681 と独立実装者 @Suaroman が明記](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)**され、タグはマージコミットの子孫です。
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。[事例47を読む](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)。
+- **[The Daily AI Pulse｜外部AI技術メディアに英仏2言語で掲載](https://github.com/GadDev/daily-ai-pulse/pull/253)** — **別件のQwen Codeレビュー証拠の問題**を外部の編集者が記事として編集・採用し、[英語](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)の2言語で**本番公開**。中川マスターの検証提案も記事に出典付きで掲載されています。[掲載・配信の詳細](#外部ai技術メディアへの掲載oss修正prとは別の第三者編集実績)。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。[事例41を読む](#41-pydanticai同じidempotency-keyの再送が未参照メッセージを増やさない)。
 
 中川マスター（Nakagawa Master）は Keisuke Nakagawa の筆名です。ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
@@ -1747,6 +1748,6 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 ## 関連する公開資料
 
-**外部AI技術メディアへの掲載（OSS修正PRとは別の第三者編集実績）**
+### 外部AI技術メディアへの掲載（OSS修正PRとは別の第三者編集実績）
 
 **マージから外部の多言語読者へ（別の編集者による配信確認）：** [The Daily AI Pulse編集者 @GadDev は、本人が提示したQwen Codeのレビュー証拠問題を編集し、PR #253を正式マージ](https://github.com/GadDev/daily-ai-pulse/pull/253)。独立媒体の[英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語記事](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)には、元のQwen報告者と、中川マスターの検証提案が別々の出典として記されています。[2026年10月26日の外部サイト本番デプロイ](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)は受け手のマージコミット `e275f243` を使い、記事2ページを生成、Firebaseへ配信し、公開サイトのHTTP確認工程を**成功**させました。
