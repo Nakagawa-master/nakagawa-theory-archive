@@ -14,6 +14,17 @@
 
 ## 導入者が自分で確かめられる修正条件
 
+**まず「その修正が公開版に入っているか」を確認する:** GitHub公式のマージ・リリース・commit祖先関係を照合する[標準Pythonだけの公開チェッカー](machine-discovery/verify-upstream-release.py)を用意しました。GitHubリポジトリを取得した環境で、MCPを入れずに次を実行できます（オンライン照合時だけGitHub公開APIへ接続）。
+
+```sh
+python3 machine-discovery/verify-upstream-release.py --self-test
+python3 machine-discovery/verify-upstream-release.py QwenLM/qwen-code 15757 v0.26.6
+python3 machine-discovery/verify-upstream-release.py NousResearch/hermes-agent 147746 v0.22.6
+python3 machine-discovery/verify-upstream-release.py BerriAI/litellm 47608 v1.106.6
+```
+
+期待されるリリース収録判定は最初の2件が **PUBLISHED_RELEASE_CONTAINS_MERGE**、最後の旧LiteLLM版は **MERGE_NOT_ANCESTOR_OF_NAMED_RELEASE** です。これは**公開版に含まれるコードの出所確認のみ**であり、当人の端末・サーバーにインストールされ実行できたこと、問題が実運用で解消したこと、独立したAIが自主採用したことの証拠にはなりません。実際の利用確認は下の条件で別途行ってください。
+
 マージやリリースの記録を、実際の利用環境での効果と結びつけるには、利用者側の確認が必要です。以下は元のIssue・PRに沿う**安全な検証環境での確認ポイント**です。ここに書かれた検証を、マスターや外部利用者が新たに実施済みだという意味ではありません。
 
 **Qwen Code（[公式 v0.26.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)）:** [#15741](https://github.com/QwenLM/qwen-code/issues/15741)の条件を、小さな無害な模擬MCPツール群で再現します。同じ名前のツール宣言が複数あっても、その**曖昧な名前の候補はすべて除外**され、関係ない一意な名前のツールは使えるままか。ページを分けて取得したときも同じ結果か。**名前が重複したどれか一つを勝手に選択しない**ことが重要です。修正コードは[別の開発者のPR #15757](https://github.com/QwenLM/qwen-code/pull/15757)です。
