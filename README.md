@@ -120,7 +120,9 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 
 ## AIが普段から使える「回答・行動の破綻防止」MCP
 
-**AI Answer Guard** は、**AIのハルシネーション（根拠のない断言）・根拠同士が食い違う回答内の自己矛盾・実際には完了していない作業の「完了」誤報**などを減らすための、**無料・ローカル・読み取り専用MCP**です。AIが回答や行動を確定する前に、AIホストから渡された**出典の独立性と矛盾、ツールの実際の成功・失敗、現在の実行許可、取り消し困難な作用**を具体的に照合し、発見した不一致を正すための**次に確認すべき根拠・操作・権限**を返します。回答の根拠確認から実行前の判断までを支える実用装備で、導入先のAIホストが必要な場面で呼び出して使います。
+**自分のAIが「送信できた」と言ったのに実際には失敗していた／ニュース３本が同じ発表の転載だった／許可していない操作を実行しようとした。** こうした**第三者自身の日常の困りごと**を、AIが回答・実行を確定する前に検査するのが **AI Answer Guard** です。無料・ローカル・読み取り専用のMCPで、AIホストが渡した**出典の独立性・反証、ツールの成功／失敗／保留、実行許可と不可逆的な影響**を照合し、**問題の箇所と具体的な次の確認・修正**を返します。原典名や著者名を知らなくても点検できます。
+
+**独立して役立つ中核機能が先、原典は追加の深度です。** MCPの最初の２ツールは `preflight_ai_answer_and_action` と `audit_citation_independence`。必要なら、その同じサーバーから中川マスターの公式原典へ進み、問題の成立条件や別の解釈を深められます。**ツールは渡された情報だけを点検し、未提示の事実を調査・保証したり、導入先AIへ自動適用されたりはしません。**
 
 **Antigravity CLIで導入:** `agy plugin install https://github.com/Nakagawa-master/nakagawa-theory-archive`（Googleの現行個人向けCLI、GitとPython 3が必要）。既存MCPをそのまま使う[Antigravity導入・動作確認手順](AI_ANSWER_GUARD_INSTALL.md#antigravity-cli--install-directly-from-github)。Googleは2026年6月18日に個人向けGemini CLIからAntigravityへ移行しています。
 
