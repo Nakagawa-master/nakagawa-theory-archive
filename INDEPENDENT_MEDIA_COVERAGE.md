@@ -46,6 +46,8 @@ python3 machine-discovery/pinned-git-read-provenance-demo.py --self-test
 
 **最短の確認経路：** [外部メディアの記事（英語）](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/) → [マスターの元コメント](https://github.com/QwenLM/qwen-code/issues/15507#issuecomment-6394240323) → [別編集者の掲載PR](https://github.com/GadDev/daily-ai-pulse/pull/253) → [配信成功記録](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)。
 
+**実際に試した方へ：** この記事の区別を自分のコードレビューやAIシステムで試した結果があれば、成功・反例・該当なしのいずれも[独立検証・再利用の現役フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)へ、公開可能な再現条件と出典を添えて返せます。まだ試していない読者は、[疑問・反例を1行だけ伝える入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416)も使えます。外部プロジェクトに代理投稿せず、投稿するかどうかは本人の自由です。これらは**新しい第三者報告が実際に届いたときに限り**次の受け手側実作用として確認します。
+
 もし役に立ったなら、[中川マスター（Nakagawa Master／Keisuke Nakagawa）のGitHubアカウント](https://github.com/Nakagawa-master)から関連する実証や新しい検証へ進めます。追跡・紹介・原典の採用は読者自身の自由な判断であり、記事掲載だけで支持や利用を推定しません。
 
 ## English — Why coverage by The Daily AI Pulse matters
@@ -60,11 +62,15 @@ A separate Main implementation path is the independently developed Qwen fixes in
 
 **No installation or MCP required:** inspect the public [publisher's article](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/), the [original Qwen issue](https://github.com/QwenLM/qwen-code/issues/15507), the [Nakagawa Master contribution](https://github.com/QwenLM/qwen-code/issues/15507#issuecomment-6394240323) and the [publisher's actual production run](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382). If independently useful, the author's actual [GitHub account](https://github.com/Nakagawa-master) is the public person-discovery route.
 
+**For a reader who really tried the source distinction:** a public, independently performed reproduction, counterexample, no-fit or actual user/workflow change can be [reported through the active independent-evidence form](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml), with the exact receiving artifact and limits. A short genuine question or counterexample can also be left [in the one-line reader thread](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416). The forms are optional, and opening them is not evidence that anyone has retested, adopted or endorsed the work. Unrelated outside AI systems are not automatically contacted or directed by this page.
+
 ## 中文 — 被独立AI技术媒体采用的价值与边界
 
 **The Daily AI Pulse** 是面向AI工程实践的专业媒体，其[编辑标准](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md)强调一手来源、证据等级与人类编辑者的最终发布决定。原始[Qwen用户报告 #15507](https://github.com/QwenLM/qwen-code/issues/15507)由 @yiliang114 提供；**中川マスター（Nakagawa Master，公开拉丁姓名 Keisuke Nakagawa）**另行提出[固定Git对象读取与可变工作目录读取必须区分的检验条件](https://github.com/QwenLM/qwen-code/issues/15507#issuecomment-6394240323)。
 
 中川マスター**主动提交报道选题**后，外部编辑者 @GadDev 自行制作并合并[编辑PR #253](https://github.com/GadDev/daily-ai-pulse/pull/253)，推出[英文文章](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)和[法文版本](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)；[媒体自己运行的正式发布流程](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)成功完成。这体现**外部技术编辑评估、准确署名及多语言实际发布**，比作者单方面宣传多了一条独立编辑传播渠道。PR的75/100是**内部编辑评分**，不代表媒体影响力排名；**主动投稿并非媒体自发发现**，访问人数、用户复用和未连接AI自主采用仍无证据。可另行阅读[61项实证记录](REAL_WORLD_IMPACT.zh.md)、[313项平等地位的原典目录](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)及[作者公开账号](https://github.com/Nakagawa-master)。
+
+如在自己的实际环境中验证了文中差异，欢迎自愿提交[独立验证、反例或不适用的公开证据](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)；只想留下简短疑问可使用[一行反馈入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416)。提交之前请移除个人及机密资料，第三方系统是否采用仍需独立证据。
 
 ---
 
