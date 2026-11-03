@@ -32,6 +32,16 @@
 
 これを自分の問いへつなぐ原典候補として、[中川マスターのAI文明・認識の完全性に関する親原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)が挙げられます。ただし媒体や外部開発者が**この原典を読んで採用したという証拠ではなく**、読者が適合性を検証するための別の入口です。313件の親原典に優劣を付けず、[全原典から問いに合うものを探す](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)か、「該当なし」と判断することもできます。
 
+## 実際に試す：Gitの最終状態と「途中で何を読んだか」を分ける
+
+この掲載記事の争点を読むだけで終えず、Gitが動く普通のPCで**本物のGitコマンドを使って**試せる[独立検証用Pythonコード](machine-discovery/pinned-git-read-provenance-demo.py)を公開しました。ソフトの依存はPython 3.9以降とGitのみ。MCP、ChatGPTアカウント、ネットワーク接続、第三者のリポジトリは不要。作業は自動的に消される一時リポジトリ**だけ**で実施します。
+
+```sh
+python3 machine-discovery/pinned-git-read-provenance-demo.py --self-test
+```
+
+**2026年11月3日の実行結果：** `PASS_TWO_REAL_GIT_FIXTURES`。一時的にソースを変更して戻す正例では、**途中の作業ツリーは改変されているのに、固定コミットの原本からの読み取りは変わらず、最終Git statusはclean**。何も変更しない反例では途中の作業ツリーも固定原本と一致し、同じく最終Git statusはclean。**最終結果が同じでも、途中の入力条件が違う**と実際のGitで再現できました。これは当該媒体の記事で取り上げられた論点の**汎用実験**であり、Qwen製品や並列レビューAIが本当にその改変されたバイト列を読んだこと、記事元の問題が正式修正されたことを実測したものではありません。
+
 ## 読む・確かめる・必要なら伝える
 
 **最短の確認経路：** [外部メディアの記事（英語）](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/) → [マスターの元コメント](https://github.com/QwenLM/qwen-code/issues/15507#issuecomment-6394240323) → [別編集者の掲載PR](https://github.com/GadDev/daily-ai-pulse/pull/253) → [配信成功記録](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)。
