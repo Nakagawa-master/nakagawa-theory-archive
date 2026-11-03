@@ -2,17 +2,19 @@
 
 **中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。親原典の正本は[公式アーカイブ](https://master.ricette.jp/theory-archive/)、対応する解説・索引は[公式派生物（OD001〜OD313）](derivatives/)からご覧いただけます。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
 
-**掲載記事の問題を自分で追試できます。** [MCP不要・ネットワーク不要の実Git・2条件再現コード](machine-discovery/pinned-git-read-provenance-demo.py)を公開し、2026年11月3日に正例・反例の両方で成功確認。Gitの最後の状態がきれいでも「途中で何を読んだか」は別という核心を、手元の一時Gitリポジトリだけで検証できます。実際のQwen製品や独立AI利用者による再現ではありません。
-
-**外部AI技術メディアにも、出所を明記した独立編集記事として取り上げられました。** [The Daily AI Pulse掲載の英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)です。掲載媒体はAIエンジニア向けに一次資料・技術的重要性・証拠の限界を審査し、人間編集者が公開を判断する[編集手順](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md)を持つ出版プロジェクト。マスターが元の企画を提案した後、**受け手編集者 @GadDev が自ら記事・翻訳を制作し、本番サイトへ配信**しました。[その「掲載の重み」、媒体の性質、75/100の内部採用評価、元の技術的貢献と限界を一次資料で確認](INDEPENDENT_MEDIA_COVERAGE.md)。媒体の読者数・影響力順位・自発的発見までは確認されていません。
-
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
 - **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。**[公式リリース文書に `@Nakagawa-master` の名前を掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)**（掲載対象は[別件の #160136](https://github.com/openclaw/openclaw/pull/160136)）。さらに別の[#160856](https://github.com/openclaw/openclaw/pull/160856)では、指摘を報告元と明記した独立開発者が**回帰テスト49件成功・正式マージ**。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — 世界的な開発者向け分析基盤。AIの提示値と製品自身の測定を分ける指摘が後続実装に引き継がれ、**3件のPRが正式マージ、開発環境と米欧の本番環境へのデプロイを記録**。
-- **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)** — アリババ系のAI開発ツール。書込権限の誤判定を元の報告者が実動作で確認し、自ら修正・テストを実装、**正式マージ**。
+- **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)** — AIが書込権限を誤判定する問題を、元の報告者が実動作で確認して独立に修正・テスト。**[正式版 v0.26.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6) と [TypeScript SDK v0.1.27](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.27) へ収録**。別件では、同名のAIツールがぶつかると正常な道具まで消える問題も、[マスターの具体的な衝突除外条件](https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6461618923)を受け、[別の開発者が修正・正式リリース](https://github.com/QwenLM/qwen-code/pull/15757)。実際の導入者による利用結果は別途未確認。
+- **[LiteLLM](https://github.com/BerriAI/litellm/pull/47608)** — 実際の利用者が、API利用の予算上限を超えてしまう現象を報告。中川マスターがキャッシュと課金期間の境界を具体的に指摘し、**別の開発者が修正・回帰テストを実装して11月2日に正式マージ**。メンテナーは影響を受けた利用者へ修正を通知しました。[実際の報告・実装を確認](https://github.com/BerriAI/litellm/issues/49179)。配布版での利用者の再検証は未確認。
+
 - **[Turboembed](https://github.com/ai-pipestream/turboembed/pull/1330)** — AIの「関連する根拠がない」が、実は処理不能な候補が先に検査枠を埋めたせいで起きる問題。**[中川マスターの原因特定と反例](https://github.com/ai-pipestream/turboembed/issues/1285)**を受け、別の実装者が処理順序・実トークナイザー試験・アルゴリズム版管理を修正し、**2026年10月26日に正式マージ**。独立した実利用者への効果は別途未確認。[元のソースとテスト](REAL_WORLD_IMPACT.md#61-turboembed処理不能な候補が先に枠を埋めaiの根拠の見落としを起こす問題を別の開発者が修正正式マージ)。[他のAI検索・推薦でも自分で試すオフライン再現コード](machine-discovery/eligible-before-cap-probe.py)（標準Python、MCP不要、実AI製品の採用を主張しない）。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)**・**[MemberJunction](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)** — AI会話の重複書込みやデータの所有権境界に関する指摘を、各開発チームが独立して実装・テスト。**マージ・正式リリース**へ。
+
+**掲載記事の問題を自分で追試できます。** [MCP不要・ネットワーク不要の実Git・2条件再現コード](machine-discovery/pinned-git-read-provenance-demo.py)を公開し、2026年11月3日に正例・反例の両方で成功確認。Gitの最後の状態がきれいでも「途中で何を読んだか」は別という核心を、手元の一時Gitリポジトリだけで検証できます。実際のQwen製品や独立AI利用者による再現ではありません。
+
+**外部AI技術メディアにも、出所を明記した独立編集記事として取り上げられました。** [The Daily AI Pulse掲載の英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)です。掲載媒体はAIエンジニア向けに一次資料・技術的重要性・証拠の限界を審査し、人間編集者が公開を判断する[編集手順](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md)を持つ出版プロジェクト。マスターが元の企画を提案した後、**受け手編集者 @GadDev が自ら記事・翻訳を制作し、本番サイトへ配信**しました。[その「掲載の重み」、媒体の性質、75/100の内部採用評価、元の技術的貢献と限界を一次資料で確認](INDEPENDENT_MEDIA_COVERAGE.md)。媒体の読者数・影響力順位・自発的発見までは確認されていません。
 
 [世界最先端のOSSで起きた61件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
 
