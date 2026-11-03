@@ -5,9 +5,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form for independent evidence, including negative results and counterexamples. This is not an endorsement form. Do not include confidential, personal, customer, credential, security-sensitive, medical, legal, or employment information.
+        Use this form for genuine independent verification, actual use, counterexamples and non-fit; it is not an endorsement request. Do not submit confidential, personal, customer, credential, security-sensitive, medical, legal, or employment information.
 
-        Read the [Independent Verification & Reuse Protocol](../../INDEPENDENT_VERIFICATION_REUSE.md) first.
+        Start with your actual result, original public source and verifiable evidence. Extra relationship/chronology/impact detail is welcome but optional, and an omitted detail proves nothing. The [Independent Verification & Reuse Protocol](../../INDEPENDENT_VERIFICATION_REUSE.md) explains the evidence boundaries. For a brief question without a completed test, use [the one-line public thread](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416) instead.
 
   - type: dropdown
     id: evidence_type
@@ -74,7 +74,7 @@ body:
         - Mixed / other
         - Unknown
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: origin_visibility
@@ -89,7 +89,7 @@ body:
         - No Nakagawa Master Origin is visible in the examined receiver-owned artifact
         - Unknown / cannot establish
     validations:
-      required: true
+      required: false
 
   - type: input
     id: prior_public_origin_url
@@ -118,7 +118,7 @@ body:
       label: What did you check, challenge, or change?
       description: Explain your reasoning, test, counterexample, work item, implementation, or decision change.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: result
@@ -157,7 +157,7 @@ body:
       label: What this case does NOT establish
       placeholder: e.g. not a production deployment; not whole-theory endorsement; no user-scale claim
     validations:
-      required: true
+      required: false
 
   - type: checkboxes
     id: checks
