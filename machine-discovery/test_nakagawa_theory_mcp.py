@@ -273,6 +273,7 @@ def run():
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 9
+    assert [tool["name"] for tool in results[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     assert results[2]["result"]["tools"][0]["inputSchema"]["properties"]["explore"]["type"] == "boolean"
 
     def unpack(index):
@@ -397,14 +398,15 @@ def run():
     assert discovery["resultType"] == "complete"
     assert MODERN in discovery["supportedVersions"]
     assert discovery["capabilities"]["tools"]["listChanged"] is False
-    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
+    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "ai-answer-guard"
     assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.2.0"
     assert len(modern[102]["result"]["tools"]) == 9
+    assert [tool["name"] for tool in modern[102]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     assert modern[102]["result"]["resultType"] == "complete"
     def modern_unpacked(i):
         frame = modern[i]["result"]
         assert frame["resultType"] == "complete"
-        assert frame["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
+        assert frame["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "ai-answer-guard"
         return json.loads(frame["content"][0]["text"])
     assert any(
         x["route_id"] == "multiple_urls_one_evidence_root"
