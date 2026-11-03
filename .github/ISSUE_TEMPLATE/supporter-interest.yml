@@ -10,7 +10,7 @@ body:
         **This issue is PUBLIC. Do not enter a real name, email address, telephone, payment details, banking/tax data, private organization plans, contracts or specific financial amounts.**
         This form does not accept payments, establish any sponsorship or promise benefits.
         For a confidential or financial proposal, use the [official author's private contact form](https://master.ricette.jp/contact/).
-        See the public [support and evidence overview](../../SUPPORT_THIS_WORK.md).
+        See the public [support and evidence overview](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/SUPPORT_THIS_WORK.md).
   - type: dropdown
     id: support_type
     attributes:
