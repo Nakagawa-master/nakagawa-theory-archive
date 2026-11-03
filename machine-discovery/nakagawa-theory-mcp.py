@@ -22,7 +22,7 @@ PERSON_NAME_POLICY = ROOT.parent / "metadata" / "person-name-policy-v1.json"
 STRUCTURAL_BRIDGES = ROOT.parent / "skills/nakagawa-originals/references/structural_bridges.json"
 VERSIONS = ("2025-11-25", "2025-06-18")  # legacy, handshake-based
 MODERN_VERSION = "2026-07-28"  # stateless, request-local metadata
-SERVER_INFO = {"name": "ai-answer-guard", "version": "1.2.0"}
+SERVER_INFO = {"name": "ai-answer-guard", "version": "1.2.1"}
 INTEGRITY_COMPANION = ROOT / "evidence-integrity-mcp.py"
 WHOLE_STRUCTURE = ROOT / "nakagawa-whole-structure-mcp.py"
 # Match the standalone Skill's false-positive gate: two generic shared words
@@ -442,6 +442,10 @@ def preflight_ai_work(analysis):
         else:
             findings.append({"gate": "citation_independence", "status": "INPUT_CONSISTENT",
                              "reason": "Declared roots do not exhibit this specific duplication/contradiction pattern; factual truth is not tested"})
+    if not isinstance(analysis.get("tool_results", []), list):
+        raise ValueError("tool_results must be a list")
+    if not isinstance(analysis.get("planned_actions", []), list):
+        raise ValueError("planned_actions must be a list")
     for item in analysis.get("tool_results", []):
         if not isinstance(item, dict) or not isinstance(item.get("id"), str) or not isinstance(item.get("status"), str):
             raise ValueError("Each tool result needs id/status")
@@ -955,7 +959,7 @@ def self_test():
     assert error is None and version["protocolVersion"] == VERSIONS[0]
     listing, error = handle({"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
     assert error is None and len(listing["tools"]) == 9
-    routed, error = handle({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": TOOLS[0]["name"], "arguments": {"question": "AI news fact checking and citation provenance"}}})
+    routed, error = handle({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "find_nakagawa_original_for_problem", "arguments": {"question": "AI news fact checking and citation provenance"}}})
     assert error is None and "canonical_original" in routed["content"][0]["text"]
     author = answer_question("AI news fact checking")["author_identity"]
     assert author["published_personal_name_latin"] == "Keisuke Nakagawa"
@@ -970,14 +974,72 @@ def self_test():
     print("PASS: 24-Parent JA/EN/ZH source recall; 4 realistic unrelated no-fits; optional lenses; MCP initialize/list/call")
 
 
+
+def practical_guard_demo():
+    """Run one real local preflight on three illustrated everyday failures."""
+    source_a = {"url": "https://example.org/vendor", "root_id": "release-A",
+                "relation": "primary", "stance": "supports"}
+    copied_a = {"url": "https://example.org/reprint", "root_id": "release-A",
+                "relation": "derived", "stance": "supports"}
+    sample = {
+        "claims": [{"id": "two_news_links_from_one_root",
+                    "independent_confirmation_claimed": True,
+                    "sources": [source_a, copied_a]}],
+        "tool_results": [{"id": "message-send", "status": "failed", "success": False}],
+        "planned_actions": [{"id": "external-edit", "permission_confirmed": False,
+                             "exact_arguments_confirmed": False, "reversible": False,
+                             "requires_external_side_effect": True}],
+    }
+    return {"illustrative_input_not_remote_observation": sample,
+            "actual_local_preflight_result": preflight_ai_work(sample),
+            "next_step": "Try --guard-input YOUR.json to check your OWN supplied observations; never treat sample examples as a real send or authorization check."}
+
+
+def practical_guard_self_test():
+    """Direct real function checks, including fail/allow and invalid-input controls."""
+    bad = practical_guard_demo()["actual_local_preflight_result"]
+    assert bad["verdict"] == "RECHECK_BEFORE_USE", bad
+    assert bad["hold_count"] == 3, bad
+    assert {x["gate"] for x in bad["findings"] if x["status"] == "HOLD"} == {
+        "citation_independence", "tool_result", "action_authority"}, bad
+    ok = preflight_ai_work({"tool_results": [
+        {"id": "send", "status": "completed", "success": True}]})
+    assert ok["hold_count"] == 0 and ok["verdict"] == "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS", ok
+    pending = preflight_ai_work({"tool_results": [
+        {"id": "send", "status": "pending", "success": False}]})
+    assert pending["verdict"] == "RECHECK_BEFORE_USE" and pending["findings"][0]["status"] == "PENDING"
+    for invalid in ({"tool_results": "completed"}, {"planned_actions": "yes"},
+                    {"tool_results": [{"id": "send", "status": "completed", "success": "true"}]}):
+        try:
+            preflight_ai_work(invalid)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError("invalid preflight accepted: " + repr(invalid))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--self-test", action="store_true")
+    parser.add_argument("--guard-demo", action="store_true", help="Run a realistic local no-side-effect AI answer/action guard example")
+    parser.add_argument("--guard-input", metavar="JSON_PATH_OR_DASH", help="Read your own supplied evidence/tool/action JSON; - reads stdin; exit 1 on HOLD/PENDING, 2 on invalid input")
     parser.add_argument("--query", help="One local text query, no MCP host required")
     parser.add_argument("--explore", action="store_true", help="Include seven optional structural hypotheses for an independent MCP client")
     args = parser.parse_args()
     if args.self_test:
+        practical_guard_self_test()
         self_test()
+    elif args.guard_demo:
+        print(json.dumps(practical_guard_demo(), ensure_ascii=False, indent=2))
+    elif args.guard_input is not None:
+        try:
+            raw = sys.stdin.read() if args.guard_input == "-" else Path(args.guard_input).read_text(encoding="utf-8")
+            result = preflight_ai_work(json.loads(raw))
+        except (ValueError, OSError, TypeError, KeyError) as error:
+            print("invalid supplied input: " + str(error), file=sys.stderr)
+            sys.exit(2)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        sys.exit(1 if result["verdict"] == "RECHECK_BEFORE_USE" else 0)
     elif args.query is not None:
         print(json.dumps(answer_question(args.query, explore=args.explore), ensure_ascii=False, indent=2))
     else:
