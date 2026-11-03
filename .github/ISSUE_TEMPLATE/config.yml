@@ -7,5 +7,5 @@ contact_links:
     url: https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399
     about: Bring a real, non-confidential problem and get routed to relevant public sources and boundaries.
   - name: Independent verification & reuse registry
-    url: https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402
-    about: Report or inspect independent verification, falsification, implementation, non-fit, and cross-context reuse.
+    url: https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml
+    about: Submit new independent verification, falsification, real use, implementation, non-fit or cross-context reuse directly; the former registry issue is retired.
