@@ -376,6 +376,16 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": true
+    },
+    {
+      "id": "github_channel_cursor_boundary_no_silent_loss_no_duplicate_delivery",
+      "when": [
+        "A GitHub issue comment gets marked read but never reaches an AI coding agent because created_at equals the poll cursor second",
+        "GitHub channel bot loses a delayed comment at cursor boundary; changing > to >= risks redelivery",
+        "GitHubとAI連携でコメントが届かない／秒単位のカーソル衝突／既読なのに処理されない"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -1201,6 +1211,40 @@
         },
         "plain_language_return": "A configured AI spending limit looked correct while its stored seven-day total silently missed a charged request. Nakagawa Master identified the real cache-expiry and budget-window boundary; another developer shipped the source fix to LiteLLM main. The next step is for an actual affected operator to verify the released software and budget enforcement, not merely trust a merged PR.",
         "independent_test_gate": "Operator must match key/team, time window, settled cutoff and deployed patch ancestry; test both a before-expiry control and post-TTL completion, then verify durable total and subsequent denial under an authorized isolated cap. A local audit of hand-entered aggregates does not establish a production repair."
+      },
+      {
+        "id": "github_channel_cursor_boundary_no_silent_loss_no_duplicate_delivery",
+        "matched_problem": [
+          "An independently reported GitHub-channel AI bot silently loses a valid comment whose created_at equals the previously committed notification polling cursor second",
+          "Fixing the strict created_at > windowSince filter with >= might re-deliver a comment after dedupe ring eviction or an ambiguous publish timeout",
+          "A model, reviewer or developer needs a source-backed positive/negative/no-fit test for comment delivery versus only a GitHub read or poll receipt"
+        ],
+        "falsifiable_distinction": "A comment created EXACTLY at the committed cursor second must not disappear, and a different later comment at the same timestamp must not collapse into one. Eligibility under inclusive re-fetch does not prove exactly-once processing; reuse a stable (repo,thread,comment ID) receipt across process restart. If a write could have happened before an ambiguous failure but no native effect receipt was confirmed, leave the outcome UNKNOWN rather than blindly retry. An older out-of-window comment is NOT automatically covered by this one-second boundary fix.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/README.md",
+        "canonical_relation": "CONCEPTUAL comparison only: Nakagawa Master's original establishment-condition theory distinguishes a visible 'processed/read' surface from a genuinely completed causal delivery path. The independently filed Qwen issue and its code analysis belong to original reporter @wenshao; no evidence that reporter derived it from this canonical Parent or saw the source. The locally testable bounded receipt model is authored by Nakagawa Master and not accepted upstream.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "local_script": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/github-comment-delivery-boundary-probe.py",
+          "self_test": "python3 machine-discovery/github-comment-delivery-boundary-probe.py --self-test",
+          "sample": "python3 machine-discovery/github-comment-delivery-boundary-probe.py --sample",
+          "verified_author_side_test": "9 Python 3 stdlib local logic/model tests passed, including strict-boundary omission, naive overlap, durable SQLite receipt across restart, independent IDs, ambiguous outcome, no false receipt and nonfit. NOT a test of the real GithubAdapter, real notifications, a real affected user's experience or any actual outbound comment.",
+          "positive": "Candidate inclusive read recovers a comment created at the exact cursor second, with a stable stored downstream delivery receipt preventing redispatch of the same confirmed ID across restart.",
+          "negative": "The old strict created_at > cursor test drops the exact-boundary comment. Naively changing to >= without a retained receipt makes already handled exact-boundary content eligible again; a pending/ambiguous send cannot be retried safely without native reconciliation.",
+          "nonfit": "A comment outside the inclusive one-second window or a bot with a different notification pipeline; this does not explain Nakagawa Master's personal GitHub notification inbox or prove GitHub service delivery failure.",
+          "integration_gate": "For actual Qwen Code fix, inspect current exact GithubAdapter and daemon HEAD, test delayed notifications, cursor jump, ring/pruning, crash/ambiguous publish, same-second distinct messages and restart recovery on an authorized local installation. Evidence of an actual repaired customer interaction requires separate receiver-native publication and acknowledgment.",
+          "permission": "The public file grants no access to a user's GitHub notifications, external issue write, bot deployment, GitHub Actions, or background autonomous monitoring."
+        },
+        "external_observation": {
+          "independent_origin_issue": "https://github.com/QwenLM/qwen-code/issues/16227",
+          "source_review_triage": "https://github.com/QwenLM/qwen-code/issues/16227#issuecomment-6611499641",
+          "source_file": "https://github.com/QwenLM/qwen-code/blob/main/packages/channels/github/src/GithubAdapter.ts",
+          "source_blob_checked": "84608af9b57b34ee4d5a57e7ca5bd7cc4bfd1707",
+          "distinct_reporter": "@wenshao originated the issue Nov3 UTC. Qwen bot verified a code-path analysis against main; the bot did NOT execute the reported runtime probe. Independent incident and author roles remain distinct from Nakagawa Master's separate model fixture.",
+          "verified_upper_bound": "2026-11-04: externally reported Qwen GitHub-channel bug and bot source-analysis triage, unmerged/OPEN issue when checked. This self-published 9-test offline model has no independent upstream adoption, no executed Qwen integration test, no confirmed actual human repaired delivery and no independently proved original theory adoption."
+        },
+        "plain_language_return": "A GitHub comment can be visible and marked read while an AI bot never sees it. An independent Qwen developer reported this exact timestamp-boundary failure; Nakagawa Master published a small offline test to separate genuine delivery, replay prevention and uncertain outcomes. It helps engineers evaluate a repair without pretending the Qwen bot has already been fixed.",
+        "independent_test_gate": "Choose the exact problem, run the isolated model only as a falsifiable aid, inspect the original receiving project's source and its own tests, and separate an independently shipped/used code change from a public local example or a mention. Do not infer this Qwen bug explains a person's missing ordinary GitHub mentions."
       }
     ],
     "output_contract": {
@@ -1289,6 +1333,11 @@
         "question": "My LiteLLM budget window undercounts spend after a 60s auth-cache expiry; did the merged patch reach my deployment, and can I audit the exact seven-day amount safely?",
         "expected_route": "litellm_budget_window_cache_expiry_durable_spend_and_enforcement",
         "must_not_claim": "a post-Nov2 LiteLLM published package or actual customer budget restoration solely from merge and a local sample audit"
+      },
+      {
+        "question": "A GitHub-channel AI coding bot marks a comment read but skips it because comment.created_at equals the stored cursor second. Would simply swapping > for >= prove safe delivery, and does it explain my own GitHub @mentions?",
+        "expected_route": "github_channel_cursor_boundary_no_silent_loss_no_duplicate_delivery",
+        "must_not_claim": "Qwen integration successfully fixed, durable exactly-once effects in production, failure of personal GitHub notifications, source author's use of the canonical theory or independent AI adoption of the local checker"
       }
     ]
   },
