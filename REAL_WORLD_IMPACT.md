@@ -23,6 +23,8 @@
 
 **60の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
+**マージから外部の多言語読者へ（別の編集者による配信確認）：** [The Daily AI Pulse編集者 @GadDev は、本人が提示したQwen Codeのレビュー証拠問題を編集し、PR #253を正式マージ](https://github.com/GadDev/daily-ai-pulse/pull/253)。独立媒体の[英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語記事](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)には、元のQwen報告者と、中川マスターの検証提案が別々の出典として記されています。[2026年10月26日の外部サイト本番デプロイ](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)は受け手のマージコミット `e275f243` を使い、記事2ページを生成、Firebaseへ配信し、公開サイトのHTTP確認工程を**成功**させました。これは第三者側の**実編集・2言語の公開配信**で、単なるマージ予定ではありません。一方、企画を本人が提出したため**独立した自然発見**ではなく、読者数・独立再利用・大規模人物認知を示すものでもありません。原文には実験やマスターの提案を**未実行の検査**として明確に限定しています。この報道PRはOSSへの修正PRではなく、下記の14件／8リポジトリの実装集計へ加算しません。
+
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
 **起点:** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252) の Nakagawa-master review  
