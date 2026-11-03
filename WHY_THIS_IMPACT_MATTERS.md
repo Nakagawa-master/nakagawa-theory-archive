@@ -4,6 +4,10 @@
 
 > **「修正した」と書いてあるから、あなたの仕事も安全になったとは限らない。では、誰が何を確かめ、誰が何を本当に変えたのか？**
 
+## 外部技術メディアが採用することにも意味がある
+
+[The Daily AI Pulse](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)はAIの開発現場で使える情報を、原資料・証拠区分・編集判断を経て紹介する出版プロジェクト。今回は、本人の投稿したQwenレビューの問題を、**外部編集者が選んで独自の記事へ仕上げ、英語とフランス語で実際に本番配信**しました。[媒体の編集基準](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md)、[編集者がマージしたPR](https://github.com/GadDev/daily-ai-pulse/pull/253)、[受け手側の配信成功記録](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)が残ります。**何が第三者による独立の判断なのか、どの部分が本人の企画提出だったのか、媒体自身の価値がどこにあるのか**を[30秒で把握できる独立掲載記録](INDEPENDENT_MEDIA_COVERAGE.md)にまとめました。これは大手報道機関への掲載や読者数の保証ではありません。
+
 ## まず三つの現実の変更
 
 **1. AIが使う道具の名前が重なった。関係ない道具まで消えた。** [Qwen Codeの実際の利用者報告](https://github.com/QwenLM/qwen-code/issues/15741)に対して、マスターは「名前が重複した危険なグループをすべて除外するが、正常な別の道具は残す」という条件を具体化しました。[別の開発者による修正とテストは正式マージ](https://github.com/QwenLM/qwen-code/pull/15757)され、**[11月2日公開のQwen Code正式版 v0.26.6でも修正項目として明記](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)**されています。正式版タグにも当該マージコミットが含まれることを検証済みです。さらに別件[#15681](https://github.com/QwenLM/qwen-code/pull/15681)では、「安全な読み取りを拒否する」だけでなく「実際の保護ファイルへの書き込みを許してしまう」危険な差をマスターが[ソースで指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。独立開発者自身が[許可→拒否の修正前後を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、実装した修正も**同じ正式版 v0.26.6に収録**されました。その2件はさらに[11月2日公開の公式TypeScript SDK v0.1.27](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.27)の実タグの祖先にも入っており（#15757: ahead 65／behind 0、#15681: ahead 39／behind 0）、SDKはCLI 0.26.6同梱を明記しています。**公式CLI→公式SDKという追加の配布経路**は確認できましたが、修正版を導入した一般利用者の再現結果は未確認です。
