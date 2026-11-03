@@ -1,6 +1,6 @@
 {
   "name": "ai-answer-guard",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Local read-only MCP for checking evidence independence, tool outcomes and action permissions, with an optional source-to-original navigator. No API keys or network calls.",
   "mcpServers": {
     "ai-answer-guard": {
