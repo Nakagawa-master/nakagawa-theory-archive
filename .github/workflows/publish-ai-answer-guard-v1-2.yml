@@ -1,4 +1,4 @@
-name: Publish AI Answer Guard integrated existing MCP v1.2.0
+name: Verify / owner-approved publish AI Answer Guard v1.2.1
 
 on:
   pull_request:
@@ -23,11 +23,8 @@ on:
       - 'machine-discovery/problem-to-theory-origin-index-v1.json'
       - 'skills/nakagawa-originals/references/structural_bridges.json'
       - 'metadata/person-name-policy-v1.json'
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/publish-ai-answer-guard-v1-2.yml'
   workflow_dispatch:
+    # Explicit owner-only manual action; never publish on push or PR.
 
 permissions:
   contents: read
@@ -50,20 +47,20 @@ jobs:
       - name: Build and execute unpacked GitHub Release MCP Bundle
         run: |
           python3 machine-discovery/build-original-router-mcpb.py
-          test -s dist/nakagawa-original-router-1.2.0.mcpb
+          test -s dist/ai-answer-guard-1.2.1.mcpb
           python3 machine-discovery/build-original-router-mcpb.py --output dist/independent-copy.mcpb
           python3 - <<'PY'
           import hashlib
           from pathlib import Path
           def digest(p):
               return hashlib.sha256(Path(p).read_bytes()).hexdigest()
-          assert digest("dist/nakagawa-original-router-1.2.0.mcpb") == digest("dist/independent-copy.mcpb")
+          assert digest("dist/ai-answer-guard-1.2.1.mcpb") == digest("dist/independent-copy.mcpb")
           print("PASS: deterministic MCPB source package checksum")
           PY
 
   publish:
     needs: verify
-    if: github.event_name != 'pull_request' && github.repository == 'Nakagawa-master/nakagawa-theory-archive' && github.ref == 'refs/heads/main' && needs.verify.result == 'success'
+    if: github.event_name == 'workflow_dispatch' && github.repository == 'Nakagawa-master/nakagawa-theory-archive' && github.ref == 'refs/heads/main' && needs.verify.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -77,27 +74,27 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          test -s dist/nakagawa-original-router-1.2.0.mcpb
-          if gh release view mcp-router-v1.2.0 > /dev/null 2>&1; then
+          test -s dist/ai-answer-guard-1.2.1.mcpb
+          if gh release view mcp-guard-v1.2.1 > /dev/null 2>&1; then
             mkdir -p /tmp/mcp-existing
-            gh release download mcp-router-v1.2.0 --pattern "nakagawa-original-router-1.2.0.mcpb" --dir /tmp/mcp-existing
+            gh release download mcp-guard-v1.2.1 --pattern "ai-answer-guard-1.2.1.mcpb" --dir /tmp/mcp-existing
             python3 - <<'PY'
           from pathlib import Path
           import hashlib
-          created = Path("dist/nakagawa-original-router-1.2.0.mcpb").read_bytes()
-          published = Path("/tmp/mcp-existing/nakagawa-original-router-1.2.0.mcpb").read_bytes()
+          created = Path("dist/ai-answer-guard-1.2.1.mcpb").read_bytes()
+          published = Path("/tmp/mcp-existing/ai-answer-guard-1.2.1.mcpb").read_bytes()
           assert hashlib.sha256(created).digest() == hashlib.sha256(published).digest(), "Existing released bundle differs: use a NEW release/version, never silently overwrite"
           print("PASS: existing immutable release matches tested source bundle")
           PY
           else
-            gh release create mcp-router-v1.2.0 dist/nakagawa-original-router-1.2.0.mcpb \
+            gh release create mcp-guard-v1.2.1 dist/ai-answer-guard-1.2.1.mcpb \
               --target "$GITHUB_SHA" \
-              --title "Nakagawa AI Answer Guard — Integrated MCP v1.2.0" \
-              --notes "AI Answer Guard: everyday citation-source independence, tool-success and action-boundary preflight in the SAME original-source MCP identity. One local Python MCPB install includes all 313 published derivative-to-Parent originals and 24 curated fast source routes. Requires host installation and invocation; author Nakagawa Master, published originals at https://master.ricette.jp/ . Python standard library; no service account, outbound network calls or secrets. See AI_ANSWER_GUARD_INSTALL.md for Qwen/Codex and Claude Desktop."
+              --title "AI Answer Guard — Practical AI Evidence and Action Preflight v1.2.1" \
+              --notes "AI Answer Guard v1.2.1: prevent misleading AI completion claims with caller-provided failed/pending tool receipts, copied evidence roots, permission gaps and irreversible-action review. Nine local read-only tools, preflight FIRST; no API keys, network access or host interception. Real standalone --guard-demo and --guard-input user checks, plus all 313 published derivative-to-canonical-Parent links as optional deeper reading. Developed from original source work by Nakagawa Master (Keisuke Nakagawa), https://master.ricette.jp/ . Requires intentional host invocation; no claim of unseen real-world use. See AI_ANSWER_GUARD_INSTALL.md."
           fi
       - name: Create verified registry metadata for released exact checksum
         run: |
-          SHA256="$(sha256sum dist/nakagawa-original-router-1.2.0.mcpb | awk '{print $1}')"
+          SHA256="$(sha256sum dist/ai-answer-guard-1.2.1.mcpb | awk '{print $1}')"
           python3 - "$SHA256" <<'PY'
           import json
           import sys
@@ -106,10 +103,10 @@ jobs:
           assert len(digest) == 64
           record = {
             "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-            "name": "io.github.Nakagawa-master/nakagawa-original-router",
+            "name": "io.github.Nakagawa-master/ai-answer-guard",
             "title": "AI Answer Guard — Source Integrity & Action Preflight",
-            "description": "AI answer guard: check sources, tool results and actions; find 313 canonical originals.",
-            "version": "1.2.0",
+            "description": "Check AI replies and actions: flag failed tools, copied evidence and missing permission before use.",
+            "version": "1.2.1",
             "repository": {
               "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
               "source": "github",
@@ -117,7 +114,7 @@ jobs:
             },
             "packages": [{
               "registryType": "mcpb",
-              "identifier": "https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb",
+              "identifier": "https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-guard-v1.2.1/ai-answer-guard-1.2.1.mcpb",
               "fileSha256": digest,
               "transport": {"type": "stdio"}
             }]
