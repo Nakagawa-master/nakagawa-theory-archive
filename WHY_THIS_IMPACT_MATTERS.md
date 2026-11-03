@@ -37,6 +37,8 @@ python3 machine-discovery/verify-upstream-release.py BerriAI/litellm 47608 v1.10
 
 **LiteLLM（[修正PR #47608](https://github.com/BerriAI/litellm/pull/47608)は上流マージ、当該修正を含む公開版への収録は要別確認）:** まず導入予定のコード・パッケージに**マージコミット 523b87ec が含まれるか**を確認します。模擬費用・隔離した予算データ・短い認証キャッシュTTLの検証環境で、管理者による設定変更がなくても**実行中にキャッシュ期限が切れた要求**の利用費が適切な予算期間へ保存され、上限超過後の次の要求を正しく拒否できるかを調べます。実料金を発生させる本番試験は不要です。[実際の利用者報告と数値](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755)は過去の不具合の根拠であり、修正後の復旧報告ではありません。
 
+**LiteLLM利用者のための実装済みオフライン検証:** [予算期間の保存額と実際の費用履歴の集計が一致するかを比較するPython検査器](machine-discovery/LITELLM_BUDGET_WINDOW_AUDIT.md)を追加しました。厳密に同じキー・期間・集計時点で確定済みの数字だけを入力し、過少計上・過大計上・一致・比較不能を区別します。元の独立利用者の公開数値を使う例では差額 **16.0108 USD**、12件のローカルテストPASS。**顧客が修正版を導入したこと、実際の予算超過を新規に防いだことを意味しません。** 個人・顧客・認証情報は送らず、ネットワーク接続やMCPも不要です。
+
 **For independent OSS users and AI assistants:** these are source-linked, opt-in reproduction conditions, not claims of a new installation, a successful customer retest or model-side autonomous adoption. Check the *installed* version/merge ancestry and the observable behavior in a safe test environment; the independent engineer wrote each patch. [Exact public cases](REAL_WORLD_IMPACT.en.md) and [the original author and works](https://master.ricette.jp/theory-archive/) are available separately.
 
 ## 「削除できない」「予算内です」――本当に守られている？
