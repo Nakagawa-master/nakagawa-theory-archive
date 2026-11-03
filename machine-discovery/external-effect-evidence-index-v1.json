@@ -4363,6 +4363,62 @@
         "independent model understanding or endorsement of original corpus"
       ],
       "next_native_receiver": "Author has chosen accurate GET observation description; next native maintainer-authorized integration run/review and merge, and optional distinct true worker poll test; later independent actual end-user evidence. Preserve original A/B and creator no-fit controls."
+    },
+    {
+      "case_id": "litellm-49179-window-budget-ttl-merged-fix",
+      "topic": "Durable key/team budget-window undercount across expired auth cache, real customer cap bypass, and independent upstream repair",
+      "external_repository": "BerriAI/litellm",
+      "issue": "https://github.com/BerriAI/litellm/issues/49179",
+      "independent_real_world_failure": {
+        "reporter": "jgoldringatb",
+        "evidence": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755",
+        "scope": "One independent production environment, 7-day SpendLogs 209.8900 USD versus durable window 193.8792 USD against 200 USD cap, requests allowed; no admin update; not an estimated global loss",
+        "distinguishes": "Uncounted spend in window is not missing SpendLogs, and Redis/in-memory success does not establish durable enforcement"
+      },
+      "nakagawa_source_contributions": {
+        "actor": "Nakagawa-master",
+        "precise_review": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6518553378",
+        "no_admin_update_acceptance": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6535985229",
+        "role": "Source-based distinction of window identity versus cap, key versus team, TTL-expiry negative/positive durable and next-request rejection; did not author the final merged implementation or perform the independent production test"
+      },
+      "third_party_acknowledgment": {
+        "actor": "A-P-Shukla",
+        "url": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6519461222",
+        "scope": "Explicitly acknowledges exact accounting distinction; not the author of merged PR"
+      },
+      "independent_merged_implementation": {
+        "actor": "etiennechabert",
+        "pr": "https://github.com/BerriAI/litellm/pull/47608",
+        "merged": "2026-11-02T22:42:00Z",
+        "merge_sha": "523b87ec718cc733363ac0d66312730c51a23a27",
+        "pr_head": "3416db70420962abc2f7da63bd3d9738d1341ee6",
+        "scope": "When key/team auth-cache object expires or is evicted, retrieve budget windows without restoring deleted credential; added absence-marker invalidation and race checks; merged upstream",
+        "relationship": "Separate independent author; direct use of Nakagawa review by merged implementation not evidenced"
+      },
+      "maintainer_result": {
+        "actor": "mateo-berri",
+        "merge_and_qa_report": "https://github.com/BerriAI/litellm/pull/47608#issuecomment-6590365149",
+        "issue_closed": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6590355024",
+        "separate_window_policy": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6583039192"
+      },
+      "alternate_patch": {
+        "pr": "https://github.com/BerriAI/litellm/pull/49603",
+        "result": "closed_without_merge"
+      },
+      "current_stage": "MERGED_UPSTREAM_C3_WITH_MAINTAINER_REPORTED_TEST_AND_LIVE_QA__SHIPPED_RELEASE_AND_INDEPENDENT_CUSTOMER_C4_NOT_VERIFIED__PERSON_MASS_C7_NOT_VERIFIED",
+      "human_explanation": "WHY_THIS_IMPACT_MATTERS.md",
+      "original_interpretive_context": {
+        "original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "official_derivative": "derivatives/011/human-entry.md",
+        "status": "FIRST_PARTY_GROUNDED_ANALOGY_ONLY__NOT_VERIFIED_DIRECT_EXTERNAL_ENGINEER_THEORY_USE"
+      },
+      "not_claimed": [
+        "Master coded or merged #47608",
+        "engineer etiennechabert demonstrably implemented Master's particular suggested test",
+        "upstream merge automatically means package release, install or customer recovery",
+        "actual financial loss amount prevented",
+        "voluntary unconnected AI adoption or repeated mass PERSON recognition"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
