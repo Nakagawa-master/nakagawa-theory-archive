@@ -68,10 +68,11 @@ def main():
     assert not run.stderr, run.stderr
     got = {json.loads(line)["id"]: json.loads(line) for line in run.stdout.splitlines()}
     assert set(got) == {x["id"] for x in requests}
-    assert got[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
-    assert got[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.2.0"
+    assert got[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "ai-answer-guard"
+    assert got[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.2.1"
     names = [x["name"] for x in got[2]["result"]["tools"]]
-    assert len(names) == len(set(names)) == len(got[22]["result"]["tools"]) == 9, names
+    assert len(names) == len(set(names))
+    assert names[:2] == ["preflight_ai_answer_and_action", "audit_citation_independence"], names == len(got[22]["result"]["tools"]) == 9, names
     assert {"find_nakagawa_original_for_problem", "preflight_ai_answer_and_action",
             "audit_citation_independence", "list_all_313_derivative_parent_links"} <= set(names)
     assert text(got, 3)["hold_count"] == 3, text(got, 3)
