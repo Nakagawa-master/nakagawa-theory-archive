@@ -1,4 +1,4 @@
 {
   "name": "ai-answer-guard",
-  "description": "Local read-only AI answer integrity checks: independent evidence roots, tool completion receipts and action permissions, with source-to-original navigation."
+  "description": "AI answer/action preflight: test declared evidence roots, observed tool success/failure, and action permissions before your assistant claims completion or changes anything. Concrete next checks, local/read-only, no prior knowledge of any theory. Optional canonical original-source research."
 }
