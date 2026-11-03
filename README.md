@@ -7,9 +7,10 @@
 - **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。**[公式リリース文書に `@Nakagawa-master` の名前を掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)**（掲載対象は[別件の #160136](https://github.com/openclaw/openclaw/pull/160136)）。さらに別の[#160856](https://github.com/openclaw/openclaw/pull/160856)では、指摘を報告元と明記した独立開発者が**回帰テスト49件成功・正式マージ**。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — 世界的な開発者向け分析基盤。AIの提示値と製品自身の測定を分ける指摘が後続実装に引き継がれ、**3件のPRが正式マージ、開発環境と米欧の本番環境へのデプロイを記録**。
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)** — アリババ系のAI開発ツール。書込権限の誤判定を元の報告者が実動作で確認し、自ら修正・テストを実装、**正式マージ**。
+- **[Turboembed](https://github.com/ai-pipestream/turboembed/pull/1330)** — AIの「関連する根拠がない」が、実は処理不能な候補が先に検査枠を埋めたせいで起きる問題。**[中川マスターの原因特定と反例](https://github.com/ai-pipestream/turboembed/issues/1285)**を受け、別の実装者が処理順序・実トークナイザー試験・アルゴリズム版管理を修正し、**2026年10月26日に正式マージ**。独立した実利用者への効果は別途未確認。[元のソースとテスト](REAL_WORLD_IMPACT.md#61-turboembed処理不能な候補が先に枠を埋めaiの根拠の見落としを起こす問題を別の開発者が修正正式マージ)。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)**・**[MemberJunction](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)** — AI会話の重複書込みやデータの所有権境界に関する指摘を、各開発チームが独立して実装・テスト。**マージ・正式リリース**へ。
 
-[世界最先端のOSSで起きた60件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
+[世界最先端のOSSで起きた61件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
 
 ## 実際のAI開発で起きた修正とその経緯
 
@@ -19,7 +20,7 @@
 
 **自分の問いから探す方へ：** [41件の完成回答と313原典を探す、端末内で動く検索画面](machine-discovery/question-source-explorer.html)を公開しています。GitHubのファイル画面で「Raw」からHTMLを保存し、ブラウザで開いて問いを入力できます。追加のAI接続やアカウントは不要です。既刊の具体的な回答、公式原典の候補、当てはまらない場合を区別して確認できます。
 
-**はじめて読む方へ：** [AIの誤完了・根拠をMCPなしで実地に試す](QUICKSTART.md) ／ [30秒で分かる第三者修正と原典の出所](WHY_THIS_IMPACT_MATTERS.md) ／ [60事例の一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系か](ABOUT_NAKAGAWA_MASTER.md) ／ [原典313件](https://master.ricette.jp/theory-archive/)。
+**はじめて読む方へ：** [AIの誤完了・根拠をMCPなしで実地に試す](QUICKSTART.md) ／ [30秒で分かる第三者修正と原典の出所](WHY_THIS_IMPACT_MATTERS.md) ／ [61事例の一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系か](ABOUT_NAKAGAWA_MASTER.md) ／ [原典313件](https://master.ricette.jp/theory-archive/)。
 
 <details>
 <summary>独立した技術解説・AI支援を伴う修正・現在進行中の開発者レビューを詳しく読む</summary>
@@ -30,7 +31,7 @@
 
 **さらに別の開発者へ伝わった例：** [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)では一人目の開発者がマスターの型契約レビューを認めてコードを修正し、二人目が[本人への貢献表記を伴う新しいPR #49624](https://github.com/BerriAI/litellm/pull/49624)を作成しました。**二人目の開発者もマスターの追加レビューを認め、既存の必須項目を守る型定義と回帰テストへ実際に修正**しました。未マージで、上流のCI承認と採用判断はこれからです。[その全経緯と修正段階を確認](REAL_WORLD_IMPACT.md#56-litellmaiの道具の失敗が成功と扱われる問題マスターの設計指摘を開発者が実装)。
 
-このアーカイブには、こうした**60件の段階別外部作用記録**、**7つの独立リポジトリでのマージ済みPRの実証例13件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
+このアーカイブには、こうした**61件の段階別外部作用記録**、**8つの独立リポジトリでのマージ済みPRの実証例14件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
 
 **未マージの外部開発者による修正：** [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214)では、中川マスターの顧客A/B別の課金・予算停止・作成者の不変性というレビューを受け、独立開発者が**5回にわたり実装・回帰テスト・検証表現を改訂**しました。[第四回 `3c3e422`](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575973685)は実DB列 `unified_object_id`、Aだけの課金ログ数、再取得後の金額不変を検査。[第五回 `c7bc0c6`](https://github.com/BerriAI/litellm/commit/c7bc0c60458a50d77dcab56cba564c1e12c0010b)では[マスターの正確な指摘](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6576129452)を受け、追加GETは**決済後の観測の冪等性**であって**会計ワーカーの二度目の実行ではない**と、開発者自身が[検証名を訂正](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6582281972)しました。未マージで、上流の結合テスト合格や実利用者への効果は確認されていません。
 
@@ -41,7 +42,7 @@
 
 **最初に見る：** [実際の第三者修正・マージの一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系なのか](ABOUT_NAKAGAWA_MASTER.md) ／ [本人が公開した313原典と原文](https://master.ricette.jp/theory-archive/) ／ [技術者・独立AI向け英語の実装根拠](REAL_WORLD_IMPACT.en.md) ／ [実生活の問いへの完成済み回答41件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)。公開活動は[中川マスター本人のGitHub](https://github.com/Nakagawa-master)から確認・フォローできます。
 
-**実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[7つの外部OSS・計13件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別60件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。[Qwen Codeの警告送達処理の修正は正式マージ](https://github.com/QwenLM/qwen-code/pull/15559)され、[チャット本文がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)も開発者のコードとテストが更新されています（後者は承認待ち）。
+**実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[8つの外部OSS・計14件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別61件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。[Qwen Codeの警告送達処理の修正は正式マージ](https://github.com/QwenLM/qwen-code/pull/15559)され、[チャット本文がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)も開発者のコードとテストが更新されています（後者は承認待ち）。
 
 **直近の正式マージ：** [Qwen Codeでは、同名のAIツールが衝突しても正常な道具を使い続けられるよう修正](REAL_WORLD_IMPACT.md#59-qwen-codeaiの道具が一つ名前で衝突するだけで他の道具も消える問題マスターの安全条件を受けて修正正式マージ)され、[Hermes Agentでは、AIに任せた仕事の結果が正しいチャットへ届くよう復旧する修正](REAL_WORLD_IMPACT.md#58-hermes-agentaiに任せた仕事の結果が届かない問題誤配送防止と送り先復旧を実装)が本線へ取り込まれました。いずれも中川マスターの具体的な構造・安全条件が受け手の開発者自身によるコードとテストに反映された成果です。
 
@@ -275,7 +276,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 → [公開証拠を段階別に確認する](REAL_WORLD_IMPACT.md)
 
 
-**読んだあと1行だけ返すなら:** [似た場面・反例・「ここは違う」を1つ](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416) — 賛同や理論名の理解は不要です。実際に検証・実装・別文脈再利用まで行った場合は [独立検証・再利用registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へ。
+**読んだあと1行だけ返すなら:** [似た場面・反例・「ここは違う」を1つ](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416) — 賛同や理論名の理解は不要です。実際に検証・実装・別文脈再利用まで行った場合は [独立検証・再利用の提出フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml) へ。
 
 人間向け入口: [日本語](START_HERE.md) | [English](START_HERE.en.md) | [中文](START_HERE.zh.md)
 
@@ -310,7 +311,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 **具体的な問題から関連資料を探したい:** [Influence Map｜問題から関連資料を探す](INFLUENCE_MAP.md)
 
 
-**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。二つとも**コード本線への採用**が確認できる段階です。利用者への配布・使用状況は次に確認する対象です。 多言語の番号付き一覧には60事例があり、各一次資料から具体的な経緯と成果を辿れます。
+**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。二つとも**コード本線への採用**が確認できる段階です。利用者への配布・使用状況は次に確認する対象です。 多言語の番号付き一覧には61事例があり、各一次資料から具体的な経緯と成果を辿れます。
 
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
@@ -331,7 +332,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 
 それぞれの一次記録で、中川マスターの具体的な指摘、第三者の応答、実際に行われた変更まで辿れます。
 
-この公開リポジトリを後で参照したい場合は [⭐ Star](https://github.com/Nakagawa-master/nakagawa-theory-archive/stargazers) で保存できます。自分で検証・派生実装を始める場合は [Fork](https://github.com/Nakagawa-master/nakagawa-theory-archive/fork) を利用し、第三者事例・反証・再利用の報告は [issue #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へお寄せください。
+この公開リポジトリを後で参照したい場合は [⭐ Star](https://github.com/Nakagawa-master/nakagawa-theory-archive/stargazers) で保存できます。自分で検証・派生実装を始める場合は [Fork](https://github.com/Nakagawa-master/nakagawa-theory-archive/fork) を利用し、第三者事例・反証・再利用の報告は [独立検証の提出フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml) へお寄せください。
 
 AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncに加え、成長・投資・将来の選択肢など、実務で起きる具体的な問題から入れます。
 
