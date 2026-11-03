@@ -13,6 +13,7 @@ import argparse
 import json
 import os
 import sqlite3
+import threading
 import tempfile
 import unittest
 
@@ -45,17 +46,20 @@ class ReceiptStore:
         basis for automatic retry, even when no local success was recorded.
         """
         with self.conn:
+            inserted = self.conn.execute(
+                "INSERT OR IGNORE INTO receipt (repo, thread, comment, state) "
+                "VALUES (?, ?, ?, 'pending')",
+                (repo, thread, comment),
+            )
+            if inserted.rowcount == 1:
+                return 'NEW'
             old = self.conn.execute(
                 'SELECT state FROM receipt WHERE repo=? AND thread=? AND comment=?',
                 (repo, thread, comment),
             ).fetchone()
-            if old:
-                return 'DONE_ALREADY' if old[0] == 'done' else 'OUTCOME_UNKNOWN'
-            self.conn.execute(
-                "INSERT INTO receipt VALUES (?, ?, ?, 'pending')",
-                (repo, thread, comment),
-            )
-        return 'NEW'
+            if old is None:
+                raise RuntimeError('Receipt changed between reservation and read')
+            return 'DONE_ALREADY' if old[0] == 'done' else 'OUTCOME_UNKNOWN'
 
     def acknowledge_native_delivery(self, repo: str, thread: str, comment: str) -> None:
         """Only after independently confirming the concrete effect/receipt."""
@@ -102,6 +106,27 @@ class BoundaryTests(unittest.TestCase):
         self.assertEqual(s.claim('o/r', '42', 'a'), 'NEW')
         self.assertEqual(s.claim('o/r', '42', 'b'), 'NEW')
         s.close()
+
+    def test_two_connections_cannot_both_reserve_same_comment(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, 'receipts.sqlite')
+            ReceiptStore(path).close()  # initialize schema before concurrent clients
+            results = []
+            barrier = threading.Barrier(2)
+
+            def reserve():
+                store = ReceiptStore(path)  # connections belong to their threads
+                barrier.wait()
+                results.append(store.claim('o/r', '42', 'a'))
+                store.close()
+
+            left = threading.Thread(target=reserve)
+            right = threading.Thread(target=reserve)
+            left.start()
+            right.start()
+            left.join()
+            right.join()
+            self.assertCountEqual(results, ['NEW', 'OUTCOME_UNKNOWN'])
 
     def test_crash_or_timeout_before_receipt_is_not_auto_retried(self):
         s = ReceiptStore()
