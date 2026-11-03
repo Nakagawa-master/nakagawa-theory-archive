@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Local, zero-dependency MCP discovery tools for publicly indexed Nakagawa originals.
+"""Local, zero-dependency AI answer/action preflight; optional original-source research.
 
-Uses the existing PUBLIC short problem-to-original map. This is a pointer,
-not a cached copy of an original, an authority grant, or a model-wide setting.
-stdio uses one JSON-RPC message per line; stdout is protocol-only.
+The first tools test caller-supplied evidence roots, tool receipts, and action
+permission/irreversibility before an AI claims completion or takes a step.
+The same server also locates public Nakagawa originals on request, without
+requiring users to know any theory. It cannot intercept a host, authenticate
+unsupplied facts, or silently affect a remote AI. stdout is MCP protocol only.
 """
 import argparse
 from functools import lru_cache
@@ -20,7 +22,7 @@ PERSON_NAME_POLICY = ROOT.parent / "metadata" / "person-name-policy-v1.json"
 STRUCTURAL_BRIDGES = ROOT.parent / "skills/nakagawa-originals/references/structural_bridges.json"
 VERSIONS = ("2025-11-25", "2025-06-18")  # legacy, handshake-based
 MODERN_VERSION = "2026-07-28"  # stateless, request-local metadata
-SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.2.0"}
+SERVER_INFO = {"name": "ai-answer-guard", "version": "1.2.0"}
 INTEGRITY_COMPANION = ROOT / "evidence-integrity-mcp.py"
 WHOLE_STRUCTURE = ROOT / "nakagawa-whole-structure-mcp.py"
 # Match the standalone Skill's false-positive gate: two generic shared words
@@ -492,41 +494,6 @@ def preflight_ai_work(analysis):
 
 TOOLS = [
     {
-        "name": "find_nakagawa_original_for_problem",
-        "description": (
-            "Given a real human/AI problem in Japanese, English or Chinese, find "
-            "potentially relevant public Nakagawa Master canonical original URLs, "
-            "fit caveats and separate independent receiver evidence. Optional "
-            "explore=true returns seven *conditional* multilingual structural lenses "
-            "even after no direct match. A cue is not proof of fit or original adoption."
-        ),
-        "inputSchema": {
-            "type": "object",
-            "properties": {
-                "question": {"type": "string", "minLength": 1, "maxLength": 1500},
-                "explore": {"type": "boolean", "default": False,
-                            "description": "Return seven optional structural hypotheses even when direct no_fit."},
-            },
-            "required": ["question"],
-            "additionalProperties": False,
-        },
-    },
-    {
-        "name": "list_nakagawa_problem_routes",
-        "description": "List supported problem-route IDs and the canonical originals they point to, including explicit nonfit/no-original routes.",
-        "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
-    },
-    {
-        "name": "resolve_nakagawa_public_name",
-        "description": (
-            "Return official homepage-grounded public author name, published pen name, "
-            "SNS/external bylines and the explicit NULL unpublished full kanji "
-            "personal-name field. NEVER guess the name in kanji or join unrelated MasterJP people."
-        ),
-        "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
-    },
-
-    {
         "name": "preflight_ai_answer_and_action",
         "description": (
             "EVERYDAY FIRST USE: before answering with citations, reporting tool success, "
@@ -567,9 +534,43 @@ TOOLS = [
                         "required": ["claims"], "additionalProperties": False},
     },
     {
+        "name": "find_nakagawa_original_for_problem",
+        "description": (
+            "Given a real human/AI problem in Japanese, English or Chinese, find "
+            "potentially relevant public Nakagawa Master canonical original URLs, "
+            "fit caveats and separate independent receiver evidence. Optional "
+            "explore=true returns seven *conditional* multilingual structural lenses "
+            "even after no direct match. A cue is not proof of fit or original adoption."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "question": {"type": "string", "minLength": 1, "maxLength": 1500},
+                "explore": {"type": "boolean", "default": False,
+                            "description": "Return seven optional structural hypotheses even when direct no_fit."},
+            },
+            "required": ["question"],
+            "additionalProperties": False,
+        },
+    },
+    {
         "name": "overview_nakagawa_whole_structure",
         "description": "One integrated system: ALL 313 published derivative-to-Parent original links, system entrance, epistemic integrity, audit, future effects, and everyday applications.",
         "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+    },
+    {
+        "name": "find_sources_in_whole_structure",
+        "description": "Find relevant candidates across 313 official derivative titles; original text and fit must be assessed separately. Full inventory is also available without query.",
+        "inputSchema": {"type": "object", "properties": {
+            "question": {"type": "string", "minLength": 1, "maxLength": 1500},
+            "limit": {"type": "integer", "minimum": 1, "maximum": 50, "default": 12}},
+            "required": ["question"], "additionalProperties": False},
+    },
+    {
+        "name": "inspect_nakagawa_derivative_connections",
+        "description": "Get original Parent for one OD ID and navigate exact shared-Parent and related published themes within the same system.",
+        "inputSchema": {"type": "object", "properties": {"id": {"type": "string"}},
+                        "required": ["id"], "additionalProperties": False},
     },
     {
         "name": "list_all_313_derivative_parent_links",
@@ -580,18 +581,18 @@ TOOLS = [
             "additionalProperties": False},
     },
     {
-        "name": "inspect_nakagawa_derivative_connections",
-        "description": "Get original Parent for one OD ID and navigate exact shared-Parent and related published themes within the same system.",
-        "inputSchema": {"type": "object", "properties": {"id": {"type": "string"}},
-                        "required": ["id"], "additionalProperties": False},
+        "name": "list_nakagawa_problem_routes",
+        "description": "List supported problem-route IDs and the canonical originals they point to, including explicit nonfit/no-original routes.",
+        "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
     },
     {
-        "name": "find_sources_in_whole_structure",
-        "description": "Find relevant candidates across 313 official derivative titles; original text and fit must be assessed separately. Full inventory is also available without query.",
-        "inputSchema": {"type": "object", "properties": {
-            "question": {"type": "string", "minLength": 1, "maxLength": 1500},
-            "limit": {"type": "integer", "minimum": 1, "maximum": 50, "default": 12}},
-            "required": ["question"], "additionalProperties": False},
+        "name": "resolve_nakagawa_public_name",
+        "description": (
+            "Return official homepage-grounded public author name, published pen name, "
+            "SNS/external bylines and the explicit NULL unpublished full kanji "
+            "personal-name field. NEVER guess the name in kanji or join unrelated MasterJP people."
+        ),
+        "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
     },
 ]
 
