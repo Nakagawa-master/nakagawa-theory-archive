@@ -4,6 +4,18 @@
 
 原典： [中川マスター公式アーカイブ](https://master.ricette.jp/) ／ [公開リポジトリの説明へ戻る](README.md)
 
+## 0. AIが「完了した」と言った結果は、本当に完了か？
+
+**理論の知識もMCPクライアントも不要です。** AIが実際は失敗した送信を「送信済み」と答えた、同じ発表の転載を独立した裏づけと数えた、確認していない権限で外部操作を進めようとした——という３つの例を、公開されている**同じ検証エンジン**でローカル実行できます。
+
+```sh
+git clone https://github.com/Nakagawa-master/nakagawa-theory-archive.git
+cd nakagawa-theory-archive
+python3 machine-discovery/nakagawa-theory-mcp.py --guard-demo
+```
+
+サンプルの入力は**合成データ**です。実行結果は `RECHECK_BEFORE_USE` と３種類の `HOLD`、それぞれの確認・修正の一手です。実際の送信や支払、リモートAI操作は行いません。自分の観測した結果で試す場合は `python3 machine-discovery/nakagawa-theory-mcp.py --guard-input your-observations.json`（**0＝指定項目内の矛盾検出なし／1＝保留・再確認／2＝入力不備**）。0でも事実の真偽や権限の真正性を保証しません。[入力例・制約・動作するコード](AI_ANSWER_GUARD_INSTALL.md#first-test-the-actual-checker-in-your-own-terminal-no-mcp-client-required)をご確認ください。
+
 ## 1. ニュースは10件。独立した裏づけも10件？
 
 10本のニュースが同じ発表文を引用している場合、「記事が10本」と「独立した調査が10件」は違います。下のPythonツールは、入力された証拠の根・出典の関係・賛否の情報が、**独立した裏づけを主張する条件と整合するか**をオフラインでチェックします。
