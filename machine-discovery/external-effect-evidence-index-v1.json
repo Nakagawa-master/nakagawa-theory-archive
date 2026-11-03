@@ -4221,7 +4221,7 @@
         "url": "https://github.com/NousResearch/hermes-agent/pull/147746#issuecomment-6568004334",
         "result": "15 focused tests passed on latest head; blocking lint checks clean"
       },
-      "current_stage": "third_party_origin_safeguard_and_route_recovery_MERGED_TO_MAIN_C3",
+      "current_stage": "C3_MERGED_AND_OFFICIAL_v0.22.6_TAG_ANCESTRY_VERIFIED__INDEPENDENT_ACTUAL_USER_C4_UNKNOWN",
       "human_case": "REAL_WORLD_IMPACT.md#58",
       "origin_continuity_after_merge": {
         "confirmed_by_receiving_engineer": "https://github.com/NousResearch/hermes-agent/pull/146708#issuecomment-6569766480",
@@ -4236,7 +4236,16 @@
         "pull_request": "https://github.com/NousResearch/hermes-agent/pull/147746",
         "main_branch_guard_and_negative_test_present": true
       },
-      "remaining_next_stage": "Verify official tagged release containing the merge, deployment and independent real user delivery; tests with a scripted model and adapter are not a published user uptake metric."
+      "remaining_next_stage": "Distinct real reporter's actual post-release gateway/Telegram delivery; subsequent voluntary person-original carrier; do not imply adoption from tag alone.",
+      "official_release": {
+        "tag": "v0.22.6",
+        "release": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6",
+        "published_utc": "2026-11-02T17:18:36Z",
+        "annotated_tag": "49138a605822a48a0cc4824a7723f09276786861",
+        "peeled_commit": "f0d94882e89ab8d4098b5bb2f166adfb9ee0a0ab",
+        "ancestry": "merge 0e47519c is ancestor; ahead 187, behind 0",
+        "boundary": "Official package released, but affected real end user's successful delivery C4 not observed"
+      }
     },
     {
       "case_id": "qwen-15741-15757-ambiguous-mcp-tool-group-safe-discovery-merged",
@@ -4272,9 +4281,9 @@
         "merge_commit": "8a2817ac8acbf9444c8a99549445c482caf1796e",
         "url": "https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e"
       },
-      "current_stage": "outside_implementation_upstream_merged_and_nightly_release_published_C3",
+      "current_stage": "C3_MERGED_OFFICIAL_STABLE_v0.26.6_RELEASE_NOTES_AND_TAG_ANCESTRY_VERIFIED__ACTUAL_USER_C4_UNKNOWN",
       "human_case": "REAL_WORLD_IMPACT.md#59",
-      "current_next_stage": "Verify later stable release ancestry, independently observed real MCP user correction and voluntary other-carrier reuse.",
+      "current_next_stage": "Unprompted real MCP reporter v0.26.6 client result and subsequent independent PERSON+fitting-Parent carry; no repeated solicitation.",
       "nightly_release": {
         "tag": "v0.26.5-nightly.20261101.7b4b353750",
         "published_at_utc": "2026-11-01T22:43:08Z",
@@ -4282,6 +4291,15 @@
         "native_release_note": "fix(core): keep uniquely named MCP tools when names collide by @2SinceJuly in PR #15757",
         "git_ancestry_checked": "compare merge commit 8a2817ac8acbf9444c8a99549445c482caf1796e to nightly release tag shows ahead 29, behind 0",
         "important_scope": "This is a nightly release; stable v0.26.5 tag diverges from that merge commit (behind 4/ahead 1), so do not claim stable v0.26.5 inclusion."
+      },
+      "official_stable_release": {
+        "tag": "v0.26.6",
+        "release": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6",
+        "published_utc": "2026-11-02T18:22:40Z",
+        "commit": "042c023b7beb4ad2a9ef95b2906b3564e3f23089",
+        "native_release_notes": "#15757 credited to @2SinceJuly",
+        "ancestry": "merge 8a2817ac ancestor; ahead 64, behind 0",
+        "boundary": "Actual MCP user client invocation C4 not observed"
       }
     },
     {
@@ -4418,6 +4436,45 @@
         "upstream merge automatically means package release, install or customer recovery",
         "actual financial loss amount prevented",
         "voluntary unconnected AI adoption or repeated mass PERSON recognition"
+      ]
+    },
+    {
+      "case_id": "qwen-15600-15681-shell-redirect-auth-released",
+      "topic": "Real denied protected-file write escaped via >&protected.txt while benign fd duplication 2>&1 could be misclassified as a file write",
+      "external_repository": "QwenLM/qwen-code",
+      "issue": "https://github.com/QwenLM/qwen-code/issues/15600",
+      "originator": "Suaroman",
+      "nakagawa_source_finding": {
+        "actor": "Nakagawa-master",
+        "native": "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134",
+        "scope": "Source traced actual shell redirect target versus permission-manager virtual WriteFileTool path; proposed concrete positive/negative conditions; did not author code"
+      },
+      "independent_recipient": {
+        "actor": "Suaroman",
+        "test_evidence": "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175",
+        "test_result": "Author measured actual permission decisions with protected.txt: old main allowed >&protected.txt despite explicit file deny; corrected denied, while read-only df -hT / 2>&1 remained allowed",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/15681",
+        "merge_sha": "e3c7a6d7efc6df6c58ffa8ddd9c42dbb0e1784c4",
+        "merged_at_utc": "2026-11-01T16:51:15Z"
+      },
+      "official_stable_release": {
+        "tag": "v0.26.6",
+        "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6",
+        "published_at_utc": "2026-11-02T18:22:40Z",
+        "tag_commit": "042c023b7beb4ad2a9ef95b2906b3564e3f23089",
+        "native_notes": "PR #15681 credited @Suaroman",
+        "ancestry": "ahead 38/behind 0 of exact merge commit"
+      },
+      "current_stage": "C3_RECEIVER_AUTHOR_IMPLEMENTED_AND_OFFICIAL_STABLE_RELEASED__REAL_AFFECTED_USER_C4_UNKNOWN",
+      "human_case": "REAL_WORLD_IMPACT.md front-screen existing Qwen shell example",
+      "origin_scope": "Conditioned real permission boundary; no claim independent engineer voluntarily read specific canonical Nakagawa Parent or that the author wrote this code",
+      "next_native_receiver": "Genuine third-party v0.26.6 user confirms deny on actual protected path and allow on safe fd duplication, then voluntary independent human/model reuses it with accurate provenance",
+      "not_claimed": [
+        "actual loss prevented",
+        "Nakagawa Master authored PR",
+        "all Qwen installations updated",
+        "release download counts equal actual users",
+        "independent unconnected AI autonomously adopted Nakagawa original corpus"
       ]
     }
   ],
