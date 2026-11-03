@@ -6,7 +6,7 @@
 
 このページは、中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）が何を扱い、何を公開し、どこまで外部から確認できるのかを、人間が短時間で把握するための公開案内です。
 
-**別人の編集と外部サイトへの公開も確認できます。** [The Daily AI Pulseの外部編集者によるQwen Codeレビュー記事](https://github.com/GadDev/daily-ai-pulse/pull/253)は、中川マスターの技術的な出所と元の報告者を区別して記載。[英語版](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)・[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)の受け手側[本番配信と公開先確認が成功した記録](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)があります。本人提出の企画を独立編集者が採用・公開した例であり、自然発見や閲覧人数・人物支持を示すものではありません。
+**別人の編集と外部サイトへの公開も確認できます。** [掲載メディアの技術者向け編集方針・独立した採用判断・英仏2言語の本番配信がなぜ重要か、一次資料で読む](INDEPENDENT_MEDIA_COVERAGE.md)。 [The Daily AI Pulseの外部編集者によるQwen Codeレビュー記事](https://github.com/GadDev/daily-ai-pulse/pull/253)は、中川マスターの技術的な出所と元の報告者を区別して記載。[英語版](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)・[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)の受け手側[本番配信と公開先確認が成功した記録](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)があります。本人提出の企画を独立編集者が採用・公開した例であり、自然発見や閲覧人数・人物支持を示すものではありません。
 
 **最初の30秒で現実の作用を確かめたい方へ：** [AI開発の外部修正がどのように起こり、何がまだ未確認か](WHY_THIS_IMPACT_MATTERS.md)を日本語・英語・中国語で読めます。
 
