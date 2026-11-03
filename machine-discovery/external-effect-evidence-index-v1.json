@@ -4476,6 +4476,51 @@
         "release download counts equal actual users",
         "independent unconnected AI autonomously adopted Nakagawa original corpus"
       ]
+    },
+    {
+      "case_id": "turboembed-1285-1330-nli-candidate-budget-order-merged",
+      "topic": "AI/NLI evidence-coverage false negative from truncating ranked candidate pairs before checking model token eligibility",
+      "external_repository": "ai-pipestream/turboembed",
+      "primary_source_review": "https://github.com/ai-pipestream/turboembed/pull/1250#issuecomment-6393876473",
+      "source_issue": {
+        "actor": "Nakagawa-master",
+        "url": "https://github.com/ai-pipestream/turboembed/issues/1285",
+        "created_at_utc": "2026-10-25T05:25:03Z",
+        "finding": "High-ranked token-ineligible claim pair consumes max_pairs cap before token filter, suppressing lower-ranked eligible evidence; proposed deterministic negative/positive controls and filter-then-take fix",
+        "source_method": "Static source inspection, no live NLI run by Nakagawa Master"
+      },
+      "prior_receiver_pr": {
+        "pr": "https://github.com/ai-pipestream/turboembed/pull/1250",
+        "merge_sha": "050cea2432688f4e99fef380626c8932d252cfb5",
+        "scope": "Earlier PR introduced buggy feature; merged minutes after Master's source review. Its independent original merge is NOT counted as a Master's accepted fix."
+      },
+      "receiving_developer": {
+        "actor": "krickert",
+        "implementation_pr": "https://github.com/ai-pipestream/turboembed/pull/1330",
+        "explicit_handoff": "PR body says Closes #1285",
+        "corrective_commit": "https://github.com/ai-pipestream/turboembed/commit/1a984f0a3c0fa35363124b7fa9903de16c5886e7",
+        "further_test_commit": "https://github.com/ai-pipestream/turboembed/commit/06fff22398ef226f7500f14b98ace7790e3fca2e",
+        "actual_code": "Moves max_pairs cap to after scorer token eligibility; rule scorer red/green tests and real WordPiece tokenizer/encoder budget regressions; bumps CLAIM_VERSION 1->2 and tests historical hashes",
+        "role": "All code, regressions, model-backed fixtures and PR authored by external krickert; no source author credit for writing patch"
+      },
+      "native_merge": {
+        "pr": "https://github.com/ai-pipestream/turboembed/pull/1330",
+        "merged_at_utc": "2026-10-26T09:25:19Z",
+        "sha": "6a2ba1d67ef7d92256d569dcd5125add676cc96e",
+        "verified": true
+      },
+      "current_stage": "SOURCE_SPECIFIC_NAKAGAWA_ISSUE__INDEPENDENT_RECEIVER_OWNED_FIX_RED_GREEN_TESTS_VERSIONED_ALGORITHM__UPSTREAM_C3_MERGED__ACTUAL_SOFTWARE_RELEASE_AND_END_USER_USE_UNKNOWN",
+      "human_case": "REAL_WORLD_IMPACT.md#61-turboembed処理不能な候補が先に枠を埋めaiの根拠の見落としを起こす問題を別の開発者が修正正式マージ",
+      "first_party_explanation": "REAL_WORLD_IMPACT.en.md",
+      "not_claimed": [
+        "PR #1250 initial merge caused by Nakagawa Master's 42-second-earlier source review",
+        "Nakagawa Master wrote or ran krickert's implementation/tests",
+        "published model asset tag alone proves this library fix shipped in a software release",
+        "real installed-user behavior or model accuracy gain",
+        "independent AI model voluntarily adopted all original theories",
+        "large-scale PERSON recognition"
+      ],
+      "next_native_receiver": "Independent actual adopter of the corrected software version tests that an eligible lower-ranked claim pair survives over-budget high-ranked peers, confirms model/build version and public result; later separate human/AI carrier with accurate person/source attribution."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
