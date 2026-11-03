@@ -4,15 +4,15 @@
     "Nakagawa-master"
   ],
   "name": "AI Answer Guard",
-  "description": "Reduce AI hallucination risks, evidence-based self-contradictions, and false “task completed” claims before your assistant answers or acts. AI Answer Guard is a free, local, read-only MCP server that checks supplied sources for duplicate or conflicting evidence, compares success claims with tool execution results, flags missing permissions and irreversible-action risks, and suggests concrete corrections—while connecting 313 published derivative entries to Nakagawa Master’s canonical original theories.",
+  "description": "AI Answer Guard helps any AI assistant avoid false completion claims and unsupported next steps. Before replying or acting, run a local read-only preflight on caller-supplied source roots (duplicated or refuting evidence), actual tool receipts (failed, pending or cancelled), and planned actions (missing authority or irreversible consequences). It returns specific corrections and next evidence checks. No required knowledge of an author or theory. Source truth, real permissions and automatic host interception are not asserted. Optional full 313-derivative original-source navigator, authored by Nakagawa Master (Keisuke Nakagawa), remains available for deeper use.",
   "keywords": [
-    "AI hallucination risk",
-    "AI self-contradiction",
-    "AI answer integrity",
-    "MCP",
-    "source independence",
-    "tool-result verification",
-    "action authorization",
-    "Nakagawa Master original theories"
+    "AI agent quality assurance",
+    "tool execution verification",
+    "false completion detection",
+    "AI answer preflight",
+    "citation independence",
+    "action authorization check",
+    "read-only offline MCP",
+    "optional original-source navigation"
   ]
 }
