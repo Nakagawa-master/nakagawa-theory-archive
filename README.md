@@ -15,7 +15,7 @@
 
 **AIが使う道具を一つ間違える。依頼した仕事の結果が届かない。他人の承認変更で自分の処理まで止まる。** こうした世界のAI開発現場で、**中川マスター** がソースや実行条件の見落としを具体的に指摘し、**その指摘を受けた別の開発者たち自身が修正・テスト・マージにまで進めた事実**が残っています。実装した人と指摘した人の役割を区別し、[元の発見→受け手の実装→本線への変更](REAL_WORLD_IMPACT.md)を、初めて聞いた人も各開発チームの原記録で確認できます。
 
-たとえば、[Hermes Agentでは結果の送り先を間違えたり未送信を送信済みと扱ったりしない条件が後継PRに引き継がれ正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)。[Qwen Codeでは、同名の道具が衝突しても正常な道具まで全部失わない修正がマージされ、nightly版へ収録](https://github.com/QwenLM/qwen-code/pull/15757)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
+たとえば、[Hermes Agentでは結果の誤配送・偽完了を防ぐ条件が後継PRに引き継がれ正式版 v0.22.6へ収録](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6)。[Qwen Codeでは、同名ツールの衝突から正常な道具を守る修正と、権限誤判定の別修正が正式版 v0.26.6へ収録](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
 
 **自分の問いから探す方へ：** [41件の完成回答と313原典を探す、端末内で動く検索画面](machine-discovery/question-source-explorer.html)を公開しています。GitHubのファイル画面で「Raw」からHTMLを保存し、ブラウザで開いて問いを入力できます。追加のAI接続やアカウントは不要です。既刊の具体的な回答、公式原典の候補、当てはまらない場合を区別して確認できます。
 
@@ -320,7 +320,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 
 [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在60の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。事例ごとの段階は、受け手の反応、実装、統合、リリース、運用を区別して明記しています。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
-別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在70レコードあります。これは60件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。70レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
+別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在71レコードあります。これは60件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。71レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
