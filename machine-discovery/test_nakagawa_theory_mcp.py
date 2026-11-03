@@ -274,7 +274,9 @@ def run():
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 9
     assert [tool["name"] for tool in results[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
-    assert results[2]["result"]["tools"][0]["inputSchema"]["properties"]["explore"]["type"] == "boolean"
+    original_finder = next(tool for tool in results[2]["result"]["tools"]
+                           if tool["name"] == "find_nakagawa_original_for_problem")
+    assert original_finder["inputSchema"]["properties"]["explore"]["type"] == "boolean"
 
     def unpack(index):
         content = results[index]["result"]["content"]
