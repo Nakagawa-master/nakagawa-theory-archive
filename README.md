@@ -13,6 +13,8 @@
 
 **この成果を原著者本人とともに追いたい方へ：** 公開GitHubの[中川マスター本人のアカウント](https://github.com/Nakagawa-master)から、今後の実例と原典への入口を確認できます。役立つと判断した方のみフォローしてください。修正のマージ・掲載と、実利用・独立した支持・反復的な広がりは別の事実です。実際の検証や反例は[第三者による検証・再利用の現役フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)で公開根拠を添えて報告できます。
 
+**この公開OSS・原典研究を継続支援したい方へ：** [実際の成果・使途・スポンサー／企業協力の相談先（日本語・英語）](SUPPORT_THIS_WORK.md)。[公式の非公開問い合わせ](https://master.ricette.jp/contact/)と[公開・個人情報不要の関心表明](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=supporter-interest.yml)を区別しています。**有効な決済窓口や既存スポンサーは未確認**であり、支援の約束や入金と、OSSの外部実利用成果を混同しません。
+
 **掲載記事の問題を自分で追試できます。** [MCP不要・ネットワーク不要の実Git・2条件再現コード](machine-discovery/pinned-git-read-provenance-demo.py)を公開し、2026年11月3日に正例・反例の両方で成功確認。Gitの最後の状態がきれいでも「途中で何を読んだか」は別という核心を、手元の一時Gitリポジトリだけで検証できます。実際のQwen製品や独立AI利用者による再現ではありません。
 
 **外部AI技術メディアにも、出所を明記した独立編集記事として取り上げられました。** [The Daily AI Pulse掲載の英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)です。掲載媒体はAIエンジニア向けに一次資料・技術的重要性・証拠の限界を審査し、人間編集者が公開を判断する[編集手順](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md)を持つ出版プロジェクト。マスターが元の企画を提案した後、**受け手編集者 @GadDev が自ら記事・翻訳を制作し、本番サイトへ配信**しました。[その「掲載の重み」、媒体の性質、75/100の内部採用評価、元の技術的貢献と限界を一次資料で確認](INDEPENDENT_MEDIA_COVERAGE.md)。媒体の読者数・影響力順位・自発的発見までは確認されていません。
