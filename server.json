@@ -3,7 +3,7 @@
   "name": "io.github.Nakagawa-master/ai-answer-guard",
   "title": "AI Answer Guard — Check AI Answers & Actions Before Claiming Success",
   "description": "Check AI replies and actions: flag failed tools, copied evidence and missing permission before use.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "websiteUrl": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_ANSWER_GUARD_INSTALL.md",
   "repository": {
     "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
