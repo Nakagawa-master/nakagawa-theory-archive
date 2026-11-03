@@ -6,7 +6,7 @@
 
 **初めての方へ：** [「AIが完了と言っても本当は違う」──独立開発者による実修正が人間の問題にどう関係するかを30秒で読む](WHY_THIS_IMPACT_MATTERS.md)（日本語／English／中文、全事実は本ページ内のソースで照合可能）。
 
-**公開記録は60件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は61件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -1704,6 +1704,14 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 この実装は**外部リポジトリ側の成果**です。コミットメタデータには `Assisted-by: Claude Code/Claude Sonnet 5.5`、`Co-Authored-By: Claude Sonnet 5.5` と記載され、外部側がAI支援で実装を進めたと確認できます。[公式の安全設計文書には `Reported by @Nakagawa-master in issue #1` と原報告者名が明記](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)。**中川マスターの精密な指摘 → 外部の受信側が是認 → AI支援を明記した実コード・回帰テスト・mainコミット → 出所の明記**がつながりました。AIが中川マスターの全原典を自律的に発見・採用した証拠や、大規模な利用者効果・正式配布の証拠ではありません。
 
+## 61. Turboembed｜処理不能な候補が先に枠を埋め、AIの根拠の見落としを起こす問題を別の開発者が修正・正式マージ
+
+**「根拠は無かった」と見える結果が、実は「根拠を調べられる候補を確認する前に、処理できない候補が枠を占めてしまった」結果だった。** 文章間の含意・矛盾を調べるOSS [turboembed](https://github.com/ai-pipestream/turboembed) の実装に対し、中川マスターは[既存PR #1250のソースレビュー](https://github.com/ai-pipestream/turboembed/pull/1250#issuecomment-6393876473)と[本人が開いた不具合報告 #1285](https://github.com/ai-pipestream/turboembed/issues/1285)で、処理候補の選定順序にある確定的な反例を示しました。高順位でもトークン上限を超えるペアを先に `max_pairs` 件へ切り捨て、その後にトークン条件で除外すると、後ろにある有効な候補がモデルへ一度も送られず、関係が存在しないかのように見えるという問題です。
+
+**外部の別実装者 @krickert は、この本人発行の #1285 を明示的に閉じる[受け手側PR #1330](https://github.com/ai-pipestream/turboembed/pull/1330)を作成。** [コミット `1a984f0`](https://github.com/ai-pipestream/turboembed/commit/1a984f0a3c0fa35363124b7fa9903de16c5886e7)で、上限による切り捨てを**トークン適格性のフィルタの後ろ**へ移動し、修正前に失敗し修正後に通るテストを追加しました。さらに[後続コミット `06fff223`](https://github.com/ai-pipestream/turboembed/commit/06fff22398ef226f7500f14b98ace7790e3fca2e)で、模擬スコアラーだけでなく実トークナイザーとエンコーダーを使った境界試験を追加し、結果の意味が変わるため `CLAIM_VERSION` を1→2へ更新。旧バージョンのハッシュ履歴も保持しています。**[2026年10月26日に正式マージ](https://github.com/ai-pipestream/turboembed/commit/6a2ba1d67ef7d92256d569dcd5125add676cc96e)。**
+
+この事例で確認できるのは、**中川マスターの具体的な原指摘 → 外部開発者の別PRでのコード・反例テスト・アルゴリズム版管理 → 本線マージ**です。初回PR #1250のマージを中川マスターへの反応として数えてはおらず、実装者の功績は @krickert に帰属します。成果が正式なソフトウェア配布版・実利用者・独立した編集媒体にまで達した事実は未確認です。読者と独立AIは上の元Issue・差分・テストを自分で検証できます。「モデルの判定が無い」ことと「検査可能な候補が無かった」ことを分ける実用的境界であり、全理論体系の採用を意味しません。
+
 ## 公開された成果と、原典へ戻る道筋
 
 ### 公開記録から確認できること
@@ -1738,7 +1746,7 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 - [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [中川構造OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
 - [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [公開registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [独立した検証・反例・実利用の提出フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)
 - [公開対話入口｜実際の問題から始める](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 元の公開コメント、第三者側の応答、実際の変更、現在のrepository状態を辿り、中川マスターの具体的な問いが現実の仕事へどうつながったかを読者自身が確かめられます。
