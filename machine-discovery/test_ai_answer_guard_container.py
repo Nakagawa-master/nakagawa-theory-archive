@@ -29,9 +29,10 @@ def main():
     assert not p.stderr,p.stderr
     packets={int(x["id"]):x for x in map(json.loads,p.stdout.splitlines())}
     assert set(packets)=={x["id"] for x in requests},packets.keys()
-    assert packets[1]["result"]["serverInfo"]["name"]=="nakagawa-public-original-router"
+    assert packets[1]["result"]["serverInfo"]["name"]=="ai-answer-guard"
     names={x["name"] for x in packets[2]["result"]["tools"]}
     assert len(names)==9 and "preflight_ai_answer_and_action" in names and "list_all_313_derivative_parent_links" in names
+    assert [x["name"] for x in packets[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     assert body(packets,3)["coverage"]["derivatives"]==313
     assert body(packets,4)["hold_count"]==1
     assert body(packets,5)["entries"][0]["id"]=="OD313"
