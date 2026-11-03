@@ -6,9 +6,9 @@
 
 ## 現在の検証入口
 
-固定された古い件数ではなく、現在のchallenge setは次の二つを正本として見てください。
+固定された古い件数ではなく、現在のchallenge setは次の入口から確認してください。旧 #402 は本人の連続投稿のみのため終了・閉鎖しています。これを独立参加数とは扱いません。
 
-- [独立検証・別文脈再利用 registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [独立した検証・実利用の報告フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)
 - [machine-readable challenge set](machine-discovery/independent-reuse-challenges-v1.json)
 
 たとえば、現在は次の問いを検証できます。
@@ -58,7 +58,7 @@
 
 ## 提出先
 
-- [独立検証・別文脈再利用 registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [独立した検証・実利用の報告フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)
 - [構造化されたEvidence Issue Form](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)
 - 詳細仕様: [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
 
