@@ -4,8 +4,6 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**Beyond implementation, third-party editorial distribution is independently traceable:** [Why the recipient AI engineering publication matters, how its human editor selected and published the story, the recipient's actual bilingual production deployment, and what audience data is missing](INDEPENDENT_MEDIA_COVERAGE.md). [Run a real Git positive/negative proof of the published source-integrity distinction](machine-discovery/pinned-git-read-provenance-demo.py) with no MCP, cloud or external AI. This is not an additional merged OSS software PR, Qwen live-use reproduction or verified third-party reader count.
-
 **62 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
@@ -1604,6 +1602,7 @@ Counterexamples, non-fit cases, and failed reproductions are also relevant evide
 
 ## Related public material
 
+- [Independent AI engineering media coverage in English and French, including external editorial review, real deployment and evidence limits](INDEPENDENT_MEDIA_COVERAGE.md)
 - [Who Is Nakagawa Master?](ABOUT_NAKAGAWA_MASTER.en.md)
 - [Start Here](START_HERE.md)
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
