@@ -119,6 +119,27 @@ def smoke(folder):
     z = {x["id"]: x for x in map(json.loads, extras.stdout.splitlines())}
     assert len(z[5]["result"]["tools"]) == 9
     assert [item["name"] for item in z[5]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
+    # Independent non-MCP user route must execute the SAME real algorithm,
+    # rejecting actual supplied failure/pending and accepting clean receipts.
+    demo = subprocess.run(command + ["--guard-demo"], capture_output=True, text=True,
+                          timeout=15, check=True)
+    demonstrated = json.loads(demo.stdout)
+    assert demonstrated["actual_local_preflight_result"]["hold_count"] == 3, demonstrated
+    assert demonstrated["actual_local_preflight_result"]["verdict"] == "RECHECK_BEFORE_USE", demonstrated
+    negative = subprocess.run(command + ["--guard-input", "-"],
+                              input=json.dumps({"tool_results": [
+                                  {"id": "email", "status": "failed", "success": False}]}),
+                              capture_output=True, text=True, timeout=10)
+    assert negative.returncode == 1 and json.loads(negative.stdout)["hold_count"] == 1, negative
+    positive = subprocess.run(command + ["--guard-input", "-"],
+                              input=json.dumps({"tool_results": [
+                                  {"id": "email", "status": "completed", "success": True}]}),
+                              capture_output=True, text=True, timeout=10)
+    assert positive.returncode == 0 and json.loads(positive.stdout)["hold_count"] == 0, positive
+    invalid = subprocess.run(command + ["--guard-input", "-"],
+                             input='{"tool_results":"not a list"}',
+                             capture_output=True, text=True, timeout=10)
+    assert invalid.returncode == 2 and not invalid.stdout, invalid
     assert json.loads(z[6]["result"]["content"][0]["text"])["hold_count"] == 1
     assert json.loads(z[7]["result"]["content"][0]["text"])["entries"][0]["id"] == "OD313"
     assert len({item["name"] for item in json.loads(subprocess.run(
