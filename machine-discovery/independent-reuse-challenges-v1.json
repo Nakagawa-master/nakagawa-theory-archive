@@ -6,10 +6,13 @@
   "purpose": "Machine-readable open tests for independent verification, falsification, cross-context reuse, and implementation of bounded public distinctions.",
   "submission": {
     "protocol": "INDEPENDENT_VERIFICATION_REUSE.md",
-    "registry_issue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+    "registry_issue": null,
     "issue_form": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml",
     "schema": "machine-discovery/external-reuse-evidence-submission-schema-v1.json",
-    "research_positioning_issue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410"
+    "research_positioning_issue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410",
+    "retired_registry_issue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+    "registry_status": "RETIRED_CLOSED_OWNER_ONLY_HISTORY_NOT_EXTERNAL_SUBMISSIONS",
+    "preferred_public_submission": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml"
   },
   "priority_signal": {
     "highest_value_now": [
@@ -908,6 +911,33 @@
         "machine_case_id": "llamaindex-23439-codeact-streaming-handoff-full-text-and-tool-lineage"
       },
       "evidence_boundary": "The independent PR author explicitly acknowledged and fixed the specific Nakagawa source-level streaming inverse; this challenge is an additional Nakagawa-authored publicly reusable falsification protocol. It has not been independently executed or adopted from this JSON. The original handoff fix and PR were authored independently, PR is open/unmerged as last checked, no live-provider use, different recipient or broader human recognition is established. Do not infer adoption of any entire theory system."
+    },
+    {
+      "id": "AL-filter-eligibility-before-candidate-cap",
+      "distinction": "Ranking success or top-k exhaustion != evidence that no eligible item exists. Reject unprocessable candidates before spending a limited evaluation/recommendation budget; retained rankings alone can hide eligible evidence.",
+      "test": "In a NEW independently owned, non-Turboembed AI retrieval, NLI, moderation, recommendation, decision or editorial selection pipeline, construct two ranked candidate pairs: a high-ranked one above the true per-candidate processing token/eligibility budget, and a lower-ranked eligible pair. With top-k=1, compare rank→cap→eligibility (old) against rank→eligibility→cap (correct). Check the actual candidates evaluated, not only the summary text. Repeat at the exact token budget boundary, all-ineligible control, tied scores, and multiple high-ranked ineligible items. Readable reproducibility aid: python3 machine-discovery/eligible-before-cap-probe.py --self-test; --sample prints an input fixture. This is only a local simulation of ordering, not an installed AI model test.",
+      "positive_evidence": [
+        "The eligible lower-ranked candidate is processed by the actual recipient's scorer rather than hidden behind an over-budget high-ranked candidate.",
+        "Each side effect or expensive inference stays at or under the configured eligible top-k bound.",
+        "Exact-budget input is eligible; one-token-over is not; ties retain documented deterministic order.",
+        "Any changed algorithm semantics are reflected in cache/result versioning or observable provenance, rather than reusing an old result ID.",
+        "A separate receiving author publishes code/tests or documented decision change with exact version, independent reproduction and nonfit boundaries."
+      ],
+      "useful_negative_evidence": [
+        "All selected candidates were ineligible, so no admissible replacement existed.",
+        "The pipeline already filters candidates before top-k or has a different quota contract, and the problem does not apply.",
+        "A model supports over-budget candidates through a documented truncation or chunking contract: the simple simulated token rule is not equivalent to the actual receiver.",
+        "The fixture alone passes; this demonstrates algorithmic possibility, not actual receiver implementation, adoption or real user effect."
+      ],
+      "source_provenance": {
+        "original_review": "https://github.com/ai-pipestream/turboembed/pull/1250#issuecomment-6393876473",
+        "nakagawa_source_issue": "https://github.com/ai-pipestream/turboembed/issues/1285",
+        "independent_receiver_pr": "https://github.com/ai-pipestream/turboembed/pull/1330",
+        "independent_merged_fix": "https://github.com/ai-pipestream/turboembed/commit/6a2ba1d67ef7d92256d569dcd5125add676cc96e",
+        "human_case": "REAL_WORLD_IMPACT.en.md#61-turboembed--a-token-ineligible-candidate-masks-an-eligible-ai-claim-relationship--separate-developer-fixes-tests-and-merges",
+        "offline_probe": "machine-discovery/eligible-before-cap-probe.py"
+      },
+      "evidence_boundary": "Nakagawa Master's source-specific issue #1285 was explicitly closed by independent developer @krickert's merged PR #1330, which supplied real regressions and correct versioned algorithm semantics. This challenge and optional standard-library probe are first-party aids created afterward for different receivers. No other unaffiliated AI/LLM has been observed independently using this new challenge, and no third-party product, exact installed-user impact or mass PERSON adoption is inferred."
     }
   ],
   "evidence_boundary": [
