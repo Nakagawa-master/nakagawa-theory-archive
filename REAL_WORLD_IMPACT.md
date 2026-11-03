@@ -1749,17 +1749,4 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 **外部AI技術メディアへの掲載（OSS修正PRとは別の第三者編集実績）**
 
-**マージから外部の多言語読者へ（別の編集者による配信確認）：** [The Daily AI Pulse編集者 @GadDev は、本人が提示したQwen Codeのレビュー証拠問題を編集し、PR #253を正式マージ](https://github.com/GadDev/daily-ai-pulse/pull/253)。独立媒体の[英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語記事](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)には、元のQwen報告者と、中川マスターの検証提案が別々の出典として記されています。[2026年10月26日の外部サイト本番デプロイ](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)は受け手のマージコミット `e275f243` を使い、記事2ページを生成、Firebaseへ配信し、公開サイトのHTTP確認工程を**成功**させました。これは第三者側の**実編集・2言語の公開配信**で、単なるマージ予定ではありません。一方、企画を本人が提出したため**独立した自然発見**ではなく、読者数・独立再利用・大規模人物認知を示すものでもありません。原文には実験やマスターの提案を**未実行の検査**として明確に限定しています。この報道PRはOSSへの修正PRではなく、下記の14件／8リポジトリの実装集計へ加算しません。
-
-- [媒体の選定・編集・英仏配信・読者数の未確認を一次資料で検証](INDEPENDENT_MEDIA_COVERAGE.md)
-- [媒体が扱った原本読取問題を実Gitの正例・反例で確認](machine-discovery/pinned-git-read-provenance-demo.py)
-
-- [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
-- [Start Here](START_HERE.md)
-- [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
-- [中川構造OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
-- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [独立した検証・反例・実利用の提出フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)
-- [公開対話入口｜実際の問題から始める](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
-
-元の公開コメント、第三者側の応答、実際の変更、現在のrepository状態を辿り、中川マスターの具体的な問いが現実の仕事へどうつながったかを読者自身が確かめられます。
+**マージから外部の多言語読者へ（別の編集者による配信確認）：** [The Daily AI Pulse編集者 @GadDev は、本人が提示したQwen Codeのレビュー証拠問題を編集し、PR #253を正式マージ](https://github.com/GadDev/daily-ai-pulse/pull/253)。独立媒体の[英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語記事](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)には、元のQwen報告者と、中川マスターの検証提案が別々の出典として記されています。[2026年10月26日の外部サイト本番デプロイ](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)は受け手のマージコミット `e275f243` を使い、記事2ページを生成、Firebaseへ配信し、公開サイトのHTTP確認工程を**成功**させました。
