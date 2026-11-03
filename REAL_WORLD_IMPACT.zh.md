@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共60例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共61例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1561,6 +1561,14 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 这一实现**属于接收方开发者**。提交元数据明确载有 `Assisted-by: Claude Code/Claude Sonnet 5.5` 以及 `Co-Authored-By: Claude Sonnet 5.5`；外部[安全文档写明 `Reported by @Nakagawa-master in issue #1`](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)。可确认的路径是：**中川マスター具体发现 → 外部接收方确认 → AI辅助的真实修复与测试 → main提交 → 公开归因**。不能由此推断外部AI自主发现了所有313项原典，或已经有大量最终用户实际使用。
 
+## 61. Turboembed｜超出Token预算的候选占满配额，使AI漏查本来可以评估的证据关系
+
+**没有发现论据关系，并不等于实际上没有可评估的候选。** 在[外部项目 turboembed](https://github.com/ai-pipestream/turboembed) 中，中川マスター先于[PR #1250 的源代码审查](https://github.com/ai-pipestream/turboembed/pull/1250#issuecomment-6393876473)指出，再在[本人提交的问题 #1285](https://github.com/ai-pipestream/turboembed/issues/1285)中固定了可复查的反例：原代码先用 `max_pairs` 截断排序候选，再剔除超出NLI模型Token预算的配对。高排名但不可计算的配对可能占掉名额，使较低排名的有效配对完全无法被检验。原报告是源码分析和建议回归测试，不是运行中的用户观测。
+
+**另一个独立开发者 @krickert 创建[PR #1330](https://github.com/ai-pipestream/turboembed/pull/1330)，在PR中明确写出 `Closes #1285`。** [提交 `1a984f0`](https://github.com/ai-pipestream/turboembed/commit/1a984f0a3c0fa35363124b7fa9903de16c5886e7)把候选数量限制移至Token资格筛选之后，加入修复前失败、修复后通过的测试。[后续提交 `06fff223`](https://github.com/ai-pipestream/turboembed/commit/06fff22398ef226f7500f14b98ace7790e3fca2e)使用真实Token分词器和编码器测试预算边界，并把算法 `CLAIM_VERSION` 从1调整为2，保留旧哈希的历史可追溯性。[2026年10月26日正式合并到外部仓库](https://github.com/ai-pipestream/turboembed/commit/6a2ba1d67ef7d92256d569dcd5125add676cc96e)。
+
+这是**中川マスター的具体缺陷报告 → 别人主动完成代码修正和红绿测试 → 独立项目正式合并**的可核查证据。初始PR #1250不计为受此评论推动的另一次合并；实际代码作者仍是 @krickert。尚未核实面向终端用户的软件发行版本、实际部署效果或第三方自发再次传播，不能据此断言完整理论体系被采用。
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
@@ -1594,7 +1602,7 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
 - [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [公开registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [独立验证、反例及实际使用报告表单](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)
 - [公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 读者可以沿着原始公开评论、第三方回应、实际修改和repository当前状态，亲自追踪中川大师的结构性判断如何进入不同开发现场。
