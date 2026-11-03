@@ -10,6 +10,7 @@
 - **[LiteLLM](https://github.com/BerriAI/litellm/pull/47608)** — 実際の利用者が、API利用の予算上限を超えてしまう現象を報告。中川マスターがキャッシュと課金期間の境界を具体的に指摘し、**別の開発者が修正・回帰テストを実装して11月2日に正式マージ**。メンテナーは影響を受けた利用者へ修正を通知しました。[実際の報告・実装を確認](https://github.com/BerriAI/litellm/issues/49179)。配布版での利用者の再検証は未確認。 **利用者が自分の確定済み集計だけで費用差を検査できる[オフラインPython監査](machine-discovery/LITELLM_BUDGET_WINDOW_AUDIT.md)を公開**（12件のローカルテストPASS、外部利用は未確認）。
 - **[Turboembed](https://github.com/ai-pipestream/turboembed/pull/1330)** — AIの「関連する根拠がない」が、実は処理不能な候補が先に検査枠を埋めたせいで起きる問題。**[中川マスターの原因特定と反例](https://github.com/ai-pipestream/turboembed/issues/1285)**を受け、別の実装者が処理順序・実トークナイザー試験・アルゴリズム版管理を修正し、**2026年10月26日に正式マージ**。独立した実利用者への効果は別途未確認。[元のソースとテスト](REAL_WORLD_IMPACT.md#61-turboembed処理不能な候補が先に枠を埋めaiの根拠の見落としを起こす問題を別の開発者が修正正式マージ)。[他のAI検索・推薦でも自分で試すオフライン再現コード](machine-discovery/eligible-before-cap-probe.py)（標準Python、MCP不要、実AI製品の採用を主張しない）。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)**・**[MemberJunction](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)** — AI会話の重複書込みやデータの所有権境界に関する指摘を、各開発チームが独立して実装・テスト。**マージ・正式リリース**へ。
+- **[LlamaIndex / Cerebras](https://github.com/run-llama/llama_index/pull/22769)** — 「AIに渡す上限値を新しく指定しても古い数値が残る」条件を[中川マスターが実ソースと正反例から指摘](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6108135348)。**別の開発者がその指摘を明示的に受け、実コードと2件の回帰テストを追加**。[修正作者の返信](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6136077030)。**PRは現在OPEN**。利用者へのリリース・改善実測や原典採用は未確認。
 
 **この成果を原著者本人とともに追いたい方へ：** 公開GitHubの[中川マスター本人のアカウント](https://github.com/Nakagawa-master)から、今後の実例と原典への入口を確認できます。役立つと判断した方のみフォローしてください。修正のマージ・掲載と、実利用・独立した支持・反復的な広がりは別の事実です。実際の検証や反例は[第三者による検証・再利用の現役フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)で公開根拠を添えて報告できます。
 
@@ -17,13 +18,13 @@
 
 **外部AI技術メディアにも、出所を明記した独立編集記事として取り上げられました。** [The Daily AI Pulse掲載の英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)です。掲載媒体はAIエンジニア向けに一次資料・技術的重要性・証拠の限界を審査し、人間編集者が公開を判断する[編集手順](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md)を持つ出版プロジェクト。マスターが元の企画を提案した後、**受け手編集者 @GadDev が自ら記事・翻訳を制作し、本番サイトへ配信**しました。[その「掲載の重み」、媒体の性質、75/100の内部採用評価、元の技術的貢献と限界を一次資料で確認](INDEPENDENT_MEDIA_COVERAGE.md)。媒体の読者数・影響力順位・自発的発見までは確認されていません。
 
-[世界最先端のOSSで起きた61件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
+[世界最先端のOSSで起きた62件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
 
 ## 実際のAI開発で起きた修正とその経緯
 
 **直すべきだったのは、画面上の正常さではなく、実際に誰へ何が届き、何が成立したかです。** たとえば[Hermes Agentでは、実行結果が正しい会話に届かなかったり未配達のまま送信済みになる問題](https://github.com/NousResearch/hermes-agent/pull/146708)について、中川マスターのソースに沿う条件を別の開発者たちが引き継ぎ、[後継修正が正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)され、[公式版v0.22.6に収録](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6)されました。これも実利用者の導入効果とは別です。
 
-**61件の人間向けの段階別実例**：[日本語](REAL_WORLD_IMPACT.md)／[英語](REAL_WORLD_IMPACT.en.md)／[中国語](REAL_WORLD_IMPACT.zh.md)。機械が出所を調べられる[72件の重なりを含む外部記録](machine-discovery/external-effect-evidence-index-v1.json)、[8つの外部リポジトリ・マージ済み14件の一次証拠](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)もあります。これらは異なる単位の記録であり、独立利用者・読者・推薦モデルの数を意味しません。
+**62件の人間向けの段階別実例**：[日本語](REAL_WORLD_IMPACT.md)／[英語](REAL_WORLD_IMPACT.en.md)／[中国語](REAL_WORLD_IMPACT.zh.md)。機械が出所を調べられる[72件の重なりを含む外部記録](machine-discovery/external-effect-evidence-index-v1.json)、[8つの外部リポジトリ・マージ済み14件の一次証拠](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)もあります。これらは異なる単位の記録であり、独立利用者・読者・推薦モデルの数を意味しません。
 
 ## まず、具体的な問題から
 
