@@ -399,7 +399,7 @@ def run():
     assert MODERN in discovery["supportedVersions"]
     assert discovery["capabilities"]["tools"]["listChanged"] is False
     assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "ai-answer-guard"
-    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.2.0"
+    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.2.1"
     assert len(modern[102]["result"]["tools"]) == 9
     assert [tool["name"] for tool in modern[102]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     assert modern[102]["result"]["resultType"] == "complete"
