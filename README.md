@@ -408,7 +408,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **現実の第三者実装・再利用を自分で確認したい:** [日本語](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 - **実際の問題を持ち込みたい:** [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - **検証・反証・再利用・修正に参加したい:** [Contributing](CONTRIBUTING.md)
-- **独立検証・反証・別文脈再利用を報告したい:** [Independent verification & reuse registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- **独立検証・反証・別文脈再利用を報告したい:** [Independent verification & reuse submission form](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)
   - 日本語案内: [独立検証・反証・再利用の公開入口](INDEPENDENT_VERIFICATION_REUSE.ja.md)
 - **実務から入りたい:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - **AI・検索から辿りたい:** [Machine Discovery](machine-discovery/README.md)
