@@ -19,7 +19,7 @@
 
 **自分の問いから探す方へ：** [41件の完成回答と313原典を探す、端末内で動く検索画面](machine-discovery/question-source-explorer.html)を公開しています。GitHubのファイル画面で「Raw」からHTMLを保存し、ブラウザで開いて問いを入力できます。追加のAI接続やアカウントは不要です。既刊の具体的な回答、公式原典の候補、当てはまらない場合を区別して確認できます。
 
-**はじめて読む方へ：** [30秒で分かる第三者修正と原典の出所](WHY_THIS_IMPACT_MATTERS.md) ／ [60事例の一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系か](ABOUT_NAKAGAWA_MASTER.md) ／ [原典313件](https://master.ricette.jp/theory-archive/)。
+**はじめて読む方へ：** [AIの誤完了・根拠をMCPなしで実地に試す](QUICKSTART.md) ／ [30秒で分かる第三者修正と原典の出所](WHY_THIS_IMPACT_MATTERS.md) ／ [60事例の一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系か](ABOUT_NAKAGAWA_MASTER.md) ／ [原典313件](https://master.ricette.jp/theory-archive/)。
 
 <details>
 <summary>独立した技術解説・AI支援を伴う修正・現在進行中の開発者レビューを詳しく読む</summary>
