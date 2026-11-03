@@ -27,6 +27,8 @@ This is not a claim of acclaim: the source-native links establish actual actor-d
 
 A different independent technical author [@kishibashi3 also documented a source-specific agent-approval lesson](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md) based on [Local Operator's independently implemented change](https://github.com/damianvtran/local-operator/pull/1324), citing the actual original report. These are distinct routes of documented external explanation, not self-authored praise.
 
+**Beyond the Qwen stable-release claim: independently runnable user acceptance fixture.** [A Python 3.10+ stdio MCP server](machine-discovery/qwen-mcp-collision-fixture.py) locally passes 21 protocol checks and deterministically supplies either four unique tools or two ambiguous names plus two safe unique names. [The separately scoped Qwen v0.26.6 actual-user recheck protocol](machine-discovery/QWEN_MCP_COLLISION_USER_RETEST.md) specifies exact safe config and the observed Qwen tool-list evidence needed to move beyond release. **The fixture, not Qwen itself, was locally tested**; no unaffiliated Qwen user, external reader or AI adoption has been verified. Independently compare, reject, or report results with proper source/implementer credit.
+
 ## 3. Verify real consequences with ordinary, no-install tools
 
 These existing artifacts let a human or permitted independent AI inspect **positive and opposite test conditions**, without claiming a live product reproduced them:
