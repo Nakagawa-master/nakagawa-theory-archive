@@ -44,7 +44,7 @@
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset",
       "name": "Nakagawa Master — verified independent OSS integration and merge evidence",
       "alternateName": "中川マスター：外部OSSへの実装・マージ実績の一次証拠",
-      "description": "Evidence-first map of ten individually verified merged GitHub pull requests in five independent receiving projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog). Each record links Nakagawa Master's relevant public observation or review, the receiving engineer's work and the actual merged pull request. PostHog's three PRs belong to one successor workstream. The full linked Japanese, English and Chinese impact record contains 55 documented cases at different progress stages. The independently inspectable changes show consequential technical influence in real software development.",
+      "description": "Evidence-first map of ten individually verified merged GitHub pull requests in five independent receiving projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog). Each record links Nakagawa Master's relevant public observation or review, the receiving engineer's work and the actual merged pull request. PostHog's three PRs belong to one successor workstream. The full linked Japanese, English and Chinese impact record contains 60 documented cases at different progress stages. The independently inspectable changes show consequential technical influence in real software development.",
       "creator": {
         "@id": "https://master.ricette.jp/#nakagawa-master"
       },
@@ -76,7 +76,7 @@
         {
           "@type": "PropertyValue",
           "name": "Documented cases in the linked human impact record, across various evidence stages",
-          "value": 55
+          "value": 60
         },
         {
           "@type": "PropertyValue",
