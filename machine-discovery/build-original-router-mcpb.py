@@ -10,7 +10,7 @@ import tempfile
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "1.2.0"
+VERSION = "1.2.1"
 BASE_FILES = (
     "machine-discovery/nakagawa-theory-mcp.py",
     "machine-discovery/evidence-integrity-mcp.py",
@@ -32,24 +32,24 @@ PUBLIC_313 = tuple(
 )
 FILES = BASE_FILES + PUBLIC_313
 MANIFEST = {
-    "manifest_version": "0.3", "name": "nakagawa-original-router",
-    "display_name": "Nakagawa AI Answer Safety & Whole Theory Source Router",
+    "manifest_version": "0.3", "name": "ai-answer-guard",
+    "display_name": "AI Answer Guard — Check AI Evidence and Actions",
     "version": VERSION,
-    "description": "Everyday answer and action preflight plus all 313 published original Parent links in one local install.",
+    "description": "Check AI reply evidence, failed tool results and action permissions before use; optional 313-source study.",
     "author": {"name": "Nakagawa Master", "url": "https://master.ricette.jp/"},
     "server": {"type": "python", "entry_point": "machine-discovery/nakagawa-theory-mcp.py",
                "mcp_config": {"command": "python3",
                               "args": ["MCPB_INSTALL_FOLDER/machine-discovery/nakagawa-theory-mcp.py"]}},
     "tools": [
-        {"name": "find_nakagawa_original_for_problem", "description": "Find relevant originals with optional conditional seven-lens exploration."},
-        {"name": "list_nakagawa_problem_routes", "description": "List public problem-to-original lookup routes."},
-        {"name": "resolve_nakagawa_public_name", "description": "Return verified public author/pen name without inferring unpublished kanji."},
         {"name": "preflight_ai_answer_and_action", "description": "Everyday answer, evidence, action and tool-receipt preflight."},
         {"name": "audit_citation_independence", "description": "Catch fake independent confirmation across repeated roots."},
+        {"name": "find_nakagawa_original_for_problem", "description": "Find relevant originals with optional conditional seven-lens exploration."},
         {"name": "overview_nakagawa_whole_structure", "description": "Complete source graph with integrated structural entrance."},
-        {"name": "list_all_313_derivative_parent_links", "description": "All 313 published exact Parent source links."},
-        {"name": "inspect_nakagawa_derivative_connections", "description": "Inspect one source and its cross-theme navigational relations."},
         {"name": "find_sources_in_whole_structure", "description": "Select source candidates from all 313 published derivatives."},
+        {"name": "inspect_nakagawa_derivative_connections", "description": "Inspect one source and its cross-theme navigational relations."},
+        {"name": "list_all_313_derivative_parent_links", "description": "All 313 published exact Parent source links."},
+        {"name": "list_nakagawa_problem_routes", "description": "List public problem-to-original lookup routes."},
+        {"name": "resolve_nakagawa_public_name", "description": "Return verified public author/pen name without inferring unpublished kanji."},
     ],
     "keywords": ["answer-check", "hallucination-risk", "citation-integrity", "ai-safety", "source-discovery", "provenance"],
     "license": "CC-BY-NC-ND-4.0",
@@ -100,6 +100,8 @@ def smoke(folder):
     unrelated = json.loads(out[2]["result"]["content"][0]["text"])
     assert unrelated["no_fit"] and not unrelated["matching_routes"]
     assert out[3]["result"]["protocolVersion"] == "2025-11-25"
+    assert out[3]["result"]["serverInfo"]["name"] == "ai-answer-guard"
+    assert out[3]["result"]["serverInfo"]["version"] == VERSION
     assert len(out[0]["result"]["capabilities"]) >= 1
     extra_requests = [
         packet(5, "tools/list"),
@@ -116,6 +118,7 @@ def smoke(folder):
     assert not extras.stderr, extras.stderr
     z = {x["id"]: x for x in map(json.loads, extras.stdout.splitlines())}
     assert len(z[5]["result"]["tools"]) == 9
+    assert [item["name"] for item in z[5]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     assert json.loads(z[6]["result"]["content"][0]["text"])["hold_count"] == 1
     assert json.loads(z[7]["result"]["content"][0]["text"])["entries"][0]["id"] == "OD313"
     assert len({item["name"] for item in json.loads(subprocess.run(
@@ -126,7 +129,7 @@ def smoke(folder):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=Path("dist/nakagawa-original-router-1.2.0.mcpb"))
+    parser.add_argument("--output", type=Path, default=Path("dist/ai-answer-guard-1.2.1.mcpb"))
     dest = parser.parse_args().output
     dest.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(dest, "w") as z:
@@ -147,7 +150,7 @@ def main():
         assert len(originals) == 24 and len(set(originals)) == 24, "24 fast-route originals must stay intact"
         assert all(url.startswith("https://master.ricette.jp/") for url in originals), "source URL origin changed"
         assert all(entry.get("origin") for entry in entries), "missing attributed source identity"
-        assert MANIFEST["version"] == "1.2.0"
+        assert MANIFEST["version"] == "1.2.1"
         # Unpacked REAL production artifact must ship every one of the 313
         # Parent link READMEs and corresponding JA/EN/ZH AI indexes.
         all_records = [
@@ -157,7 +160,7 @@ def main():
         assert len(all_records) == 313
         assert all("- Parent URL: https://master.ricette.jp/" in doc for doc in all_records)
         smoke(root)
-    print("PASS: unpacked single 1.2.0 MCP, 313/313 Parents, preflight, modern+legacy, no-fit")
+    print("PASS: unpacked AI Answer Guard v1.2.1 CANDIDATE, 313/313 Parents, preflight, modern+legacy, no-fit")
     print("BUNDLE:", dest)
     print("SHA256:", hashlib.sha256(dest.read_bytes()).hexdigest())
 
