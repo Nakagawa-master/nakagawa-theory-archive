@@ -21,7 +21,7 @@
         "https://zeroichi.media/author/masterjp"
       ],
       "disambiguatingDescription": "中川マスター / Nakagawa Master is the published pen name of Keisuke Nakagawa. MasterJP is his author-confirmed byline on ZEROICHI at https://zeroichi.media/author/masterjp. This mapping identifies that publisher's byline; it is not a name match to unrelated MasterJP accounts. Original works: https://master.ricette.jp/. GitHub author account: https://github.com/Nakagawa-master.",
-      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. Ten merged GitHub PRs in five receiving repositories have evidence links in this dataset."
+      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. Thirteen merged GitHub PRs in seven receiving repositories have evidence links in this dataset."
     },
     {
       "@type": "CreativeWorkSeries",
@@ -44,11 +44,11 @@
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset",
       "name": "Nakagawa Master — verified independent OSS integration and merge evidence",
       "alternateName": "中川マスター：外部OSSへの実装・マージ実績の一次証拠",
-      "description": "Evidence-first map of ten individually verified merged GitHub pull requests in five independent receiving projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog). Each record links Nakagawa Master's relevant public observation or review, the receiving engineer's work and the actual merged pull request. PostHog's three PRs belong to one successor workstream. The full linked Japanese, English and Chinese impact record contains 60 documented cases at different progress stages. The independently inspectable changes show consequential technical influence in real software development.",
+      "description": "Evidence-first map of 13 merged GitHub pull requests in 7 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Qwen and Hermes official release ancestry is separately confirmed. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 60 cases at different stages.",
       "creator": {
         "@id": "https://master.ricette.jp/#nakagawa-master"
       },
-      "dateModified": "2026-11-02",
+      "dateModified": "2026-11-03",
       "inLanguage": [
         "ja",
         "en"
@@ -66,12 +66,12 @@
         {
           "@type": "PropertyValue",
           "name": "Individually checked merged PRs in this dataset",
-          "value": 10
+          "value": 13
         },
         {
           "@type": "PropertyValue",
           "name": "Distinct independent receiving GitHub repositories in this dataset",
-          "value": 5
+          "value": 7
         },
         {
           "@type": "PropertyValue",
@@ -85,6 +85,163 @@
         }
       ],
       "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/QwenLM/qwen-code/pull/15757",
+          "name": "Qwen Code — preserve usable MCP tools when another tool name collides",
+          "url": "https://github.com/QwenLM/qwen-code/pull/15757",
+          "dateModified": "2026-11-03",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6461618923"
+          },
+          "citation": [
+            "https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6461618923",
+            "https://github.com/QwenLM/qwen-code/pull/15757",
+            "https://github.com/QwenLM/qwen-code/pull/15757#discussion_r4402027138",
+            "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "QwenLM/qwen-code"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master supplied a concrete source-level whole-conversion failure condition; independent contributor @2SinceJuly wrote the fix and tests, and Qwen maintainers merged it. Stable v0.26.6 includes this merge. Later affected-user behavior is not observed here."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "qwen-duplicate-mcp-tool-name"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "8a2817ac8acbf9444c8a99549445c482caf1796e",
+              "url": "https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Official published release contains merged fix (commit ancestry verified)",
+              "value": "v0.26.6",
+              "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/NousResearch/hermes-agent/pull/147746",
+          "name": "Hermes Agent — recover background results to the intended recipient",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/147746",
+          "dateModified": "2026-11-03",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/NousResearch/hermes-agent/pull/146708#pullrequestreview-5707357350"
+          },
+          "citation": [
+            "https://github.com/NousResearch/hermes-agent/pull/146708#pullrequestreview-5707357350",
+            "https://github.com/NousResearch/hermes-agent/pull/147746",
+            "https://github.com/NousResearch/hermes-agent/pull/147746",
+            "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "NousResearch/hermes-agent"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master reviewed the wrong-recipient and false-completion boundary on an earlier PR. Other contributors authored and merged the successor repair, included in official v0.22.6. This is separate from evidence of real installed-user recovery."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "hermes-background-result-recovery"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "0e47519c3199b1689f76b16e6c5a116f3f1601f0",
+              "url": "https://github.com/NousResearch/hermes-agent/commit/0e47519c3199b1689f76b16e6c5a116f3f1601f0"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Official published release contains merged fix (commit ancestry verified)",
+              "value": "v0.22.6",
+              "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/BerriAI/litellm/pull/47608",
+          "name": "LiteLLM — count spending when budget-window cache expires before request completion",
+          "url": "https://github.com/BerriAI/litellm/pull/47608",
+          "dateModified": "2026-11-03",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6535985229"
+          },
+          "citation": [
+            "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6535985229",
+            "https://github.com/BerriAI/litellm/pull/47608",
+            "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6519461222",
+            "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755",
+            "https://github.com/BerriAI/litellm/pull/47608"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "BerriAI/litellm"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master separately analyzed budget-window versus historic spend and the no-admin-update cache-TTL negative case; another contributor credited that issue distinction. Independent @etiennechabert authored #47608 and maintainers merged it. The record does not establish direct adoption of any individual review, a released package, or affected-user post-upgrade success."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "litellm-expired-budget-window-cache"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "523b87ec718cc733363ac0d66312730c51a23a27",
+              "url": "https://github.com/BerriAI/litellm/commit/523b87ec718cc733363ac0d66312730c51a23a27"
+            }
+          ]
+        },
         {
           "@type": "CreativeWork",
           "@id": "https://github.com/QwenLM/qwen-code/pull/15681",
