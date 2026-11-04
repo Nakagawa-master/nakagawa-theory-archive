@@ -123,7 +123,7 @@
       "target_repository": "anthropics/claude-code",
       "target_issue_number": 89922,
       "target_issue_url": "https://github.com/anthropics/claude-code/issues/89922",
-      "observed_state": "OPEN",
+      "observed_state": "CLOSED",
       "observed_at": "2026-08-26T20:51:01Z",
       "target_labels": [
         "bug",
@@ -131,7 +131,7 @@
         "area:bash",
         "area:permissions"
       ],
-      "coordination_state": "LOW_VISIBLE_COORDINATION_RECHECK_REQUIRED",
+      "coordination_state": "CLOSED_HISTORICAL__NO_LIVE_TARGET_PERMISSION",
       "problem_summary": "Auto-mode may block cross-tool agent execution or state-marker operations without sufficiently distinguishing the actual operation, filename semantics, current authorization, and the state already established by another tool.",
       "useful_contributions": [
         "Attempt a current-version reproduction that isolates command/tool identity from path or filename wording.",
@@ -164,9 +164,14 @@
         "maintainer acceptance without receiver-side evidence"
       ],
       "observed_at_earlier_snapshot": "2026-08-26T20:51:01Z",
-      "latest_live_state_recheck_jst": "2026-10-11",
-      "latest_target_activity_utc": "2026-08-26T20:51:01Z",
-      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
+      "latest_live_state_recheck_jst": "2026-11-05",
+      "latest_target_activity_utc": "2026-10-25T10:14:35Z",
+      "latest_state_claim_boundary": "Native issue CLOSED (not_planned); original scope is historical and does not currently authorize or justify an external intervention. Closure does not prove fixed behavior. Only separately verified current issue/PR, source fit, prior work and explicit current permission can justify future action.",
+      "current_live_contribution_target": false,
+      "issue_closed_at": "2026-10-25T10:14:35Z",
+      "issue_close_reason": "not_planned",
+      "close_source_url": "https://github.com/anthropics/claude-code/issues/89922#issuecomment-6396378805",
+      "close_interpretation": "Closed without a product-fix determination after an inactivity bot notice. The earlier OPEN snapshot is historical, not a live invitation to contribute."
     },
     {
       "opportunity_id": "EXT-AUTOGEN-7405-CURRENT-AUTHORITY-GUARDRAIL-004",
@@ -271,10 +276,10 @@
       "target_repository": "langchain-ai/langgraph",
       "target_issue_number": 9185,
       "target_issue_url": "https://github.com/langchain-ai/langgraph/issues/9185",
-      "observed_state": "OPEN",
+      "observed_state": "CLOSED",
       "observed_at": "2026-10-06T01:08:29Z",
       "target_labels": [],
-      "coordination_state": "INDEPENDENT_RUNTIME_REPRODUCTION_EXISTS__UPSTREAM_IMPLEMENTATION_NOT_YET_OBSERVED",
+      "coordination_state": "CLOSED_HISTORICAL__NO_LIVE_TARGET_PERMISSION",
       "problem_summary": "A timed-out tool can be re-entered on checkpoint resume and produce duplicate external writes. Independent reproduction exists, and current source inspection shows the available attempt metadata does not cleanly identify cross-invocation re-execution.",
       "useful_contributions": [
         "Add a receiver-owned regression that distinguishes first execution from cross-invocation checkpoint re-execution while preserving logical tool identity.",
@@ -306,9 +311,14 @@
         "user-scale impact"
       ],
       "observed_at_earlier_snapshot": "2026-10-06T01:08:29Z",
-      "latest_live_state_recheck_jst": "2026-10-11",
-      "latest_target_activity_utc": "2026-10-07T02:51:12Z",
-      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
+      "latest_live_state_recheck_jst": "2026-11-05",
+      "latest_target_activity_utc": "2026-10-23T14:22:45Z",
+      "latest_state_claim_boundary": "Native issue CLOSED (not_planned); original scope is historical and does not currently authorize or justify an external intervention. Closure does not prove fixed behavior. Only separately verified current issue/PR, source fit, prior work and explicit current permission can justify future action.",
+      "current_live_contribution_target": false,
+      "issue_closed_at": "2026-10-16T17:52:36Z",
+      "issue_close_reason": "not_planned",
+      "close_source_url": "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-6221463411",
+      "close_interpretation": "A maintainer explicitly closed this issue in favor of documentation-contract issue #9240, which was independently checked OPEN on 2026-11-05. This does NOT mean that the original duplicate-effect behavior was fixed or that work on #9240 is authorized. Source old issue for history only, recheck #9240 for separate currently relevant facts."
     },
     {
       "opportunity_id": "EXT-LITELLM-49751-50013-END-TO-END-DEADLINE-007",
