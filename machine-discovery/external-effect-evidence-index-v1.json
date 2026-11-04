@@ -4221,7 +4221,7 @@
         "url": "https://github.com/NousResearch/hermes-agent/pull/147746#issuecomment-6568004334",
         "result": "15 focused tests passed on latest head; blocking lint checks clean"
       },
-      "current_stage": "C3_MERGED_AND_OFFICIAL_v0.22.6_TAG_ANCESTRY_VERIFIED__INDEPENDENT_ACTUAL_USER_C4_UNKNOWN",
+      "current_stage": "C3_MERGED_STABLE_v0.22.6_AND_v0.22.7_ANCESTRY_VERIFIED__ORIGINAL_REPORTER_RETEST_ASKED_C0__ACTUAL_C4_UNKNOWN",
       "human_case": "REAL_WORLD_IMPACT.md#58",
       "origin_continuity_after_merge": {
         "confirmed_by_receiving_engineer": "https://github.com/NousResearch/hermes-agent/pull/146708#issuecomment-6569766480",
@@ -4236,7 +4236,7 @@
         "pull_request": "https://github.com/NousResearch/hermes-agent/pull/147746",
         "main_branch_guard_and_negative_test_present": true
       },
-      "remaining_next_stage": "Distinct real reporter's actual post-release gateway/Telegram delivery; subsequent voluntary person-original carrier; do not imply adoption from tag alone.",
+      "remaining_next_stage": "Wait for original affected Telegram reporter's genuine own installed post-release delivery result or different affected users' verifiable experience; one respectful ask already posted, no duplicate ping. C5 independent re-carrier and actual relevant original Parent use remain unknown.",
       "official_release": {
         "tag": "v0.22.6",
         "release": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6",
@@ -4245,6 +4245,23 @@
         "peeled_commit": "f0d94882e89ab8d4098b5bb2f166adfb9ee0a0ab",
         "ancestry": "merge 0e47519c is ancestor; ahead 187, behind 0",
         "boundary": "Official package released, but affected real end user's successful delivery C4 not observed"
+      },
+      "official_latest_verified_shipped_tag": {
+        "tag": "v0.22.7",
+        "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.7",
+        "published_utc": "2026-11-03T21:53:16Z",
+        "merged_fix_commit": "0e47519c3199b1689f76b16e6c5a116f3f1601f0",
+        "native_ancestry": "release v0.22.7 is ahead of fix merge, behind 0",
+        "scope": "SHIPPED SOURCE, NOT PROOF TELEGRAM RECIPIENT ACTUALLY RECEIVED RESULT"
+      },
+      "receiver_native_actual_installed_check": {
+        "actor": "Nakagawa-master (one opt-in check to original independent affected reporter AlChe31)",
+        "at": "2026-11-05",
+        "url": "https://github.com/NousResearch/hermes-agent/issues/146696#issuecomment-6634634550",
+        "request": "Installed Hermes version; whether async delegate_task result is actually delivered to same affected Telegram forum topic when origin metadata was null; negative/unable to retest accepted",
+        "observed_result": "NO REPLY OR INSTALLED RESULT AS OF CURRENT CHECK",
+        "stage": "C3 VERIFIED, C4 UNVERIFIED; FIRST-PARTY C0 OUTBOUND RETEST QUESTION ONLY",
+        "privacy": "No chat IDs, session files, credentials or private delegation content"
       }
     },
     {
@@ -4281,9 +4298,9 @@
         "merge_commit": "8a2817ac8acbf9444c8a99549445c482caf1796e",
         "url": "https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e"
       },
-      "current_stage": "C3_MERGED_OFFICIAL_STABLE_v0.26.6_RELEASE_NOTES_AND_TAG_ANCESTRY_VERIFIED__ACTUAL_USER_C4_UNKNOWN",
+      "current_stage": "C3_MERGED_STABLE_v0.26.6_AND_v0.26.7_ANCESTRY_VERIFIED__ORIGINAL_REPORTER_RETEST_ASKED_C0__ACTUAL_C4_UNKNOWN",
       "human_case": "REAL_WORLD_IMPACT.md#59",
-      "current_next_stage": "Unprompted real MCP reporter v0.26.6 client result and subsequent independent PERSON+fitting-Parent carry; no repeated solicitation.",
+      "current_next_stage": "Wait for independently volunteered reporter's actual installed-version Unity MCP tool discovery outcome or genuine unrelated user evidence. No repeat follow-up to the same person without new external signal. Distinct independent C5–C7 not implied by release, this outbound question or an unanswered report.",
       "nightly_release": {
         "tag": "v0.26.5-nightly.20261101.7b4b353750",
         "published_at_utc": "2026-11-01T22:43:08Z",
@@ -4300,6 +4317,23 @@
         "native_release_notes": "#15757 credited to @2SinceJuly",
         "ancestry": "merge 8a2817ac ancestor; ahead 64, behind 0",
         "boundary": "Actual MCP user client invocation C4 not observed"
+      },
+      "official_latest_verified_shipped_tag": {
+        "tag": "v0.26.7",
+        "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7",
+        "published_utc": "2026-11-04T04:03:01Z",
+        "merged_fix_commit": "8a2817ac8acbf9444c8a99549445c482caf1796e",
+        "native_ancestry": "release v0.26.7 is ahead of fix merge, behind 0",
+        "scope": "SHIPPED SOFTWARE CODE, NOT PROOF OF AFFECTED UNITY USER OUTCOME"
+      },
+      "receiver_native_actual_installed_check": {
+        "actor": "Nakagawa-master (one opt-in check to original independent affected reporter nipercop)",
+        "at": "2026-11-05",
+        "url": "https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6634570689",
+        "request": "installed qwen --version and whether Unity MCP server recovers unique Editor tools despite repeated create names; negative/unable to retest is acceptable",
+        "observed_result": "NO REPLY OR INSTALLED RESULT AS OF CURRENT CHECK",
+        "stage": "C3 VERIFIED, C4 UNVERIFIED; FIRST-PARTY C0 OUTBOUND RETEST QUESTION ONLY",
+        "privacy": "Do not request or publicize customer paths/tokens/private logs"
       }
     },
     {
