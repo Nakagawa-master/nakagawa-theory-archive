@@ -36,6 +36,20 @@
 
 **中文：** AI代理获得批准后超时，能否再次付款或发邮件？批准记录不等于外部操作的完成证明。先核对服务商的交易记录和同一操作标识；结果未知时不要直接重复执行。[中川マスター的原典《合意の記憶》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)讨论记录决定的原因、关系与修订条件，并非支付接口的技术保证。
 
+## Actual-user check: AI timeout exhausted but retries keep running
+
+**「AIには10秒の期限を指定したのに、失敗の再試行で20秒以上待たされるのはなぜ？」**
+
+一回の呼び出しの制限時間と、何度も再試行・待機する**全体の制限時間**は別です。使う側は、送ったタイムアウト指定、実際に最後の呼び出しが始まった時刻、再試行間の待機、最終応答までの経過時間を分けて検査します。支払い・外部通知・データ更新では、期限切れだからといって何度も自動再送すると別の副作用を生むことがあります。
+
+これは[LiteLLM利用者自身の「10秒指定なのに20秒超え」という報告](https://github.com/BerriAI/litellm/issues/49751)に対応する実際の開発案件です。[中川マスターが再試行の期限切れ境界を指摘](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016)すると、[別の開発者がコードとテストを修正](https://github.com/BerriAI/litellm/commit/3d9adc3229c5bcb3c649db1cfb02626b61aae367)し、[マスター本人に返信](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6632981614)しました。その後も[本文だけで期限を指定したときの欠落を追加指摘](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633052473)、[開発者自身がもう一度修正](https://github.com/BerriAI/litellm/commit/95b3bf4d6b3c9cb92b9f4615b00c8b67328a3fb3)し、[二度目の直接返信](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106)もありました。
+
+**重要：この修正PRはまだマージ・正式配布されていません。** 外部レビューでは未解決の安全性懸念も報告され、実利用者の再検証も未確認です。「誰が欠陥を発見したか」「誰が直したか」「実際の利用者に効いたか」は独立した問いです。この事例は技術レビューの実績であり、開発者が中川マスターの特定の原論を使った証拠ではありません。関連する原論を読む場合も[公式原典一覧](https://master.ricette.jp/theory-archive/)から自分の問題に合うものだけ選び、当てはまらない場合を確認してください。
+
+**English:** A per-attempt timeout is not an end-to-end deadline. This [live LiteLLM PR](https://github.com/BerriAI/litellm/pull/50013) includes an independent developer's fixes after two specific reviews by Nakagawa Master, with two direct acknowledgments. **Not merged or verified on affected users.**
+
+**中文：** 单次调用超时不等于包含重试等待的总期限。这个[LiteLLM修复PR](https://github.com/BerriAI/litellm/pull/50013)记录了中川マスター两次具体审查及另一名开发者的相应修改与直接回复；**尚未合并，也未得到受影响用户的实际复测确认**。
+
 ## Actual-user check: AI completed but nothing was delivered
 
 **AIに「仕事は完了した」と表示されたのに、肝心の結果が自分に届かないのは？**
