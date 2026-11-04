@@ -4555,6 +4555,85 @@
         "large-scale PERSON recognition"
       ],
       "next_native_receiver": "Independent actual adopter of the corrected software version tests that an eligible lower-ranked claim pair survives over-budget high-ranked peers, confirms model/build version and public result; later separate human/AI carrier with accurate person/source attribution."
+    },
+    {
+      "case_id": "pydantic-ai-conversation-store-single-adapter-run-contract",
+      "topic": "A successful server-side conversation save can lack its own client-facing saved receipt if concurrent streams reuse one adapter; the documented API contract explicitly limits an adapter to one run.",
+      "external_repository": "pydantic/pydantic-ai",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_specific_pr_comment",
+        "url": "https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6635965070",
+        "summary": "Predicted a specific same-adapter A-save/B-save/A-announcement interleaving that suppresses A's saved receipt even though its store.save succeeded. Suggested a two-stream inverse test or an explicit one-run-per-adapter contract; no runtime reproduction asserted."
+      },
+      "third_party_response": {
+        "actor": "DouweM",
+        "role": "independent PR implementation owner",
+        "url": "https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6640343084",
+        "summary": "Explicitly thanked Nakagawa Master and called the concern a fair catch; chose to state single-active-run support and documented the construction of one adapter per request. Response was posted using Claude Code on behalf of the named author."
+      },
+      "receiver_implementation": {
+        "scope": "independently authored public API-usage documentation only, not a concurrent-run code fix",
+        "commit_sha": "1de8158285fb9fde42bb766dc852ee97d57c5a26",
+        "commit_url": "https://github.com/pydantic/pydantic-ai/commit/1de8158285fb9fde42bb766dc852ee97d57c5a26",
+        "public_source_path": "docs/ui/overview.md",
+        "documented_contract": "An adapter instance drives one run at a time, as UIAdapter.from_request builds one per request.",
+        "pull_request": "https://github.com/pydantic/pydantic-ai/pull/12326",
+        "state_at_native_check": "open_unmerged",
+        "head_sha": "6863757a909d8d36e39f536643640a809f51c7b2"
+      },
+      "current_stage": "independent_author_direct_recognition_and_documentation_contract_change_open_pr",
+      "causal_boundary": "The author independently chose the documented unsupported-concurrency boundary after the concrete review; this is a direct developer response and changed public implementation documentation, not evidence of a repaired concurrent execution path.",
+      "not_claimed": [
+        "runtime concurrency fix",
+        "reported production failure",
+        "merged pull request",
+        "shipped package",
+        "affected installed-user result",
+        "independent reading or endorsement of a specific original theory",
+        "broad audience reach or unrelated AI source preference"
+      ]
+    },
+    {
+      "case_id": "memberjunction-runview-batch-parameter-value-collision-sqlserver",
+      "topic": "Identical SQL parameter names across independent statements may bind distinct values; scope the second binding and keep query-string literals, comments and SQL types intact.",
+      "external_repository": "MemberJunction/MJ",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_specific_pr_comment",
+        "url": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6629777537",
+        "summary": "Identified that ExecuteSQLBatch's combined batch reused first @p0 value for separate statements naming @p0 with different bindings; supplied a minimal two-statement inverse and distinct-value acceptance path."
+      },
+      "receiver_implementation": {
+        "actor": "AN-BC",
+        "role": "independent PR author",
+        "source_commit": "87145b90449fafa65a3564f98b7870bd39f81afb",
+        "source_url": "https://github.com/MemberJunction/MJ/commit/87145b90449fafa65a3564f98b7870bd39f81afb",
+        "mechanisms": [
+          "Build collision-aware multi-statement binding payload, qualifying a different second statement value as @q1_p0.",
+          "Add negative and positive cases for named parameter arrays and typed parameter arrays.",
+          "Preserve literal and comment occurrences of @p0 rather than blindly replacing all text."
+        ],
+        "pull_request": "https://github.com/MemberJunction/MJ/pull/6339",
+        "state_at_native_check": "open_unmerged",
+        "head_sha": "75b9338004b91e2066b8fb2f47e637cb5899f278"
+      },
+      "independent_second_read": {
+        "source": "Claude Code review posted by independent implementation author AN-BC at that author's request",
+        "url": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6640783278",
+        "verified_claim": "The reviewer independently identified the earlier batch collision comment as handled in the author's code and tests.",
+        "remaining_issue": "The same review found a separate PostgreSQL field-security @salary operator concern; not all PR concerns are resolved."
+      },
+      "current_stage": "independently_authored_code_and_test_change_open_unmerged_with_external_ai_source_review",
+      "causal_boundary": "The code and exact opposite-value tests are native independent developer changes following the review. The additional AI reviewer is neither an additional independent human adopter nor evidence of autonomous original-theory preference.",
+      "not_claimed": [
+        "merged PR",
+        "released package",
+        "deployed or affected-user improvement",
+        "complete resolution of the separate PostgreSQL concern",
+        "independent reading or endorsement of original Nakagawa theories",
+        "broad person-recognition or independent-model source preference"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
