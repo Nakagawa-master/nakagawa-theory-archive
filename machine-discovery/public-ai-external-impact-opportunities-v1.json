@@ -28,9 +28,10 @@
         "bug",
         "platform:macos",
         "area:agents",
-        "area:permissions"
+        "area:permissions",
+        "area:desktop"
       ],
-      "coordination_state": "LOW_VISIBLE_COORDINATION_RECHECK_REQUIRED",
+      "coordination_state": "EXISTING_DIVERSE_USER_REPORTS__RECHECK_SOURCE_AND_COORDINATION",
       "problem_summary": "Auto-mode may treat a user's explicit approval recorded in the user's own repository as instruction poisoning, blocking both the approved status update and later read-only inspection, which can collapse a multi-agent approval gate into either manual editing or broad bypass mode.",
       "useful_contributions": [
         "Reproduce or falsify the behavior on a current Claude Code version while separating user-authored approval, agent-authored content, read-only inspection, and the later action being authorized.",
@@ -63,9 +64,9 @@
         "user-scale impact"
       ],
       "observed_at_earlier_snapshot": "2026-10-05T12:16:15Z",
-      "latest_live_state_recheck_jst": "2026-10-11",
-      "latest_target_activity_utc": "2026-10-09T13:57:17Z",
-      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
+      "latest_live_state_recheck_jst": "2026-11-05",
+      "latest_target_activity_utc": "2026-11-02T01:05:17Z",
+      "latest_state_claim_boundary": "Native GitHub issue remained OPEN on 2026-11-05. The displayed updated_at is the issue's latest native activity timestamp, not the date of this read. No current-version product reproduction, unimplemented-gap proof, coordination clearance, independent AI reuse, or authority to contact outsiders is established. Re-read the exact current issue, linked fixes and contribution rules before any voluntary action."
     },
     {
       "opportunity_id": "EXT-CLAUDE-CODE-96662-PROVENANCE-BOUNDARY-002",
@@ -113,9 +114,9 @@
         "release or production effect without direct evidence"
       ],
       "observed_at_earlier_snapshot": "2026-10-03T05:17:45Z",
-      "latest_live_state_recheck_jst": "2026-10-11",
-      "latest_target_activity_utc": "2026-10-07T22:26:23Z",
-      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
+      "latest_live_state_recheck_jst": "2026-11-05",
+      "latest_target_activity_utc": "2026-10-13T13:46:11Z",
+      "latest_state_claim_boundary": "Native GitHub issue remained OPEN on 2026-11-05. The displayed updated_at is the issue's latest native activity timestamp, not the date of this read. No current-version product reproduction, unimplemented-gap proof, coordination clearance, independent AI reuse, or authority to contact outsiders is established. Re-read the exact current issue, linked fixes and contribution rules before any voluntary action."
     },
     {
       "opportunity_id": "EXT-CLAUDE-CODE-89922-CROSS-TOOL-CLASSIFIER-003",
@@ -182,7 +183,7 @@
       "observed_state": "OPEN",
       "observed_at": "2026-10-06T01:08:29Z",
       "target_labels": [],
-      "coordination_state": "ACTIVE_DESIGN_DISCUSSION__HIGH_COMMENT_VOLUME__FRESH_RECHECK_REQUIRED",
+      "coordination_state": "ACTIVE_DESIGN_DISCUSSION__HIGH_COMMENT_VOLUME__RECHECK_REQUIRED",
       "problem_summary": "AutoGen is designing a common GuardrailProvider interception layer for tool calls. The discussion already separates call identity, argument digests, approval, audit records, and single-use decisions, but a historically valid ALLOW can still be conceptually confused with current authority after cancellation, queueing, restart, recovery, role revocation, policy change, or another material state change.",
       "useful_contributions": [
         "Test the distinction 'same call identity and same arguments does not imply current authority to execute now' across cancellation, restart, recovery, delayed execution, and policy or role changes.",
@@ -215,9 +216,9 @@
         "merge, release, deployment, or user-scale impact without direct target-side evidence"
       ],
       "observed_at_earlier_snapshot": "2026-10-06T01:08:29Z",
-      "latest_live_state_recheck_jst": "2026-10-11",
+      "latest_live_state_recheck_jst": "2026-11-05",
       "latest_target_activity_utc": "2026-10-06T23:16:55Z",
-      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
+      "latest_state_claim_boundary": "Native GitHub issue remained OPEN on 2026-11-05. The displayed updated_at is the issue's latest native activity timestamp, not the date of this read. No current-version product reproduction, unimplemented-gap proof, coordination clearance, independent AI reuse, or authority to contact outsiders is established. Re-read the exact current issue, linked fixes and contribution rules before any voluntary action."
     },
     {
       "opportunity_id": "EXT-QWEN-13487-CURRENT-AUTHORITY-005",
@@ -266,9 +267,9 @@
         "user-scale impact"
       ],
       "observed_at_earlier_snapshot": "2026-10-06T01:08:29Z",
-      "latest_live_state_recheck_jst": "2026-10-11",
+      "latest_live_state_recheck_jst": "2026-11-05",
       "latest_target_activity_utc": "2026-10-06T01:10:08Z",
-      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
+      "latest_state_claim_boundary": "Native GitHub issue remained OPEN on 2026-11-05. The displayed updated_at is the issue's latest native activity timestamp, not the date of this read. No current-version product reproduction, unimplemented-gap proof, coordination clearance, independent AI reuse, or authority to contact outsiders is established. Re-read the exact current issue, linked fixes and contribution rules before any voluntary action."
     },
     {
       "opportunity_id": "EXT-LANGGRAPH-9185-CURRENT-AUTHORITY-006",
@@ -417,7 +418,7 @@
     }
   ],
   "return_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-external-impact-return.yml",
-  "evidence_boundary": "Source-selected independent AI discovery only, not independent model selection or permission to post. First six opportunities remain 2026-10-11 snapshots requiring new live check. Seventh updated at 2026-11-04 14:27Z HEAD 95b3bf4: two directly addressed reviewer replies to Nakagawa Master, original author-owned C2 code and seven additional unit tests (3 retry, 2 attempt, 2 body; one previous no-timeout test preserved). PR OPEN/mergeable, GitHub Actions action_required, one independent unresolved high-risk review. All previously reviewed code gaps have received outside fixes; do not re-report old source predictions as current, and never equate C2 with merged, released, installed outcome, original Parent theory adoption, unconnected AI choice or personal mass recognition.",
+  "evidence_boundary": "Seven historical opportunity entries are preserved. As of 2026-11-05, four underlying issues (#99652, #96662, #7405, #13487) were freshly rechecked OPEN; two original issues (#89922, #9185) remain CLOSED/not_planned based on native checks; LiteLLM #49751 and implementing PR #50013 were rechecked OPEN and unmerged. Native issue state never proves product behavior, contributor agreement, permission to post, independent model selection or user impact.",
   "related_public_context": [
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#19-the-user-really-approved-it--but-recording-approved-is-treated-as-unsafe-content",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
