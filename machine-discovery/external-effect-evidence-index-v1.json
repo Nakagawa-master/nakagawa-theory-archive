@@ -4659,8 +4659,11 @@
         "mechanism": "The actual accepted-head code passes an Inngest event id derived from runId, the claimed suspension snapshot timestamp and toolCallId, so retries for the same suspended-tool approval retain an event identity. The rejected-send catch now documents that the retry is deduplicated rather than falsely asserting the receiver never accepted the event.",
         "external_test_report": "The independent author reports exercising the implementation against a real Inngest dev server by sending each resume event twice: identifier present gave one tool execution and two model requests; identifier stripped gave two tool executions and three model requests.",
         "pull_request": "https://github.com/mastra-ai/mastra/pull/29451",
-        "state_at_verification": "open_unmerged",
-        "head_sha": "5689e0518013f19bbfa68bec9fea497a73503395"
+        "state_at_verification": "open_unmerged_follow_on_head_062c82b913c890fe181ddc8b9dda46ca6c843ef7",
+        "head_sha": "5689e0518013f19bbfa68bec9fea497a73503395",
+        "current_head_sha": "062c82b913c890fe181ddc8b9dda46ca6c843ef7",
+        "current_event_id_mechanism": "Follow-on author commit 062c82b913 moved receiver-side event id from runId:suspension-timestamp:toolCallId to runId:suspension-timestamp, because different tool approvals of the same parked suspension must also deduplicate after an ambiguous sender acknowledgment.",
+        "follow_on_commit_url": "https://github.com/mastra-ai/mastra/commit/062c82b913c890fe181ddc8b9dda46ca6c843ef7"
       },
       "current_stage": "independent_author_direct_recognition_source_code_fix_and_reported_real_ingg_dev_server_test_C2_open_unmerged",
       "causal_boundary": "Master's contribution was a bounded source-predicted scenario and a pair of nonfit acceptance conditions; the independent maintainer-like PR author chose and implemented the event ID. The author reports real dev-server validation; the assistant did not independently execute that test. A different edit in the same commit on re-suspension metadata responds to a separate reviewer and is not attributed to Master.",
@@ -4672,7 +4675,13 @@
         "unprompted reading or endorsement of Nakagawa original Parents by independent AI",
         "mass personal recognition",
         "verified December native metrics"
-      ]
+      ],
+      "independent_separate_review": {
+        "reviewer": "coderabbitai[bot]",
+        "review_url": "https://github.com/mastra-ai/mastra/pull/29451#discussion_r4474588660",
+        "author_response_url": "https://github.com/mastra-ai/mastra/pull/29451#discussion_r4474660665",
+        "precise_role": "A separate automated reviewer identified the different-tool-call retry gap left by the first implementation. The independent PR author acknowledged it and made the event identity suspension-scoped. Do not attribute this distinct discovery to Nakagawa Master."
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
