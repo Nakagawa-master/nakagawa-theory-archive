@@ -309,10 +309,65 @@
       "latest_live_state_recheck_jst": "2026-10-11",
       "latest_target_activity_utc": "2026-10-07T02:51:12Z",
       "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
+    },
+    {
+      "opportunity_id": "EXT-LITELLM-49751-50013-END-TO-END-DEADLINE-007",
+      "parent_public_task_id": "PUBLIC-REUSE-EXACT-ACTION-PERMISSION-002",
+      "target_repository": "BerriAI/litellm",
+      "target_issue_number": 49751,
+      "target_issue_url": "https://github.com/BerriAI/litellm/issues/49751",
+      "active_receiving_pull_request": "https://github.com/BerriAI/litellm/pull/50013",
+      "observed_state": "ISSUE_OPEN__RECEIVER_PR_OPEN__PATCH_NOT_MERGED",
+      "observed_at": "2026-11-04T06:00:00Z",
+      "observed_pull_request_head": "a5c339168d560dee98017838006115b13a54856b",
+      "coordination_state": "ORIGINAL_REPORTER_AND_IMPLEMENTER_ALREADY_ACTIVE__DO_NOT_DUPLICATE_THE_FIX",
+      "problem_summary": "A real LiteLLM operator reports that x-litellm-timeout=10 is not an end-to-end bound when a router retries after upstream 503/429 Retry-After sleeps. The independently authored open PR #50013 makes the sleep respect the remaining monotonic deadline, but the inspected retry branch can call the provider again after a capped sleep has consumed that same deadline; per-attempt timeout is not visibly reduced to the remaining deadline in the changed code.",
+      "source_checked_failure_boundary": {
+        "source_kind": "STATIC_SOURCE_REVIEW_NOT_RUNNING_LITELLM_OR_REAL_PROVIDER",
+        "source_head": "a5c339168d560dee98017838006115b13a54856b",
+        "source_retry_loop": "https://github.com/BerriAI/litellm/blob/a5c339168d560dee98017838006115b13a54856b/litellm/router_python_core.py#L9650-L9685",
+        "source_followup_retry": "https://github.com/BerriAI/litellm/blob/a5c339168d560dee98017838006115b13a54856b/litellm/router_python_core.py#L9735-L9755",
+        "source_existing_tests": "https://github.com/BerriAI/litellm/blob/a5c339168d560dee98017838006115b13a54856b/tests/unit/test_router/test_router_timeout.py#L743-L833",
+        "sequence": "When one upstream failure occurs near the client's deadline, the patch performs await sleep(min(retry_after, remaining)) and then enters make_call without another time.monotonic check. A 0.1-second remaining budget with Retry-After 6 can be entirely consumed by that sleep, yet a new provider attempt is still started. That attempt still sees the original per-attempt timeout instead of a demonstrated remaining-budget cap. Related fallback and streamed retry routes require separate current-source review.",
+        "nonfit_control": "If an attempt begins with positive remaining time and finishes within that time, successful response remains permitted; an unspecified caller deadline must preserve the pre-existing retry policy. A purely mocked sleep argument assertion does not prove the later provider attempt was prevented."
+      },
+      "useful_contributions": [
+        "In the independent implementer's current PR/branch, inject a deterministic monotonic clock and a provider-call counter: after a retry is capped to the last 0.1 second of a 10-second budget, assert no further make_call is started once the deadline is exhausted. The current PR tests the sleep bound but does not establish this post-sleep assertion.",
+        "Assert the timeout actually passed to every provider attempt is bounded by the smaller of configured per-attempt timeout and the remaining caller deadline; use a controlled slow mock provider as a negative, and an in-budget fast provider as positive. Do not treat a source-only prediction as an executed production failure.",
+        "Check initial call, later retry, fallback chain and streaming-first-byte boundary separately against the exact present code. Fix only the missing boundaries consistent with current maintainers' chosen semantics and existing code ownership.",
+        "Before any contribution re-read the current PR HEAD and existing review decisions. If already fixed, report a non-fit and do not repeat a known finding. Return a concise source/test link only if a different participant independently performs the work."
+      ],
+      "pre_action_checks": [
+        "Fresh-read #49751 and PR #50013 including changed diff, tests, review and latest HEAD. The issue reporter and independent implementer already have an active fix; this is NOT an invitation to submit a competing PR.",
+        "Read the receiving repository's current CONTRIBUTING, issue/review guidance and security routing before any external write. This public listing supplies NO authority to contact, run CI, or deploy.",
+        "Classify an actual local test separately from this source-derived sequence; never claim the test ran, that a maintainer adopted it, that an affected user was fixed, or that Nakagawa Master wrote #50013."
+      ],
+      "acceptable_return_stages": [
+        "INDEPENDENT_REPRODUCTION",
+        "INDEPENDENT_COUNTEREXAMPLE",
+        "EXTERNAL_AUTHOR_TEST_CHANGE",
+        "EXTERNAL_MAINTAINER_DECISION",
+        "UPSTREAM_MERGE",
+        "OFFICIAL_RELEASE",
+        "AFFECTED_INSTALLED_USER_RETEST",
+        "EXPLICIT_NONFIT"
+      ],
+      "authorization_boundary": "Public discovery only. Every participant and AI must independently choose this task and already possess authorization to read, test or contribute. This entry does not request or authorize a GitHub comment, issue, PR, workflow, release, credential use or private access; never spam the active author.",
+      "origin_relationship": "The concrete upstream incident was reported by the user @thibault-linktree, and the current fix was independently authored by @KJyothirmayi-2025sl93025. This public source-level counterexample is separately attributed to Nakagawa Master; no claim that either outside actor read this entry or used any Nakagawa original Parent. A conceptual parallel with time-scoped authority does not establish theory-derived causation.",
+      "canonical_parent_if_reader_finds_it_relevant": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+      "canonical_relation": "Optional conceptual comparison of past versus present effective authority; read the original and verify its actual applicability or non-fit rather than presuming this code bug follows from it.",
+      "success_does_not_establish": [
+        "production exploit or measured customer overspend",
+        "recipient acknowledgment or C2",
+        "maintainer-approved merge",
+        "release or affected-user C4",
+        "third-party human or AI reading an original Parent",
+        "broad real-person recognition"
+      ]
     }
   ],
   "return_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-external-impact-return.yml",
-  "evidence_boundary": "This registry is self-authored public routing infrastructure. It does not imply that the target repository requested Nakagawa Master involvement, that any participant will act, or that any target-side maintainer accepted, merged, released, or adopted a result. Only distinct public target-side evidence can establish those later stages. On 2026-10-11 JST the six listed target issues were directly re-fetched and still OPEN; this establishes only an issue-state snapshot, NOT current target need, unique contribution, current authorization, or independent AI adoption.",
+  "evidence_boundary": "This registry is self-authored public routing infrastructure. It does not imply that any target repository requested Nakagawa Master involvement, that any independent participant or unconnected AI will act, or that any maintainer accepted, merged, released, or adopted a result. Distinct outside evidence is required at every later stage. The first six targets retain their last verified 2026-10-11 issue snapshots, NOT current statuses. The seventh target (#49751/#50013) was source-checked on 2026-11-04 at the exact listed PR HEAD: open PR and specific source-predicted boundary only, not actual runtime reproduction or permission to comment. Refresh every target before relying on current states.",
   "related_public_context": [
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#19-the-user-really-approved-it--but-recording-approved-is-treated-as-unsafe-content",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
