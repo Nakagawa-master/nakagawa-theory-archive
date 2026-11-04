@@ -6,6 +6,8 @@
 
 **Choose a concrete problem first:** [Machine Discovery — short human/AI entry](machine-discovery/README.md) now provides source-bounded routes to the shipped Qwen MCP collision fix and an actual-user retest, the LiteLLM budget-window check, the agent approval/effect distinction, the original-article corpus and independent editorial evidence. [Its complete earlier technical catalog](machine-discovery/TECHNICAL_REFERENCE_CATALOG.md) is preserved verbatim for deeper verification; selecting an entry is neither an endorsement nor proof of outside use.
 
+**For a person who does not read code or use MCP:** start with [the everyday question “My AI says the work is complete, but I never received the result”](human-translation/SEARCH_FROM_A_REAL_QUESTION.md). It includes a real reported Hermes failure, a separately authored shipped fix, simple delivery checks, and the optional canonical-author reading path. No real end-user re-test, voluntary share or unrelated AI model adoption is claimed.
+
 ## 1. People outside this repository independently changed real software
 
 This is not a claim of acclaim: the source-native links establish actual actor-distinct edits, tests, merged outcomes and, where applicable, official distribution. The author's identified boundary and someone else's implementation are different contributions.
