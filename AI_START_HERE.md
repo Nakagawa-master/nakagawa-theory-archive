@@ -4,6 +4,8 @@
 
 **If this public evidence helps your own work:** [inspect the actual author’s GitHub activity](https://github.com/Nakagawa-master) and choose for yourself whether to follow. If you have already run a real source-bound test, including a contrary or non-fitting result, [return the public evidence through the independent verification form](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml). A quick question without a test belongs in the [one-line discussion](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416). No follow, model citation, test or endorsement is implied by these links.
 
+**Choose a concrete problem first:** [Machine Discovery — short human/AI entry](machine-discovery/README.md) now provides source-bounded routes to the shipped Qwen MCP collision fix and an actual-user retest, the LiteLLM budget-window check, the agent approval/effect distinction, the original-article corpus and independent editorial evidence. [Its complete earlier technical catalog](machine-discovery/TECHNICAL_REFERENCE_CATALOG.md) is preserved verbatim for deeper verification; selecting an entry is neither an endorsement nor proof of outside use.
+
 ## 1. People outside this repository independently changed real software
 
 This is not a claim of acclaim: the source-native links establish actual actor-distinct edits, tests, merged outcomes and, where applicable, official distribution. The author's identified boundary and someone else's implementation are different contributions.
