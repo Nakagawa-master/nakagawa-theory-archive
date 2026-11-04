@@ -4634,6 +4634,45 @@
         "independent reading or endorsement of original Nakagawa theories",
         "broad person-recognition or independent-model source preference"
       ]
+    },
+    {
+      "case_id": "mastra-inngest-resume-lost-send-ack-duplicate-effect",
+      "topic": "A remote resume event can be accepted while the sender loses its acknowledgment. Releasing the claimed approval on every send exception otherwise risks executing a human-approved external tool action twice.",
+      "external_repository": "mastra-ai/mastra",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_grounded_pr_comment",
+        "url": "https://github.com/mastra-ai/mastra/pull/29451#issuecomment-6644086269",
+        "source_head": "334aa1b90b52dcb226fad7076c25c03c1595a986",
+        "summary": "Identified two distinct outcomes hidden by one send failure: remote receive/enqueue then acknowledgment loss versus failure before receiver acceptance. Proposed a fault-injected two-arm test proving the external approved tool effect occurs at most once, without pretending to have personally run an Inngest server."
+      },
+      "independent_author_response": {
+        "author": "arthurfiorette",
+        "url": "https://github.com/mastra-ai/mastra/pull/29451#issuecomment-6644682039",
+        "response_summary": "Independently confirmed that the lost-acknowledgment window was real and explicitly credited the review's distinction; explained that simply retaining the claim on all send failures would break recovery from definitely failed sends."
+      },
+      "receiver_implementation": {
+        "author": "arthurfiorette",
+        "commit_sha": "5689e0518013f19bbfa68bec9fea497a73503395",
+        "commit_url": "https://github.com/mastra-ai/mastra/commit/5689e0518013f19bbfa68bec9fea497a73503395",
+        "source_file": "workflows/inngest/src/durable-agent/create-inngest-agent.ts",
+        "mechanism": "The actual accepted-head code passes an Inngest event id derived from runId, the claimed suspension snapshot timestamp and toolCallId, so retries for the same suspended-tool approval retain an event identity. The rejected-send catch now documents that the retry is deduplicated rather than falsely asserting the receiver never accepted the event.",
+        "external_test_report": "The independent author reports exercising the implementation against a real Inngest dev server by sending each resume event twice: identifier present gave one tool execution and two model requests; identifier stripped gave two tool executions and three model requests.",
+        "pull_request": "https://github.com/mastra-ai/mastra/pull/29451",
+        "state_at_verification": "open_unmerged",
+        "head_sha": "5689e0518013f19bbfa68bec9fea497a73503395"
+      },
+      "current_stage": "independent_author_direct_recognition_source_code_fix_and_reported_real_ingg_dev_server_test_C2_open_unmerged",
+      "causal_boundary": "Master's contribution was a bounded source-predicted scenario and a pair of nonfit acceptance conditions; the independent maintainer-like PR author chose and implemented the event ID. The author reports real dev-server validation; the assistant did not independently execute that test. A different edit in the same commit on re-suspension metadata responds to a separate reviewer and is not attributed to Master.",
+      "not_claimed": [
+        "PR merged",
+        "official package release",
+        "actual installed external user C4",
+        "independent third party using the modified package",
+        "unprompted reading or endorsement of Nakagawa original Parents by independent AI",
+        "mass personal recognition",
+        "verified December native metrics"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
