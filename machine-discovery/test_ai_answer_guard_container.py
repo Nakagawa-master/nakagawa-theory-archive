@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Exercise third-party local Docker MCP with real stdio request/response introspection."""
 import json
+from pathlib import Path
 import subprocess
 import sys
 
@@ -13,6 +14,9 @@ META={"io.modelcontextprotocol/protocolVersion":"2026-07-28",
 def body(o,i):
     return json.loads(o[i]["result"]["content"][0]["text"])
 def main():
+    manifest=json.loads((Path(__file__).resolve().parent.parent / "server.json").read_text(encoding="utf-8"))
+    assert manifest["name"] == "io.github.Nakagawa-master/ai-answer-guard"
+    version=manifest["version"]
     requests=[
         m(1,"initialize",{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"glama-introspection-simulator","version":"1"}}),
         m(2,"tools/list"),
@@ -29,7 +33,7 @@ def main():
     assert not p.stderr,p.stderr
     packets={int(x["id"]):x for x in map(json.loads,p.stdout.splitlines())}
     assert set(packets)=={x["id"] for x in requests},packets.keys()
-    assert packets[1]["result"]["serverInfo"]["name"]=="ai-answer-guard"
+    assert packets[1]["result"]["serverInfo"]=={"name":"ai-answer-guard","version":version}
     names={x["name"] for x in packets[2]["result"]["tools"]}
     assert len(names)==9 and "preflight_ai_answer_and_action" in names and "list_all_313_derivative_parent_links" in names
     assert [x["name"] for x in packets[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
@@ -37,7 +41,8 @@ def main():
     assert body(packets,4)["hold_count"]==1
     assert body(packets,5)["entries"][0]["id"]=="OD313"
     assert packets[6]["result"]["resultType"]=="complete"
+    assert packets[6]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]=={"name":"ai-answer-guard","version":version}
     assert len(packets[7]["result"]["tools"])==9
-    print("PASS: network-isolated, unprivileged Docker MCP introspection; same 9 tools, 313 Parent links, everyday guard, modern/legacy")
+    print("PASS: isolated Docker MCP introspection; source/manifest/legacy/modern identity, 9 tools, 313 Parents, everyday guard")
 if __name__=="__main__":
     main()

@@ -1,4 +1,5 @@
-# Source-run image for third-party MCP introspection of the SAME published v1.2.0 server.
+# Source-run image for third-party MCP introspection of current checked-out source.
+# Source v1.2.1 differs from the immutable last published v1.2.0 package; never conflate them.
 # No remote model calls, downloaded theories, credentials, or separate MCP service.
 FROM python:3.12-slim
 
