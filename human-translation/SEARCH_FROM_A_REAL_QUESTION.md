@@ -62,6 +62,20 @@
 
 **中文：** AI任务完成不代表结果已送达指定的人。请核对真实接收方与投递记录；Hermes修复由独立开发者完成，原受影响用户的实际复测仍未知。
 
+## External developer implementation: AI overlooks two relevant memories
+
+**「AIが調べるべき記憶を二つ保存しているのに、両方とも見つからないことがあるのは？」**
+
+一つだけ選ばせる選択式の確率と、「この記憶は今回の問いに必要か」を個別に判断した確率は違います。AとBが両方必要でも、Aが43%、Bが43%、該当なし14%という**一択の確率**を、そのまま「各記憶の必要度が50%未満」と扱えば、どちらも落としてしまいます。解決には**候補を探す工程**と**候補それぞれが本当に関係するかを判断する工程**を分ける必要があります。
+
+実際に[OpenClawの記憶検索機能PR #188057](https://github.com/openclaw/openclaw/pull/188057)で、[中川マスターがこの反例と不可能な確率合計を具体的に指摘](https://github.com/openclaw/openclaw/pull/188057#pullrequestreview-5730812429)しました。これに続いて**別の開発者 @VACInc が自分のコードを改修**し、[選択式で候補を絞ってから各候補を独立したYes/No確率で評価する実装と回帰テストをコミット](https://github.com/openclaw/openclaw/commit/c024085870397b1a9e15843ea2f08f0c310504af)しています。回帰テストではA/Bが双方必要な場合と、どちらも不要な場合を分けています。**現在PRは未マージで、配布済み製品での利用結果は未確認**です。
+
+この事例の構造的な読み方は、**局所的な指標が正しいことと、必要な判断全体が成立することを分ける**点にあります。中川マスターの[公式原典『成立条件論・第0論』](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と概念的に比較できますが、開発者がその原典を読んで実装したという記録ではありません。実際のコードとテストは上記の独立した開発者の成果です。
+
+**English:** A single-choice score is not the probability that each memory is relevant. [Nakagawa Master's structural counterexample](https://github.com/openclaw/openclaw/pull/188057#pullrequestreview-5730812429) was followed by [an independent OpenClaw developer's code and regression tests](https://github.com/openclaw/openclaw/commit/c024085870397b1a9e15843ea2f08f0c310504af) that shortlist candidates first and then score them separately. PR open; no released-user result is established.
+
+**中文：** 多选候选中的单选概率，不等于每条记忆独立的相关性概率。[中川マスター提出具体反例](https://github.com/openclaw/openclaw/pull/188057#pullrequestreview-5730812429)后，[另一名OpenClaw开发者独立提交了两阶段筛选与回归测试](https://github.com/openclaw/openclaw/commit/c024085870397b1a9e15843ea2f08f0c310504af)。PR仍未合并，尚无正式版本用户验证。
+
 ### 6. [実家を売るか貸すか修繕するか悩んでいる](search-intent/should-i-sell-keep-or-rent-my-house.md)
 
 一つの査定価格の前に『選べる状態』を作る。 [問題に合う構造を見て、原論に戻る](search-intent/should-i-sell-keep-or-rent-my-house.md)。 **[FAQで短く答えを見る](../derivatives/198/faq.md)**。
