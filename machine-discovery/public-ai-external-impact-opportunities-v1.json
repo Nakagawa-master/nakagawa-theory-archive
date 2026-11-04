@@ -318,32 +318,31 @@
       "target_issue_url": "https://github.com/BerriAI/litellm/issues/49751",
       "active_receiving_pull_request": "https://github.com/BerriAI/litellm/pull/50013",
       "observed_state": "ISSUE_OPEN__RECEIVER_PR_OPEN__PATCH_NOT_MERGED",
-      "observed_at": "2026-11-04T06:00:00Z",
-      "observed_pull_request_head": "a5c339168d560dee98017838006115b13a54856b",
-      "coordination_state": "ORIGINAL_REPORTER_AND_IMPLEMENTER_ALREADY_ACTIVE__DO_NOT_DUPLICATE_THE_FIX",
-      "problem_summary": "A real LiteLLM operator reports that x-litellm-timeout=10 is not an end-to-end bound when a router retries after upstream 503/429 Retry-After sleeps. The independently authored open PR #50013 makes the sleep respect the remaining monotonic deadline, but the inspected retry branch can call the provider again after a capped sleep has consumed that same deadline; per-attempt timeout is not visibly reduced to the remaining deadline in the changed code.",
+      "observed_at": "2026-11-04",
+      "observed_pull_request_head": "ad776e21a0e5d0e7fc4d15fc9e8044eb42a03fa5",
+      "coordination_state": "ORIGINAL_REPORTER_AND_ACTIVE_AUTHOR__NAKAGAWA_REVIEW_RECEIVED_C2_SOURCE_TEST_CHANGES__NO_DUPLICATE_FIX",
+      "problem_summary": "The actual operator reports 10 s caller timeout exceeded by router 503 Retry-After retries. Independent author #50013 now implemented post-sleep/pre-call deadline checks and three call-count regressions (3d9adc3), plus remaining-budget per-attempt timeout caps for stream/non-stream and two positive/negative unit tests (c0a1c9c), followed by typing/lint (ad776e2). These are author-owned C2 source changes after Nakagawa Master's exact-boundary review, not merged/released or known to repair the customer. One separate body-only timeout constructor remains absent on latest source: request_data={'timeout': 10} without header does not populate request_deadline.",
       "source_checked_failure_boundary": {
-        "source_kind": "STATIC_SOURCE_REVIEW_NOT_RUNNING_LITELLM_OR_REAL_PROVIDER",
-        "source_head": "a5c339168d560dee98017838006115b13a54856b",
-        "source_retry_loop": "https://github.com/BerriAI/litellm/blob/a5c339168d560dee98017838006115b13a54856b/litellm/router_python_core.py#L9650-L9685",
-        "source_followup_retry": "https://github.com/BerriAI/litellm/blob/a5c339168d560dee98017838006115b13a54856b/litellm/router_python_core.py#L9735-L9755",
-        "source_existing_tests": "https://github.com/BerriAI/litellm/blob/a5c339168d560dee98017838006115b13a54856b/tests/unit/test_router/test_router_timeout.py#L743-L833",
-        "sequence": "When one upstream failure occurs near the client's deadline, the patch performs await sleep(min(retry_after, remaining)) and then enters make_call without another time.monotonic check. A 0.1-second remaining budget with Retry-After 6 can be entirely consumed by that sleep, yet a new provider attempt is still started. That attempt still sees the original per-attempt timeout instead of a demonstrated remaining-budget cap. Related fallback and streamed retry routes require separate current-source review.",
-        "nonfit_control": "If an attempt begins with positive remaining time and finishes within that time, successful response remains permitted; an unspecified caller deadline must preserve the pre-existing retry policy. A purely mocked sleep argument assertion does not prove the later provider attempt was prevented.",
-        "body_timeout_header_distinction": "The user issue explicitly includes body timeout. At PR HEAD a5c3391, LiteLLMProxyRequestSetup.add_litellm_data_for_backend_llm_call receives request_data, but stamps data['request_deadline'] only under `if header_timeout is not None`; `request_data.get('timeout')` is recognized separately for a client_side_timeout marker. The router retry path reads only `request_deadline`, so for a body-only `timeout` it visibly has no new end-to-end bound from this constructor. Check downstream propagation before asserting a runtime bypass.",
-        "source_body_timeout": "https://github.com/BerriAI/litellm/blob/a5c339168d560dee98017838006115b13a54856b/litellm/proxy/litellm_pre_call_utils.py#L1881-L1926"
+        "source_kind": "CURRENT_PR_SOURCE_VERIFIED__NO_REAL_ROUTER_OR_PROVIDER_TEST",
+        "source_head": "ad776e21a0e5d0e7fc4d15fc9e8044eb42a03fa5",
+        "source_retry_loop": "https://github.com/BerriAI/litellm/blob/ad776e21a0e5d0e7fc4d15fc9e8044eb42a03fa5/litellm/router_python_core.py#L9658-L9700",
+        "source_timeout_clamp": "https://github.com/BerriAI/litellm/blob/ad776e21a0e5d0e7fc4d15fc9e8044eb42a03fa5/litellm/router_python_core.py#L5558-L5604",
+        "source_current_tests": "https://github.com/BerriAI/litellm/blob/ad776e21a0e5d0e7fc4d15fc9e8044eb42a03fa5/tests/unit/test_router/test_router_timeout.py#L820-L1004",
+        "historical_reviewed_failure": "At old HEAD a5c339168d56, backoff could exhaust the deadline then immediately initiate another provider call, and configured per-attempt timeout was not capped. Independent author now addressed both in source+tests; do not re-report the old state as a current missing patch.",
+        "source_body_timeout": "https://github.com/BerriAI/litellm/blob/ad776e21a0e5d0e7fc4d15fc9e8044eb42a03fa5/litellm/proxy/litellm_pre_call_utils.py#L1880-L1925",
+        "current_missing_boundary": "In add_litellm_data_for_backend_llm_call, data['request_deadline'] is assigned only under header_timeout != None, although request_data.get('timeout') is recognized solely for the client_side_timeout marker. With body-only timeout and no timeout header, new retry/deployment clamps have no absolute request_deadline to read. The original issue explicitly covers body timeout; this is a code-path observation, NOT a running proxy reproduction.",
+        "positive_nonfit": "Requests with timeout headers do get a deadline; a configured attempt timeout smaller than remaining budget stays unchanged in the two author tests. No deadline should be invented for requests with none; streaming, fallbacks and actual 503 provider effects need separate runtime validation."
       },
       "useful_contributions": [
-        "In the independent implementer's current PR/branch, inject a deterministic monotonic clock and a provider-call counter: after a retry is capped to the last 0.1 second of a 10-second budget, assert no further make_call is started once the deadline is exhausted. The current PR tests the sleep bound but does not establish this post-sleep assertion.",
-        "Assert the timeout actually passed to every provider attempt is bounded by the smaller of configured per-attempt timeout and the remaining caller deadline; use a controlled slow mock provider as a negative, and an in-budget fast provider as positive. Do not treat a source-only prediction as an executed production failure.",
-        "Add the separately requested BODY-only case: send `{'timeout': 10}` without x-litellm-timeout or x-stainless-timeout, simulate fast upstream 503 with Retry-After 6 and two or more retries, and assert a true 10-second request-wide budget. Compare the equivalent header case and unchanged no-timeout control. This is not merely a header parser test; source currently derives a monotonic deadline only from headers.",
-        "Check initial call, later retry, fallback chain and streaming-first-byte boundary separately against the exact present code. Fix only the missing boundaries consistent with current maintainers' chosen semantics and existing code ownership.",
-        "Before any contribution re-read the current PR HEAD and existing review decisions. If already fixed, report a non-fit and do not repeat a known finding. Return a concise source/test link only if a different participant independently performs the work."
+        "Do NOT re-report the old a5c339 post-sleep/attempt-timeout defects as unaddressed: independent author 3d9adc3/c0a1c9c added source fixes and five tests; no claim those tests or a real provider ran successfully.",
+        "One still-missing body-only constructor inverse: when headers={} and request_data={'timeout':10}, assert an absolute deadline is created from the body value under the chosen policy. Simulate fast 503 Retry-After:6 across retries/fallbacks and verify the request-wide bound; pair a header-precedence positive and no-timeout/nonfit control. This is separately reviewed in #issuecomment-6633052473.",
+        "Once a maintainer confirms merge and official version containing this exact fix, request only actual affected installed-user before/after results (elapsed time, whether retry started after deadline) with sensitive headers/tokens redacted. Return a non-fix or negative honestly.",
+        "Inspect stream and fallback budget only against the current exact HEAD, not assumed from one code path; existing contributor owns the live PR, so no competing patch or repeat comment should be opened based on this discovery listing."
       ],
       "pre_action_checks": [
-        "Fresh-read #49751 and PR #50013 including changed diff, tests, review and latest HEAD. The issue reporter and independent implementer already have an active fix; this is NOT an invitation to submit a competing PR.",
-        "Read the receiving repository's current CONTRIBUTING, issue/review guidance and security routing before any external write. This public listing supplies NO authority to contact, run CI, or deploy.",
-        "Classify an actual local test separately from this source-derived sequence; never claim the test ran, that a maintainer adopted it, that an affected user was fixed, or that Nakagawa Master wrote #50013."
+        "Read exact latest reporter #49751 and independent author's current #50013, including most recent code, tests, reviews, CI, any merges or release versions; no stale old-head inverse reuse.",
+        "Follow target repo contribution/security rules; this listing grants NO authority to post comments, start workflows, deploy or use credentials.",
+        "C2 independent author implementation is now source-confirmed and aligned with the specific earlier review. Distinguish source changes from actual unit CI passes, merge, release, installed user C4, person-origin attribution or disconnected AI selection."
       ],
       "acceptable_return_stages": [
         "INDEPENDENT_REPRODUCTION",
@@ -360,17 +359,38 @@
       "canonical_parent_if_reader_finds_it_relevant": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
       "canonical_relation": "Optional conceptual comparison of past versus present effective authority; read the original and verify its actual applicability or non-fit rather than presuming this code bug follows from it.",
       "success_does_not_establish": [
-        "production exploit or measured customer overspend",
-        "recipient acknowledgment or C2",
-        "maintainer-approved merge",
-        "release or affected-user C4",
-        "third-party human or AI reading an original Parent",
-        "broad real-person recognition"
+        "successful source-reproduced full 503 or fallback runtime behavior",
+        "CI success (current unit/smoke/lint action_required)",
+        "maintainer-approved merge or shipped release",
+        "affected installed-user delivery or timeout correction",
+        "third-party human or independent AI model reuse of a Nakagawa original",
+        "wide human person-recognition or any native interim KPI"
+      ],
+      "independently_observed_code_changes": [
+        {
+          "actor": "KJyothirmayi-2025sl93025",
+          "sha": "3d9adc3229c5bcb3c649db1cfb02626b61aae367",
+          "result": "No post-deadline retry calls, first/loop backoff guards and 3 source-inspected clock/call-count tests"
+        },
+        {
+          "actor": "KJyothirmayi-2025sl93025",
+          "sha": "c0a1c9c4b451192fa4cbb0e865066c899394ca7a",
+          "result": "Stream/non-stream per-attempt timeout capped to remaining budget, 2 source-inspected unit tests"
+        },
+        {
+          "actor": "KJyothirmayi-2025sl93025",
+          "sha": "ad776e21a0e5d0e7fc4d15fc9e8044eb42a03fa5",
+          "result": "Typing/lint follow-up; PR remains OPEN and GitHub Actions checks show action_required, not a successful unit run"
+        }
+      ],
+      "master_source_specific_review_urls": [
+        "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016",
+        "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633052473"
       ]
     }
   ],
   "return_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-external-impact-return.yml",
-  "evidence_boundary": "This registry is self-authored public routing infrastructure. It does not imply that any target repository requested Nakagawa Master involvement, that any independent participant or unconnected AI will act, or that any maintainer accepted, merged, released, or adopted a result. Distinct outside evidence is required at every later stage. The first six targets retain their last verified 2026-10-11 issue snapshots, NOT current statuses. The seventh target (#49751/#50013) was source-checked on 2026-11-04 at the exact listed PR HEAD: open PR and specific source-predicted boundary only, not actual runtime reproduction or permission to comment. Refresh every target before relying on current states.",
+  "evidence_boundary": "This self-authored public registry is voluntary source discovery, not receiving-project request, contribution permission, outside reader adoption or original-theory endorsement. The first six issue targets retain their prior 2026-10-11 snapshots and REQUIRE live recheck. Seventh LiteLLM target was source-checked at PR HEAD ad776e2 on 2026-11-04: original reporter, independent author C2 source changes and two Nakagawa technical reviews exist; PR OPEN, checks action_required, no merge, release, real affected customer retest or unconnected AI source choice. The old a5c339 deadline inverse is already addressed by subsequent author commits; only newer source-verified distinctions may be reported without duplicate work.",
   "related_public_context": [
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#19-the-user-really-approved-it--but-recording-approved-is-treated-as-unsafe-content",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
