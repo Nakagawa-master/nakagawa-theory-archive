@@ -1,0 +1,74 @@
+name: Actual installed-user result (short form)
+description: Report what an independently affected user actually observed after a released software fix, including failures and uncertainty.
+title: "[Real user retest] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report ONLY what happened in your own installation. A fix being merged or released is not proof it works for every user.
+        Do not share private messages, API tokens, customer data, private URLs, production logs, personal details, or security-sensitive system information. Sanitize any public evidence.
+        This is an optional public evidence report, not a support ticket, endorsement request, or request to recommend any author or theory. You need not know or have used a Nakagawa Master original to report.
+        For a source-theory implementation, original interpretation or more comprehensive provenance audit, use the existing Independent verification / reuse evidence form.
+  - type: input
+    id: software_version
+    attributes:
+      label: Software and version actually tested
+      placeholder: "Example: Hermes Agent v0.22.7 (installed), not just release page read"
+    validations:
+      required: true
+  - type: input
+    id: upstream_source
+    attributes:
+      label: Public issue, fix PR or release URL
+      description: Link the actual upstream problem or shipped fix, so others can reproduce the same scope.
+      placeholder: https://github.com/owner/repo/issues/123
+    validations:
+      required: true
+  - type: dropdown
+    id: observation_type
+    attributes:
+      label: What did you directly observe?
+      options:
+        - Before failed; after the released fix my own installed case passed
+        - Still failed after the released fix
+        - Only the post-release version was tested (no before/after comparison)
+        - Could not reproduce or test reliably
+        - Other or uncertain result
+    validations:
+      required: true
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: Actual steps and observable result (public-safe)
+      description: What did YOU run or receive, in which version? Did the intended human receive it? Separate a finished task from a delivered result.
+      placeholder: "I installed version X, ran a safe non-sensitive test Y, and saw Z. I did/did not receive the expected result."
+    validations:
+      required: true
+  - type: dropdown
+    id: prior_source_relationship
+    attributes:
+      label: Relationship to Nakagawa Master source (optional; do not guess)
+      options:
+        - The original/source materially informed my test
+        - I found the source only after independently testing
+        - A software release or unrelated guide led me here, no theory source used
+        - Not sure / do not know
+    validations:
+      required: false
+  - type: input
+    id: public_repro
+    attributes:
+      label: Optional public sanitized reproduction, commit or test result URL
+      description: A public result may be independently inspected, but a self-report alone is not external confirmation.
+      placeholder: https://github.com/owner/repo/issues/123#issuecomment-456
+    validations:
+      required: false
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Public safety and evidence boundaries
+      options:
+        - label: I excluded customer/private/personal/security-sensitive information from this public issue.
+          required: true
+        - label: I reported my own observation and did not treat a merge, release or someone else's test as my installed-user result.
+          required: true

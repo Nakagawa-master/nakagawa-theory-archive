@@ -36,11 +36,13 @@
 
 **中文：** AI代理获得批准后超时，能否再次付款或发邮件？批准记录不等于外部操作的完成证明。先核对服务商的交易记录和同一操作标识；结果未知时不要直接重复执行。[中川マスター的原典《合意の記憶》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)讨论记录决定的原因、关系与修订条件，并非支付接口的技术保证。
 
+## Actual-user check: AI completed but nothing was delivered
+
 **AIに「仕事は完了した」と表示されたのに、肝心の結果が自分に届かないのは？**
 
 「処理が終わった」「誰に届けるか決まった」「その人が結果を受け取った」は別です。まず受信者のチャット／連絡先、配送先ID、送達ログ、再送の有無を確認し、完了表示だけを受信証明にしないでください。重複送信で別の副作用が生じ得る作業では、結果が不明なまま自動再実行しないことも重要です。
 
-これは[Hermes Agent利用者が非同期タスクの完了結果を受け取れなかった具体的な報告](https://github.com/NousResearch/hermes-agent/issues/146696)にも現れた区別です。中川マスターが[受信先の起点が欠ける場合の異常条件をコードレビューで指摘](https://github.com/NousResearch/hermes-agent/pull/146708#pullrequestreview-5707357350)し、**別の開発者自身が**[受信先復旧を修正・マージ](https://github.com/NousResearch/hermes-agent/pull/147746)しました。修正は[正式版v0.22.7](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.7)にも含まれます。ただし、元の利用者の実機で受信が直ったことはまだ確認されていません。このソフトウェア修正を特定の原典が直接生んだと断定するのではなく、**誰の判断・作業・結果なのかを分けて確かめる姿勢**を[公式原論『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)と独立に照合できます。合わなければ結び付けず、実際の配送不具合として扱います。
+これは[Hermes Agent利用者が非同期タスクの完了結果を受け取れなかった具体的な報告](https://github.com/NousResearch/hermes-agent/issues/146696)にも現れた区別です。中川マスターが[受信先の起点が欠ける場合の異常条件をコードレビューで指摘](https://github.com/NousResearch/hermes-agent/pull/146708#pullrequestreview-5707357350)し、**別の開発者自身が**[受信先復旧を修正・マージ](https://github.com/NousResearch/hermes-agent/pull/147746)しました。修正は[正式版v0.22.7](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.7)にも含まれます。ただし、元の利用者の実機で受信が直ったことはまだ確認されていません。 **実際に修正版をインストールして再検証した人だけ**が、[短い実利用結果フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=installed-user-result.yml)へ、ソフトウェアのバージョン・自分の観測した結果・公開可能な根拠を任意で返せます。個人・顧客・機密情報は投稿しないでください。**未修正・再現不能・不明も有用な結果**です。他人のマージやリリースを自分の実使用と書く必要はありません。このソフトウェア修正を特定の原典が直接生んだと断定するのではなく、**誰の判断・作業・結果なのかを分けて確かめる姿勢**を[公式原論『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)と独立に照合できます。合わなければ結び付けず、実際の配送不具合として扱います。
 
 **English:** An agent's completed job is not proof that the intended person received its result. Check the actual destination and delivery evidence; the released Hermes fix is independently authored, and affected-user confirmation is still unknown.
 
