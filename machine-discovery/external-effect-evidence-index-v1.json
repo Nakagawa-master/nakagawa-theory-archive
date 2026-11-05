@@ -4763,6 +4763,58 @@
         "result": "Author changed five files, adding a time-bounded 60-second claim, lease renewal/fencing and crash/abort regression scenarios, following the separate NikAiyer review. This additional code change is not attributed to Nakagawa Master.",
         "stage": "independent_code_change_open_unmerged; no fresh complete CI, released distribution or affected-user confirmation established"
       }
+    },
+    {
+      "case_id": "litellm-48408-previous-response-compaction-preserves-context-explicit-author-test",
+      "topic": "An AI Responses chat bridge must reject ordinary continuations whose previous stored turns are unreconstructible, while still accepting a complete compaction replacement that already supplies its own conversation context.",
+      "external_repository": "BerriAI/litellm",
+      "original_customer_report": {
+        "issue": "https://github.com/BerriAI/litellm/issues/48366",
+        "failure": "Ordinary previous_response_id requests without recoverable spend-log prompts could return HTTP 200 after sending only the latest turn to the upstream chat provider. This is the independent original reporter's problem, not a new Nakagawa Master production incident."
+      },
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "review": "https://github.com/BerriAI/litellm/pull/48408#pullrequestreview-5653032133",
+        "follow_up_correction": "https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418521743",
+        "finding": "Compared overlapping PR #48408 and #48397 and isolated the distinction between an ordinary missing-history continuation, which should fail before contacting the model, and a complete compaction replacement whose own input suffices even when stored history is absent.",
+        "self_correction": "Explicitly corrected an initial overstatement about synchronous continuation: the existing sync bridge did not reconstruct stored turns, so a clearly disclosed fail-closed unsupported-sync boundary is defensible."
+      },
+      "independent_author_response": {
+        "actor": "FazeelUsmani",
+        "url": "https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418653435",
+        "timestamp_utc": "2026-10-26T14:33:43Z",
+        "exact_receipt": "The independent author directly addressed @Nakagawa-master, thanked the reviewer and stated that an end-to-end test for compaction without stored history was added, reaching the provider with the compaction input only."
+      },
+      "independent_authored_test": {
+        "actor": "FazeelUsmani",
+        "commit_sha": "e469e79138a92461f19b0859eeed2650b5f12e9b",
+        "commit_url": "https://github.com/BerriAI/litellm/commit/e469e79138a92461f19b0859eeed2650b5f12e9b",
+        "source_path": "tests/unit/responses/litellm_completion_transformation/test_handler.py",
+        "test": "test_bridged_compaction_turn_without_stored_history_sends_only_its_own_input",
+        "method": "With prisma_client=None and a previous_response_id set, send a compaction block plus a new user request through the async bridge to an HTTP-mocked upstream; assert that the provider receives exactly the supplied replacement summary and new user request. The ordinary missing-history negative separately asserts BadRequestError and no upstream request.",
+        "test_scope": "Source-native HTTP-mock integration, not a verified real provider, released package or installed customer."
+      },
+      "competing_implementation": {
+        "url": "https://github.com/BerriAI/litellm/pull/48397",
+        "boundary": "A separately open implementation independently supports synchronous history reconstruction but did not have #48408's compaction-specific exception in the originally reviewed source; maintainers must choose a consistent final behavior and test it. No claim that either PR was merged."
+      },
+      "state_at_verification": {
+        "source_pr": "https://github.com/BerriAI/litellm/pull/48408",
+        "source_head": "e469e79138a92461f19b0859eeed2650b5f12e9b",
+        "stage": "independent_implementer_explicit_acknowledgment_and_new_source_test_open_unmerged",
+        "last_source_check": "2026-11-05",
+        "signed_cla": "https://github.com/BerriAI/litellm/pull/48408#issuecomment-6652069177"
+      },
+      "attribution_boundary": "Nakagawa Master supplied the specific contrasting test contract and corrected one interpretation; FazeelUsmani authored the implementation/test. The original customer issue was reported separately. The external author's response is proof of review receipt and test authorship, not proof of an overall endorsement of a person's complete theory corpus.",
+      "canonical_person_source": "https://master.ricette.jp/",
+      "not_claimed": [
+        "merged pull request",
+        "official shipped LiteLLM version",
+        "real affected-user deployment or correct response",
+        "independent human voluntarily choosing Keisuke Nakagawa as a trusted person beyond the named technical acknowledgment",
+        "unrelated AI/LLM independently reading or preferring any of the 313 original works",
+        "measured audience reach or follower impact"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
