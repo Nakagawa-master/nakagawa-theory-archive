@@ -4104,11 +4104,15 @@
         ]
       },
       "current_source_snapshot": {
-        "date_jst": "2026-11-02",
+        "date_jst": "2026-11-05",
         "pr_state": "OPEN",
-        "mergeable": true,
         "merged": false,
-        "required_review_approvals_pending": true
+        "current_head": "9ea0c9d27fd1a5928bf6daa2317642c792962d43",
+        "required_review_approvals": 2,
+        "approvals_on_current_head": 0,
+        "required_lint_static": "success",
+        "blocking_condition": "Two independent authorized approving reviews on the current head, not another @Nakagawa-master technical comment",
+        "independent_author_request": "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6645682376"
       },
       "current_stage": "independent_receiver_source_and_tests_OPEN_PR",
       "human_case": "REAL_WORLD_IMPACT.md#55",
@@ -4470,7 +4474,26 @@
         "upstream merge automatically means package release, install or customer recovery",
         "actual financial loss amount prevented",
         "voluntary unconnected AI adoption or repeated mass PERSON recognition"
-      ]
+      ],
+      "follow_on_team_cap_only_window": {
+        "issue_policy_thread": "https://github.com/BerriAI/litellm/issues/49179",
+        "prior_nakagawa_source_boundary": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6518553378",
+        "independent_implementer_acknowledgment": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6519461222",
+        "independent_maintainer_policy_decision": "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6583047229",
+        "independent_author": "A-P-Shukla",
+        "source_pr": "https://github.com/BerriAI/litellm/pull/50018",
+        "head_sha": "a3f8bfb61da81692ab53ee93902c7e7c5d7e02b7",
+        "implementation": "Update team budget limits with the same duration and an unexpired reset_at without silently restarting that window when the cap alone changes; a changed 14d duration gets a new window. Changes are in team_endpoints.py plus unit tests for actual update_team call.",
+        "author_test_report": "Five focused pytest cases pass and syntax/lint pass locally; no live proxy before/after test yet.",
+        "stage": "INDEPENDENT_AUTHOR_CODE_AND_OPPOSITE_CASE_TESTS_OPEN_PR_NOT_MERGED",
+        "causal_boundary": "The earlier Master source review and independent author acknowledgment concern exactly this team-vs-key cap-only identity gap; core maintainer chose the accounting policy; A-P-Shukla wrote the separate PR. The distinct previously merged #47608 was written by a different author and is not this PR.",
+        "not_claimed": [
+          "Master authored #50018",
+          "live affected user has retested cap-only update",
+          "PR merged or released",
+          "independent AI voluntarily selected original theory"
+        ]
+      }
     },
     {
       "case_id": "qwen-15600-15681-shell-redirect-auth-released",
@@ -4615,8 +4638,14 @@
           "Preserve literal and comment occurrences of @p0 rather than blindly replacing all text."
         ],
         "pull_request": "https://github.com/MemberJunction/MJ/pull/6339",
-        "state_at_native_check": "open_unmerged",
-        "head_sha": "75b9338004b91e2066b8fb2f47e637cb5899f278"
+        "state_at_native_check": "open_unmerged_after_updated_sqlserver_and_postgresql_hardening",
+        "head_sha": "601289f3fd26e35ce6625eea8def6b2dbd9d52a2",
+        "latest_author_confirmed_scope": {
+          "url": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685",
+          "actor": "AN-BC",
+          "result": "The independent implementation author explicitly thanked @Nakagawa-master for discovering the separate-statement parameter collision, confirming that the token-aware code and named/typed regression tests implemented the review's suggested opposite-value protection.",
+          "current_sql_binder": "Statement-index-scoped collision rename now uses the repository SQL parser's token-aware rewriting; the author's current explanation gives @p0__b1_0 as an example of the second distinct binding."
+        }
       },
       "independent_second_read": {
         "source": "Claude Code review posted by independent implementation author AN-BC at that author's request",
@@ -4632,8 +4661,27 @@
         "deployed or affected-user improvement",
         "complete resolution of the separate PostgreSQL concern",
         "independent reading or endorsement of original Nakagawa theories",
-        "broad person-recognition or independent-model source preference"
-      ]
+        "broad person-recognition or independent-model source preference",
+        "independent maintainer final approval after PostgreSQL follow-on fix",
+        "further independent response to first-party introduction",
+        "mass person recognition from one outside invitation"
+      ],
+      "independent_additional_postgresql_review": {
+        "independent_reviewer": "rkihm-BC",
+        "request_changes_url": "https://github.com/MemberJunction/MJ/pull/6339#pullrequestreview-5777103190",
+        "author_fix": "https://github.com/MemberJunction/MJ/commit/85b34d078eb81ec5ab1c5f841ac7b0db07dccb30",
+        "author_report": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645527424",
+        "observation": "The independent reviewer directly tested and reported a separate PostgreSQL parameterized-filter failure and a private field-security regression. The author subsequently changed pre-/post-binding placeholder checking, tightened token interpretation and added actual PostgreSQL-provider and cache-check regression tests. This independent reviewer finding is not attributed to Nakagawa Master.",
+        "unverified": "Independent review re-approval and live PostgreSQL endpoint verification after the new fix were not established here."
+      },
+      "independent_person_interest": {
+        "actor": "AN-BC",
+        "invitation_url": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685",
+        "observation": "The independent engineering author, after acknowledging repeat substantive reviews across multiple MemberJunction changes, explicitly asked to learn who is behind the Nakagawa-master GitHub handle and invited an introduction.",
+        "public_author_reply": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214",
+        "author_identity": "Keisuke Nakagawa, publishing as Nakagawa Master / 中川マスター",
+        "scope": "An outside person's directly evidenced curiosity about the reviewer and a first-party response; further reply, offline conversation, independent theory selection or enduring person recognition not observed."
+      }
     },
     {
       "case_id": "mastra-inngest-resume-lost-send-ack-duplicate-effect",
