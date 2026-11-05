@@ -73,6 +73,7 @@ def main():
         return json.loads(frames[i]["result"]["content"][0]["text"])
     summary = unpack(3)
     assert summary["coverage"]["derivatives"] == 313
+    assert summary["author"]["official_original_archive"] == "https://master.ricette.jp/"
     assert summary["coverage"]["distinct_parent_urls"] > 24
     assert summary["system"]["entrances"]["kernel_reselection_stability"]["id"] == "OD312"
     full = unpack(4)
