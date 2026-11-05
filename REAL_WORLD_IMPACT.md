@@ -1735,7 +1735,9 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 **「回答が安全上の理由で止められた」のと「通信が途中で切れた」のは、再試行の判断が異なります。** [Hermes Agent PR #149574](https://github.com/NousResearch/hermes-agent/pull/149574)の初期修正は、回答が空で追加の拒否フラグがない場合を通信障害として再試行していました。中川マスターは、OpenAI Chat Completionsの正規仕様でも `finish_reason=content_filter` に追加の `message.refusal` がない場合を示し、[正反の回帰テストを提案](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788418381)しました。
 
-**PR実装者 @acruz6421-bot は「great catch」とマスター名義で明示的に応答し、[自らコミット f36e9d31で判定処理と2種類の回帰テストを実装](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790)。** 続く[現行コードへの追加レビュー](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056)では、通信切断フラグの生成条件に残る逆条件を指摘しています。[PRはOPEN](https://github.com/NousResearch/hermes-agent/pull/149574)。外部実装者による変更は確認でき、最後の指摘への再修正とマージは審査中です。
+**PR実装者 @acruz6421-bot は中川マスターへ直接謝意を伝え、[コミット f36e9d31で最初の誤判定を修正](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790)。** その後、マスターは[「正常に完了した安全拒否まで通信切断扱いになる」という生成側の逆条件を追加指摘](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056)しました。実装者は改めて `@Nakagawa-master` の指摘を認め、[コミット `47ee80cb` で通信障害を実際に観測した場合だけ再試行するようコードと回帰テストを変更](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6666195530)しています。
+
+**さらに別の参加者 @kvnloo が、中川マスターの正常終了判定を明示して引き継ぎ、[通信切断の記録が早期終了後に残る独立の問題を指摘](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667556933)。** 実装者は[コミット `4cb0377e` で記録の消去処理と追加の回帰テストを実装](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667770552)しました。元の判断が別の参加者の新たな検査に波及した過程を追えます。[PR #149574は現在OPEN](https://github.com/NousResearch/hermes-agent/pull/149574)で、正式マージ・配布後の利用結果は次の確認段階です。
 
 ## 66. LiteLLM｜接続先が1件でも「集約入口」と「個別入口」は違う：開発者が認可条件を修正
 
