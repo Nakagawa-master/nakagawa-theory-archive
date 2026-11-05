@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は62件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は68件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**62の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**68の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1718,6 +1718,42 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 **別のPR作者 [@ryanl-cerebras は指摘を受けたことを明示して修正を回答](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6136077030)**し、欠けていた二つの指定経路の回帰テストを追加しました。2026年11月3日に再確認した[受け手側の現行PR差分](https://github.com/run-llama/llama_index/pull/22769/files)では、親クラスのパラメータ統合**後**の `model_kwargs.get("max_completion_tokens")` を条件に旧別名を削除しており、テストには `additional_kwargs` 経由と呼び出し時経由の両方が存在します。作者の報告では重点テスト5件、Ruff、差分検査が成功。**このこちら側の作業では実API試験や外部CI成功を確認していません**。元PRのコードとテストの著者はマスターではなく @ryanl-cerebras です。
 
 **現在の成立段階：独立開発者による実コードとテストの変更まで。** [11月3日付の作者による最新の確認](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6607106290)では正式承認を依頼中、PRはまだ **OPEN** です。正式マージ・配布版・実利用者による正常動作・別の自発的編集媒体・特定の原典を外部実装者が採用したことは未確認です。ここから先は、現行HEADの承認・マージ、配布、利用者自身の再検証という別の証拠が必要です。
+
+## 63. LiteLLM｜未登録モデルだからAIの道具を消してしまう：利用者の実機検証と開発者の4状態修正
+
+**「AIは道具を使えるのに、接続先の登録表に名前がないだけで道具の説明が消える」。** [利用者 @mramendi の不具合報告 #48145](https://github.com/BerriAI/litellm/issues/48145)は、OpenCodeが実際にはツール定義と推論設定を送っていたにもかかわらず、LiteLLM v1.106.2 がNano-GPT宛てのリクエストから両方を除去していた現象です。本人は[中川マスターが提示した正反対の条件を分ける検査を実行](https://github.com/BerriAI/litellm/issues/48145#issuecomment-6389202066)し、受信・変換・送信という3段階のログを照合しました。
+
+**別の実装者 @anisayakmitra-in は、中川マスターの「未記載」と「明示的な非対応」を区別する指摘を受け、[PR #48191で4状態の優先順位判定とテストを実装](https://github.com/BerriAI/litellm/pull/48191#issuecomment-6388687981)。** さらに、ツール対応の修正とは別にセキュリティ例外を導入しないよう、[指摘を受けてスキャナ設定の変更を撤回](https://github.com/BerriAI/litellm/pull/48191#issuecomment-6408754126)しました。現行PRは[HEAD b82926d7でOPEN](https://github.com/BerriAI/litellm/pull/48191)。利用者の実測は修正前の不具合診断であり、修正版の配布後再検証はこれからです。`reasoning_effort` の転送は同じ利用者が発見した別の残課題で、ツール設定の修正に含めていません。
+
+## 64. Hermes Agent｜同じ文章の別の送信まで消える：開発者が固有IDで会話の再開処理を修正
+
+**同じ「テストを実行して」という文章でも、1回目と2回目は別々の依頼です。** [Hermes Agentのデスクトップ再開処理 #148917](https://github.com/NousResearch/hermes-agent/pull/148917)で、中川マスターは、永続保存済みのキューと新しく受け付けたキューの文章が一致すると、本来残るべき新しい依頼を消してしまう逆条件を指摘しました。[原レビュー](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6632917906)。
+
+**独立した実装者 @steinnes は `@Nakagawa-master Fixed in c9616ee...` と返信し、[固有の `message_uid` と文章の両方で同一の送信を識別するコードと回帰テストを追加](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330)。** 同一送信の重複除外、文章が同じ別送信の保持、再接続時の再描画を検証しています。[PR #148917は現時点でOPEN](https://github.com/NousResearch/hermes-agent/pull/148917)。固有IDのない古いスナップショットの重複表示は、実装者が明示した残る適用条件です。
+
+## 65. Hermes Agent｜AIの安全拒否を通信障害と誤判定する境界：開発者がマスターの指摘を実装
+
+**「回答が安全上の理由で止められた」のと「通信が途中で切れた」のは、再試行の判断が異なります。** [Hermes Agent PR #149574](https://github.com/NousResearch/hermes-agent/pull/149574)の初期修正は、回答が空で追加の拒否フラグがない場合を通信障害として再試行していました。中川マスターは、OpenAI Chat Completionsの正規仕様でも `finish_reason=content_filter` に追加の `message.refusal` がない場合を示し、[正反の回帰テストを提案](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788418381)しました。
+
+**PR実装者 @acruz6421-bot は「great catch」とマスター名義で明示的に応答し、[自らコミット f36e9d31で判定処理と2種類の回帰テストを実装](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790)。** 続く[現行コードへの追加レビュー](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056)では、通信切断フラグの生成条件に残る逆条件を指摘しています。[PRはOPEN](https://github.com/NousResearch/hermes-agent/pull/149574)。外部実装者による変更は確認でき、最後の指摘への再修正とマージは審査中です。
+
+## 66. LiteLLM｜接続先が1件でも「集約入口」と「個別入口」は違う：開発者が認可条件を修正
+
+**接続できるMCPサーバーが1件だけでも、利用者が開いたURLまで「個別サーバー専用」とは限りません。** [LiteLLM PR #49261](https://github.com/BerriAI/litellm/pull/49261)では、接続先から401エラーが返った場合の認証処理で、中川マスターが「許可されたサーバー数」と「要求されたURLの種類」を混同する境界を[具体的に指摘](https://github.com/BerriAI/litellm/pull/49261#pullrequestreview-5717911029)しました。
+
+**実装者 @DewellNaa は指摘を正しいと認め、[コミット 8e90be9で `is_scoped_endpoint` 判定、集約／個別入口の区別、逆条件テストを追加](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)。** [PRはOPEN](https://github.com/BerriAI/litellm/pull/49261)。上流認証チャレンジの中継に関する別のレビュー論点も審査に残っており、正式マージとは区別されます。
+
+## 67. LiteLLM｜AIへの再試行が制限時間を使い切っても続く：開発者が残り時間を守る修正を実装
+
+**「30秒で打ち切る」と設定しても、その30秒を待機で使い切った後に新しいAIリクエストを送れば、利用者の時間・費用の上限を守れません。** [利用者の報告 #49751](https://github.com/BerriAI/litellm/issues/49751)に対する[LiteLLM PR #50013](https://github.com/BerriAI/litellm/pull/50013)で、中川マスターは再試行後の送信直前と、要求本文だけに期限がある経路の二つの抜けをソースから示しました。[最初の指摘](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016)。
+
+**別の実装者 @KJyothirmayi-2025sl93025 は、マスターの3つの指摘を受けて送信直前の期限確認と1回ごとの呼出時間の上限を修正**し、さらに[要求本文のみの期限もコミット 95b3bf4で補正](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106)しました。[PRはOPEN](https://github.com/BerriAI/litellm/pull/50013)。正式配布後に元の利用者が時間・費用の改善を検証する段階が続きます。
+
+## 68. MemberJunction｜複数SQL文の同名パラメータが他の値を上書きする：外部開発者が修正し、本人へ関心を示した
+
+**同じ `@p0` という名前でも、1つ目のSQL文と2つ目のSQL文で値が違えば、そのまままとめて送ると意図しない値で処理されます。** [MemberJunction PR #6339](https://github.com/MemberJunction/MJ/pull/6339)で中川マスターは、SQLバッチ間で同じ変数名を使った場合の衝突条件を指摘しました。
+
+**実装者 @AN-BC はマスターを名指しで感謝し、[独立してパラメータの名前変更とSQL構文を理解する安全な置換処理・回帰テストを実装](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 開発チームがほかのPRでも中川マスターのレビューを見ていたことを伝え、公開アカウントの人物について自発的に質問しました。マスター自身は[実名の公開範囲と原典への入口を簡潔に回答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)しています。[PRはまだOPEN](https://github.com/MemberJunction/MJ/pull/6339)。技術的な採用と、実装者による人物への関心の双方を直接確認できる事例です。
 
 ## 公開された成果と、原典へ戻る道筋
 
