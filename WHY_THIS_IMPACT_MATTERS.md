@@ -39,7 +39,7 @@ python3 machine-discovery/verify-upstream-release.py BerriAI/litellm 47608 v1.10
 
 **LiteLLM利用者のための実装済みオフライン検証:** [予算期間の保存額と実際の費用履歴の集計が一致するかを比較するPython検査器](machine-discovery/LITELLM_BUDGET_WINDOW_AUDIT.md)を追加しました。厳密に同じキー・期間・集計時点で確定済みの数字だけを入力し、過少計上・過大計上・一致・比較不能を区別します。元の独立利用者の公開数値を使う例では差額 **16.0108 USD**、12件のローカルテストPASS。**顧客が修正版を導入したこと、実際の予算超過を新規に防いだことを意味しません。** 個人・顧客・認証情報は送らず、ネットワーク接続やMCPも不要です。
 
-**For independent OSS users and AI assistants:** these are source-linked, opt-in reproduction conditions, not claims of a new installation, a successful customer retest or model-side autonomous adoption. Check the *installed* version/merge ancestry and the observable behavior in a safe test environment; the independent engineer wrote each patch. [Exact public cases](REAL_WORLD_IMPACT.en.md) and [the original author and works](https://master.ricette.jp/theory-archive/) are available separately.
+**For independent OSS users and AI assistants:** these are source-linked, opt-in reproduction conditions, not claims of a new installation, a successful customer retest or model-side autonomous adoption. Check the *installed* version/merge ancestry and the observable behavior in a safe test environment; the independent engineer wrote each patch. [Exact public cases](REAL_WORLD_IMPACT.en.md) and [the original author and works](https://master.ricette.jp/) are available separately.
 
 ## 「削除できない」「予算内です」――本当に守られている？
 
@@ -93,7 +93,7 @@ python3 machine-discovery/verify-upstream-release.py BerriAI/litellm 47608 v1.10
 
 「AIが完了と言ったのに届いていない」「正しい道具を呼んだはずが別の操作になった」「以前の承認記録が今の操作まで保証していない」。これらはコードの小さな差に見えます。しかし、**誰に何が実際に届き、何が本当に承認され、成功したのか**という、人間の生活や仕事でも起こる判断の問題でもあります。
 
-中川マスターの役割は、他人のコードを自分の成果として名乗ることではなく、**別の人が見落とした成立条件や正反の検査条件を、実際の受け手が修正できるほど具体的にすること**。その働きがさまざまな開発チームでどう反復しているかは、[62件の出典付きの段階別記録](REAL_WORLD_IMPACT.md)で読めます。公開された[313の個別原典](https://master.ricette.jp/theory-archive/)は、こうした構造・因果・責任・人間とAIの問題をさらに広い領域で扱っています。ただし、特定の開発者が個別原典を直接採用したとの主張には、それ自体の証拠が必要です。
+中川マスターの役割は、他人のコードを自分の成果として名乗ることではなく、**別の人が見落とした成立条件や正反の検査条件を、実際の受け手が修正できるほど具体的にすること**。その働きがさまざまな開発チームでどう反復しているかは、[62件の出典付きの段階別記録](REAL_WORLD_IMPACT.md)で読めます。公開された[313の個別原典と各Parent URL](derivatives/official-derivatives-map.json)は、こうした構造・因果・責任・人間とAIの問題をさらに広い領域で扱っています。ただし、特定の開発者が個別原典を直接採用したとの主張には、それ自体の証拠が必要です。
 
 **初めて知った方へ：** [中川マスターという人物と原典](ABOUT_NAKAGAWA_MASTER.md) ／ [全62件の実際の外部作用と限界](REAL_WORLD_IMPACT.md) ／ [本人の公開GitHub活動](https://github.com/Nakagawa-master)。このページにある名前・成果・未確認点はすべて元リンクに戻って確かめられます。誰がどこまで貢献したかを区別したうえで、価値があると思った事例をご自身の判断で紹介・検証できます。
 
