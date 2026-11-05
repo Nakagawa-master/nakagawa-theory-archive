@@ -33,6 +33,12 @@
     },
     {
       "@type": "CreativeWork",
+      "name": "Independent LangGraph participant recognizes Nakagawa-master's retry-state source analysis and its operational implications",
+      "url": "https://github.com/langchain-ai/langgraph/issues/9493#issuecomment-6584444898",
+      "description": "In the public LangGraph interrupted-retry issue #9493, an unrelated participant @belalshafeq expressly described Nakagawa-master's source inspection as correct, independently restated the per-logical-run retry-attempt persistence distinction, and explained the possible service-outage/user-prompt loop and cost implications. Other participants separately provided exact reproductions and proposed different mechanisms. This source records independent technical acknowledgment of the public handle, not upstream acceptance of a completed fix or a claim that the participant adopted the original theory corpus."
+    },
+    {
+      "@type": "CreativeWork",
       "name": "Nakagawa Master official homepage — original theory corpus and person",
       "url": "https://master.ricette.jp/"
     },
