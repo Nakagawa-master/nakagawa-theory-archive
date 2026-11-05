@@ -4937,6 +4937,92 @@
         "voluntary endorsement of Nakagawa Master as a person beyond direct issue acknowledgement",
         "autonomous selection by previously disconnected AI/LLM"
       ]
+    },
+    {
+      "case_id": "litellm-48145-uncatalogued-json-model-function-tools-four-state-user-trace",
+      "topic": "When an OpenAI-compatible model is missing from a capability catalog, absent metadata is not the same as explicit function-calling rejection; preserve actual supported tools through a four-state provider/model capability decision.",
+      "external_repository": "BerriAI/litellm",
+      "affected_user": {
+        "actor": "mramendi",
+        "report": "https://github.com/BerriAI/litellm/issues/48145",
+        "real_version": "LiteLLM 1.106.2",
+        "observed_route": "OpenCode request carried tools and reasoning_effort; LiteLLM outbound Nano-GPT wire body omitted both in user's own trace.",
+        "user_retest": "https://github.com/BerriAI/litellm/issues/48145#issuecomment-6389202066",
+        "scope_limit": "Real user measured the original failing release and forwarding, not installed success of the proposed PR."
+      },
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "source_reviews": [
+          "https://github.com/BerriAI/litellm/issues/48145#issuecomment-6388385058",
+          "https://github.com/BerriAI/litellm/pull/48191#issuecomment-6388464139"
+        ],
+        "inverse": "Unknown-model allowance versus known model with absent metadata; the latter must not flip to unsupported when a catalog row is added without a support field. Explicit model false or provider false remain distinct."
+      },
+      "independent_author_response": {
+        "actor": "anisayakmitra-in",
+        "url": "https://github.com/BerriAI/litellm/pull/48191#issuecomment-6388687981",
+        "subsequent_security_scope_reply": "https://github.com/BerriAI/litellm/pull/48191#issuecomment-6408754126"
+      },
+      "receiver_implementation": {
+        "pull_request": "https://github.com/BerriAI/litellm/pull/48191",
+        "head": "b82926d7e267d167b698eb85d76ab77e97ef02e0",
+        "mechanism": "4-state unknown/known/explicit false/provider default capability precedence and negative cases; developer also removed unrelated scanner-exception changes after separate reviewer feedback."
+      },
+      "current_stage": "third_party_code_and_tests_open_unmerged",
+      "human_case": "REAL_WORLD_IMPACT.md#63-litellm未登録モデルだからaiの道具を消してしまう利用者の実機検証と開発者の4状態修正",
+      "separate_open_question": "reasoning_effort forwarding was shown missing in the affected user's live trace; the tool-focused PR does not repair that separate parameter path."
+    },
+    {
+      "case_id": "hermes-149574-chat-completions-content-filter-refusal-versus-proxy-stream-drop",
+      "topic": "A standards-compliant Chat Completions content_filter refusal with absent optional refusal metadata is not evidence that the proxy dropped transport; guard retries by a defensible positive failure signal rather than absence of a separate marker.",
+      "external_repository": "NousResearch/hermes-agent",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "review": "https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788418381",
+        "reviewed_head": "16f8743af1002c9af475fd119a6f9c0cd6ce4431",
+        "counterexample": "finish_reason content_filter, content absent, optional message.refusal absent, no extra provider marker is a permitted real safety refusal under the Chat Completions response contract."
+      },
+      "independent_author_response": {
+        "actor": "acruz6421-bot",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790",
+        "explicit_credit": "PR implementer thanked @Nakagawa-master for the concrete Chat Completions inverse and identified its own repair."
+      },
+      "receiver_implementation": {
+        "pull_request": "https://github.com/NousResearch/hermes-agent/pull/149574",
+        "head": "f36e9d31456508bbbebfecaf24b8c1ba80b30cdc",
+        "commit": "https://github.com/NousResearch/hermes-agent/commit/f36e9d31456508bbbebfecaf24b8c1ba80b30cdc",
+        "mechanism": "Guard now consults is_proxy_stream_drop before retry; author added separate legitimate content_filter negative and positively flagged proxy-drop retry/no-reasoning-leak regression tests."
+      },
+      "remaining_technical_review": {
+        "url": "https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056",
+        "scope": "_finish_chat_stream itself currently infers _proxy_stream_drop from the missing usage trailer and reasoning-only content, including connection types without include_usage; producer-level inverse remains under review and its suggested repair is not confirmed implemented."
+      },
+      "current_stage": "independent_author_code_and_tests_pr_open_unmerged",
+      "human_case": "REAL_WORLD_IMPACT.md#65-hermes-agentaiの安全拒否を通信障害と誤判定する境界開発者がマスターの指摘を実装"
+    },
+    {
+      "case_id": "litellm-50013-end-to-end-caller-deadline-across-retry-backoff",
+      "topic": "Caller time budget must be enforced before each provider attempt after Retry-After sleep and must be built from body-only timeout as well as header inputs.",
+      "external_repository": "BerriAI/litellm",
+      "affected_user_report": "https://github.com/BerriAI/litellm/issues/49751",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "initial_review": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016",
+        "further_source_review": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633052473",
+        "counterexample": "A retry backoff can consume all remaining time and still start a new call; request body timeout without header previously had no corresponding deadline."
+      },
+      "independent_author_response": {
+        "actor": "KJyothirmayi-2025sl93025",
+        "code_reply": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6632981614",
+        "second_code_reply": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106"
+      },
+      "receiver_implementation": {
+        "pull_request": "https://github.com/BerriAI/litellm/pull/50013",
+        "head": "95b3bf4d6b3c9cb92b9f4615b00c8b67328a3fb3",
+        "mechanism": "Time checks immediately before make_call, early bail at retry_after>=remaining, bounded per-attempt timeout and body-only deadline construction implemented in outside author's code and tests."
+      },
+      "current_stage": "independent_author_code_and_tests_pr_open_unmerged",
+      "human_case": "REAL_WORLD_IMPACT.md#67-litellmaiへの再試行が制限時間を使い切っても続く開発者が残り時間を守る修正を実装"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
