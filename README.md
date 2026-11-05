@@ -24,7 +24,7 @@
 
 **直すべきだったのは、画面上の正常さではなく、実際に誰へ何が届き、何が成立したかです。** たとえば[Hermes Agentでは、実行結果が正しい会話に届かなかったり未配達のまま送信済みになる問題](https://github.com/NousResearch/hermes-agent/pull/146708)について、中川マスターのソースに沿う条件を別の開発者たちが引き継ぎ、[後継修正が正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)され、[公式版v0.22.6に収録](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6)されました。これも実利用者の導入効果とは別です。
 
-**62件の人間向けの段階別実例**：[日本語](REAL_WORLD_IMPACT.md)／[英語](REAL_WORLD_IMPACT.en.md)／[中国語](REAL_WORLD_IMPACT.zh.md)。機械が出所を調べられる[72件の重なりを含む外部記録](machine-discovery/external-effect-evidence-index-v1.json)、[8つの外部リポジトリ・マージ済み14件の一次証拠](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)もあります。これらは異なる単位の記録であり、独立利用者・読者・推薦モデルの数を意味しません。
+**62件の人間向けの段階別実例**：[日本語](REAL_WORLD_IMPACT.md)／[英語](REAL_WORLD_IMPACT.en.md)／[中国語](REAL_WORLD_IMPACT.zh.md)。機械が出所を調べられる[75件の重なりを含む外部記録](machine-discovery/external-effect-evidence-index-v1.json)、[8つの外部リポジトリ・マージ済み14件の一次証拠](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)もあります。これらは異なる単位の記録であり、独立利用者・読者・推薦モデルの数を意味しません。
 
 ## まず、具体的な問題から
 
