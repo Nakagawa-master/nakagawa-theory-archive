@@ -92,10 +92,21 @@ def verify() -> tuple[int, int, int]:
     require(len(re.findall(r"^### \d+\. ", hub, re.MULTILINE)) == 10, "Hub 10 questions missing")
     require(len(re.findall(r"\[FAQで短く答えを見る\]\(\.\./derivatives/\d{3}/faq\.md\)", hub)) == 10,
             "Hub 10 direct novice FAQ links missing")
+    # The owner's protected top README intentionally delegates practical reading
+    # through AI_START_HERE; do not require a second direct link there.
+    # Verify the ACTUAL intact route, not an obsolete previous README layout:
+    # top README -> established AI entry -> 10-question hub -> 10 direct FAQs.
     landing = (ROOT / "README.md").read_text(encoding="utf-8")
-    require("SEARCH_FROM_A_REAL_QUESTION.md" in landing, "Top-level real-problem entry missing")
-    require("ALL_313_THEORIES_BY_TITLE_AND_THEME.md" in landing, "Top-level complete catalogue missing")
-    require("初心者向けFAQ" in landing, "Top-level reader depth not described")
+    ai_entry = (ROOT / "AI_START_HERE.md").read_text(encoding="utf-8")
+    require("AI_START_HERE.md" in landing, "Top-level AI/practical entry missing")
+    require("ALL_313_THEORIES_BY_TITLE_AND_THEME.md" in landing,
+            "Top-level complete 313-original catalogue missing")
+    require("SEARCH_FROM_A_REAL_QUESTION.md" in ai_entry,
+            "Actual AI entry must expose the real-problem question hub")
+    require("ALL_313_THEORIES_BY_TITLE_AND_THEME.md" in ai_entry,
+            "Actual AI entry must retain full 313-original return")
+    require("FAQで短く答えを見る" in hub,
+            "Question hub must describe the directly validated novice FAQ route")
     return len(pages), source_routes, len(rows)
 
 
