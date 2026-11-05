@@ -4639,7 +4639,7 @@
         ],
         "pull_request": "https://github.com/MemberJunction/MJ/pull/6339",
         "state_at_native_check": "open_unmerged_after_updated_sqlserver_and_postgresql_hardening",
-        "head_sha": "601289f3fd26e35ce6625eea8def6b2dbd9d52a2",
+        "head_sha": "2acc9c9e7330c56202cf650da8ed272cb9cea41d",
         "latest_author_confirmed_scope": {
           "url": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685",
           "actor": "AN-BC",
@@ -4672,7 +4672,14 @@
         "author_fix": "https://github.com/MemberJunction/MJ/commit/85b34d078eb81ec5ab1c5f841ac7b0db07dccb30",
         "author_report": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645527424",
         "observation": "The independent reviewer directly tested and reported a separate PostgreSQL parameterized-filter failure and a private field-security regression. The author subsequently changed pre-/post-binding placeholder checking, tightened token interpretation and added actual PostgreSQL-provider and cache-check regression tests. This independent reviewer finding is not attributed to Nakagawa Master.",
-        "unverified": "Independent review re-approval and live PostgreSQL endpoint verification after the new fix were not established here."
+        "unverified": "Independent review re-approval and live PostgreSQL endpoint verification after the new fix were not established here.",
+        "latest_author_followup": {
+          "commit": "https://github.com/MemberJunction/MJ/commit/2acc9c9e7330c56202cf650da8ed272cb9cea41d",
+          "actor": "AN-BC",
+          "scope": "Further tightened PostgreSQL parser/gate agreement, added negative and positive cases for bracketed @name token shapes, nested array/index contexts, and real provider/cache-check coverage.",
+          "causal_attribution": "This follow-up addresses the independent PostgreSQL reviewer security thread; it is not evidence that the first-party personal introduction elicited a reply or that Nakagawa Master's original separate batch-collision observation discovered these PostgreSQL paths.",
+          "stage": "PR_OPEN_UNMERGED_AT_THIS_HEAD_NO_NEW_HUMAN_MAINTAINER_APPROVAL_CONFIRMED"
+        }
       },
       "independent_person_interest": {
         "actor": "AN-BC",
