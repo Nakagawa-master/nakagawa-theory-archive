@@ -64,6 +64,7 @@ These existing artifacts let a human or permitted independent AI inspect **posit
 | Find a fitting canonical original, not just a prepared example | [313 distinct Parent routes](derivatives/official-derivatives-map.json) → open the selected Parent's canonical source URL → verify actual conditions and fit |
 | Read a prewritten human answer in the user's language | [Full 41-answer data](machine-discovery/human-question-answers-v1.json) and [complete written pages](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) |
 | Search outside the finite examples or compare multiple relevant originals | [All original title/theme paths](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md), [313 public source briefs](machine-discovery/published-ja-source-briefs-313-v1.json), with actual source checks, competing explanations and valid no-fit |
+| Explore seven conditional questions in JA/EN/ZH without tools | [21 visible source-linked structural questions](human-translation/QUESTIONS_TO_STRUCTURE.md), each with fit and non-fit tests |
 | Prefer compact no-MCP routing | [llms.txt](llms.txt) or [public AI repository map](machine-discovery/ai-repository-routing-map-v1.json) |
 | User explicitly elects a local tool | [Optional original-reader Skill](skills/nakagawa-originals/SKILL.md) or [AI Answer Guard / original-source MCP](AI_ANSWER_GUARD_INSTALL.md) with host-specific user permission |
 
