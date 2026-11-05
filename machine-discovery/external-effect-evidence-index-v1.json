@@ -4862,6 +4862,50 @@
         "new audience, GitHub follower or search traffic effect"
       ],
       "attribution_note": "The PR author implemented and tested the correction; the original requester and separate bot reviewer retain their distinct roles. This is an independently acknowledged and authored technical correction, not a claim of general adoption of any original theory."
+    },
+    {
+      "case_id": "hermes-desktop-queued-prompt-occurrence-identity-vs-identical-text",
+      "topic": "Two separately accepted user commands with identical text are not one queued occurrence. Compare a durable row and new projection by origin/UID, not matching words.",
+      "external_repository": "NousResearch/hermes-agent",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_specific_pr_comment",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6632917906",
+        "reviewed_head": "c508d8f3a5896993bf88c5be425e53d85bfca719",
+        "counterexample": "A durable queued row with content 'Run tests' and a later separately accepted queued request with the same text. The old some(row => userContent(row) === queuedText) suppressed the new projected request; the opposite positive case is same actual occurrence projected twice.",
+        "evidence_limit": "Source-level prediction in original comment, not a Desktop runtime reproduction by Nakagawa Master."
+      },
+      "independent_author_response": {
+        "actor": "steinnes",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330",
+        "time_utc": "2026-11-05T12:00:08Z",
+        "direct_person_acknowledgement": "The independent PR author directly addressed @Nakagawa-master and said the distinct repeated-command finding was fixed in the given commit."
+      },
+      "receiver_implementation": {
+        "author": "steinnes",
+        "pull_request": "https://github.com/NousResearch/hermes-agent/pull/148917",
+        "commit_sha": "c9616ee05bf920c3690636a8b46fd72733aa7091",
+        "commit_url": "https://github.com/NousResearch/hermes-agent/commit/c9616ee05bf920c3690636a8b46fd72733aa7091",
+        "mechanism": "The queued snapshot exposes the staged backend message_uid, the Desktop reconciliation suppresses a queued projection only when the durable queued UID AND text match, not for any equal text. The new regressions compare same-occurrence deduplication, equal-text distinct occurrence, missing/null/empty identity, warm updates, text merges and clear/reaccept identity.",
+        "author_scope_limit": "Identity-free legacy queue snapshots remain conservative and may display a duplicate. The changes do not establish comprehensive Desktop correctness or that a real affected end user retried successfully."
+      },
+      "current_stage": "third_party_code_and_test_change_C2_not_merged",
+      "status_as_checked": "OPEN_UNMERGED_AT_c9616ee05bf920c3690636a8b46fd72733aa7091_ON_2026_11_05",
+      "person_attribution": "Specific code/test response explicitly addressed @Nakagawa-master; independent author owns all fixes. A comment is not evidence of offline introduction, later personal trust, new follower or mass recognition.",
+      "optional_original_context": {
+        "source": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/",
+        "official_derivative": "derivatives/069/README.md",
+        "relationship": "An optional, conditional first-party comparison: preserving identity and history of distinct accepted events is structurally relevant to an ID/consent/memory/traceability original. The Hermes author did not cite, read or adopt this Parent; the analogy itself is not evidence of source reuse. Outside readers may judge no-fit."
+      },
+      "not_claimed": [
+        "PR merge or product release",
+        "real affected-user recovery or correct UI in a deployed Desktop app",
+        "independent original Parent reading/endorsement",
+        "another engineer independently discovering this correction",
+        "voluntary endorsement of Nakagawa Master as a person beyond direct issue acknowledgement",
+        "autonomous selection by previously disconnected AI/LLM",
+        "GitHub followers, GSC supporting-link impressions or archive Traffic changes"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
