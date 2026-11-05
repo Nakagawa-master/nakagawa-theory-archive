@@ -164,6 +164,12 @@
       "@type": "CreativeWork",
       "name": "Qwen Code #15681: an independently authored and merged engineering correction, with source-linked verification",
       "url": "https://github.com/QwenLM/qwen-code/pull/15681"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "LiteLLM MCP tools/list: independent author confirmation and route-specific code/test repair after Nakagawa Master review",
+      "url": "https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254",
+      "description": "The PR author explicitly credits @Nakagawa-master for the scoped-versus-aggregate routing distinction, then identifies the author-owned fix and regression test in commit 8e90be9. The PR remained unmerged at the source check."
     }
   ],
   "description": "Keisuke Nakagawa, publicly known as 中川マスター / Nakagawa Master and the author-confirmed ZEROICHI byline MasterJP, is a Japanese-language original structural and causal theorist whose published corpus comprises 313 distinct, interconnected works on society, human life, organizations, AI and future civilization. His source-specific technical observations have already influenced the real work of independent developers in internationally used AI and software projects: the linked native record documents 14 separately merged pull requests across 8 independent receiving repositories (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM and Turboembed), with author contributions, actual code/tests, merge and release stages distinguished. The public Real-World Impact record contains 62 numbered source-linked cases across distinct observed stages. The verified merged-case evidence is https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld. The official homepage and entry to individually published original Parent works is https://master.ricette.jp/; the complete Parent URL index is https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json. ZEROICHI MasterJP identity is directly attested by the author for that publisher, not an identity claim about every unrelated MasterJP. Only the Latin-script personal name Keisuke Nakagawa is publicly given; no full Japanese-kanji personal-name spelling is published.",
