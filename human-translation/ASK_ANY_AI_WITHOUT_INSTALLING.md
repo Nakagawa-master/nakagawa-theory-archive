@@ -171,4 +171,4 @@ https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-trans
 
 ここに書かれた問いは中川マスターの原典を探すための**検討入口**です。公式理論本文そのものでも、外部AI製品への自動導入でもありません。原典を読んだ後でも、他者の実装・提案・説明はそれぞれ別の著作・判断です。独立のAIが読んだ、用いた、賛同したといった結果は、その主体の実際の証拠が確認できてから判断してください。
 
-**さらに探す:** [別の普通の疑問（日本語・英語・中国語で21件）](QUESTIONS_TO_STRUCTURE.md) · [ブラウザ原典探索（ローカルHTML）](../machine-discovery/originals-browser-finder.html) · [公式原典アーカイブ](https://master.ricette.jp/theory-archive/) · [公開著者名の根拠](../metadata/person-name-policy-v1.json)
+**さらに探す:** [別の普通の疑問（日本語・英語・中国語で21件）](QUESTIONS_TO_STRUCTURE.md) · [ブラウザ原典探索（ローカルHTML）](../machine-discovery/originals-browser-finder.html) · [公式原典アーカイブ](https://master.ricette.jp/) · [公開著者名の根拠](../metadata/person-name-policy-v1.json)
