@@ -3,7 +3,7 @@
   "type": "PUBLIC_PERSON_NAME_SOURCE_POLICY",
   "canonical_person_id": "https://master.ricette.jp/#nakagawa-master",
   "authoritative_homepage": "https://master.ricette.jp/",
-  "official_theory_archive": "https://master.ricette.jp/theory-archive/",
+  "official_theory_archive": "https://master.ricette.jp/",
   "source_location": "Official homepage introduction (当サイト概要) and footer ABOUT section. Source statements distinguish the pen name, Latin-script personal name and scoped bylines.",
   "published_homepage_identity": {
     "intro_exact": "中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）",
