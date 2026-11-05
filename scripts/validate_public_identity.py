@@ -154,6 +154,33 @@ def check_oss_merge_graph(person, scholarly, evidence, llms):
          "native PR count metadata and evidence rows disagree")
     need(count.get("Distinct independent receiving GitHub repositories in this dataset") == len(repos),
          "recipient repo count metadata and evidence rows disagree")
+
+    # A public Person introduction must preserve independent source-native work,
+    # the original-corpus homepage, byline scope and the correct observed counts.
+    public_cases = count.get("Documented cases in the linked human impact record, across various evidence stages")
+    per_desc = person.get("description") or ""
+    sch_desc = scholarly.get("description") or ""
+    need(str(len(cases)) in per_desc and str(len(repos)) in per_desc
+         and str(len(cases)) in sch_desc and str(len(repos)) in sch_desc,
+         "public person/scholarly descriptions have stale native OSS outcomes")
+    need(isinstance(public_cases, int) and public_cases > 0
+         and str(public_cases) in per_desc and str(public_cases) in sch_desc
+         and str(public_cases) in llms,
+         "real-world impact count disagrees across evidence/person/scholar/llms")
+    need(gs.get("url") == "https://master.ricette.jp/"
+         and (gs.get("@id") or "").startswith("https://master.ricette.jp/#"),
+         "full original series incorrectly routed to limited paper experiment")
+    need("https://master.ricette.jp/theory-archive/" not in (person.get("sameAs") or []),
+         "three-paper experiment is not a Person sameAs identity")
+    need(any(x.get("url") == "https://master.ricette.jp/"
+             for x in (person.get("subjectOf") or []) if isinstance(x, dict)),
+         "full canonical original homepage is not independently navigable")
+    need(any(x.get("url") == "https://zeroichi.media/author/masterjp"
+             for x in (person.get("subjectOf") or []) if isinstance(x, dict)),
+         "ZEROICHI byline source removed from person evidence")
+    need("Keisuke Nakagawa" in per_desc and "中川マスター" in per_desc
+         and "MasterJP" in per_desc and "https://master.ricette.jp/" in per_desc,
+         "single person, bounded byline, original and OSS real impact split apart")
     return errors
 
 
