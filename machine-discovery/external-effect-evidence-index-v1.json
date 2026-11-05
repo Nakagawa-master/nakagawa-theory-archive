@@ -4998,7 +4998,7 @@
             "receipt": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790"
           },
           {
-            "sha": "47ee80cbf3eec97e56f838f2fe6977581715ee4c",
+            "sha": "47ee80cbf3eec4be8d6d2cacc7692f84bce2e117",
             "receipt": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6666195530"
           },
           {
@@ -5017,7 +5017,7 @@
         "by": "acruz6421-bot",
         "direct_person_credit": "Author explicitly said 'Thank you again @Nakagawa-master' and cited specific source detail about absent include_usage for native Gemini/unsupported stream options.",
         "url": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6666195530",
-        "actual_code_sha": "47ee80cbf3eec97e56f838f2fe6977581715ee4c"
+        "actual_code_sha": "47ee80cbf3eec4be8d6d2cacc7692f84bce2e117"
       },
       "independent_follow_on_carrier": {
         "by": "kvnloo",
