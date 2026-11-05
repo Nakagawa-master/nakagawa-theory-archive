@@ -122,6 +122,11 @@ def run():
         "nakagawa-master-human-descendant-ai-civilization-theory-10-"
         "self-referential-audit-role-separation/"
     ), good_receipt
+    # Pin the machine-facing citation to the published Parent metadata too.
+    parent_source = (SERVER.parent.parent / "derivatives/303/README.md").read_text(encoding="utf-8")
+    parent_urls = [line.removeprefix("- Parent URL: ") for line in parent_source.splitlines()
+                   if line.startswith("- Parent URL: ")]
+    assert len(parent_urls) == 1 and good_receipt["origin"]["self_audit"] == parent_urls[0]
     print("PASS: real MCP failure/cancel/pending receipts never silently masquerade as success")
 
     # Han-only Japanese can be misread as Chinese by naive character detection.
