@@ -826,7 +826,7 @@
         "url": "https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355",
         "contribution": "Mapped #3326 onto the current branch with one shared backend deletion policy evaluated against current locked target state before mutation, including Mooclet and batch bypass prevention and distinct policy-refusal reason codes."
       },
-      "current_stage": "feature_3323_MERGED_DEV_C3__separate_reporter_acknowledged_backend_authority_issue_3326_OPEN_NOT_FIXED",
+      "current_stage": "feature_3323_MERGED_DEV_upstream_merge__separate_reporter_acknowledged_backend_authority_issue_3326_OPEN_NOT_FIXED",
       "not_claimed": [
         "code implementation of #3326",
         "tests implementing the policy",
@@ -1454,7 +1454,7 @@
         "source_head": "61b929040334b6391bc1ad2b4b34dcabd294faaa",
         "changed_chapter": "https://github.com/kishibashi3/publications/blob/61b929040334b6391bc1ad2b4b34dcabd294faaa/docs/ai/agent-design/chapter-05.ja.md",
         "concrete_change": "Chapter 5 condition 6 retains as-of-2026-09-20 unresolved statement and adds a dated 2026-10-12 paragraph: issue resolved, different developer fixed in PR 1324 and release v0.61.11, while limiting to source evidence and the independent structural axes.",
-        "stage": "receiver_owned_human_book_chapter_merged_to_main_C3",
+        "stage": "receiver_owned_human_book_chapter_merged_to_main_upstream_merge",
         "not_claimed": [
           "new receiving human identity beyond existing author",
           "independent GitHub Pages deploy verified after this exact merge",
@@ -1496,7 +1496,7 @@
         ],
         "remaining_unresolved": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6123794027",
         "remaining_condition": "Who records the owner's departure or succession and how other Cells observe that fact still unresolved; terminology and Cell reorganization reading remain documented follow-up.",
-        "source_stage": "C3_RECEIVER_OWNED_WORKING_BRANCH_MERGE_ONLY",
+        "source_stage": "upstream_merge_RECEIVER_OWNED_WORKING_BRANCH_MERGE_ONLY",
         "not_claimed": [
           "merged to main",
           "deployed to reader-facing GitHub Pages",
@@ -1508,7 +1508,7 @@
         "approval_record_PR108": {
           "receiving_PR": "https://github.com/kishibashi3/publications/pull/108",
           "repository": "kishibashi3/publications",
-          "current_state": "MERGED_TO_RECEIVER_WORKING_BRANCH_C3_SOURCE_PROVENANCE_LEDGER__NOT_OWNER_SIGNATURE",
+          "current_state": "MERGED_TO_RECEIVER_WORKING_BRANCH_upstream_merge_SOURCE_PROVENANCE_LEDGER__NOT_OWNER_SIGNATURE",
           "receiving_branch": "docs/eaa-working-notes",
           "head_at_source_check": "82a80f22d0010ea3a9fa5b841c4c31510673f1fe",
           "path": "drafts/norms/APPROVALS.md",
@@ -3569,7 +3569,7 @@
         "universal MCP source truth",
         "broad Person-Origin adoption"
       ],
-      "verification_boundary": "Stage C2 is external contributor's authored fork code/tests plus explicit source acknowledgment, not upstream integration. Both source-receiver changes predate this evidence-index update."
+      "verification_boundary": "Stage outside_authored_change is external contributor's authored fork code/tests plus explicit source acknowledgment, not upstream integration. Both source-receiver changes predate this evidence-index update."
     },
     {
       "case_id": "qwen-13923-shutdown-stop-call-specific-evidence",
@@ -3628,7 +3628,7 @@
         "whole Nakagawa theory corpus adopted",
         "repeat broad human Person-Origin"
       ],
-      "verification_boundary": "The original independent C2 code/test adoption and explicit Nakagawa source acknowledgement progressed to confirmed C3 merge on 2026-10-12. No verified release, real user use, second independent receiver, voluntary person-Origin re-entry, or broad recurrence; distinguish earlier trial-merge test caveats from upstream merge fact.",
+      "verification_boundary": "The original independent outside_authored_change code/test adoption and explicit Nakagawa source acknowledgement progressed to confirmed upstream_merge merge on 2026-10-12. No verified release, real user use, second independent receiver, voluntary person-Origin re-entry, or broad recurrence; distinguish earlier trial-merge test caveats from upstream merge fact.",
       "receiver_followup_verification": {
         "actor": "wenshao",
         "url": "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116265275",
@@ -3709,7 +3709,7 @@
         "end-user installation/usage of MQ2a Java mirror",
         "all TypeScript digest validation limits are faithfully mirrored in Java before future MQ2b wiring"
       ],
-      "verification_boundary": "Original Nakagawa Java v-long overflow defect produced receiving developer's own corrected parser and JUnit tests explicitly citing review (C2), and is now verified upstream MERGED (C3) in aaf97b8 on Oct 12 08:35:15Z. Same author separately discovered and fixed subnormal-number digest issue; do not attribute it to Nakagawa. No proved release/deploy/wired MQ2a runtime, second newly adopting recipient, independent AI run or mass person-origin recognition. Post-merge review-bot reported an additional source-checkable JSON-depth bound disparity (separate third-party discovery, no present live MQ2a consumer); this does not negate the credited version regression's merge and cannot be presented as a Nakagawa-origin report.",
+      "verification_boundary": "Original Nakagawa Java v-long overflow defect produced receiving developer's own corrected parser and JUnit tests explicitly citing review (outside_authored_change), and is now verified upstream MERGED (upstream_merge) in aaf97b8 on Oct 12 08:35:15Z. Same author separately discovered and fixed subnormal-number digest issue; do not attribute it to Nakagawa. No proved release/deploy/wired MQ2a runtime, second newly adopting recipient, independent AI run or mass person-origin recognition. Post-merge review-bot reported an additional source-checkable JSON-depth bound disparity (separate third-party discovery, no present live MQ2a consumer); this does not negate the credited version regression's merge and cannot be presented as a Nakagawa-origin report.",
       "upstream_merge": {
         "verified": true,
         "pr": "https://github.com/QwenLM/qwen-code/pull/13940",
@@ -3721,7 +3721,7 @@
           "packages/sdk-java/managed-agent-server/src/main/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopes.java",
           "packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java"
         ],
-        "source_bounded_credit": "The preexisting same Qwen recipient independently integrated a concrete Java version overflow correction and regression explicitly citing Nakagawa-master's review. This is genuine C3 maturation, NOT a second new individual, product release or independent real user use."
+        "source_bounded_credit": "The preexisting same Qwen recipient independently integrated a concrete Java version overflow correction and regression explicitly citing Nakagawa-master's review. This is genuine upstream_merge maturation, NOT a second new individual, product release or independent real user use."
       },
       "post_merge_unresolved_non_runtime_validation_gap": {
         "origin": "Qwen's independent sandboxed review-bot, NOT Nakagawa Master's original version-overflow report",
@@ -3775,7 +3775,7 @@
         "large recurring person-origin or media exposure",
         "whole theory corpus adoption"
       ],
-      "verification_boundary": "Already-existing Oct 9 external actions now source-audited: one participant expressly attributes and re-runs Nakagawa's inverse; another executes a bounded related offline alternative and supplies a public reproduction. Two individuals, same issue/repository, no C3, release or broad C7. This archive write itself creates no new external receiver change."
+      "verification_boundary": "Already-existing Oct 9 external actions now source-audited: one participant expressly attributes and re-runs Nakagawa's inverse; another executes a bounded related offline alternative and supplies a public reproduction. Two individuals, same issue/repository, no upstream_merge, release or broad broad_independent_recognition. This archive write itself creates no new external receiver change."
     },
     {
       "case_id": "qwen-13902-same-manager-acp-listeners-mutation-valid-regression",
@@ -3827,7 +3827,7 @@
         "independent machine route execution or theory corpus adoption",
         "mass recurring person recognition"
       ],
-      "verification_boundary": "Read the original review, receiving-author 0ae6d288 commit and native before/after test, then current PR HEAD; do not equate archived 11/11 or 12/12 author-reported focused tests with current full PR approval. Both receiving code/test changes are by one independent engineer on one open PR; no C3 release or unrelated AI original choice inferred.",
+      "verification_boundary": "Read the original review, receiving-author 0ae6d288 commit and native before/after test, then current PR HEAD; do not equate archived 11/11 or 12/12 author-reported focused tests with current full PR approval. Both receiving code/test changes are by one independent engineer on one open PR; no upstream_merge release or unrelated AI original choice inferred.",
       "separate_approval_identity_review_and_receiver_fix": {
         "source_review_url": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398",
         "original_issue": "The earlier teammate display-name + Date.now() ID could collide for two requests from the same teammate in one millisecond.",
@@ -3883,7 +3883,7 @@
         "commit": "f8b3031f733cbc149873ac5809efdc3c632970e7",
         "url": "https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7"
       },
-      "current_stage": "independent_receiver_implementation_plus_formal_review_plus_upstream_merge_C3",
+      "current_stage": "independent_receiver_implementation_plus_formal_review_plus_upstream_merge_upstream_merge",
       "not_claimed": [
         "upstream original theory corpus adopted by Qwen AI/LLM",
         "entire PR or review suite authored by Nakagawa",
@@ -3941,7 +3941,7 @@
         "review_workflow": "PENDING at last check",
         "pr_mergeable_state": "blocked"
       },
-      "current_stage": "third_party_receiver_test_fix_and_explicit_person_acknowledgment_C2_PR_OPEN",
+      "current_stage": "third_party_receiver_test_fix_and_explicit_person_acknowledgment_outside_authored_change_PR_OPEN",
       "distinctness": "Separate current-head test-fixture typecheck finding on the SAME receiving PR and SAME developer as earlier teammate listener/approval review cases; not a new independent recipient, organization, model or release.",
       "not_claimed": [
         "upstream PR merged",
@@ -3952,7 +3952,7 @@
         "Qwen review approval or absence of standing changes-requested",
         "independent AI browsing or choosing the official original"
       ],
-      "verification_boundary": "Verify original comment, author-owned commit, author reply, exact-head success of the five named workflows and live PR review/merge independently. An external developer's C2 fix is genuine; this own machine index row is C0 publication only.",
+      "verification_boundary": "Verify original comment, author-owned commit, author reply, exact-head success of the five named workflows and live PR review/merge independently. An external developer's outside_authored_change fix is genuine; this own machine index row is first_party_publication publication only.",
       "canonical_theory_causation": "This is a bounded technical diagnosis; no first-hand claim that the implementer adopted any named canonical theory original. Do not force an unrelated theoretical provenance citation."
     },
     {
@@ -4005,7 +4005,7 @@
         "released package that includes this merge",
         "real end-user runtime validation of diagnostic feature",
         "third-party original theory article reading or independent AI original selection",
-        "mass recurring personal recognition",
+        "independently observed repeated recognition of the named author",
         "Nakagawa authored the external developer's PR"
       ],
       "verification_boundary": "Merged receiving code is source-native and independently reviewed; post-merge distribution and outside use require later separate evidence. Self-maintained evidence index is a navigation aid, not a newly affected independent receiver."
@@ -4191,7 +4191,7 @@
           "https://github.com/BerriAI/litellm/commit/97cce25d4e18ecf5d2575c383d01416804fa6b29"
         ]
       },
-      "current_stage": "first_developer_corrected_fork_code__SECOND_developer_opened_credited_upstream_PR_AND_FIXED_EXACT_NOTREQUIRED_INVARIANT_AFTER_MASTER_SECOND_REVIEW_C2__PR_OPEN_NO_NATIVE_TEST_PASS",
+      "current_stage": "first_developer_corrected_fork_code__SECOND_developer_opened_credited_upstream_PR_AND_FIXED_EXACT_NOTREQUIRED_INVARIANT_AFTER_MASTER_SECOND_REVIEW_outside_authored_change__PR_OPEN_NO_NATIVE_TEST_PASS",
       "human_case": "REAL_WORLD_IMPACT.md#56",
       "current_next_stage": "Original PR contributors/maintainers to resolve CLA status and enable applicable upstream CI, independent PR merge and real use; preserve accurate technical attribution without treating an automated CLA reminder as new adoption.",
       "cla_status_at_latest_check": {
@@ -4260,7 +4260,7 @@
         "url": "https://github.com/NousResearch/hermes-agent/pull/147746#issuecomment-6568004334",
         "result": "15 focused tests passed on latest head; blocking lint checks clean"
       },
-      "current_stage": "C3_MERGED_STABLE_v0.22.6_AND_v0.22.7_ANCESTRY_VERIFIED__ORIGINAL_REPORTER_RETEST_ASKED_C0__ACTUAL_C4_UNKNOWN",
+      "current_stage": "upstream_merge_MERGED_STABLE_v0.22.6_AND_v0.22.7_ANCESTRY_VERIFIED__ORIGINAL_REPORTER_RETEST_ASKED_first_party_publication__ACTUAL_affected_user_observation_UNKNOWN",
       "human_case": "REAL_WORLD_IMPACT.md#58",
       "origin_continuity_after_merge": {
         "confirmed_by_receiving_engineer": "https://github.com/NousResearch/hermes-agent/pull/146708#issuecomment-6569766480",
@@ -4275,7 +4275,7 @@
         "pull_request": "https://github.com/NousResearch/hermes-agent/pull/147746",
         "main_branch_guard_and_negative_test_present": true
       },
-      "remaining_next_stage": "Wait for original affected Telegram reporter's genuine own installed post-release delivery result or different affected users' verifiable experience; one respectful ask already posted, no duplicate ping. C5 independent re-carrier and actual relevant original Parent use remain unknown.",
+      "remaining_next_stage": "Wait for original affected Telegram reporter's genuine own installed post-release delivery result or different affected users' verifiable experience; one respectful ask already posted, no duplicate ping. independent_reuse independent re-carrier and actual relevant original Parent use remain unknown.",
       "official_release": {
         "tag": "v0.22.6",
         "release": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6",
@@ -4283,7 +4283,7 @@
         "annotated_tag": "49138a605822a48a0cc4824a7723f09276786861",
         "peeled_commit": "f0d94882e89ab8d4098b5bb2f166adfb9ee0a0ab",
         "ancestry": "merge 0e47519c is ancestor; ahead 187, behind 0",
-        "boundary": "Official package released, but affected real end user's successful delivery C4 not observed"
+        "boundary": "Official package released, but affected real end user's successful delivery affected_user_observation not observed"
       },
       "official_latest_verified_shipped_tag": {
         "tag": "v0.22.7",
@@ -4299,7 +4299,7 @@
         "url": "https://github.com/NousResearch/hermes-agent/issues/146696#issuecomment-6634634550",
         "request": "Installed Hermes version; whether async delegate_task result is actually delivered to same affected Telegram forum topic when origin metadata was null; negative/unable to retest accepted",
         "observed_result": "NO REPLY OR INSTALLED RESULT AS OF CURRENT CHECK",
-        "stage": "C3 VERIFIED, C4 UNVERIFIED; FIRST-PARTY C0 OUTBOUND RETEST QUESTION ONLY",
+        "stage": "upstream release verified; actual affected-user recheck unobserved; author asked once",
         "privacy": "No chat IDs, session files, credentials or private delegation content"
       }
     },
@@ -4337,9 +4337,9 @@
         "merge_commit": "8a2817ac8acbf9444c8a99549445c482caf1796e",
         "url": "https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e"
       },
-      "current_stage": "C3_MERGED_STABLE_v0.26.6_AND_v0.26.7_ANCESTRY_VERIFIED__ORIGINAL_REPORTER_RETEST_ASKED_C0__ACTUAL_C4_UNKNOWN",
+      "current_stage": "upstream_merge_MERGED_STABLE_v0.26.6_AND_v0.26.7_ANCESTRY_VERIFIED__ORIGINAL_REPORTER_RETEST_ASKED_first_party_publication__ACTUAL_affected_user_observation_UNKNOWN",
       "human_case": "REAL_WORLD_IMPACT.md#59",
-      "current_next_stage": "Wait for independently volunteered reporter's actual installed-version Unity MCP tool discovery outcome or genuine unrelated user evidence. No repeat follow-up to the same person without new external signal. Distinct independent C5–C7 not implied by release, this outbound question or an unanswered report.",
+      "current_next_stage": "Wait for independently volunteered reporter's actual installed-version Unity MCP tool discovery outcome or genuine unrelated user evidence. No repeat follow-up to the same person without new external signal. Distinct independent independent onward reuse and broad author recognition not implied by release, this outbound question or an unanswered report.",
       "nightly_release": {
         "tag": "v0.26.5-nightly.20261101.7b4b353750",
         "published_at_utc": "2026-11-01T22:43:08Z",
@@ -4355,7 +4355,7 @@
         "commit": "042c023b7beb4ad2a9ef95b2906b3564e3f23089",
         "native_release_notes": "#15757 credited to @2SinceJuly",
         "ancestry": "merge 8a2817ac ancestor; ahead 64, behind 0",
-        "boundary": "Actual MCP user client invocation C4 not observed"
+        "boundary": "Actual MCP user client invocation affected_user_observation not observed"
       },
       "official_latest_verified_shipped_tag": {
         "tag": "v0.26.7",
@@ -4371,7 +4371,7 @@
         "url": "https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6634570689",
         "request": "installed qwen --version and whether Unity MCP server recovers unique Editor tools despite repeated create names; negative/unable to retest is acceptable",
         "observed_result": "NO REPLY OR INSTALLED RESULT AS OF CURRENT CHECK",
-        "stage": "C3 VERIFIED, C4 UNVERIFIED; FIRST-PARTY C0 OUTBOUND RETEST QUESTION ONLY",
+        "stage": "upstream release verified; actual affected-user recheck unobserved; author asked once",
         "privacy": "Do not request or publicize customer paths/tokens/private logs"
       }
     },
@@ -4399,7 +4399,7 @@
         "ai_credit_scope": "AI-assisted outside work declared in commit metadata; does not establish autonomous retrieval/adoption of the original 313 theoretical works."
       },
       "public_origin_attribution": "https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md",
-      "current_stage": "independent_repo_main_code_tests_docs_C3__explicit_named_person_origin__outside_AI_assistance_recorded",
+      "current_stage": "independent_repo_main_code_tests_docs_upstream_merge__explicit_named_person_origin__outside_AI_assistance_recorded",
       "human_case": "REAL_WORLD_IMPACT.md#60",
       "not_claimed": [
         "official release",
@@ -4442,7 +4442,7 @@
         "upstream_workflows": "10 exact-head workflow runs action_required; no native integration pass on this head.",
         "security_review": "Veria AI SUCCESS: no security issues found; NOT proof budget code or integration tests passed."
       },
-      "current_stage": "outside_developer_FIVE_source_test_revisions_C2__fifth_get_idempotency_label_corrected__OPEN_UNMERGED__NATIVE_INTEGRATION_UNEXECUTED__ACTUAL_WORKER_REPOLL_UNPROVEN",
+      "current_stage": "outside_developer_FIVE_source_test_revisions_outside_authored_change__fifth_get_idempotency_label_corrected__OPEN_UNMERGED__NATIVE_INTEGRATION_UNEXECUTED__ACTUAL_WORKER_REPOLL_UNPROVEN",
       "human_first_contact": "WHY_THIS_IMPACT_MATTERS.md",
       "not_claimed": [
         "budget bypass fixed for actual customer",
@@ -4496,7 +4496,7 @@
         "pr": "https://github.com/BerriAI/litellm/pull/49603",
         "result": "closed_without_merge"
       },
-      "current_stage": "MERGED_UPSTREAM_C3_WITH_MAINTAINER_REPORTED_TEST_AND_LIVE_QA__SHIPPED_RELEASE_AND_INDEPENDENT_CUSTOMER_C4_NOT_VERIFIED__PERSON_MASS_C7_NOT_VERIFIED",
+      "current_stage": "MERGED_UPSTREAM_upstream_merge_WITH_MAINTAINER_REPORTED_TEST_AND_LIVE_QA__SHIPPED_RELEASE_AND_INDEPENDENT_CUSTOMER_affected_user_observation_NOT_VERIFIED__PERSON_MASS_broad_independent_recognition_NOT_VERIFIED",
       "human_explanation": "WHY_THIS_IMPACT_MATTERS.md",
       "original_interpretive_context": {
         "original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
@@ -4557,7 +4557,7 @@
         "native_notes": "PR #15681 credited @Suaroman",
         "ancestry": "ahead 38/behind 0 of exact merge commit"
       },
-      "current_stage": "C3_RECEIVER_AUTHOR_IMPLEMENTED_AND_OFFICIAL_STABLE_RELEASED__REAL_AFFECTED_USER_C4_UNKNOWN",
+      "current_stage": "upstream_merge_RECEIVER_AUTHOR_IMPLEMENTED_AND_OFFICIAL_STABLE_RELEASED__REAL_AFFECTED_USER_affected_user_observation_UNKNOWN",
       "human_case": "REAL_WORLD_IMPACT.md front-screen existing Qwen shell example",
       "origin_scope": "Conditioned real permission boundary; no claim independent engineer voluntarily read specific canonical Nakagawa Parent or that the author wrote this code",
       "next_native_receiver": "Genuine third-party v0.26.6 user confirms deny on actual protected path and allow on safe fd duplication, then voluntary independent human/model reuses it with accurate provenance",
@@ -4601,7 +4601,7 @@
         "sha": "6a2ba1d67ef7d92256d569dcd5125add676cc96e",
         "verified": true
       },
-      "current_stage": "SOURCE_SPECIFIC_NAKAGAWA_ISSUE__INDEPENDENT_RECEIVER_OWNED_FIX_RED_GREEN_TESTS_VERSIONED_ALGORITHM__UPSTREAM_C3_MERGED__ACTUAL_SOFTWARE_RELEASE_AND_END_USER_USE_UNKNOWN",
+      "current_stage": "SOURCE_SPECIFIC_NAKAGAWA_ISSUE__INDEPENDENT_RECEIVER_OWNED_FIX_RED_GREEN_TESTS_VERSIONED_ALGORITHM__UPSTREAM_upstream_merge_MERGED__ACTUAL_SOFTWARE_RELEASE_AND_END_USER_USE_UNKNOWN",
       "human_case": "REAL_WORLD_IMPACT.md#61-turboembed処理不能な候補が先に枠を埋めaiの根拠の見落としを起こす問題を別の開発者が修正正式マージ",
       "first_party_explanation": "REAL_WORLD_IMPACT.en.md",
       "not_claimed": [
@@ -4763,16 +4763,15 @@
         "current_event_id_mechanism": "Follow-on author commit 062c82b913 moved receiver-side event id from runId:suspension-timestamp:toolCallId to runId:suspension-timestamp, because different tool approvals of the same parked suspension must also deduplicate after an ambiguous sender acknowledgment.",
         "follow_on_commit_url": "https://github.com/mastra-ai/mastra/commit/062c82b913c890fe181ddc8b9dda46ca6c843ef7"
       },
-      "current_stage": "independent_author_direct_recognition_source_code_fix_and_reported_real_ingg_dev_server_test_C2_open_unmerged",
+      "current_stage": "independent_author_direct_recognition_source_code_fix_and_reported_real_ingg_dev_server_test_outside_authored_change_open_unmerged",
       "causal_boundary": "Master's contribution was a bounded source-predicted scenario and a pair of nonfit acceptance conditions; the independent maintainer-like PR author chose and implemented the event ID. The author reports real dev-server validation; the assistant did not independently execute that test. A different edit in the same commit on re-suspension metadata responds to a separate reviewer and is not attributed to Master.",
       "not_claimed": [
         "PR merged",
         "official package release",
-        "actual installed external user C4",
+        "actual installed external user affected_user_observation",
         "independent third party using the modified package",
         "unprompted reading or endorsement of Nakagawa original Parents by independent AI",
-        "mass personal recognition",
-        "verified December native metrics"
+        "independently observed named-author recognition"
       ],
       "independent_separate_review": {
         "reviewer": "coderabbitai[bot]",
@@ -4922,7 +4921,7 @@
         "mechanism": "The queued snapshot exposes the staged backend message_uid, the Desktop reconciliation suppresses a queued projection only when the durable queued UID AND text match, not for any equal text. The new regressions compare same-occurrence deduplication, equal-text distinct occurrence, missing/null/empty identity, warm updates, text merges and clear/reaccept identity.",
         "author_scope_limit": "Identity-free legacy queue snapshots remain conservative and may display a duplicate. The changes do not establish comprehensive Desktop correctness or that a real affected end user retried successfully."
       },
-      "current_stage": "third_party_code_and_test_change_C2_not_merged",
+      "current_stage": "third_party_code_and_test_change_outside_authored_change_not_merged",
       "status_as_checked": "OPEN_UNMERGED_AT_c9616ee05bf920c3690636a8b46fd72733aa7091_ON_2026_11_05",
       "person_attribution": "Specific code/test response explicitly addressed @Nakagawa-master; independent author owns all fixes. A comment is not evidence of offline introduction, later personal trust, new follower or mass recognition.",
       "optional_original_context": {
@@ -4936,8 +4935,7 @@
         "independent original Parent reading/endorsement",
         "another engineer independently discovering this correction",
         "voluntary endorsement of Nakagawa Master as a person beyond direct issue acknowledgement",
-        "autonomous selection by previously disconnected AI/LLM",
-        "GitHub followers, GSC supporting-link impressions or archive Traffic changes"
+        "autonomous selection by previously disconnected AI/LLM"
       ]
     }
   ],
