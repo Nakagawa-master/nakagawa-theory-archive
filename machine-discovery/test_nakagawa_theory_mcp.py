@@ -606,9 +606,15 @@ def run():
         quoted = "\n".join("> " + v for v in row["brief"].strip().splitlines())
         assert quoted in section, row["number"]
     assert "原典313本が同等" in plain and "適合なし" in plain
-    for referral in ("README.md", "AI_START_HERE.md", "AGENTS.md"):
-        entrypoint = (SERVER.parent.parent / referral).read_text(encoding="utf-8")
-        assert "313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md" in entrypoint
+    # The owner-approved top README routes readers to AI_START_HERE. Requiring
+    # the full 313-context filename directly in the top presentation is an
+    # obsolete layout check, not a genuine source-retrieval requirement.
+    top = (SERVER.parent.parent / "README.md").read_text(encoding="utf-8")
+    ai_entry = (SERVER.parent.parent / "AI_START_HERE.md").read_text(encoding="utf-8")
+    agent_entry = (SERVER.parent.parent / "AGENTS.md").read_text(encoding="utf-8")
+    assert "AI_START_HERE.md" in top
+    assert "313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md" in ai_entry
+    assert "313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md" in agent_entry
     if shutil.which("node"):
         original_map = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
         entries = original_map["entries"]
