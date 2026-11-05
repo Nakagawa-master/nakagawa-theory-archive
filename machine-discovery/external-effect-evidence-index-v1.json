@@ -4989,16 +4989,44 @@
       },
       "receiver_implementation": {
         "pull_request": "https://github.com/NousResearch/hermes-agent/pull/149574",
-        "head": "f36e9d31456508bbbebfecaf24b8c1ba80b30cdc",
-        "commit": "https://github.com/NousResearch/hermes-agent/commit/f36e9d31456508bbbebfecaf24b8c1ba80b30cdc",
-        "mechanism": "Guard now consults is_proxy_stream_drop before retry; author added separate legitimate content_filter negative and positively flagged proxy-drop retry/no-reasoning-leak regression tests."
+        "head": "4cb0377e8ccfa19d1b173886dd5240bbbd02ec7a",
+        "commit": "https://github.com/NousResearch/hermes-agent/commit/4cb0377e8ccfa19d1b173886dd5240bbbd02ec7a",
+        "mechanism": "Initial f36e9d31: positive-flag-only retry with legitimate Chat Completions content_filter negative and flagged drop positive. After Master's producer inverse, author 47ee80cb removed missing-usage/reasoning heuristic, restricted proxy-drop marker to observed transport abort or explicit out-of-band marker, added real producer-level inverse. After independently authored kvnloo review that referenced Master's inverse, author 4cb0377e eagerly consumes/retains marker lifecycle on early returns and adds reused-stream-ID negative control.",
+        "progression": [
+          {
+            "sha": "f36e9d31456508bbbebfecaf24b8c1ba80b30cdc",
+            "receipt": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790"
+          },
+          {
+            "sha": "47ee80cbf3eec97e56f838f2fe6977581715ee4c",
+            "receipt": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6666195530"
+          },
+          {
+            "sha": "4cb0377e8ccfa19d1b173886dd5240bbbd02ec7a",
+            "receipt": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667770552"
+          }
+        ]
       },
       "remaining_technical_review": {
         "url": "https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056",
-        "scope": "_finish_chat_stream itself currently infers _proxy_stream_drop from the missing usage trailer and reasoning-only content, including connection types without include_usage; producer-level inverse remains under review and its suggested repair is not confirmed implemented."
+        "scope": "Master's distinct producer-level concern was acknowledged and addressed by author-owned patch 47ee80cb and paired real producer tests. Upstream PR remains open for maintainer review/merge and downstream installed-user verification; no further Master review required on that previously noted concern."
       },
-      "current_stage": "independent_author_code_and_tests_pr_open_unmerged",
-      "human_case": "REAL_WORLD_IMPACT.md#65-hermes-agentaiの安全拒否を通信障害と誤判定する境界開発者がマスターの指摘を実装"
+      "current_stage": "third_party_author_twice_independently_corrected_after_master_reviews_plus_distinct_public_reviewer_carry_pr_open_unmerged",
+      "human_case": "REAL_WORLD_IMPACT.md#65-hermes-agentaiの安全拒否を通信障害と誤判定する境界開発者がマスターの指摘を実装",
+      "second_review_response": {
+        "by": "acruz6421-bot",
+        "direct_person_credit": "Author explicitly said 'Thank you again @Nakagawa-master' and cited specific source detail about absent include_usage for native Gemini/unsupported stream options.",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6666195530",
+        "actual_code_sha": "47ee80cbf3eec97e56f838f2fe6977581715ee4c"
+      },
+      "independent_follow_on_carrier": {
+        "by": "kvnloo",
+        "role": "distinct PR commenter and source reviewer; not proof of model adoption or personal first-rank support",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667556933",
+        "attribution": "Explicitly referenced 'Nakagawa-master for the completed-stream inverse' while deriving an independent marker-lifetime edge.",
+        "new_action": "Separate source review with specific reproducer for early exit and marker ID leak, after Master's producer inverse.",
+        "author_follow_on_fix": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667770552"
+      }
     },
     {
       "case_id": "litellm-50013-end-to-end-caller-deadline-across-retry-backoff",
