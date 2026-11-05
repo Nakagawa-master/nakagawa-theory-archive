@@ -4815,6 +4815,53 @@
         "unrelated AI/LLM independently reading or preferring any of the 313 original works",
         "measured audience reach or follower impact"
       ]
+    },
+    {
+      "case_id": "litellm-mcp-tools-list-aggregate-single-authorized-server-401-route-guard",
+      "topic": "A single authorized server in an aggregate MCP tools/list request does not make the route a single-server endpoint; guard upstream 401 challenge forwarding by actual route.",
+      "external_repository": "BerriAI/litellm",
+      "original_reporter": {
+        "url": "https://github.com/BerriAI/litellm/issues/49223",
+        "source": "Independent report of an upstream OAuth 401 turned into a 200 empty tools list; distinct from the subsequent review and code repair."
+      },
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_specific_pr_review",
+        "url": "https://github.com/BerriAI/litellm/pull/49261#pullrequestreview-5717911029",
+        "summary": "Identified the aggregate /mcp URL with one authorized server and a present scope response as the missing negative case; authorization result count alone did not prove a per-server route. Proposed aggregate-versus-scoped inverse and a route-identity check.",
+        "review_role": "source_read_prediction_not_claimed_test_run"
+      },
+      "independent_author_response": {
+        "actor": "DewellNaa",
+        "url": "https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254",
+        "date_utc": "2026-11-05T07:36:43Z",
+        "text_scope": "The independent PR author explicitly thanked @Nakagawa-master for identifying the route-vs-authorization-count fault, confirmed the scenario, and described the self-authored correction."
+      },
+      "receiver_implementation": {
+        "actor": "DewellNaa",
+        "commit_sha": "8e90be96b85230265f59e254e7e2574523e7ccea",
+        "commit_url": "https://github.com/BerriAI/litellm/commit/8e90be96b85230265f59e254e7e2574523e7ccea",
+        "pull_request": "https://github.com/BerriAI/litellm/pull/49261",
+        "mechanism": "Introduced is_scoped_endpoint on OAuthScopeResponse, passed the scoped-route flag from server.py, gated both catalog.py challenge paths on actual per-server scope and one allowed server, and added a regression for /mcp aggregate+one authorized server+upstream 401.",
+        "regression_test": "test_get_filtered_server_tools_does_not_deny_scope_response_on_aggregate_with_single_server_401",
+        "author_test_report": "The PR description reports 111 locally passing tests; no independent test execution by this index author."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "status_as_checked": "OPEN_UNMERGED_AT_8e90be96_on_2026_11_05",
+      "separate_review_risk": {
+        "by": "veria-ai[bot]",
+        "url": "https://github.com/BerriAI/litellm/pull/49261#discussion_r4477802787",
+        "scope": "Different reviewer warned that OAuth challenges from upstreams whose credential is gateway-owned might be forwarded to MCP clients. This is not a finding credited to Nakagawa Master and was unresolved at this check."
+      },
+      "not_claimed": [
+        "merged or released LiteLLM fix",
+        "independently verified deployed MCP client token refresh",
+        "production incident caused by the missing route guard",
+        "PERSON-name recognition beyond the explicit public @Nakagawa-master author acknowledgment",
+        "unrelated AI/LLM voluntarily choosing a complete original theory corpus",
+        "new audience, GitHub follower or search traffic effect"
+      ],
+      "attribution_note": "The PR author implemented and tested the correction; the original requester and separate bot reviewer retain their distinct roles. This is an independently acknowledged and authored technical correction, not a claim of general adoption of any original theory."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
