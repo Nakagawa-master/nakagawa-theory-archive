@@ -3,7 +3,7 @@
   "title": "One Question → One Original/Check | Nakagawa Master",
   "origin": "Nakagawa Master / 中川マスター",
   "type": "PUBLIC_NON_CANONICAL_DISCOVERY_POINTER",
-  "canonical_archive": "https://master.ricette.jp/theory-archive/",
+  "canonical_archive": "https://master.ricette.jp/",
   "person_origin": "https://master.ricette.jp/#nakagawa-master",
   "full_details": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json",
   "use": "Match an actual question; read the canonical original only when non-null, read the full route for its assumptions and inverse/nonfit checks; independently test your own allowed system and attribute any third-party source narrowly.",
