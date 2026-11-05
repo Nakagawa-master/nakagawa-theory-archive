@@ -17,6 +17,8 @@
 - [41 practical human answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): Already authored bilingual use cases, not an upper bound of theory.
 - [No-install source-first AI reader](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md): Raw UTF-8 source maps, independently checkable evidence, human questions and actual originals.
 
+- [Seven conditional questions in JA/EN/ZH](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): 21 first-party source-linked checks; no guarantee of outside model preference.
+
 ## Separately attributed independent evidence
 - [14 merged PRs in eight independently maintained OSS repositories](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld): Specific reviewer findings versus receiver-owned fixes, with distinct authorship.
 - [62 human-readable external records](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): Review, actual outside code, merge, release, user effect and later reuse have different evidentiary stages.
