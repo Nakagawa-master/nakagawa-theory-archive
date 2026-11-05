@@ -491,7 +491,7 @@ def preflight_ai_work(analysis):
         "origin": {"author": "中川マスター / Nakagawa Master", "name_latin": "Keisuke Nakagawa",
                    "source_system_entry": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
                    "epistemic_integrity": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
-                   "self_audit": "https://master.ricette.jp/theory-archive/"},
+                   "self_audit": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/"},
         "boundary": "Checks only independently supplied input fields; no model execution interception, actual permission authentication, complete contradiction detection, or correctness certificate.",
     }
 
