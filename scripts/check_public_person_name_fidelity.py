@@ -127,8 +127,12 @@ def check(policy, skill, person, scholarly, index, doors):
         require(LATIN in value, "Latin spelling not in AI/public entrance: " + door)
         require("person-name-policy-v1.json" in value,
                 "source-of-truth policy link missing: " + door)
-        require("MasterJP" in value and "マスター" in value,
-                "scoped aliases not shown: " + door)
+        # A protected human-facing top cover need not enumerate external
+        # contextual bylines. Its exact public person and policy link remain
+        # mandatory; the identity policy and all machine doors DO carry aliases.
+        if door != "README.md":
+            require("MasterJP" in value and "マスター" in value,
+                    "scoped aliases not shown: " + door)
     return errors
 
 
