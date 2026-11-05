@@ -33,6 +33,19 @@
     },
     {
       "@type": "CreativeWork",
+      "name": "LiteLLM second upstream developer implements Nakagawa Master's required-key type-contract correction and regression test",
+      "url": "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6574736711",
+      "description": "In LiteLLM PR #49624, independent upstream author @lester076 directly acknowledged @Nakagawa-master's precise PEP 655 finding: declaring MCPToolResult with TypedDict(total=False) made existing tool_call_id, result and name keys unintentionally optional. The developer implemented only is_error as NotRequired[bool], restored the previous three required keys, and added a regression assertion. Earlier original issue #49359 shows a separate initial developer @chauvuusvn accepting the same finding; the upstream author later included native co-author credit. The PR remains open as last checked.",
+      "citation": [
+        "https://github.com/BerriAI/litellm/issues/49359#issuecomment-6537951352",
+        "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6581966268"
+      ],
+      "about": {
+        "@id": "https://master.ricette.jp/#nakagawa-master"
+      }
+    },
+    {
+      "@type": "CreativeWork",
       "name": "Independent LangGraph participant recognizes Nakagawa-master's retry-state source analysis and its operational implications",
       "url": "https://github.com/langchain-ai/langgraph/issues/9493#issuecomment-6584444898",
       "description": "In the public LangGraph interrupted-retry issue #9493, an unrelated participant @belalshafeq expressly described Nakagawa-master's source inspection as correct, independently restated the per-logical-run retry-attempt persistence distinction, and explained the possible service-outage/user-prompt loop and cost implications. Other participants separately provided exact reproductions and proposed different mechanisms. This source records independent technical acknowledgment of the public handle, not upstream acceptance of a completed fix or a claim that the participant adopted the original theory corpus."
