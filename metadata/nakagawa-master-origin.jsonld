@@ -24,6 +24,15 @@
     },
     {
       "@type": "CreativeWork",
+      "name": "MemberJunction engineer confirms Nakagawa Master's SQL batch finding, independently authored fix, and asks about the person behind the reviews",
+      "url": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685",
+      "description": "In MemberJunction PR #6339, independent implementation author @AN-BC directly thanked @Nakagawa-master for identifying the same-name/different-value SQL batch parameter collision, described the independently implemented token-aware correction and tests, noted substantive reviews across other MemberJunction PRs, and voluntarily asked who was behind the Nakagawa-master GitHub handle. This is a source-native technical adoption and a direct person-interest statement; the PR was still open at last check.",
+      "about": {
+        "@id": "https://master.ricette.jp/#nakagawa-master"
+      }
+    },
+    {
+      "@type": "CreativeWork",
       "name": "Nakagawa Master official homepage — original theory corpus and person",
       "url": "https://master.ricette.jp/"
     },
