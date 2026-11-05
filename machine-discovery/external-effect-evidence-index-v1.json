@@ -2226,6 +2226,35 @@
         "merged_at_utc": "2026-10-02",
         "commit": "45ee202cb14c171c73185a3dbbd89ed1203f2604",
         "scope": "Base Host implementation merged. The follow-on policy-stage ordering line later became PR #13406 and is now merged and included in stable v0.25.0; unrelated project-owned changes are not assigned Nakagawa causal credit."
+      },
+      "independent_second_order_source_consumption": {
+        "receiving_repo": "laclance/OSSOpportunityScout",
+        "distinct_receiver_actor": "laclance",
+        "source_kind": "owner-authored public GitHub evidence comment, not original Nakagawa theory text",
+        "source_comment": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402#issuecomment-5985354214",
+        "source_specific_behavior": "The public comment lists QwenLM/qwen-code external implementation PR #13406 and its qualified full URL; OSSOpportunityScout's existing shorthand scanner incorrectly attempted a same-number PR lookup under Nakagawa-master/nakagawa-theory-archive when scanning that comment, as documented by the independent developer's production observation.",
+        "independent_source_to_code": {
+          "pull_request": "https://github.com/laclance/OSSOpportunityScout/pull/148",
+          "title": "Avoid cross-repository PR shorthand misattribution",
+          "author": "laclance",
+          "commit": "12e5aedc249711b0c7311d6e05b4bc0c59f96061",
+          "merged_at": "2026-10-07T15:50:13Z",
+          "test": "tests/strategic/test_competition.py::test_linked_pr_ignores_external_implementation_pr_number_echo",
+          "positive_inverse": "The added tests separately preserve a true same-repository shorthand lookup, and do not suppress distant external references with coincidentally equal numbers.",
+          "release": "https://github.com/laclance/OSSOpportunityScout/releases/tag/v1.0.14",
+          "released_at": "2026-10-09T11:26:29Z",
+          "release_ancestry": "GitHub compare from PR merge commit to v1.0.14: ahead 55, behind 0, confirming merge is an ancestor of the stable release."
+        },
+        "evidence_stage": "independent_external_tool_second_order_processing_source_commit_merged_and_published",
+        "attribution_boundary": "The outsider used a Nakagawa-master authored public record as a concrete negative fixture for its own scanner; the outsider discovered and implemented its own parser repair. This demonstrates independent processing of an author's public material, NOT independent recognition of the human author's judgment as authority, adoption of the original theory corpus, a direct reply to Nakagawa Master, or a demonstrated installed end-user effect.",
+        "not_claimed": [
+          "outside author read any canonical theory original",
+          "outside model voluntarily ranked the 313 originals",
+          "evidenced GitHub Follower/AI supporting-link impression/Traffic change",
+          "the outsider's code was written by Nakagawa Master",
+          "real installed users ran the v1.0.14 correction",
+          "large-scale person trust or affection"
+        ]
       }
     },
     {
