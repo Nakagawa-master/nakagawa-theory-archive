@@ -4757,9 +4757,9 @@
         "mechanism": "The actual accepted-head code passes an Inngest event id derived from runId, the claimed suspension snapshot timestamp and toolCallId, so retries for the same suspended-tool approval retain an event identity. The rejected-send catch now documents that the retry is deduplicated rather than falsely asserting the receiver never accepted the event.",
         "external_test_report": "The independent author reports exercising the implementation against a real Inngest dev server by sending each resume event twice: identifier present gave one tool execution and two model requests; identifier stripped gave two tool executions and three model requests.",
         "pull_request": "https://github.com/mastra-ai/mastra/pull/29451",
-        "state_at_verification": "open_unmerged_author_follow_on_leased_resume_claim_at_1f459788",
+        "state_at_verification": "open_unmerged_at_2026-11-05T13:57:01Z",
         "head_sha": "5689e0518013f19bbfa68bec9fea497a73503395",
-        "current_head_sha": "1f459788df4cd64c3408d1d4318d8546dbe65e8a",
+        "current_head_sha": "e1f189e64c7ea78f9375a9ad3d59435d217ac93a",
         "current_event_id_mechanism": "Follow-on author commit 062c82b913 moved receiver-side event id from runId:suspension-timestamp:toolCallId to runId:suspension-timestamp, because different tool approvals of the same parked suspension must also deduplicate after an ambiguous sender acknowledgment.",
         "follow_on_commit_url": "https://github.com/mastra-ai/mastra/commit/062c82b913c890fe181ddc8b9dda46ca6c843ef7"
       },
@@ -4790,7 +4790,11 @@
         "commit": "https://github.com/mastra-ai/mastra/commit/1f459788df4cd64c3408d1d4318d8546dbe65e8a",
         "base": "062c82b913c890fe181ddc8b9dda46ca6c843ef7",
         "result": "Author changed five files, adding a time-bounded 60-second claim, lease renewal/fencing and crash/abort regression scenarios, following the separate NikAiyer review. This additional code change is not attributed to Nakagawa Master.",
-        "stage": "independent_code_change_open_unmerged; no fresh complete CI, released distribution or affected-user confirmation established"
+        "stage": "independent_code_change_open_unmerged; no fresh complete CI, released distribution or affected-user confirmation established",
+        "latest_commit": "https://github.com/mastra-ai/mastra/commit/e1f189e64c7ea78f9375a9ad3d59435d217ac93a",
+        "latest_head": "e1f189e64c7ea78f9375a9ad3d59435d217ac93a",
+        "latest_specific_changes": "Independent PR author followed separate NikAiyer's review with failure/cancellation terminal handling, claim-renewal ownership protection, queued call suspension reporting and focused regressions. The changes are descendants (ahead 2/behind 0) of the prior 1f459788 head; separate reviewer findings and fixes are theirs, not additional Nakagawa Master-originated issues. The PR remains open; no stable release or independent installed-user effect is established.",
+        "reviewer_recheck": "https://github.com/mastra-ai/mastra/pull/29451#pullrequestreview-5780770393"
       }
     },
     {
