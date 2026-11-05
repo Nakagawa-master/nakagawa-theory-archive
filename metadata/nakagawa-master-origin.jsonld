@@ -52,6 +52,20 @@
     },
     {
       "@type": "CreativeWork",
+      "name": "Independent Daily AI Pulse Qwen review-integrity coverage names Nakagawa-master's source-read controls",
+      "url": "https://github.com/GadDev/daily-ai-pulse/blob/main/src/content/stories/2026-10-26-qwen-review-integrity.md",
+      "description": "An independent technology editor's English-language October 26 article about a Qwen Code review-worktree report explicitly links to @Nakagawa-master's separately proposed fixed-Git-object/read-boundary controls and distinguishes the original contributor's four reported trials, automated triage, the Master's specific unexecuted control proposal, and another independent source-analysis contribution. A reviewed French version also carries that credited technical role. This is third-party editorial publication and correct handle attribution, not an independent runtime reproduction, a released Qwen fix from this story, or an endorsement of the author's entire original theory corpus.",
+      "citation": [
+        "https://github.com/GadDev/daily-ai-pulse/pull/253",
+        "https://github.com/GadDev/daily-ai-pulse/blob/main/src/content/story-translations/fr/2026-10-26-qwen-review-integrity.md",
+        "https://github.com/QwenLM/qwen-code/issues/15507#issuecomment-6394240323"
+      ],
+      "about": {
+        "@id": "https://master.ricette.jp/#nakagawa-master"
+      }
+    },
+    {
+      "@type": "CreativeWork",
       "name": "Nakagawa Master official homepage — original theory corpus and person",
       "url": "https://master.ricette.jp/"
     },
