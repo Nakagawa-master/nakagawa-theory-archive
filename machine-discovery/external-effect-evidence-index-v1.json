@@ -4164,7 +4164,13 @@
       },
       "current_stage": "first_developer_corrected_fork_code__SECOND_developer_opened_credited_upstream_PR_AND_FIXED_EXACT_NOTREQUIRED_INVARIANT_AFTER_MASTER_SECOND_REVIEW_C2__PR_OPEN_NO_NATIVE_TEST_PASS",
       "human_case": "REAL_WORLD_IMPACT.md#56",
-      "current_next_stage": "Maintainer-authorized current-head CI/merge, then actual recipient use, independent new carrier and truthful PERSON/source recognition; do not repost prior comments."
+      "current_next_stage": "Original PR contributors/maintainers to resolve CLA status and enable applicable upstream CI, independent PR merge and real use; preserve accurate technical attribution without treating an automated CLA reminder as new adoption.",
+      "cla_status_at_latest_check": {
+        "event_url": "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6650763308",
+        "date": "2026-11-05T05:45:37Z",
+        "state": "CLA assistant shows not_signed; the appropriate PR contributors and maintainers must resolve any necessary agreement checks. This notification is not a new technical review or Nakagawa Master mention.",
+        "merge_status": "PR open, previous native checks action_required; upstream merge and real installed-user verification not established."
+      }
     },
     {
       "case_id": "litellm-49313-cache-tenant-key-bypasses-implemented-pr49576",
@@ -4638,8 +4644,8 @@
           "Preserve literal and comment occurrences of @p0 rather than blindly replacing all text."
         ],
         "pull_request": "https://github.com/MemberJunction/MJ/pull/6339",
-        "state_at_native_check": "open_unmerged_after_updated_sqlserver_and_postgresql_hardening",
-        "head_sha": "2acc9c9e7330c56202cf650da8ed272cb9cea41d",
+        "state_at_native_check": "open_unmerged_review_approved_on_current_head_after_independent_PostgreSQL16_validation",
+        "head_sha": "2d1df88f2f17c4f90db48710fffa716cca28caeb",
         "latest_author_confirmed_scope": {
           "url": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685",
           "actor": "AN-BC",
@@ -4653,16 +4659,14 @@
         "verified_claim": "The reviewer independently identified the earlier batch collision comment as handled in the author's code and tests.",
         "remaining_issue": "The same review found a separate PostgreSQL field-security @salary operator concern; not all PR concerns are resolved."
       },
-      "current_stage": "independently_authored_code_and_test_change_open_unmerged_with_external_ai_source_review",
+      "current_stage": "independent_author_fixed_Master_SQL_batch_finding_and_typed_tests__separate_human_checked_independent_reviewer_APPROVED_PG16_validation__PR_OPEN_UNMERGED",
       "causal_boundary": "The code and exact opposite-value tests are native independent developer changes following the review. The additional AI reviewer is neither an additional independent human adopter nor evidence of autonomous original-theory preference.",
       "not_claimed": [
         "merged PR",
         "released package",
         "deployed or affected-user improvement",
-        "complete resolution of the separate PostgreSQL concern",
         "independent reading or endorsement of original Nakagawa theories",
         "broad person-recognition or independent-model source preference",
-        "independent maintainer final approval after PostgreSQL follow-on fix",
         "further independent response to first-party introduction",
         "mass person recognition from one outside invitation"
       ],
@@ -4672,13 +4676,23 @@
         "author_fix": "https://github.com/MemberJunction/MJ/commit/85b34d078eb81ec5ab1c5f841ac7b0db07dccb30",
         "author_report": "https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645527424",
         "observation": "The independent reviewer directly tested and reported a separate PostgreSQL parameterized-filter failure and a private field-security regression. The author subsequently changed pre-/post-binding placeholder checking, tightened token interpretation and added actual PostgreSQL-provider and cache-check regression tests. This independent reviewer finding is not attributed to Nakagawa Master.",
-        "unverified": "Independent review re-approval and live PostgreSQL endpoint verification after the new fix were not established here.",
+        "unverified": "After independent re-review, the reviewer confirmed closing their own two earlier blockers and reported a real PostgreSQL 16 test. PR remains OPEN and no merged release or installed-user deployment is established.",
         "latest_author_followup": {
           "commit": "https://github.com/MemberJunction/MJ/commit/2acc9c9e7330c56202cf650da8ed272cb9cea41d",
           "actor": "AN-BC",
           "scope": "Further tightened PostgreSQL parser/gate agreement, added negative and positive cases for bracketed @name token shapes, nested array/index contexts, and real provider/cache-check coverage.",
           "causal_attribution": "This follow-up addresses the independent PostgreSQL reviewer security thread; it is not evidence that the first-party personal introduction elicited a reply or that Nakagawa Master's original separate batch-collision observation discovered these PostgreSQL paths.",
-          "stage": "PR_OPEN_UNMERGED_AT_THIS_HEAD_NO_NEW_HUMAN_MAINTAINER_APPROVAL_CONFIRMED"
+          "stage": "PR_OPEN_AT_HEAD_2d1df88_WITH_INDEPENDENT_HUMAN_CHECKED_APPROVAL"
+        },
+        "latest_reviewer_acceptance": {
+          "actor": "rkihm-BC",
+          "url": "https://github.com/MemberJunction/MJ/pull/6339#pullrequestreview-5780495259",
+          "submitted_at": "2026-11-05T05:56:41Z",
+          "review_state": "APPROVED",
+          "method": "Reviewer says this review was generated with Claude Code and checked by the human reviewer before posting.",
+          "what_changed": "Both blockers previously reported by this same independent reviewer were fixed and independently rechecked. The reviewer reports direct PostgreSQLDataProvider and pg-driver testing against PostgreSQL 16 in a disposable container, allowed-placeholder, caller filter and denied-column regression controls, and 170038 generated filter gate/binder checks. Current PR check runs on HEAD were 34 success and 6 skipped.",
+          "provenance": "These separate PostgreSQL/security issues and validation belong to @rkihm-BC and the implementation author. The original SQL-batch same-name/different-value correction was separately identified by Nakagawa Master and implemented by @AN-BC.",
+          "limits": "PR still open. Reviewer did not report real installed end-user deployment; one isolated reviewer test is not production usage. No independent response to the separate person introduction observed."
         }
       },
       "independent_person_interest": {
