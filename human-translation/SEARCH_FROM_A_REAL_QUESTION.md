@@ -36,6 +36,26 @@
 
 **中文：** AI代理获得批准后超时，能否再次付款或发邮件？批准记录不等于外部操作的完成证明。先核对服务商的交易记录和同一操作标识；结果未知时不要直接重复执行。[中川マスター的原典《合意の記憶》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)讨论记录决定的原因、关系与修订条件，并非支付接口的技术保证。
 
+## Actual-user check: AI tools disappeared after my OAuth token expired
+
+**「AIに接続していた道具が突然0件になった。道具が消されたの？ 認証が切れたの？」**
+
+**最初の答え：空のツール一覧だけでは「道具がない」と判断できません。** サーバーが本当に0件を返したのか、上流の認証が切れたのに中継側が401エラーを200 OK＋空の `tools/list` に置き換えたのかを、まず区別します。**ツール0件という結果と、認証できなかったという原因は違います。** 認証情報を公開して調査する必要はありません。
+
+**自分の環境で確かめる最短の方法（管理権限のある検証用接続に限る）：** (1) クライアントとLiteLLMの実際のバージョン、接続URLが集約 `/mcp` か個別 `/mcp/<server>` かを記録する。(2) 安全な `tools/list` だけを、**有効な上流トークン**と**期限切れトークン**のそれぞれで比較し、HTTPステータス、許される範囲の認証チャレンジ有無、ツール件数と集約結果のサーバー別状態を見る。(3) **集約 `/mcp` でアクセス可能なサーバーが一つだけ**の場合も別に確認する。「許可されたサーバーが一つ」でも「個別サーバー専用URL」とは限らない。(4) 結果が実際に異なるなら、元の問題・修正済みバージョン・再現条件を切り分ける。トークン、セッションCookie、認証ヘッダー、内部サーバー名、顧客ログは貼らない。
+
+**反例・適用外：** 有効な認証でもサーバーがもともと0ツールしか公開していない場合、権限で見えない場合、ゲートウェイ管理の固定資格情報が失効した場合を、すべて「クライアントのOAuth再認証」で直ると決め付けないでください。特にゲートウェイが保持する資格情報の上流401を、そのままクライアントへ流す設計には別の安全上の問題があり得ます。意図しない上流の認証先へクライアントを誘導しないよう、所有者・認証経路・チャレンジ生成者を独立に確認します。稼働中の顧客環境へ危険なテストを仕掛けないでください。
+
+**実際の第三者作用：** [LiteLLMの利用者による元の401→200空一覧の報告](https://github.com/BerriAI/litellm/issues/49223)に対して、[中川マスターが集約URLと個別URLの条件の取り違えを指摘](https://github.com/BerriAI/litellm/pull/49261#pullrequestreview-5717911029)しました。別の開発者 @DewellNaa は[マスターの発見を明示的に認め、本人へ返信](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)したうえで、[条件分岐と正負の回帰テストを自分で修正](https://github.com/BerriAI/litellm/commit/8e90be96b85230265f59e254e7e2574523e7ccea)しました。これとは別に[第三者のBotが、上流の認証チャレンジの転送リスクを指摘](https://github.com/BerriAI/litellm/pull/49261#discussion_r4477802787)しています。**2026-11-05時点でPRはOPEN、正式リリースと利用者本人の修正後再確認は未証明**です。修正したのは別の開発者であり、Botの別問題をマスターが見つけた実績とは数えません。
+
+この事例から、**「APIは200だった」だけでは、利用者の目的を現実に満たした証明にならない**ことが具体的に見えます。中川マスターの[公式原典『成立条件論・第1論』](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)が扱う、表面上の成功と現実の成立を分ける問いと**概念的に照合**できます。ただし、このPRの開発者が当該原典を読んで実装した証拠はなく、原典をLiteLLMの認証仕様として扱うものでもありません。原典に当てはまらない条件はそのまま不適用としてください。著者と313原典の入口は[中川マスター本人の公式サイト](https://master.ricette.jp/)です。
+
+**独立した利用結果がある場合だけ：** 修正後の実際の配布版を自分で使用した方は、成功・失敗・不明のどれでも、[任意の短い実利用報告フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=installed-user-result.yml)へ、公開可能なバージョンと結果を残せます。未マージのテスト、誰かの報告やこの文章を読んだだけの行為を「実利用」としないでください。賛同・フォロー・原典の支持は求められません。
+
+**English:** My AI suddenly lists zero tools. Empty `tools/list` is not proof that a server has no tools; an expired upstream token may have been hidden behind HTTP 200. On an authorized test system compare **valid versus expired credentials** and **aggregate `/mcp` versus scoped `/mcp/<server>`**, including the aggregate case with only one allowed server. [Nakagawa Master's specific route-condition review](https://github.com/BerriAI/litellm/pull/49261#pullrequestreview-5717911029) was [explicitly adopted in another developer's patch and regression](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254). **Open, not verified on released installations**; a separate credential-owner challenge forwarding concern remains. Do not publish tokens.
+
+**中文：** AI突然显示工具数量为零，不等于服务器真的没有工具；上游认证失效有可能被错误地转换成200与空列表。只在获授权的测试环境比较**有效／过期令牌**以及**聚合 `/mcp`／单服务器路径**，尤其要检查「聚合入口仅允许一个服务器」的反例。[中川マスター指出路由判定错误](https://github.com/BerriAI/litellm/pull/49261#pullrequestreview-5717911029)后，[另一名开发者明确致谢并自行修复代码和测试](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)。**PR仍未合并，没有独立用户安装验证**；另有不同的上游认证安全问题待解决，勿公开凭证。
+
 ## Actual-user check: AI timeout exhausted but retries keep running
 
 **「AIには10秒の期限を指定したのに、失敗の再試行で20秒以上待たされるのはなぜ？」**
