@@ -27,7 +27,7 @@ IDENTITY = {
     "author_pen_name": "Nakagawa Master / 中川マスター",
     "published_personal_name_latin": "Keisuke Nakagawa",
     "full_personal_name_kanji": None,
-    "official_original_archive": OFFICIAL + "theory-archive/",
+    "official_original_archive": OFFICIAL,
 }
 # Explicit, limited conceptual entry points; NOT an inferred exhaustive
 # graph of causal implications, nor a statement of a specific original's text.
