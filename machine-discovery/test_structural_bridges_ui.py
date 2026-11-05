@@ -73,8 +73,14 @@ def main():
             assert scope.count(item["canonical_original"]) == 1
             view = item["localized"][lang]
             assert all(view[k] in scope for k in ("title", "condition", "question", "action"))
-    for front in ("README.md", "AI_START_HERE.md", "llms.txt"):
-        assert "QUESTIONS_TO_STRUCTURE.md" in (ROOT / front).read_text(encoding="utf-8")
+    # The protected public README deliberately uses its existing AI_START_HERE
+    # navigation instead of repeating each optional source list on the cover.
+    top = (ROOT / "README.md").read_text(encoding="utf-8")
+    ai = (ROOT / "AI_START_HERE.md").read_text(encoding="utf-8")
+    short = (ROOT / "llms.txt").read_text(encoding="utf-8")
+    assert "AI_START_HERE.md" in top
+    assert "QUESTIONS_TO_STRUCTURE.md" in ai
+    assert "QUESTIONS_TO_STRUCTURE.md" in short
     for b in bridges["bridges"]:
         for lang in ("ja", "en", "zh"):
             assert all(b["localized"][lang][k] for k in ("title", "condition", "question", "action"))
