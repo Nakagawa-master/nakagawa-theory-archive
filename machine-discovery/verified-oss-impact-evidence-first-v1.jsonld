@@ -21,23 +21,24 @@
         "https://zeroichi.media/author/masterjp"
       ],
       "disambiguatingDescription": "中川マスター / Nakagawa Master is the published pen name of Keisuke Nakagawa. MasterJP is his author-confirmed byline on ZEROICHI at https://zeroichi.media/author/masterjp. This mapping identifies that publisher's byline; it is not a name match to unrelated MasterJP accounts. Original works: https://master.ricette.jp/. GitHub author account: https://github.com/Nakagawa-master.",
-      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. Fourteen merged GitHub PRs in eight receiving repositories have evidence links in this dataset."
+      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. 14 merged GitHub PRs in eight receiving repositories have evidence links in this dataset."
     },
     {
       "@type": "CreativeWorkSeries",
-      "@id": "https://master.ricette.jp/theory-archive/#nakagawa-original-theories",
+      "@id": "https://master.ricette.jp/#nakagawa-original-theories",
       "name": "Nakagawa Master — 313 interconnected original works",
       "creator": {
         "@id": "https://master.ricette.jp/#nakagawa-master"
       },
-      "url": "https://master.ricette.jp/theory-archive/",
+      "url": "https://master.ricette.jp/",
       "subjectOf": {
         "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset"
       },
       "citation": [
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-313-v1.json"
-      ]
+      ],
+      "description": "The author's official homepage leads to each separately published canonical Parent original; the 2025 /theory-archive/ page is a narrow three-document publication experiment and not this entire corpus. The 313 documented originals permit context-dependent and cross-source applications beyond a fixed list."
     },
     {
       "@type": "Dataset",
@@ -76,7 +77,7 @@
         {
           "@type": "PropertyValue",
           "name": "Documented cases in the linked human impact record, across various evidence stages",
-          "value": 61
+          "value": 62
         },
         {
           "@type": "PropertyValue",
