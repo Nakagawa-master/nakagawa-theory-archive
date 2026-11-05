@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共62例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共68例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1578,6 +1578,42 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 **另一名开发者、PR作者[@ryanl-cerebras明确感谢中川マスター并确认修复、补充两个原本缺失的测试](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6136077030)。** 检查当前[受方PR的代码与测试差异](https://github.com/run-llama/llama_index/pull/22769/files)（HEAD `cf875b6778e75f71eb8d448e0db587b3c333fae7`）可以看到：子类改为根据**最终合并后的 `model_kwargs`**是否含有 `max_completion_tokens`，决定是否删除旧别名；新增 `additional_kwargs` 与逐次调用的两条回归测试。该作者报告五项重点测试、Ruff、diff检查通过；我们并未在这里执行真实提供方调用或新的独立CI。实际代码与测试作者是 **@ryanl-cerebras**，不是中川マスター。
 
 **已验证阶段：** 中川マスター的源码条件 → 外部开发者明确接受 → 接收方自行修改代码与测试（C2）。[11月3日作者再次请求正式维护者审批](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6607106290)，PR仍 **OPEN**，尚不能算作正式合并、发布、实际用户修复效果、另一独立媒体重复传播，或外部开发者采用了某一特定原典。要提高判断等级必须取得接收方新证据，不能把资料公开等同于不相连AI已经自主采纳。
+
+## 63. LiteLLM｜未收录模型的工具被错误删除：真实用户测试与开发者的四状态修复
+
+**模型本来支持工具，但模型能力表缺少记录时，LiteLLM会删掉工具定义。** [问题 #48145](https://github.com/BerriAI/litellm/issues/48145) 的真实用户 @mramendi 在 v1.106.2 中检查 OpenCode→LiteLLM→Nano-GPT 的请求。用户按照[中川マスター提出的对照测试](https://github.com/BerriAI/litellm/issues/48145#issuecomment-6389202066)验证：客户端已经发送工具定义和 `reasoning_effort`，但 LiteLLM 发往提供方的请求中两者都被删除。
+
+**另一位上游开发者 @anisayakmitra-in 明确感谢中川マスター，随后[实现“缺少能力记录”与“明确不支持”的四状态优先级逻辑和测试](https://github.com/BerriAI/litellm/pull/48191#issuecomment-6388687981)。** 在进一步审查后，作者又[撤销了与工具修复无关的安全扫描例外](https://github.com/BerriAI/litellm/pull/48191#issuecomment-6408754126)。[PR #48191仍然开放](https://github.com/BerriAI/litellm/pull/48191)。`reasoning_effort` 的转发是独立问题，真实用户的日志验证的是修复前故障，而不是新版本安装后的效果。
+
+## 64. Hermes Agent｜重复文字不代表同一次请求：开发者以消息ID修复恢复流程
+
+**用户两次提交完全相同的话，也可能是两个独立请求。** 在[Hermes桌面端恢复PR #148917](https://github.com/NousResearch/hermes-agent/pull/148917)中，中川マスター指出：已有持久化队列与新的待执行请求文字相同时，恢复流程可能错误地隐藏新提交的请求。[原始代码审查](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6632917906)。
+
+**独立开发者 @steinnes 直接回复 `@Nakagawa-master Fixed in c9616ee...`，并[加入基于 `message_uid` 和内容的双重识别以及回归测试](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330)。** 测试覆盖同一次请求去重、相同文字的不同请求及反复重新加载。[PR仍然开放](https://github.com/NousResearch/hermes-agent/pull/148917)。没有独立ID的旧快照仍可能显示重复项，这是开发者公开说明的适用边界。
+
+## 65. Hermes Agent｜模型的真实安全拒绝被当作网络断线：接收方修正代码和测试
+
+**模型出于安全原因拒绝回答，与网络流中断不能混为一谈。** [Hermes PR #149574](https://github.com/NousResearch/hermes-agent/pull/149574)最初把没有额外拒绝字段的空 `content_filter` 视为网络故障并重试。中川マスター[指出Chat Completions规范允许这种真实安全拒绝，并给出正反对照测试](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788418381)。
+
+**PR作者 @acruz6421-bot 明确感谢 `@Nakagawa-master`，亲自[提交 f36e9d31修正判定逻辑并加入两组回归测试](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790)。** 对修改后的代码，[中川マスター又发现“流中断”标志的生成条件仍有误判可能](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056)。[PR目前仍开放](https://github.com/NousResearch/hermes-agent/pull/149574)。首次代码与测试采纳已有公开证据，后续修正及正式合并仍在审查中。
+
+## 66. LiteLLM｜只允许连接一个MCP服务器，不代表请求来自单一服务器专用地址
+
+**聚合 `/mcp` 入口即使只允许一个服务器，也不等于 `/mcp/<server>` 专属入口。** 在[LiteLLM PR #49261](https://github.com/BerriAI/litellm/pull/49261)中，中川マスター[指出将授权服务器的数量误当作请求URL类别](https://github.com/BerriAI/litellm/pull/49261#pullrequestreview-5717911029)，会导致错误地向聚合入口返回401认证挑战。
+
+**作者 @DewellNaa 明确认可该审查，并[在8e90be9中加入 `is_scoped_endpoint` 判断与聚合入口的逆条件测试](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)。** [PR尚未合并](https://github.com/BerriAI/litellm/pull/49261)；上游认证挑战能否安全转交客户端是另一项仍待审查的问题。
+
+## 67. LiteLLM｜重试等待用完用户的时间上限后，系统仍可能继续调用AI
+
+**如果等待已经耗尽30秒的期限，却仍然发起下一次请求，就无法遵守用户设置的限制。** 在[用户报告 #49751](https://github.com/BerriAI/litellm/issues/49751)的[修复PR #50013](https://github.com/BerriAI/litellm/pull/50013)中，中川マスター[指出重试等待后的时间检查和仅在请求正文指定超时的两条遗漏路径](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016)。
+
+**另一位开发者 @KJyothirmayi-2025sl93025 按照审查意见修正了发送前期限检查和单次请求时间预算，随后[提交95b3bf4修复仅通过请求正文传递的超时](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106)。** [PR仍然开放](https://github.com/BerriAI/litellm/pull/50013)。这是一项独立开发者完成的代码修改，面向实际使用者的发行和效果验证尚待后续。
+
+## 68. MemberJunction｜批量SQL的同名参数对应不同的值：外部工程师修正并主动询问原审查者
+
+**两条SQL语句都使用 `@p0`，并不表示它们的参数值相同。** 在[MemberJunction PR #6339](https://github.com/MemberJunction/MJ/pull/6339)中，中川マスター发现批量执行时同名参数冲突可能造成跨语句的错误绑定。
+
+**独立工程师 @AN-BC 向 `@Nakagawa-master` 致谢，并[自行实现基于SQL词法分析的安全重命名与回归测试](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 开发者还主动表示注意到中川マスター对多项MemberJunction工作的具体分析，并询问该账号背后的本人。中川マスター已[以公开姓名与原典网站作答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)。[PR仍然开放](https://github.com/MemberJunction/MJ/pull/6339)。该例同时保留独立代码修复与直接的人物关注的原始证据。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
