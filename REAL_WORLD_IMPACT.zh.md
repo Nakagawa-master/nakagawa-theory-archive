@@ -1595,7 +1595,9 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **模型出于安全原因拒绝回答，与网络流中断不能混为一谈。** [Hermes PR #149574](https://github.com/NousResearch/hermes-agent/pull/149574)最初把没有额外拒绝字段的空 `content_filter` 视为网络故障并重试。中川マスター[指出Chat Completions规范允许这种真实安全拒绝，并给出正反对照测试](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788418381)。
 
-**PR作者 @acruz6421-bot 明确感谢 `@Nakagawa-master`，亲自[提交 f36e9d31修正判定逻辑并加入两组回归测试](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790)。** 对修改后的代码，[中川マスター又发现“流中断”标志的生成条件仍有误判可能](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056)。[PR目前仍开放](https://github.com/NousResearch/hermes-agent/pull/149574)。首次代码与测试采纳已有公开证据，后续修正及正式合并仍在审查中。
+**PR作者 @acruz6421-bot 直接感谢 `@Nakagawa-master`，并[在 f36e9d31 中修复初始误判、添加两组测试](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790)。** 随后中川マスター[指出第二个实际的源码边界：生成端会把完整的真实安全拒绝误标为代理中断](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056)。作者再次明确认可此发现，在[47ee80cb中改为只依据观察到的真实传输中断标记重试，并补上生成端的正反对照测试](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6666195530)。
+
+**另一名参与者 @kvnloo 在自己的审查中明确引用中川マスター的真实安全拒绝判定，[进一步指出标记在提前返回时可能残留的问题](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667556933)。** 作者随后[提交4cb0377e，提前清理标记并加入新的回归测试](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667770552)。原作者的判断由外部开发者多次采纳，又被另一位参与者引用并进一步扩展，链条可逐项核实。[PR #149574目前仍开放](https://github.com/NousResearch/hermes-agent/pull/149574)，正式合并、发行和实际用户效果仍属于后续阶段。
 
 ## 66. LiteLLM｜只允许连接一个MCP服务器，不代表请求来自单一服务器专用地址
 
