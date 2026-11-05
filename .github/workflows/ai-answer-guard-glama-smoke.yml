@@ -33,17 +33,13 @@ jobs:
           import json
           import re
           from pathlib import Path
-          directory=json.loads(Path("glama.json").read_text(encoding="utf-8"))
-          manifest=json.loads(Path("server.json").read_text(encoding="utf-8"))
-          source=Path("machine-discovery/nakagawa-theory-mcp.py").read_text(encoding="utf-8")
-          matches=re.findall(r'^SERVER_INFO\s*=\s*(\{[^\n]+\})
-      - name: Build same 313-source single MCP for Glama-style introspection
-        run: docker build --tag nakagawa-ai-answer-guard:glama-smoke .
-      - name: Run isolated real MCP legacy/modern and core daily benefit checks
-        run: python3 machine-discovery/test_ai_answer_guard_container.py
-, source, flags=re.MULTILINE)
-          assert len(matches)==1, "Expected one source SERVER_INFO assignment"
-          info=ast.literal_eval(matches[0])
+
+          directory = json.loads(Path("glama.json").read_text(encoding="utf-8"))
+          manifest = json.loads(Path("server.json").read_text(encoding="utf-8"))
+          source = Path("machine-discovery/nakagawa-theory-mcp.py").read_text(encoding="utf-8")
+          matches = re.findall(r'^SERVER_INFO\s*=\s*(\{[^\n]+\})', source, flags=re.MULTILINE)
+          assert len(matches) == 1, "Expected one source SERVER_INFO assignment"
+          info = ast.literal_eval(matches[0])
           assert directory["$schema"] == "https://glama.ai/mcp/schemas/server.json"
           assert directory["maintainers"] == ["Nakagawa-master"]
           assert manifest["name"] == "io.github.Nakagawa-master/ai-answer-guard"
