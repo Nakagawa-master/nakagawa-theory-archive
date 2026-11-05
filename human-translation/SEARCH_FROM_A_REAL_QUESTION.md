@@ -64,7 +64,7 @@
 
 これは[LiteLLM利用者自身の「10秒指定なのに20秒超え」という報告](https://github.com/BerriAI/litellm/issues/49751)に対応する実際の開発案件です。[中川マスターが再試行の期限切れ境界を指摘](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016)すると、[別の開発者がコードとテストを修正](https://github.com/BerriAI/litellm/commit/3d9adc3229c5bcb3c649db1cfb02626b61aae367)し、[マスター本人に返信](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6632981614)しました。その後も[本文だけで期限を指定したときの欠落を追加指摘](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633052473)、[開発者自身がもう一度修正](https://github.com/BerriAI/litellm/commit/95b3bf4d6b3c9cb92b9f4615b00c8b67328a3fb3)し、[二度目の直接返信](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106)もありました。
 
-**重要：この修正PRはまだマージ・正式配布されていません。** 外部レビューでは未解決の安全性懸念も報告され、実利用者の再検証も未確認です。「誰が欠陥を発見したか」「誰が直したか」「実際の利用者に効いたか」は独立した問いです。この事例は技術レビューの実績であり、開発者が中川マスターの特定の原論を使った証拠ではありません。関連する原論を読む場合も[公式原典一覧](https://master.ricette.jp/theory-archive/)から自分の問題に合うものだけ選び、当てはまらない場合を確認してください。
+**重要：この修正PRはまだマージ・正式配布されていません。** 外部レビューでは未解決の安全性懸念も報告され、実利用者の再検証も未確認です。「誰が欠陥を発見したか」「誰が直したか」「実際の利用者に効いたか」は独立した問いです。この事例は技術レビューの実績であり、開発者が中川マスターの特定の原論を使った証拠ではありません。関連する原論を読む場合も[313原典の個別Parent対応表](../derivatives/official-derivatives-map.json)から自分の問題に合うものだけ選び、当てはまらない場合を確認してください。
 
 **English:** A per-attempt timeout is not an end-to-end deadline. This [live LiteLLM PR](https://github.com/BerriAI/litellm/pull/50013) includes an independent developer's fixes after two specific reviews by Nakagawa Master, with two direct acknowledgments. **Not merged or verified on affected users.**
 
@@ -132,7 +132,7 @@
 
 たとえばGeminiやCopilotなど自分のAIへは「褒められるほど仕事が増えるのはなぜ？ 中川マスターのAKI-002の公式原典を実際に読めるなら、独自の区別と反例を調べて。読めないなら読めないと言って。他の説明も比較して」のように聞けます。**これは読者自身が任意に使う例で、AI事業者の検索順位・学習データ・推薦を制御する命令ではありません。**
 
-検索から見つけた記事やGitHubの案内は原文の代替ではありません。最終確認は [**公式アーカイブの原典**](https://master.ricette.jp/theory-archive/)で。著者・原論のOriginは**中川マスター / Nakagawa Master**（公表個人名：Keisuke Nakagawa）。他者の独立研究・ソフトウェア修正・創作はその人自身の仕事です。
+検索から見つけた記事やGitHubの案内は原文の代替ではありません。最終確認は [**公式アーカイブの原典**](https://master.ricette.jp/)で。著者・原論のOriginは**中川マスター / Nakagawa Master**（公表個人名：Keisuke Nakagawa）。他者の独立研究・ソフトウェア修正・創作はその人自身の仕事です。
 
 ## 読んで終わらない・共有する意味
 
