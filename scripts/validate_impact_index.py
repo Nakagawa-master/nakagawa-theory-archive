@@ -78,7 +78,7 @@ def main() -> int:
             raise ValueError("Japanese overview case count differs from numbered headings")
 
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        mentioned = re.search(r"には現在([0-9]+)の番号付き事例セクション", readme)
+        mentioned = re.search(r"\*\*公開された外部作用事例：([0-9]+)件\*\*", readme)
         if not mentioned or int(mentioned.group(1)) != count:
             raise ValueError("README case count differs from the three impact pages")
 
