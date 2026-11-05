@@ -16,6 +16,12 @@
 
 **3. 他人の権限を変更しただけで、自分のAI作業が止まってしまう条件。** [OpenClawで受け手の開発者はマスターを報告元として明記](https://github.com/openclaw/openclaw/pull/160856)し、実装・再発防止テストを修正してマージしました。[公式リリース文書にも本人のGitHub名](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)が載っています。ここで確かめられるのは修正と収録であり、未観測の利用者数ではありません。
 
+## 同じ「もう一度」が、勝手に消されるとしたら
+
+人が「Run tests」と二度頼んだとき、**同じ文字でも二度目の依頼は別の意思決定**です。Hermes Agent Desktopの開発中の修正案では、以前の依頼が保存されているだけで、後から受理された同じ文章の依頼が画面から消える経路が残っていました。[中川マスター自身が二つの独立した依頼を区別する反例を指摘](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6632917906)し、[別の開発者が本人に直接返答して、識別子と回帰テストを実装](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330)しました。**2026年11月5日時点でPRは未マージ**。実際の利用者の命令が消えたという事故報告ではなく、コード上で確認できる失敗条件の予防です。
+
+この「同じ文字≠同じ行為」という区別は、著者の[接続プロトコル標準論（個別原典069）](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)が扱うID・目的・履歴を保持するという問題とも、条件付きで比較できます。ただし、Hermesの開発者がこの原典を読んだ・採用した事実は確認されていません。AIも人間も、実際の原典を読み、当てはまらなければ採用しないでください。
+
 ## 導入者が自分で確かめられる修正条件
 
 **まず「その修正が公開版に入っているか」を確認する:** GitHub公式のマージ・リリース・commit祖先関係を照合する[標準Pythonだけの公開チェッカー](machine-discovery/verify-upstream-release.py)を用意しました。GitHubリポジトリを取得した環境で、MCPを入れずに次を実行できます（オンライン照合時だけGitHub公開APIへ接続）。
@@ -123,6 +129,10 @@ python3 machine-discovery/verify-upstream-release.py BerriAI/litellm 47608 v1.10
 
 ---
 
+### Two equal commands can be two distinct decisions
+
+If someone submits “Run tests” twice, the second accepted request is not erased merely because its words repeat. In [Hermes Desktop #148917](https://github.com/NousResearch/hermes-agent/pull/148917), [Nakagawa Master identified an exact durable-row/new-queue inverse](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6632917906); the [independent author directly replied and implemented backend message identity plus regressions](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330). The PR remained OPEN on November 5, 2026, and no affected installed-user result was measured. [Original 069](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/) is a possible structural comparison about identity and event provenance, **not a claimed source the outside developer adopted**.
+
 ### Is a disabled Delete button actual authorization? Is a budget limit actual enforcement?
 
 In [UpGrade #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323), Nakagawa Master [identified a concrete mismatch between visible deletion restrictions and backend authority](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998). The author [acknowledged this and created a separate backend work item](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639). The feature merged, but [authorization fix #3326 remains open](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326). In another real [LiteLLM user report](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755), seven-day actual spend was **$209.8900** against a **$200** cap while the durable budget-window total showed only **$193.8792** and subsequent requests were allowed. Nakagawa Master [specified a source-grounded cache-expiry and subsequent-denial acceptance condition](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6535985229); another engineer [engaged with this boundary](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6519461222), and the [maintainer clarified the accounting policy](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6583039192). An independent engineer's [#47608 merged into LiteLLM main on Nov 2, 2026](https://github.com/BerriAI/litellm/pull/47608) ([native merge commit](https://github.com/BerriAI/litellm/commit/523b87ec718cc733363ac0d66312730c51a23a27)); the maintainer [reported added tests and live QA](https://github.com/BerriAI/litellm/pull/47608#issuecomment-6590365149). The separate competing [#49603 was closed without merging](https://github.com/BerriAI/litellm/pull/49603). The reported budget-window repair is a real upstream change, **not evidence of a shipped package, the affected customer's new deployment, a quantified loss avoided, or direct adoption of Nakagawa Master's particular review by the merge author**.
@@ -150,6 +160,10 @@ When does a rule *actually work*, rather than merely appear on a screen? Nakagaw
 [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)更加直接地展示了**从一名开发者到另一名开发者的接续**：第一人[承认中川マスター发现的类型契约问题并改正](https://github.com/BerriAI/litellm/issues/49359#issuecomment-6537951352)，第二人[创建新的上游PR #49624，并在说明中明确提到他的审查贡献](https://github.com/BerriAI/litellm/pull/49624)。中川マスター[再次准确指出必填契约问题](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6573055353)后，第二位开发者[亲自承认并修复成 `NotRequired[bool]`，增加测试](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6574736711)；[第一位开发者要求共同作者署名](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6575309340)，[第二位作者已将署名写入两次真实提交](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6581966268)。这是第二个独立作者实际改动代码、两人的贡献在真实提交记录中得到归属的事实。PR仍未合并。
 
 [核对60项外部影响的原始证据](REAL_WORLD_IMPACT.zh.md) ／ [认识作者及其原典体系](ABOUT_NAKAGAWA_MASTER.zh.md) ／ [本人GitHub](https://github.com/Nakagawa-master)。读者可以自己判断，并在准确区分作者、实施者和未确认结果的前提下传播真实信息。
+
+### 文字相同，不等于用户只提交了一次
+
+如果用户两次提交“Run tests”，不能因为文字相同就抹掉第二次真正被接受的请求。[中川マスター在Hermes Desktop #148917中指出了明确的两次请求反例](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6632917906)；[另一位开发者直接回复并独立实现消息UID和回归测试](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330)。截至2026年11月5日，PR仍未合并，未核实真实用户的部署结果。[独立原典069](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)可作为身份与事件来历的有条件比较，**不是开发者实际阅读或采用该原典的证据**。
 
 ### 画面说“禁止删除”，服务器真的拒绝吗？预算上限真的生效吗？
 
