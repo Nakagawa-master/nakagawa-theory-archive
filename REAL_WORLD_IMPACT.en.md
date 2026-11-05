@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**62 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**68 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1571,6 +1571,42 @@ This is **receiver-owned source code, documentation and tests**, not code author
 **A different developer, PR author [@ryanl-cerebras, explicitly thanked the reviewer, corrected the logic and added the two tests](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6136077030).** The current [PR code and tests](https://github.com/run-llama/llama_index/pull/22769/files) on head `cf875b6778e75f71eb8d448e0db587b3c333fae7` now remove legacy `max_tokens` when the **final merged outgoing `model_kwargs`** contains the canonical limit, and contain separate regressions for `additional_kwargs` and the per-call route. The independent author reported five focused unit tests, Ruff and diff checks passing; no live API request or fresh hosted CI was independently run in this source check. The patch and its tests are that developer's work, **not authored by Nakagawa Master**.
 
 **Verified stage:** concrete source distinction by Nakagawa Master → independent author acknowledgment → actual third-party code/test change (C2). [The author's November 3 follow-up](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6607106290) requests formal maintainer approval, and the PR remains **OPEN**. Merge, released package, user installation, actual affected customer's improved operation, independent editorial re-telling and proven adoption of any particular Nakagawa original Parent are **not established**. Each later outcome requires new receiving-party evidence; an independent browsing model may inspect the case without being presumed to have adopted it.
+
+## 63. LiteLLM | An uncatalogued model lost its AI tools: user reproduction and a four-state developer fix
+
+**The model could accept tools, but LiteLLM dropped them simply because its provider catalog lacked a capability entry.** In [issue #48145](https://github.com/BerriAI/litellm/issues/48145), real user @mramendi traced a LiteLLM v1.106.2 OpenCode → Nano-GPT route. [Running checks proposed by Nakagawa Master](https://github.com/BerriAI/litellm/issues/48145#issuecomment-6389202066), the user confirmed that OpenCode supplied both tool definitions and `reasoning_effort` while LiteLLM omitted both from the outbound payload.
+
+**A separate upstream author, @anisayakmitra-in, explicitly thanked Nakagawa Master and [implemented the four-state distinction](https://github.com/BerriAI/litellm/pull/48191#issuecomment-6388687981)** between unknown metadata and an explicit declaration of unsupported function calling, with corresponding tests. After a further review, [the author removed unrelated vulnerability-scanner exemptions](https://github.com/BerriAI/litellm/pull/48191#issuecomment-6408754126). [PR #48191 remains open](https://github.com/BerriAI/litellm/pull/48191); forwarding `reasoning_effort` is a distinct unresolved route. The original user's live trace diagnoses the existing failure, not a post-release retest of this patch.
+
+## 64. Hermes Agent | Two separately submitted identical prompts were collapsed: author implements occurrence identity
+
+**Two instructions with identical words may still be two distinct accepted submissions.** In [Desktop recovery PR #148917](https://github.com/NousResearch/hermes-agent/pull/148917), Nakagawa Master identified a case where an already-persisted queued prompt with matching text caused a genuinely new accepted prompt to disappear from the resumed chat. [Exact source review](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6632917906).
+
+**Independent author @steinnes replied `@Nakagawa-master Fixed in c9616ee...` and [changed the implementation to match both `message_uid` and text](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330).** The author added regressions for same-occurrence deduplication, distinct equal-text submissions, and repeated warm updates. [The PR remains open](https://github.com/NousResearch/hermes-agent/pull/148917). Legacy snapshots without identities may still display a duplicate, as the implementer explicitly states.
+
+## 65. Hermes Agent | A legitimate model safety filter was retried as a proxy outage: author changes guard and tests
+
+**A provider safety refusal and an interrupted transport stream must not be treated as the same event.** In [Hermes Agent PR #149574](https://github.com/NousResearch/hermes-agent/pull/149574), Nakagawa Master found that a valid Chat Completions `finish_reason=content_filter` can carry neither visible content nor an additional `message.refusal` marker. A proposed retry guard would have treated that compliant refusal as a transient outage. [Source-specific review and counterexample](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788418381).
+
+**PR implementer @acruz6421-bot directly credited `@Nakagawa-master` for the finding and [authored commit f36e9d31 with a revised guard and paired regression tests](https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6663605790).** Nakagawa Master's [follow-up review at the changed head](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788893056) identifies another boundary in how the stream-drop marker itself is inferred. [The PR remains open](https://github.com/NousResearch/hermes-agent/pull/149574); the author's first code/test adoption is real, while the latest source-level finding awaits a further upstream decision.
+
+## 66. LiteLLM | One authorized MCP server does not make an aggregate request a single-server endpoint
+
+**An aggregate `/mcp` route can have exactly one accessible server without becoming a `/mcp/<server>` request.** In [LiteLLM PR #49261](https://github.com/BerriAI/litellm/pull/49261), Nakagawa Master pinpointed the error in using the count of authorized servers to decide whether an upstream 401 should challenge the client. [Exact review](https://github.com/BerriAI/litellm/pull/49261#pullrequestreview-5717911029).
+
+**Author @DewellNaa explicitly accepted the distinction and [implemented `is_scoped_endpoint` plus a targeted aggregate-route regression](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)** at commit 8e90be9. [PR #49261 remains open](https://github.com/BerriAI/litellm/pull/49261), with a separate review question about which upstream authentication challenges are safe to relay.
+
+## 67. LiteLLM | Retry backoff spent the user's deadline but another model call could still start
+
+**If a retry sleeps until the caller's time limit has elapsed, sending another provider request defeats that limit.** In [LiteLLM PR #50013](https://github.com/BerriAI/litellm/pull/50013), Nakagawa Master identified both the missing post-backoff pre-call deadline guard and a body-only timeout path missing from deadline construction, against [the original affected report #49751](https://github.com/BerriAI/litellm/issues/49751). [First source finding](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016).
+
+**Separate implementer @KJyothirmayi-2025sl93025 acknowledged the review, changed the provider-call deadline checks and per-attempt timeout budget**, then [added the body-only timeout correction at 95b3bf4](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106). [PR #50013 is open](https://github.com/BerriAI/litellm/pull/50013). An affected-user post-release latency/cost result is the later step, distinct from the independently authored patch.
+
+## 68. MemberJunction | Equal SQL parameter names concealed different values: developer fixes collision and asks about the reviewer
+
+**The same `@p0` name in two batched SQL statements need not mean the same value.** In [MemberJunction PR #6339](https://github.com/MemberJunction/MJ/pull/6339), Nakagawa Master identified a real parameter-name collision that could bind an unintended value across statements.
+
+**Outside engineer @AN-BC thanked `@Nakagawa-master`, [implemented a token-aware safe renaming mechanism and regression tests](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685),** and independently asked who was behind the review handle after recognizing useful analysis across multiple MemberJunction PRs. Nakagawa Master [replied with the actual author's public identity and source homepage](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214). [PR #6339 remains open](https://github.com/MemberJunction/MJ/pull/6339). This records both independently authored engineering change and authentic direct curiosity about the source person.
 
 ## What the public source record reveals
 
