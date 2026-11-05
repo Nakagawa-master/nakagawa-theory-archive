@@ -8,7 +8,7 @@
 
 - [質問を入力して構造仮説を先に探すブラウザ版](../machine-discovery/originals-browser-finder.html) — GitHubで Raw → 保存して開く。通常の24件は無料・オフライン照合。別ボタンで公開313原典の題名をオンライン取得して任意検索（質問文の送信なし）。
 - [通常のAI・LLMでも使える参照入口](../AI_START_HERE.md) — 自分が使うAIへ、下記の条件と公式原典URLを自由に渡す。
-- [公式アーカイブ（原典本文）](https://master.ricette.jp/theory-archive/) — ここは原典本文の転載ではなく、条件付きの試行案内。
+- [公式アーカイブ（原典本文）](https://master.ricette.jp/) · [313原典の個別Parent一覧](../derivatives/official-derivatives-map.json) — ここは原典本文の転載ではなく、条件付きの試行案内。
 
 **実際の開発者が試し、判断した二つのAIの問題（2026-10-22）｜Two developer-verified AI problems｜两个经开发者验证的AI问题**
 
