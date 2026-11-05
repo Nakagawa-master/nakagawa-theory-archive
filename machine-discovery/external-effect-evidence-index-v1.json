@@ -4714,9 +4714,9 @@
         "mechanism": "The actual accepted-head code passes an Inngest event id derived from runId, the claimed suspension snapshot timestamp and toolCallId, so retries for the same suspended-tool approval retain an event identity. The rejected-send catch now documents that the retry is deduplicated rather than falsely asserting the receiver never accepted the event.",
         "external_test_report": "The independent author reports exercising the implementation against a real Inngest dev server by sending each resume event twice: identifier present gave one tool execution and two model requests; identifier stripped gave two tool executions and three model requests.",
         "pull_request": "https://github.com/mastra-ai/mastra/pull/29451",
-        "state_at_verification": "open_unmerged_follow_on_head_062c82b913c890fe181ddc8b9dda46ca6c843ef7",
+        "state_at_verification": "open_unmerged_author_follow_on_leased_resume_claim_at_1f459788",
         "head_sha": "5689e0518013f19bbfa68bec9fea497a73503395",
-        "current_head_sha": "062c82b913c890fe181ddc8b9dda46ca6c843ef7",
+        "current_head_sha": "1f459788df4cd64c3408d1d4318d8546dbe65e8a",
         "current_event_id_mechanism": "Follow-on author commit 062c82b913 moved receiver-side event id from runId:suspension-timestamp:toolCallId to runId:suspension-timestamp, because different tool approvals of the same parked suspension must also deduplicate after an ambiguous sender acknowledgment.",
         "follow_on_commit_url": "https://github.com/mastra-ai/mastra/commit/062c82b913c890fe181ddc8b9dda46ca6c843ef7"
       },
@@ -4736,6 +4736,18 @@
         "review_url": "https://github.com/mastra-ai/mastra/pull/29451#discussion_r4474588660",
         "author_response_url": "https://github.com/mastra-ai/mastra/pull/29451#discussion_r4474660665",
         "precise_role": "A separate automated reviewer identified the different-tool-call retry gap left by the first implementation. The independent PR author acknowledged it and made the event identity suspension-scoped. Do not attribute this distinct discovery to Nakagawa Master."
+      },
+      "independent_additional_human_review": {
+        "reviewer": "NikAiyer",
+        "source": "https://github.com/mastra-ai/mastra/pull/29451#pullrequestreview-5779145412",
+        "findings": "Observed that a killed resumer left the claim running without a recoverable owner/expiry; also identified abort signaling, multi-parked approval signaling and takeover conditions. Reported a libSQL killed-worker test. This independent human review is distinct from the earlier Nakagawa Master acknowledgment-loss finding."
+      },
+      "independent_author_follow_on": {
+        "author": "arthurfiorette",
+        "commit": "https://github.com/mastra-ai/mastra/commit/1f459788df4cd64c3408d1d4318d8546dbe65e8a",
+        "base": "062c82b913c890fe181ddc8b9dda46ca6c843ef7",
+        "result": "Author changed five files, adding a time-bounded 60-second claim, lease renewal/fencing and crash/abort regression scenarios, following the separate NikAiyer review. This additional code change is not attributed to Nakagawa Master.",
+        "stage": "independent_code_change_open_unmerged; no fresh complete CI, released distribution or affected-user confirmation established"
       }
     }
   ],
