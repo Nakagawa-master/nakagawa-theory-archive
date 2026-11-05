@@ -100,7 +100,8 @@
             "https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6461618923",
             "https://github.com/QwenLM/qwen-code/pull/15757",
             "https://github.com/QwenLM/qwen-code/pull/15757#discussion_r4402027138",
-            "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6"
+            "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6",
+            "https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -154,7 +155,8 @@
             "https://github.com/NousResearch/hermes-agent/pull/146708#pullrequestreview-5707357350",
             "https://github.com/NousResearch/hermes-agent/pull/147746",
             "https://github.com/NousResearch/hermes-agent/pull/147746",
-            "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6"
+            "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6",
+            "https://github.com/NousResearch/hermes-agent/commit/0e47519c3199b1689f76b16e6c5a116f3f1601f0"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -209,7 +211,8 @@
             "https://github.com/BerriAI/litellm/pull/47608",
             "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6519461222",
             "https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755",
-            "https://github.com/BerriAI/litellm/pull/47608"
+            "https://github.com/BerriAI/litellm/pull/47608",
+            "https://github.com/BerriAI/litellm/commit/523b87ec718cc733363ac0d66312730c51a23a27"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
