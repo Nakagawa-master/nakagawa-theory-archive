@@ -84,14 +84,18 @@ raw_root = "https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-ar
 aki_raw = raw_root + "derivatives/313/README.md"
 assert aki_raw in aki, "AKI-005 fallback must expose plain UTF-8 derivative text"
 assert "Rawで派生物を読めても" in aki, "Raw fallback must retain Parent-unread boundary"
-reader = (ROOT / "README.md").read_text(encoding="utf-8")
+landing = (ROOT / "README.md").read_text(encoding="utf-8")
+reader = (ROOT / "AI_START_HERE.md").read_text(encoding="utf-8")
+assert "AI_START_HERE.md" in landing, "Protected top README must link to the real AI entry"
 for source_path in (
     "derivatives/313/README.md",
+    "derivatives/official-derivatives-map.json",
     "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md",
     "llms-full.txt",
 ):
     assert (ROOT / source_path).is_file(), f"Missing Raw target: {source_path}"
 for source_path in (
+    "derivatives/official-derivatives-map.json",
     "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md",
     "llms-full.txt",
 ):
