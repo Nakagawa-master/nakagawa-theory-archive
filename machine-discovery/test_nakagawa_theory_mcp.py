@@ -117,6 +117,11 @@ def run():
     good_receipt = guard_result(66)
     assert good_receipt["verdict"] == "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS", good_receipt
     assert good_receipt["hold_count"] == 0, good_receipt
+    assert good_receipt["origin"]["self_audit"] == (
+        "https://master.ricette.jp/theory/"
+        "nakagawa-master-human-descendant-ai-civilization-theory-10-"
+        "self-referential-audit-role-separation/"
+    ), good_receipt
     print("PASS: real MCP failure/cancel/pending receipts never silently masquerade as success")
 
     # Han-only Japanese can be misread as Chinese by naive character detection.
