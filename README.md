@@ -1,6 +1,6 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
-**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。親原典の正本は[公式アーカイブ](https://master.ricette.jp/theory-archive/)、対応する解説・索引は[公式派生物（OD001〜OD313）](derivatives/)からご覧いただけます。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
+**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。親原典の正本は[公式アーカイブ](https://master.ricette.jp/)、対応する解説・索引は[公式派生物（OD001〜OD313）](derivatives/)からご覧いただけます。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
@@ -42,7 +42,7 @@
 
 ## 公開原典・テーマ別索引
 
-**公式の親原典313本はすべて独立した正本で、等しく重要です。** [公式サイトの原典全文](https://master.ricette.jp/theory-archive/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。ここで紹介したOSSの数件、24の例示ルート、既刊41回答や一つのMCPが理論体系の限界ではありません。
+**公式の親原典313本はすべて独立した正本で、等しく重要です。** [公式サイトの原典入口](https://master.ricette.jp/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。ここで紹介したOSSの数件、24の例示ルート、既刊41回答や一つのMCPが理論体系の限界ではありません。
 
 - [**313原典の各題名と24テーマの一覧**](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [全313の英語向け原典経路](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md)
 - [**OD001〜OD313と個別の公式親原典URLの対応**](derivatives/official-derivatives-map.json) ／ [各セットの公式7面派生物](derivatives/)
@@ -139,7 +139,7 @@
 
 ## 来歴と引用
 
-旧READMEの**734行・566個の参照リンク**、各原典の詳しい紹介と全ての個別の旧文脈は、[固定Git履歴の変更前全文](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/2a053891a20be6afa0319301536624e4ca0ca4cf/README.md)から読むことができます。独立した人の新しい実利用はそれぞれの受け手の一次資料で確かめ、公式原典そのものは[313原典の正本](https://master.ricette.jp/theory-archive/)から確認してください。**この短縮は、原典・原著者・派生物・歴史を縮小する行為ではなく、最初の案内を明確にする整理です。**
+旧READMEの**734行・566個の参照リンク**、各原典の詳しい紹介と全ての個別の旧文脈は、[固定Git履歴の変更前全文](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/2a053891a20be6afa0319301536624e4ca0ca4cf/README.md)から読むことができます。独立した人の新しい実利用はそれぞれの受け手の一次資料で確かめ、公式原典そのものは[313原典の正本URL一覧](derivatives/official-derivatives-map.json)から確認してください。**この短縮は、原典・原著者・派生物・歴史を縮小する行為ではなく、最初の案内を明確にする整理です。**
 
 ## Origin
 
