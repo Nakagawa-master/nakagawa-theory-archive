@@ -298,6 +298,50 @@
       "primary_receiver_source": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114",
       "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/agent-delivery-durability-boundary-probe.py",
       "full_route_id": "agent_mailbox_ack_vs_durable_delivery_dispose_race"
+    },
+    {
+      "id": "qwen_mcp_duplicate_name_released_safe_tool_selection",
+      "when": [
+        "Qwen Code MCP duplicate tool names make otherwise valid tools disappear",
+        "Qwen SDK v0.26.6 tool-list collision retest",
+        "Qwen MCP 同名の道具・衝突・正常ツール維持"
+      ],
+      "plain_meaning": "Two identically named MCP tools must not hide working tools or cause the AI to guess an ambiguous operation. An independent Qwen developer merged and shipped a fix; the user's actual installed behavior is a separate check.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+      "original_relation": "Optional conceptual comparison to the original's evidence/identity-integrity conditions, not proof that Qwen developers read or adopted this original Parent.",
+      "primary_receiver_source": "https://github.com/QwenLM/qwen-code/issues/15741",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/QWEN_MCP_COLLISION_USER_RETEST.md",
+      "full_route_id": "qwen_mcp_duplicate_name_released_safe_tool_selection"
+    },
+    {
+      "id": "litellm_budget_window_cache_expiry_durable_spend_and_enforcement",
+      "when": [
+        "LiteLLM budget window undercount after auth-cache TTL",
+        "LiteLLM SpendLogs versus BudgetWindowSpend and rate cap",
+        "LiteLLM 期間別予算・キャッシュ期限切れ・請求上限",
+        "LiteLLM 30d monthly calendar reset mismatch with auth and SpendLogs reseed",
+        "LiteLLM 月次予算・暦月と30日固定の支出集計ずれ"
+      ],
+      "plain_meaning": "An AI proxy can display a spending cap while its same-period durable spend undercounts a charged request after cache expiry. Compare matching subject, cutoff, and calendar-window boundaries before claiming the cap held.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+      "original_relation": "Conceptual source-fit to the original establishment-conditions distinction; the independent LiteLLM author's implementation is not evidence they read the Parent.",
+      "primary_receiver_source": "https://github.com/BerriAI/litellm/issues/49179",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/LITELLM_BUDGET_WINDOW_AUDIT.md",
+      "full_route_id": "litellm_budget_window_cache_expiry_durable_spend_and_enforcement"
+    },
+    {
+      "id": "github_channel_cursor_boundary_no_silent_loss_no_duplicate_delivery",
+      "when": [
+        "A GitHub issue comment gets marked read but never reaches an AI coding agent because created_at equals the poll cursor second",
+        "GitHub channel bot loses a delayed comment at cursor boundary; changing > to >= risks redelivery",
+        "GitHubとAI連携でコメントが届かない／秒単位のカーソル衝突／既読なのに処理されない"
+      ],
+      "plain_meaning": "A GitHub comment timestamp equal to an agent's polling cursor can be silently skipped; changing > to >= alone may repeat an already delivered comment. Check stable comment-ID receipts and real downstream delivery.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+      "original_relation": "Conceptual source comparison of apparent processed state versus completed delivery; no evidence the outside Qwen reporter read this Parent or adopted the local test.",
+      "primary_receiver_source": "https://github.com/QwenLM/qwen-code/issues/16227",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/github-comment-delivery-boundary-probe.py",
+      "full_route_id": "github_channel_cursor_boundary_no_silent_loss_no_duplicate_delivery"
     }
   ]
 }
