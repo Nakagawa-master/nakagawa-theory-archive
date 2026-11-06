@@ -21,7 +21,7 @@
 
 ## Separately attributed independent evidence
 - [14 merged PRs in eight independently maintained OSS repositories](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld): Specific reviewer findings versus receiver-owned fixes, with distinct authorship.
-- [62 human-readable external records](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): Review, actual outside code, merge, release, user effect and later reuse have different evidentiary stages.
+- [68 human-readable external records](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): Review, actual outside code, merge, release, user effect and later reuse have different evidentiary stages.
 - [78 machine-readable staged external evidence cases](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/external-effect-evidence-index-v1.json): Public-native actor URLs, negative cases and stage boundaries, not 78 adopters.
 - [Released Qwen Code v0.26.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7): Separately authored real protected-write and duplicate-MCP-name fixes shipped, affected-user result unknown.
 - [Released Hermes Agent v0.22.7](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.7): Different engineer's actual delivery repair shipped, original affected-user retest unknown.
