@@ -12,6 +12,7 @@
 ## First human and unconnected AI routes
 - [Official author homepage](https://master.ricette.jp/): Actual published person, original system and diverse humanities/AI/technical questions.
 - [313 distinct original Parent URLs](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json): Canonical Parent URL for each of 313 works, not only derivative summaries.
+- [Short problem-first source route (23 checkable problems)](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/quick-route-index-v1.json): Select one real problem, then one fitting original, outside source and optional test; [full evidence/boundary route](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json). Neither route ranks, replaces or limits the 313 originals.
 - [Exact public name/alias source policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): Use the attested Latin name and source-bounded pen name.
 - [Practical actual questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md): JA/EN/ZH actionable verification, actual source, inverse and honest no-fit.
 - [41 practical human answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): Already authored bilingual use cases, not an upper bound of theory.
