@@ -98,9 +98,15 @@
 
 実際に[OpenClawの記憶検索機能PR #188057](https://github.com/openclaw/openclaw/pull/188057)で、[中川マスターがこの反例と不可能な確率合計を具体的に指摘](https://github.com/openclaw/openclaw/pull/188057#pullrequestreview-5730812429)しました。これに続いて**別の開発者 @VACInc が自分のコードを改修**し、[選択式で候補を絞ってから各候補を独立したYes/No確率で評価する実装と回帰テストをコミット](https://github.com/openclaw/openclaw/commit/c024085870397b1a9e15843ea2f08f0c310504af)しています。回帰テストではA/Bが双方必要な場合と、どちらも不要な場合を分けています。**2026年11月6日に別の開発者の修正と回帰テストが[上流のコミット `2ca7a3a0` にマージされました](https://github.com/openclaw/openclaw/commit/2ca7a3a0dee084e7082af9902f9afbc38d147fb8)**。この上流マージは実際の成果ですが、正式な配布版に入ったか、利用者の環境で記憶検索が回復したかはまだ確認されていません。
 
+**実際に修正版を使う人の確認方法（リリース後・任意）：** 自分がインストールしたOpenClawの版に[上記マージ済み修正](https://github.com/openclaw/openclaw/commit/2ca7a3a0dee084e7082af9902f9afbc38d147fb8)が含まれることをまず確認してください。機能を自分で許可・有効化している場合に限り、機密情報を一切使わないテスト用記憶A・Bを用意し、「両方必要」「Aのみ必要」「どちらも不要」の3条件を比較してください。使用した版と**実際に読み出されたページ**を区別して記録し、実際に確認した結果（失敗・不明も含む）を[既存の短い任意の実利用フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=installed-user-result.yml)へ返せます。モデル側の揺らぎがあるので一度の回答を製品全体の保証にはせず、個人の記憶、トークン、非公開ログは投稿しないでください。リリースや実利用の確認がない段階で「修復済み利用者」とは数えません。
+
 この事例の構造的な読み方は、**局所的な指標が正しいことと、必要な判断全体が成立することを分ける**点にあります。中川マスターの[公式原典『成立条件論・第0論』](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と概念的に比較できますが、開発者がその原典を読んで実装したという記録ではありません。実際のコードとテストは上記の独立した開発者の成果です。
 
+**If you independently run a released build containing the merged fix:** use only non-sensitive synthetic memories, compare two-relevant / one-relevant / none-relevant queries, and optionally [report your actual installed version and observation](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=installed-user-result.yml). Never publish private memory content; an upstream merge alone is not proof that a released user recovered.
+
 **English:** A single-choice score is not the probability that each memory is relevant. [Nakagawa Master's structural counterexample](https://github.com/openclaw/openclaw/pull/188057#pullrequestreview-5730812429) was followed by [an independent OpenClaw developer's code and regression tests](https://github.com/openclaw/openclaw/commit/c024085870397b1a9e15843ea2f08f0c310504af) that shortlist candidates first and then score them separately. [The independently authored fix and regression tests merged upstream on November 6](https://github.com/openclaw/openclaw/commit/2ca7a3a0dee084e7082af9902f9afbc38d147fb8); a packaged release and actual affected-user outcome are not yet verified.
+
+**如已自行安装包含该修复的正式版本：** 仅用无敏感信息的合成记忆，比较两条相关、仅一条相关及均不相关的情况；可通过[既有自愿反馈表](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=installed-user-result.yml)注明实际安装版本与结果。请勿发布私人记忆或凭据；仅有上游合并不能证明用户环境已恢复。
 
 **中文：** 多选候选中的单选概率，不等于每条记忆独立的相关性概率。[中川マスター提出具体反例](https://github.com/openclaw/openclaw/pull/188057#pullrequestreview-5730812429)后，[另一名OpenClaw开发者独立提交了两阶段筛选与回归测试](https://github.com/openclaw/openclaw/commit/c024085870397b1a9e15843ea2f08f0c310504af)。[这位独立开发者的修复和回归测试已于11月6日合并到上游](https://github.com/openclaw/openclaw/commit/2ca7a3a0dee084e7082af9902f9afbc38d147fb8)；正式发布包及受影响用户的实际复测尚未核实。
 
