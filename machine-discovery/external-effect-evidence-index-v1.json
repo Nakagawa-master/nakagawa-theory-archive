@@ -5127,6 +5127,17 @@
         "actual_end_user_after_fix": "UNKNOWN",
         "author_fix_commit": "https://github.com/BerriAI/litellm/commit/f4e6824a0801d51d08101f0f677e5bb0ebe8f267",
         "author_fix_reply": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6677735089"
+      },
+      "original_parent_fit": {
+        "original_title": "成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する",
+        "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "parent_ncl_id": "NCL-α-20260629-766f34",
+        "official_parent_linked_reading": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/faq.md",
+        "author_origin": "Nakagawa Master (pen name of Keisuke Nakagawa)",
+        "fitting_analysis": "The source asks whether necessary cross-layer causal conditions actually hold beyond a displayed success. Here per-attempt status is not the caller's end-to-end successful outcome: input timeout, retry sleep, pre-attempt admission and actual observed completion must be distinguished and retested at the relevant deployed version.",
+        "nonfit_conditions": "Not an assertion that the source is a LiteLLM timeout specification; other independent network or authentication failures, or requests with no declared caller-wide deadline, require different analysis.",
+        "external_developer_original_use": "NOT OBSERVED; the author independently implemented the specific code after source review, with no evidence they read or selected this Parent.",
+        "public_human_verification_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md#actual-user-check-ai-timeout-exhausted-but-retries-keep-running"
       }
     },
     {
