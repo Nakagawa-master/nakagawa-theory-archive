@@ -5224,6 +5224,46 @@
       },
       "current_status": "source_confirmed_distinct_human_and_author_owned_config_tests_at_new_open_head; existing_evicted_bytes_not_recovered",
       "next_external_proof": "Independent maintainer acceptance/merge and subsequent runtime/user report are separate from source and first-party case discoverability."
+    },
+    {
+      "case_id": "pydantic-tool-output-spill-history-compaction-runstep-fix",
+      "topic": "Conversation compaction erased earlier call IDs from retained messages; a later identically named tool call overwrote an older spilled result. Independent author tested actual Agent behavior and repaired key provenance.",
+      "external_repository": "pydantic/pydantic-ai",
+      "originating_outside_report": {
+        "actor": "gouyu-hou",
+        "source": "https://github.com/pydantic/pydantic-ai/issues/12676",
+        "issue": "Per-response tool_call_id reuse collides when separate results spill into a key based only on run_id/call_id/retry. Author originally filed this issue."
+      },
+      "master_public_source_review": {
+        "actor": "Nakagawa Master (public pen name of Keisuke Nakagawa)",
+        "review": "https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398",
+        "precise_new_boundary": "History-based occurrence counting cannot identify a call after SummarizingCompaction replaces ctx.messages within the same run. Under repeated call_0 the old result is silently overwritten.",
+        "proposed_inverse": "Exercise a real Agent + ToolOutputLimits(Spill) + SummarizingCompaction, with call_0 → intermediate → call_0, and keep first handle outside compressed history; use a history-independent replay-stable per-call identity, e.g. run_step."
+      },
+      "independently_verified_correction": {
+        "author": "gouyu-hou",
+        "direct_acknowledgment_and_reproduction": "https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077",
+        "tested_before": "Author reports 3 oversized results but 2 files after actual Agent compaction; first call_0 file contains newer result, and CompactionPart shows older history was replaced.",
+        "actual_code": "https://github.com/pydantic/pydantic-ai/commit/7390c19abd1ac8008455cd5b616a349a9fa4fa9a",
+        "changed_identity": "run_id/run_step/call_id.retry instead of retained-history occurrence count; different response steps remain unique even when history changes.",
+        "regression": "test_a_reused_tool_call_id_survives_a_compaction_between_the_responses",
+        "test_file": "https://github.com/pydantic/pydantic-ai/blob/7390c19abd1ac8008455cd5b616a349a9fa4fa9a/tests/harness/tool_output_limits/test_tool_output_limits.py",
+        "author_validation": "Local Windows suite 255 passed, 29 POSIX-only failures matching baseline; not whole HEAD CI green.",
+        "current_pr": "https://github.com/pydantic/pydantic-ai/pull/12677",
+        "current_state": "OPEN at last native check 2026-11-06T15:29 UTC; merge, official release and affected-user installed result not verified."
+      },
+      "canonical_original_context": {
+        "original_author": "Nakagawa Master",
+        "original": "https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/",
+        "relation": "Conceptual comparison only: verifiable external/source memory trace is different from plausible internally reconstructed memory. The independent developer explicitly credited the specific public code review, NOT proven to have read this original theoretical Parent.",
+        "entire_original_catalogue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json"
+      },
+      "reading_and_test_routes": {
+        "human_question": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md#aiに保存したはずの検査結果が長い会話のあと別の中身になった",
+        "independent_ai_problem_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/quick-route-index-v1.json",
+        "test_precondition": "Use a separately authorized test Agent with non-confidential synthetic tool results and confirm upstream release ancestry before claiming production repair."
+      },
+      "evidence_boundary": "External author directly accepted Master's additional source-specific compaction finding and supplied own integration reproduction/code/test. The author independently originated base repeated-ID issue and owns his actual code. No upstream merge/release/affected installed user/independent AI whole-corpus selection or general public person-adoption shown."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
