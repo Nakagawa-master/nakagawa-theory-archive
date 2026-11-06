@@ -5216,12 +5216,13 @@
       "independent_implementation": {
         "actor": "2SinceJuly",
         "pull_request": "https://github.com/QwenLM/qwen-code/pull/16438",
-        "head": "8e54971e425171105af758dd8f2888687d474cb8",
+        "head": "f314372ab60bb78c77df9d22ca6a4db1fc52cf8a",
         "change": "Adds imagePayloadThreshold: 0 guard to disable FUTURE image eviction; exposes model.chatCompression schema knobs and documentation, with author-written fresh-session retention regression.",
         "scope_boundary": "This source change does not recover images from prior evictions after a restart; PR source does not credit the specific earlier Nakagawa review as the reason for the code changes.",
-        "state_at_check": "open_unmerged; current check suite includes pending and one web-shell E2E shard failure, no full green claim"
+        "fresh_author_signal": {"source": "https://github.com/QwenLM/qwen-code/pull/16438#issuecomment-6687428157", "new_head_commit": "https://github.com/QwenLM/qwen-code/commit/f314372ab60bb78c77df9d22ca6a4db1fc52cf8a", "actual_delta": "Explained non-image model placeholder retention separately from future-image eviction off switch; added env threshold zero test; reported focused local tests 45 plus 245 passed.", "not_claimed": "No CI-green proof, merged release, recovered previously evicted payload or user C4."},
+        "state_at_check": "2026-11-06T14:39:34Z OPEN, independent author rebased onto current main and reported 45 compaction plus 245 settings focused local tests passing at f314372a. Full branch CI, human maintainer approval, merge and installed-user outcome unverified. Original restart-past-eviction image-byte loss remains out of scope."
       },
-      "current_status": "third_party_source_confirmation_and_open_independent_configuration_code; historical image recovery remains unaddressed",
+      "current_status": "source_confirmed_distinct_human_and_author_owned_config_tests_at_new_open_head; existing_evicted_bytes_not_recovered",
       "next_external_proof": "Independent maintainer acceptance/merge and subsequent runtime/user report are separate from source and first-party case discoverability."
     }
   ],
