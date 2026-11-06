@@ -5025,7 +5025,15 @@
         "url": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667556933",
         "attribution": "Explicitly referenced 'Nakagawa-master for the completed-stream inverse' while deriving an independent marker-lifetime edge.",
         "new_action": "Separate source review with specific reproducer for early exit and marker ID leak, after Master's producer inverse.",
-        "author_follow_on_fix": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667770552"
+        "author_follow_on_fix": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6667770552",
+        "independent_test_confirmation": {
+          "by": "kvnloo",
+          "review_comment": "https://github.com/NousResearch/hermes-agent/pull/149574#issuecomment-6673092774",
+          "reported_test_result": "The separate reviewer explicitly reports 7/7 in tests/agent/test_content_policy_refusal_stop_details.py on HEAD 4cb0377e8c.",
+          "reported_negative_mutation_control": "Removing entry-time consume_stream_proxy_drop causes only the new early-exit test to fail, because the stale id(stream) remains registered.",
+          "scope": "Reviewer's own test and mutation-report evidence on that HEAD; not a test executed by Nakagawa Master, not a live provider or affected-user deployment, and not an upstream merge.",
+          "receiving_actor_distinction": "Master supplied the earlier legitimate-completed-refusal inverse; kvnloo independently derived the marker-lifetime edge and tested the outside implementer's fix; @acruz6421-bot owns the actual fix."
+        }
       }
     },
     {
