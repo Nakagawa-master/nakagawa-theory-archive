@@ -2249,7 +2249,7 @@
         "attribution_boundary": "The outsider used a Nakagawa-master authored public record as a concrete negative fixture for its own scanner; the outsider discovered and implemented its own parser repair. This demonstrates independent processing of an author's public material, NOT independent recognition of the human author's judgment as authority, adoption of the original theory corpus, a direct reply to Nakagawa Master, or a demonstrated installed end-user effect.",
         "not_claimed": [
           "outside author read any canonical theory original",
-          "outside model voluntarily ranked the 313 originals",
+          "independent external AI use of the exact original source texts in a real task",
           "independently verified new audience engagement or affected-user outcomes",
           "the outsider's code was written by Nakagawa Master",
           "real installed users ran the v1.0.14 correction",
@@ -4869,7 +4869,7 @@
         "real affected-user deployment or correct response",
         "independent human voluntarily choosing Keisuke Nakagawa as a trusted person beyond the named technical acknowledgment",
         "unrelated AI/LLM independently reading or preferring any of the 313 original works",
-        "measured audience reach or follower impact"
+        "measured independent readership or real affected-user impact"
       ]
     },
     {
@@ -4914,8 +4914,8 @@
         "independently verified deployed MCP client token refresh",
         "production incident caused by the missing route guard",
         "PERSON-name recognition beyond the explicit public @Nakagawa-master author acknowledgment",
-        "unrelated AI/LLM voluntarily choosing a complete original theory corpus",
-        "new audience, GitHub follower or search traffic effect"
+        "a separately operated AI independently using cited original source texts",
+        "independently observed new readership or genuine user behavior"
       ],
       "attribution_note": "The PR author implemented and tested the correction; the original requester and separate bot reviewer retain their distinct roles. This is an independently acknowledged and authored technical correction, not a claim of general adoption of any original theory."
     },
@@ -4947,7 +4947,7 @@
       },
       "current_stage": "third_party_code_and_test_change_outside_authored_change_not_merged",
       "status_as_checked": "OPEN_UNMERGED_AT_c9616ee05bf920c3690636a8b46fd72733aa7091_ON_2026_11_05",
-      "person_attribution": "Specific code/test response explicitly addressed @Nakagawa-master; independent author owns all fixes. A comment is not evidence of offline introduction, later personal trust, new follower or mass recognition.",
+      "person_attribution": "Specific code/test response explicitly addressed @Nakagawa-master; independent author owns all fixes. A source comment alone is not evidence of a later voluntary endorsement or continuing recognition by other people.",
       "optional_original_context": {
         "source": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/",
         "official_derivative": "derivatives/069/README.md",
