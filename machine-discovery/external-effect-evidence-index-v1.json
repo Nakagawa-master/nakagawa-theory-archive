@@ -4994,7 +4994,14 @@
       },
       "current_stage": "third_party_code_and_tests_open_unmerged",
       "human_case": "REAL_WORLD_IMPACT.md#63-litellm未登録モデルだからaiの道具を消してしまう利用者の実機検証と開発者の4状態修正",
-      "separate_open_question": "reasoning_effort forwarding was shown missing in the affected user's live trace; the tool-focused PR does not repair that separate parameter path."
+      "separate_open_question": "reasoning_effort forwarding was shown missing in the affected user's live trace; the tool-focused PR does not repair that separate parameter path.",
+      "independent_maintainer_engagement": {
+        "maintainer": "mateo-berri",
+        "maintainer_source": "https://github.com/BerriAI/litellm/issues/48145#issuecomment-6664290357",
+        "outside_reporter_followup": "https://github.com/BerriAI/litellm/issues/48145#issuecomment-6675650673",
+        "verified_scope": "Maintainer asked how JSON-defined OpenAI-like provider is used; original real reporter replied that their nano-gpt route silently lost tools. This is a genuine additional independent person/source engagement, not a code change, merge, deployment or endorsement of a specific original theory.",
+        "existing_independently_executed_diagnostic": "https://github.com/BerriAI/litellm/issues/48145#issuecomment-6389202066"
+      }
     },
     {
       "case_id": "hermes-149574-chat-completions-content-filter-refusal-versus-proxy-stream-drop",
@@ -5078,11 +5085,21 @@
       },
       "receiver_implementation": {
         "pull_request": "https://github.com/BerriAI/litellm/pull/50013",
-        "head": "95b3bf4d6b3c9cb92b9f4615b00c8b67328a3fb3",
-        "mechanism": "Time checks immediately before make_call, early bail at retry_after>=remaining, bounded per-attempt timeout and body-only deadline construction implemented in outside author's code and tests."
+        "head": "7fbc1c7f48b7e8a32ba8b17aef8752e851b784bc",
+        "mechanism": "Open PR rebased by the independent author after removal of the Python router, carrying the fix into router_rust/core.py. At current HEAD only sleep steps are deadline-checked; a subsequent attempt path has no explicit pre-attempt deadline gate. Historical Python repair is not asserted intact in the Rust code.",
+        "history_note": "Outside author previously implemented and tested Python-router pre-attempt guard/body timeout at HEAD 95b3bf4; that is confirmed historical C2, not a current Rust branch behavior."
       },
-      "current_stage": "independent_author_code_and_tests_pr_open_unmerged",
-      "human_case": "REAL_WORLD_IMPACT.md#67-litellmaiへの再試行が制限時間を使い切っても続く開発者が残り時間を守る修正を実装"
+      "current_stage": "historical_independent_python_author_C2_followed_by_open_rust_rebase_new_source_review_C1_no_post_review_author_C2",
+      "human_case": "REAL_WORLD_IMPACT.md#67-litellmaiへの再試行が制限時間を使い切っても続く開発者が残り時間を守る修正を実装",
+      "fresh_independent_migration_boundary": {
+        "author_migration_receipt": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6676666053",
+        "source_specific_review": "https://github.com/BerriAI/litellm/pull/50013#pullrequestreview-5795786609",
+        "new_head": "7fbc1c7f48b7e8a32ba8b17aef8752e851b784bc",
+        "unverified_counterexample": "With 50ms remaining and a 40ms requested backoff, actual sleep can return at t=60ms; new Rust attempt step starts another provider request without checking the now-expired total deadline. A sleep-free fallback can expose the same missing attempt transition.",
+        "suggested_inverse": "Provider invocation count remains one after an overrun sleep; check both async and sync attempt steps and a fallback without sleep. On positive budget retry proceeds. This is source-level prediction, not a newly run integration test.",
+        "outside_author_fix_for_new_review": "NOT OBSERVED; PR OPEN, HEAD unchanged at this read",
+        "actual_end_user_after_fix": "UNKNOWN"
+      }
     },
     {
       "case_id": "openclaw-188057-systemone-multiple-relevant-page-probability-calibration",
