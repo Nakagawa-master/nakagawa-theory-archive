@@ -66,11 +66,15 @@
 
 これは[LiteLLM利用者自身の「10秒指定なのに20秒超え」という報告](https://github.com/BerriAI/litellm/issues/49751)に対応する実際の開発案件です。[中川マスターが再試行の期限切れ境界を指摘](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016)すると、[別の開発者がコードとテストを修正](https://github.com/BerriAI/litellm/commit/3d9adc3229c5bcb3c649db1cfb02626b61aae367)し、[マスター本人に返信](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6632981614)しました。その後も[本文だけで期限を指定したときの欠落を追加指摘](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633052473)、[開発者自身がもう一度修正](https://github.com/BerriAI/litellm/commit/95b3bf4d6b3c9cb92b9f4615b00c8b67328a3fb3)し、[二度目の直接返信](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106)もありました。
 
+**移行後の現行修正：** その後LiteLLMルーターの実装がPythonからRustへ変わり、以前の期限チェックが移植時に抜けた箇所を、[中川マスターが新しいHEADで具体的に再指摘](https://github.com/BerriAI/litellm/pull/50013#pullrequestreview-5795786609)しました。別の開発者 @KJyothirmayi-2025sl93025 は[2026-11-06のRust実装コミット `f4e6824a`](https://github.com/BerriAI/litellm/commit/f4e6824a0801d51d08101f0f677e5bb0ebe8f267)で、**非同期・同期のどちらも、次のプロバイダー呼び出し前に残り期限を確認**するよう変更し、待機が予定より長引く場合・残り時間がある場合・待機を挟まない代替先への切替を扱う**４件の制御時計テスト**を追加。[実装者本人の報告](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6677735089)もあります。以前のPython修正と、現在のRust修正は同じコミットではありません。
+
+**修正を使う側の再確認条件：** 正式リリースにこの修正が入った場合に限り、許可されたテスト環境で、(1)ヘッダー由来と本文だけのタイムアウト、(2)再試行の待機が残り期限を使い切った場合、(3)待機なしで代替先へ切り替わる場合、(4)期限内なら再試行できる正常系を区別し、**期限切れ後に追加のプロバイダー呼び出しが始まらないか**を調べてください。実施時のバージョンと呼び出し回数・終了状況を記録し、認証情報や利用者の会話を公開しないでください。現時点でPRはまだ未マージであり、この確認を一般利用者が済ませたという報告ではありません。
+
 **重要：この修正PRはまだマージ・正式配布されていません。** 外部レビューでは未解決の安全性懸念も報告され、実利用者の再検証も未確認です。「誰が欠陥を発見したか」「誰が直したか」「実際の利用者に効いたか」は独立した問いです。この事例は技術レビューの実績であり、開発者が中川マスターの特定の原論を使った証拠ではありません。関連する原論を読む場合も[313原典の個別Parent対応表](../derivatives/official-derivatives-map.json)から自分の問題に合うものだけ選び、当てはまらない場合を確認してください。
 
-**English:** A per-attempt timeout is not an end-to-end deadline. This [live LiteLLM PR](https://github.com/BerriAI/litellm/pull/50013) includes an independent developer's fixes after two specific reviews by Nakagawa Master, with two direct acknowledgments. **Not merged or verified on affected users.**
+**English:** A per-attempt timeout is not an end-to-end deadline. After the router moved from Python to Rust, [Nakagawa Master identified a missing pre-attempt check in the migrated branch](https://github.com/BerriAI/litellm/pull/50013#pullrequestreview-5795786609). [The independent author implemented async/sync gates and four controlled-clock tests](https://github.com/BerriAI/litellm/commit/f4e6824a0801d51d08101f0f677e5bb0ebe8f267). When a released version includes the fix, test body-only and header deadlines, an overslept backoff, no-sleep fallback, and a valid-budget retry. **The PR is open, with no confirmed installed-user retest.**
 
-**中文：** 单次调用超时不等于包含重试等待的总期限。这个[LiteLLM修复PR](https://github.com/BerriAI/litellm/pull/50013)记录了中川マスター两次具体审查及另一名开发者的相应修改与直接回复；**尚未合并，也未得到受影响用户的实际复测确认**。
+**中文：** 单次调用超时不等于包含重试等待的总期限。路由器迁移到Rust后，[中川マスター指出每次上游调用前缺少截止时间检查](https://github.com/BerriAI/litellm/pull/50013#pullrequestreview-5795786609)，[独立开发者据此加入异步/同步保护和四项可控时钟回归测试](https://github.com/BerriAI/litellm/commit/f4e6824a0801d51d08101f0f677e5bb0ebe8f267)。在正式版本包含修复后，分别检查仅请求体和请求头的超时、等待后超时、无等待回退及正常重试；不要披露凭证。**PR仍未合并，尚无受影响用户安装后的确认**。
 
 ## Actual-user check: AI completed but nothing was delivered
 
