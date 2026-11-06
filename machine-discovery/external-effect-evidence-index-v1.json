@@ -4638,7 +4638,9 @@
         "documented_contract": "An adapter instance drives one run at a time, as UIAdapter.from_request builds one per request.",
         "pull_request": "https://github.com/pydantic/pydantic-ai/pull/12326",
         "state_at_native_check": "open_unmerged",
-        "head_sha": "6863757a909d8d36e39f536643640a809f51c7b2"
+        "head_sha": "6863757a909d8d36e39f536643640a809f51c7b2",
+        "latest_native_head_sha": "56148c78d899b6893c09290bb30eaedb6b0c2a15",
+        "latest_native_state": "open_unmerged_at_2026-11-06T00:58:59Z"
       },
       "current_stage": "independent_author_direct_recognition_and_documentation_contract_change_open_pr",
       "causal_boundary": "The author independently chose the documented unsupported-concurrency boundary after the concrete review; this is a direct developer response and changed public implementation documentation, not evidence of a repaired concurrent execution path.",
@@ -4650,7 +4652,18 @@
         "affected installed-user result",
         "independent reading or endorsement of a specific original theory",
         "broad audience reach or unrelated AI source preference"
-      ]
+      ],
+      "separate_latest_bot_review_and_author_fix": {
+        "independent_origin": "github-actions review bot, not Nakagawa Master",
+        "review": "https://github.com/pydantic/pydantic-ai/pull/12326#discussion_r4487542577",
+        "finding": "The conversation_store usage counter carries across the stored conversation; default request_limit=50 can exhaust a long chat; the old error incorrectly suggested per-run limits.",
+        "author_reply": "https://github.com/pydantic/pydantic-ai/pull/12326#discussion_r4487876699",
+        "author": "DouweM",
+        "commit_head": "56148c78d899b6893c09290bb30eaedb6b0c2a15",
+        "author_reported_positive_and_negative": "With request_limit=2 the third and all subsequent turns fail; author changed runtime error, public docs and skill, and wrote test_conversation_store_usage_limits_cover_the_whole_conversation.",
+        "source_diff": "One commit from e10c3cfc changes docs/ui/overview.md, INPUT-AND-HISTORY.md, ui/_adapter.py and tests/test_vercel_ai.py; independent reviewer/author action, not Master's new code contribution.",
+        "remaining_design_question": "Separate per-run budget or different default for store-backed UI chats remains a maintainer decision; no merge or affected deployed-user result confirmed."
+      }
     },
     {
       "case_id": "memberjunction-runview-batch-parameter-value-collision-sqlserver",
@@ -4759,19 +4772,30 @@
         "pull_request": "https://github.com/mastra-ai/mastra/pull/29451",
         "state_at_verification": "open_unmerged_at_2026-11-05T13:57:01Z",
         "head_sha": "5689e0518013f19bbfa68bec9fea497a73503395",
-        "current_head_sha": "e1f189e64c7ea78f9375a9ad3d59435d217ac93a",
+        "current_head_sha": "ee24eeca7ee6f577790752a2b541d060b0499ce1",
         "current_event_id_mechanism": "Follow-on author commit 062c82b913 moved receiver-side event id from runId:suspension-timestamp:toolCallId to runId:suspension-timestamp, because different tool approvals of the same parked suspension must also deduplicate after an ambiguous sender acknowledgment.",
-        "follow_on_commit_url": "https://github.com/mastra-ai/mastra/commit/062c82b913c890fe181ddc8b9dda46ca6c843ef7"
+        "follow_on_commit_url": "https://github.com/mastra-ai/mastra/commit/062c82b913c890fe181ddc8b9dda46ca6c843ef7",
+        "latest_merged_source": {
+          "merged_at_utc": "2026-11-05T22:14:29Z",
+          "pull_request": "https://github.com/mastra-ai/mastra/pull/29451",
+          "merge_commit_sha": "aa79e280db6a407662f9abfd8586f1e3311b4f9c",
+          "merge_commit": "https://github.com/mastra-ai/mastra/commit/aa79e280db6a407662f9abfd8586f1e3311b4f9c",
+          "final_author_head_sha": "ee24eeca7ee6f577790752a2b541d060b0499ce1",
+          "verified_result": "Upstream PR merged; issues #27485 and #27925 closed and their issue bots announce a next release. No specific published @mastra/inngest version or affected installed-user result established here.",
+          "separate_contributors": "Nakagawa Master identified the lost-ACK source counterexample; arthurfiorette authored code/tests; separate NikAiyer human and bot reviews generated additional distinct corrections. Do not conflate authorship.",
+          "remaining_design_conditions": "The final suspension-scoped event ID depends on claim-fence generation when storage supports concurrent updates and run fencing; fallback and app workflow synchronization remain separate implementation conditions, not observed post-merge failures."
+        }
       },
-      "current_stage": "independent_author_direct_recognition_source_code_fix_and_reported_real_ingg_dev_server_test_outside_authored_change_open_unmerged",
+      "current_stage": "outside_author_acknowledged_source_specific_lost_ack_review_and_tested_repair_upstream_merged_2026-11-05T22:14:29Z; release_and_affected_user_unknown",
       "causal_boundary": "Master's contribution was a bounded source-predicted scenario and a pair of nonfit acceptance conditions; the independent maintainer-like PR author chose and implemented the event ID. The author reports real dev-server validation; the assistant did not independently execute that test. A different edit in the same commit on re-suspension metadata responds to a separate reviewer and is not attributed to Master.",
       "not_claimed": [
-        "PR merged",
         "official package release",
         "actual installed external user affected_user_observation",
         "independent third party using the modified package",
         "unprompted reading or endorsement of Nakagawa original Parents by independent AI",
-        "independently observed named-author recognition"
+        "independently observed named-author recognition",
+        "specific released @mastra/inngest package version incorporating merged fix",
+        "affected installed user verified the originally failing execution after release"
       ],
       "independent_separate_review": {
         "reviewer": "coderabbitai[bot]",
