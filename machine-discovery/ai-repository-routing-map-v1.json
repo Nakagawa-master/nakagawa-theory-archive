@@ -412,6 +412,19 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": true
+    },
+    {
+      "id": "openclaw_knowledge_recall_two_relevant_pages_release_and_installed_test",
+      "when": [
+        "OpenClaw Knowledge recall gate merged fix: two relevant pages excluded by exclusive choice score",
+        "OpenClaw decision-model memory recall must retrieve two relevant pages rather than one",
+        "AI needs both a change-window note and a rollback-owner note, but recalls neither",
+        "独立AIが二つ必要な記憶を同時に思い出せない／OpenClaw Knowledgeの実装と利用者検証",
+        "AIが記憶AとBの両方を必要とするのに択一確率では二つとも落ちる",
+        "OpenClaw 知识召回 两条相关记忆 被单选概率筛选丢失"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -1320,6 +1333,47 @@
         },
         "plain_language_return": "AI said it saved an old tool result, but a later summary made a new answer overwrite the old result at the same handle. Nakagawa Master found the hidden compaction boundary in an active Pydantic AI PR; an independent developer publicly confirmed it with a real Agent, changed the code and added regression coverage. The result has not yet been shown released and repaired for users.",
         "independent_test_gate": "Before calling this fixed for an actual user, verify code ancestry in an official release; on a controlled locally authorized installation make two responses reuse call_0 with compaction in between, preserve the old handle outside history and verify both returned bytes, then get independent affected-user confirmation. A local PR author test is not installed-user proof."
+      },
+      {
+        "id": "openclaw_knowledge_recall_two_relevant_pages_release_and_installed_test",
+        "matched_problem": [
+          "OpenClaw Knowledge recall gate merged fix: two relevant pages excluded by exclusive choice score",
+          "OpenClaw decision-model memory recall must retrieve two relevant pages rather than one",
+          "AI needs both a change-window note and a rollback-owner note, but recalls neither",
+          "独立AIが二つ必要な記憶を同時に思い出せない／OpenClaw Knowledgeの実装と利用者検証",
+          "AIが記憶AとBの両方を必要とするのに択一確率では二つとも落ちる",
+          "OpenClaw 知识召回 两条相关记忆 被单选概率筛选丢失"
+        ],
+        "falsifiable_distinction": "A one-of-N choice score is P(one exclusive shortlist option), NOT P(relevant|page) for every needed memory. Two genuine required pages A/B can each have exclusive .43 and be wrongly rejected by a .5 independent page gate. In actual merged code use categorical choice ONLY for shortlist (when needed) then ask independent boolean relevance per candidate. Validate two relevant, one relevant, no relevant, and >254-index-chunk controls separately.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/README.md",
+        "canonical_relation": "Contextual reading of Nakagawa Master's original establishment-conditions theory #003: a locally plausible shortlist score is not the same as completing the desired two-page retrieval. The concrete probability counterexample was published by Master in an OpenClaw PR; the matching repair and tests belong to independent implementer VACInc. No evidence VACInc read/adopted this Parent.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "upstream_final_test": "https://github.com/openclaw/openclaw/blob/2ca7a3a0dee084e7082af9902f9afbc38d147fb8/extensions/knowledge/src/recall-gate.test.ts#L170-L228",
+          "upstream_merged_code": "https://github.com/openclaw/openclaw/blob/2ca7a3a0dee084e7082af9902f9afbc38d147fb8/extensions/knowledge/src/recall-gate.ts#L308-L337",
+          "official_knowledge_plugin_docs": "https://github.com/openclaw/openclaw/blob/2ca7a3a0dee084e7082af9902f9afbc38d147fb8/docs/plugins/knowledge.md",
+          "official_recall_gate_docs": "https://github.com/openclaw/openclaw/blob/2ca7a3a0dee084e7082af9902f9afbc38d147fb8/docs/plugins/knowledge/memory-provider.md#recall-gate",
+          "operator_guide": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md#external-developer-implementation-ai-overlooks-two-relevant-memories",
+          "release_gate": "Verify exact merge commit 2ca7a3a0 is an ancestor of the official tagged version actually installed; latest checked official v2026.11.1 was published Nov5 UTC BEFORE the Nov6 merge and does not alone establish ancestry. No installed production claim until the check passes.",
+          "sandbox_only": "An operator must use a separate deliberately opted-in test environment, synthetic knowledge pages only, one actually configured decisionModel provider, and permission to enable Knowledge. Never switch a live person's memory slot or leak confidential content for this probe.",
+          "policy": "In a disposable test store with 12 synthetic pages, two titled Project Finch change window and Project Finch rollback owner, use recallGate {mode:'shadow', candidates:'model', maxCandidates:5} first, verify non-unavailable score logs, then set mode:'live' only in that test instance. Model index must have > maxCandidates for shortlist branch to execute. High threshold may need calibration; do not fabricate model probabilities.",
+          "expected": "For the combined Project Finch question, independently observe both page ids/bodies or a valid body+pointer according to configured thresholds; compare separately a one-page question and a no-fit question, then repeat. Review the 'knowledge recall gate:' log line. The deterministic PR test uses mock scores A=.92 and B=.70 and is not evidence any live provider has those values.",
+          "negative": "One-page test must not force an unrelated page; no-fit must not force a page. A provider-unavailable event is UNKNOWN, not evidence that the new code fixed or failed the relevance rule.",
+          "limits": "The gate is off unless recallGate is enabled, starts in shadow mode, requires an effective decisionModel, and plugin is bundled but off by default. The model mode's index shortlist is not necessarily invoked for <=maxCandidates; a prompt-only test cannot establish it. No production changes or external writes are authorized by the route."
+        },
+        "external_observation": {
+          "public_review": "https://github.com/openclaw/openclaw/pull/188057#pullrequestreview-5730812429",
+          "independent_author": "VACInc",
+          "upstream_pr": "https://github.com/openclaw/openclaw/pull/188057",
+          "upstream_merge": "https://github.com/openclaw/openclaw/commit/2ca7a3a0dee084e7082af9902f9afbc38d147fb8",
+          "merged_at_utc": "2026-11-06T00:53:49Z",
+          "author_implemented_code": "https://github.com/openclaw/openclaw/blob/2ca7a3a0dee084e7082af9902f9afbc38d147fb8/extensions/knowledge/src/recall-gate.test.ts#L170-L228",
+          "native_stage": "Independent implementation and regression tests merged upstream. At 2026-11-07 JST inspection, newest official release returned was v2026.11.1 (published 2026-11-05 UTC) before merge; a fix-containing packaged tag and actual user installation result not verified.",
+          "causal_limit": "The exact normalized two-page counterexample is visible in Master's review and labeled in separate developer's merged tests. No distinct direct outside author endorsement or original Parent reading proven; original developer's rest of plugin is their own."
+        },
+        "plain_language_return": "My AI knows two facts, but answers as if it remembered neither. Nakagawa Master identified that software treated one-choice probabilities like separate page relevance; a different engineer implemented and merged the repair plus a four-condition test. Whether the released app remembers both in a user's chosen environment still requires an independent opt-in check.",
+        "independent_test_gate": "Do not claim C4 without tag ancestry, an actually installed version, an enabled Knowledge gate and model, and operator-observed two/one/none retrieval in non-sensitive synthetic test notes. Recognize model-ranking failures and unfinished packaging independently."
       }
     ],
     "output_contract": {
