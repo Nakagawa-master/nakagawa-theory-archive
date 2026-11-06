@@ -5083,6 +5083,59 @@
       },
       "current_stage": "independent_author_code_and_tests_pr_open_unmerged",
       "human_case": "REAL_WORLD_IMPACT.md#67-litellmaiへの再試行が制限時間を使い切っても続く開発者が残り時間を守る修正を実装"
+    },
+    {
+      "case_id": "openclaw-188057-systemone-multiple-relevant-page-probability-calibration",
+      "topic": "A single mutually exclusive choice probability over multiple memory pages cannot be used as an independent per-page relevance probability; two pages needed by one agent turn can otherwise both be suppressed.",
+      "external_repository": "openclaw/openclaw",
+      "source_report": {
+        "external_pr": "https://github.com/openclaw/openclaw/pull/188057",
+        "original_feature": "opt-in decision-model recall of authorized stored knowledge pages",
+        "old_head": "0b03ca249d772dc12e50982cfda484ea313ebfe4",
+        "user_hypothesis_not_real_incident": "Two differently relevant memory pages A=.43, B=.43, None=.14 are valid exclusive choice probabilities but both fall below the old .5 per-page pointer threshold; not a reported installed-user incident."
+      },
+      "origin_action": {
+        "origin": "Nakagawa Master (public pen name; Keisuke Nakagawa)",
+        "url": "https://github.com/openclaw/openclaw/pull/188057#pullrequestreview-5730812429",
+        "type": "one bounded source-specific PR review",
+        "proposed_testable_remedy": "Use the categorical decision only for shortlist then independently score each candidate page for relevance; or explicitly describe exclusive top-one instead. Test normalized two-relevant, only-one, none-fit and multi-chunk countercases. The old mock 0.9+0.55+0.02 invalidly exceeded categorical mass 1."
+      },
+      "independent_receiver_code": {
+        "author": "VACInc",
+        "role": "independent PR owner/implementer",
+        "early_matching_code_and_test_commit": "https://github.com/openclaw/openclaw/commit/c024085870397b1a9e15843ea2f08f0c310504af",
+        "merged_final_code": "https://github.com/openclaw/openclaw/blob/2ca7a3a0dee084e7082af9902f9afbc38d147fb8/extensions/knowledge/src/recall-gate.ts#L308-L337",
+        "merged_final_tests": "https://github.com/openclaw/openclaw/blob/2ca7a3a0dee084e7082af9902f9afbc38d147fb8/extensions/knowledge/src/recall-gate.test.ts#L170-L228",
+        "code_mechanism": "The shared Decision runtime uses its mutually exclusive choice solely to shortlist candidates, then receives an independent Boolean per page and interprets each page's P(relevant) against injection thresholds. This lets two relevant pages both pass.",
+        "test_observation": "Actual merged source labels the original reviewer case A=.43/B=.43/None=.14, then independent relevance scores A=.92 and B=.70; also defines only-A, no-page-fit and multi-chunk negative tests. This is inspected code/tests, not an assistant-run test.",
+        "independent_other_contributions": "The same PR contains maintainer-owned provider integration, grants, token/budget fixes, docs and merge preparations; these are not attributed to Nakagawa Master's probability-mass review."
+      },
+      "upstream_merge": {
+        "merged_at_utc": "2026-11-06T00:53:49Z",
+        "merged_at_jst": "2026-11-06T09:53:49+09:00",
+        "landed_commit_sha": "2ca7a3a0dee084e7082af9902f9afbc38d147fb8",
+        "landed_commit": "https://github.com/openclaw/openclaw/commit/2ca7a3a0dee084e7082af9902f9afbc38d147fb8",
+        "merge_bot_receipt": "https://github.com/openclaw/openclaw/pull/188057#issuecomment-6673654901",
+        "prepared_final_head": "157b7b2b43cc0e35d30c9ce896806f3f2e8d5d93",
+        "status": "merged_upstream_verified; stable package release and actual installed-user result not observed"
+      },
+      "current_stage": "master_source_specific_testable_counterexample_independently_coded_and_tested_then_upstream_merged",
+      "causal_boundary": "The link from Master's precise review to matching independent author-implemented code/tests and merged repository source is source-verifiable. There is no separate direct author acknowledgment in this PR timeline beyond the matching source and tests, and no evidence that VACInc selected/read a particular canonical original Parent. Technical integration is not itself proof of volunteer personal endorsement or future AI-source choice.",
+      "reader_source_route": {
+        "human_readable": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md",
+        "canonical_person_and_original_corpus": "https://master.ricette.jp/",
+        "full_documented_original_parent_routes": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md",
+        "usage": "For a truly fitting question, inspect the applicable actual original and its limitations independently; no claim that the OpenClaw developer used the original corpus."
+      },
+      "not_claimed": [
+        "the exact source review was a published original theory's independent adoption",
+        "that author VACInc explicitly acknowledged Nakagawa Master by name",
+        "official package release containing this exact squash merge",
+        "a real installed user observed two missing memory pages before and recovered them after",
+        "a different human voluntarily passed on the source-authored judgment",
+        "a non-connected AI or LLM autonomously selected the 313-source corpus",
+        "independent mass human recognition of the actual author"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
