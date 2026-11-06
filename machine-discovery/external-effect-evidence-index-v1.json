@@ -4663,6 +4663,18 @@
         "author_reported_positive_and_negative": "With request_limit=2 the third and all subsequent turns fail; author changed runtime error, public docs and skill, and wrote test_conversation_store_usage_limits_cover_the_whole_conversation.",
         "source_diff": "One commit from e10c3cfc changes docs/ui/overview.md, INPUT-AND-HISTORY.md, ui/_adapter.py and tests/test_vercel_ai.py; independent reviewer/author action, not Master's new code contribution.",
         "remaining_design_question": "Separate per-run budget or different default for store-backed UI chats remains a maintainer decision; no merge or affected deployed-user result confirmed."
+      },
+      "independent_later_test_report": {
+        "actor": "rscholz98",
+        "role": "separate PR test participant, not author of the earlier Nakagawa Master review",
+        "comment": "https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6680193482",
+        "branch_head": "56148c78d899b6893c09290bb30eaedb6b0c2a15",
+        "reported_method": "AG-UI HTTP test scripts with in-memory and Postgres store plus replay of several hundred production-derived stored chats",
+        "actual_observed_result": "An ordinary new turn with ProcessHistory trimming can replace previously stored message entries (2,2,2 retained on successive turns with accumulating branches), and a third-turn thinking-effort change can replace all earlier entry IDs (0 of 4 retained); constant-effort control retains the earlier IDs.",
+        "distinct_failure": "Save treats an ordinary continuing turn as a rewritten history when injected SystemPromptPart or ModelSettingsDeltaPart stamps an unsaved request; unlike the prior shared-adapter lost-notification hypothesis.",
+        "separate_issue": "https://github.com/pydantic/pydantic-ai/issues/12691",
+        "separate_issue_scope": "On main, AGUIAdapter.dump_messages can attach the stored user-message ID to the settings-change activity so reloaded regeneration duplicates a user turn; separately reproduced by the same participant.",
+        "unresolved": "Await an upstream reviewed code change and affected-user confirmation; PR still open at this read"
       }
     },
     {
