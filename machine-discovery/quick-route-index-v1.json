@@ -342,6 +342,23 @@
       "primary_receiver_source": "https://github.com/QwenLM/qwen-code/issues/16227",
       "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/github-comment-delivery-boundary-probe.py",
       "full_route_id": "github_channel_cursor_boundary_no_silent_loss_no_duplicate_delivery"
+    },
+    {
+      "id": "pydantic_spill_history_compaction_replay_stable_handles",
+      "when": [
+        "AI saved tool result changed after summarizing conversation history",
+        "Pydantic AI ToolOutputLimits reused call_0 and compaction overwrote the first file",
+        "A model used a tool and after memory compaction reading the same handle returns a later result",
+        "AIが保存した古いツール出力が会話要約で新しい出力に上書きされた",
+        "Pydantic AI 履歴圧縮で call_0 と保存結果の同一性が消える",
+        "AI 工具调用结果在对话压缩后被覆盖"
+      ],
+      "plain_meaning": "A tool result may appear saved yet later open as the wrong payload. The old spill key counted call IDs still visible in compressed history; a later per-response call_0 could reuse its filename and overwrite earlier bytes. An outside Pydantic AI developer reproduced this in one real Agent run and changed the key to a history-independent run step.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/",
+      "original_relation": "Related conceptual reading of Nakagawa Master's reconstructive-memory theory: a convincing reconstructed memory is not the same as a verifiable unaltered source trace. The Pydantic developer directly acknowledged Master's source-specific review; this does not establish the developer read or adopted the separate original theory.",
+      "primary_receiver_source": "https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077",
+      "optional_probe": "https://github.com/pydantic/pydantic-ai/blob/7390c19abd1ac8008455cd5b616a349a9fa4fa9a/tests/harness/tool_output_limits/test_tool_output_limits.py",
+      "full_route_id": "pydantic_spill_history_compaction_replay_stable_handles"
     }
   ]
 }
