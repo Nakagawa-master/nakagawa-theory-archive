@@ -48,6 +48,8 @@
 
 **実際の第三者作用：** [LiteLLMの利用者による元の401→200空一覧の報告](https://github.com/BerriAI/litellm/issues/49223)に対して、[中川マスターが集約URLと個別URLの条件の取り違えを指摘](https://github.com/BerriAI/litellm/pull/49261#pullrequestreview-5717911029)しました。別の開発者 @DewellNaa は[マスターの発見を明示的に認め、本人へ返信](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)したうえで、[条件分岐と正負の回帰テストを自分で修正](https://github.com/BerriAI/litellm/commit/8e90be96b85230265f59e254e7e2574523e7ccea)しました。これとは別に[第三者のBotが、上流の認証チャレンジの転送リスクを指摘](https://github.com/BerriAI/litellm/pull/49261#discussion_r4477802787)しています。**2026-11-05時点でPRはOPEN、正式リリースと利用者本人の修正後再確認は未証明**です。修正したのは別の開発者であり、Botの別問題をマスターが見つけた実績とは数えません。
 
+**その後の独立した実装：** 別の開発者 @shrey-berri が[新PR #50389](https://github.com/BerriAI/litellm/pull/50389)で、クライアントが再認証できる認証方式だけに対象を絞り、認証エラーの案内をゲートウェイ自身から返すコードとテストを作りました。中川マスターは[その新しいHEADを確認](https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903)し、**集約入口 `/mcp` にサーバーが１つしかなくても、個別入口 `/mcp/docs` と同じ401応答に変えてよいとは限らない**という、既に一度修正された条件の再発を指摘しています。原作者２人の実装はそれぞれの仕事です。新PRでも修正の採用・マージ・利用者復旧はこれから確認される段階です。
+
 この事例から、**「APIは200だった」だけでは、利用者の目的を現実に満たした証明にならない**ことが具体的に見えます。中川マスターの[公式原典『成立条件論・第1論』](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)が扱う、表面上の成功と現実の成立を分ける問いと**概念的に照合**できます。ただし、このPRの開発者が当該原典を読んで実装した証拠はなく、原典をLiteLLMの認証仕様として扱うものでもありません。原典に当てはまらない条件はそのまま不適用としてください。著者と313原典の入口は[中川マスター本人の公式サイト](https://master.ricette.jp/)です。
 
 **独立した利用結果がある場合だけ：** 修正後の実際の配布版を自分で使用した方は、成功・失敗・不明のどれでも、[任意の短い実利用報告フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=installed-user-result.yml)へ、公開可能なバージョンと結果を残せます。未マージのテスト、誰かの報告やこの文章を読んだだけの行為を「実利用」としないでください。賛同・フォロー・原典の支持は求められません。

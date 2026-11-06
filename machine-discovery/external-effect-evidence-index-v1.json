@@ -4929,7 +4929,21 @@
         "a separately operated AI independently using cited original source texts",
         "independently observed new readership or genuine user behavior"
       ],
-      "attribution_note": "The PR author implemented and tested the correction; the original requester and separate bot reviewer retain their distinct roles. This is an independently acknowledged and authored technical correction, not a claim of general adoption of any original theory."
+      "attribution_note": "The PR author implemented and tested the correction; the original requester and separate bot reviewer retain their distinct roles. This is an independently acknowledged and authored technical correction, not a claim of general adoption of any original theory.",
+      "separate_next_author_work": {
+        "new_author": "shrey-berri",
+        "distinct_from_prior_author": "DewellNaa",
+        "pull_request": "https://github.com/BerriAI/litellm/pull/50389",
+        "head_sha_at_review": "a16d9f66f30e53225bf2b80f81f1906b2dbe5f7f",
+        "observed_change": "Independently authored new gateway-native 401 auth challenge for a single selected reauthorizable server, restricting client reauth by credential type and adding matched test/response matrix and per-route tests.",
+        "relationship_to_prior_review": "Same independent original affected operator's expired OAuth token problem. No observed author statement that this second implementation derived from Nakagawa Master's earlier review or the original theory corpus.",
+        "new_source_specific_review": "https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903",
+        "review_author": "Nakagawa Master",
+        "review_scope": "Exact-current-HEAD source prediction: new server.py single_server_listing checks len(mcp_servers)==1, and new ASGI test uses path /mcp with one selected server while expecting 401 reauth, potentially reintroducing the aggregate-vs-scoped route confusion explicitly found and fixed in prior PR #49261. The proposed paired test varies the request path /mcp (aggregate negative) versus /mcp/docs (scoped positive).",
+        "independent_reception_at_read": "NO new author's direct response or changed HEAD after new review; fresh review is unadopted C0",
+        "state_at_native_read": "open_unmerged_at_2026-11-06T11:27:47Z",
+        "unverified_next": "author response, path-specific correction, merge, released client recovery and independent later PERSON/source carrier"
+      }
     },
     {
       "case_id": "hermes-desktop-queued-prompt-occurrence-identity-vs-identical-text",
