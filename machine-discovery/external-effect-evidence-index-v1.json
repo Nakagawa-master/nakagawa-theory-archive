@@ -5097,20 +5097,22 @@
       },
       "receiver_implementation": {
         "pull_request": "https://github.com/BerriAI/litellm/pull/50013",
-        "head": "7fbc1c7f48b7e8a32ba8b17aef8752e851b784bc",
-        "mechanism": "Open PR rebased by the independent author after removal of the Python router, carrying the fix into router_rust/core.py. At current HEAD only sleep steps are deadline-checked; a subsequent attempt path has no explicit pre-attempt deadline gate. Historical Python repair is not asserted intact in the Rust code.",
+        "head": "f4e6824a0801d51d08101f0f677e5bb0ebe8f267",
+        "mechanism": "After source review on the Rust-router rebase, the independent author added pre-attempt caller-deadline guards to both async _run_steps and synchronous _run_sync before driver.attempt, as well as four controlled-clock source regression tests covering overslept backoff, a still-valid retry, and sleep-free fallback.",
         "history_note": "Outside author previously implemented and tested Python-router pre-attempt guard/body timeout at HEAD 95b3bf4; that is confirmed historical C2, not a current Rust branch behavior."
       },
-      "current_stage": "historical_independent_python_author_C2_followed_by_open_rust_rebase_new_source_review_C1_no_post_review_author_C2",
+      "current_stage": "independent_author_implemented_and_committed_post_review_Rust_deadline_gates_open_unmerged",
       "human_case": "REAL_WORLD_IMPACT.md#67-litellmaiへの再試行が制限時間を使い切っても続く開発者が残り時間を守る修正を実装",
       "fresh_independent_migration_boundary": {
         "author_migration_receipt": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6676666053",
         "source_specific_review": "https://github.com/BerriAI/litellm/pull/50013#pullrequestreview-5795786609",
-        "new_head": "7fbc1c7f48b7e8a32ba8b17aef8752e851b784bc",
-        "unverified_counterexample": "With 50ms remaining and a 40ms requested backoff, actual sleep can return at t=60ms; new Rust attempt step starts another provider request without checking the now-expired total deadline. A sleep-free fallback can expose the same missing attempt transition.",
+        "new_head": "f4e6824a0801d51d08101f0f677e5bb0ebe8f267",
+        "unverified_counterexample": "HISTORICAL at prior 7fbc1c7f48: a scheduler oversleep after backoff could start a new attempt beyond the deadline; the new f4e6824a gate addresses this exact source case. This is the former risk and no longer a claim that current HEAD lacks the gate.",
         "suggested_inverse": "Provider invocation count remains one after an overrun sleep; check both async and sync attempt steps and a fallback without sleep. On positive budget retry proceeds. This is source-level prediction, not a newly run integration test.",
-        "outside_author_fix_for_new_review": "NOT OBSERVED; PR OPEN, HEAD unchanged at this read",
-        "actual_end_user_after_fix": "UNKNOWN"
+        "outside_author_fix_for_new_review": "CONFIRMED independent author commit f4e6824a0801d51d08101f0f677e5bb0ebe8f267 at 2026-11-06T05:27:46Z, implementing both async/sync deadline checks and four own regression tests; PR OPEN; source tests present but repository test-run completion and affected-user recovery not inferred.",
+        "actual_end_user_after_fix": "UNKNOWN",
+        "author_fix_commit": "https://github.com/BerriAI/litellm/commit/f4e6824a0801d51d08101f0f677e5bb0ebe8f267",
+        "author_fix_reply": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6677735089"
       }
     },
     {
@@ -5165,6 +5167,37 @@
         "a non-connected AI or LLM autonomously selected the 313-source corpus",
         "independent mass human recognition of the actual author"
       ]
+    },
+    {
+      "case_id": "qwen-image-payload-eviction-resume-boundary",
+      "topic": "Qwen Code image-payload eviction: disabling future evictions does not recover image bytes already removed from serialized history when the in-memory store is lost on restart.",
+      "external_repository": "QwenLM/qwen-code",
+      "original_reporter": {
+        "actor": "Eric-GoodBoy-Tech",
+        "url": "https://github.com/QwenLM/qwen-code/issues/15495",
+        "description": "Reported the missing opt-out and undocumented configuration and stored-history mutation."
+      },
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "url": "https://github.com/QwenLM/qwen-code/issues/15495#issuecomment-6394409406",
+        "summary": "Source-specific separation of future eviction disabled and historical image restoration across fresh chat process with an empty image payload map. Suggested a bounded synthetic red/green contract; no runtime reproduction asserted.",
+        "optional_original_source": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_SAFETY_QUESTIONS_TO_ORIGINALS.md"
+      },
+      "independent_review": {
+        "actor": "doudouOUC",
+        "url": "https://github.com/QwenLM/qwen-code/issues/15495#issuecomment-6394985950",
+        "summary": "Independently reread the exact image reference and LlmChat source, explicitly affirmed Nakagawa Master's cross-process boundary, and showed how an unresolved image reference becomes plain text after a restart; source-level verification, not a tested restart incident."
+      },
+      "independent_implementation": {
+        "actor": "2SinceJuly",
+        "pull_request": "https://github.com/QwenLM/qwen-code/pull/16438",
+        "head": "8e54971e425171105af758dd8f2888687d474cb8",
+        "change": "Adds imagePayloadThreshold: 0 guard to disable FUTURE image eviction; exposes model.chatCompression schema knobs and documentation, with author-written fresh-session retention regression.",
+        "scope_boundary": "This source change does not recover images from prior evictions after a restart; PR source does not credit the specific earlier Nakagawa review as the reason for the code changes.",
+        "state_at_check": "open_unmerged; current check suite includes pending and one web-shell E2E shard failure, no full green claim"
+      },
+      "current_status": "third_party_source_confirmation_and_open_independent_configuration_code; historical image recovery remains unaddressed",
+      "next_external_proof": "Independent maintainer acceptance/merge and subsequent runtime/user report are separate from source and first-party case discoverability."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
