@@ -399,6 +399,19 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": true
+    },
+    {
+      "id": "pydantic_spill_history_compaction_replay_stable_handles",
+      "when": [
+        "AI saved tool result changed after summarizing conversation history",
+        "Pydantic AI ToolOutputLimits reused call_0 and compaction overwrote the first file",
+        "A model used a tool and after memory compaction reading the same handle returns a later result",
+        "AIが保存した古いツール出力が会話要約で新しい出力に上書きされた",
+        "Pydantic AI 履歴圧縮で call_0 と保存結果の同一性が消える",
+        "AI 工具调用结果在对话压缩后被覆盖"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -1268,6 +1281,45 @@
         },
         "plain_language_return": "A GitHub comment can be visible and marked read while an AI bot never sees it. An independent Qwen developer reported this exact timestamp-boundary failure; Nakagawa Master published a small 10-check offline test to separate genuine delivery, replay prevention and uncertain outcomes. It helps engineers evaluate a repair without pretending the Qwen bot has already been fixed.",
         "independent_test_gate": "Choose the exact problem, run the isolated model only as a falsifiable aid, inspect the original receiving project's source and its own tests, and separate an independently shipped/used code change from a public local example or a mention. Do not infer this Qwen bug explains a person's missing ordinary GitHub mentions."
+      },
+      {
+        "id": "pydantic_spill_history_compaction_replay_stable_handles",
+        "matched_problem": [
+          "AI saved tool result changed after summarizing conversation history",
+          "Pydantic AI ToolOutputLimits reused call_0 and compaction overwrote the first file",
+          "A model used a tool and after memory compaction reading the same handle returns a later result",
+          "AIが保存した古いツール出力が会話要約で新しい出力に上書きされた",
+          "Pydantic AI 履歴圧縮で call_0 と保存結果の同一性が消える",
+          "AI 工具调用结果在对话压缩后被覆盖"
+        ],
+        "falsifiable_distinction": "Run and retry identifiers are not stable per-call identity when a provider reuses call_0 across different model responses. A spill key based on counting retained ToolCallPart objects is not invariant under SummarizingCompaction replacing ctx.messages. Force three real responses call_0 → call_9 → call_0 with spills and a compaction after the middle call; retrieve the FIRST saved handle after the third result and compare exact original bytes. Opposite controls: no history compaction, different model-response IDs, replay without re-deriving a new identity. Keep explicit per-response run_step and retry distinct.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/127/README.md",
+        "canonical_relation": "Related conceptual reading of Nakagawa Master's reconstructive-memory theory: a convincing reconstructed memory is not the same as a verifiable unaltered source trace. The Pydantic developer directly acknowledged Master's source-specific review; this does not establish the developer read or adopted the separate original theory.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "upstream_regression_file": "https://github.com/pydantic/pydantic-ai/blob/7390c19abd1ac8008455cd5b616a349a9fa4fa9a/tests/harness/tool_output_limits/test_tool_output_limits.py",
+          "actual_test_name": "test_a_reused_tool_call_id_survives_a_compaction_between_the_responses",
+          "suggested_isolated_test": "pytest tests/harness/tool_output_limits/test_tool_output_limits.py -k test_a_reused_tool_call_id_survives_a_compaction_between_the_responses",
+          "author_reported_before": "Previous HEAD: a real Agent with ToolOutputLimits and SummarizingCompaction made three oversized returns but only two stored files, with first call_0 bytes replaced by the last call_0 bytes.",
+          "author_reported_after": "New code 7390c19 uses run_id/run_step/call_id.retry, with an end-to-end compaction regression and 255 passes in Windows tool_output_limits suite; 29 Windows POSIX-only failures match old baseline and do not establish global CI success.",
+          "positive_control": "Two model responses with per-response reused call_0 must yield distinct readable original payloads, including after a CompactionPart has replaced prior history.",
+          "negative_control": "Old history-count key derived occurrence 0 after the first call was removed by compaction and overwrote that file, losing original result; the new run_step key must not do so.",
+          "nonfit": "One-response duplicate tool ids (invalid pairing), models that guarantee global IDs, no tool spills, or no history compaction require separate checks; source change is not a released-user incident.",
+          "permission": "Any local test is optional and requires participant-controlled non-confidential inputs; do not run against customer data or use an AI service without its owner's permission."
+        },
+        "external_observation": {
+          "original_independent_issue": "https://github.com/pydantic/pydantic-ai/issues/12676",
+          "upstream_PR": "https://github.com/pydantic/pydantic-ai/pull/12677",
+          "nakagawa_source_specific_compaction_review": "https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398",
+          "independent_author_direct_confirmation_and_real_agent_test": "https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077",
+          "independent_author": "gouyu-hou",
+          "fix_commit": "https://github.com/pydantic/pydantic-ai/commit/7390c19abd1ac8008455cd5b616a349a9fa4fa9a",
+          "native_outcome": "Open PR at 2026-11-06T15:29 UTC; distinct external implementer explicitly confirms Nakagawa Master's finding, reports full Agent reproduction, changed code/test and documents. Upstream merge/release/installed affected user NOT observed.",
+          "rights_and_cause": "The independent author originally filed the reused ID issue and authored all code. Nakagawa Master specifically identified the extra compaction inverse and suggested a replay-stable run-step identity; author explicitly acknowledged that exact causal input. Independent original-theory reading is not evidenced."
+        },
+        "plain_language_return": "AI said it saved an old tool result, but a later summary made a new answer overwrite the old result at the same handle. Nakagawa Master found the hidden compaction boundary in an active Pydantic AI PR; an independent developer publicly confirmed it with a real Agent, changed the code and added regression coverage. The result has not yet been shown released and repaired for users.",
+        "independent_test_gate": "Before calling this fixed for an actual user, verify code ancestry in an official release; on a controlled locally authorized installation make two responses reuse call_0 with compaction in between, preserve the old handle outside history and verify both returned bytes, then get independent affected-user confirmation. A local PR author test is not installed-user proof."
       }
     ],
     "output_contract": {
