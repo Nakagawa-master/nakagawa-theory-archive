@@ -154,6 +154,24 @@
 
 **中文：** “已保存”不等于旧对话及其消息ID一定保持不变。第三方参与者[通过HTTP、Postgres及实际来源的历史会话重放测试了PR #12326](https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6680193482)，发现某些条件下旧消息ID被替换；对照测试则保留了旧ID。另一个[问题 #12691](https://github.com/pydantic/pydantic-ai/issues/12691)复现了重新加载后用户消息ID错位。中川マスター此前指出的保存通知丢失边界是**不同问题**，并被PR作者认可、写入使用约束。可对照[关于保留决定与关系历史的原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)，但不能将其当作软件接口规范。
 
+## AIに「保存した」はずの検査結果が、長い会話のあと別の中身になった
+
+**「AIが前の検査結果を保存したのに、あとで読み出したら別の結果だった。保存した表示まで信用できない？」**
+
+**最初に確かめること：結果そのものと、結果を取り出すための保存先の番号は別です。** 番号が同じでも、別の結果で上書きされていれば、AIは間違った内容を「以前の結果」として読んでしまいます。長い会話を要約して短くする機能と組み合わせたとき、過去の呼び出しを数え直して保存先を決める設計では、この衝突が起き得ます。
+
+**独立した開発者自身が問題を再現し、修正しました。** Pydantic AIの[元の報告 #12676](https://github.com/pydantic/pydantic-ai/issues/12676)と[修正PR #12677](https://github.com/pydantic/pydantic-ai/pull/12677)では、実装者 @gouyu-hou が「別のAI応答が同じ `call_0` を使う」衝突を修正していました。そこへ[中川マスターが現在のコードを精査し、会話履歴の圧縮が入ると、その修正でも古い呼び出しが消えて保存先が再び衝突する、と具体的に指摘](https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398)しました。
+
+開発者は[その指摘の正しさを公開の場で認め、実際の `Agent` に履歴圧縮と大きなツール結果を組み合わせて再現](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077)しました。修正前は3つの結果に対して保存ファイルが2つしかなく、最初のファイルは後の内容に上書きされていました。開発者自身が、履歴の長さに左右されない**実行ステップ単位の保存先**へ変更し、圧縮前後の異なる結果を保持する回帰テストも追加しました。[実際のソース変更 `7390c19`](https://github.com/pydantic/pydantic-ai/commit/7390c19abd1ac8008455cd5b616a349a9fa4fa9a)。
+
+**自分の環境で確認するなら：** 機密を含まない2つの違うテスト結果を別のAI応答として保存し、間に会話要約を挟んで、古い結果と新しい結果をそれぞれ読み返してください。保存ID・中身・実行ステップを個別に照合します。**このPRは確認時点で未マージ**のため、一般向け配布版に修正が入った、実際の利用者が直ったとはまだ言えません。
+
+**原典へ戻る：** 中川マスターの[『記憶構造論 ─ 再構成される真実と「照応の倫理」』](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/)は、もっと広い範囲で、内部で組み直した記憶の筋が通ることと、元の一次資料・時間・関係をたどって確認できることを分けて考えます。ここでのソフトウェア修正はマスターの個別コードレビューに対する開発者自身の仕事です。開発者がこの理論原典を読んだという記録はなく、原典は仕組みを考える別の入口です。
+
+**English:** “Saved” is not the same as “the old result is still stored under that handle.” [Nakagawa Master found a second failure path in a real Pydantic AI PR](https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398): summarizing the history erased the earlier `call_0` from the count, making a later call reuse its spill filename. [Independent developer @gouyu-hou explicitly confirmed the finding, reproduced it in a real Agent run, then changed the key to a durable run step and added a regression test](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077). The PR was still open at the last check. [Read Nakagawa Master's original work on reconstructive memory](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/) as a related conceptual lens, distinct from the developer's implementation.
+
+**中文：** “已保存”并不保证旧结果仍能从原来的标识读取。中川マスター在[Pydantic AI 的实际代码审查](https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398)中指出：压缩对话历史后，旧的 `call_0` 不再参与计数，新调用可能覆盖旧结果。[独立开发者亲自在真实 Agent 中复现、认可该分析，并改用不依赖历史压缩的执行步骤作为保存标识，加入回归测试](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077)。检查时PR尚未合并。[关于重构记忆与外部核验的中川マスター原典](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/)属于相关的思想参考，不等于开发者已阅读原典。
+
 ## この10問にないなら、313件全部の題名から探す
 
 [**313の公式派生物の題名一覧（分野・元の題名と原典への経路）**](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を開き、Ctrl+Fで「信頼」「合意」「AI」「営業」「摩擦」「未来」「文明」「不動産」「権限」「心」など、自分が気になっている言葉を探せます。[24の棚](WORLD_MAP.md)なら題名を知らなくてもテーマで選べます。全313件を一律に『あなたの問いの答え』とするページではありません。
