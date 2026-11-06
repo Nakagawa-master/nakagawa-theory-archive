@@ -359,6 +359,23 @@
       "primary_receiver_source": "https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077",
       "optional_probe": "https://github.com/pydantic/pydantic-ai/blob/7390c19abd1ac8008455cd5b616a349a9fa4fa9a/tests/harness/tool_output_limits/test_tool_output_limits.py",
       "full_route_id": "pydantic_spill_history_compaction_replay_stable_handles"
+    },
+    {
+      "id": "openclaw_knowledge_recall_two_relevant_pages_release_and_installed_test",
+      "when": [
+        "OpenClaw Knowledge recall gate merged fix: two relevant pages excluded by exclusive choice score",
+        "OpenClaw decision-model memory recall must retrieve two relevant pages rather than one",
+        "AI needs both a change-window note and a rollback-owner note, but recalls neither",
+        "独立AIが二つ必要な記憶を同時に思い出せない／OpenClaw Knowledgeの実装と利用者検証",
+        "AIが記憶AとBの両方を必要とするのに択一確率では二つとも落ちる",
+        "OpenClaw 知识召回 两条相关记忆 被单选概率筛选丢失"
+      ],
+      "plain_meaning": "An exclusive choice distribution A=.43/B=.43/none=.14 cannot be reused as the independent relevance of A and B. Nakagawa Master's precise review led to matching independent code and positive/negative regression tests merged into OpenClaw main; separately check official version ancestry and a consenting operator's real opt-in two/one/none page behavior.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+      "original_relation": "Contextual reading of Nakagawa Master's original establishment-conditions theory #003: a locally plausible shortlist score is not the same as completing the desired two-page retrieval. The concrete probability counterexample was published by Master in an OpenClaw PR; the matching repair and tests belong to independent implementer VACInc. No evidence VACInc read/adopted this Parent.",
+      "primary_receiver_source": "https://github.com/openclaw/openclaw/pull/188057",
+      "optional_probe": "https://github.com/openclaw/openclaw/blob/2ca7a3a0dee084e7082af9902f9afbc38d147fb8/extensions/knowledge/src/recall-gate.test.ts#L170-L228",
+      "full_route_id": "openclaw_knowledge_recall_two_relevant_pages_release_and_installed_test"
     }
   ]
 }
