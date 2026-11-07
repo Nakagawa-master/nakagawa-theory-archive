@@ -7,6 +7,7 @@ This is a local, read-only check; it does not start GitHub Actions.
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -91,7 +92,15 @@ COUNT_FIELDS = {
         ("Author first-glance count", r"(公開された外部作用事例は)(\d+)(件。)"),
         ("Author source-reference count", r"(\[)(\d+)(件の外部作用の一次記録\])"),
     ),
+    "llms.txt": (
+        ("AI-reader human evidence count", r"(\[)(\d+)( human-readable external records\])"),
+    ),
 }
+
+# The machine-readable evidence collection has its OWN separate source of truth:
+# the length of its validated `cases` array, not the human numbered case count.
+MACHINE_INDEX = "machine-discovery/external-effect-evidence-index-v1.json"
+MACHINE_VISIBLE_COUNT = r"(\[)(\d+)( machine-readable staged external evidence cases\])"
 
 # An older optional README sentence used the same number in a caveat.
 # Keep it aligned if someone reintroduces it; never add the sentence solely
@@ -101,7 +110,19 @@ OPTIONAL_README_CAVEAT = (
 )
 
 
-def reconcile_references(count: int, *, sync: bool) -> list[str]:
+def inspect_machine_count() -> int:
+    """Read the independently curated machine evidence stock without conflating it with human cases."""
+    data = json.loads((ROOT / MACHINE_INDEX).read_text(encoding="utf-8"))
+    cases = data.get("cases") if isinstance(data, dict) else None
+    if not isinstance(cases, list) or not cases:
+        raise ValueError(f"{MACHINE_INDEX}: cases must be a nonempty list")
+    ids = [c.get("case_id") if isinstance(c, dict) else None for c in cases]
+    if any(not isinstance(i, str) or not i for i in ids) or len(set(ids)) != len(ids):
+        raise ValueError(f"{MACHINE_INDEX}: missing or repeated case_id")
+    return len(cases)
+
+
+def reconcile_references(count: int, machine_count: int, *, sync: bool) -> list[str]:
     """Check all displayed case counts, or replace only registered count tokens.
 
     Every match across every page is checked before any file is written, so
@@ -142,6 +163,27 @@ def reconcile_references(count: int, *, sync: bool) -> list[str]:
 
         updates[path] = body
 
+    # Check the separate machine-case number before writing ANY of the pages.
+    # Both llms.txt numbers are updated together from their proper source.
+    machine_display = ROOT / "llms.txt"
+    machine_body = updates[machine_display]
+    matches = list(re.finditer(MACHINE_VISIBLE_COUNT, machine_body))
+    if len(matches) != 1:
+        raise ValueError(f"llms.txt: expected one machine evidence count, found {len(matches)}")
+    match = matches[0]
+    actual = int(match.group(2))
+    if not sync and actual != machine_count:
+        raise ValueError(
+            f"llms.txt: machine evidence shows {actual}, actual index has {machine_count}"
+        )
+    if sync and actual != machine_count:
+        machine_body = (
+            machine_body[: match.start(2)]
+            + str(machine_count)
+            + machine_body[match.end(2) :]
+        )
+    updates[machine_display] = machine_body
+
     changed = [
         str(path.relative_to(ROOT))
         for path in updates
@@ -168,24 +210,25 @@ def main() -> int:
             raise ValueError(f"language case counts differ: {counts}")
         count = counts["REAL_WORLD_IMPACT.md"]
 
-        changed = reconcile_references(count, sync=sync)
-        # A sync MUST leave every managed human-facing number correct.
-        reconcile_references(count, sync=False)
+        machine_count = inspect_machine_count()
+        changed = reconcile_references(count, machine_count, sync=sync)
+        # A sync MUST leave both human and machine-facing numbers correct.
+        reconcile_references(count, machine_count, sync=False)
     except (OSError, ValueError) as exc:
         print(f"Impact index order/count FAILED: {exc}", file=sys.stderr)
         return 1
 
     if sync:
         print(
-            f"Impact case-count SYNC PASS: canonical {count}; "
+            f"Impact case-count SYNC PASS: human {count}, machine {machine_count}; "
             f"{len(changed)} public pages updated"
         )
         for path in changed:
             print(f"  updated: {path}")
     else:
         print(
-            f"Impact index/count PASS: 1–{count} in JA/EN/ZH, "
-            "conclusions last, all registered public front-door counts aligned"
+            f"Impact index/count PASS: human 1–{count} in JA/EN/ZH, "
+            f"machine evidence {machine_count}; all registered counts aligned"
         )
     return 0
 
