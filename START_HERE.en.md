@@ -9,6 +9,7 @@ This page is a public, non-canonical entry point for people and AI systems encou
 - [Four scenes: AI, organizations, future, Origin | Story-first entry](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Hands-on: a cancelled AI worker returns late — try acceptance versus mere arrival](human-translation/agent-late-result-lab.en.html) (GitHub displays HTML source; choose **Raw**, save the `.html` file, then open it in your browser; works offline).
 - [Use the archive on a real problem | Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [For editors, video creators and educators | Check independent evidence and whether a case merits publication](REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
 - [Bring a real problem | Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [Locate these theories relative to existing research | Research Positioning Map](RESEARCH_POSITIONING_MAP.md)
 
