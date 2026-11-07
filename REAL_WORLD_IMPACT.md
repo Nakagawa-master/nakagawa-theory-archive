@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は68件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は69件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**68の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**69の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1755,7 +1755,17 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 **同じ `@p0` という名前でも、1つ目のSQL文と2つ目のSQL文で値が違えば、そのまままとめて送ると意図しない値で処理されます。** [MemberJunction PR #6339](https://github.com/MemberJunction/MJ/pull/6339)で中川マスターは、SQLバッチ間で同じ変数名を使った場合の衝突条件を指摘しました。
 
-**実装者 @AN-BC はマスターを名指しで感謝し、[独立してパラメータの名前変更とSQL構文を理解する安全な置換処理・回帰テストを実装](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 開発チームがほかのPRでも中川マスターのレビューを見ていたことを伝え、公開アカウントの人物について自発的に質問しました。マスター自身は[実名の公開範囲と原典への入口を簡潔に回答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)しています。[PRはまだOPEN](https://github.com/MemberJunction/MJ/pull/6339)。技術的な採用と、実装者による人物への関心の双方を直接確認できる事例です。
+**実装者 @AN-BC はマスターを名指しで感謝し、[独立してパラメータの名前変更とSQL構文を理解する安全な置換処理・回帰テストを実装](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 開発チームがほかのPRでも中川マスターのレビューを見ていたことを伝え、公開アカウントの人物について自発的に質問しました。マスター自身は[実名の公開範囲と原典への入口を簡潔に回答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)しています。[PRは2026年11月6日に正式マージ](https://github.com/MemberJunction/MJ/pull/6339)。この変更を含む公式配布と利用者の実使用結果は別に確認します。技術的な採用と、実装者による人物への関心の双方を直接確認できる事例です。
+
+## 69. Qwen Code｜保存できないAI記憶に時間だけ消費する問題：独立開発者が事前停止を実装
+
+**「この設定を覚えて」と頼んでも、裏で記憶処理が何度も動き、書き込みはすべて拒否されて一件も残らない。** [Qwen Codeの実利用者 @Suaroman は、非対話の `-p` モードでこの障害を報告](https://github.com/QwenLM/qwen-code/issues/15597)し、v0.26.9の再確認でも、メモリON時は平均55.6秒・書き込み19回すべて拒否・保存ゼロ、OFF時は平均6.3秒だったと記録しました（各3回の報告者計測）。
+
+**中川マスターは、承認モードだけで処理を止めると、明示的に書き込みを許可された環境まで無効化してしまうことを指摘。** [実際に書ける保存先と、システムの暗黙の禁止・利用者が明示した禁止を分ける5条件の検証案](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6408912308)を示し、[報告者自身がその区別に同意](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6408998446)、[別の開発者 @doudouOUC がソースを独立に検証](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6410890396)しました。
+
+その後、**別の実装者 @2SinceJuly が[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)を自ら作成し、`write_file` と `edit` の双方が全面禁止なら無駄な抽出を開始しない処理、`writes_denied` の記録と回帰テストを実装**しました。[実装者本人も対象範囲を説明](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960)しています。これは開発者自身のコードとテストが変わった事例ですが、**PRはまだOPEN**。記憶処理のほかの担当部分、保存先ごとの権限判定、実機での修正後再測定と正式配布は未完了です。マスターは[部分修正で元Issue全体が自動終了しないための追加レビュー](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)も投稿しており、この新しいレビューに対する外部の採用結果はまだ確認されていません。
+
+[成立条件論の原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[合意の記憶の原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は、「処理を開始した」ことと「相手の保存結果が成立した」こと、実際の許可と推測した許可を区別するための読み比べ先です。**外部の実装者がこれらの原典を読んだという証拠とは混同しません。**
 
 ## 公開された成果と、原典へ戻る道筋
 
