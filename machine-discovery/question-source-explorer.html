@@ -47,7 +47,7 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 <h2>普段使っているAIにも出典を渡せます</h2>
 <p>問いと以下のURLをお使いのAIに示し、原典の成立条件・反例を確認したうえで具体的な答えを考えることができます。AIが実際に資料を取得するかは、そのサービスのアクセス機能と判断によります。</p>
 <p><a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/human-question-answers-v1.json">完成回答41件の日本語・英語全文</a> ／ <a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json">313原典の説明と公式URL</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md">313原典の英語での読解経路</a></p>
-<p class="muted">検索は文字の一致に基づく関連候補の提示であり、原典の価値順位や適用可能性の証明ではありません。313件の説明は日本語、41件の完成回答は日本語・英語で、多言語の補助経路は限定的です。公表された原典、既刊の実用回答、新しいAIによる推論は区別してください。</p>
+<p class="muted">検索は文字の一致に基づく関連候補の提示であり、原典の価値順位や適用可能性の証明ではありません。313件の説明は日本語ですが、英語入力では各公式原典URLの公開スラッグの語も照合します（翻訳や意味判定ではありません）。41件の完成回答は日本語・英語で、多言語の補助経路は限定的です。公表された原典、既刊の実用回答、新しいAIによる推論は区別してください。</p>
 </section>
 </main>
 <footer><a href="https://master.ricette.jp/">中川マスターの公式原典・著者ホーム</a> · <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md">全313件を文章で読む</a>。公開データが読み込めない場合はリンクから直接開けます。入力した問いの保存や送信は行いません。</footer>
@@ -56,15 +56,18 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 (function(){
 const ROOT="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/";
 const $=id=>document.getElementById(id);
-const stops=new Set(["the","and","that","this","with","from","have","what","when","which","would","could","should","there","your","into","where","for","もの","こと","する","して","した","ない","いる","ある","から","ので","ため","この","その","です","ます"]);
+const stops=new Set(["the","and","that","this","with","from","have","what","when","which","would","could","should","there","your","into","where","for","why","how","who","does","did","was","were","are","can","may","might","they","their","about","after","before","happen","happens","happened","all","any","some","もの","こと","する","して","した","ない","いる","ある","から","ので","ため","この","その","です","ます"]);
 let db=null,listed=[],cursor=0,topAnswer=null,routeHits=[],receiverHits=[];
 function terms(input){
 const txt=String(input||"").normalize("NFKC").toLowerCase(),all=new Set();
-for(const w of txt.match(/[a-z][a-z0-9_-]{2,}/g)||[])if(!stops.has(w))all.add(w);
+for(const w of txt.match(/[a-z][a-z0-9_-]{2,}/g)||[]){if(stops.has(w))continue;all.add(w);if(w.length>4&&w.endsWith("ies"))all.add(w.slice(0,-3)+"y");else if(w.length>4&&w.endsWith("s")&&!w.endsWith("ss"))all.add(w.slice(0,-1));}
 for(const block of txt.match(/[\u3040-\u30ff\u3400-\u9fff]{2,}/g)||[])for(const n of [2,3])for(let i=0;i+n<=block.length;i++){const w=block.slice(i,i+n);if(!stops.has(w))all.add(w);}
 return all;
 }
 function overlap(q,s){const a=terms(s);let v=0;for(const x of q)if(a.has(x))v++;return v;}
+// Canonical Parent URL slugs give English search a lexical hint when the published 313 briefs are Japanese.
+// A source-slug match is not a translation or an applicability judgment.
+function publicSlugTopics(url){const slug=String(url||"").split("/").filter(Boolean).pop()||"";return slug.replace(/^(?:nakagawa[-_]?master[-_]?)+/i,"").replace(/[-_]+/g," ");}
 function el(tag,text,klass){const n=document.createElement(tag);if(text!==undefined)n.textContent=String(text);if(klass)n.className=klass;return n;}
 function anchor(url,label){
 const s=String(url||"");
@@ -106,7 +109,7 @@ cursor=end;$("more").hidden=cursor>=listed.length;
 }
 function drawOriginals(q){
 $("originals").replaceChildren();cursor=0;
-listed=db.originals.map(a=>({a,n:4*overlap(q,a.title)+overlap(q,a.brief)})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
+listed=db.originals.map(a=>({a,n:4*overlap(q,a.title)+overlap(q,a.brief)+2*overlap(q,publicSlugTopics(a.canonical_parent_url))})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
 if(!listed.length){empty("originals","313件の原典説明は日本語です。文字上一致しない場合は、下の多言語経路か「313原典の英語での読解経路」を使い、出典を直接比較してください。");$("more").hidden=true;return;}nextOriginals();
 }
 function drawReceiverCases(q){
