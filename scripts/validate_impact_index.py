@@ -61,45 +61,132 @@ def inspect_page(path: Path, footer_titles: tuple[str, ...]) -> int:
     return len(nums)
 
 
+# These are the deliberately few public front doors where the live case number
+# must be visible. The ONLY authority for that number is the consecutive case
+# headings in REAL_WORLD_IMPACT.md; the other two languages must match.
+# Other pages should link to REAL_WORLD_IMPACT.md instead of copying a number.
+# If another human-facing page genuinely needs the count, register its exact
+# context here so a single command can update and validate it.
+#
+# Each pattern has three groups: fixed prefix, NUMBER, fixed suffix. It may
+# change the NUMBER only. In particular, it can never renumber cases, PRs,
+# issue IDs, dates, release versions, citations or URLs.
+COUNT_FIELDS = {
+    "README.md": (
+        ("README headline", r"(\*\*公開された外部作用事例：)(\d+)(件\*\*)"),
+        ("README reference", r"(\[世界最先端のOSSで起きた)(\d+)(件の一次記録\])"),
+        ("README three languages", r"(\*\*)(\d+)(件の人間向けの段階別実例\*\*)"),
+    ),
+    "REAL_WORLD_IMPACT.md": (
+        ("Japanese opening", r"(\*\*公開記録は)(\d+)(件。\*\*)"),
+        ("Japanese numbered-cases lead", r"(\*\*)(\d+)(の番号付き外部作用事例\*\*)"),
+    ),
+    "REAL_WORLD_IMPACT.en.md": (
+        ("English opening", r"(\*\*)(\d+)( publicly documented, source-linked cases\*\*)"),
+    ),
+    "REAL_WORLD_IMPACT.zh.md": (
+        ("Chinese opening", r"(\*\*公开记录共)(\d+)(例\*\*)"),
+    ),
+    "human-translation/who-is-nakagawa-master.md": (
+        ("Author first-glance count", r"(公開された外部作用事例は)(\d+)(件。)"),
+        ("Author source-reference count", r"(\[)(\d+)(件の外部作用の一次記録\])"),
+    ),
+}
+
+# An older optional README sentence used the same number in a caveat.
+# Keep it aligned if someone reintroduces it; never add the sentence solely
+# because this validation exists.
+OPTIONAL_README_CAVEAT = (
+    r"(?<![0-9])(\d+)(件すべてが採用・リリース・運用まで進んだという意味ではありません)"
+)
+
+
+def reconcile_references(count: int, *, sync: bool) -> list[str]:
+    """Check all displayed case counts, or replace only registered count tokens.
+
+    Every match across every page is checked before any file is written, so
+    a changed page wording cannot silently turn into a partial update.
+    """
+    originals: dict[Path, str] = {}
+    updates: dict[Path, str] = {}
+    for relative, fields in COUNT_FIELDS.items():
+        path = ROOT / relative
+        body = path.read_text(encoding="utf-8")
+        originals[path] = body
+        for label, pattern in fields:
+            matches = list(re.finditer(pattern, body))
+            if len(matches) != 1:
+                raise ValueError(
+                    f"{relative}: expected one {label} count, found {len(matches)}"
+                )
+            match = matches[0]
+            actual = int(match.group(2))
+            if not sync and actual != count:
+                raise ValueError(
+                    f"{relative}: {label} shows {actual}, canonical count is {count}"
+                )
+            if sync and actual != count:
+                body = body[: match.start(2)] + str(count) + body[match.end(2) :]
+
+        if relative == "README.md":
+            caveats = list(re.finditer(OPTIONAL_README_CAVEAT, body))
+            for match in reversed(caveats):
+                actual = int(match.group(1))
+                if not sync and actual != count:
+                    raise ValueError(
+                        f"{relative}: optional adoption caveat shows {actual}, "
+                        f"canonical count is {count}"
+                    )
+                if sync and actual != count:
+                    body = body[: match.start(1)] + str(count) + body[match.end(1) :]
+
+        updates[path] = body
+
+    changed = [
+        str(path.relative_to(ROOT))
+        for path in updates
+        if updates[path] != originals[path]
+    ]
+    if sync:
+        for path in updates:
+            if updates[path] != originals[path]:
+                path.write_text(updates[path], encoding="utf-8")
+    return changed
+
+
 def main() -> int:
+    if len(sys.argv) > 2 or (len(sys.argv) == 2 and sys.argv[1] != "--sync"):
+        print("Usage: python3 scripts/validate_impact_index.py [--sync]", file=sys.stderr)
+        return 2
+    sync = len(sys.argv) == 2
     try:
         counts = {
             filename: inspect_page(ROOT / filename, footers)
             for filename, footers in PAGES.items()
         }
-        unique = set(counts.values())
-        if len(unique) != 1:
-            raise ValueError(f"language counts differ: {counts}")
-        count = unique.pop()
+        if len(set(counts.values())) != 1:
+            raise ValueError(f"language case counts differ: {counts}")
+        count = counts["REAL_WORLD_IMPACT.md"]
 
-        ja = (ROOT / "REAL_WORLD_IMPACT.md").read_text(encoding="utf-8")
-        snapshot = re.search(r"[*][*]([0-9]+)の番号付き外部作用事例[*][*]", ja)
-        if not snapshot or int(snapshot.group(1)) != count:
-            raise ValueError("Japanese overview case count differs from numbered headings")
-
-        readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        mentioned = re.search(r"\*\*公開された外部作用事例：([0-9]+)件\*\*", readme)
-        if not mentioned or int(mentioned.group(1)) != count:
-            raise ValueError("README case count differs from the three impact pages")
-
-        # The same README paragraph also contains a human-facing caveat such as
-        # "46件すべてが採用・リリース・運用まで進んだという意味ではありません".
-        # Check that numerical statement too: otherwise a case-47 proposal can
-        # pass this validator while still displaying 47 and 46 together.
-        caveat_counts = [
-            int(number)
-            for number in re.findall(
-                r"(?<![0-9])([0-9]+)件すべてが採用・リリース・運用まで進んだという意味ではありません",
-                readme,
-            )
-        ]
-        if any(number != count for number in caveat_counts):
-            raise ValueError("README adoption caveat count differs from numbered impact cases")
+        changed = reconcile_references(count, sync=sync)
+        # A sync MUST leave every managed human-facing number correct.
+        reconcile_references(count, sync=False)
     except (OSError, ValueError) as exc:
-        print(f"Impact index order FAILED: {exc}", file=sys.stderr)
+        print(f"Impact index order/count FAILED: {exc}", file=sys.stderr)
         return 1
 
-    print(f"Impact index order PASS: 1–{count}, three languages, conclusions last, README aligned")
+    if sync:
+        print(
+            f"Impact case-count SYNC PASS: canonical {count}; "
+            f"{len(changed)} public pages updated"
+        )
+        for path in changed:
+            print(f"  updated: {path}")
+    else:
+        print(
+            f"Impact index/count PASS: 1–{count} in JA/EN/ZH, "
+            "conclusions last, all registered public front-door counts aligned"
+        )
     return 0
 
 
