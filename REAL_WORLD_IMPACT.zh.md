@@ -1425,6 +1425,9 @@ Qwen Code的TypeScript构建失败，是因为测试专用权限中介缺少必�
 
 **10月27日独立评审的新增验证（仍是第49例，功能实现归属Qwen开发者）：** [独立评审者`wenshao`针对PR HEAD `6ed7884`运行真实daemon和模型](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6442571332)，确认队友与子代理的输出分别带有恰当的身份字段，**988/988项脚本检查通过**。与当前`main`仅剩`Session.ts`一处import冲突，评审者保留两侧import的试合并通过构建与401项聚焦测试。[PR #13902](https://github.com/QwenLM/qwen-code/pull/13902)仍**未合并**；Web Shell同伴标签DOM、实际客户端审批交互、Windows、深层嵌套与崩溃重投递等尚未完成验证。这是第三方对Qwen开发者自身实现的验证，不能归作Nakagawa Master亲自开发该功能，也不能据此声称Qwen采用了中川マスター的理论原典或用户已经使用发布版本。
 
+
+**同一 Qwen ACP 开发链路中的另一项独立实施的修正（2026年11月7日，PR #15658）：** AI 代理关闭会话时，队友最后一条报告可能已从收件箱消费，却未能持久保存。Nakagawa Master [依据最后一次队友通知 flush、收件箱延迟回调与记录写入器关闭的时序，指出独立的竞态条件](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6469875361)，并给出可证伪的延迟释放与重启读取测试建议。独立开发者 `yiliang114` [亲自确认这一缺陷，在 `3f97e526` 中实装关闭前封存队列、将迟到报告直接持久记录的修复及回归测试](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6552690394)；开发者报告测试在撤去该修复时失败，加入修复后通过。[11月7日的开发者后续说明](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6709663948)与[当前 PR 改动](https://github.com/QwenLM/qwen-code/pull/15658/files)均可核对。具体的时序反例与验证建议来自 Nakagawa Master，修复代码及运行测试是接收方开发者的成果。此 PR 仍是草稿，尚未合并/发布，也没有受影响用户恢复的实证；这里不增加事例编号。
+
 ---
 
 ## 50. LangGraph｜第二个子图恢复执行时，可能把第一个子图的答案当成自己的结果
