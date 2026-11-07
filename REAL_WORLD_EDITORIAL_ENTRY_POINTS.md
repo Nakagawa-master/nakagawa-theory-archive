@@ -1,8 +1,8 @@
 # Real-World Editorial Entry Points
 
-A public, non-canonical problem-first guide for editors, educators, newsletter writers, podcast/video hosts, product teams, and researchers.
+A public, non-canonical problem-first guide for editors, educators, newsletter writers, podcast/video hosts, product teams, and researchers. [日本語版](REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md).
 
-The archive contains OD001–OD312 official derivative surfaces. The useful public unit is not “306 items at once.” It is a small set of recurring real-world questions that can reappear across AI, business, investment, organizations, technology, governance, and operations.
+The public archive documents [313 distinct original Parent articles](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) and the corresponding [OD001–OD313 official derivative sets](derivatives/README.md). This guide offers a selection of recurring real-world questions, not a substitute for the complete and equally eligible corpus, including combinations of several relevant originals. These questions can recur across AI, business, investment, organizations, technology, governance, and operations.
 
 Use this route:
 
@@ -83,6 +83,14 @@ Inspect:
 This is bounded evidence that one editorial distinction moved into a third-party rule and recurring reader-facing practice. The operator's published practice provides a concrete example of the distinction entering editorial workflow.
 
 Provenance is not truth proof.
+
+### A different editorial test: an accurate technical fix may still not merit a general news article
+
+The publisher account that adopted the independent-evidence-root distinction in [issue #124](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498) and [merged PR #131](https://github.com/022740mix-spec/AI-News/pull/131) subsequently [declined a different article proposal, issue #198, on November 7, 2026](https://github.com/022740mix-spec/AI-News/issues/198#issuecomment-6710406195). The proposal described a genuine Qwen Code retry-log improvement. The account's stated reason for declining publication was limited general-reader newsworthiness, not a judgment that the engineering fix had no technical value. The reply discloses Claude Code generation, so it does not independently establish the private reasoning of a human editor.
+
+For an editor, researcher, or AI assistant assessing material, keep two questions distinct. **Is the claim supported?** Trace the issue, PR, authors, evidence roots, and exact implementation/merge/release boundary. **Why would this particular audience care?** State what real judgment or everyday consequence the reader can understand from the actual evidence, then ask whether the publication's editorial bar is met. An evocative hypothetical must never be presented as a documented injury, breach, deployment, or real user outcome.
+
+Try a short comparison: write (A) a 60-word technical change log and (B) a 60-word reader-focused explanation of the same verified case. Verify both against the primary sources. If B cannot be supported without inventing an affected person or consequence, keep the technical account and let the publisher decline it. The underlying original reference for evidence-lineage evaluation is [Nakagawa Master's Human-Descendant AI Civilization Theory, Volume 8 — Epistemic Integrity](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/). Adoption of a related editorial rule does not by itself show that an editor read or adopted the complete original theory.
 
 ## 4. When a source is corrected, what downstream beliefs must change?
 
