@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共69例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共71例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1626,6 +1626,24 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 **随后，另一位工程师 @2SinceJuly 自行提出并实现了[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)**：当 `write_file` 和 `edit` 同时被全面禁止时，不再启动必定无法保存的抽取任务；同时加入 `writes_denied` 结果和回归测试。[实现者本人说明了该改动的范围](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960)。这属于独立开发者实际修改代码与测试的证据，但**PR仍处于开放状态**。其他记忆代理、按真实路径判断权限、修复后的用户实机复测及正式发布均未得到证实。中川マスター还[指出不能因为部分修复就自动关闭整个问题](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)；对这一最新审查的独立采纳结果尚待观察。
 
 可对照阅读[成立条件论原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)与[合意的记忆原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)：任务启动不等于结果真实保存，权限判断必须符合实际作用范围。不能据此推断外部工程师曾阅读上述原典。
+
+## 70. Qwen Code｜用户关闭自动摘要后，未完成的摘要仍可能出现：开发者修复完成时的检查
+
+**已经关闭了自动摘要功能，但此前开始的摘要稍后仍显示在屏幕上。** 允许任务开始时的旧设置，不能代替结果返回时用户的新决定。
+
+在[Qwen Code Web Shell PR #13914](https://github.com/QwenLM/qwen-code/pull/13914)中，中川マスター[指出了“请求进行中关闭开关”的准确反例](https://github.com/QwenLM/qwen-code/pull/13914#issuecomment-6111317664)：开启时启动自动摘要、结果返回前关闭、返回后不应再显示自动摘要。这与用户主动执行手动 `/recap` 是两个不同的操作。
+
+**独立开发者 @yar3333 明确认可该发现，并[加入检查当前设置的代码与回归测试](https://github.com/QwenLM/qwen-code/pull/13914#issuecomment-6111666814)。** 在[现行源码](https://github.com/QwenLM/qwen-code/blob/f67b6848a9d01000f74baa1de9fb0ca136d36808/packages/web-shell/client/App.tsx)中，可以确认异步结果到达时会读取当前开关状态。该PR目前仍然[开放](https://github.com/QwenLM/qwen-code/pull/13914)，尚不能视为正式合并、发布或受影响用户的实机改善。
+
+可将这一问题与[《合意的记忆》原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)对照阅读，但不能据此认定外部开发者阅读过该原典。
+
+## 71. LlamaIndex｜修复AI缓存限制时，不能抹掉用户选择的不同保存期限
+
+**长期稳定的指令和短期变化的信息，可能同时需要缓存，但不应被强制使用同一种保存期限。**
+
+在[LlamaIndex PR #23460](https://github.com/run-llama/llama_index/pull/23460)中，中川マスター首先[给出五条系统消息触发Anthropic每次请求最多四个缓存标记限制的具体反例](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257)。**另一位开发者 @arieleven 明确认可该问题，独立[修改了缓存标记合并逻辑并加入测试](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866)。** 随后，中川マスター又[指出将1小时与5分钟的不同TTL合并为一项会丢失用户原有的条件](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539)。[现行实现](https://github.com/run-llama/llama_index/blob/15475f9b493af261d16e4f04309f18d3477ef0dd/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/utils.py)只合并等价的缓存策略，不同TTL仍然保留。
+
+另外一位审查者 @VANDRANKI 独立发现了请求总量与Bedrock整合的其他问题，[作者随后又修正Bedrock的类型错误并加入测试](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102)。这些新的发现归属于那位审查者，而非中川マスター。[PR仍在开放状态](https://github.com/run-llama/llama_index/pull/23460)，正式合并、发布与实际用户结果仍待核实。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
