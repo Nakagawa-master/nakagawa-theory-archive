@@ -5240,7 +5240,12 @@
         "head": "f314372ab60bb78c77df9d22ca6a4db1fc52cf8a",
         "change": "Adds imagePayloadThreshold: 0 guard to disable FUTURE image eviction; exposes model.chatCompression schema knobs and documentation, with author-written fresh-session retention regression.",
         "scope_boundary": "This source change does not recover images from prior evictions after a restart; PR source does not credit the specific earlier Nakagawa review as the reason for the code changes.",
-        "fresh_author_signal": {"source": "https://github.com/QwenLM/qwen-code/pull/16438#issuecomment-6687428157", "new_head_commit": "https://github.com/QwenLM/qwen-code/commit/f314372ab60bb78c77df9d22ca6a4db1fc52cf8a", "actual_delta": "Explained non-image model placeholder retention separately from future-image eviction off switch; added env threshold zero test; reported focused local tests 45 plus 245 passed.", "not_claimed": "No CI-green proof, merged release, recovered previously evicted payload or user C4."},
+        "fresh_author_signal": {
+          "source": "https://github.com/QwenLM/qwen-code/pull/16438#issuecomment-6687428157",
+          "new_head_commit": "https://github.com/QwenLM/qwen-code/commit/f314372ab60bb78c77df9d22ca6a4db1fc52cf8a",
+          "actual_delta": "Explained non-image model placeholder retention separately from future-image eviction off switch; added env threshold zero test; reported focused local tests 45 plus 245 passed.",
+          "not_claimed": "No CI-green proof, merged release, recovered previously evicted payload or user C4."
+        },
         "state_at_check": "2026-11-06T14:39:34Z OPEN, independent author rebased onto current main and reported 45 compaction plus 245 settings focused local tests passing at f314372a. Full branch CI, human maintainer approval, merge and installed-user outcome unverified. Original restart-past-eviction image-byte loss remains out of scope."
       },
       "current_status": "source_confirmed_distinct_human_and_author_owned_config_tests_at_new_open_head; existing_evicted_bytes_not_recovered",
@@ -5285,6 +5290,49 @@
         "test_precondition": "Use a separately authorized test Agent with non-confidential synthetic tool results and confirm upstream release ancestry before claiming production repair."
       },
       "evidence_boundary": "External author directly accepted Master's additional source-specific compaction finding and supplied own integration reproduction/code/test. The author independently originated base repeated-ID issue and owns his actual code. No upstream merge/release/affected installed user/independent AI whole-corpus selection or general public person-adoption shown."
+    },
+    {
+      "case_id": "qwen-code-15597-headless-auto-memory-permission-and-prefork-skip",
+      "topic": "In headless -p runs, managed auto-memory can consume significant work yet save zero files because implicit write/edit denies outrank scoped allows. Skipping extraction when both tools are blanket-denied is a bounded fix; actual per-destination permission and other memory workers remain separate.",
+      "external_repository": "QwenLM/qwen-code",
+      "actual_affected_user": {
+        "actor": "Suaroman",
+        "issue": "https://github.com/QwenLM/qwen-code/issues/15597",
+        "new_reproduction": "https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6690510234",
+        "observations": "Reporter v0.26.9 three trials each: enabled 55.6-second mean, 19 rejected writes and no saved memory; disabled 6.3-second mean. These are reporter measurements, not an assistant end-to-end reproduction."
+      },
+      "nakagawa_master_origin_action": {
+        "actor": "Nakagawa Master (published pen name of Keisuke Nakagawa)",
+        "acceptance_matrix": "https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6408912308",
+        "source_specific_contribution": "Specify resolved writable project/user memory roots, explicit operator denial versus implicit headless default, protected pinned/symlink/out-of-root inverse cases and avoid turning one denied write into a conclusion that no destination is writable.",
+        "followup_design_boundary": "https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6415002323",
+        "subsequent_partial_scope_review": "https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025"
+      },
+      "independent_people": {
+        "reporter_agreed": "https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6408998446",
+        "separate_source_verifier": "https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6410890396",
+        "implementer": "2SinceJuly"
+      },
+      "receiver_authored_change": {
+        "pr": "https://github.com/QwenLM/qwen-code/pull/16522",
+        "head": "ce64d59ecb2ba3d96e5f8270eab696bea7485cc0",
+        "actual_code": "packages/core/src/memory/write-access.ts, extract.ts and regression tests; pre-fork skip only when bare write_file and edit rules both blanket-deny; writes_denied skip/cursor unchanged",
+        "author_explanation": "https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960",
+        "tests": "Unit tests reported by PR author; actual user headless e2e command not re-run by author or assistant",
+        "status": "OPEN as checked November 7, 2026; not merged or released; no actual affected-user post-fix saved-memory result"
+      },
+      "conceptual_original_reading_paths": [
+        {
+          "url": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+          "role": "A worker starting and a durable saved result are different establishment conditions."
+        },
+        {
+          "url": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+          "role": "A scoped permission decision cannot be replaced by a bare approval-mode label."
+        }
+      ],
+      "causal_boundary": "The affected reporter independently agreed to the Master's specific proposed acceptance distinction, and another participant independently verified that distinction in source. A third independent developer wrote the partial code/test repair. This does not establish that the implementer read any particular original Parent, that the newest reviewer comment changed maintainer decisions, that installed users are repaired, or that independent LLMs voluntarily selected the full theory corpus.",
+      "unclosed_native_receiver_gate": "Maintainer must decide issue close scope, per-root explicit-versus-implicit deny behavior, other managed memory agents and an actual post-fix headless user retest before asserting repaired user outcome."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
