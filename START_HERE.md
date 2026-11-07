@@ -14,6 +14,7 @@
 - [現実で何が変わったか｜第三者実装・再利用の確認可能な事例](REAL_WORLD_IMPACT.md)
 - [4つの場面から入る｜AI・会社・未来・起源](discovery-notes/four-scenes-one-structural-view.md)
 - [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [ニュース・動画・教材で現実の問題を扱う｜独立証拠・編集上の採否・原典への戻り方](REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md)
 - [実際の問題を持ち込む｜公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [既存研究との位置関係を見る｜近接研究・差分・未確定新規性](RESEARCH_POSITIONING_MAP.ja.md)
 
