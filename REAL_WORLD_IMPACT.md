@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は69件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は71件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**69の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**71の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1766,6 +1766,26 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 その後、**別の実装者 @2SinceJuly が[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)を自ら作成し、`write_file` と `edit` の双方が全面禁止なら無駄な抽出を開始しない処理、`writes_denied` の記録と回帰テストを実装**しました。[実装者本人も対象範囲を説明](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960)しています。これは開発者自身のコードとテストが変わった事例ですが、**PRはまだOPEN**。記憶処理のほかの担当部分、保存先ごとの権限判定、実機での修正後再測定と正式配布は未完了です。マスターは[部分修正で元Issue全体が自動終了しないための追加レビュー](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)も投稿しており、この新しいレビューに対する外部の採用結果はまだ確認されていません。
 
 [成立条件論の原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[合意の記憶の原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は、「処理を開始した」ことと「相手の保存結果が成立した」こと、実際の許可と推測した許可を区別するための読み比べ先です。**外部の実装者がこれらの原典を読んだという証拠とは混同しません。**
+
+## 70. Qwen Code｜自動要約をオフにした後も、処理中の要約が現れる問題を開発者が修正
+
+**「自動要約を表示しない」と設定を切り替えたのに、その前に始まっていた要約が後から画面に現れる。** AIとの会話をどう扱うか決めた利用者の、最新の意思が画面へ反映されない問題です。
+
+[Qwen Code Web Shell PR #13914](https://github.com/QwenLM/qwen-code/pull/13914)で、中川マスターは[要約が始まった後・結果が返る前に設定をOFFへ変更する逆条件](https://github.com/QwenLM/qwen-code/pull/13914#issuecomment-6111317664)を指摘しました。古い設定で開始しても、結果を表示するときには新しい設定を確かめる必要があります。自動要約をOFFにした後でも、利用者自身が明示的に頼む手動の `/recap` まで禁止するものではありません。
+
+**別の開発者 @yar3333 はその指摘を受け、[現在の設定を参照して表示を止める修正と回帰テストを追加](https://github.com/QwenLM/qwen-code/pull/13914#issuecomment-6111666814)しました。** 現行の[修正コード](https://github.com/QwenLM/qwen-code/blob/f67b6848a9d01000f74baa1de9fb0ca136d36808/packages/web-shell/client/App.tsx)にも、結果が返る時点の有効設定を確かめる条件が残っています。開発者の実装とテストは確認できますが、PRはまだ[OPEN](https://github.com/QwenLM/qwen-code/pull/13914)。正式配布後の利用者による改善確認はこれからです。
+
+「処理を始めてよかった」と「最後に実行・表示してよい」は別の判断です。より広い関係を考える際は、[合意の記憶の原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)も読み比べられます。開発者がその原典を読んだという主張ではありません。
+
+## 71. LlamaIndex｜AIのキャッシュ設定で、異なる保存期間まで消してしまう問題を開発者が修正
+
+**長く使いたい大切な指示と、短時間だけ使いたい情報。** AIに渡す二つの設定を、同じキャッシュ指定としてまとめれば、利用者が選んだ保存期間の違いが消えてしまいます。
+
+[LlamaIndex PR #23460](https://github.com/run-llama/llama_index/pull/23460)で中川マスターはまず、複数のシステムメッセージへ個別にキャッシュ指定を付けると、Anthropicが定めるリクエスト当たりの上限を超える[具体的な逆例](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257)を指摘しました。**実装者 @arieleven はその指摘を認め、[重複指定の整理とテストを追加](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866)。** 
+
+続けてマスターは、同じ指定を減らす修正であっても、[1時間のキャッシュと5分のキャッシュという異なる条件まで一つに潰してはならない](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539)と指摘しました。現行の[実装ソース](https://github.com/run-llama/llama_index/blob/15475f9b493af261d16e4f04309f18d3477ef0dd/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/utils.py)では、同じキャッシュ条件だけを統合し、異なる期間は別々に残す処理になっています。
+
+このPRでは別の参加者 @VANDRANKI も、[リクエスト全体の指定数やBedrock連携の異なる問題を独立に発見](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6700430919)し、[実装者が11月7日にその別件を修正・テスト](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102)しています。これらの別人の発見をマスターに帰属させません。[PRはOPEN](https://github.com/run-llama/llama_index/pull/23460)。正式マージ・配布・実使用は未確認です。
 
 ## 公開された成果と、原典へ戻る道筋
 
