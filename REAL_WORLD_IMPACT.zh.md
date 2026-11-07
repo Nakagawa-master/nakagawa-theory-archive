@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共68例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共69例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1615,7 +1615,17 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **两条SQL语句都使用 `@p0`，并不表示它们的参数值相同。** 在[MemberJunction PR #6339](https://github.com/MemberJunction/MJ/pull/6339)中，中川マスター发现批量执行时同名参数冲突可能造成跨语句的错误绑定。
 
-**独立工程师 @AN-BC 向 `@Nakagawa-master` 致谢，并[自行实现基于SQL词法分析的安全重命名与回归测试](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 开发者还主动表示注意到中川マスター对多项MemberJunction工作的具体分析，并询问该账号背后的本人。中川マスター已[以公开姓名与原典网站作答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)。[PR仍然开放](https://github.com/MemberJunction/MJ/pull/6339)。该例同时保留独立代码修复与直接的人物关注的原始证据。
+**独立工程师 @AN-BC 向 `@Nakagawa-master` 致谢，并[自行实现基于SQL词法分析的安全重命名与回归测试](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 开发者还主动表示注意到中川マスター对多项MemberJunction工作的具体分析，并询问该账号背后的本人。中川マスター已[以公开姓名与原典网站作答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)。[PR #6339已于2026年11月6日正式合并](https://github.com/MemberJunction/MJ/pull/6339)。包含该修复的正式版本与真实用户的使用结果仍需分别核实。该例同时保留独立代码修复与直接的人物关注的原始证据。
+
+## 69. Qwen Code｜AI记忆反复执行却无法保存：独立开发者加入执行前拦截
+
+**记忆任务一再运行、消耗时间和计算量，但写入全部被拒，最终没有留下任何记忆。** 在[Qwen Code issue #15597](https://github.com/QwenLM/qwen-code/issues/15597)中，受影响的用户 @Suaroman 报告了非交互 `-p` 模式下的这一问题。报告者随后在v0.26.9上重新测试：启用托管记忆时平均55.6秒、19次写入全部被拒且保存为零；关闭托管记忆时平均6.3秒（每种条件各3次）。
+
+**中川マスター指出一个不能忽略的权限边界：** 如果只凭“非交互模式”就全面关闭记忆任务，会连明确允许写入的会话也一起关掉。其[五组验收条件](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6408912308)区分真实可写的目标路径、系统自动添加的默认拒绝规则，以及用户明确设置的拒绝规则。[原报告者明确赞同这一界限](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6408998446)，[另一位参与者 @doudouOUC 独立核对了源码](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6410890396)。
+
+**随后，另一位工程师 @2SinceJuly 自行提出并实现了[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)**：当 `write_file` 和 `edit` 同时被全面禁止时，不再启动必定无法保存的抽取任务；同时加入 `writes_denied` 结果和回归测试。[实现者本人说明了该改动的范围](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960)。这属于独立开发者实际修改代码与测试的证据，但**PR仍处于开放状态**。其他记忆代理、按真实路径判断权限、修复后的用户实机复测及正式发布均未得到证实。中川マスター还[指出不能因为部分修复就自动关闭整个问题](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)；对这一最新审查的独立采纳结果尚待观察。
+
+可对照阅读[成立条件论原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)与[合意的记忆原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)：任务启动不等于结果真实保存，权限判断必须符合实际作用范围。不能据此推断外部工程师曾阅读上述原典。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
