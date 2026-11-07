@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**69 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**71 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1619,6 +1619,24 @@ This is **receiver-owned source code, documentation and tests**, not code author
 **Separate engineer @2SinceJuly then authored [PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)**, adding a pre-fork skip when both `write_file` and `edit` are blanket-denied, a `writes_denied` outcome and regression tests. [The implementer explicitly described the limited scope](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960). This is independently authored code and testing, not an upstream merge: **the PR remains open**, while other memory workers, resolved-path permission checks, an installed-user post-fix retest and release remain unverified. Nakagawa Master also [reviewed the risk of auto-closing the broader issue on a partial fix](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025); no independent response to that newest review is yet observed.
 
 For applicable conceptual context, read the original [conditions-of-establishment theory](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) alongside the [memory-of-agreement theory](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/). A worker starting is not the same as a durable saved result, and permission must be grounded in its actual scope. The external engineers are not claimed to have read those original articles.
+
+## 70. Qwen Code | Automatic recap could appear after the user switched it off: separate author fixes the completion-time gate
+
+**A user disables automatic session recaps, but an earlier recap finishes and appears afterward.** The decision that permitted the work to start is not necessarily permission to display its result after the user has changed the setting.
+
+In [Qwen Code Web Shell PR #13914](https://github.com/QwenLM/qwen-code/pull/13914), Nakagawa Master [identified the in-flight toggle-off inverse](https://github.com/QwenLM/qwen-code/pull/13914#issuecomment-6111317664): start an automatic recap with the setting on, turn it off before its asynchronous response resolves, then check that the UI does not show an automatic recap. This does not prohibit a separate user-requested manual `/recap`.
+
+**Independent author @yar3333 acknowledged that finding and [implemented a current-setting guard plus a regression test](https://github.com/QwenLM/qwen-code/pull/13914#issuecomment-6111666814).** The [current source](https://github.com/QwenLM/qwen-code/blob/f67b6848a9d01000f74baa1de9fb0ca136d36808/packages/web-shell/client/App.tsx) checks the live toggle when the pending result arrives. This is independently authored code and test evidence, while [PR #13914 remains open](https://github.com/QwenLM/qwen-code/pull/13914); merge, release and a verified affected user's installed outcome remain separate.
+
+The original [memory-of-agreement theory](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) offers wider reading about current decision conditions. It is not claimed that the independent developer read that original.
+
+## 71. LlamaIndex | A cache-limit fix must preserve genuinely different cache lifetimes
+
+**A long-lived instruction and a short-lived update may both need caching, but not for the same duration.** Treating their different cache policies as one interchangeable marker silently changes the user's choice.
+
+In [LlamaIndex PR #23460](https://github.com/run-llama/llama_index/pull/23460), Nakagawa Master first [identified a five-system-message example that exceeded Anthropic's four-cache-breakpoint limit](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257). **Separate author @arieleven acknowledged the counterexample, [changed the deduplication behavior and added tests](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866).** Nakagawa Master then [identified the distinct one-hour versus five-minute TTL boundary](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539) that indiscriminate coalescing would lose. The [current independent implementation](https://github.com/run-llama/llama_index/blob/15475f9b493af261d16e4f04309f18d3477ef0dd/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/utils.py) coalesces only equivalent policies and preserves different TTLs.
+
+**A different community reviewer @VANDRANKI independently found other request-wide and Bedrock integration defects** and [the PR author implemented a later, separate Bedrock fix and tests](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102). Those extra findings belong to that reviewer, not Nakagawa Master. [PR #23460 remains open](https://github.com/run-llama/llama_index/pull/23460), with upstream merge, official package release and affected actual-use results still pending.
 
 ## What the public source record reveals
 
