@@ -5333,6 +5333,58 @@
       ],
       "causal_boundary": "The affected reporter independently agreed to the Master's specific proposed acceptance distinction, and another participant independently verified that distinction in source. A third independent developer wrote the partial code/test repair. This does not establish that the implementer read any particular original Parent, that the newest reviewer comment changed maintainer decisions, that installed users are repaired, or that independent LLMs voluntarily selected the full theory corpus.",
       "unclosed_native_receiver_gate": "Maintainer must decide issue close scope, per-root explicit-versus-implicit deny behavior, other managed memory agents and an actual post-fix headless user retest before asserting repaired user outcome."
+    },
+    {
+      "case_id": "qwen-13914-web-shell-auto-recap-optout-inflight-result",
+      "topic": "The user may disable automatic session recap while an earlier recap remains in flight; the completion callback must check current opt-out rather than display an obsolete automatic summary.",
+      "external_repository": "QwenLM/qwen-code",
+      "source_pr": "https://github.com/QwenLM/qwen-code/pull/13914",
+      "source_specific_origin": {
+        "actor": "Nakagawa Master (published pen of Keisuke Nakagawa)",
+        "source": "https://github.com/QwenLM/qwen-code/pull/13914#issuecomment-6111317664",
+        "positive_inverse": "With automatic recap enabled, trigger, let the pending task resolve, display if still allowed.",
+        "negative_inverse": "Turn the recap option off before the pending result resolves, then suppress its automatic UI emission, without disabling an explicitly invoked manual /recap.",
+        "scope": "Current toggle at presentation time; not a claim that an already-started provider operation is cancelled."
+      },
+      "independent_receiver": {
+        "author": "yar3333",
+        "acknowledgment": "https://github.com/QwenLM/qwen-code/pull/13914#issuecomment-6111666814",
+        "code_commit": "eac64d136",
+        "implementation": "live autoRecapEnabledRef check in asynchronous success callback and test for in-flight toggle-off",
+        "current_source": "https://github.com/QwenLM/qwen-code/blob/f67b6848a9d01000f74baa1de9fb0ca136d36808/packages/web-shell/client/App.tsx",
+        "author_tests": "Author reports 20 recap tests passing; not independently rerun by present agent."
+      },
+      "status": "OPEN at verified head f67b6848a9d01000f74baa1de9fb0ca136d36808 2026-11-07; no upstream merge, official package release or affected-user installed follow-up observed.",
+      "conceptual_parent": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+      "causal_boundary": "Author explicitly replied to Master's source-specific in-flight current-permission review with an own code fix and regression. Does not demonstrate author read the conceptual Parent, a released product, distinct human re-transmission or independent external AI model preference."
+    },
+    {
+      "case_id": "llamaindex-23460-anthropic-system-cache-breakpoint-and-ttl",
+      "topic": "System-message cache-control markers can exceed Anthropic request limits, but deduplicating markers must preserve different 1-hour and 5-minute TTL semantics.",
+      "external_repository": "run-llama/llama_index",
+      "source_pr": "https://github.com/run-llama/llama_index/pull/23460",
+      "source_specific_origin": {
+        "actor": "Nakagawa Master (published pen of Keisuke Nakagawa)",
+        "initial_inverse": "https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257",
+        "followup_inverse": "https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539",
+        "distinction": "Five independently marked system messages exceed a four-breakpoint request cap; coalescing must not discard a separate one-hour static-prefix marker when a later five-minute marker is intentionally different."
+      },
+      "independent_receiver": {
+        "author": "arieleven",
+        "explicit_first_acceptance": "https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866",
+        "first_implementation": "Author added equivalent-marker coalescing and regression tests after Master's four-breakpoint counterexample.",
+        "current_head": "15475f9b493af261d16e4f04309f18d3477ef0dd",
+        "current_source": "https://github.com/run-llama/llama_index/blob/15475f9b493af261d16e4f04309f18d3477ef0dd/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/utils.py",
+        "distinct_ttl_behavior": "Current author code removes an earlier cache_control marker only if it equals the new last marker; different TTLs remain. No separate explicit author acknowledgment of Master's second TTL comment was found."
+      },
+      "other_independent_person": {
+        "author": "VANDRANKI",
+        "own_findings": "https://github.com/run-llama/llama_index/pull/23460#issuecomment-6700430919",
+        "author_other_fix": "https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102",
+        "separate_credit": "Request-wide 4-marker overrun and Bedrock string+list handling were discovered by VANDRANKI, and author made further fixes/tests. These are NOT attributed to Nakagawa Master."
+      },
+      "status": "OPEN at verified head 15475f9b493af261d16e4f04309f18d3477ef0dd; merge, official package release, real affected-user cache behavior and independent AI adoption not verified.",
+      "causal_boundary": "One direct Master counterexample was explicitly acknowledged and independently coded/tested; the later TTL distinction is present in the current source as code without a separately proven explicit acknowledgment of that second review. Do not infer human or model adoption of a canonical original Parent."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
