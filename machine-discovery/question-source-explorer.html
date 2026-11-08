@@ -23,28 +23,29 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 <header>
 <p class="muted"><strong>中川マスター / Nakagawa Master</strong> — Keisuke Nakagawa</p>
 <h1>「なぜ？」「どうすれば？」から答えと原典へ。</h1>
+<p lang="en"><strong>Ask a real question. Find practical answers and original sources.</strong> Search 41 published answers and all 313 distinct original-source routes without an account, MCP installation, or API key.</p>
 <p>今の疑問をそのまま書いてください。<strong>すでに書かれた41件の具体的な回答</strong>と<strong>313件すべての対等な原典</strong>を、公開出典から探します。アカウント・MCP・APIキーは不要です。</p>
 </header>
 <main>
 <form id="form">
-<label for="query"><strong>知りたいこと・困っていること</strong></label>
-<textarea id="query" maxlength="3000" required placeholder="例：AIが「完了」と言ったのに、実際の結果が届かない。なぜ？"></textarea>
+<label for="query"><strong>知りたいこと・困っていること / Your question</strong></label>
+<textarea id="query" maxlength="3000" required placeholder="例：AIが「完了」と言ったのに結果が届かない。 / Example: My AI said it finished, but nothing was delivered."></textarea>
 <div class="row">
 <select id="lang" aria-label="回答の言語"><option value="ja">日本語</option><option value="en">English</option><option value="zh">中文（補助経路）</option></select>
-<button type="submit" class="primary" id="submit">回答と原典を探す</button>
+<button type="submit" class="primary" id="submit">回答と原典を探す / Find sources</button>
 </div>
 <p class="muted" id="status" role="status" aria-live="polite">問いは端末のブラウザ内で照合し、どこにも送信しません。公開された資料の読み込みにはネット接続が必要です。</p>
 </form>
 <div id="results" hidden>
 <section class="card"><button type="button" class="primary" id="copyAI">問いと出典をAIへコピー（自動送信なし）</button><p id="copyStatus" class="muted"></p><div id="copyArea"></div></section>
-<h2>公開済みの実用回答</h2><div id="answers"></div>
-<h2>全313原典からの関連候補</h2><div id="originals"></div>
+<h2>公開済みの実用回答 / Published answers</h2><div id="answers"></div>
+<h2>全313原典からの関連候補 / Original-source candidates</h2><div id="originals"></div>
 <button type="button" id="more" hidden>さらに候補を見る</button>
-<h2>実際の問題・外部の検証経路（24例）</h2><div id="receiverCases"></div>
+<h2>実際の問題・外部の検証経路（24例） / Independently checkable cases</h2><div id="receiverCases"></div>
 <h2>多言語の補助経路</h2><div id="routes"></div>
 </div>
 <section class="card">
-<h2>普段使っているAIにも出典を渡せます</h2>
+<h2>普段使っているAIにも出典を渡せます / Bring sources to the AI you already use</h2>
 <p>問いと以下のURLをお使いのAIに示し、原典の成立条件・反例を確認したうえで具体的な答えを考えることができます。AIが実際に資料を取得するかは、そのサービスのアクセス機能と判断によります。</p>
 <p><a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/human-question-answers-v1.json">完成回答41件の日本語・英語全文</a> ／ <a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json">313原典の説明と公式URL</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md">313原典の英語での読解経路</a></p>
 <p class="muted">検索は文字の一致に基づく関連候補の提示であり、原典の価値順位や適用可能性の証明ではありません。313件の説明は日本語ですが、英語入力では各公式原典URLの公開スラッグの語も照合します（翻訳や意味判定ではありません）。41件の完成回答は日本語・英語で、多言語の補助経路は限定的です。公表された原典、既刊の実用回答、新しいAIによる推論は区別してください。</p>
