@@ -4124,7 +4124,7 @@
       },
       "receiver_implementation": {
         "author": "Eric-GoodBoy-Tech",
-        "current_head": "9ea0c9d27fd1a5928bf6daa2317642c792962d43",
+        "current_head": "33e286a24aefa59170007e28a8fe7d77e8ff15f3",
         "source_paths": [
           "packages/channels/base/src/AcpBridge.ts",
           "packages/channels/base/src/AcpBridge.test.ts",
@@ -4133,15 +4133,25 @@
         ]
       },
       "current_source_snapshot": {
-        "date_jst": "2026-11-05",
+        "date_jst": "2026-11-08",
         "pr_state": "OPEN",
         "merged": false,
-        "current_head": "9ea0c9d27fd1a5928bf6daa2317642c792962d43",
+        "current_head": "33e286a24aefa59170007e28a8fe7d77e8ff15f3",
         "required_review_approvals": 2,
-        "approvals_on_current_head": 0,
+        "approvals_on_current_head": 1,
         "required_lint_static": "success",
-        "blocking_condition": "Two independent authorized approving reviews on the current head, not another @Nakagawa-master technical comment",
-        "independent_author_request": "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6645682376"
+        "blocking_condition": "One current-HEAD human APPROVED (wenshao), second approval absent, and a CHANGES_REQUESTED by yiliang114 remains. Its optional-chain crash claim is contradicted by the continuous JavaScript optional-call semantics (Node control plus independent qqqys review). Four required contexts reported passed by the author, while separate Java managed-agent CI jobs failed. Reviewer/maintainer decisions and containing release are pending.",
+        "independent_author_request": "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6645682376",
+      "source_checks_2026_11_08": {
+        "current_head": "33e286a24aefa59170007e28a8fe7d77e8ff15f3",
+        "human_approval": "https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5812361394",
+        "current_head_review_dispute": "https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5812448982",
+        "maintainer_author_decision_request": "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6721921096",
+        "other_ci_failure": "https://github.com/QwenLM/qwen-code/actions/runs/42375266794",
+        "outside_implementation": "Independently authored privacy repair plus delivery, ordering and cancel-receipt repairs; not an upstream merge.",
+        "native_merge": "NO",
+        "containing_release_or_installed_user": "UNKNOWN"
+      }
       },
       "current_stage": "independent_receiver_source_and_tests_OPEN_PR",
       "human_case": "REAL_WORLD_IMPACT.md#55",
