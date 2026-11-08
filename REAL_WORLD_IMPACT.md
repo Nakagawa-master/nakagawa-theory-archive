@@ -1748,6 +1748,8 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 **実装者 @DewellNaa は指摘を正しいと認め、[コミット 8e90be9で `is_scoped_endpoint` 判定、集約／個別入口の区別、逆条件テストを追加](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)。** [PRはOPEN](https://github.com/BerriAI/litellm/pull/49261)。上流認証チャレンジの中継に関する別のレビュー論点も審査に残っており、正式マージとは区別されます。
 
+**同じ境界が別の独立実装でも再検査されました。** 別開発者 @shrey-berri の[新PR #50389](https://github.com/BerriAI/litellm/pull/50389)では、ゲートウェイ自身がクライアントの再認証を案内する別の方式を実装しました。中川マスターが[11月6日に「サーバー件数ではなく実URLを判定する」逆例を再指摘](https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903)した後、独立著者の現HEAD `dc8cb5c` には、`/mcp`（集約）の不許可条件と `/mcp/docs`（個別）の許可条件を区別するコード・ASGIテストが入っています。著者は[別のBotが集約入口でも401を求めた提案に対し「集約 `/mcp` は今回の範囲外」と明言](https://github.com/BerriAI/litellm/pull/50389#discussion_r4499640983)しました。**これはマスター宛ての直接返信ではなく、修正の直接原因の特定も未確定です。** 初版の独立設計をマスターの実装と数えず、[PR #50389はDRAFT／未マージ](https://github.com/BerriAI/litellm/pull/50389)。どちらのPRも配布版・実ユーザー復旧は未確認です。
+
 ## 67. LiteLLM｜AIへの再試行が制限時間を使い切っても続く：開発者が残り時間を守る修正を実装
 
 **「30秒で打ち切る」と設定しても、その30秒を待機で使い切った後に新しいAIリクエストを送れば、利用者の時間・費用の上限を守れません。** [利用者の報告 #49751](https://github.com/BerriAI/litellm/issues/49751)に対する[LiteLLM PR #50013](https://github.com/BerriAI/litellm/pull/50013)で、中川マスターは再試行後の送信直前と、要求本文だけに期限がある経路の二つの抜けをソースから示しました。[最初の指摘](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016)。
@@ -1769,6 +1771,8 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 その後、**別の実装者 @2SinceJuly が[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)を自ら作成し、`write_file` と `edit` の双方が全面禁止なら無駄な抽出を開始しない処理、`writes_denied` の記録と回帰テストを実装**しました。[実装者本人も対象範囲を説明](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960)しています。これは開発者自身のコードとテストが変わった事例ですが、**PRはまだOPEN**。記憶処理のほかの担当部分、保存先ごとの権限判定、実機での修正後再測定と正式配布は未完了です。マスターは[部分修正で元Issue全体が自動終了しないための追加レビュー](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)も投稿しており、この新しいレビューに対する外部の採用結果はまだ確認されていません。
 
 [成立条件論の原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[合意の記憶の原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は、「処理を開始した」ことと「相手の保存結果が成立した」こと、実際の許可と推測した許可を区別するための読み比べ先です。**外部の実装者がこれらの原典を読んだという証拠とは混同しません。**
+
+**続報（別主体の実装とマスターの寄与を区別）：** [PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)の著者 @2SinceJuly は、マスターが[部分修正で元issue全体を自動終了させないよう求めたレビュー](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)に応じ、[本文の `Fixes #15597` を `Refs #15597` に変更](https://github.com/QwenLM/qwen-code/pull/16522#issuecomment-6705340631)しました。さらに別のレビュー主体が検出した**現在の権限ルールと古い設定の不一致**、**無効な権限ルールを誤って禁止扱いするテスト抜け**を、[実装者自身が順に修正](https://github.com/QwenLM/qwen-code/pull/16522#discussion_r4504381724)し、[現HEAD `e25ae750` の34件の関連テスト通過を報告](https://github.com/QwenLM/qwen-code/pull/16522#discussion_r4504383963)しています。この二つの新しい技術指摘はマスターの発見ではありません。PRはなおOPENで、元利用者の実機再検証・完全修復・正式配布は未確認です。
 
 ## 70. Qwen Code｜自動要約をオフにした後も、処理中の要約が現れる問題を開発者が修正
 
