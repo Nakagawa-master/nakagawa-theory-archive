@@ -59,7 +59,7 @@ const $=id=>document.getElementById(id);
 const stops=new Set(["the","and","that","this","with","from","have","what","when","which","would","could","should","there","your","into","where","for","why","how","who","does","did","was","were","are","can","may","might","they","their","about","after","before","happen","happens","happened","all","any","some","もの","こと","する","して","した","ない","いる","ある","から","ので","ため","この","その","です","ます"]);
 let db=null,listed=[],cursor=0,topAnswer=null,routeHits=[],receiverHits=[];
 function terms(input){
-const txt=String(input||"").normalize("NFKC").toLowerCase(),all=new Set();
+const txt=String(input||"").normalize("NFKC").toLowerCase().replace(/([a-z0-9])[-_]+(?=[a-z0-9])/g,"$1 "),all=new Set();
 for(const w of txt.match(/[a-z][a-z0-9_-]{2,}/g)||[]){if(stops.has(w))continue;all.add(w);if(w.length>4&&w.endsWith("ies"))all.add(w.slice(0,-3)+"y");else if(w.length>4&&w.endsWith("s")&&!w.endsWith("ss"))all.add(w.slice(0,-1));}
 for(const block of txt.match(/[\u3040-\u30ff\u3400-\u9fff]{2,}/g)||[])for(const n of [2,3])for(let i=0;i+n<=block.length;i++){const w=block.slice(i,i+n);if(!stops.has(w))all.add(w);}
 return all;
