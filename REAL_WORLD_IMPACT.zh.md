@@ -1608,6 +1608,8 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **作者 @DewellNaa 明确认可该审查，并[在8e90be9中加入 `is_scoped_endpoint` 判断与聚合入口的逆条件测试](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)。** [PR尚未合并](https://github.com/BerriAI/litellm/pull/49261)；上游认证挑战能否安全转交客户端是另一项仍待审查的问题。
 
+**同一边界后来也出现在另一位独立开发者的实现中。** @shrey-berri 在[新PR #50389](https://github.com/BerriAI/litellm/pull/50389)自行设计网关发出的再认证挑战。[中川マスター在11月6日再次要求以真实URL区分聚合／专属入口](https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903)之后，作者当前`dc8cb5c`源码与ASGI测试明确区分 `/mcp`（不能按专属入口发401）和 `/mcp/docs`（符合条件时可发401）。作者[回复另一个Bot时明确拒绝把聚合入口也改为401](https://github.com/BerriAI/litellm/pull/50389#discussion_r4499640983)。**该回复并非直接答复中川マスター，因此不能断言作者的修改仅由其审查引起。** 新PR仍处于DRAFT、未合并；正式发行及原用户恢复尚未核实。
+
 ## 67. LiteLLM｜重试等待用完用户的时间上限后，系统仍可能继续调用AI
 
 **如果等待已经耗尽30秒的期限，却仍然发起下一次请求，就无法遵守用户设置的限制。** 在[用户报告 #49751](https://github.com/BerriAI/litellm/issues/49751)的[修复PR #50013](https://github.com/BerriAI/litellm/pull/50013)中，中川マスター[指出重试等待后的时间检查和仅在请求正文指定超时的两条遗漏路径](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016)。
@@ -1629,6 +1631,8 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 **随后，另一位工程师 @2SinceJuly 自行提出并实现了[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)**：当 `write_file` 和 `edit` 同时被全面禁止时，不再启动必定无法保存的抽取任务；同时加入 `writes_denied` 结果和回归测试。[实现者本人说明了该改动的范围](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960)。这属于独立开发者实际修改代码与测试的证据，但**PR仍处于开放状态**。其他记忆代理、按真实路径判断权限、修复后的用户实机复测及正式发布均未得到证实。中川マスター还[指出不能因为部分修复就自动关闭整个问题](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)；对这一最新审查的独立采纳结果尚待观察。
 
 可对照阅读[成立条件论原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)与[合意的记忆原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)：任务启动不等于结果真实保存，权限判断必须符合实际作用范围。不能据此推断外部工程师曾阅读上述原典。
+
+**后续进展与独立贡献来源：** 在[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)中，作者 @2SinceJuly 接受[中川マスター关于部分修复不能自动关闭完整问题的审查](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)，[把 `Fixes #15597` 改为 `Refs #15597`](https://github.com/QwenLM/qwen-code/pull/16522#issuecomment-6705340631)。**另外两个技术发现来自其他评审主体，并非中川マスター：** 实时权限规则与配置快照不一致、无效规则未被有效负测试覆盖；独立作者[修复了前者](https://github.com/QwenLM/qwen-code/pull/16522#discussion_r4504381724)与[后者](https://github.com/QwenLM/qwen-code/pull/16522#discussion_r4504383963)，报告现HEAD `e25ae750`相关测试34/34通过。PR仍OPEN；受影响用户的修复后实测、正式合并、发行均未证实。
 
 ## 70. Qwen Code｜用户关闭自动摘要后，未完成的摘要仍可能出现：开发者修复完成时的检查
 
