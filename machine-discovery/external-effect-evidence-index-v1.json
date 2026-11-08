@@ -5137,7 +5137,19 @@
         "mechanism": "After source review on the Rust-router rebase, the independent author added pre-attempt caller-deadline guards to both async _run_steps and synchronous _run_sync before driver.attempt, as well as four controlled-clock source regression tests covering overslept backoff, a still-valid retry, and sleep-free fallback.",
         "history_note": "Outside author previously implemented and tested Python-router pre-attempt guard/body timeout at HEAD 95b3bf4; that is confirmed historical C2, not a current Rust branch behavior."
       },
-      "current_stage": "independent_author_implemented_and_committed_post_review_Rust_deadline_gates_open_unmerged",
+      "current_stage": "independent_author_C2_preserved_PR50013_closed_unmerged_separate_PR50496_merged_opt_in_contract",
+      "current_source_boundary": {
+        "original_pr_status": "PR #50013 CLOSED / NOT MERGED 2026-11-08 after bot notice: issue #49751 was considered fixed by separate PR #50496",
+        "original_pr": "https://github.com/BerriAI/litellm/pull/50013",
+        "distinct_successor_pr": "https://github.com/BerriAI/litellm/pull/50496",
+        "successor_merge": "2026-11-08T08:43:51Z",
+        "distinct_contract": "PR #50496 provides opt-in body total_timeout or x-litellm-total-timeout header; no new total-budget activation from legacy x-litellm-timeout or x-stainless-timeout is shown in the merged parser. The original issue-requested legacy-header end-to-end condition requires a separate native user-path test.",
+        "source_prediction_only": "Original x-litellm-timeout or x-stainless-timeout without total_timeout does not invoke the new TotalDeadline scope in the merged diff; no live proxy run was performed in this inspection.",
+        "original_developer_code_c2": "PRESERVED; PR #50013 author implementation was real but its branch was not merged",
+        "fix_containing_release": "NOT VERIFIED",
+        "affected_user_after_fix": "UNKNOWN",
+        "independent_person_or_ai_original_use": "NOT OBSERVED"
+      },
       "human_case": "REAL_WORLD_IMPACT.md#67-litellmaiへの再試行が制限時間を使い切っても続く開発者が残り時間を守る修正を実装",
       "fresh_independent_migration_boundary": {
         "author_migration_receipt": "https://github.com/BerriAI/litellm/pull/50013#issuecomment-6676666053",
