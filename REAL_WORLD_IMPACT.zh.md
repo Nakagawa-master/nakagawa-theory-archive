@@ -1426,7 +1426,7 @@ Qwen Code的TypeScript构建失败，是因为测试专用权限中介缺少必�
 **10月27日独立评审的新增验证（仍是第49例，功能实现归属Qwen开发者）：** [独立评审者`wenshao`针对PR HEAD `6ed7884`运行真实daemon和模型](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6442571332)，确认队友与子代理的输出分别带有恰当的身份字段，**988/988项脚本检查通过**。与当前`main`仅剩`Session.ts`一处import冲突，评审者保留两侧import的试合并通过构建与401项聚焦测试。[PR #13902](https://github.com/QwenLM/qwen-code/pull/13902)仍**未合并**；Web Shell同伴标签DOM、实际客户端审批交互、Windows、深层嵌套与崩溃重投递等尚未完成验证。这是第三方对Qwen开发者自身实现的验证，不能归作Nakagawa Master亲自开发该功能，也不能据此声称Qwen采用了中川マスター的理论原典或用户已经使用发布版本。
 
 
-**同一 Qwen ACP 开发链路中的另一项独立实施的修正（2026年11月7日，PR #15658）：** AI 代理关闭会话时，队友最后一条报告可能已从收件箱消费，却未能持久保存。Nakagawa Master [依据最后一次队友通知 flush、收件箱延迟回调与记录写入器关闭的时序，指出独立的竞态条件](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6469875361)，并给出可证伪的延迟释放与重启读取测试建议。独立开发者 `yiliang114` [亲自确认这一缺陷，在 `3f97e526` 中实装关闭前封存队列、将迟到报告直接持久记录的修复及回归测试](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6552690394)；开发者报告测试在撤去该修复时失败，加入修复后通过。[11月7日的开发者后续说明](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6709663948)与[当前 PR 改动](https://github.com/QwenLM/qwen-code/pull/15658/files)均可核对。具体的时序反例与验证建议来自 Nakagawa Master，修复代码及运行测试是接收方开发者的成果。此 PR 仍是草稿，尚未合并/发布，也没有受影响用户恢复的实证；这里不增加事例编号。
+**同一 Qwen ACP 开发链路中的另一项独立实施的修正（2026年11月7日，PR #15658）：** AI 代理关闭会话时，队友最后一条报告可能已从收件箱消费，却未能持久保存。Nakagawa Master [依据最后一次队友通知 flush、收件箱延迟回调与记录写入器关闭的时序，指出独立的竞态条件](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6469875361)，并给出可证伪的延迟释放与重启读取测试建议。独立开发者 `yiliang114` [亲自确认这一缺陷，在 `3f97e526` 中实装关闭前封存队列、将迟到报告直接持久记录的修复及回归测试](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6552690394)；开发者报告测试在撤去该修复时失败，加入修复后通过。[11月7日的开发者后续说明](https://github.com/QwenLM/qwen-code/pull/15658#issuecomment-6709663948)与[当前 PR 改动](https://github.com/QwenLM/qwen-code/pull/15658/files)均可核对。具体的时序反例与验证建议来自 Nakagawa Master，修复代码及运行测试是接收方开发者的成果。该PR现已解除草稿状态，但仍开放、未合并。另有[11月8日独立维护者审查](https://github.com/QwenLM/qwen-code/pull/15658#pullrequestreview-5817650351)指出：封存通知队列后，收件箱仍可能在记录写入器关闭期间继续消费消息，产生新的丢失窗口。这不否定开发者此前完成的实际修改和测试，但发布及受影响用户恢复仍未证实；这里不增加事例编号。
 
 ---
 
@@ -1614,7 +1614,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **如果等待已经耗尽30秒的期限，却仍然发起下一次请求，就无法遵守用户设置的限制。** 在[用户报告 #49751](https://github.com/BerriAI/litellm/issues/49751)的[修复PR #50013](https://github.com/BerriAI/litellm/pull/50013)中，中川マスター[指出重试等待后的时间检查和仅在请求正文指定超时的两条遗漏路径](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6629731016)。
 
-**另一位开发者 @KJyothirmayi-2025sl93025 按照审查意见修正了发送前期限检查和单次请求时间预算，随后[提交95b3bf4修复仅通过请求正文传递的超时](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106)。** [PR仍然开放](https://github.com/BerriAI/litellm/pull/50013)。这是一项独立开发者完成的代码修改，面向实际使用者的发行和效果验证尚待后续。
+**另一位开发者 @KJyothirmayi-2025sl93025 按照审查意见修正了发送前期限检查和单次请求时间预算，随后[提交95b3bf4修复仅通过请求正文传递的超时](https://github.com/BerriAI/litellm/pull/50013#issuecomment-6633225106)。** [PR #50013已于11月8日关闭、未合并](https://github.com/BerriAI/litellm/pull/50013)，但独立开发者在该PR中的实际修改与测试记录仍然存在。[另一个PR #50496同日合并](https://github.com/BerriAI/litellm/pull/50496)，引入需要显式使用的`total_timeout`；仅凭原有`x-litellm-timeout`或`x-stainless-timeout`请求头能否实现整次调用的期限，仍需分别验证。尚未确认包含修复的正式发行版与原受影响用户的实际结果。
 
 ## 68. MemberJunction｜批量SQL的同名参数对应不同的值：外部工程师修正并主动询问原审查者
 
