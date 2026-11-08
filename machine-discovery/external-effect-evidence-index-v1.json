@@ -5466,6 +5466,14 @@
         "human_approvals_current_head": 2,
         "ci_snapshot": "36 check-runs: 5 success, 5 queued, 26 skipped; this is not overall green. Qwen bot precheck requests a maintainer-triggered manual review step.",
         "review_gate": "https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6720313226",
+    "current_head_wire_evidence_gate": {
+      "observed_utc": "2026-11-08T13:52:55Z",
+      "external_maintainer_source": "https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6722337913",
+      "required": "pr-ui-verify PASS report explicitly bound to 61efc50b, supported by captured network requests or a real test run showing actual outbound OAuth Authorization header behavior and credential deletion behavior after refresh failure and re-authentication",
+      "status": "NOT_PRESENT_AT_THIS_SOURCE_CHECK",
+      "distinction": "Two human source approvals and older-head loopback evidence cannot substitute for a current-head wire-visible verification report. Current CI also queued; no merge.",
+      "safe_receipt": "Use non-secret synthetic test tokens, redacted request captures, same exact HEAD, and controls for fresh bearer, null/expired token, late shorter-lifetime adoption and re-authentication preserving newer credentials."
+    },
         "release_gate": "Qwen Code and Qwen Desktop v0.27.0 were publicly released before this PR merge; they cannot be treated as containing this still-unmerged fix.",
         "installed_user_retest": "NOT_VERIFIED",
         "future_required_evidence": "Native merge; containing release with code ancestry; authorized original affected session's installed after-update same-session MCP tool continuity; distinct independent person-origin relay and separately chosen original Parent by unaffiliated AI."
