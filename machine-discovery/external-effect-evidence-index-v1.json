@@ -5409,6 +5409,81 @@
       },
       "status": "OPEN at verified head 15475f9b493af261d16e4f04309f18d3477ef0dd; merge, official package release, real affected-user cache behavior and independent AI adoption not verified.",
       "causal_boundary": "One direct Master counterexample was explicitly acknowledged and independently coded/tested; the later TTL distinction is present in the current source as code without a separately proven explicit acknowledgment of that second review. Do not infer human or model adoption of a canonical original Parent."
+    },
+    {
+      "case_id": "qwen-code-15650-mcp-oauth-late-refresh-order-and-two-approvals",
+      "topic": "A long-running MCP OAuth transport must not keep its connect-time access token or reject a freshly refreshed, shorter-lived token based on comparing expiry timestamps.",
+      "external_repository": "QwenLM/qwen-code",
+      "actual_receiver_problem": {
+        "originating_reporter": "n1nja88888",
+        "issue": "https://github.com/QwenLM/qwen-code/issues/15649",
+        "reported_condition": "Qwen Code Desktop 0.26.1 on Windows 11, an hour-lived MCP OAuth bearer frozen at transport connection, later server 401 and session tools missing despite successful reconnect.",
+        "evidence_limit": "Affected operator's first-hand report and diagnostic excerpt; this source index did not reproduce the installed failure."
+      },
+      "master_source_specific_findings": {
+        "actor": "Nakagawa Master (public pen name of Keisuke Nakagawa)",
+        "first_pr_review": "https://github.com/QwenLM/qwen-code/pull/15650#pullrequestreview-5652729278",
+        "first_boundary": "When a refreshed token is absent, HTTP must not resend the stale connect-time Authorization bearer.",
+        "later_fresh_head_counterexample": "https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6716006524",
+        "second_boundary": "A late refresh can legitimately return a newer access token with an earlier expiresAt; using expiry ordering instead of read generation rejects the fresh token. Test expiry T+7m for new access-1 versus T+10m for old access-0, arriving after the 5s refresh wait."
+      },
+      "outside_developer_implementation": {
+        "author": "n1nja88888",
+        "direct_reply": "https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6718145268",
+        "acknowledged": "The developer directly addressed @Nakagawa-master: Thanks, confirmed and fixed.",
+        "fix_commits": [
+          "https://github.com/QwenLM/qwen-code/commit/d01530f17",
+          "https://github.com/QwenLM/qwen-code/commit/201fe6c3b",
+          "https://github.com/QwenLM/qwen-code/commit/1edfb378a"
+        ],
+        "source_paths": [
+          "packages/core/src/tools/mcp-client.ts",
+          "packages/core/src/mcp/oauth-provider.ts"
+        ],
+        "changes": "Per-request current bearer; generation-ordered late token adoption; retry backoff for expired token refresh failures; preserve reauthenticated/rotated storage credentials; tests for each boundary.",
+        "author_reported_tests": "329/329 focused tests and failures with targeted fixes reverted, as reported by the implementer; not independently executed by this index."
+      },
+      "independent_current_head_reviews": [
+        {
+          "reviewer": "wenshao",
+          "decision": "APPROVED",
+          "submitted_utc": "2026-11-08T13:30:35Z",
+          "url": "https://github.com/QwenLM/qwen-code/pull/15650#pullrequestreview-5818071946"
+        },
+        {
+          "reviewer": "qqqys",
+          "decision": "APPROVED",
+          "submitted_utc": "2026-11-08T13:42:59Z",
+          "url": "https://github.com/QwenLM/qwen-code/pull/15650#pullrequestreview-5818110687"
+        }
+      ],
+      "current_source_snapshot": {
+        "observed_utc": "2026-11-08T13:42:59Z",
+        "head": "61efc50bda3ec7cacc447698a0fba0ab94be4c47",
+        "status": "OPEN",
+        "merged": false,
+        "mergeable_state": "blocked",
+        "human_approvals_current_head": 2,
+        "ci_snapshot": "36 check-runs: 5 success, 5 queued, 26 skipped; this is not overall green. Qwen bot precheck requests a maintainer-triggered manual review step.",
+        "review_gate": "https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6720313226",
+        "release_gate": "Qwen Code and Qwen Desktop v0.27.0 were publicly released before this PR merge; they cannot be treated as containing this still-unmerged fix.",
+        "installed_user_retest": "NOT_VERIFIED",
+        "future_required_evidence": "Native merge; containing release with code ancestry; authorized original affected session's installed after-update same-session MCP tool continuity; distinct independent person-origin relay and separately chosen original Parent by unaffiliated AI."
+      },
+      "reader_routes": {
+        "human_question": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md#actual-user-check-ai-tools-disappeared-after-my-oauth-token-expired",
+        "source_walk": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md",
+        "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "original_relation": "Optional conceptual comparison between an authentication request's apparent completion and its actual established result; not an assertion that the Qwen implementer consulted this original or adopted the theory corpus."
+      },
+      "stage": "independent_receiving_developer_confirmed_fixed_and_two_current_head_human_approvals_PR_OPEN",
+      "not_claimed": [
+        "upstream merge",
+        "fix-containing package release",
+        "real affected-user recovery after release",
+        "independent model elected to read the original",
+        "external PERSON trust or second-person propagation"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
