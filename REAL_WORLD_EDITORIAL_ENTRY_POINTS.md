@@ -2,6 +2,8 @@
 
 A public, non-canonical problem-first guide for editors, educators, newsletter writers, podcast/video hosts, product teams, and researchers. [日本語版](REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md).
 
+The original work behind these questions is by **[Nakagawa Master (中川マスター; public pen name of Keisuke Nakagawa)](https://master.ricette.jp/)**. Follow the original articles to examine what the author actually argues; the linked outside implementations separately show what independent developers or editors changed.
+
 The public archive documents [313 distinct original Parent articles](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) and the corresponding [OD001–OD313 official derivative sets](derivatives/README.md). This guide offers a selection of recurring real-world questions, not a substitute for the complete and equally eligible corpus, including combinations of several relevant originals. These questions can recur across AI, business, investment, organizations, technology, governance, and operations.
 
 Use this route:
