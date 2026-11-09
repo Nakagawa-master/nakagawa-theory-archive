@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline evidence checker for an AI agent's FINAL streamed tool-call contract.
+"""Offline evidence checker for FINAL streamed tool calls and Responses item consistency.
 
 All inputs are provided by the operator; this tool neither connects to an LLM nor
 proves that the trace is authentic. Run on synthetic or redacted observations.
@@ -31,7 +31,88 @@ def tool_ids(value: object, field: str) -> list[str]:
     return value
 
 
+
+def check_responses_items(trace):
+    """Check consistency of caller-supplied Responses stream item snapshots.
+
+    No provider/HTTP verification. JSON object key ordering has no semantic effect.
+    """
+    if not isinstance(trace, dict) or trace.get('contract') != 'responses_items':
+        return {'result': 'INVALID_INPUT', 'reason': 'contract must be responses_items'}
+    events = trace.get('events')
+    if not isinstance(events, list) or not events:
+        return {'result': 'INVALID_INPUT', 'reason': 'events must be a nonempty list'}
+    added, done, completed = {}, {}, None
+    for n, event in enumerate(events):
+        if not isinstance(event, dict) or not isinstance(event.get('type'), str):
+            return {'result': 'INVALID_INPUT', 'reason': f'events[{n}] needs type'}
+        kind = event['type']
+        if kind not in ('response.output_item.added','response.output_item.done','response.completed'):
+            continue
+        if kind == 'response.completed':
+            if completed is not None:
+                return {'result':'FAIL','reason':'multiple response.completed snapshots'}
+            completed = event.get('response')
+            if not isinstance(completed, dict):
+                return {'result':'INVALID_INPUT','reason':'completed.response needs object'}
+            continue
+        index = event.get('output_index')
+        item = event.get('item')
+        if type(index) is not int or index < 0 or not isinstance(item, dict):
+            return {'result':'INVALID_INPUT','reason':f'events[{n}] needs nonnegative integer output_index and item object'}
+        if kind.endswith('.added'):
+            if index in added:
+                return {'result':'FAIL','reason':f'duplicate added event for index {index}'}
+            added[index] = item
+        else:
+            if index in done:
+                return {'result':'FAIL','reason':f'duplicate done event for index {index}'}
+            done[index] = item
+    if completed is None:
+        return {'result':'NOT_ASSESSED','reason':'no response.completed snapshot provided'}
+    output = completed.get('output')
+    if not isinstance(output,list) or not all(isinstance(x,dict) for x in output):
+        return {'result':'INVALID_INPUT','reason':'completed.response.output must be an array of objects'}
+    if set(done) != set(range(len(output))) or set(added) != set(range(len(output))):
+        return {'result':'FAIL','reason':'added/done indices do not cover completed output one-for-one', 'added_indices':sorted(added),'done_indices':sorted(done),'output_size':len(output)}
+    for index, item in enumerate(output):
+        first = added[index]
+        last = done[index]
+        if first.get('type') != last.get('type'):
+            return {'result':'FAIL','reason':f'item type changed at index {index}'}
+        if last.get('type') == 'reasoning' and not isinstance(first.get('summary'),list):
+            return {'result':'FAIL','reason':f'added reasoning item {index} has no summary array'}
+        if item != last:
+            return {'result':'FAIL','reason':f'completed output item {index} differs from corresponding done item (JSON structure)'}
+    return {'result':'PASS','reason':'all added/done/completed item snapshots agree structurally (supplied trace only)','checked_items':len(output)}
+
+
+def synthetic_responses_self_test():
+    added={'type':'reasoning','id':'r1','summary':[]}
+    done={'type':'reasoning','id':'r1','summary':[{'type':'summary_text','text':'ok'}]}
+    calls=[{'type':'function_call','id':'c1','call_id':'x','arguments':'{}','name':'hello'}]
+    events=[{'type':'response.output_item.added','output_index':0,'item':added},
+            {'type':'response.output_item.done','output_index':0,'item':done},
+            {'type':'response.output_item.added','output_index':1,'item':calls[0]},
+            {'type':'response.output_item.done','output_index':1,'item':calls[0]},
+            {'type':'response.completed','response':{'output':[done,calls[0]]}}]
+    good={'contract':'responses_items','events':events}
+    assert check_responses_items(good)['result']=='PASS'
+    bad_missing={'contract':'responses_items','events':[{'type':'response.output_item.added','output_index':0,'item':{'type':'reasoning','id':'r1'}},*events[1:]]}
+    assert check_responses_items(bad_missing)['result']=='FAIL'
+    bad_rebuild={'contract':'responses_items','events':[*events[:-1],{'type':'response.completed','response':{'output':[{'type':'reasoning','id':'r1','content':[]},calls[0]]}}]}
+    assert check_responses_items(bad_rebuild)['result']=='FAIL'
+    # Different object key order is not a protocol error by itself.
+    reordered={'type':'function_call','name':'hello','arguments':'{}','call_id':'x','id':'c1'}
+    assert check_responses_items({'contract':'responses_items','events':[ *events[:-1],{'type':'response.completed','response':{'output':[done,reordered]}}]})['result']=='PASS'
+    assert check_responses_items({'contract':'responses_items','events':events[:-1]})['result']=='NOT_ASSESSED'
+    assert check_responses_items({'contract':'responses_items','events':[events[0],events[1],events[-1]]})['result']=='FAIL'
+    return 'PASS: six Responses event-contract cases'
+
+
 def check(trace: object) -> dict[str, object]:
+    if isinstance(trace, dict) and trace.get("contract") == "responses_items":
+        return check_responses_items(trace)
     if not isinstance(trace, dict):
         raise ValueError("trace must be a JSON object")
     outcome = trace.get("outcome")
@@ -72,6 +153,7 @@ def check(trace: object) -> dict[str, object]:
 
 
 def self_test() -> None:
+    synthetic_responses_self_test()
     def run(outcome: str, events: list[dict], final: list[str], executed: list[str]) -> str:
         return str(check({"outcome": outcome, "events": events, "final_response_tool_calls": final, "executed_tool_calls": executed})["result"])
     provisional = {"stage": "provisional", "tool_calls": ["A", "B"]}
@@ -102,7 +184,7 @@ def main() -> int:
     args = p.parse_args()
     if args.self_test:
         self_test()
-        print("Self-test PASS: 10 bounded contracts")
+        print("Self-test PASS: 16 bounded contracts (10 tool-call + 6 Responses-item cases)")
         return 0
     if args.sample:
         print(json.dumps(EXAMPLE, ensure_ascii=False, indent=2))
