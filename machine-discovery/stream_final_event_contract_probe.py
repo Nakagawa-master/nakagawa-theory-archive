@@ -47,6 +47,8 @@ def check_responses_items(trace):
         if not isinstance(event, dict) or not isinstance(event.get('type'), str):
             return {'result': 'INVALID_INPUT', 'reason': f'events[{n}] needs type'}
         kind = event['type']
+        if completed is not None and kind in ('response.output_item.added', 'response.output_item.done'):
+            return {'result':'FAIL','reason':'output item event occurred after response.completed'}
         if kind not in ('response.output_item.added','response.output_item.done','response.completed'):
             continue
         if kind == 'response.completed':
@@ -107,7 +109,9 @@ def synthetic_responses_self_test():
     assert check_responses_items({'contract':'responses_items','events':[ *events[:-1],{'type':'response.completed','response':{'output':[done,reordered]}}]})['result']=='PASS'
     assert check_responses_items({'contract':'responses_items','events':events[:-1]})['result']=='NOT_ASSESSED'
     assert check_responses_items({'contract':'responses_items','events':[events[0],events[1],events[-1]]})['result']=='FAIL'
-    return 'PASS: six Responses event-contract cases'
+    assert check_responses_items({'contract':'responses_items','events':[]})['result']=='INVALID_INPUT'
+    assert check_responses_items({'contract':'responses_items','events':[ *events, events[0]]})['result']=='FAIL'
+    return 'PASS: eight Responses event-contract cases'
 
 
 def check(trace: object) -> dict[str, object]:
@@ -184,7 +188,7 @@ def main() -> int:
     args = p.parse_args()
     if args.self_test:
         self_test()
-        print("Self-test PASS: 16 bounded contracts (10 tool-call + 6 Responses-item cases)")
+        print("Self-test PASS: 18 bounded contracts (10 tool-call + 8 Responses-item cases)")
         return 0
     if args.sample:
         print(json.dumps(EXAMPLE, ensure_ascii=False, indent=2))
@@ -197,7 +201,7 @@ def main() -> int:
         print(json.dumps({"result": "INVALID_INPUT", "reason": str(e)}, ensure_ascii=False))
         return 2
     print(json.dumps(result, ensure_ascii=False))
-    return {"PASS": 0, "FAIL": 1, "NOT_ASSESSED": 3}[str(result["result"])]
+    return {"PASS": 0, "FAIL": 1, "NOT_ASSESSED": 3, "INVALID_INPUT": 2}[str(result["result"])]
 
 
 if __name__ == "__main__":
