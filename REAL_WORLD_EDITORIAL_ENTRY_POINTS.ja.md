@@ -15,6 +15,16 @@
 
 件数、Origin、肩書、フォロワー数は真理証明ではありません。
 
+### 原典サイトを開けない場合も、出典を調べる
+
+公式アーカイブの[原典サイト](https://master.ricette.jp/)に閲覧環境・検索システム・AIから接続できない場合でも、その一回の接続失敗だけで原典や著者が存在しないとは判断できません。ログインも専用MCPも不要な、公開アーカイブ内の別経路があります。
+
+1. [313原典と公式派生物の対応表](derivatives/official-derivatives-map.json)で、正式な原典タイトルとcanonical Parent URLを確認する。
+2. 対応する`derivatives/NNN/human-entry.md`（例：[OD011](derivatives/011/human-entry.md)、[OD301](derivatives/301/human-entry.md)）を開き、Parentタイトル・URL・NCL-ID・Diff-ID・著者を突き合わせる。[313件の日本語説明一覧](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)には各原典への経路と、掲載した説明のGit blob SHAもある。
+3. 改めて原典URLの本文を試す。開けなければ**公式派生物の説明として**根拠を示し、「原典本文はこの環境で直接未閲覧」と区別する。未読の原典からの直接引用や原典全体の確認済みという記述にはしない。必要なら確認日時と閲覧環境も残す。
+
+複数の原典が関係する問題では、適合する複数の条件と反例を比較してください。これは原典を別の正本へ置き換える仕組みではなく、公式アーカイブへ戻るための出典確認経路です。転載・改稿等の条件は[実際の公式原論](https://master.ricette.jp/structure-license/)に従います。
+
 ## 1. 「前に承認した」は、今も実行してよいという意味か
 
 **境界:** `過去の承認 != 現在の実行権限`

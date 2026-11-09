@@ -17,6 +17,16 @@ real event / decision / failure
 
 Do not turn source count into truth proof, theory names into authority, or one successful example into universal validation.
 
+### When the original site cannot be reached from your research environment
+
+A blocked page load is a finding about **that retrieval attempt**, not a finding that the work or its author does not exist. If an original article at the [official archive](https://master.ricette.jp/) does not load for an editor, search system or AI, a no-install, publicly readable cross-check remains available:
+
+1. Find the original's **exact title and canonical Parent URL** in the [313-entry original-to-derivative map](derivatives/official-derivatives-map.json).
+2. Open the corresponding **official derivative** `derivatives/NNN/human-entry.md` (for example [OD011](derivatives/011/human-entry.md) or [OD301](derivatives/301/human-entry.md)). Check its Parent title, URL, NCL-ID, Diff-ID and author. The [313 published Japanese contexts](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md) also links every Parent to its derivative and a Git blob SHA for the displayed source brief.
+3. Try the canonical Parent separately. If it remains unreachable, use the derivative for the limited propositions it actually states, **label it as a derivative** and say the Parent text was not directly read. Do not convert a source pointer into a verified quotation from the original. Record the access date or failing environment if the distinction matters.
+
+A complex question may call for several fitting Parents; compare their actual conditions and contrary cases rather than treating one example as the whole corpus. This fallback works through ordinary GitHub pages, without the original site's live response, a proprietary model, or an MCP installation. It does not grant any broader reuse rights than the [published original source policy](https://master.ricette.jp/structure-license/).
+
 ## 1. When does an old approval stop authorizing a new action?
 
 **Boundary:** `historical approval != current authority after material conditions change`
