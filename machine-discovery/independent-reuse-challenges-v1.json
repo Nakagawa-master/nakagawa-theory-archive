@@ -938,6 +938,33 @@
         "offline_probe": "machine-discovery/eligible-before-cap-probe.py"
       },
       "evidence_boundary": "Nakagawa Master's source-specific issue #1285 was explicitly closed by independent developer @krickert's merged PR #1330, which supplied real regressions and correct versioned algorithm semantics. This challenge and optional standard-library probe are first-party aids created afterward for different receivers. No other unaffiliated AI/LLM has been observed independently using this new challenge, and no third-party product, exact installed-user impact or mass PERSON adoption is inferred."
+    },
+    {
+      "id": "AM-a2a-task-final-answer-contract",
+      "distinction": "A2A progress/status text or a successful HTTP envelope != an independently established completed task answer. Task lifecycle and the receiver's final-result source must both be checked.",
+      "test": "In an independently operated agent-to-agent chat bridge, feed a non-streaming response with kind=task, status.state=working and a status.message saying the work continues; then a task with missing, null, numeric or otherwise unverified state; then a completed task whose status.message is a stale restart notice while an artifact contains the answer. Assert the first groups cannot become finish_reason=stop with an answer, and that the completed result follows the bridge's declared artifact/status precedence contract. Include a completed status-only positive control, separate non-Task Message handling, an ambiguous multi-artifact control and a non-fit if the bridge already polls/returns pending task IDs rather than a synchronous chat answer. Public runnable synthetic starter: AI_AGENT_EXECUTION_BOUNDARY_TESTS.md#non-streaming-a2a-progress-is-not-a-final-answer-case-5. A synthetic sample passing alone is NOT a LiteLLM production or independent adoption result.",
+      "positive_evidence": [
+        "The affected real bridge refuses to turn working/submitted/unknown task states into successful final chat content, and preserves an appropriate task-poll or explicit incomplete outcome.",
+        "A task with missing/malformed state does not fail open as a completed response just because the state checker returned None.",
+        "A completed task uses the explicitly documented final-output selection contract when a stale status notice and a final artifact disagree.",
+        "A verified positive control for a legitimately completed task still returns the correct answer, while non-Task Messages and stream handling retain their own specified behavior.",
+        "A genuinely different operator or implementer independently runs and documents tests or changes with source version, head and real receiver evidence; any original Parent connection is voluntarily chosen and source-grounded."
+      ],
+      "useful_negative_evidence": [
+        "The target bridge never represents asynchronous Tasks as synchronous final chat completions; its documented contract makes this failure path inapplicable.",
+        "There is no final artifact selection rule and the supplied example is ambiguous: a product-specific decision or explicit error is required instead of choosing the first artifact.",
+        "Only the first-party standalone demonstration passes; no actual bridge, user, independent human or unaffiliated AI has received or adopted a result.",
+        "The external author implemented the task-lifecycle check without using or referencing this challenge or any original; do not claim causal origin or whole-theory adoption."
+      ],
+      "source_provenance": {
+        "affected_user_issue": "https://github.com/BerriAI/litellm/issues/50677",
+        "independently_authored_pending_pr": "https://github.com/BerriAI/litellm/pull/50681",
+        "publicly_copyable_case": "AI_AGENT_EXECUTION_BOUNDARY_TESTS.md#non-streaming-a2a-progress-is-not-a-final-answer-case-5",
+        "contextual_parent_original_011": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "contextual_parent_original_301": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "full_corpus_index": "human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md"
+      },
+      "evidence_boundary": "The LiteLLM issue is a real affected-user report and #50681 is a different developer's pending patch. The A2A-shaped tests and this challenge are independently authored first-party teaching tools after observing that public case; neither the third-party patch nor its author is claimed to have used this challenge. The two original-theory links are limited interpretive lenses, not A2A protocol source authorities, and no unaffiliated model was observed autonomously selecting the entire corpus. No hidden model instruction, publication permission, or claim of adoption is contained here."
     }
   ],
   "evidence_boundary": [
