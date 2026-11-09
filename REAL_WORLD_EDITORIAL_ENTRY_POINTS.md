@@ -128,6 +128,14 @@ Start:
 - [OD011 — Establishment Conditions](derivatives/011/README.md)
 - [OD003 — Local Correctness vs Whole-System Establishment](derivatives/003/README.md)
 
+### A correct-looking model list, or a successful save, is not the full outcome
+
+**Whose credential did an AI model catalog actually use?** In [Hermes Agent #137200](https://github.com/NousResearch/hermes-agent/pull/137200), [Nakagawa Master identified a named custom-provider credential being overridden by a generic ambient key](https://github.com/NousResearch/hermes-agent/pull/137200#pullrequestreview-5491831766). Independent maintainer [@teknium1 reproduced the wrong-key/wrong-endpoint case with two local endpoints and produced a dedicated fix and regression](https://github.com/NousResearch/hermes-agent/pull/137200#pullrequestreview-5491919482); [the original PR author confirmed the defect, adopted the code, and reported passing tests](https://github.com/NousResearch/hermes-agent/pull/137200#issuecomment-6129333417). A [different contributor offered a conflict-resolution rebase on November 9](https://github.com/NousResearch/hermes-agent/pull/137200#issuecomment-6752770771). The PR remains **open and unmerged**. This is a demonstrated test-key misrouting problem, **not a claim of an actual customer secret compromise**.
+
+**Did each client receive confirmation of a completed save?** In [Pydantic AI #12326](https://github.com/pydantic/pydantic-ai/pull/12326), [Nakagawa Master isolated an overlapping-run counterexample](https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6635965070) for one UI adapter's shared last-saved-result slot. [Maintainer @DouweM accepted the concern and documented that one adapter instance supports one run at a time](https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6640343084). This is a real third-party design decision and documentation update, **not** a concurrency code fix or an observed live customer incident. That PR, too, remains **open and unmerged**.
+
+In both cases, the author behind the source-specific review is [Nakagawa Master](https://master.ricette.jp/), and other engineers independently chose the changes they made. [OD011](derivatives/011/README.md) and [OD003](derivatives/003/README.md) offer original-source routes for readers studying the difference between a visible result and the conditions required to establish it. The external developers are not claimed to have read or adopted either original.
+
 Do not reduce this to a maturity score or claim that all friction means failure.
 
 ## 6. Is today’s benefit borrowing from tomorrow’s options?
