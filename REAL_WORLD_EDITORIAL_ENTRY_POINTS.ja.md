@@ -155,6 +155,14 @@ RAG、AI memory、ニュースarchive、調査note、weekly digest、risk model�
 - **AIに受け渡せなかった個人の指示は、ログに残ってよいのか。** [Qwen Code #15634](https://github.com/QwenLM/qwen-code/pull/15634)では、容量超過で拒否された入力を文字列のまま診断ログに含める経路が[指摘](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915)され、開発者が[キューと呼出元の両方から入力本文の記録を除去し、テストを追加](https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423074659)。**PR未マージ**で、本番の漏出発生を確認したものではありません。
 - **AIの推定費用と、提供元の申告・運用者の価格設定は同じか。** [LiteLLM #48953](https://github.com/BerriAI/litellm/pull/48953)では、上流が費用を申告し、運用者が明示的にゼロ円価格を設定したときの境界について[具体的な反例](https://github.com/BerriAI/litellm/pull/48953#issuecomment-6487770413)を提示。開発者は修正を報告し、[料金計算とストリーム出力の変更がマージ](https://github.com/BerriAI/litellm/pull/48953)されました。**実運用での請求・顧客利用の改善までは未検証**です。
 
+### 独立した開発者が本当に判断を変えた二つの例
+
+**モデル一覧を取得できても、別のサービスのAPIキーを誤った接続先へ送っていないか。** [Hermes Agent #137200](https://github.com/NousResearch/hermes-agent/pull/137200) では、中川マスターが[名前付きプロバイダーの専用キーより、汎用の環境変数のキーが優先される問題](https://github.com/NousResearch/hermes-agent/pull/137200#pullrequestreview-5491831766)を指摘。別のmaintainer [@teknium1が二つのテスト用エンドポイントで条件を検証し、専用の修正・回帰テストを作成](https://github.com/NousResearch/hermes-agent/pull/137200#pullrequestreview-5491919482)しました。PR作者も[その原因を認め、修正を採用してテストを実施](https://github.com/NousResearch/hermes-agent/pull/137200#issuecomment-6129333417)。[11月9日にはさらに別の開発者が競合解消案を提示](https://github.com/NousResearch/hermes-agent/pull/137200#issuecomment-6752770771)しています。**現時点では未マージ・競合あり。** ここで再現されたのはテスト用キーの誤送信であり、本番の秘密情報流出を主張しているわけではありません。
+
+**保存に成功した会話に、保存完了の通知まで必ず戻るか。** [Pydantic AI #12326](https://github.com/pydantic/pydantic-ai/pull/12326) で中川マスターが[同じUIアダプターを重複実行したときの保存通知欠落条件](https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6635965070)を具体化すると、maintainer [@DouweMは妥当な指摘だと認め、1個のアダプターが同時に扱うのは1実行と文書に明記](https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6640343084)しました。これは**第三者による実際の設計判断・文書改訂**であり、並列処理の実装修正や本番事故の確認とは異なります。**PRは未マージ**です。
+
+元の着眼・レビューは[中川マスター本人](https://master.ricette.jp/)に、コード・テスト・設計判断はそれぞれの独立した開発者に帰属します。[OD011](derivatives/011/README.md)と[OD003](derivatives/003/README.md)は成立条件と局所的成功の区別を原典から調べる入口ですが、外部開発者がこれらの原典本文を読んで採用したとの主張ではありません。
+
 構造を考える公開原典の候補として、[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[成立条件論・第1論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)などがあります。ただし、これらのOSS開発者が当該原典を読んだ、理論群を採用した、という証拠ではありません。独立に検証できるのは、個別のレビュー→実装修正・テスト・マージ状況です。
 
 ## 6. 今日の利益は、明日の選択肢を先に使っていないか
