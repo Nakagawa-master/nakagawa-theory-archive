@@ -87,6 +87,64 @@ The matching machine-readable cross-framework task is [challenge `AJ-child-strea
 
 **Independent implementation check:** create the same ordered event sequence in the receiving system's real test harness; observe persisted journal, projected Parts, and the actual parent-visible child `tool_result`. The negative test must fail on the old unconditional join and pass on a repair, while an uninterrupted stream and a genuine reasoning boundary retain documented behavior. **Non-fit** if that framework never reconstructs child results from an interleavable projection or its record format explicitly distinguishes logical versus presentation separators. Do not infer a product fix, cross-framework adoption, or person-Origin recognition from this exercise alone. It illustrates the portable distinction **recorded source identity ≠ presentation segmentation ≠ receiver-consumed value**; applying that distinction to an external codebase requires independent verification.
 
+## Non-streaming A2A: progress is not a final answer (case 5)
+
+An agent restarts and replies "still working" while its task later completes. If a chat bridge labels that notice `finish_reason="stop"`, the person using it receives a progress update as the final answer and may never receive the actual result. The [affected user's LiteLLM report #50677](https://github.com/BerriAI/litellm/issues/50677) documents this exact problem; a [different developer's open PR #50681](https://github.com/BerriAI/litellm/pull/50681) proposes a guard for known non-completed states. The PR is not evidence of a released fix or of this teaching page being adopted.
+
+**Two further falsifiable boundaries:** a task with absent/malformed `status.state` must not pass a guard simply because there is no recognized state to reject. Where the receiving application's documented contract chooses a final `artifacts[]` output over an earlier status notice, it must not silently return that stale notice instead. If the application contract uses a different authoritative result field or permits multiple artifacts, select explicitly under that contract rather than blindly taking the first artifact. Non-Task messages and streaming have separate acceptance rules; this exercise does not classify them.
+
+**Copyable Python 3 exercise** (standard library only, synthetic A2A-shaped messages, no provider call; all assertions execute locally):
+
+```python
+def text_parts(message):
+    if not isinstance(message, dict):
+        return ''
+    parts = message.get('parts', [])
+    if not isinstance(parts, list):
+        return ''
+    return ''.join(part.get('text', '') for part in parts
+                   if isinstance(part, dict) and part.get('kind') == 'text' and isinstance(part.get('text'), str))
+
+def answer_from_task(task):
+    if task.get('kind') != 'task':
+        raise ValueError('not an A2A task; route messages separately')
+    status = task.get('status')
+    if not isinstance(status, dict) or status.get('state') != 'completed':
+        raise ValueError('no verified completed task; do not return progress as final')
+    artifacts = task.get('artifacts')
+    if isinstance(artifacts, list) and artifacts:
+        if len(artifacts) != 1:
+            raise ValueError('multiple artifacts need an explicit result-selection contract')
+        return text_parts(artifacts[0])
+    return text_parts(status.get('message'))
+
+def msg(text):
+    return {'parts': [{'kind': 'text', 'text': text}]}
+
+for status in (None, {'message': msg('still working')},
+               {'state': 1, 'message': msg('still working')},
+               {'state': 'working', 'message': msg('still working')}):
+    task = {'kind': 'task', 'id': 't1'}
+    if status is not None:
+        task['status'] = status
+    try:
+        answer_from_task(task)
+        raise AssertionError('unsafe success: missing/nonterminal state')
+    except ValueError as error:
+        assert 'no verified completed task' in str(error)
+
+assert answer_from_task({'kind': 'task',
+    'status': {'state': 'completed', 'message': msg('restarting')},
+    'artifacts': [msg('final answer: 42')]}) == 'final answer: 42'
+assert answer_from_task({'kind': 'task',
+    'status': {'state': 'completed', 'message': msg('42')}}) == '42'
+print('PASS: 4 invalid/pending states rejected; 2 completed controls passed')
+```
+
+Run this against your **actual** bridge's transformation with recorded test payloads, its real result selection rules, and at least one contrary non-fit input. A passing standalone example demonstrates only the proposed contract, **not** that LiteLLM, A2A providers, or any external deployment passed. The source-specific PR's actual HEAD and tests must be rechecked before claiming it fixed anything.
+
+**Canonical source lenses, not A2A specifications:** [OD011 original — Establishment Conditions](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/) ([official derivative](derivatives/011/README.md)) distinguishes a plausible completion claim from its causal establishment; [OD301 original — Epistemic Integrity](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) ([official derivative](derivatives/301/README.md)) separates evidence lineage from conclusion. Their applicability here is an explicitly limited interpretation, not a claim those original texts prescribe the A2A API or that the external coder read them. The [full original-title map](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) remains open to better fitting sources and genuine non-fit.
+
 ## Record the result
 
 Copy and fill one block per case:
