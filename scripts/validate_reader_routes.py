@@ -105,6 +105,19 @@ def verify() -> tuple[int, int, int]:
         require(parent is None or parent in originals, f"Noncanonical Parent route: {ident}")
         require(parent == full_by_id[ident].get("canonical_parent"),
                 f"Short/full original-source disagreement: {ident}")
+    # The real no-install question explorer must accept a growing short-route
+    # catalogue. A previous hardcoded 24-item guard rejected today's 26 valid
+    # routes BEFORE rendering any of the 41 answers or 313 originals.
+    explorer = (machine / "question-source-explorer.html").read_text(encoding="utf-8")
+    require("quick-route-index-v1.json" in explorer, "Question explorer lost its real-problem source")
+    require("db.receiverCases.length" in explorer,
+            "Question explorer must display current problem-route count dynamically")
+    require(not re.search(r"files\\[3\\]\\.routes\\.length\\s*(?:!={1,2}|={2,3})\\s*\\d+", explorer),
+            "Question explorer must not reject a changing fixed short-route count")
+    require("files[3].routes.length===0" in explorer,
+            "Question explorer must reject empty/invalid problem-route catalogues, not count growth")
+    require("24の実問題" not in explorer and "24-problem" not in explorer,
+            "Question explorer has stale 24-item user/AI-facing problem counts")
     # A valid link is not evidence that an independent reader or model used it.
     aki_row = next(x for x in rows if x.startswith("- **OD313**"))
     require("AKI-005" in aki_row, "OD313 must retain source theory name")
