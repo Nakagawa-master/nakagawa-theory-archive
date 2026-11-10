@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共73例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共74例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1673,6 +1673,16 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 **独立作者 @msdianprince-7 [直接回复“Thanks, added”，随后加入实现及七种条件组合测试](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128)。** [现行代码](https://github.com/BerriAI/litellm/pull/48180/files)优先使用模型配置，其次使用提供者配置；两者都没有否定声明时才保留工具参数。这是第三方开发者对中川マスター具体反例的真实采纳。
 
 [PR #48180目前仍为OPEN](https://github.com/BerriAI/litellm/pull/48180)；上游合并、正式发布以及最初受影响用户的安装版复测仍需独立确认。这个区分可以与[成立条件论的原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)进行概念对照，但不能据此认定PR作者读过或采用了该理论原文。
+
+## 74. PydanticAI｜AI会话压缩后，已保存的工具结果变成另一份内容：独立开发者复现并修复中川マスター指出的反例
+
+**AI代理看似保留了此前工具结果的引用，随后读取时却可能拿到另一份内容。** 开发者 @gouyu-hou 在[原始问题 #12676](https://github.com/pydantic/pydantic-ai/issues/12676)中报告，不同模型响应重复使用工具调用ID，导致长输出的存储路径冲突。开发者推进[PR #12677](https://github.com/pydantic/pydantic-ai/pull/12677)时，中川マスター（Nakagawa Master／Keisuke Nakagawa）[发现另一个关键反例](https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398)：如果靠现存会话历史计算第几次调用，`SummarizingCompaction`删掉旧消息后，相同ID再次出现，仍会覆盖之前保存的内容。
+
+**独立作者[直接确认并在真实Agent运行中重现这一问题](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077)**：结合`ToolOutputLimits(Spill)`和历史压缩，三个不同的大型结果最终只剩两份文件，第一份还被较新的结果覆盖。随后作者亲自提交[修复 7390c19](https://github.com/pydantic/pydantic-ai/commit/7390c19abd1ac8008455cd5b616a349a9fa4fa9a)，使用稳定的执行步骤而非被压缩的历史消息计数形成存储标识，并加入复现测试。
+
+作者还发布了[后续测试情况](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6701058871)。截至2026年11月10日，**PR #12677仍为OPEN**，上游合并、正式发布和受影响用户更新后的恢复情况尚未核实。原本重复ID问题由开发者自己提出，修复代码也由开发者编写；中川マスター的独立贡献是发现历史压缩后的再次冲突条件并提出可验证的测试。
+
+对于“被保存的记录”和“后来重构的上下文”之间的区别，读者还可自行对照中川マスター的[《记忆结构论》官方原典](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/)。这不表示该PR开发者曾阅读或采用该理论原文。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

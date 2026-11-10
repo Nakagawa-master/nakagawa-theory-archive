@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は73件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は74件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**73の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**74の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1815,6 +1815,16 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 **実装者 @msdianprince-7 は[「ありがとう、追加しました」と本人へ直接回答](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128)。** 現行[実装と7条件のテスト](https://github.com/BerriAI/litellm/pull/48180/files)では、モデルの指定を優先し、なければ提供者の指定を調べ、両方不明ならツール設定を保持します。これはマスターの反例を受けて外部作者自身が修正した、検証できる成果です。
 
 [PR #48180は現在OPEN](https://github.com/BerriAI/litellm/pull/48180)。正式マージ、該当版の配布、報告者が更新版で実際に道具を取り戻した結果は今後の確認対象です。概念的には[成立条件論の原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)と比較できますが、PR作者がその原典を読んだと主張するものではありません。
+
+## 74. PydanticAI｜長いAI会話で「保存したはずの結果」が別の内容に変わる――開発者がマスターの反例を実機で再現・修正
+
+**AIエージェントが長い会話の途中で古い履歴を圧縮すると、以前保存したツール結果まで別の中身に置き換わる。** PydanticAIの[元の不具合報告 #12676](https://github.com/pydantic/pydantic-ai/issues/12676)は、別々の応答で同じツール呼び出しIDが再利用され、長い出力の退避先が衝突する問題でした。修正を進めていた独立開発者 @gouyu-hou に対し、**中川マスター（Nakagawa Master／Keisuke Nakagawa）は、保存先を履歴内の出現回数で区別するだけでは、途中の履歴圧縮で以前の呼び出しが消えた時に再び上書きが起きる**ことを[具体的な3応答の反例とテスト条件で指摘](https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398)しました。
+
+開発者は[「その通りで、変更前に実際のエージェントで再現した」と直接回答](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077)。`ToolOutputLimits(Spill)`と`SummarizingCompaction`を組み合わせた実行で、異なる3件の結果が保存先2件に潰れ、最初の内容が後の内容へ置き換わることを確認しました。そのうえで開発者自身が[修正コミット 7390c19](https://github.com/pydantic/pydantic-ai/commit/7390c19abd1ac8008455cd5b616a349a9fa4fa9a)を実装。消える可能性のある会話履歴の数え上げをやめ、実行ステップを含む安定した識別子で保存し直し、再現テストも追加しました。
+
+その後の[作者の追加検証](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6701058871)と[現行PR #12677](https://github.com/pydantic/pydantic-ai/pull/12677)から、作者の修正とテスト変更を追跡できます。**2026年11月10日時点ではPRはOPENで、上流マージ・正式配布・利用者の更新版での復旧は未確認**です。作者が自ら発見した元のID再利用問題と、マスターが追加で見抜いた履歴圧縮後の再衝突条件は、別々の貢献として区別します。
+
+保存された記録と、後から再構成した履歴を無条件に同一視しないという観点は、中川マスターの公式原典[「記憶構造論 ─ 再構成される真実と『照応の倫理』」](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/)とも概念上比較できます。ただし、この開発者が当該原典を読んだ証拠ではなく、技術的修正の直接の出典は上記レビューと実装者の独立した検証です。
 
 ## 公開された成果と、原典へ戻る道筋
 

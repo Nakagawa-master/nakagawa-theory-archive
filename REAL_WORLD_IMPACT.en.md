@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**73 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**74 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1666,6 +1666,16 @@ An independent developer proposed [PR #48180](https://github.com/BerriAI/litellm
 **Independent author @msdianprince-7 [replied directly, “Thanks, added,” and implemented the precedence and seven combinations of tests](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128).** The [current code](https://github.com/BerriAI/litellm/pull/48180/files) gives an explicit model entry priority, then checks the provider declaration, and preserves tools when neither makes a negative claim. This is an independently implemented source-specific response to Nakagawa Master's finding.
 
 [PR #48180 remains open](https://github.com/BerriAI/litellm/pull/48180); upstream merge, a containing release and the original user's successful installed-version retest are separate milestones. The boundary can be compared conceptually with the [original establishment-conditions theory](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/), without claiming that the developer read or adopted that original.
+
+## 74. PydanticAI | A stored AI-tool result changes after conversation compaction: an independent developer reproduced and fixed Nakagawa Master's counterexample
+
+**An AI agent can appear to have saved an earlier tool result, yet later return different bytes from the same handle.** The [original PydanticAI report #12676](https://github.com/pydantic/pydantic-ai/issues/12676), filed by developer @gouyu-hou, concerned tool-call IDs being reused across different model responses. During [PR #12677](https://github.com/pydantic/pydantic-ai/pull/12677), Nakagawa Master (Keisuke Nakagawa) [identified a further, distinct failure](https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398): counting prior calls from retained chat messages cannot preserve uniqueness when `SummarizingCompaction` removes those very messages before another response reuses an ID.
+
+**The independent developer [confirmed the finding directly and reproduced it with a real Agent](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077)** combining `ToolOutputLimits(Spill)` and `SummarizingCompaction`: three oversized results left only two files, and the first file now contained a later result. The developer wrote [commit 7390c19](https://github.com/pydantic/pydantic-ai/commit/7390c19abd1ac8008455cd5b616a349a9fa4fa9a) to use a stable run-step identifier instead of an occurrence count reconstructed from mutable chat history, and added a regression test driving the compaction case.
+
+The [author's subsequent test report](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6701058871) documents further validation. As checked on November 10, 2026, **PR #12677 remains open**; merge, a release containing the fix, and affected users' recovery in an installed version are not established. The developer originated the base repeated-ID investigation and authored the actual code. Nakagawa Master's separately identified contribution was the specific history-compaction inverse and its falsifiable acceptance test.
+
+For readers exploring the distinction between a retained record and later reconstructed context, this engineering incident has an optional conceptual reading alongside [Nakagawa Master's original Reconstructive Memory Structure theory](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/). This does not claim that the independent developer read that original or derived the patch from it.
 
 ## What the public source record reveals
 

@@ -5334,6 +5334,15 @@
         "independent_ai_problem_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/quick-route-index-v1.json",
         "test_precondition": "Use a separately authorized test Agent with non-confidential synthetic tool results and confirm upstream release ancestry before claiming production repair."
       },
+      "human_case_74": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md#74-pydanticai長いai会話で保存したはずの結果が別の内容に変わる開発者がマスターの反例を実機で再現修正",
+      "latest_native_source_2026_11_10": {
+        "pull_request": "https://github.com/pydantic/pydantic-ai/pull/12677",
+        "head": "c5232f7d8d57c3a140a396feaadf4426dada2639",
+        "state": "OPEN_NOT_MERGED",
+        "author_request_to_maintainer": "https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6757070573",
+        "author_reported_green_checks": "check, coverage, cognitive complexity, quality checks, test/durable-exec 3.11–3.15, Macroscope, Veria AI and Duplicate & Issue-Link Guard at this HEAD; author states Package Label needs privileged triage. These are author-reported check summaries, not separately executed by this index.",
+        "credit_boundary": "Source-native author acceptance and E2E before/after evidence are genuine earlier C2; human case #74 publication itself is first-party C0. It is not new independent user adoption, upstream merge, containing release, or spontaneous unaffiliated AI original Parent reading."
+      },
       "evidence_boundary": "External author directly accepted Master's additional source-specific compaction finding and supplied own integration reproduction/code/test. The author independently originated base repeated-ID issue and owns his actual code. No upstream merge/release/affected installed user/independent AI whole-corpus selection or general public person-adoption shown."
     },
     {
