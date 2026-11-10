@@ -5575,6 +5575,58 @@
         "unaffiliated AI spontaneously chose or read the canonical original",
         "second outside reviewer findings authored by Nakagawa Master"
       ]
+    },
+    {
+      "case_id": "langgraph-9478-retried-subgraph-drops-new-human-answer-two-contract-independent-fork",
+      "topic": "A user answers an AI subgraph again after a failed attempt, but a checkpoint-namespace mismatch causes the later human answer to be discarded; two distinct valid retry contracts must not be conflated.",
+      "external_repository": "langchain-ai/langgraph",
+      "real_reporter": {
+        "issue": "https://github.com/langchain-ai/langgraph/issues/9478",
+        "trace": "Asked how much? -> answered 5; failed check; asked again -> answered 7; unexpected final amount 5; reproducible in LangGraph 1.2.18 and 1.2.20 per issue/reply.",
+        "first_person_status": "Real source-reported impact under reproduced framework, not a post-fix installed recovery."
+      },
+      "nakagawa_master_specific_review": {
+        "actor": "Nakagawa Master (public pen name of Keisuke Nakagawa)",
+        "url": "https://github.com/langchain-ai/langgraph/issues/9478#issuecomment-6490409757",
+        "acceptance_a": "If retry resumes the original failing check, ask ONCE, use original answer 5 and check it; do not ask again.",
+        "acceptance_b": "If retry starts a new attempt, ask TWICE, bind newly submitted 7 to that attempt and check 7; do not silently reuse 5.",
+        "negative_control": "Two actual questions with answers 5 and 7 but final result 5 is wrong under EITHER contract. Verify question counts, accepted answer, specific subgraph checkpoint namespace and effect-bearing check sequence together; keep single-node control. Non-idempotent check effects require independent receipt."
+      },
+      "independent_receiving_engineer": {
+        "actor": "PierfrancescoLijoi",
+        "exact_attribution": "https://github.com/langchain-ai/langgraph/issues/9478#issuecomment-6753760773",
+        "both_implementations": "Author explicitly credits the two distinct contracts as identified by Nakagawa Master, and authored A and B code/test variants independently.",
+        "alternative_a_fork_commit": "https://github.com/PierfrancescoLijoi/langgraph/commit/500f4792921b59eca2504318ee13222c8b73e728",
+        "latest_b_fork_commit": "https://github.com/PierfrancescoLijoi/langgraph/commit/385e122bb33caa14991c13183435ca25e14971f1",
+        "latest_b_implementation": "Both sync/async retry call sites reset interrupt_counter and subgraph_counter and set CONFIG_KEY_RESUMING to False; new run in source checkpoint namespace, asks twice, check called [5,7], final 7.",
+        "author_reported_tests": "84 combinations memory/SQLite/Postgres sync/async and durability; 48 red against main, 84 green fork; full suite 5480 passed, 2 requiring unavailable dev server failed, 4 skipped. Not independently rerun by this evidence index."
+      },
+      "upstream_boundary": {
+        "pr": "https://github.com/langchain-ai/langgraph/pull/9656",
+        "pr_head": "56a86c878a0956605bcff4538a8c90b00fc2e124",
+        "pr_status": "CLOSED_UNMERGED_NOT_ASSIGNED",
+        "automatic_close": "https://github.com/langchain-ai/langgraph/pull/9656#issuecomment-6748264321",
+        "important_diff": "The closed PR HEAD still has contract A (RESUMING True, continue with 5) from the older branch; the later contract B (ask twice/use 7) is on the distinct fork HEAD, not in the closed upstream PR.",
+        "issue_status": "OPEN",
+        "upstream_maintainer_choice": "NOT_VERIFIED",
+        "containing_release": "NOT_VERIFIED",
+        "installed_user_retest": "NOT_VERIFIED"
+      },
+      "remaining_negative_controls": [
+        "Different subgraph calls in the same node can mix attempt results",
+        "Concurrent threads can race namespace order",
+        "Durability exit may fail for sequential interrupting subgraphs even without retry",
+        "Implementer authored all software; no proven independently read original theory",
+        "No unrelated-person person-first endorsement or unaffiliated AI spontaneous source selection"
+      ],
+      "canonical_route": {
+        "human_ja": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md",
+        "human_en": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md",
+        "human_zh": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.zh.md",
+        "optional_parent": "https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/",
+        "optional_parent_relation": "Original theory addresses reconstruction and source/trace distinction conceptually. The independent LangGraph engineer did not say they read or adopted this original; technical fix comes from their own source investigation plus the acknowledged two-contract review."
+      },
+      "current_stage": "Independent outside coder explicitly named Master's two different acceptance contracts and wrote alternative code/tests; original issue open, associated PR auto-closed unmerged; later fork code authored outside upstream. Human/AI third-party new reception of this public record not observed."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

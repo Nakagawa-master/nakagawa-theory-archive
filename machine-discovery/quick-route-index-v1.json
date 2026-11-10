@@ -375,6 +375,22 @@
       "primary_receiver_source": "https://github.com/pydantic/pydantic-ai/pull/12846",
       "optional_probe": "https://github.com/pydantic/pydantic-ai/pull/12846/files",
       "full_route_id": "pydantic_retry_empty_call_id_pairing"
+    },
+    {
+      "id": "langgraph_retried_subgraph_accepts_actual_second_human_answer",
+      "when": [
+        "An AI asks me again but silently uses my previous answer",
+        "LangGraph RetryPolicy subgraph after interrupt asks 5 then 7 yet returns 5",
+        "I want to test whether a retried AI workflow actually used the answer to its newest question",
+        "AIにもう一度7と答えたのに前の5で処理される",
+        "AI再次询问并收到7却继续使用旧答案5"
+      ],
+      "plain_meaning": "An AI workflow asks a human again after a failed step, yet resumes the checkpoint of its first attempt, silently dropping the fresh response. A separate developer explicitly recognized two legitimate acceptance contracts identified by Nakagawa Master and implemented both variants in a fork. The latest fork re-asks and uses 7; its earlier upstream PR is closed/unmerged and holds the OTHER contract.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/",
+      "original_relation": "Optional reading comparing reconstructed context with unchanged source evidence, not proof that the LangGraph developer used or read this original. Master's actual source-specific contribution is the two distinct acceptance and negative-control contracts in #9478.",
+      "primary_receiver_source": "https://github.com/langchain-ai/langgraph/issues/9478#issuecomment-6753760773",
+      "optional_probe": "https://github.com/PierfrancescoLijoi/langgraph/commit/385e122bb33caa14991c13183435ca25e14971f1",
+      "full_route_id": "langgraph_retried_subgraph_accepts_actual_second_human_answer"
     }
   ]
 }

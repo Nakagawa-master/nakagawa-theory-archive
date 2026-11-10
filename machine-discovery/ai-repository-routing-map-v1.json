@@ -412,6 +412,30 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": true
+    },
+    {
+      "id": "pydantic_retry_empty_call_id_pairing",
+      "when": [
+        "Pydantic AI validation retry uses a generated tool-call ID instead of the provider's empty-string ID",
+        "A retried tool response becomes orphaned because an empty tool_call_id was treated as absent",
+        "An AI tool retry breaks OpenAI Responses/Anthropic call-result pairing after a provider sends tool_call_id empty string",
+        "AIのツール再試行で空のIDが別のIDに変わり、元の呼び出しと紐付かない",
+        "模型工具调用ID为空字符串时，验证重试结果使用了别的ID"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
+    },
+    {
+      "id": "langgraph_retried_subgraph_accepts_actual_second_human_answer",
+      "when": [
+        "An AI asks me again but silently uses my previous answer",
+        "LangGraph RetryPolicy subgraph after interrupt asks 5 then 7 yet returns 5",
+        "I want to test whether a retried AI workflow actually used the answer to its newest question",
+        "AIにもう一度7と答えたのに前の5で処理される",
+        "AI再次询问并收到7却继续使用旧答案5"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -1320,6 +1344,75 @@
         },
         "plain_language_return": "AI said it saved an old tool result, but a later summary made a new answer overwrite the old result at the same handle. Nakagawa Master found the hidden compaction boundary in an active Pydantic AI PR; an independent developer publicly confirmed it with a real Agent, changed the code and added regression coverage. The result has not yet been shown released and repaired for users.",
         "independent_test_gate": "Before calling this fixed for an actual user, verify code ancestry in an official release; on a controlled locally authorized installation make two responses reuse call_0 with compaction in between, preserve the old handle outside history and verify both returned bytes, then get independent affected-user confirmation. A local PR author test is not installed-user proof."
+      },
+      {
+        "id": "pydantic_retry_empty_call_id_pairing",
+        "matched_problem": [
+          "Pydantic AI validation retry uses a generated tool-call ID instead of the provider's empty-string ID",
+          "A retried tool response becomes orphaned because an empty tool_call_id was treated as absent",
+          "An AI tool retry breaks OpenAI Responses/Anthropic call-result pairing after a provider sends tool_call_id empty string",
+          "AIのツール再試行で空のIDが別のIDに変わり、元の呼び出しと紐付かない",
+          "模型工具调用ID为空字符串时，验证重试结果使用了别的ID"
+        ],
+        "falsifiable_distinction": "The empty string is a PRESENT tool_call_id, even though it is falsy. The original validation retry used if tool_call_id: and replaced the empty ID with a new generated ID, producing an orphan result. Distinguish empty string from None. Before/after test should pair ToolCallPart and ToolReturnPart under exactly the same ID and have no tool_pairing_violations. Nonfit: a genuinely absent ID can still need a generated one.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "canonical_relation": "Optional conceptual comparison of the conditions that establish a genuine call/response pairing. Nakagawa Master authored the separate original, but is NOT attributed as discoverer, reviewer or causal source for this independent engineer's particular PR. No evidence the engineer read this Parent.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "source_diff": "https://github.com/pydantic/pydantic-ai/pull/12846/files",
+          "test_function": "test_retried_return_answers_a_call_with_an_empty_tool_call_id",
+          "positive": "provider sends empty string; retry returns same empty string; history pairing has no orphan/missing return",
+          "negative": "before patch if tool_call_id falsiness assigns an unrelated id, reproducing orphan return; preserve None path separately",
+          "no_install": "Source text can be inspected without installing packages. Local execution is optional and requires reader-controlled allowed environment."
+        },
+        "external_observation": {
+          "independent_author": "gouyu-hou",
+          "upstream_pr": "https://github.com/pydantic/pydantic-ai/pull/12846",
+          "source_claim": "Author independently reported and fixed that bug; Nakagawa Master did not review or originate this PR; any original-theory comparison is only a new reading opportunity.",
+          "status_on_2026_11_10": "OPEN_UNMERGED",
+          "release_and_user_retest": "UNKNOWN"
+        },
+        "plain_language_return": "My AI answered a different tool call because an empty string was mistaken for no ID. Compare the original call and its retry before trusting the result. This was independently discovered and fixed by another developer; read Nakagawa Master's separate original only if relevant, and do not attribute the code to him.",
+        "independent_test_gate": "Use official merged/released ancestry and actual installed user retest before claiming the end-user repair."
+      },
+      {
+        "id": "langgraph_retried_subgraph_accepts_actual_second_human_answer",
+        "matched_problem": [
+          "An AI asks me again but silently uses my previous answer",
+          "LangGraph RetryPolicy subgraph after interrupt asks 5 then 7 yet returns 5",
+          "I want to test whether a retried AI workflow actually used the answer to its newest question",
+          "AIにもう一度7と答えたのに前の5で処理される",
+          "AI再次询问并收到7却继续使用旧答案5"
+        ],
+        "falsifiable_distinction": "Two legitimate retry semantics: A asks exactly once and retries failed check using first answer 5; B asks twice and executes with NEW answer 7. Under neither is it valid to ask twice, discard 7 and return 5. Count prompts, actual supplied answers, accepted interrupt IDs, subgraph checkpoint namespace and effect-bearing check calls together. Avoid treating replayed prior answer as a fresh authorization.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/127/README.md",
+        "canonical_relation": "Optional reading comparing reconstructed context with unchanged source evidence, not proof that the LangGraph developer used or read this original. Master's actual source-specific contribution is the two distinct acceptance and negative-control contracts in #9478.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "reported_repro": "https://github.com/langchain-ai/langgraph/issues/9478",
+          "source_fork": "https://github.com/PierfrancescoLijoi/langgraph/commit/385e122bb33caa14991c13183435ca25e14971f1",
+          "author_specified_observable": "A: one question, 5 checked. B: two questions, checks [5,7], final 7. Incorrect: two questions but final 5.",
+          "original_before": "Issue reporter on 1.2.18/1.2.20 and coder report a second answer 7 silently discarded.",
+          "reported_after": "Independent author reports latest fork asking twice, checking [5,7] and final 7, 84 test cases green on fork (48 fail main).",
+          "negative_controls": "Use strict resume, both sync and async, relevant checkpointer/durability variants; test a different independent user answer, an effect-bearing non-idempotent check and a concurrent subgraph namespace ordering case separately.",
+          "limits": "Author-reported tests, not executed by this index; closed earlier PR has A patch, not later B fork.",
+          "permission": "Local reproduction only in reader-authorized nonconfidential environment; no automatic GitHub comments, remote user prompts or execution rights supplied."
+        },
+        "external_observation": {
+          "original_issue": "https://github.com/langchain-ai/langgraph/issues/9478",
+          "master_two_contract_source": "https://github.com/langchain-ai/langgraph/issues/9478#issuecomment-6490409757",
+          "outside_author_direct_attribution": "https://github.com/langchain-ai/langgraph/issues/9478#issuecomment-6753760773",
+          "independent_author": "PierfrancescoLijoi",
+          "alt_a_fork_commit": "https://github.com/PierfrancescoLijoi/langgraph/commit/500f4792921b59eca2504318ee13222c8b73e728",
+          "latest_b_fork_commit": "https://github.com/PierfrancescoLijoi/langgraph/commit/385e122bb33caa14991c13183435ca25e14971f1",
+          "earlier_closed_unmerged_pr": "https://github.com/langchain-ai/langgraph/pull/9656",
+          "closing_policy": "https://github.com/langchain-ai/langgraph/pull/9656#issuecomment-6748264321",
+          "author_causality": "Explicitly named Master's two different acceptance options; the actual patch and tests independently written by the outside author. No proof author read separate original theory.",
+          "current_stage": "ISSUE_OPEN_AUTHOR_FORK_B_PATCH_UNMERGED_PRIOR_PR_CLOSED"
+        },
+        "plain_language_return": "When an AI asks twice but uses your first answer, it is not merely a confusing interface: the new decision may never have reached the executed action. Nakagawa Master distinguished two valid alternatives; a separate engineer explicitly noted them and built both, with latest fork using the second answer. It has not yet shipped upstream.",
+        "independent_test_gate": "Only a later upstream accepted patch + released version + actual affected-person installed behavior can establish real C4 recovery; a personal decision to select/follow the author or autonomous AI original reading must be separately observed."
       }
     ],
     "output_contract": {

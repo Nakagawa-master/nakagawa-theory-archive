@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**74 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**75 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1676,6 +1676,18 @@ An independent developer proposed [PR #48180](https://github.com/BerriAI/litellm
 The [author's subsequent test report](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6701058871) documents further validation. As checked on November 10, 2026, **PR #12677 remains open**; merge, a release containing the fix, and affected users' recovery in an installed version are not established. The developer originated the base repeated-ID investigation and authored the actual code. Nakagawa Master's separately identified contribution was the specific history-compaction inverse and its falsifiable acceptance test.
 
 For readers exploring the distinction between a retained record and later reconstructed context, this engineering incident has an optional conceptual reading alongside [Nakagawa Master's original Reconstructive Memory Structure theory](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/). This does not claim that the independent developer read that original or derived the patch from it.
+
+## 75. LangGraph | The AI asks again, you answer 7, but it uses the earlier 5: an independent author implements Nakagawa Master's two acceptance contracts
+
+**An AI agent asks you for a new answer. You say 7, but its final work still uses your earlier 5.** The [actual LangGraph bug report #9478](https://github.com/langchain-ai/langgraph/issues/9478) reproduces exactly that sequence. When a subgraph under a retry policy fails, a scratchpad counter assigns the retried subgraph a new checkpoint namespace, while a later resume reads the old attempt. The second user answer is silently ignored.
+
+[Nakagawa Master (Keisuke Nakagawa) identified two distinct, coherent acceptance contracts in a source-specific review](https://github.com/langchain-ai/langgraph/issues/9478#issuecomment-6490409757): **(A)** if the system asks only once, retry the failed check using the original answer 5; **(B)** if it asks twice, use the newly submitted answer 7 in the next check. Asking twice but using 5 violates both. He called for the number and identity of prompts, accepted answers, checkpoint namespace and actual check calls to be tested together.
+
+**Independent developer @PierfrancescoLijoi [explicitly cited the two alternatives Nakagawa Master distinguished](https://github.com/langchain-ai/langgraph/issues/9478#issuecomment-6753760773) and implemented both as separate variants.** The [latest self-authored fork commit 385e122](https://github.com/PierfrancescoLijoi/langgraph/commit/385e122bb33caa14991c13183435ca25e14971f1) chooses contract B, resetting both interrupt and subgraph counters and starting the retried subgraph anew. The author's observed trace asks twice, checks on [5, 7], and finally returns 7. The author reports **84 sync/async, checkpointer and durability tests**, with 48 failing on the original branch and all 84 passing on the fork; the public archive has not independently executed the suite.
+
+**Upstream adoption has not occurred.** [PR #9656](https://github.com/langchain-ai/langgraph/pull/9656) was [automatically closed, unmerged](https://github.com/langchain-ai/langgraph/pull/9656#issuecomment-6748264321) under an issue-assignment rule. Importantly, its frozen PR diff still shows the older **contract A** variant, while contract **B is in the developer's later fork**. The author also reports unsolved concurrent-subgraph namespace mixing and a separate durability limitation. The author, not Nakagawa Master, wrote the software and tests.
+
+For a wider original discussion of how reconstructed context must not be mistaken for an unchanged record, readers can independently examine [Nakagawa Master's original Reconstructive Memory Structure theory](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/). The developer did not claim to read that original. The source proves a concrete outside engineering response to Master's two-contract distinction, not merge, released end-user recovery or personal endorsement.
 
 ## What the public source record reveals
 
