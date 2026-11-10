@@ -6,6 +6,7 @@
 
 **公開された外部作用事例：71件**。[各事例の元の指摘、受け手の応答・実装・現在の段階](REAL_WORLD_IMPACT.md)を、第三者自身の一次資料につないでいます。
 
+**中川マスター本人の活動と原典を継続して読む：** [公開GitHubアカウント](https://github.com/Nakagawa-master)から、新しい実例と原典をたどり、必要に応じてフォローできます。実際の検証や反例は[第三者による検証・再利用の公開フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)で共有できます。
 - **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。**[公式リリース文書に `@Nakagawa-master` の名前を掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)**（掲載対象は[別件の #160136](https://github.com/openclaw/openclaw/pull/160136)）。さらに別の[#160856](https://github.com/openclaw/openclaw/pull/160856)では、指摘を報告元と明記した独立開発者が**回帰テスト49件成功・正式マージ**。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — 世界的な開発者向け分析基盤。AIの提示値と製品自身の測定を分ける指摘が後続実装に引き継がれ、**3件のPRが正式マージ、開発環境と米欧の本番環境へのデプロイを記録**。
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)** — AIが書込権限を誤判定する問題を、元の報告者が実動作で確認して独立に修正・テスト。**[正式版 v0.26.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6) と [TypeScript SDK v0.1.27](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.27) へ収録**。別件では、同名のAIツールがぶつかると正常な道具まで消える問題も、[マスターの具体的な衝突除外条件](https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6461618923)を受け、[別の開発者が修正・正式リリース](https://github.com/QwenLM/qwen-code/pull/15757)。
@@ -16,7 +17,6 @@
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)**・**[MemberJunction](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)** — AI会話の重複書込みやデータの所有権境界に関する指摘を、各開発チームが独立して実装・テスト。**マージ・正式リリース**へ。
 - **[LlamaIndex / Cerebras](https://github.com/run-llama/llama_index/pull/22769)** — 「AIに渡す上限値を新しく指定しても古い数値が残る」条件を[中川マスターが実ソースと正反例から指摘](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6108135348)。**別の開発者がその指摘を明示的に受け、実コードと2件の回帰テストを追加**。[修正作者の返信](https://github.com/run-llama/llama_index/pull/22769#issuecomment-6136077030)。**PRは現在OPEN**。
 
-**中川マスター本人の活動と原典を継続して読む：** [公開GitHubアカウント](https://github.com/Nakagawa-master)から、新しい実例と原典をたどり、必要に応じてフォローできます。実際の検証や反例は[第三者による検証・再利用の公開フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)で共有できます。
 
 **掲載記事の問題を自分で追試できます。** [MCP不要・ネットワーク不要の実Git・2条件再現コード](machine-discovery/pinned-git-read-provenance-demo.py)を公開し、2026年11月3日に正例・反例の両方で成功確認。Gitの最後の状態がきれいでも「途中で何を読んだか」は別という核心を、手元の一時Gitリポジトリだけで検証できます。
 
