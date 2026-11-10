@@ -83,6 +83,29 @@ def verify() -> tuple[int, int, int]:
         require(f"Parent NCL-ID: {original['ncl_id']}" in readme,
                 f"OD{ident} mapping NCL-ID differs from its source README")
 
+    # Keep the independent, no-install AI/human quick entry paired with its
+    # exact detailed source route. Do not freeze route count or sample size.
+    machine = ROOT / "machine-discovery"
+    quick = json.loads((machine / "quick-route-index-v1.json").read_text(encoding="utf-8"))
+    detail = json.loads((machine / "ai-repository-routing-map-v1.json").read_text(encoding="utf-8"))
+    quick_routes = quick["routes"]
+    detailed_routes = detail["task_first_selection"]["routes"]
+    qids = [item["id"] for item in quick_routes]
+    dids = [item["id"] for item in detailed_routes]
+    require(len(qids) == len(set(qids)) and len(dids) == len(set(dids)),
+            "Duplicate AI problem-route identity")
+    require(set(qids) == set(dids), "Broken short/full AI source route identity")
+    originals = {item["canonical_parent_url"] for item in paired}
+    full_by_id = {item["id"]: item for item in detailed_routes}
+    for item in quick_routes:
+        ident = item["id"]
+        require(item.get("full_route_id") == ident, f"Dangling full route pointer: {ident}")
+        require(bool(item.get("when")), f"Empty real-problem entry: {ident}")
+        parent = item.get("canonical_original")
+        require(parent is None or parent in originals, f"Noncanonical Parent route: {ident}")
+        require(parent == full_by_id[ident].get("canonical_parent"),
+                f"Short/full original-source disagreement: {ident}")
+    # A valid link is not evidence that an independent reader or model used it.
     aki_row = next(x for x in rows if x.startswith("- **OD313**"))
     require("AKI-005" in aki_row, "OD313 must retain source theory name")
     require("../derivatives/313/faq.md" in aki_row, "OD313 reader FAQ missing")
