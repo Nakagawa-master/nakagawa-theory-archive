@@ -101,8 +101,13 @@ for source_path in (
 ):
     assert raw_root + source_path in reader, f"Unreachable Raw navigation: {source_path}"
 llms_full = (ROOT / "llms-full.txt").read_text(encoding="utf-8")
+# Guard against a false-green test: the Markdown href regex must actually
+# recognize an unresolved relative link, not just return an empty list.
+assert re.findall(r"\]\(([^)]+)\)", "[broken](docs/missing.md)") == ["docs/missing.md"], (
+    "Markdown link matcher must catch relative hrefs as well as full URLs"
+)
 relative_links = [
-    target for target in re.findall(r"\\]\\(([^)]+)\\)", llms_full)
+    target for target in re.findall(r"\]\(([^)]+)\)", llms_full)
     if not target.startswith(("http://", "https://", "#"))
 ]
 assert not relative_links, f"Standalone Raw LLM navigator has unresolved relative links: {relative_links}"
