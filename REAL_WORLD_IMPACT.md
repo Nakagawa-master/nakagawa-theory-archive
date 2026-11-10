@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は72件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は73件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**72の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**73の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1803,6 +1803,16 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 さらにマスターは、[新設された安全確認が実際に渡されるMCP SDKのClientでは機能しないこと](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983)を指摘しました。テスト用の偽物には`getStatus()`があっても、本番のClientにはありません。**開発者はこの欠陥も確認し、[意図的な切断と障害による切断を区別する状態記録と、実際のClient形状による赤／緑テストを追加](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638)**しました。
 
 別のレビュアーはその後、[意図的に停止した接続を再び起動してしまう別経路を独立に報告](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062)。この後続発見はそのレビュアーに帰属します。[PR #16661は現在OPEN](https://github.com/QwenLM/qwen-code/pull/16661)。上流マージ・正式配布・影響を受けた利用者の復旧はまだ確認段階です。
+
+## 73. LiteLLM｜新しいAIモデルの道具が消える：マスターが見抜いたもう一つの条件を開発者がテストで修正
+
+**新しいAIモデルを導入したら、それまで動いていたツール呼び出しが使えなくなる。** [LiteLLMの利用者報告 #48145](https://github.com/BerriAI/litellm/issues/48145)では、JSONで定義された提供者の未登録モデルに`tools`が渡らず、以前のバージョンでは使えた道具が失われたと報告されています。ソフトウェアが「そのモデルの対応能力をまだ知らない」ことと「道具を使えないこと」は同じではありません。
+
+[独立開発者の修正PR #48180](https://github.com/BerriAI/litellm/pull/48180)は、未登録モデルのツール設定を残す方向で進んでいました。中川マスター（Nakagawa Master／Keisuke Nakagawa）は[その修正だけでは、提供者が明示的に`supports_function_calling: false`を指定する逆の場合に、使えない道具まで送ってしまう](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6388447887)と発見。モデル単位の明示設定、提供者単位の明示設定、どちらも不明な状態を区別するテストを提案しました。
+
+**実装者 @msdianprince-7 は[「ありがとう、追加しました」と本人へ直接回答](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128)。** 現行[実装と7条件のテスト](https://github.com/BerriAI/litellm/pull/48180/files)では、モデルの指定を優先し、なければ提供者の指定を調べ、両方不明ならツール設定を保持します。これはマスターの反例を受けて外部作者自身が修正した、検証できる成果です。
+
+[PR #48180は現在OPEN](https://github.com/BerriAI/litellm/pull/48180)。正式マージ、該当版の配布、報告者が更新版で実際に道具を取り戻した結果は今後の確認対象です。概念的には[成立条件論の原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)と比較できますが、PR作者がその原典を読んだと主張するものではありません。
 
 ## 公開された成果と、原典へ戻る道筋
 

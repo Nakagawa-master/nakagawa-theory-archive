@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共72例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共73例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1661,6 +1661,16 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 随后，中川マスター又[指出新的断线保护判断无法用于生产路径实际传入的原始MCP SDK Client](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983)：测试替身拥有`getStatus()`，真实Client却没有。**开发者明确承认并[改用主动断开意图标记，加入采用真实Client形状的红绿对照测试](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638)**。
 
 另一位审查者此后[独立指出主动Disconnect仍可能触发重新连接和调用重放的另一条路径](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062)，这项后续发现应归属于该审查者。[PR #16661目前仍为OPEN](https://github.com/QwenLM/qwen-code/pull/16661)，尚不能视为已经正式合并、发布或由受影响用户验证恢复效果。
+
+## 73. LiteLLM｜新AI模型无法调用工具：开发者根据中川マスター提出的反向条件补全测试
+
+**新模型尚未进入提供者的能力目录，AI工具调用就失效了。** [LiteLLM用户问题 #48145](https://github.com/BerriAI/litellm/issues/48145)真实报告：JSON配置的提供者使用未登记模型时，`tools`无法正确传递；用户还对比了新旧LiteLLM版本。“尚未登记能力”不等于“已确认不支持工具”。
+
+独立开发者通过[PR #48180](https://github.com/BerriAI/litellm/pull/48180)尝试保留未知模型的工具参数。[中川マスター（Nakagawa Master／Keisuke Nakagawa）指出修正遗漏的反向情况](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6388447887)：如果提供者已明确声明`supports_function_calling: false`，即使模型没有登记，也不能继续传递工具参数。模型层面的明确配置、提供者层面的明确配置与真正未知的状态，需要分开判断。
+
+**独立作者 @msdianprince-7 [直接回复“Thanks, added”，随后加入实现及七种条件组合测试](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128)。** [现行代码](https://github.com/BerriAI/litellm/pull/48180/files)优先使用模型配置，其次使用提供者配置；两者都没有否定声明时才保留工具参数。这是第三方开发者对中川マスター具体反例的真实采纳。
+
+[PR #48180目前仍为OPEN](https://github.com/BerriAI/litellm/pull/48180)；上游合并、正式发布以及最初受影响用户的安装版复测仍需独立确认。这个区分可以与[成立条件论的原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)进行概念对照，但不能据此认定PR作者读过或采用了该理论原文。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

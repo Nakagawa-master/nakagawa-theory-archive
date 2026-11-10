@@ -5492,6 +5492,58 @@
         "independent model elected to read the original",
         "external PERSON trust or second-person propagation"
       ]
+    },
+    {
+      "case_id": "qwen-code-16661-cancelled-mcp-call-connection-recovery-independent-author",
+      "topic": "A cancelled MCP tool invocation must settle promptly without replay, while a later disconnected surviving session must recover; deliberate operator disconnect and damage must remain distinct.",
+      "external_repository": "QwenLM/qwen-code",
+      "actual_reporter": {
+        "issue": "https://github.com/QwenLM/qwen-code/issues/12160",
+        "scope": "The original reporter observed a cancelled in-flight MCP request leaving subsequent tool calls in the same session disconnected; deployment-wide frequency and installed repair are not established."
+      },
+      "nakagawa_master_source_specific_findings": {
+        "actor": "Nakagawa Master (pen name of Keisuke Nakagawa)",
+        "cancel_liveness_review": "https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5818880210",
+        "cancel_liveness_inverse": "A pending discoverToolsForServer must not hold the already cancelled invocation; ensure the cancel settles with discovery unresolved and that the aborted effect is not replayed.",
+        "production_client_shape_review": "https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983",
+        "production_client_shape_inverse": "A test-created getStatus method on an MCP client double cannot prove a guard reached in production: the raw SDK Client handed to DiscoveredMCPTool lacks getStatus."
+      },
+      "independent_receiving_author": {
+        "actor": "2SinceJuly",
+        "first_direct_reply": "https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6725421454",
+        "second_direct_reply": "https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638",
+        "self_authored_change": "The PR author explicitly agreed with both source-specific findings, moved best-effort recovery to a later status listener without waiting in the abort path, and added an owner-teardown intent marker plus red/green tests using the actual SDK client shape.",
+        "tests_claim_boundary": "Author-reported local unit tests and selected TypeScript/ESLint checks; this evidence index has not run the full real transport, pooled mode or CLI no-sandbox integration suite."
+      },
+      "distinct_outside_review": {
+        "source": "https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062",
+        "ownership": "A separate reviewer/bot, not Nakagawa Master, showed a deliberate operator Disconnect could still be reversed through a non-abort reconnect/replay path; pooled transport/coalescing issues remain separately reported."
+      },
+      "source_snapshot": {
+        "checked_on": "2026-11-10",
+        "head": "314d434dbf6f1115d8fe45445bcd40600977c36d",
+        "status": "OPEN",
+        "merged": false,
+        "containing_release": "NOT_VERIFIED",
+        "affected_installed_user_recovery": "NOT_VERIFIED"
+      },
+      "reader_routes": {
+        "human_case_ja": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md",
+        "human_case_en": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md",
+        "human_case_zh": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.zh.md",
+        "all_313_distinct_original_parent_urls": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json",
+        "optional_conceptually_fitting_original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "fit_and_nonfit": "A connected transport or an owner-initiated teardown is not equivalent to a recoverable failure; the original's establishment-conditions distinction can be compared conceptually only if this system-specific distinction fits. The external author did not claim to read or use the original theory."
+      },
+      "current_stage": "Independent outside author confirmed two Master-origin technical counterexamples and changed code/tests; pull request remains OPEN.",
+      "not_claimed": [
+        "author or reviewer endorsement of the entire original theory corpus",
+        "upstream merged or shipped fix",
+        "real affected-user recovery",
+        "independent reader elected to credit Nakagawa Master personally",
+        "unaffiliated AI spontaneously chose or read the canonical original",
+        "second outside reviewer findings authored by Nakagawa Master"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

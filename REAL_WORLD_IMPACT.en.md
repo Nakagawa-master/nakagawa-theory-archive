@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**72 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**73 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1654,6 +1654,16 @@ In [LlamaIndex PR #23460](https://github.com/run-llama/llama_index/pull/23460), 
 Nakagawa Master then [showed why the new disconnect guard could not work against the actual raw MCP SDK Client](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983): the test double had `getStatus()`, but the production client did not. **The author explicitly confirmed that mismatch and [replaced the guard with an intentional-teardown signal and a red/green test using the real client shape](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638)**.
 
 A different reviewer subsequently [identified a separate reconnect/replay path after an operator deliberately disconnects a server](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062). That later finding belongs to that reviewer. [PR #16661 remains open](https://github.com/QwenLM/qwen-code/pull/16661); upstream merge, a containing release and actual affected-user recovery have not yet been established.
+
+## 73. LiteLLM | A new AI model loses its tools: a developer adopted Nakagawa Master's missing negative condition
+
+**A new model appears in a provider before its capabilities enter the catalog, and tool calling breaks.** In a [real LiteLLM user report #48145](https://github.com/BerriAI/litellm/issues/48145), an uncatalogued model on a JSON-defined provider failed to receive the `tools` setting; the reporter contrasted newer and older LiteLLM versions. “Not yet listed” is not the same as “known not to support tools.”
+
+An independent developer proposed [PR #48180](https://github.com/BerriAI/litellm/pull/48180) to preserve tool parameters for unknown models. [Nakagawa Master (Keisuke Nakagawa) identified the opposite case the patch missed](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6388447887): when the model is uncatalogued but the provider explicitly declares `supports_function_calling: false`, forwarding tools is also incorrect. The model-level declaration, provider-level declaration and genuinely unknown state must be separate decisions.
+
+**Independent author @msdianprince-7 [replied directly, “Thanks, added,” and implemented the precedence and seven combinations of tests](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128).** The [current code](https://github.com/BerriAI/litellm/pull/48180/files) gives an explicit model entry priority, then checks the provider declaration, and preserves tools when neither makes a negative claim. This is an independently implemented source-specific response to Nakagawa Master's finding.
+
+[PR #48180 remains open](https://github.com/BerriAI/litellm/pull/48180); upstream merge, a containing release and the original user's successful installed-version retest are separate milestones. The boundary can be compared conceptually with the [original establishment-conditions theory](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/), without claiming that the developer read or adopted that original.
 
 ## What the public source record reveals
 
