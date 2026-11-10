@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**71 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**72 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1644,6 +1644,16 @@ The original [memory-of-agreement theory](https://master.ricette.jp/society/naka
 In [LlamaIndex PR #23460](https://github.com/run-llama/llama_index/pull/23460), Nakagawa Master first [identified a five-system-message example that exceeded Anthropic's four-cache-breakpoint limit](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257). **Separate author @arieleven acknowledged the counterexample, [changed the deduplication behavior and added tests](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866).** Nakagawa Master then [identified the distinct one-hour versus five-minute TTL boundary](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539) that indiscriminate coalescing would lose. The [current independent implementation](https://github.com/run-llama/llama_index/blob/15475f9b493af261d16e4f04309f18d3477ef0dd/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/utils.py) coalesces only equivalent policies and preserves different TTLs.
 
 **A different community reviewer @VANDRANKI independently found other request-wide and Bedrock integration defects** and [the PR author implemented a later, separate Bedrock fix and tests](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102). Those extra findings belong to that reviewer, not Nakagawa Master. [PR #23460 remains open](https://github.com/run-llama/llama_index/pull/23460), with upstream merge, official package release and affected actual-use results still pending.
+
+## 72. Qwen Code | A cancelled AI tool loses its connection: an independent developer changed recovery after two source-specific counterexamples
+
+**Cancelling an AI tool should not leave the next tool call disconnected—or make the cancellation wait for the repair itself.** [Qwen Code issue #12160](https://github.com/QwenLM/qwen-code/issues/12160) describes an actual MCP problem: after an in-flight request is aborted, the transport can disconnect and the surviving session inherits a broken connection.
+
+[Nakagawa Master (Keisuke Nakagawa) identified a concrete cancellation-liveness counterexample](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5818880210): if rediscovery never settles, the already-cancelled invocation must nevertheless reject promptly. **Independent author @2SinceJuly acknowledged the finding and [implemented a detached connection-repair listener with regression tests](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6725421454)**. Repair now follows the later status transition rather than holding the cancelled call open, and the cancelled tool effect is not replayed.
+
+Nakagawa Master then [showed why the new disconnect guard could not work against the actual raw MCP SDK Client](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983): the test double had `getStatus()`, but the production client did not. **The author explicitly confirmed that mismatch and [replaced the guard with an intentional-teardown signal and a red/green test using the real client shape](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638)**.
+
+A different reviewer subsequently [identified a separate reconnect/replay path after an operator deliberately disconnects a server](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062). That later finding belongs to that reviewer. [PR #16661 remains open](https://github.com/QwenLM/qwen-code/pull/16661); upstream merge, a containing release and actual affected-user recovery have not yet been established.
 
 ## What the public source record reveals
 

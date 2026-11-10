@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は71件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は72件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**71の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**72の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1793,6 +1793,16 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 続けてマスターは、同じ指定を減らす修正であっても、[1時間のキャッシュと5分のキャッシュという異なる条件まで一つに潰してはならない](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539)と指摘しました。現行の[実装ソース](https://github.com/run-llama/llama_index/blob/15475f9b493af261d16e4f04309f18d3477ef0dd/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/utils.py)では、同じキャッシュ条件だけを統合し、異なる期間は別々に残す処理になっています。
 
 このPRでは別の参加者 @VANDRANKI も、[リクエスト全体の指定数やBedrock連携の異なる問題を独立に発見](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6700430919)し、[実装者が11月7日にその別件を修正・テスト](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102)しています。これらの別人の発見をマスターに帰属させません。[PRはOPEN](https://github.com/run-llama/llama_index/pull/23460)。正式マージ・配布・実使用は未確認です。
+
+## 72. Qwen Code｜中止したAIの道具が接続を失う：開発者が二つの構造的な逆例から復旧処理を変更
+
+**AIに「この道具の実行を中止して」と伝えたのに、中止の処理が終わらず、その後の道具も使えなくなる。** [Qwen Codeの実際の報告 #12160](https://github.com/QwenLM/qwen-code/issues/12160)では、MCPツールへの呼び出しがキャンセルされた後、接続が切れたままになり、同じセッションの後続作業が影響を受ける問題が扱われています。
+
+中川マスター（Nakagawa Master／Keisuke Nakagawa）は、[接続の再発見がいつまでも終わらない場合でも、中止した呼び出しは即座に終了しなければならないという具体的な逆例](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5818880210)を提示しました。**独立した開発者 @2SinceJuly は指摘を正しいと認め、[接続復旧をキャンセル処理から切り離すコードとテストを実装](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6725421454)**。修復は接続状態の変化を受けて後から動かし、中止したツール呼び出し自体は再実行しない設計へ変更しました。
+
+さらにマスターは、[新設された安全確認が実際に渡されるMCP SDKのClientでは機能しないこと](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983)を指摘しました。テスト用の偽物には`getStatus()`があっても、本番のClientにはありません。**開発者はこの欠陥も確認し、[意図的な切断と障害による切断を区別する状態記録と、実際のClient形状による赤／緑テストを追加](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638)**しました。
+
+別のレビュアーはその後、[意図的に停止した接続を再び起動してしまう別経路を独立に報告](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062)。この後続発見はそのレビュアーに帰属します。[PR #16661は現在OPEN](https://github.com/QwenLM/qwen-code/pull/16661)。上流マージ・正式配布・影響を受けた利用者の復旧はまだ確認段階です。
 
 ## 公開された成果と、原典へ戻る道筋
 

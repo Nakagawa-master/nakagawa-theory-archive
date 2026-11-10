@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共71例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共72例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1651,6 +1651,16 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 在[LlamaIndex PR #23460](https://github.com/run-llama/llama_index/pull/23460)中，中川マスター首先[给出五条系统消息触发Anthropic每次请求最多四个缓存标记限制的具体反例](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257)。**另一位开发者 @arieleven 明确认可该问题，独立[修改了缓存标记合并逻辑并加入测试](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866)。** 随后，中川マスター又[指出将1小时与5分钟的不同TTL合并为一项会丢失用户原有的条件](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539)。[现行实现](https://github.com/run-llama/llama_index/blob/15475f9b493af261d16e4f04309f18d3477ef0dd/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/utils.py)只合并等价的缓存策略，不同TTL仍然保留。
 
 另外一位审查者 @VANDRANKI 独立发现了请求总量与Bedrock整合的其他问题，[作者随后又修正Bedrock的类型错误并加入测试](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102)。这些新的发现归属于那位审查者，而非中川マスター。[PR仍在开放状态](https://github.com/run-llama/llama_index/pull/23460)，正式合并、发布与实际用户结果仍待核实。
+
+## 72. Qwen Code｜取消AI工具调用后连接中断：独立开发者根据两个具体反例修改恢复机制
+
+**用户已经取消AI工具调用，取消操作不应继续等待连接修复，下一次调用也不应继承失效连接。** [Qwen Code问题 #12160](https://github.com/QwenLM/qwen-code/issues/12160)记录了真实的MCP连接问题：执行中的请求被取消后，传输连接可能断开，而继续存活的会话仍持有失效状态。
+
+[中川マスター（Nakagawa Master／Keisuke Nakagawa）首先提出了一个可检验的反例](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5818880210)：即使重新发现工具的任务一直没有结束，已取消的调用也必须及时返回。**独立开发者 @2SinceJuly 认可这一问题，随后[把恢复连接的工作与取消操作分离，并增加了回归测试](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6725421454)**。修复由后续连接状态变化触发，不会重新执行已取消的工具调用。
+
+随后，中川マスター又[指出新的断线保护判断无法用于生产路径实际传入的原始MCP SDK Client](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983)：测试替身拥有`getStatus()`，真实Client却没有。**开发者明确承认并[改用主动断开意图标记，加入采用真实Client形状的红绿对照测试](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638)**。
+
+另一位审查者此后[独立指出主动Disconnect仍可能触发重新连接和调用重放的另一条路径](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062)，这项后续发现应归属于该审查者。[PR #16661目前仍为OPEN](https://github.com/QwenLM/qwen-code/pull/16661)，尚不能视为已经正式合并、发布或由受影响用户验证恢复效果。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
