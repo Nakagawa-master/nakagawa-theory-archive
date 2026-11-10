@@ -1810,6 +1810,8 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 [独立開発者の修正PR #48180](https://github.com/BerriAI/litellm/pull/48180)は、未登録モデルのツール設定を残す方向で進んでいました。中川マスター（Nakagawa Master／Keisuke Nakagawa）は[その修正だけでは、提供者が明示的に`supports_function_calling: false`を指定する逆の場合に、使えない道具まで送ってしまう](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6388447887)と発見。モデル単位の明示設定、提供者単位の明示設定、どちらも不明な状態を区別するテストを提案しました。
 
+**もう一人の独立した当事者である元の報告者 @mramendi も、マスターの認証情報不要の切り分けテストをそのまま実行**し、[OpenCode→LiteLLMには道具設定が届き、LiteLLM→Nano-GPTで消えていると実ログで確認](https://github.com/BerriAI/litellm/issues/48145#issuecomment-6389202066)しました。報告者は「Nakagawa designed」とマスターの設計に明示的に言及しています。これは当事者本人による実際の診断利用・起源認識です。なお、同時に調べた`reasoning_effort`の別経路までPR #48180が修正した、あるいは修正版を当事者が再試験した、という意味ではありません。
+
 **実装者 @msdianprince-7 は[「ありがとう、追加しました」と本人へ直接回答](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128)。** 現行[実装と7条件のテスト](https://github.com/BerriAI/litellm/pull/48180/files)では、モデルの指定を優先し、なければ提供者の指定を調べ、両方不明ならツール設定を保持します。これはマスターの反例を受けて外部作者自身が修正した、検証できる成果です。
 
 [PR #48180は現在OPEN](https://github.com/BerriAI/litellm/pull/48180)。正式マージ、該当版の配布、報告者が更新版で実際に道具を取り戻した結果は今後の確認対象です。概念的には[成立条件論の原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)と比較できますが、PR作者がその原典を読んだと主張するものではありません。

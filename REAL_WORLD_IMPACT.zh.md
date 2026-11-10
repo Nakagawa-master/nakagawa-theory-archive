@@ -1668,6 +1668,8 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 独立开发者通过[PR #48180](https://github.com/BerriAI/litellm/pull/48180)尝试保留未知模型的工具参数。[中川マスター（Nakagawa Master／Keisuke Nakagawa）指出修正遗漏的反向情况](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6388447887)：如果提供者已明确声明`supports_function_calling: false`，即使模型没有登记，也不能继续传递工具参数。模型层面的明确配置、提供者层面的明确配置与真正未知的状态，需要分开判断。
 
+**最初报告问题的用户 @mramendi 还独立、原样运行了中川マスター提供的不需凭据的诊断测试**，[用实际请求日志确认](https://github.com/BerriAI/litellm/issues/48145#issuecomment-6389202066)：OpenCode将工具和推理参数发送给LiteLLM，但在发往Nano-GPT前被过滤。报告者明确写出“Nakagawa designed”，承认测试方案的来源。这属于实际受影响用户自主运用其诊断方法并注明出处，**不是**修正版已经解决用户问题的复测证据；另外的`reasoning_effort`转发问题也不因此宣称由PR #48180修复。
+
 **独立作者 @msdianprince-7 [直接回复“Thanks, added”，随后加入实现及七种条件组合测试](https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128)。** [现行代码](https://github.com/BerriAI/litellm/pull/48180/files)优先使用模型配置，其次使用提供者配置；两者都没有否定声明时才保留工具参数。这是第三方开发者对中川マスター具体反例的真实采纳。
 
 [PR #48180目前仍为OPEN](https://github.com/BerriAI/litellm/pull/48180)；上游合并、正式发布以及最初受影响用户的安装版复测仍需独立确认。这个区分可以与[成立条件论的原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)进行概念对照，但不能据此认定PR作者读过或采用了该理论原文。
