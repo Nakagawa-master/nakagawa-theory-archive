@@ -114,6 +114,10 @@ def verify() -> tuple[int, int, int]:
             "Question explorer must display current problem-route count dynamically")
     require(not re.search(r"files\[3\]\.routes\.length\s*(?:!={1,2}|={2,3})\s*(?!0\b)\d+", explorer),
             "Question explorer must not reject a changing fixed short-route count")
+    require("files[1].entries.length<313" in explorer,
+            "Question explorer must accept future original Parents without permitting loss of the present 313")
+    require(not re.search(r"files\[1\]\.entries\.length\s*(?:!={1,2}|={2,3})\s*313\b", explorer),
+            "Question explorer must not hard-freeze the count at 313 as new Parents are published")
     require("files[3].routes.length===0" in explorer,
             "Question explorer must reject empty/invalid problem-route catalogues, not count growth")
     require("24の実問題" not in explorer and "24-problem" not in explorer,
