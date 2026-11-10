@@ -5052,6 +5052,28 @@
       },
       "current_stage": "third_party_code_and_tests_open_unmerged",
       "human_case": "REAL_WORLD_IMPACT.md#63-litellm未登録モデルだからaiの道具を消してしまう利用者の実機検証と開発者の4状態修正",
+      "second_distinct_author_and_master_counterexample": {
+        "pull_request": "https://github.com/BerriAI/litellm/pull/48180",
+        "master_precise_source_review": "https://github.com/BerriAI/litellm/pull/48180#issuecomment-6388447887",
+        "unhandled_negative_control": "When the model is unmapped but provider_info explicitly says supports_function_calling:false, preserving tools would violate the provider's explicit unsupported status. Explicit model-level support takes precedence over provider-level; if neither makes a negative determination, preserve tools.",
+        "outside_implementer": "msdianprince-7",
+        "direct_author_acceptance": "https://github.com/BerriAI/litellm/pull/48180#issuecomment-6458741128",
+        "author_owned_implementation": "e367ae5ed3 introduced model-map then provider-level then unknown fallback capability precedence, with seven distinct positive/negative parameterized test combinations. Current PR changed files independently inspected.",
+        "latest_inspected_head": "67644f6d536d97955484636b66fa2c2c6a8e391a",
+        "status_on_2026_11_10": "OPEN_NOT_MERGED",
+        "distinctness": "This is a different implementer and a different source-specific negative condition from PR #48191, but the same affected user issue #48145. Do not count a second original affected user or merged fix."
+      },
+      "affected_user_independently_used_master_diagnostic": {
+        "actor": "mramendi",
+        "native_report": "https://github.com/BerriAI/litellm/issues/48145#issuecomment-6389202066",
+        "external_action": "Original reporter independently ran the credential-free test verbatim, measured OpenCode-to-LiteLLM ingress and LiteLLM-to-Nano-GPT egress, and described the design as Nakagawa designed.",
+        "limit": "Actual source-specific diagnostic use and named origin reception, NOT post-fix version/recovery, independent endorsement of the Master's person, onward relay, or original theory reading."
+      },
+      "second_human_case": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md#73-litellm新しいaiモデルの道具が消えるマスターが見抜いたもう一つの条件を開発者がテストで修正",
+      "optional_original_parent": {
+        "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+        "fit_nonfit": "Optional conceptual comparison between unknown capability and evidence of explicit impossibility; the implementation author and reporter have not established reading this original. Other of the 313 distinct Parents may fit or not fit on separately assessed conditions."
+      },
       "separate_open_question": "reasoning_effort forwarding was shown missing in the affected user's live trace; the tool-focused PR does not repair that separate parameter path.",
       "independent_maintainer_engagement": {
         "maintainer": "mateo-berri",
