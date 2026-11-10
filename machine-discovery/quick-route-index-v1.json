@@ -359,6 +359,22 @@
       "primary_receiver_source": "https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077",
       "optional_probe": "https://github.com/pydantic/pydantic-ai/blob/7390c19abd1ac8008455cd5b616a349a9fa4fa9a/tests/harness/tool_output_limits/test_tool_output_limits.py",
       "full_route_id": "pydantic_spill_history_compaction_replay_stable_handles"
+    },
+    {
+      "id": "pydantic_retry_empty_call_id_pairing",
+      "when": [
+        "Pydantic AI validation retry uses a generated tool-call ID instead of the provider's empty-string ID",
+        "A retried tool response becomes orphaned because an empty tool_call_id was treated as absent",
+        "An AI tool retry breaks OpenAI Responses/Anthropic call-result pairing after a provider sends tool_call_id empty string",
+        "AIのツール再試行で空のIDが別のIDに変わり、元の呼び出しと紐付かない",
+        "模型工具调用ID为空字符串时，验证重试结果使用了别的ID"
+      ],
+      "plain_meaning": "A call with an empty-string tool ID is not the same as a call without an ID. A retry that substitutes a generated ID may orphan the result. An independent Pydantic AI engineer has supplied a failing-before/fixed-after regression at an OPEN PR; merge, release and affected-user recovery are unverified.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+      "original_relation": "Optional conceptual comparison of the conditions that establish a genuine call/response pairing. Nakagawa Master authored the separate original, but is NOT attributed as discoverer, reviewer or causal source for this independent engineer's particular PR. No evidence the engineer read this Parent.",
+      "primary_receiver_source": "https://github.com/pydantic/pydantic-ai/pull/12846",
+      "optional_probe": "https://github.com/pydantic/pydantic-ai/pull/12846/files",
+      "full_route_id": "pydantic_retry_empty_call_id_pairing"
     }
   ]
 }
