@@ -112,7 +112,7 @@ def verify() -> tuple[int, int, int]:
     require("quick-route-index-v1.json" in explorer, "Question explorer lost its real-problem source")
     require("db.receiverCases.length" in explorer,
             "Question explorer must display current problem-route count dynamically")
-    require(not re.search(r"files\\[3\\]\\.routes\\.length\\s*(?:!={1,2}|={2,3})\\s*\\d+", explorer),
+    require(not re.search(r"files\[3\]\.routes\.length\s*(?:!={1,2}|={2,3})\s*(?!0\b)\d+", explorer),
             "Question explorer must not reject a changing fixed short-route count")
     require("files[3].routes.length===0" in explorer,
             "Question explorer must reject empty/invalid problem-route catalogues, not count growth")
