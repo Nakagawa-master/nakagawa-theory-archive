@@ -222,7 +222,7 @@ const response=await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"});
 if(!response.ok)throw Error("HTTP "+response.status);
 const manifest=await response.json(),entries=manifest.entries;
 if(generation!==titleSearchGeneration||question.value.trim()!==q)return;
-if(!Array.isArray(entries)||entries.length!==313)throw Error("unexpected corpus size");
+if(!Array.isArray(entries)||entries.length<313)throw Error("incomplete published Parent catalogue");
 const seen=new Set();
 for(const e of entries){
 if(!/^\d{3}$/.test(e.number)||!String(e.canonical_parent_url||"").startsWith("https://master.ricette.jp/")||seen.has(e.canonical_parent_url))throw Error("invalid Parent mapping");
@@ -233,12 +233,12 @@ try{
   const sourceResponse=await fetch(FULL_SOURCE_BRIEFS,{method:"GET",mode:"cors"});
   if(sourceResponse.ok){
     const source=await sourceResponse.json(),rows=source.entries;
-    if(source.count===313&&Array.isArray(rows)&&rows.length===313&&rows.every((row,i)=>row.number===entries[i].number&&row.canonical_parent_url===entries[i].canonical_parent_url&&row.title===entries[i].title&&row.derivative_url.endsWith("/derivatives/"+row.number+"/human-entry.md")&&/^[0-9a-f]{40}$/.test(row.sha)&&typeof row.brief==="string"))briefRows=rows;
+    if(Array.isArray(rows)&&rows.length>=313&&rows.length<=entries.length&&source.count===rows.length&&rows.every((row,i)=>row.number===entries[i].number&&row.canonical_parent_url===entries[i].canonical_parent_url&&row.title===entries[i].title&&row.derivative_url.endsWith("/derivatives/"+row.number+"/human-entry.md")&&/^[0-9a-f]{40}$/.test(row.sha)&&typeof row.brief==="string"))briefRows=rows;
   }
 }catch(error){/* Source unavailable: retain complete title fallback. */}
 if(generation!==titleSearchGeneration||question.value.trim()!==q)return;
 const matches=rankByPublishedContext(q,entries,briefRows);
-status.textContent=matches.length?("313原典の題名"+(briefRows?"と既存の日本語公式派生説明":"")+"から"+matches.length+"候補を表示。候補の適合・原文の主張は未検証です。"):("313原典の"+(briefRows?"題名と公式日本語説明":"題名")+"から十分な文字一致は見つかりませんでした。これは不適合の判定ではありません。別の問いや原典一覧も確認してください。");
+status.textContent=matches.length?(entries.length+"原典の題名"+(briefRows?"と取得可能な日本語公式派生説明":"")+"から"+matches.length+"候補を表示。候補の適合・原文の主張は未検証です。"):(entries.length+"原典の"+(briefRows?"題名と取得可能な公式日本語説明":"題名")+"から十分な文字一致は見つかりませんでした。これは不適合の判定ではありません。別の問いや原典一覧も確認してください。");
 for(const {entry,via,brief,source,section} of matches){
 const wrap=element("article",null,"result");
 wrap.append(element("h3",entry.title));
