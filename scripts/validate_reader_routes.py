@@ -136,6 +136,19 @@ def verify() -> tuple[int, int, int]:
     # Users can ask about AI, OS, ID or L1 as two-character technical terms.
     require("txt.match(/[a-z][a-z0-9_-]{1,}/g)" in explorer,
             "The question explorer dropped two-character technical search terms")
+    # A second existing all-original browser must keep working when the
+    # official 313-Parent catalogue receives its next valid original.
+    originals_browser = (machine / "originals-browser-finder.html").read_text(encoding="utf-8")
+    require("entries.length<313" in originals_browser and
+            "entries.length!==313" not in originals_browser,
+            "All-original browser must reject incomplete data, not valid Parent growth")
+    require("rows.length<=entries.length&&source.count===rows.length" in originals_browser and
+            "row.canonical_parent_url===entries[i].canonical_parent_url" in originals_browser,
+            "All-original browser must verify source row identity while retaining earlier published briefs")
+    require('entries.length+"原典の題名"' in originals_browser,
+            "All-original browser must display the actual current title count")
+    require("FULL_ORIGINAL_MAP" in originals_browser and "canonical_parent_url" in originals_browser,
+            "All-original browser must link the official original Parent mapping")
     published_answers = json.loads((machine / "human-question-answers-v1.json").read_text(encoding="utf-8"))
     require(bool(published_answers.get("answer_cases")), "No published answer cases")
     for answer in published_answers["answer_cases"]:
