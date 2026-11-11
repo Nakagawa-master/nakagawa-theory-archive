@@ -57,11 +57,11 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 (function(){
 const ROOT="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/";
 const $=id=>document.getElementById(id);
-const stops=new Set(["the","and","that","this","with","from","have","what","when","which","would","could","should","there","your","into","where","for","why","how","who","does","did","was","were","are","can","may","might","they","their","about","after","before","happen","happens","happened","all","any","some","もの","こと","する","して","した","ない","いる","ある","から","ので","ため","この","その","です","ます"]);
+const stops=new Set(["am","an","as","at","be","by","do","he","if","in","is","it","me","my","no","of","on","or","so","to","up","us","we","the","and","that","this","with","from","have","what","when","which","would","could","should","there","your","into","where","for","why","how","who","does","did","was","were","are","can","may","might","they","their","about","after","before","happen","happens","happened","all","any","some","もの","こと","する","して","した","ない","いる","ある","から","ので","ため","この","その","です","ます"]);
 let db=null,listed=[],cursor=0,topAnswer=null,routeHits=[],receiverHits=[];
 function terms(input){
 const txt=String(input||"").normalize("NFKC").toLowerCase().replace(/([a-z0-9])[-_]+(?=[a-z0-9])/g,"$1 "),all=new Set();
-for(const w of txt.match(/[a-z][a-z0-9_-]{2,}/g)||[]){if(stops.has(w))continue;all.add(w);if(w.length>4&&w.endsWith("ies"))all.add(w.slice(0,-3)+"y");else if(w.length>4&&w.endsWith("s")&&!w.endsWith("ss"))all.add(w.slice(0,-1));}
+for(const w of txt.match(/[a-z][a-z0-9_-]{1,}/g)||[]){if(stops.has(w))continue;all.add(w);if(w.length>4&&w.endsWith("ies"))all.add(w.slice(0,-3)+"y");else if(w.length>4&&w.endsWith("s")&&!w.endsWith("ss"))all.add(w.slice(0,-1));}
 for(const block of txt.match(/[\u3040-\u30ff\u3400-\u9fff]{2,}/g)||[])for(const n of [2,3])for(let i=0;i+n<=block.length;i++){const w=block.slice(i,i+n);if(!stops.has(w))all.add(w);}
 return all;
 }
@@ -137,7 +137,10 @@ for(const {a} of rows.slice(0,4)){const v=card(a.problem_cluster);line(v,"",a.re
 }
 $("copyAI").addEventListener("click",async()=>{
 const question=$("query").value.trim();if(!question||$("results").hidden)return;
-const sources=[...new Set([...listed.slice(0,5).map(v=>v.a.canonical_parent_url),...routeHits.slice(0,4).map(v=>v.canonical_url),...receiverHits.slice(0,3).map(v=>v.canonical_original)])].filter(Boolean);
+// Keep each published answer\u2019s original Parent(s) when a reader hands the answer to a separate AI.
+// Lexical discovery candidates alone can omit the very source supporting the visible answer.
+const answerParents=topAnswer?[topAnswer.canonical_parent,...(Array.isArray(topAnswer.original_sources)?topAnswer.original_sources.map(p=>p.canonical_parent):[])]:[];
+const sources=[...new Set([...answerParents,...listed.slice(0,5).map(v=>v.a.canonical_parent_url),...routeHits.slice(0,4).map(v=>v.canonical_url),...receiverHits.slice(0,3).map(v=>v.canonical_original)])].filter(Boolean);
 const realCases=[...new Set(receiverHits.slice(0,3).map(v=>v.primary_receiver_source))].filter(Boolean);
 const optionalChecks=[...new Set(receiverHits.slice(0,3).map(v=>v.optional_probe))].filter(Boolean);
 const preferredAnswer=$("lang").value==="en"?"practical_answer_en":"practical_answer_ja";
