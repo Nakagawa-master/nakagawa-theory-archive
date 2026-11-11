@@ -1608,7 +1608,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **作者 @DewellNaa 明确认可该审查，并[在8e90be9中加入 `is_scoped_endpoint` 判断与聚合入口的逆条件测试](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254)。** [PR尚未合并](https://github.com/BerriAI/litellm/pull/49261)；上游认证挑战能否安全转交客户端是另一项仍待审查的问题。
 
-**同一边界后来也出现在另一位独立开发者的实现中。** @shrey-berri 在[新PR #50389](https://github.com/BerriAI/litellm/pull/50389)自行设计网关发出的再认证挑战。[中川マスター在11月6日再次要求以真实URL区分聚合／专属入口](https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903)之后，作者当前`dc8cb5c`源码与ASGI测试明确区分 `/mcp`（不能按专属入口发401）和 `/mcp/docs`（符合条件时可发401）。作者[回复另一个Bot时明确拒绝把聚合入口也改为401](https://github.com/BerriAI/litellm/pull/50389#discussion_r4499640983)。**该回复并非直接答复中川マスター，因此不能断言作者的修改仅由其审查引起。** 新PR仍处于DRAFT、未合并；正式发行及原用户恢复尚未核实。
+**同一边界后来也出现在另一位独立开发者的实现中。** @shrey-berri 在[新PR #50389](https://github.com/BerriAI/litellm/pull/50389)自行设计网关发出的再认证挑战。[中川マスター在11月6日再次要求以真实URL区分聚合／专属入口](https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903)之后，作者[最终实现HEAD `ee65dfd`](https://github.com/BerriAI/litellm/commit/ee65dfd7146799cf82ad629bc8dad2c6741ebc3f)源码与ASGI测试明确区分 `/mcp`（不能按专属入口发401）和 `/mcp/docs`（符合条件时可发401）。作者[回复另一个Bot时明确拒绝把聚合入口也改为401](https://github.com/BerriAI/litellm/pull/50389#discussion_r4499640983)。**该回复并非直接答复中川マスター，因此不能断言作者的修改仅由其审查引起。** **独立开发者的[新PR #50389已于2026年11月10日23:41 UTC合并到上游](https://github.com/BerriAI/litellm/pull/50389)**，而最初的PR #49261仍为OPEN。[原始受影响用户报告的是LiteLLM v1.105.1、Kiro CLI与Datadog MCP的过期令牌导致工具列表为空](https://github.com/BerriAI/litellm/issues/49223)。尚未核实包含该合并修复的正式发行版本，也尚无该用户安装新版后恢复正常的实测记录。
 
 ## 67. LiteLLM｜重试等待用完用户的时间上限后，系统仍可能继续调用AI
 
