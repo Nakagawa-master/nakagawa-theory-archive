@@ -122,11 +122,17 @@ def verify() -> tuple[int, int, int]:
             "Question explorer must reject empty/invalid problem-route catalogues, not count growth")
     require("24の実問題" not in explorer and "24-problem" not in explorer,
             "Question explorer has stale 24-item user/AI-facing problem counts")
-    # Keep visible published answer Parent(s) in the optional AI handoff.
-    require("const answerParents=topAnswer?" in explorer and
-            "topAnswer.original_sources.map(p=>p.canonical_parent)" in explorer and
+    # Preserve every displayed answer's canonical Parent(s) in optional AI copy.
+    require("shownAnswers=rows.slice(0,7).map(x=>x.a)" in explorer and
+            "for(const a of shownAnswers)" in explorer and
+            "const answerParents=shownAnswers.flatMap(a=>" in explorer and
+            "a.original_sources.map(p=>p.canonical_parent)" in explorer and
             "const sources=[...new Set([...answerParents," in explorer,
-            "AI copy must retain the published answer's original Parent(s)")
+            "AI copy must retain all displayed answers' original Parent(s)")
+    require("question!==lastSearchedQuery" in explorer and
+            "lastSearchedLang" in explorer and
+            "lastSearchedQuery=searchQuery" in explorer,
+            "AI copy must reject stale questions or language with old sources")
     # Users can ask about AI, OS, ID or L1 as two-character technical terms.
     require("txt.match(/[a-z][a-z0-9_-]{1,}/g)" in explorer,
             "The question explorer dropped two-character technical search terms")
