@@ -4945,7 +4945,7 @@
         "regression_test": "test_get_filtered_server_tools_does_not_deny_scope_response_on_aggregate_with_single_server_401",
         "author_test_report": "The PR description reports 111 locally passing tests; no independent test execution by this index author."
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "current_stage": "merge_or_integration",
       "status_as_checked": "OPEN_UNMERGED_AT_8e90be96_on_2026_11_05",
       "separate_review_risk": {
         "by": "veria-ai[bot]",
@@ -4953,7 +4953,7 @@
         "scope": "Different reviewer warned that OAuth challenges from upstreams whose credential is gateway-owned might be forwarded to MCP clients. This is not a finding credited to Nakagawa Master and was unresolved at this check."
       },
       "not_claimed": [
-        "merged or released LiteLLM fix",
+        "original PR #49261 merged; a tagged official distribution proved to contain separately merged PR #50389",
         "independently verified deployed MCP client token refresh",
         "production incident caused by the missing route guard",
         "PERSON-name recognition beyond the explicit public @Nakagawa-master author acknowledgment",
@@ -4972,9 +4972,31 @@
         "review_author": "Nakagawa Master",
         "review_scope": "Exact-current-HEAD source prediction: new server.py single_server_listing checks len(mcp_servers)==1, and new ASGI test uses path /mcp with one selected server while expecting 401 reauth, potentially reintroducing the aggregate-vs-scoped route confusion explicitly found and fixed in prior PR #49261. The proposed paired test varies the request path /mcp (aggregate negative) versus /mcp/docs (scoped positive).",
         "independent_reception_at_read": "The second author explicitly defended keeping aggregate /mcp out of this repair in a reply to a DIFFERENT review bot; there is NO direct reply to @Nakagawa-master and no independently established sole cause of the author's subsequent patch.",
-        "native_followup_2026_11_08": {"current_head": "dc8cb5cbd71524fe556e07857b1169a008d263cc", "independent_author": "shrey-berri", "implementation": "server.py _server_to_reauthorize now requires actual scoped_server_endpoint plus one path-selected reauthorizable server; ASGI tests distinguish /mcp aggregate negative from /mcp/docs scoped positive, and the separate author defends that boundary in the thread.", "separate_author_comment": "https://github.com/BerriAI/litellm/pull/50389#discussion_r4499640983", "author_comment_recipient": "devin-ai-integration review thread, NOT Nakagawa Master", "source_specific_master_review_preceded": "https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903", "inference_limit": "Temporal order and same correction are confirmed, but the specific causal role of that review in the second author's change is not independently established; no original Parent adoption, user resolution or second person-centered recognition is proven."},
-        "state_at_native_read": "OPEN_DRAFT_UNMERGED_CURRENT_HEAD_dc8cb5c_on_2026_11_08",
-        "unverified_next": "formal maintainer merge/required checks, released package, affected operator retest and independent later PERSON/source carrier; separate author replied to bot and fixed the source route boundary without direct response to Master"
+        "native_followup_2026_11_08": {
+          "current_head": "dc8cb5cbd71524fe556e07857b1169a008d263cc",
+          "independent_author": "shrey-berri",
+          "implementation": "server.py _server_to_reauthorize now requires actual scoped_server_endpoint plus one path-selected reauthorizable server; ASGI tests distinguish /mcp aggregate negative from /mcp/docs scoped positive, and the separate author defends that boundary in the thread.",
+          "separate_author_comment": "https://github.com/BerriAI/litellm/pull/50389#discussion_r4499640983",
+          "author_comment_recipient": "devin-ai-integration review thread, NOT Nakagawa Master",
+          "source_specific_master_review_preceded": "https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903",
+          "inference_limit": "Temporal order and same correction are confirmed, but the specific causal role of that review in the second author's change is not independently established; no original Parent adoption, user resolution or second person-centered recognition is proven."
+        },
+        "state_at_native_read": "UPSTREAM_MERGED_2026_11_10T23:41:05Z_HEAD_ee65dfd",
+        "unverified_next": "A tagged release actually containing the merged #50389 code, original Kiro/Datadog reporter's installed recovery, and a different person's freely chosen PERSON/original-source assessment. Separate first PR #49261 stays OPEN; the second author never directly credited the Master's newer review.",
+        "native_followup_2026_11_11": {
+          "source_verified_upstream_pr": "https://github.com/BerriAI/litellm/pull/50389",
+          "independent_implementer": "shrey-berri",
+          "merged_at_utc": "2026-11-10T23:41:05Z",
+          "merge_commit": "37144b5e27ca2acbe41b3b99118ca8c36a5f1b66",
+          "source_head": "ee65dfd7146799cf82ad629bc8dad2c6741ebc3f",
+          "current_source_behavior": "server.py _server_to_reauthorize requires scoped_server_endpoint and exactly one path-selected, reauthorizable server; author-added ASGI regression expects POST /mcp with selected docs to retain aggregate behavior (no 401 reauth), and POST /mcp/docs to emit scoped reauth metadata.",
+          "review_before_change": "https://github.com/BerriAI/litellm/pull/50389#pullrequestreview-5799449903",
+          "attribution_scope": "The earlier author DewellNaa separately and explicitly credited Master on #49261; the different merged-PR implementer shrey-berri did not directly credit Master on #50389. Source and time support exact finding-to-diff match without exclusive causation.",
+          "actual_affected_operator": "https://github.com/BerriAI/litellm/issues/49223",
+          "reported_environment": "Kiro CLI with Datadog MCP, LiteLLM v1.105.1; 1-hour expired bearer produces HTTP 200 and zero tools instead of a reauth challenge. Cursor is only another PR-description example, not reporter's verified environment.",
+          "release_check": "The merge SHA was NOT an ancestor of latest checked tags v1.106.8, v1.110.0-rc.1, v1.109.0, v1.108.5 (latest three published after merge and all compare as diverged); no containing official release established.",
+          "still_unverified": "Original affected reporter's deployed version or restored authorization, independent other-person assessment of Master and his original source, and any unconnected AI choosing original works."
+        }
       }
     },
     {
