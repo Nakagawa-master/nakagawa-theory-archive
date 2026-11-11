@@ -122,6 +122,21 @@ def verify() -> tuple[int, int, int]:
             "Question explorer must reject empty/invalid problem-route catalogues, not count growth")
     require("24の実問題" not in explorer and "24-problem" not in explorer,
             "Question explorer has stale 24-item user/AI-facing problem counts")
+    # Keep visible published answer Parent(s) in the optional AI handoff.
+    require("const answerParents=topAnswer?" in explorer and
+            "topAnswer.original_sources.map(p=>p.canonical_parent)" in explorer and
+            "const sources=[...new Set([...answerParents," in explorer,
+            "AI copy must retain the published answer's original Parent(s)")
+    # Users can ask about AI, OS, ID or L1 as two-character technical terms.
+    require("txt.match(/[a-z][a-z0-9_-]{1,}/g)" in explorer,
+            "The question explorer dropped two-character technical search terms")
+    published_answers = json.loads((machine / "human-question-answers-v1.json").read_text(encoding="utf-8"))
+    require(bool(published_answers.get("answer_cases")), "No published answer cases")
+    for answer in published_answers["answer_cases"]:
+        answer_parents = [answer.get("canonical_parent")]
+        answer_parents.extend(x.get("canonical_parent") for x in answer.get("original_sources", []))
+        require(all(parent in originals for parent in answer_parents),
+                f"Published answer has a broken canonical Parent route: {answer.get('id')}")
     # A valid link is not evidence that an independent reader or model used it.
     aki_row = next(x for x in rows if x.startswith("- **OD313**"))
     require("AKI-005" in aki_row, "OD313 must retain source theory name")
