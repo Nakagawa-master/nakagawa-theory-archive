@@ -7,7 +7,7 @@ body:
       value: |
         Use this form for genuine independent verification, actual use, counterexamples and non-fit; it is not an endorsement request. Do not submit confidential, personal, customer, credential, security-sensitive, medical, legal, or employment information.
 
-        Start with your actual result, original public source and verifiable evidence. Extra relationship/chronology/impact detail is welcome but optional, and an omitted detail proves nothing. The [Independent Verification & Reuse Protocol](../../INDEPENDENT_VERIFICATION_REUSE.md) explains the evidence boundaries. For a brief question without a completed test, use [the one-line public thread](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416) instead.
+        Start with what you actually observed and a public evidence link. If you know the exact original article, include it; if only the official website was mentioned, report that precisely rather than guessing which original was read. Extra relationship/chronology/impact detail is welcome but optional, and an omitted detail proves nothing. The [Independent Verification & Reuse Protocol](../../INDEPENDENT_VERIFICATION_REUSE.md) explains the evidence boundaries. For a brief question without a completed test, use [the one-line public thread](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416) instead.
 
   - type: dropdown
     id: evidence_type
@@ -38,10 +38,11 @@ body:
   - type: input
     id: source_url
     attributes:
-      label: Exact public source URL
-      placeholder: https://github.com/Nakagawa-master/nakagawa-theory-archive/...
+      label: Original public article URL (if known)
+      description: If a public AI answer or another article mentions only https://master.ricette.jp/ without identifying the individual original, leave this blank. Link the actual public answer or article under Public evidence links; do not guess a source or author.
+      placeholder: https://master.ricette.jp/theory/... (optional)
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: distinction
