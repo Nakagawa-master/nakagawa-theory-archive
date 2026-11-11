@@ -5649,6 +5649,42 @@
         "optional_parent_relation": "Original theory addresses reconstruction and source/trace distinction conceptually. The independent LangGraph engineer did not say they read or adopted this original; technical fix comes from their own source investigation plus the acknowledged two-contract review."
       },
       "current_stage": "Independent outside coder explicitly named Master's two different acceptance contracts and wrote alternative code/tests; original issue open, associated PR auto-closed unmerged; later fork code authored outside upstream. Human/AI third-party new reception of this public record not observed."
+    },
+    {
+      "case_id": "pydantic-ui-conversation-store-adapter-save-receipt-run-overlap-doc-contract-merged",
+      "external_repository": "pydantic/pydantic-ai",
+      "topic": "Server-side stored chat may lose its saved-entry client receipt when two runs reuse one adapter; maintainer documented one request/one run per adapter after a source-specific Nakagawa Master review.",
+      "master_source": "https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6635965070",
+      "independent_response": "https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6640343084",
+      "third_party_change": "Maintainer accepted it as a fair catch and documented a single-running adapter instance per request. No concurrency-safe code change was claimed.",
+      "upstream_merge": "https://github.com/pydantic/pydantic-ai/pull/12326",
+      "merged_at": "2026-11-10T23:20:57Z",
+      "independent_different_reporter": "https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6799529134",
+      "reporter_scope": "rscholz98 independently validated 3675 production chats for a different history-resave bug; this is not Master's code fix.",
+      "containing_release": "NOT_VERIFIED",
+      "installed_user_result": "NOT_VERIFIED",
+      "human_person_relay": "NOT_VERIFIED",
+      "autonomous_external_ai_original_corpus_choice": "NOT_VERIFIED",
+      "person_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/who-is-nakagawa-master.md",
+      "canonical_original_archive": "https://master.ricette.jp/"
+    },
+    {
+      "case_id": "memberjunction-6319-6544-escaped-identifier-sql-rls-binder-merged",
+      "external_repository": "MemberJunction/MJ",
+      "topic": "An escaped SQL closing bracket/quote within a row-level-security identifier must not cause the binder to treat identifier text as a parameter.",
+      "master_source": "https://github.com/MemberJunction/MJ/pull/6319#issuecomment-6630489113",
+      "independent_fix": "https://github.com/MemberJunction/MJ/commit/ad0f7654b6b665099b18aa1b31ce80fe2389af13",
+      "independent_implementer": "Code and regression authored independently; direct author statement crediting Master NOT_VERIFIED.",
+      "upstream_pr": "https://github.com/MemberJunction/MJ/pull/6544",
+      "merged_at": "2026-11-11T19:12:35Z",
+      "merged_main_code_blob_sha": "e6d800284a299b971abb0982e2155e2b877d70ad",
+      "merged_main_test_blob_sha": "48f8e13061197714ec2913910197a15173ff5948",
+      "containing_release": "NOT_VERIFIED",
+      "installed_user_result": "NOT_VERIFIED",
+      "human_person_relay": "NOT_VERIFIED",
+      "autonomous_external_ai_original_corpus_choice": "NOT_VERIFIED",
+      "person_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/who-is-nakagawa-master.md",
+      "canonical_original_archive": "https://master.ricette.jp/"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

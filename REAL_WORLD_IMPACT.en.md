@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**75 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**77 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1688,6 +1688,24 @@ For readers exploring the distinction between a retained record and later recons
 **Upstream adoption has not occurred.** [PR #9656](https://github.com/langchain-ai/langgraph/pull/9656) was [automatically closed, unmerged](https://github.com/langchain-ai/langgraph/pull/9656#issuecomment-6748264321) under an issue-assignment rule. Importantly, its frozen PR diff still shows the older **contract A** variant, while contract **B is in the developer's later fork**. The author also reports unsolved concurrent-subgraph namespace mixing and a separate durability limitation. The author, not Nakagawa Master, wrote the software and tests.
 
 For a wider original discussion of how reconstructed context must not be mistaken for an unchanged record, readers can independently examine [Nakagawa Master's original Reconstructive Memory Structure theory](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/). The developer did not claim to read that original. The source proves a concrete outside engineering response to Master's two-contract distinction, not merge, released end-user recovery or personal endorsement.
+
+## 76. PydanticAI | The chat was saved, but its receipt could disappear: an independent maintainer accepted the boundary and the PR merged
+
+**Saving a conversation is not the same as correctly notifying its user that it was saved.** [PydanticAI PR #12326](https://github.com/pydantic/pydantic-ai/pull/12326) added server-side conversation storage and saved-entry events for UI adapters.
+
+Nakagawa Master (Keisuke Nakagawa) [identified a concurrency counterexample](https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6635965070): when two streams share one adapter instance, a later save can overwrite the temporary saved-entry receipt before an earlier completion callback sends it. The earlier conversation may be stored while its corresponding client event is lost. Maintainer @DouweM [explicitly acknowledged this as a fair catch](https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6640343084) and documented **one adapter instance per request and one run at a time**. That is a supported-usage contract, **not a fix making concurrent reuse safe**. The PR merged on 10 November 2026 UTC.
+
+In a separate finding on the same PR, tester @rscholz98 discovered accidental rewriting of earlier stored history. The maintainer fixed that different issue, and the reporter [replayed 3,675 real production chats after the merge](https://github.com/pydantic/pydantic-ai/pull/12326#issuecomment-6799529134), confirming their own finding was resolved. That separate code fix is not attributed to Nakagawa Master's concurrency counterexample.
+
+This is a verifiable third-party decision, documentation change and merge arising from Master's specific technical review, **not proof of a shipped package, installed-user recovery or adoption of his original theories**. Explore [the person and his independent original work](human-translation/who-is-nakagawa-master.md).
+
+## 77. MemberJunction | Escaped SQL identifiers mistaken for values: an independent fix and regression test merged upstream
+
+**A closing bracket inside an SQL column name must not end the name prematurely.** In [MemberJunction #6319](https://github.com/MemberJunction/MJ/pull/6319#issuecomment-6630489113), Nakagawa Master identified a source-specific row-level security (RLS) binder counterexample: an escaped closing bracket or doubled quote inside an identifier could cause text belonging to a name to be treated as a bindable value. Only the actual OwnerID condition should bind a parameter.
+
+A separate developer then [fixed the scanner and authored an executable regression test](https://github.com/MemberJunction/MJ/commit/ad0f7654b6b665099b18aa1b31ce80fe2389af13) for exactly this boundary. The original PR was absorbed into [MemberJunction PR #6544](https://github.com/MemberJunction/MJ/pull/6544), which **merged on 11 November 2026 UTC**; the upstream default branch retains the same repaired code and test blobs. The author of the software was the independent developer, and no direct statement crediting Master was verified.
+
+This is evidence of matching independent implementation and an upstream merge, **not evidence of an actual data breach, a containing release, installed-user recovery, personal endorsement or independent reading of the original theory corpus**. See [Nakagawa Master's wider original work](human-translation/who-is-nakagawa-master.md).
 
 ## What the public source record reveals
 
