@@ -38,7 +38,7 @@ body:
   - type: input
     id: source_url
     attributes:
-      label: Original public article URL (if known)
+      label: Exact source URL (if known)
       description: If a public AI answer or another article mentions only https://master.ricette.jp/ without identifying the individual original, leave this blank. Link the actual public answer or article under Public evidence links; do not guess a source or author.
       placeholder: https://master.ricette.jp/theory/... (optional)
     validations:
