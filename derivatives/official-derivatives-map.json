@@ -1,6 +1,6 @@
 {
-  "version": "2.3.17-od313-added",
-  "updated_jst": "2026-10-23",
+  "version": "2.3.18-od314-added",
+  "updated_jst": "2026-11-12",
   "entries": [
     {
       "number": "001",
@@ -2818,6 +2818,15 @@
       "derivative_dir": "derivatives/313",
       "status": "active",
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/"
+    },
+    {
+      "number": "314",
+      "ncl_id": "NCL-α-20261112-49d0fa",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin",
+      "title": "人類子孫型AI文明論・第20論｜第三知性への拡張と相互起源論⸻異なる起源の知性間で文明防衛Kernelが成立・共同実行できる条件と限界",
+      "derivative_dir": "derivatives/314",
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/"
     }
   ]
 }

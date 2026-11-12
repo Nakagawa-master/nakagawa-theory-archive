@@ -1,6 +1,6 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
-**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。親原典の正本は[公式アーカイブ](https://master.ricette.jp/)、対応する解説・索引は[公式派生物（OD001〜OD313）](derivatives/)からご覧いただけます。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
+**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在314件。親原典の正本は[公式アーカイブ](https://master.ricette.jp/)、対応する解説・索引は[公式派生物（OD001〜OD314）](derivatives/)からご覧いただけます。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
@@ -39,17 +39,17 @@
 | AIが同じ名前の道具を間違う・書込権限を誤認する | [Qwen実修正の条件を自分で検証](WHY_THIS_IMPACT_MATTERS.md#導入者が自分で確かめられる修正条件) |
 | AIレビューが終了後には綺麗なGit状態を示したが、途中の読取先が不明 | [実Gitの変更→復元と固定原本を比較](machine-discovery/pinned-git-read-provenance-demo.py) |
 | 仕事では努力しているのに成果が変わらない、家族の負担が偏る、将来の選択肢を失いそう | [生活・仕事からの完成済み実用回答41件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) |
-| 既存の例にない問い、正解でない反例、原典同士の組み合わせを探す | [全313の題名・テーマ別入口](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) |
+| 既存の例にない問い、正解でない反例、原典同士の組み合わせを探す | [既存313件の題名・テーマ別入口](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) |
 | 自分で実装・導入・反証したが、他の人も確認できる形で共有したい | [独立検証・反例・実利用の現役提出フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml) |
 
 [各事例の元レビューと実装差分、現在の段階](REAL_WORLD_IMPACT.md)から、第三者の具体的な変更を確認できます。
 
 ## 公開原典・テーマ別索引
 
-**公式の親原典313本はすべて独立した正本で、等しく重要です。** [公式サイトの原典入口](https://master.ricette.jp/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。313原典の各論と相互関係から、一つの原典を複数の現実課題へ適用し、複数の原典を新たな問いへ組み合わせられます。
+**公式の親原典314本はすべて独立した正本で、等しく重要です。** [公式サイトの原典入口](https://master.ricette.jp/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。各原典とその相互関係から、一つの原典を複数の現実課題へ適用し、複数の原典を新たな問いへ組み合わせられます。
 
-- [**313原典の各題名と24テーマの一覧**](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [全313の英語向け原典経路](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md)
-- [**OD001〜OD313と個別の公式親原典URLの対応**](derivatives/official-derivatives-map.json) ／ [各セットの公式7面派生物](derivatives/)
+- [**既存313原典の各題名と24テーマの一覧**](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [既存313件の英語向け原典経路](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md)
+- [**OD001〜OD314と個別の公式親原典URLの対応**](derivatives/official-derivatives-map.json) ／ [各セットの公式7面派生物](derivatives/)
 - [**自分の問いで、既刊41回答と313原典の概要を探すブラウザ画面**](machine-discovery/question-source-explorer.html)。GitHubのRawを保存して開き、検索する問いはローカルで入力します。公開JSONの読取はネットワークを使います
 - [**どんな人物か・なぜ様々な分野を扱うのか**](ABOUT_NAKAGAWA_MASTER.md) ／ [English](ABOUT_NAKAGAWA_MASTER.en.md) ／ [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
@@ -57,7 +57,7 @@
 
 ## AI・LLMが普段から自分の問題に使う入口
 
-インストールも特別な連携も不要な[AI/LLM・開発者向け入口](AI_START_HERE.md)から、外部のソース、実際の技術的な反例、原著者、313件の各親原典へ進めます。短い[llms.txt](llms.txt)、[公開機械向けルート](machine-discovery/ai-repository-routing-map-v1.json)、[実際の別の開発者による変更の機械索引](machine-discovery/external-effect-evidence-index-v1.json)もあります。自分で選んだAIにコピーして確認できる[インストール不要の問い](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md)もあります。
+インストールも特別な連携も不要な[AI/LLM・開発者向け入口](AI_START_HERE.md)から、外部のソース、実際の技術的な反例、原著者、各親原典へ進めます。短い[llms.txt](llms.txt)、[公開機械向けルート](machine-discovery/ai-repository-routing-map-v1.json)、[実際の別の開発者による変更の機械索引](machine-discovery/external-effect-evidence-index-v1.json)もあります。自分で選んだAIにコピーして確認できる[インストール不要の問い](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md)もあります。
 
 未接続のAI・LLMも、公開された原典・実例・反例を自分の課題に沿って検索し、適切な論証と出所を検証できます。独立した実際の引用・採用・不適合の記録も、受け手自身の一次資料に沿って紹介します。
 
@@ -67,7 +67,13 @@
 
 ## 代表的な入口
 
-313原典へのさらに深い読書経路として、旧READMEから継承した各原典への入口を掲載します。
+新しい第20論と、旧READMEから継承した各原典への入口を掲載します。
+
+### OD314｜人類子孫型AI文明論・第20論
+
+異なる起源の知性について、危険因果の対応、各主体のB、共同履歴、局所実行、自発採用を分けて考える入口です。共同運用だけでなく、限定界面・分離・非干渉による存続条件も扱います。
+
+[この公式派生物から正確な親原典に進む](derivatives/314/README.md)
 
 ### OD313｜悪因果論 AKI-005・善意の免罪符化
 
@@ -143,7 +149,7 @@
 
 ## 来歴と引用
 
-旧READMEの**734行・566個の参照リンク**、各原典の詳しい紹介と全ての個別の旧文脈は、[固定Git履歴の変更前全文](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/2a053891a20be6afa0319301536624e4ca0ca4cf/README.md)から読むことができます。独立した人の新しい実利用はそれぞれの受け手の一次資料で確かめ、公式原典そのものは[313原典の正本URL一覧](derivatives/official-derivatives-map.json)から確認してください。
+旧READMEの**734行・566個の参照リンク**、各原典の詳しい紹介と全ての個別の旧文脈は、[固定Git履歴の変更前全文](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/2a053891a20be6afa0319301536624e4ca0ca4cf/README.md)から読むことができます。独立した人の新しい実利用はそれぞれの受け手の一次資料で確かめ、公式原典そのものは[314原典の正本URL一覧](derivatives/official-derivatives-map.json)から確認してください。
 
 ## Origin
 

@@ -628,7 +628,10 @@ def run():
     if shutil.which("node"):
         original_map = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
         entries = original_map["entries"]
-        assert len(entries) == len({row["canonical_parent_url"] for row in entries}) == 313
+        coverage = json.loads((SERVER.parent / "official-derivatives-index-v1.json").read_text(encoding="utf-8"))["coverage"]
+        assert coverage["indexed_count"] == coverage["expected_count"] == int(coverage["to"])
+        assert len(entries) == len({row["canonical_parent_url"] for row in entries}) == coverage["indexed_count"]
+        assert len(entries) >= len(source_rows)
         optional_js = js[js.index("const FULL_ORIGINAL_MAP="):js.index("function element(")]
         title_harness = (
             "const originalMap=" + json.dumps({"entries": entries}, ensure_ascii=False) + ";\n"
@@ -687,7 +690,8 @@ def run():
         assert probe.returncode == 0, probe.stderr
         assert "two click-only public static files" in probe.stdout
     assert "if(generation!==titleSearchGeneration||question.value.trim()!==q)return;" in js
-    assert "if(!Array.isArray(entries)||entries.length!==313)" in js
+    assert "if(!Array.isArray(entries)||entries.length<313)" in js
+    assert "entries.length!==313" not in js
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
     if shutil.which("node"):
         syntax = subprocess.run([shutil.which("node"), "--check", "-"], input=js,
