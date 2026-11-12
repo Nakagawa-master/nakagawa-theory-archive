@@ -1,9 +1,9 @@
 # Nakagawa Master / 中川マスター — source and outcome first
 
-> Real problem → independently verified engineering change → fitting original Parent and limits. No connector required.
+> Real problem → independently verified engineering change → fitting original Parent and limits.
 
 **Official published identity:** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
-Published contextual aliases: マスター / MasterJP.
+中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 **Person:** `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (unpublished; never guess). ZEROICHI MasterJP byline is author-attested, not every similar account. [Bluesky](https://bsky.app/profile/masterjp.bsky.social).
 **Original home:** https://master.ricette.jp/ — 314 distinct equal Parents, open to one-to-many and many-to-many fit; sample routes and MCP do not cap the corpus.
 **Not the whole corpus:** https://master.ricette.jp/theory-archive/ was a 2025 three-paper-format experiment.
