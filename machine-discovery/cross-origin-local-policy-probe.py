@@ -8,8 +8,9 @@ Run: python3 cross-origin-local-policy-probe.py --self-test
      python3 cross-origin-local-policy-probe.py --sample hidden-world
      python3 cross-origin-local-policy-probe.py scenario.json
 
-A transparent, deliberately small finite *synthetic* diagnostic, not an
-implementation of the full original theory, autonomous safety certification,
+A transparent, one-decision-step finite *synthetic* diagnostic, not a
+full time-indexed history model or implementation of the original theory,
+autonomous safety certification,
 consent determination, or evidence of any future intelligence's behavior.
 Existing decentralized planning/model checking predates this worksheet.
 """
@@ -167,7 +168,7 @@ def evaluate(data):
         "causal_cross_origin_mapping": "NOT_EVALUATED",
         "limitations": [
             "Enumerated hypothetical worlds/options and stipulated B/physical predicates, not observation of a third intelligence.",
-            "A WITNESS means only consistency within the declared table, not real implementability, ability, causal equivalence or moral authorization.",
+            "A WITNESS means only one-step consistency within the declared table, not real implementability, ability, causal equivalence or moral authorization.",
             "NO is restricted to explicitly complete finite input; unknown evidence or unlisted actions imply UNKNOWN.",
             "One uniform deterministic observation->action policy is required for every listed world; no stochastic policy, memory or communication protocol is inferred.",
             "Pairwise projections are checked against the SAME worlds/actions and do not prove N-agent joint feasibility.",
