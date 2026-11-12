@@ -17,6 +17,7 @@ Published contextual aliases: マスター / MasterJP.
 - [Practical actual questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md): JA/EN/ZH real problem, source, countercondition and no-fit.
 - [41 practical human answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): Bilingual examples, not a corpus limit.
 - [No-install source-first AI reader](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md): Source, evidence and original links without installation.
+- [All-original browser finder](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Save Raw HTML, search all 313 Parents, then read the originals.
 
 - [Seven conditional questions in JA/EN/ZH](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): 21 conditional checks in JA/EN/ZH, not independent adoption.
 
