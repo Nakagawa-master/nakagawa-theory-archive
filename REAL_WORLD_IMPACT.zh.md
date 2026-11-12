@@ -1628,7 +1628,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **中川マスター指出一个不能忽略的权限边界：** 如果只凭“非交互模式”就全面关闭记忆任务，会连明确允许写入的会话也一起关掉。其[五组验收条件](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6408912308)区分真实可写的目标路径、系统自动添加的默认拒绝规则，以及用户明确设置的拒绝规则。[原报告者明确赞同这一界限](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6408998446)，[另一位参与者 @doudouOUC 独立核对了源码](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6410890396)。
 
-**随后，另一位工程师 @2SinceJuly 自行提出并实现了[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)**：当 `write_file` 和 `edit` 同时被全面禁止时，不再启动必定无法保存的抽取任务；同时加入 `writes_denied` 结果和回归测试。[实现者本人说明了该改动的范围](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960)。这属于独立开发者实际修改代码与测试的证据，但**PR仍处于开放状态**。其他记忆代理、按真实路径判断权限、修复后的用户实机复测及正式发布均未得到证实。中川マスター还[指出不能因为部分修复就自动关闭整个问题](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)；对这一最新审查的独立采纳结果尚待观察。
+**随后，另一位工程师 @2SinceJuly 自行提出并实现了[PR #16522](https://github.com/QwenLM/qwen-code/pull/16522)**：当 `write_file` 和 `edit` 同时被全面禁止时，不再启动必定无法保存的抽取任务；同时加入 `writes_denied` 结果和回归测试。[实现者本人说明了该改动的范围](https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960)。这属于独立开发者实际修改代码与测试的证据，但**PR仍处于开放状态**。其他记忆代理、按真实路径判断权限、修复后的用户实机复测及正式发布均未得到证实。中川マスター还[指出不能因为部分修复就自动关闭整个问题](https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025)；[独立实现者随后明确回应，并把 PR 中的 `Fixes #15597` 改为 `Refs #15597`](https://github.com/QwenLM/qwen-code/pull/16522#issuecomment-6705340631)，以免未解决的原 issue 因局部修复而自动关闭。这是对审查意见的真实采纳，并不代表已合并或用户已恢复。
 
 可对照阅读[成立条件论原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)与[合意的记忆原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)：任务启动不等于结果真实保存，权限判断必须符合实际作用范围。不能据此推断外部工程师曾阅读上述原典。
 
