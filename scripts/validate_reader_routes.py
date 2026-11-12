@@ -64,10 +64,15 @@ def verify() -> tuple[int, int, int]:
     # One original has one OD set; the 24-item quick search is not the corpus.
     parent_map = json.loads((DER / "official-derivatives-map.json").read_text(encoding="utf-8"))
     paired = parent_map["entries"]
-    require(len(paired) == 313, "Original/derivative mapping must cover all 313 originals")
-    require([x["number"] for x in paired] == sorted(seen), "OD mapping numbers incomplete or reordered")
+    coverage = json.loads((ROOT / "machine-discovery/official-derivatives-index-v1.json").read_text(encoding="utf-8"))["coverage"]
+    current_count = coverage["indexed_count"]
+    require(current_count >= len(seen), "Current mapping dropped a catalogue original")
+    require(current_count == coverage["expected_count"] == int(coverage["to"]), "Current coverage count/end disagree")
+    require(len(paired) == current_count, "Original/derivative mapping differs from current coverage")
+    require([x["number"] for x in paired] == [f"{x:03d}" for x in range(1, current_count + 1)],
+            "OD mapping numbers incomplete or reordered")
     for field in ("ncl_id", "origin_slug", "canonical_parent_url"):
-        require(len({x[field] for x in paired}) == 313, f"Expected 313 unique {field} values")
+        require(len({x[field] for x in paired}) == current_count, f"Expected {current_count} unique {field} values")
     seven = ("README.md", "human-entry.md", "faq.md", "ai-index.md",
              "en-ai-index.md", "zh-ai-index.md", "derivative-ledger.md")
     for original in paired:
