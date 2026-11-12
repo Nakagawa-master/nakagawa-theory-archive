@@ -36,7 +36,7 @@ def validate(data):
         raise ValueError("bystanders: list of nonempty names")
     if len(set(actors+bystanders)) != len(actors+bystanders):
         raise ValueError("actor and bystander names must be unique")
-    if data.get("complete") not in (True, False):
+    if not isinstance(data.get("complete"), bool):
         raise ValueError("complete must explicitly be true/false; only true permits bounded-model NO")
     if not isinstance(worlds, list) or not worlds:
         raise ValueError("worlds must be a nonempty list")
@@ -237,7 +237,8 @@ def self_test():
     ck(evaluate(uncertain)["original_actors_survival"]["uniform_local_policy"]=="UNKNOWN")
     for alter in (lambda d:d["worlds"][0]["observations"].pop("A"),
                   lambda d:d["worlds"][0]["options"].append(d["worlds"][0]["options"][0].copy()),
-                  lambda d:d.update(complete="unknown")):
+                  lambda d:d.update(complete="unknown"),
+                  lambda d:d.update(complete=1)):
         bad=scenario("separate")
         alter(bad)
         try:
