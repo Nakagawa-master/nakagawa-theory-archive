@@ -40,7 +40,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 <p class="small">公式原典を探す無料の実用入口 ｜ Nakagawa Master / 中川マスター</p>
 <h1>いま困っていることから、原典を探す。</h1>
 <p class="lead">AIの判断をあとから直したい。複数の報道が本当に独立しているか確かめたい。組織の合意を次の行動へつなげたい。</p>
-<p>その問いから、公開済み314原典の題名と各公式派生物の日本語説明を照合し、別途24件の具体的な質問事例とも比較できます。24件は便宜的な掲載例で、原典の優先順位でも解釈可能数の上限でもありません。各原典から複数の状況別解釈が生まれ、関連する複数原典の組合せによって別の説明につながることもあります。ただし、このページで自動照合できる314件は題名の文字一致と、取得できる313件の既存日本語派生説明との照合であり、本文の意味や原典同士の接合を自動検証するものではありません。原典本文で根拠と成立条件を確かめてください。</p>
+<p>その問いから、公開済み314原典の題名と各公式派生物の日本語説明を照合し、別途24件の具体的な質問事例とも比較できます。24件は便宜的な掲載例で、原典の優先順位でも解釈可能数の上限でもありません。各原典から複数の状況別解釈が生まれ、関連する複数原典の組合せによって別の説明につながることもあります。ただし、このページで自動照合できる314件は題名の文字一致と、314件の公式日本語派生説明との照合であり、本文の意味や原典同士の接合を自動検証するものではありません。原典本文で根拠と成立条件を確かめてください。</p>
 <section class="panel">
 <h2>自分の質問で探す</h2>
 <label for="question">いまの問題・疑問</label>
@@ -154,7 +154,7 @@ return [...best.values()].sort((a,b)=>b.score-a.score||a.entry.canonical_origina
 // User-initiated title discovery from the live canonical map (currently 314).
 // Main Search click triggers this static fetch; the private question is never sent.
 const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json";
-const FULL_SOURCE_BRIEFS="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json";
+const FULL_SOURCE_BRIEFS="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-314-v1.json";
 let titleSearchGeneration=0;
 function resetTitleResults(){
 titleSearchGeneration++;
@@ -182,7 +182,7 @@ const minHits=[...terms].some(t=>/[ぁ-んァ-ン一-龥]/.test(t))?2:1;
 return {entry,score:exact?100+hits.length:hits.length,qualified:exact||hits.length>=minHits};
 }).filter(x=>x.qualified).sort((a,b)=>b.score-a.score||a.entry.number.localeCompare(b.entry.number)).slice(0,12);
 }
-// The historical 313 published JA briefs remain optional; the 314th source gets full title coverage.
+// All 314 published JA briefs are optional context; title-only lookup still works if the source cannot be fetched.
 // Candidate matches do not certify the Parent's actual claims.
 function jaContextNgrams(value,width){
   const result=new Set();
@@ -233,7 +233,7 @@ try{
   const sourceResponse=await fetch(FULL_SOURCE_BRIEFS,{method:"GET",mode:"cors"});
   if(sourceResponse.ok){
     const source=await sourceResponse.json(),rows=source.entries;
-    if(Array.isArray(rows)&&rows.length>=313&&rows.length<=entries.length&&source.count===rows.length&&rows.every((row,i)=>row.number===entries[i].number&&row.canonical_parent_url===entries[i].canonical_parent_url&&row.title===entries[i].title&&row.derivative_url.endsWith("/derivatives/"+row.number+"/human-entry.md")&&/^[0-9a-f]{40}$/.test(row.sha)&&typeof row.brief==="string"))briefRows=rows;
+    if(Array.isArray(rows)&&rows.length===entries.length&&source.count===entries.length&&rows.every((row,i)=>row.number===entries[i].number&&row.canonical_parent_url===entries[i].canonical_parent_url&&row.title===entries[i].title&&row.derivative_url.endsWith("/derivatives/"+row.number+"/human-entry.md")&&/^[0-9a-f]{40}$/.test(row.sha)&&typeof row.brief==="string"))briefRows=rows;
   }
 }catch(error){/* Source unavailable: retain complete title fallback. */}
 if(generation!==titleSearchGeneration||question.value.trim()!==q)return;
