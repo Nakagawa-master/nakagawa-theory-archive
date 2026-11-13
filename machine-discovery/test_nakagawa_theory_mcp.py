@@ -668,6 +668,13 @@ def run():
   await searchAllTitles();
   if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD314"))))
     throw Error("Newest OD314 source was not discovered from its published title");
+
+  // The new official 15-second explanation must work beyond title matching.
+  question.value="起源の異なる知性について、危険の原因が対応するか、各自の存在条件を同じ世界で守れるか";
+  await searchAllTitles();
+  if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD314"))))
+    throw Error("OD314 official context did not yield a source candidate");
+
   if(calls.some(x=>x.url.includes(question.value)))throw Error("Question leaked in source URL");
   // The normal question does NOT name the theory; derivative context
   // must reveal its official Parent without requiring a 24-example route.
