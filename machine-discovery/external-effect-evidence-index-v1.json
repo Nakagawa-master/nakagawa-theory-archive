@@ -4824,21 +4824,28 @@
           "merge_commit_sha": "aa79e280db6a407662f9abfd8586f1e3311b4f9c",
           "merge_commit": "https://github.com/mastra-ai/mastra/commit/aa79e280db6a407662f9abfd8586f1e3311b4f9c",
           "final_author_head_sha": "ee24eeca7ee6f577790752a2b541d060b0499ce1",
-          "verified_result": "Upstream PR merged; issues #27485 and #27925 closed and their issue bots announce a next release. No specific published @mastra/inngest version or affected installed-user result established here.",
+          "verified_result": "Upstream PR merged 2026-11-05T22:14:29Z. Official release published 2026-11-13T14:32:29Z lists @mastra/inngest@1.11.2, whose package-specific changelog explicitly identifies the fix for duplicate or unapproved agent-tool execution (#29451). Named released fix is confirmed; affected user's installed recovery is not.",
           "separate_contributors": "Nakagawa Master identified the lost-ACK source counterexample; arthurfiorette authored code/tests; separate NikAiyer human and bot reviews generated additional distinct corrections. Do not conflate authorship.",
           "remaining_design_conditions": "The final suspension-scoped event ID depends on claim-fence generation when storage supports concurrent updates and run fencing; fallback and app workflow synchronization remain separate implementation conditions, not observed post-merge failures."
         }
       },
-      "current_stage": "outside_author_acknowledged_source_specific_lost_ack_review_and_tested_repair_upstream_merged_2026-11-05T22:14:29Z; release_and_affected_user_unknown",
+      "current_stage": "outside_author_acknowledged_independently_implemented_tested_and_upstream_merged_2026-11-05; official_fix_containing_inngest_1.11.2_release_2026-11-13; installed_affected_user_and_independent_person_relay_unknown",
+      "official_fix_containing_release": {
+        "package": "@mastra/inngest",
+        "version": "1.11.2",
+        "published_at_utc": "2026-11-13T14:32:29Z",
+        "github_release": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra%2Fcore%401.83.0",
+        "package_changelog": "https://github.com/mastra-ai/mastra/blob/main/workflows/inngest/CHANGELOG.md",
+        "linked_fix_pr": "https://github.com/mastra-ai/mastra/pull/29451",
+        "evidence_scope": "Official multi-package release explicitly lists @mastra/inngest@1.11.2 and the versioned package changelog credits #29451. No package install, deployment, actual affected-user recovery or independent PERSON relay observed."
+      },
       "causal_boundary": "Master's contribution was a bounded source-predicted scenario and a pair of nonfit acceptance conditions; the independent maintainer-like PR author chose and implemented the event ID. The author reports real dev-server validation; the assistant did not independently execute that test. A different edit in the same commit on re-suspension metadata responds to a separate reviewer and is not attributed to Master.",
       "not_claimed": [
-        "official package release",
-        "actual installed external user affected_user_observation",
+          "actual installed external user affected_user_observation",
         "independent third party using the modified package",
         "unprompted reading or endorsement of Nakagawa original Parents by independent AI",
         "independently observed named-author recognition",
-        "specific released @mastra/inngest package version incorporating merged fix",
-        "affected installed user verified the originally failing execution after release"
+          "affected installed user verified the originally failing execution after release"
       ],
       "independent_separate_review": {
         "reviewer": "coderabbitai[bot]",
