@@ -572,22 +572,23 @@ def run():
     assert 'await fetch(FULL_SOURCE_BRIEFS,{method:"GET",mode:"cors"})' in js
     assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
     assert js.count("searchAllTitles(") == 2, "Expected function definition plus one user-search invocation"
-    assert 'if(!q){findEl("status").textContent="質問を入力してください。";return;}\n// The complete 313-title route runs on every user-initiated search, regardless of sample-24 matches.\nvoid searchAllTitles();' in js, "313 lookup must be behind nonempty user-initiated Search, not page load"
+    assert 'if(!q){findEl("status").textContent="質問を入力してください。";return;}\n// The complete 314-title route runs on every user-initiated search, regardless of sample-24 matches.\nvoid searchAllTitles();' in js, "313 lookup must be behind nonempty user-initiated Search, not page load"
     assert js.index("void searchAllTitles();") > js.index("function search(){"), "313 lookup misplaced outside user Search"
     # Execute the real opt-in 313 search, rather than merely testing the source
     # for a fetch token. Synthetic DOM and a local 313-Parent response make this
     # deterministic, credential-free and network-free under the native CI job.
     # Verify that all 313 derivative excerpts come verbatim from published
     # immutable source blobs and preserve the single official Parent URL.
-    source_dataset = json.loads((SERVER.parent / "published-ja-source-briefs-313-v1.json").read_text(encoding="utf-8"))
+    source_dataset = json.loads((SERVER.parent / "published-ja-source-briefs-314-v1.json").read_text(encoding="utf-8"))
     source_rows = source_dataset["entries"]
-    assert source_dataset["count"] == len(source_rows) == 313
+    assert source_rows[-1]["number"] == "314"
+    assert source_dataset["count"] == len(source_rows) == 314
     mapping = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
     assert source_dataset["canonical_mapping_blob_sha"] == hashlib.sha1(
         b"blob " + str(len((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes())).encode() +
         b"\0" + (SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes()
     ).hexdigest()
-    assert len({r["number"] for r in source_rows}) == 313
+    assert len({r["number"] for r in source_rows}) == 314
     for i, row in enumerate(source_rows):
         assert row["number"] == mapping["entries"][i]["number"]
         assert row["canonical_parent_url"] == mapping["entries"][i]["canonical_parent_url"]
@@ -605,9 +606,9 @@ def run():
     # both exact links instead of equating the 313-entry count with useful text.
     plain = (SERVER.parent.parent / "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md").read_text(encoding="utf-8")
     headings = re.findall(r"(?m)^### OD(\d{3}) — ", plain)
-    assert headings == [r["number"] for r in source_rows], "Plain-language source page dropped or reordered a Parent"
+    assert headings == [r["number"] for r in source_rows[:313]], "Plain-language source page dropped or reordered a Parent"
     assert len(headings) == len(set(headings)) == 313
-    for row in source_rows:
+    for row in source_rows[:313]:
         section = plain.split("### OD" + row["number"] + " — ", 1)[1].split("\n### OD", 1)[0]
         assert section.startswith(row["title"] + "\n"), row["number"]
         assert row["canonical_parent_url"] in section, row["number"]
@@ -653,6 +654,12 @@ def run():
   if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD313"))))
     throw Error("The published AKI-005 original title was not retrieved as OD313");
   if(calls.some(x=>x.url.includes(question.value)))throw Error("Question leaked in source URL");
+  // The newest original is included in the real 314-source browser data.
+  question.value="第三知性への拡張と相互起源論";
+  await searchAllTitles();
+  if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD314"))))
+    throw Error("Newest OD314 source was not discovered from its published title");
+  if(calls.some(x=>x.url.includes(question.value)))throw Error("Question leaked in source URL");
   // The normal question does NOT name the theory; derivative context
   // must reveal its official Parent without requiring a 24-example route.
   question.value="感謝や態度の審査になり、何が起きたか確認できなくなる";
@@ -681,7 +688,7 @@ def run():
   unblock({ok:true,json:async()=>originalMap});
   await older;
   if(cards.items.length!==0)throw Error("Stale result displayed after user changed question");
-  console.log("PASS: two click-only public static files, 313 real JA explanations, OD313/OD300 non-title fit, honest fallback, unrelated no-fit and stale cancellation");
+  console.log("PASS: two click-only public static files, 314 real JA explanations, OD314/OD313/OD300 non-title fit, honest fallback, unrelated no-fit and stale cancellation");
 })().catch(e=>{console.error(e);process.exitCode=1});
 '''
         )
@@ -690,7 +697,7 @@ def run():
         assert probe.returncode == 0, probe.stderr
         assert "two click-only public static files" in probe.stdout
     assert "if(generation!==titleSearchGeneration||question.value.trim()!==q)return;" in js
-    assert "if(!Array.isArray(entries)||entries.length<313)" in js
+    assert "if(!Array.isArray(entries)||entries.length<314)" in js
     assert "entries.length!==313" not in js
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
     if shutil.which("node"):
