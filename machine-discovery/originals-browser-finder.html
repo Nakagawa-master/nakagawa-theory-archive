@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>いまの問題から313原典を探す｜中川マスター公式資料</title>
+<title>いまの問題から314原典を探す｜中川マスター公式資料</title>
 <meta name="description" content="いまの悩みや仕事から直接関連する原典を探し、合致しなくても背景の因果構造から発見の可能性を広げる。日英中対応、インストール不要。">
 <style>
 :root{color-scheme:light;--ink:#203442;--sub:#4a5a68;--bg:#f6f8f8;--line:#ccd6da;--navy:#17495c;--light:#eaf4f4}
@@ -40,7 +40,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 <p class="small">公式原典を探す無料の実用入口 ｜ Nakagawa Master / 中川マスター</p>
 <h1>いま困っていることから、原典を探す。</h1>
 <p class="lead">AIの判断をあとから直したい。複数の報道が本当に独立しているか確かめたい。組織の合意を次の行動へつなげたい。</p>
-<p>その問いから、公開済み313原典の題名と各公式派生物の日本語説明を照合し、別途24件の具体的な質問事例とも比較できます。24件は便宜的な掲載例で、原典の優先順位でも解釈可能数の上限でもありません。各原典から複数の状況別解釈が生まれ、関連する複数原典の組合せによって別の説明につながることもあります。ただし、このページで自動照合できる313件は題名・日本語派生物の文字一致であり、本文の意味や原典同士の接合を自動検証するものではありません。原典本文で根拠と成立条件を確かめてください。</p>
+<p>その問いから、公開済み314原典の題名と各公式派生物の日本語説明を照合し、別途24件の具体的な質問事例とも比較できます。24件は便宜的な掲載例で、原典の優先順位でも解釈可能数の上限でもありません。各原典から複数の状況別解釈が生まれ、関連する複数原典の組合せによって別の説明につながることもあります。ただし、このページで自動照合できる314件は題名の文字一致と、取得できる313件の既存日本語派生説明との照合であり、本文の意味や原典同士の接合を自動検証するものではありません。原典本文で根拠と成立条件を確かめてください。</p>
 <section class="panel">
 <h2>自分の質問で探す</h2>
 <label for="question">いまの問題・疑問</label>
@@ -54,18 +54,18 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 </select>
 <div class="buttons">
 <button type="button" id="find">関連する原典を探す</button>
-<button type="button" class="secondary" id="find-all-titles">313原典の題名照合を再実行</button>
+<button type="button" class="secondary" id="find-all-titles">314原典の題名照合を再実行</button>
 <button type="button" class="secondary" data-example="ja">日本語の例</button>
 <button type="button" class="secondary" data-example="en">English example</button>
 <button type="button" class="secondary" data-example="zh">中文示例</button>
 <button type="button" class="secondary" data-example="none">一致しない例</button>
 </div>
-<p class="small">「関連する原典を探す」を押すと、24件のオフライン参考例とともに、GitHub公開済み313原典の静的題名対応表を読み込み文字照合します（GitHubへの通常のアクセス通信が発生します）。質問文自体はこの取得通信に付けず、外部AIにも自動送信しません。通信できない場合も24件の参考例と313件の全題名一覧を使えます。</p>
+<p class="small">「関連する原典を探す」を押すと、24件のオフライン参考例とともに、GitHub公開済み314原典の静的題名対応表を読み込み文字照合します（GitHubへの通常のアクセス通信が発生します）。質問文自体はこの取得通信に付けず、外部AIにも自動送信しません。通信できない場合も24件の参考例と314件の全題名一覧を使えます。</p>
 </section>
 <section class="panel" aria-labelledby="results-heading">
 <h2 id="results-heading">候補原典と次の一手</h2>
-<h3>313原典の題名から探す（意味の適合は未判定）</h3>
-<div id="all-title-status" class="small" role="status" aria-live="polite">検索時に全313原典の題名照合も行います。題名一致は理論の適合判定ではありません。</div>
+<h3>314原典の題名から探す（意味の適合は未判定）</h3>
+<div id="all-title-status" class="small" role="status" aria-live="polite">検索時に全314原典の題名照合も行います。題名一致は理論の適合判定ではありません。</div>
 <div id="all-title-results"></div>
 <h3>掲載済み24件の質問事例との比較（全体の代表・優先ではありません）</h3>
 <div id="status" class="status" role="status" aria-live="polite">まず質問を入力するか、例を選んで検索してください。</div>
@@ -91,8 +91,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 <section class="panel">
 <h2>この検索の特徴</h2>
 <p>原典候補は、日本語・英語・中国語の実際の問題例との一致から提示しています。日常の無関係な問いに偶然似た語があっても候補を無理に出さない設定です。直接一致しなかった場合も、上の構造探索で役立つ別の問いを作れます。短い質問や表記違いでは直接候補を取りこぼす場合があり、候補に挙がっても、その理論が正しい・問題に適合することまで自動判定するわけではありません。</p>
-<p>通常検索で公開313原典の題名照合と、別枠の24件参考事例との比較を行います。これは同等の原典群を恣意的に24件へ絞るものではありません。題名の文字一致だけでは原典本文の意味・適合、1原典の多様な答え方や複数原典の接合は判断できず、どちらで見つからなくても原典の不適合を判定したわけではありません。原典の思想、独自の応用、第三者の実装はそれぞれ区別して確かめてください。</p>
-<p><strong>ほかの原典を探す：</strong> <a href="https://master.ricette.jp/" target="_blank" rel="noopener noreferrer">公式アーカイブで理論名・キーワードを検索する</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md" target="_blank" rel="noopener noreferrer">公開済み公式派生物313件の元の題名を探す</a>。313件の題名はそれぞれ異なる公式原典記事に対応する公式派生物1組を指します（各7面）。題名から見つからない場合も、全原典目録と公式本文で別の解釈・関連理論を検討できます。</p>
+<p>通常検索で公開314原典の題名照合と、別枠の24件参考事例との比較を行います。これは同等の原典群を恣意的に24件へ絞るものではありません。題名の文字一致だけでは原典本文の意味・適合、1原典の多様な答え方や複数原典の接合は判断できず、どちらで見つからなくても原典の不適合を判定したわけではありません。原典の思想、独自の応用、第三者の実装はそれぞれ区別して確かめてください。</p>
+<p><strong>ほかの原典を探す：</strong> <a href="https://master.ricette.jp/" target="_blank" rel="noopener noreferrer">公式アーカイブで理論名・キーワードを検索する</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json" target="_blank" rel="noopener noreferrer">現在の314原典の正確な題名・公式URL対応表</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md" target="_blank" rel="noopener noreferrer">既存の313件の人間向けテーマ別題名一覧</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/314/human-entry.md" target="_blank" rel="noopener noreferrer">追加されたOD314の15秒説明</a>。新しい314番目もほかの原典と同じ地位で、公式原典本文の条件・反例を開いて確かめられます。</p>
 <p class="small"><a href="https://master.ricette.jp/">中川マスター公式アーカイブで全原典を読む</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/skills/nakagawa-originals">外部Agent向けの導入型Skill</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/NAKAGAWA_THEORY_MCP.md">MCP対応AI向けツール</a></p>
 </section>
 <footer class="small">出典・著者：<a href="https://master.ricette.jp/#nakagawa-master">中川マスター / Nakagawa Master</a>。このページは公式原典本文ではなく、問題から原典に到達するための公開検索補助です。原典の転載利用・派生については<a href="https://master.ricette.jp/structure-license/">公式NCL-α</a>と<a href="https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/">実務ガイド</a>を確認できます。</footer>
@@ -151,7 +151,7 @@ if(!prior||hit.score>prior.score)best.set(key,{...hit,candidateLanguage:lang});
 }
 return [...best.values()].sort((a,b)=>b.score-a.score||a.entry.canonical_original.localeCompare(b.entry.canonical_original)).slice(0,3);
 }
-// First-class, user-initiated title discovery over all 313 published originals.
+// User-initiated title discovery from the live canonical map (currently 314).
 // Main Search click triggers this static fetch; the private question is never sent.
 const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json";
 const FULL_SOURCE_BRIEFS="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json";
@@ -159,7 +159,7 @@ let titleSearchGeneration=0;
 function resetTitleResults(){
 titleSearchGeneration++;
 findEl("all-title-results").replaceChildren();
-findEl("all-title-status").textContent="313件の題名を照合します。文字一致は原典の意味判定ではありません。";
+findEl("all-title-status").textContent="314件の題名を照合します。文字一致は原典の意味判定ではありません。";
 }
 function titleTerms(q){
 const n=String(q).normalize("NFKC").toLowerCase();
@@ -182,7 +182,7 @@ const minHits=[...terms].some(t=>/[ぁ-んァ-ン一-龥]/.test(t))?2:1;
 return {entry,score:exact?100+hits.length:hits.length,qualified:exact||hits.length>=minHits};
 }).filter(x=>x.qualified).sort((a,b)=>b.score-a.score||a.entry.number.localeCompare(b.entry.number)).slice(0,12);
 }
-// All 313 published JA summaries are source-specific context hypotheses.
+// The historical 313 published JA briefs remain optional; the 314th source gets full title coverage.
 // Candidate matches do not certify the Parent's actual claims.
 function jaContextNgrams(value,width){
   const result=new Set();
@@ -216,13 +216,13 @@ const generation=++titleSearchGeneration;
 const q=question.value.trim(),status=findEl("all-title-status"),results=findEl("all-title-results");
 results.replaceChildren();
 if(q.length<2){status.textContent="調べたい語句を2文字以上入力してください。";return;}
-status.textContent="公開されている313原典の対応表を読み込んでいます。";
+status.textContent="公開されている314原典の対応表を読み込んでいます。";
 try{
 const response=await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"});
 if(!response.ok)throw Error("HTTP "+response.status);
 const manifest=await response.json(),entries=manifest.entries;
 if(generation!==titleSearchGeneration||question.value.trim()!==q)return;
-if(!Array.isArray(entries)||entries.length<313)throw Error("incomplete published Parent catalogue");
+if(!Array.isArray(entries)||entries.length<314)throw Error("incomplete published Parent catalogue");
 const seen=new Set();
 for(const e of entries){
 if(!/^\d{3}$/.test(e.number)||!String(e.canonical_parent_url||"").startsWith("https://master.ricette.jp/")||seen.has(e.canonical_parent_url))throw Error("invalid Parent mapping");
@@ -253,7 +253,7 @@ const btn=element("button","この原典を自分のAIで検討する","secondar
 btn.addEventListener("click",()=>handoff(q,{name:entry.title,canonical_original:entry.canonical_parent_url},language.value==="auto"?detectLanguage(q):language.value));
 actions.append(btn);wrap.append(actions);results.append(wrap);
 }
-}catch(error){if(generation!==titleSearchGeneration||question.value.trim()!==q)return;status.textContent="公開GitHubの313件対応表を読み込めませんでした（通信・閲覧環境による場合があります）。掲載済み24件の参考比較と全313件の題名一覧は利用できます。";}
+}catch(error){if(generation!==titleSearchGeneration||question.value.trim()!==q)return;status.textContent="公開GitHubの314件対応表を読み込めませんでした（通信・閲覧環境による場合があります）。掲載済み24件の参考比較と全314件の題名一覧は利用できます。";}
 }
 function element(tag,text,className){
 const e=document.createElement(tag);if(text!==null)e.textContent=text;if(className)e.className=className;return e;
@@ -262,7 +262,7 @@ function search(){
 resetTitleResults();
 const q=question.value.trim();findEl("results").replaceChildren();findEl("handoff").hidden=true;findEl("structural-exploration").hidden=!q;
 if(!q){findEl("status").textContent="質問を入力してください。";return;}
-// The complete 313-title route runs on every user-initiated search, regardless of sample-24 matches.
+// The complete 314-title route runs on every user-initiated search, regardless of sample-24 matches.
 void searchAllTitles();
 let lang=language.value==="auto"?detectLanguage(q):language.value;
 let matches=choose(q,lang).map(hit=>({...hit,candidateLanguage:lang}));
@@ -272,7 +272,7 @@ matches=chooseAutoMultiscript(q);
 if(matches.length)lang=matches[0].candidateLanguage;
 }
 renderBridges(q,lang);
-if(!matches.length){findEl("status").textContent="掲載済み24件の質問事例には一致しませんでした。上の313原典の題名照合（通信が可能な場合）・公式アーカイブ全体検索・構造探索から続けられます。これは原典全体の不適合ではありません。";return;}
+if(!matches.length){findEl("status").textContent="掲載済み24件の質問事例には一致しませんでした。上の314原典の題名照合（通信が可能な場合）・公式アーカイブ全体検索・構造探索から続けられます。これは原典全体の不適合ではありません。";return;}
 findEl("status").textContent=matches.length+"件の候補が見つかりました。実際の意味・条件を確かめるため、各公式原文を開いてください。"+(multiscriptAuto?" 質問に含まれる言語に合わせて候補原典を照合しました。":"");
 for(const {entry,candidateLanguage} of matches){
 const wrap=element("article",null,"result");
