@@ -90,7 +90,7 @@ def graph():
             "metadata_provenance": "published_derivative_README_parent_fields",
         })
     # Newly published Parents enter through the verified canonical map; the
-    # historical 313-title theme index must not impose a 313-Parent ceiling.
+    # versioned title-index filename must never impose a source-count ceiling.
     published = json.loads((DERIVATIVES / "official-derivatives-map.json").read_text(encoding="utf-8"))["entries"]
     by_id = {r["id"]: r for r in records}
     if not published or len(by_id) != len(records):
