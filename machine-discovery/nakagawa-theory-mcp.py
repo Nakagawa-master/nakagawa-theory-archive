@@ -601,6 +601,15 @@ TOOLS = [
 ]
 
 
+# Keep the historical listing name for installed clients, but let new
+# independent hosts discover all currently published 314 Parents explicitly.
+TOOLS.insert(0, {
+    **next(tool for tool in TOOLS if tool["name"] == "list_all_313_derivative_parent_links"),
+    "name": "list_all_314_derivative_parent_links",
+    "description": "List all current 314 published derivative-to-Parent originals with exact source identity, optional pagination and independent source-reading.",
+})
+
+
 def modern_complete(result):
     """The stateless 2026 protocol requires a resultType on each success."""
     return {
@@ -700,6 +709,7 @@ def handle(req):
             elif name in {
                 "overview_nakagawa_whole_structure",
                 "list_all_313_derivative_parent_links",
+                "list_all_314_derivative_parent_links",
                 "inspect_nakagawa_derivative_connections",
                 "find_sources_in_whole_structure",
             }:
@@ -712,7 +722,7 @@ def handle(req):
                     raise ValueError("Invalid source-graph arguments")
                 if name == "overview_nakagawa_whole_structure":
                     result = helper.overview(records)
-                elif name == "list_all_313_derivative_parent_links":
+                elif name in {"list_all_313_derivative_parent_links", "list_all_314_derivative_parent_links"}:
                     result = helper.list_connections(records, payload.get("offset", 0), payload.get("limit", 25))
                 elif name == "inspect_nakagawa_derivative_connections":
                     result = helper.inspect_derivative(records, payload["id"])
@@ -774,6 +784,7 @@ def self_test():
     assert not multi["unreturned_explicit_source_requests"]
     # The newest equal-standing source must be directly addressable, not just
     # visible in the static README and not confused with invalid IDs.
+    assert any(t["name"] == "list_all_314_derivative_parent_links" for t in TOOLS)
     newest = answer_question("Compare OD314 and OD001 for their differences")
     assert [x["route_id"] for x in newest["matching_routes"][:2]] == [
         "whole_structure:OD314", "whole_structure:OD001"], newest
