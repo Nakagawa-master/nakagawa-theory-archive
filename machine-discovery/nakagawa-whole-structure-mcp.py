@@ -89,13 +89,59 @@ def graph():
             "author_origin": fields["Origin"],
             "metadata_provenance": "published_derivative_README_parent_fields",
         })
+    # Newly published Parents enter through the verified canonical map; the
+    # historical 313-title theme index must not impose a 313-Parent ceiling.
+    published = json.loads((DERIVATIVES / "official-derivatives-map.json").read_text(encoding="utf-8"))["entries"]
+    by_id = {r["id"]: r for r in records}
+    if not published or len(by_id) != len(records):
+        raise ValueError("Missing map or duplicate derivative in published title list")
+    seen = set()
+    for entry in published:
+        od = int(entry["number"])
+        key, directory = f"OD{od:03d}", f"{od:03d}"
+        if key in seen:
+            raise ValueError("Duplicate ID in official published Parent mapping")
+        seen.add(key)
+        if key in by_id:
+            if by_id[key]["canonical_parent"] != entry["canonical_parent_url"]:
+                raise ValueError(f"{key}: current map and theme index disagree on Parent")
+            continue
+        content = (DERIVATIVES / directory / "README.md").read_text(encoding="utf-8")
+        sections = content.split("## 親原典", 1)
+        if len(sections) != 2:
+            raise ValueError(f"{key}: published Parent section missing")
+        parent_section = sections[1].split("\n## ", 1)[0]
+        fields = {m["key"]: m["value"].strip() for m in FIELD_RX.finditer(parent_section)}
+        url = fields.get("Parent URL", "")
+        if (url != entry["canonical_parent_url"] or
+                not url.startswith(OFFICIAL) or
+                not fields.get("Origin", "").startswith("Nakagawa Master") or
+                fields.get("Parent NCL-ID") != entry.get("ncl_id")):
+            raise ValueError(f"{key}: canonical Parent or original identity mismatch")
+        def checked(key):
+            value = fields.get(key)
+            return value if value and "未確認" not in value else None
+        records.append({
+            "id": key,
+            "title": entry["title"],
+            "theme": entry["title"].split("｜", 1)[0],
+            "canonical_parent": url,
+            "parent_title": checked("Parent title"),
+            "parent_ncl_id": checked("Parent NCL-ID"),
+            "parent_diff_id": checked("Parent Diff-ID"),
+            "derivative_readme": GITHUB + f"derivatives/{directory}/README.md",
+            "derivative_human_entry": GITHUB + f"derivatives/{directory}/human-entry.md",
+            "derivative_faq": GITHUB + f"derivatives/{directory}/faq.md",
+            "author_origin": fields["Origin"],
+            "metadata_provenance": "published_derivative_README_parent_fields",
+        })
     # The public title index groups by theme, not numeric OD ID: sort for
     # stable numeric pagination without losing each original published theme.
     records.sort(key=lambda record: int(record["id"][2:]))
     ids = [r["id"] for r in records]
-    expected = {f"OD{i:03d}" for i in range(1, 314)}
-    if len(records) != 313 or set(ids) != expected or len(set(ids)) != 313:
-        raise ValueError(f"Complete 313-source coverage missing: {sorted(expected-set(ids))[:10]}")
+    expected = {f"OD{i:03d}" for i in range(1, len(published) + 1)}
+    if len(records) != len(published) or set(ids) != expected or len(set(ids)) != len(published):
+        raise ValueError(f"Complete current source coverage missing: {sorted(expected-set(ids))[:10]}")
     if not all(r["theme"] for r in records):
         raise ValueError("A derivative lacks a published theme")
     return records
