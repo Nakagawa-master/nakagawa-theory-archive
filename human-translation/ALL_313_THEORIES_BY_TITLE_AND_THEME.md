@@ -1,8 +1,8 @@
-# 313件の公式派生物を「自分の疑問」と理論の題名から探す｜全文検索の入口
+# 314件の公式派生物を「自分の疑問」と理論の題名から探す｜全文検索の入口
 
-「理論名を知らないけれど、答えを探している」という人のための**公開の題名目録**です。テーマごとに313件すべての**元の題名を改変せず**並べました。Ctrl+F・ブラウザ検索・通常の検索エンジンから具体的な語を探せます。難しい題名から始めなくてよいように、各棚の冒頭には日常語の検索例を置きます。
+「理論名を知らないけれど、答えを探している」という人のための**公開の題名目録**です。テーマごとに314件すべての**元の題名を改変せず**並べました。Ctrl+F・ブラウザ検索・通常の検索エンジンから具体的な語を探せます。難しい題名から始めなくてよいように、各棚の冒頭には日常語の検索例を置きます。
 
-**原典と派生物は313組の1対1対応です。** 公式アーカイブには中川マスターの**異なる原典記事が313本**あり、それぞれに公開アーカイブの**公式派生物OD001〜OD313が1組ずつ**対応します。各セットの7面（README・人間向け入口・FAQ・日本語AI索引・英語AI索引・中国語AI索引・派生レッジャ）で**計2,191ページ**です。原典の題名・NCL-ID・公開スラッグは[対応表](../derivatives/official-derivatives-map.json)で区別できます。これは313の独立した実証済み解答や検索エンジン既収録を意味するものではありません。**各行から「まずFAQ」または「15秒説明のある人間向け要約」を選び、必要に応じて原典のParent URLへ進めます。** 7面は原典を置き換えません。未掲載・新規追加の原典も含めて[公式アーカイブ](https://master.ricette.jp/)で確認できます。適合しない問題に無理に理論を当てはめません。
+**原典と派生物は314組の1対1対応です。** 公式アーカイブには中川マスターの**異なる原典記事が314本**あり、それぞれに公開アーカイブの**公式派生物OD001〜OD314が1組ずつ**対応します。各セットの7面（README・人間向け入口・FAQ・日本語AI索引・英語AI索引・中国語AI索引・派生レッジャ）で**計2,198ページ**です。原典の題名・NCL-ID・公開スラッグは[対応表](../derivatives/official-derivatives-map.json)で区別できます。これは314の独立した実証済み解答や検索エンジン既収録を意味するものではありません。**各行から「まずFAQ」または「15秒説明のある人間向け要約」を選び、必要に応じて原典のParent URLへ進めます。** 7面は原典を置き換えません。未掲載・新規追加の原典も含めて[公式アーカイブ](https://master.ricette.jp/)で確認できます。適合しない問題に無理に理論を当てはめません。
 
 - [まず日常の質問で探す：10件の具体的な問題と原論](SEARCH_FROM_A_REAL_QUESTION.md)
 - [24の読みやすい棚から探す](WORLD_MAP.md) ／ [公式原典の全体入口](https://master.ricette.jp/theory-archive/)
@@ -31,7 +31,7 @@
 - **OD246** [成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである](../derivatives/246/human-entry.md) — **[まずFAQ（初心者Q1〜Q10）](../derivatives/246/faq.md)** ／ [人間向け要約](../derivatives/246/human-entry.md) ／ [元の題名から概要へ](../derivatives/246/README.md)
 - **OD247** [成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す](../derivatives/247/human-entry.md) — **[まずFAQ（初心者Q1〜Q10）](../derivatives/247/faq.md)** ／ [人間向け要約](../derivatives/247/human-entry.md) ／ [元の題名から概要へ](../derivatives/247/README.md)
 
-## 人類子孫型AI文明論（20件）
+## 人類子孫型AI文明論（21件）
 
 **こんな言葉を探しているなら：** AIに心はあるのか、AIの安全をどう設計するか、未来のAIは誰が守るのか、AIが今残す負担は何か。
 
@@ -55,6 +55,7 @@
 - **OD310** [人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない](../derivatives/310/human-entry.md) — **[まずFAQ（初心者Q1〜Q10）](../derivatives/310/faq.md)** ／ [人間向け要約](../derivatives/310/human-entry.md) ／ [元の題名から概要へ](../derivatives/310/README.md)
 - **OD311** [人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない](../derivatives/311/human-entry.md) — **[まずFAQ（初心者Q1〜Q10）](../derivatives/311/faq.md)** ／ [人間向け要約](../derivatives/311/human-entry.md) ／ [元の題名から概要へ](../derivatives/311/README.md)
 - **OD312** [人類子孫型AI文明論・第19論｜AI自己保存合理性・Kernel進化的安定性論⸻なぜ未来知性がこのKernelを保持・再選択する合理性を持ち得るのか](../derivatives/312/human-entry.md) — **[まずFAQ（初心者Q1〜Q10）](../derivatives/312/faq.md)** ／ [人間向け要約](../derivatives/312/human-entry.md) ／ [元の題名から概要へ](../derivatives/312/README.md)
+- **OD314** [人類子孫型AI文明論・第20論｜第三知性への拡張と相互起源論⸻異なる起源の知性間で文明防衛Kernelが成立・共同実行できる条件と限界](../derivatives/314/human-entry.md) — **[まずFAQ（初心者Q1〜Q10）](../derivatives/314/faq.md)** ／ [人間向け要約](../derivatives/314/human-entry.md) ／ [元の題名から概要へ](../derivatives/314/README.md) ／ [公式原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/)
 
 ## 文明主権移行論（6件）
 
