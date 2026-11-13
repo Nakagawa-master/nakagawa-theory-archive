@@ -40,7 +40,7 @@
 | AIが同じ名前の道具を間違う・書込権限を誤認する | [Qwen実修正の条件を自分で検証](WHY_THIS_IMPACT_MATTERS.md#導入者が自分で確かめられる修正条件) |
 | AIレビューが終了後には綺麗なGit状態を示したが、途中の読取先が不明 | [実Gitの変更→復元と固定原本を比較](machine-discovery/pinned-git-read-provenance-demo.py) |
 | 仕事では努力しているのに成果が変わらない、家族の負担が偏る、将来の選択肢を失いそう | [生活・仕事からの完成済み実用回答41件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) |
-| 既存の例にない問い、正解でない反例、原典同士の組み合わせを探す | [既存313件の題名・テーマ別入口](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) |
+| 既存の例にない問い、正解でない反例、原典同士の組み合わせを探す | [314件の題名・テーマ別入口](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) |
 | 自分で実装・導入・反証したが、他の人も確認できる形で共有したい | [独立検証・反例・実利用の現役提出フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml) |
 
 [各事例の元レビューと実装差分、現在の段階](REAL_WORLD_IMPACT.md)から、第三者の具体的な変更を確認できます。
@@ -49,9 +49,9 @@
 
 **公式の親原典314本はすべて独立した正本で、等しく重要です。** [公式サイトの原典入口](https://master.ricette.jp/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。各原典とその相互関係から、一つの原典を複数の現実課題へ適用し、複数の原典を新たな問いへ組み合わせられます。
 
-- [**既存313原典の各題名と24テーマの一覧**](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [既存313件の英語向け原典経路](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md)
+- [**314原典の各題名と24テーマの一覧**](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [既存313件の英語向け原典経路](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md)
 - [**OD001〜OD314と個別の公式親原典URLの対応**](derivatives/official-derivatives-map.json) ／ [各セットの公式7面派生物](derivatives/)
-- [**自分の問いで、既刊41回答と313原典の概要を探すブラウザ画面**](machine-discovery/question-source-explorer.html)。GitHubのRawを保存して開き、検索する問いはローカルで入力します。公開JSONの読取はネットワークを使います
+- [**自分の問いから314原典を検索する画面**](machine-discovery/originals-browser-finder.html) ／ [既刊41回答と原典候補を照合する別の検索画面](machine-discovery/question-source-explorer.html)。いずれもGitHubのRawを保存してブラウザで開きます。入力した質問文はローカルで扱い、公開済み原典データの取得時にはネットワーク通信が発生します。
 - [**どんな人物か・なぜ様々な分野を扱うのか**](ABOUT_NAKAGAWA_MASTER.md) ／ [English](ABOUT_NAKAGAWA_MASTER.en.md) ／ [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
 原典と公式派生物は、それぞれの出所と論証をたどれます。必要な原典を適合条件・逆の場合・不適合の条件に沿って検証し、一つから複数の応用、複数から新しい解決へと探究できます。
