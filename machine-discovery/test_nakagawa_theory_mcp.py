@@ -530,15 +530,24 @@ def run():
     title_test = subprocess.run([sys.executable, str(title_script), "--self-test"],
                                 capture_output=True, text=True, timeout=12)
     assert title_test.returncode == 0, title_test.stderr
-    assert title_test.stdout.startswith("PASS: 313 title navigation"), title_test.stdout
+    assert title_test.stdout.startswith("PASS: 314 title navigation"), title_test.stdout
     lookup = subprocess.run([sys.executable, str(title_script), "善意の免罪符化"],
                             capture_output=True, text=True, timeout=12, check=True)
     title_result = json.loads(lookup.stdout)
     assert any(v["od"] == "OD313" and v["canonical_original"] is None and v["original_read_required"]
                for v in title_result["derivative_title_candidates"])
     assert title_result["lookup_kind"] == "EXACT_OD_OR_TITLE_SUBSTRING__NOT_THEORY_FIT"
+
+    latest_lookup = subprocess.run([sys.executable, str(title_script), "OD314", "--resolve-parent"],
+                                   capture_output=True, text=True, timeout=12, check=True)
+    latest_items = json.loads(latest_lookup.stdout)["derivative_title_candidates"]
+    assert len(latest_items) == 1 and latest_items[0]["od"] == "OD314"
+    assert latest_items[0]["parent_ncl_id"] == "NCL-α-20261112-49d0fa"
+    assert latest_items[0]["canonical_original"].endswith(
+        "human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/")
+
     assert not title_result["no_fit"]
-    print("PASS: real offline 313-derivative literal title CLI / non-Parent guard")
+    print("PASS: real offline 314-derivative literal title CLI / non-Parent guard")
 
     skill_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py"
     expanded = subprocess.run([sys.executable, str(skill_script), "--explore",
