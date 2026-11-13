@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Public, opt-in, read-only MCP across ALL 313 published derivatives and Parents.
+"""Public, opt-in, read-only MCP across ALL currently published derivatives and Parents.
 
 Unlike the separate 24-original fast search lane this enumerates the whole
-published 313-derivative source graph from all 313 local README Parent pointers.
+published full source graph, with verified current canonical map and local README Parent pointers.
 This code is a SOURCE checkout utility: not the immutable v1.1.2 MCPB release,
 not a hosted service, nor an automatic model-wide setting.
 """
@@ -154,10 +154,10 @@ def overview(records):
         "coverage": {
             "derivatives": len(records), "distinct_parent_urls": len(parents),
             "title_index_themes": len({r["theme"] for r in records}),
-            "complete_coverage": len(records) == 313,
+            "complete_coverage": len({r["canonical_parent"] for r in records}) == len(records),
         },
         "system": {
-            "orientation": ("All 313 numbered derivative sets point to 313 distinct published "
+            "orientation": ("All published numbered derivative sets point to distinct "
                             "canonical original URLs in the official corpus, one Parent "
                             "per OD set. URL identity does not prove original-text reading "
                             "or external adoption. The 24-Parent question index is a "
@@ -173,8 +173,8 @@ def overview(records):
 
 
 def list_connections(records, offset=0, limit=25):
-    if type(offset) is not int or type(limit) is not int or not 0 <= offset <= 313 or not 1 <= limit <= 313:
-        raise ValueError("offset: 0..313, limit: 1..313")
+    if type(offset) is not int or type(limit) is not int or not 0 <= offset <= len(records) or not 1 <= limit <= len(records):
+        raise ValueError(f"offset: 0..{len(records)}, limit: 1..{len(records)}")
     return {"total": len(records), "offset": offset, "returned": len(records[offset:offset+limit]),
             "next_offset": offset+limit if offset+limit < len(records) else None,
             "entries": records[offset:offset+limit],
@@ -184,7 +184,7 @@ def list_connections(records, offset=0, limit=25):
 
 def inspect_derivative(records, od_id):
     if not isinstance(od_id, str) or not re.fullmatch(r"OD\d{3}", od_id):
-        raise ValueError("id must be OD001..OD313")
+        raise ValueError("id must be OD001..OD314")
     item = next((x for x in records if x["id"] == od_id), None)
     if not item:
         raise ValueError("Unknown OD ID")
@@ -275,9 +275,9 @@ def _published_summary(path):
 
 @lru_cache(maxsize=1)
 def _multilingual_search_index():
-    """Offline per-process cache: 313 published EN/ZH derivative summaries."""
+    """Offline per-process cache: published EN/ZH/JA derivative summaries."""
     result, en_df, zh_df, ja_df = {}, Counter(), Counter(), Counter()
-    for n in range(1, 314):
+    for n in range(1, len(graph()) + 1):
         folder = DERIVATIVES / f"{n:03d}"
         en = _en_words(_published_summary(folder / "en-ai-index.md"))
         zh = _zh_pairs(_published_summary(folder / "zh-ai-index.md"))
@@ -320,7 +320,7 @@ def search(records, question, limit=12):
         }
     # Preserve JA published-title search and the seven precisely attested
     # English source cues. Previously the remaining ~306 entries were almost
-    # invisible to ordinary EN/ZH queries despite 313 real published indexes.
+    # invisible to ordinary EN/ZH queries despite the published source indexes.
     query_chars = set(re.findall(r"[\u3400-\u9fff\u3040-\u30ff]{2,}", q))
     q_bigrams = {chunk[i:i+2] for chunk in query_chars for i in range(len(chunk)-1)}
     # A real user's question is longer than a published article title. Keep
@@ -388,7 +388,7 @@ def search(records, question, limit=12):
         "no_fit": not scored, "total_candidates": len(scored),
         "matching_method": "PUBLIC_JA_TITLE_AND_313_PUBLISHED_JA_HUMAN_DERIVATIVE_EN_ZH_SUMMARIES_HEURISTIC",
         "source_read_required": True, "author": IDENTITY,
-        "limits": ("Lexical candidate discovery from 313 published JA titles, short JA human " 
+        "limits": ("Lexical candidate discovery from all published JA titles, short JA human " 
                     "explanations, and existing "
                    "EN/ZH derivative summaries, NOT semantic fit, original-article reading, "
                    "an authoritative translation, or full recall. A no-fit is not proof "
@@ -399,20 +399,20 @@ def search(records, question, limit=12):
 
 TOOLS = [
     {"name": "overview_nakagawa_whole_structure",
-     "description": "Examine the INTEGRATED full published 313-derivative graph (not merely 24 original candidates), available system connections, and canonical source trust boundaries.",
+     "description": "Examine the INTEGRATED full published derivative graph (not merely 24 original candidates), available system connections, and canonical source trust boundaries.",
      "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False}},
     {"name": "list_all_313_derivative_parent_links",
-     "description": "Enumerate ALL 313 published derivative→Parent links with title, subject theme, official canonical original, source-IDs where available and exact derivative README. Pagination or limit=313. Each original must be read separately.",
+     "description": "Enumerate the current 314 published derivative→Parent links with title, subject theme, official canonical original, source-IDs where available and exact derivative README. Pagination or limit=314. Each original must be read separately.",
      "inputSchema": {"type": "object", "properties": {
-         "offset": {"type": "integer", "minimum": 0, "maximum": 313, "default": 0},
-         "limit": {"type": "integer", "minimum": 1, "maximum": 313, "default": 25}},
+         "offset": {"type": "integer", "minimum": 0, "maximum": 314, "default": 0},
+         "limit": {"type": "integer", "minimum": 1, "maximum": 314, "default": 25}},
          "additionalProperties": False}},
     {"name": "inspect_nakagawa_derivative_connections",
-     "description": "Given an OD001..OD313 find its exact official Parent and published-theme/shared-Parent connections, with the unified OD001 system entrance; no fabricated causal implications.",
+     "description": "Given an OD001..OD314 find its exact official Parent and published-theme/shared-Parent connections, with the unified OD001 system entrance; no fabricated causal implications.",
      "inputSchema": {"type": "object", "properties": {"id": {"type": "string"}},
                      "required": ["id"], "additionalProperties": False}},
     {"name": "find_sources_in_whole_structure",
-     "description": "Search all 313 published Japanese titles and bounded explicitly tagged English cases, including AI epistemic failures, internal self-audit, survival conflicts and long-horizon re-selection. Return actual Parent pointers and possible no-fit, never a truth guarantee.",
+     "description": "Search all 314 published Japanese titles and bounded explicitly tagged English cases, including AI epistemic failures, internal self-audit, survival conflicts and long-horizon re-selection. Return actual Parent pointers and possible no-fit, never a truth guarantee.",
      "inputSchema": {"type": "object", "properties": {
          "question": {"type": "string", "minLength": 1, "maxLength": 1500},
          "limit": {"type": "integer", "minimum": 1, "maximum": 50, "default": 12}},
@@ -438,7 +438,7 @@ def handle(req):
     server_info = {"name": NAME, "version": "0.1.0-source"}
     if method == "server/discover" and modern:
         return {"supportedVersions": [VERSION], "capabilities": {"tools": {"listChanged": False}},
-                "instructions": "313 derivatives -> exact original Parent; retrieve actual Parent to apply; explicit non-fit and choice retained.",
+                "instructions": "314 derivatives -> exact original Parent; retrieve actual Parent to apply; explicit non-fit and choice retained.",
                 "resultType": "complete", "_meta": {"io.modelcontextprotocol/serverInfo": server_info}}, None
     if method == "initialize" and not modern:
         return {"protocolVersion": "2025-11-25", "capabilities": {"tools": {"listChanged": False}},
@@ -481,14 +481,21 @@ def handle(req):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--self-test", action="store_true")
-    parser.add_argument("--export", action="store_true", help="Emit full JSON with all 313 Parent pointers (stdout only)")
+    parser.add_argument("--export", action="store_true", help="Emit full JSON with all 314 Parent pointers (stdout only)")
     parser.add_argument("--inspect", help="Inspect OD ID")
     args = parser.parse_args()
     if args.self_test:
         records = graph()
         o = overview(records)
-        assert o["coverage"]["derivatives"] == 313 and o["coverage"]["distinct_parent_urls"] == 313
-        assert len(list_connections(records, limit=313)["entries"]) == 313
+        assert o["coverage"]["derivatives"] == 314 and o["coverage"]["distinct_parent_urls"] == 314
+        assert len(list_connections(records, limit=314)["entries"]) == 314
+        # OD314 must be addressable with correct published original identity.
+        latest = inspect_derivative(records, "OD314")["selected"]
+        assert latest["parent_ncl_id"] == "NCL-α-20261112-49d0fa"
+        assert latest["canonical_parent"].endswith(
+            "/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/")
+        assert [x["id"] for x in search(records, "Compare OD001 and OD314")["matched"]] == ["OD001", "OD314"]
+        assert list_connections(records, offset=313, limit=1)["entries"][0]["id"] == "OD314"
         assert all(x["canonical_parent"].startswith(OFFICIAL) for x in records)
         assert not search(records, "repair the leather handle on a camping lantern")["matched"]
         # Distinct originals, repeated mention, bounded result and invalid ID.
@@ -506,10 +513,10 @@ def main():
         assert search(records, "OD999")["no_fit"]
         assert inspect_derivative(records, "OD312")["selected"]["canonical_parent"].endswith("kernel-evolutionary-stability/")
         assert search(records, "AI self preservation epistemic hallucination")["matched"]
-        assert len(_multilingual_search_index()[0]) == 313
+        assert len(_multilingual_search_index()[0]) == 314
         ja = search(records, "善意でやったのに異議と結果の検証が止まるのはなぜ？")
         assert any(x["id"] == "OD313" and x.get("ja_derivative_evidence") for x in ja["matched"]), ja
-        print("PASS: 313/313 actual local derivative README Parent links, whole-structure graph, no-fit, full export", flush=True)
+        print("PASS: 314/314 actual local derivative README Parent links, whole-structure graph, no-fit, full export", flush=True)
     elif args.export:
         print(json.dumps({"overview": overview(graph()), "entries": graph()}, ensure_ascii=False, indent=2))
     elif args.inspect:
