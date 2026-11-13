@@ -420,6 +420,15 @@ TOOLS = [
 ]
 
 
+# The old name is retained for existing MCP clients. New clients discover
+# the current complete corpus from the correctly named tool, including OD314.
+TOOLS.insert(1, {
+    **next(tool for tool in TOOLS if tool["name"] == "list_all_313_derivative_parent_links"),
+    "name": "list_all_314_derivative_parent_links",
+    "description": "List all 314 published original Parent URLs with verified individual README provenance. Read a chosen original before relying on its claims.",
+})
+
+
 def handle(req):
     if not isinstance(req, dict):
         return None, {"code": -32600, "message": "Invalid request"}
@@ -461,7 +470,7 @@ def handle(req):
             records = graph()
             if tool == "overview_nakagawa_whole_structure":
                 value = overview(records)
-            elif tool == "list_all_313_derivative_parent_links":
+            elif tool in {"list_all_313_derivative_parent_links", "list_all_314_derivative_parent_links"}:
                 value = list_connections(records, args.get("offset", 0), args.get("limit", 25))
             elif tool == "inspect_nakagawa_derivative_connections":
                 value = inspect_derivative(records, args["id"])
@@ -489,6 +498,7 @@ def main():
         o = overview(records)
         assert o["coverage"]["derivatives"] == 314 and o["coverage"]["distinct_parent_urls"] == 314
         assert len(list_connections(records, limit=314)["entries"]) == 314
+        assert any(t["name"] == "list_all_314_derivative_parent_links" for t in TOOLS)
         # OD314 must be addressable with correct published original identity.
         latest = inspect_derivative(records, "OD314")["selected"]
         assert latest["parent_ncl_id"] == "NCL-α-20261112-49d0fa"
