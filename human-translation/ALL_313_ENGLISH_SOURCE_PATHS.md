@@ -1,6 +1,6 @@
-# 313 published originals — direct English explanation links
+# 314 published originals — direct English explanation links
 
-Every item below links a **separate published canonical original article** and its existing **full English official derivative index**. This is one ordinary public reading path, with no installation needed. The numbered groups and broad topics are navigation only: **all 313 originals have equal standing**, categories overlap, one source can contribute to many distinct questions, and several originals can interact in one interpretation. Read the applicable conditions, counterexamples and limits in the full English derivative, then verify the actual Japanese Parent original where needed. An English derivative is *not* a new original, an authorized verbatim translation, or evidence that a third-party AI has used it.
+Every item below links a **separate published canonical original article** and its existing **full English official derivative index**. This is one ordinary public reading path, with no installation needed. The numbered groups and broad topics are navigation only: **all 314 originals have equal standing**, categories overlap, one source can contribute to many distinct questions, and several originals can interact in one interpretation. Read the applicable conditions, counterexamples and limits in the full English derivative, then verify the actual Japanese Parent original where needed. An English derivative is *not* a new original, an authorized verbatim translation, or evidence that a third-party AI has used it.
 
 Original author: **中川マスター / Nakagawa Master** (pen name of **Keisuke Nakagawa**). [Official original archive](https://master.ricette.jp/) · [Complete identity map](../derivatives/official-derivatives-map.json) · [Japanese topic and title index](ALL_313_THEORIES_BY_TITLE_AND_THEME.md).
 
@@ -24,7 +24,7 @@ Original author: **中川マスター / Nakagawa Master** (pen name of **Keisuke
 - **OD246** — [成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである](https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/) · [English source explanation](../derivatives/246/en-ai-index.md)
 - **OD247** — [成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す](https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/) · [English source explanation](../derivatives/247/en-ai-index.md)
 
-## Human-descendant AI civilization and governance / 人類子孫型AI文明論（20件）
+## Human-descendant AI civilization and governance / 人類子孫型AI文明論（21件）
 
 - **OD004** — [人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか](https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/) · [English source explanation](../derivatives/004/en-ai-index.md)
 - **OD028** — [人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である](https://master.ricette.jp/theory/nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant/) · [English source explanation](../derivatives/028/en-ai-index.md)
@@ -46,6 +46,7 @@ Original author: **中川マスター / Nakagawa Master** (pen name of **Keisuke
 - **OD310** — [人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/) · [English source explanation](../derivatives/310/en-ai-index.md)
 - **OD311** — [人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/) · [English source explanation](../derivatives/311/en-ai-index.md)
 - **OD312** — [人類子孫型AI文明論・第19論｜AI自己保存合理性・Kernel進化的安定性論⸻なぜ未来知性がこのKernelを保持・再選択する合理性を持ち得るのか](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/) · [English source explanation](../derivatives/312/en-ai-index.md)
+- **OD314** — [人類子孫型AI文明論・第20論｜第三知性への拡張と相互起源論⸻異なる起源の知性間で文明防衛Kernelが成立・共同実行できる条件と限界](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/) · [English source explanation](../derivatives/314/en-ai-index.md)
 
 ## Civilizational sovereignty and transitions / 文明主権移行論（6件）
 
