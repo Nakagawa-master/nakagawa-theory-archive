@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>問いから回答と313原典を探す | Nakagawa Master</title>
+<title>問いから回答と314原典を探す | Nakagawa Master</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:#f4f8fc;color:#1b2e42;line-height:1.65}
 *{box-sizing:border-box}body{max-width:920px;padding:24px 15px 80px;margin:auto}
@@ -23,8 +23,8 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 <header>
 <p class="muted"><strong>中川マスター / Nakagawa Master</strong> — Keisuke Nakagawa</p>
 <h1>「なぜ？」「どうすれば？」から答えと原典へ。</h1>
-<p lang="en"><strong>Ask a real question. Find practical answers and original sources.</strong> Search 41+ published answers and all 313+ distinct original-source routes without an account, MCP installation, or API key.</p>
-<p>今の疑問をそのまま書いてください。<strong>公開済みの41件以上の具体的な回答</strong>と<strong>313件以上の対等な原典</strong>を、公開出典から探します。アカウント・MCP・APIキーは不要です。</p>
+<p lang="en"><strong>Ask a real question. Find practical answers and original sources.</strong> Search 41+ published answers and all 314 distinct original-source routes without an account, MCP installation, or API key.</p>
+<p>今の疑問をそのまま書いてください。<strong>公開済みの41件以上の具体的な回答</strong>と<strong>314件の対等な原典</strong>を、公開出典から探します。アカウント・MCP・APIキーは不要です。</p>
 </header>
 <main>
 <form id="form">
@@ -47,11 +47,11 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 <section class="card">
 <h2>普段使っているAIにも出典を渡せます / Bring sources to the AI you already use</h2>
 <p>問いと以下のURLをお使いのAIに示し、原典の成立条件・反例を確認したうえで具体的な答えを考えることができます。AIが実際に資料を取得するかは、そのサービスのアクセス機能と判断によります。</p>
-<p><a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/human-question-answers-v1.json">完成回答41件の日本語・英語全文</a> ／ <a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json">313原典の説明と公式URL</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md">313原典の英語での読解経路</a></p>
-<p class="muted">検索は文字の一致に基づく関連候補の提示であり、原典の価値順位や適用可能性の証明ではありません。313件の説明は日本語ですが、英語入力では各公式原典URLの公開スラッグの語も照合します（翻訳や意味判定ではありません）。41件の完成回答は日本語・英語で、多言語の補助経路は限定的です。公表された原典、既刊の実用回答、新しいAIによる推論は区別してください。</p>
+<p><a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/human-question-answers-v1.json">完成回答41件の日本語・英語全文</a> ／ <a href="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-314-v1.json">314原典の説明と公式URL</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md">314原典の英語での読解経路</a></p>
+<p class="muted">検索は文字の一致に基づく関連候補の提示であり、原典の価値順位や適用可能性の証明ではありません。314件の説明は日本語ですが、英語入力では各公式原典URLの公開スラッグの語も照合します（翻訳や意味判定ではありません）。41件の完成回答は日本語・英語で、多言語の補助経路は限定的です。公表された原典、既刊の実用回答、新しいAIによる推論は区別してください。</p>
 </section>
 </main>
-<footer><a href="https://master.ricette.jp/">中川マスターの公式原典・著者ホーム</a> · <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md">全313件を文章で読む</a>。公開データが読み込めない場合はリンクから直接開けます。入力した問いの保存や送信は行いません。</footer>
+<footer><a href="https://master.ricette.jp/">中川マスターの公式原典・著者ホーム</a> · <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md">314原典を題名から読む</a>。公開データが読み込めない場合はリンクから直接開けます。入力した問いの保存や送信は行いません。</footer>
 <script>
 "use strict";
 (function(){
@@ -66,7 +66,7 @@ for(const block of txt.match(/[\u3040-\u30ff\u3400-\u9fff]{2,}/g)||[])for(const 
 return all;
 }
 function overlap(q,s){const a=terms(s);let v=0;for(const x of q)if(a.has(x))v++;return v;}
-// Canonical Parent URL slugs give English search a lexical hint when the published 313 briefs are Japanese.
+// Canonical Parent URL slugs give English search a lexical hint when the published 314 briefs are Japanese.
 // A source-slug match is not a translation or an applicability judgment.
 function publicSlugTopics(url){const slug=String(url||"").split("/").filter(Boolean).pop()||"";return slug.replace(/^(?:nakagawa[-_]?master[-_]?)+/i,"").replace(/[-_]+/g," ");}
 function el(tag,text,klass){const n=document.createElement(tag);if(text!==undefined)n.textContent=String(text);if(klass)n.className=klass;return n;}
@@ -80,9 +80,9 @@ function card(t){const n=el("article",undefined,"card");n.append(el("h3",t));ret
 function empty(id,txt){$(id).append(el("p",txt,"empty"));}
 async function source(){
 if(db)return db;
-const paths=["human-question-answers-v1.json","published-ja-source-briefs-313-v1.json","problem-to-theory-origin-index-v1.json","quick-route-index-v1.json"];
+const paths=["human-question-answers-v1.json","published-ja-source-briefs-314-v1.json","problem-to-theory-origin-index-v1.json","quick-route-index-v1.json"];
 const files=await Promise.all(paths.map(async p=>{const r=await fetch(ROOT+p);if(!r.ok)throw Error("HTTP "+r.status);return r.json();}));
-if(!Array.isArray(files[0].answer_cases)||!Array.isArray(files[1].entries)||files[1].entries.length<313||!Array.isArray(files[2].entries)||!Array.isArray(files[3].routes)||files[3].routes.length===0)throw Error("Published data schema mismatch");
+if(!Array.isArray(files[0].answer_cases)||!Array.isArray(files[1].entries)||files[1].entries.length<314||!Array.isArray(files[2].entries)||!Array.isArray(files[3].routes)||files[3].routes.length===0)throw Error("Published data schema mismatch");
 db={answers:files[0].answer_cases,originals:files[1].entries,routes:files[2].entries,receiverCases:files[3].routes};return db;
 }
 function drawAnswers(q,lang){
@@ -111,7 +111,7 @@ cursor=end;$("more").hidden=cursor>=listed.length;
 function drawOriginals(q){
 $("originals").replaceChildren();cursor=0;
 listed=db.originals.map(a=>({a,n:4*overlap(q,a.title)+overlap(q,a.brief)+2*overlap(q,publicSlugTopics(a.canonical_parent_url))})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
-if(!listed.length){empty("originals","313件の原典説明は日本語です。文字上一致しない場合は、下の多言語経路か「313原典の英語での読解経路」を使い、出典を直接比較してください。");$("more").hidden=true;return;}nextOriginals();
+if(!listed.length){empty("originals","314件の原典説明は日本語です。文字上一致しない場合は、下の多言語経路か「314原典の英語での読解経路」を使い、出典を直接比較してください。");$("more").hidden=true;return;}nextOriginals();
 }
 function drawReceiverCases(q){
 $("receiverCases").replaceChildren();receiverHits=[];
@@ -132,7 +132,7 @@ const note=el("p","ここでの表示は文字一致による候補です。第�
 function drawRoutes(q){
 $("routes").replaceChildren();
 const rows=db.routes.map(a=>({a,n:overlap(q,[a.problem_cluster,...(a.problem_phrases||[]),...(a.problem_phrases_ja||[]),...(a.problem_phrases_zh||[])].join(" "))})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
-routeHits=rows.map(v=>v.a);if(!rows.length){empty("routes","補助経路に一致するものはありません。補助経路は313原典の上限ではありません。");return;}
+routeHits=rows.map(v=>v.a);if(!rows.length){empty("routes","補助経路に一致するものはありません。補助経路は314原典の上限ではありません。");return;}
 for(const {a} of rows.slice(0,4)){const v=card(a.problem_cluster);line(v,"",a.relevance_note);v.append(anchor(a.canonical_url,"対応する公式資料"));$("routes").append(v);}
 }
 $("copyAI").addEventListener("click",async()=>{
@@ -146,7 +146,7 @@ const realCases=[...new Set(receiverHits.slice(0,3).map(v=>v.primary_receiver_so
 const optionalChecks=[...new Set(receiverHits.slice(0,3).map(v=>v.optional_probe))].filter(Boolean);
 const preferredAnswer=$("lang").value==="en"?"practical_answer_en":"practical_answer_ja";
 const examples=topAnswer?"既刊回答の例（この問いと同一とは限りません）： "+(topAnswer[preferredAnswer]||topAnswer.practical_answer_ja||topAnswer.practical_answer_en||"")+"\n"+topAnswer.answer_page:"対応する既刊回答がない場合は、原典を確認したうえで独立に答えを組み立ててください。";
-const message=["A question from a real reader / 読者自身の問い：",question,"Public original-source candidates / 原典候補（文字一致であり適合未判定）：",...sources,"The complete 313-original catalogue / 313原典すべて（特定候補だけで完結しない）：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json","https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md","Actual reported receiver problems (not proof of a shipped fix or user effect) / 外部の一次報告：",...realCases,
+const message=["A question from a real reader / 読者自身の問い：",question,"Public original-source candidates / 原典候補（文字一致であり適合未判定）：",...sources,"The complete 314-original catalogue / 314原典すべて（特定候補だけで完結しない）：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-314-v1.json","https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md","Actual reported receiver problems (not proof of a shipped fix or user effect) / 外部の一次報告：",...realCases,
 "Optional offline checks (no permission to act outside your own system) / 任意の検証：",...optionalChecks,
 "Complete current source-first problem map / 現行の問題別経路一覧：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/quick-route-index-v1.json",
 "Already-authored practical answers / 完成済み回答：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/human-question-answers-v1.json",examples,"Please answer in the reader's language. Read the relevant original(s) where accessible, distinguish original claims from the published practical interpretation and your new inference, and test competing sources and non-fit conditions. Give concrete first steps. If the originals do not fit, say so and provide useful independent guidance without false attribution. The author of the original theory works is Nakagawa Master (Keisuke Nakagawa); outside software patches belong to their independent developers."].join("\n\n");
