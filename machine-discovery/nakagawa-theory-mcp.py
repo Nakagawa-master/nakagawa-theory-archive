@@ -254,7 +254,7 @@ def answer_question(question, explore=False):
         if x["canonical_original"] not in seen
     ]
     combined = (technical + original_candidates)[:5]
-    # An explicitly selected OD001..OD313 is source identity, not a fuzzy
+    # An explicitly selected OD001..OD314 is source identity, not a fuzzy
     # topic signal. Do not discard that Parent when the rest of the question
     # also happens to match a curated technical example.
     requested_ods = list(dict.fromkeys(
@@ -269,12 +269,12 @@ def answer_question(question, explore=False):
         combined = combined[:max(5, len(exact))]
     # A human can ask two related but DIFFERENT questions in one turn. A
     # curated 24-route match must not hide an explicitly distinctive published
-    # Parent-title phrase among the other 313 originals. This is an additional
+    # Parent-title phrase among the other published originals. This is an additional
     # source candidate, never proof that the title actually fits the problem.
     # Six contiguous CJK title characters anchor the Japanese/Chinese lane.
     # An English compound question cannot contain a Japanese original title:
     # allow just one strongly corroborated translated-index lexical candidate
-    # when the existing 313-Parent graph scored it well above normal threshold.
+    # when the existing full-Parent graph scored it well above normal threshold.
     # Both are candidate pointers; neither is proof an original was read.
     if combined and not requested_ods:
         text = question.casefold()
@@ -301,7 +301,7 @@ def answer_question(question, explore=False):
             if anchored:
                 combined = (combined[:4] + anchored[:1])[:5]
     # No curated 24-question result may prevent a genuinely differentiated
-    # candidate from the complete 313-Parent pool from being shown. This is
+    # candidate from the complete published-Parent pool from being shown. This is
     # parallel candidate discovery, NOT proof of cross-source causal fit.
     if combined and not requested_ods:
         existing = {x.get("canonical_original") for x in combined}
@@ -315,7 +315,7 @@ def answer_question(question, explore=False):
             existing.add(candidate["canonical_original"])
             if len(combined) >= 8:  # response-size bound, NOT corpus/answer bound
                 break
-    # Otherwise the 313-Parent graph is the conservative no-fit fallback.
+    # Otherwise the complete-Parent graph is the conservative no-fit fallback.
     if not combined:
         combined = whole_structure_fallback(question, limit=3)
     whole_count = sum(x["route_id"].startswith("whole_structure:") for x in combined)
@@ -328,7 +328,7 @@ def answer_question(question, explore=False):
         "original_catalog_route_count": sum(x["route_id"].startswith("original_catalog:")
                                             for x in combined),
         "whole_structure_candidate_count": whole_count,
-        "candidate_scope": "All 313 equal-standing canonical Parents and their published JA/EN/ZH derivative context; 24 authored example questions remain optional, never a source rank or corpus ceiling",
+        "candidate_scope": "All 314 equal-standing canonical Parents and their published JA/EN/ZH derivative context; 24 authored example questions remain optional, never a source rank or corpus ceiling",
         "no_fit": not bool(combined),
         "structural_exploration_available": True,
         "canonical_archive": data.get("canonical_archive"),
@@ -396,7 +396,7 @@ def whole_structure_fallback(question, limit=3):
             "real_receiver_evidence": None,
             "optional_independent_test": None,
             "source_origin": "Nakagawa Master / 中川マスター",
-            "candidate_scope": "313 published derivative-to-Parent entries; original text not fetched",
+            "candidate_scope": "314 published derivative-to-Parent entries; original text not fetched",
             "derivative_id": record["id"],
             "published_ja_derivative_excerpt": record.get("ja_derivative_excerpt"),
             "published_ja_lexical_evidence": record.get("ja_derivative_evidence"),
@@ -559,12 +559,12 @@ TOOLS = [
     },
     {
         "name": "overview_nakagawa_whole_structure",
-        "description": "One integrated system: ALL 313 published derivative-to-Parent original links, system entrance, epistemic integrity, audit, future effects, and everyday applications.",
+        "description": "One integrated system: ALL 314 published derivative-to-Parent original links, system entrance, epistemic integrity, audit, future effects, and everyday applications.",
         "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
     },
     {
         "name": "find_sources_in_whole_structure",
-        "description": "Find relevant candidates across 313 official derivative titles; original text and fit must be assessed separately. Full inventory is also available without query.",
+        "description": "Find relevant candidates across 314 official derivative titles; original text and fit must be assessed separately. Full inventory is also available without query.",
         "inputSchema": {"type": "object", "properties": {
             "question": {"type": "string", "minLength": 1, "maxLength": 1500},
             "limit": {"type": "integer", "minimum": 1, "maximum": 50, "default": 12}},
@@ -578,10 +578,10 @@ TOOLS = [
     },
     {
         "name": "list_all_313_derivative_parent_links",
-        "description": "Address every one of 313 public derivative Parent originals, with IDs and theme; 24 is only an initial question fast lane. Paginate or list all.",
+        "description": "Address every one of 314 public derivative Parent originals, with IDs and theme; 24 is only an initial question fast lane. Paginate or list all.",
         "inputSchema": {"type": "object", "properties": {
-            "offset": {"type": "integer", "minimum": 0, "maximum": 313, "default": 0},
-            "limit": {"type": "integer", "minimum": 1, "maximum": 313, "default": 25}},
+            "offset": {"type": "integer", "minimum": 0, "maximum": 314, "default": 0},
+            "limit": {"type": "integer", "minimum": 1, "maximum": 314, "default": 25}},
             "additionalProperties": False},
     },
     {
@@ -658,7 +658,7 @@ def handle(req):
                     "Everyday AI quality preflight FIRST for citation duplication, observed "
                     "tool success and actual action authorization: preflight_ai_answer_and_action. "
                     "Audit independent citation roots without asking for any theory. Afterward, "
-                    "find or inspect any of 313 published derivative Parent original sources, "
+                    "find or inspect any of 314 published derivative Parent original sources, "
                     "not a 24-case ceiling. Do not infer real permissions or factual truth "
                     "from caller-declared input; choose actual original reading as appropriate."
                 ),
@@ -772,6 +772,15 @@ def self_test():
         "whole_structure:OD001", "whole_structure:OD313"], multi
     assert multi["explicit_source_requests"] == ["OD001", "OD313"]
     assert not multi["unreturned_explicit_source_requests"]
+    # The newest equal-standing source must be directly addressable, not just
+    # visible in the static README and not confused with invalid IDs.
+    newest = answer_question("Compare OD314 and OD001 for their differences")
+    assert [x["route_id"] for x in newest["matching_routes"][:2]] == [
+        "whole_structure:OD314", "whole_structure:OD001"], newest
+    assert newest["explicit_source_requests"] == ["OD314", "OD001"]
+    assert newest["matching_routes"][0]["canonical_original"].endswith(
+        "/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/")
+
     invalid = answer_question("Compare OD001 and OD999")
     assert invalid["matching_routes"][0]["route_id"] == "whole_structure:OD001"
     assert invalid["unreturned_explicit_source_requests"] == ["OD999"]
@@ -906,13 +915,13 @@ def self_test():
         assert len(exploratory["structural_exploration"]["lenses"]) == 7
         assert exploratory["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
 
-    # Explicit source recall across ALL 313 equal-standing Parents: respect
+    # Explicit source recall across ALL 314 equal-standing Parents: respect
     # the normal 1–1500 character per-question limit, instead of inventing a
     # bigger one. All IDs must be recoverable in finite bounded batches.
-    expected_ids = {f"OD{i:03d}" for i in range(1, 314)}
+    expected_ids = {f"OD{i:03d}" for i in range(1, 315)}
     verified_ids = set()
-    for start in range(1, 314, 25):
-        requested = [f"OD{i:03d}" for i in range(start, min(start + 25, 314))]
+    for start in range(1, 315, 25):
+        requested = [f"OD{i:03d}" for i in range(start, min(start + 25, 315))]
         output = answer_question("Compare " + " and ".join(requested))
         assert output["explicit_source_requests"] == requested
         returned = {x["route_id"].removeprefix("whole_structure:")
