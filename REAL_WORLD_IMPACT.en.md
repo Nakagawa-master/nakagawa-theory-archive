@@ -1645,7 +1645,7 @@ In [LlamaIndex PR #23460](https://github.com/run-llama/llama_index/pull/23460), 
 
 **A different community reviewer @VANDRANKI independently found other request-wide and Bedrock integration defects** and [the PR author implemented a later, separate Bedrock fix and tests](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102). Those extra findings belong to that reviewer, not Nakagawa Master. [PR #23460 remains open](https://github.com/run-llama/llama_index/pull/23460), with upstream merge, official package release and affected actual-use results still pending.
 
-## 72. Qwen Code | A cancelled AI tool loses its connection: an independent developer changed recovery after two source-specific counterexamples
+## 72. Qwen Code | A cancelled AI tool loses its connection: an independent developer changed recovery after three source-specific counterexamples
 
 **Cancelling an AI tool should not leave the next tool call disconnected—or make the cancellation wait for the repair itself.** [Qwen Code issue #12160](https://github.com/QwenLM/qwen-code/issues/12160) describes an actual MCP problem: after an in-flight request is aborted, the transport can disconnect and the surviving session inherits a broken connection.
 

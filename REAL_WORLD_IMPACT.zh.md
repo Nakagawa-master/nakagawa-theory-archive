@@ -1652,7 +1652,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 另外一位审查者 @VANDRANKI 独立发现了请求总量与Bedrock整合的其他问题，[作者随后又修正Bedrock的类型错误并加入测试](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102)。这些新的发现归属于那位审查者，而非中川マスター。[PR仍在开放状态](https://github.com/run-llama/llama_index/pull/23460)，正式合并、发布与实际用户结果仍待核实。
 
-## 72. Qwen Code｜取消AI工具调用后连接中断：独立开发者根据两个具体反例修改恢复机制
+## 72. Qwen Code｜取消AI工具调用后连接中断：独立开发者根据三个具体反例修改恢复机制
 
 **用户已经取消AI工具调用，取消操作不应继续等待连接修复，下一次调用也不应继承失效连接。** [Qwen Code问题 #12160](https://github.com/QwenLM/qwen-code/issues/12160)记录了真实的MCP连接问题：执行中的请求被取消后，传输连接可能断开，而继续存活的会话仍持有失效状态。
 

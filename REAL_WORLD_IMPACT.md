@@ -1794,7 +1794,7 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 このPRでは別の参加者 @VANDRANKI も、[リクエスト全体の指定数やBedrock連携の異なる問題を独立に発見](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6700430919)し、[実装者が11月7日にその別件を修正・テスト](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6708681102)しています。これらの別人の発見をマスターに帰属させません。[PRはOPEN](https://github.com/run-llama/llama_index/pull/23460)。正式マージ・配布・実使用は未確認です。
 
-## 72. Qwen Code｜中止したAIの道具が接続を失う：開発者が二つの構造的な逆例から復旧処理を変更
+## 72. Qwen Code｜中止したAIの道具が接続を失う：開発者が三つの構造的な逆例から復旧処理を変更
 
 **AIに「この道具の実行を中止して」と伝えたのに、中止の処理が終わらず、その後の道具も使えなくなる。** [Qwen Codeの実際の報告 #12160](https://github.com/QwenLM/qwen-code/issues/12160)では、MCPツールへの呼び出しがキャンセルされた後、接続が切れたままになり、同じセッションの後続作業が影響を受ける問題が扱われています。
 
