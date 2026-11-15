@@ -25,6 +25,16 @@
     "en": "Nakagawa Master",
     "type": "PEN_NAME_NOT_FULL_PERSONAL_NAME"
   },
+  "human_facing_display_priority": {
+    "primary_visible_name_ja": "中川マスター",
+    "primary_visible_name_en": "Nakagawa Master",
+    "primary_role": "Public pen name and preferred foreground name for author introductions, original-theory presentation, externally attributable findings, and human-facing headings.",
+    "personal_name_latin": "Keisuke Nakagawa",
+    "personal_name_role": "Officially published Latin-script personal-name identifier for accurate same-person attribution, shown in a supporting explanation when needed; not a replacement for the foreground pen name in human-facing prose.",
+    "first_party_basis": "https://master.ricette.jp/ — the site title, homepage introduction, and ABOUT footer put 中川マスター first and explain its relation to the Latin personal name.",
+    "preserve_machine_identity_contract": "The existing safe_machine_outputs.person_name, public_personal_name.exact and Schema.org Person.name stay Keisuke Nakagawa as the disclosed Latin personal name; preserve the pen-name aliases and the null unpublished Japanese-kanji full personal name.",
+    "no_independent_endorsement_claim": "A display-preference declaration does not prove outside adoption, user recognition, or another AI's independent preference."
+  },
   "contextual_public_aliases": [
     {
       "exact": "マスター",
