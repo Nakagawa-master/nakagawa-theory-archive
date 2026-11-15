@@ -1660,7 +1660,9 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 随后，中川マスター又[指出新的断线保护判断无法用于生产路径实际传入的原始MCP SDK Client](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983)：测试替身拥有`getStatus()`，真实Client却没有。**开发者明确承认并[改用主动断开意图标记，加入采用真实Client形状的红绿对照测试](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638)**。
 
-另一位审查者此后[独立指出主动Disconnect仍可能触发重新连接和调用重放的另一条路径](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062)，这项后续发现应归属于该审查者。[PR #16661目前仍为OPEN](https://github.com/QwenLM/qwen-code/pull/16661)，尚不能视为已经正式合并、发布或由受影响用户验证恢复效果。
+2026年11月14日，中川マスター又[指出第三种可检验的顺序反例](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6873968945)：真实HTTP/SSE传输故障可能先于用户取消请求，把本次调用的连接标记为DISCONNECTED；若仅在取消后注册监听，就等不到新的断线状态变化。**独立开发者 @2SinceJuly 明确承认判断正确，随后[在提交 `dc7a7c180` 中保存调用开始前的连接状态并新增两种顺序的回归测试](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6882374727)**。开发者报告本地194/194个工具测试通过。代码和测试由独立开发者本人实施，不能误称为中川マスター亲自提交的修复。
+
+另一位独立审查者后来又[指出用户主动停止服务器后，另一条路径仍可能错误地重新连接并重放请求](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4576303333)。这项后续发现属于该审查者。[PR #16661目前仍为OPEN](https://github.com/QwenLM/qwen-code/pull/16661)，尚未验证上游合并、包含该代码的正式发布或原受影响用户实际安装后的恢复。
 
 ## 73. LiteLLM｜新AI模型无法调用工具：开发者根据中川マスター提出的反向条件补全测试
 

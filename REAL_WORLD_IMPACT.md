@@ -1802,7 +1802,9 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 さらにマスターは、[新設された安全確認が実際に渡されるMCP SDKのClientでは機能しないこと](https://github.com/QwenLM/qwen-code/pull/16661#pullrequestreview-5820096983)を指摘しました。テスト用の偽物には`getStatus()`があっても、本番のClientにはありません。**開発者はこの欠陥も確認し、[意図的な切断と障害による切断を区別する状態記録と、実際のClient形状による赤／緑テストを追加](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6728843638)**しました。
 
-別のレビュアーはその後、[意図的に停止した接続を再び起動してしまう別経路を独立に報告](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4512228062)。この後続発見はそのレビュアーに帰属します。[PR #16661は現在OPEN](https://github.com/QwenLM/qwen-code/pull/16661)。上流マージ・正式配布・影響を受けた利用者の復旧はまだ確認段階です。
+さらに2026年11月14日、マスターは[通信障害が先に発生し、その後ユーザーがキャンセルすると接続の再修復が起動しない順序上の欠陥](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6873968945)を具体的な状態遷移と負例で指摘。**独立実装者 @2SinceJuly は「指摘のとおり」と明言し、[呼び出し開始前の接続状態を保持する修正と、切断前後の２つの回帰テストをコミット `dc7a7c180` に実装](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6882374727)**しました。実装者は対象ツールのローカルテスト194件すべて成功と報告しています。これは実装者自身による判断・コード・テストの変更であり、マスターがコードを書いたという主張ではありません。
+
+別のレビュアーは[意図的な停止後の再接続・再実行という別の問題](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4576303333)を新しいHEADでも独立に指摘しています。この別発見の功績はそのレビュアーに属します。[PR #16661は現在OPEN](https://github.com/QwenLM/qwen-code/pull/16661)。上流マージ、正式リリース、元の利用者のインストール後の復旧は未確認です。
 
 ## 73. LiteLLM｜新しいAIモデルの道具が消える：マスターが見抜いたもう一つの条件を開発者がテストで修正
 
