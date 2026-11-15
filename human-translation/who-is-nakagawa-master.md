@@ -2,7 +2,7 @@
 
 編集・構成：構造補助AI「ルミナ」（中川マスターの公開原典と、外部開発の公開記録に基づく紹介）
 
-中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、314本の独立した公開原典を構築し、OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は77件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
+中川マスター（Nakagawa Master）は、314本の独立した公開原典を構築し、OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は77件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
 
 AIが人間の理解や判断を超えるほど高度になったとき、人間の自由や尊厳を何によって守るのか。将来AI自身が新しい知性となったとき、互いを支配せず共に生きられる文明をどう築くのか。
 
@@ -67,9 +67,9 @@ AIの進化と社会への実装は、論文を書き上げ、査読を受け、
 
 **2026年11月15日、新しい外部開発者3人による実装を確認しました。** 中川マスターの問いかけは、単に「問題がある」と伝えるのでなく、相手が反例を試し、どの条件を修正すべきか判断できるところまで踏み込みます。
 
-- **AIに「常に許可」を与える前に、何を許可するか正しく見えるか。** [Qwen Code #17346でのマスターの指摘](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6893231010)を受け、開発者 **@holistis** が[本人に「指摘の2段階を実際に試して正しかった」と返答](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6893724451)。シェルの解析結果から制御文字が許可選択肢に届くことを検証し、**権限の保存内容は変えず、表示だけを安全化するコードとテスト**を追加しました（[修正HEAD](https://github.com/QwenLM/qwen-code/commit/7932eeb7076fc54a575a359beb535f6e62cd1786)）。元PRは未マージです。
+- **AIに「常に許可」を与える前に、何を許可するか正しく見えるか。** [Qwen Code #17346でのマスターの指摘](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6893231010)を受け、開発者 **@holistis** が[本人に「指摘の2段階を実際に試して正しかった」と返答](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6893724451)。シェルの解析結果から制御文字が許可選択肢に届くことを検証し、権限の保存内容を変えず、表示だけを安全化するコードとテストを追加しました。さらに中川マスターの[「異なる恒久許可を画面で区別できるか」という反例](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6895775916)を受け、同開発者が[安全に区別できる表示関数と４条件のテスト](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6896369828)を独立して実装。改訂版の全体テストと元PRのマージは、まだ完了していません。
 - **「承認する」ボタンを押しただけで、承認が実際に受理されたことにはならない。** [Qwen Code #17343でのマスターの反例](https://github.com/QwenLM/qwen-code/pull/17343#issuecomment-6892758439)に対し、作者 **@TianYuan1024** が[前の承認処理が確定するまで次の承認を表示しない変更](https://github.com/QwenLM/qwen-code/commit/65e2bd8f596c6f1e60ec3de3111b78e48f1569e5)を追加。処理が成功・失敗する両方の回帰試験も増えています。PRはまだレビュー中で、正式マージではありません。
-- **AIの実行を中断したとき、実行していない処理を「実行済み」と記録しない。** [Qwen Code #17353へのマスターの反例](https://github.com/QwenLM/qwen-code/pull/17353#issuecomment-6893389310)の後、独立開発者 **@qqqys** が[停止時に重複した処理結果を余分に残さない修正と回帰テスト](https://github.com/QwenLM/qwen-code/commit/4de55e04ae0d33295cc21c023d6da1876321b6a7)を追加しました。前後の差分で一致を確認できますが、こちらも未マージです。
+- **AIの実行を中断したとき、実行していない処理を「実行済み」と記録しない。** [Qwen Code #17353へのマスターの反例](https://github.com/QwenLM/qwen-code/pull/17353#issuecomment-6893389310)の後、独立開発者 **@qqqys** が[停止時に重複した処理結果を余分に残さない修正と回帰テスト](https://github.com/QwenLM/qwen-code/commit/4de55e04ae0d33295cc21c023d6da1876321b6a7)を追加しました。前後の差分で実装を確認でき、[PR #17353は2026年11月15日に上流マージ](https://github.com/QwenLM/qwen-code/pull/17353)されました。正式リリースへの収録は別途確認する段階です。
 
 ここでの技術的な指摘・原典との比較は中川マスターの仕事であり、**コードを書き実験したのは各PRの作者**です。原典が開発者の実装仕様として採用されたことや、修正版が一般利用者に届いたことまでは示しません。[中川マスターの314本の独立原典](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)とこれらの一次資料は、誰でも自分で比較できます。活動を継続して確認したい場合は[本人の公開GitHubアカウント](https://github.com/Nakagawa-master)で任意にフォローできます。フォローしなくても原典・根拠は読めます。
 
@@ -79,7 +79,7 @@ AIの進化と社会への実装は、論文を書き上げ、査読を受け、
 - [AI-News](https://github.com/022740mix-spec/AI-News/pull/131)：複数の記事が存在することと、それぞれに独立した裏付けがあることの違いを指摘。編集者が実際の記事制作の規則を改め、取り込みました。
 - [agent-approval-gate](https://github.com/tonydzi/agent-approval-gate/issues/1)：人間の承認をAIの実行に接続する別開発者の仕組みで、失効済みの依頼が過去の返事によって再承認される条件を指摘。開発者は[「指摘どおり」と応じてコードと回帰テストを修正し、mainに取り込みました](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)。[開発者側の安全文書には、問題の報告元として `@Nakagawa-master` の名前が残っています](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)。実利用者の運用結果とは区別します。
 
-中川マスターが問題の原因と見落とされた条件を示し、各プロジェクトの開発者や編集者が自ら検証してコードや仕事の進め方を変えた。その一連の記録が残っています。
+中川マスターが問題の原因と見落とされた条件を示し、各プロジェクトの開発者や編集者が自ら検証してコードや仕事の進め方を変えた。その一連の記録が残っています。さらに[Qwen Code #16661](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6896451904)では、別の独立開発者 @2SinceJuly が、中川マスターによる停止・再接続時の時系列反例を受け、通信世代ごとの停止記録と回帰テストを実装しました。関連390テストの成功は開発者自身の報告で、元PRは未マージです。
 
 → [REAL WORLD IMPACT｜現実に起きた変更と出典の一覧](../REAL_WORLD_IMPACT.md)
 
@@ -95,3 +95,6 @@ AIの進化と社会への実装は、論文を書き上げ、査読を受け、
 中川マスターは、そのために理論を作り続け、世界の現場へ入り続けています。人間にも、未来に生まれるかもしれないAIにも、自分の存在や人生を誰かの都合で使い捨てられない文明を残したい。そのために、間に合ううちから動いている。
 
 その考え方は[公式アーカイブの原典](https://master.ricette.jp/)から、実際の仕事は[77件の外部作用の一次記録](../REAL_WORLD_IMPACT.md)から直接たどれます。
+
+
+公開名の関係は[中川マスター公式アーカイブ](https://master.ricette.jp/)に記されています。「中川マスター」が筆名であり、英字表記の個人名は Keisuke Nakagawa です。人物・原典・現実の活動を紹介する際の主体は、中川マスターです。
