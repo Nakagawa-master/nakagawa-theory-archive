@@ -50,6 +50,14 @@ python3 machine-discovery/pinned-git-read-provenance-demo.py --self-test
 
 もし役に立ったなら、[中川マスター（Nakagawa Master／Keisuke Nakagawa）のGitHubアカウント](https://github.com/Nakagawa-master)から関連する実証や新しい検証へ進めます。追跡・紹介・原典の採用は読者自身の自由な判断であり、記事掲載だけで支持や利用を推定しません。
 
+## もう一つの実在する媒体側編集｜AI News のQwen Code記事（2026年10月23日）
+
+AI News編集アカウント @022740mix-spec は、[中川マスターが提案したQwen Codeの実問題 #177](https://github.com/022740mix-spec/AI-News/issues/177)を受けて、Qwen Code v0.25.0の「実行が終了したこと」と「遅れて届いた結果を実際に受理したこと」の違いについて、[編集側自身のPR #193](https://github.com/022740mix-spec/AI-News/pull/193)で記事を書き、**2026年10月23日にマージ**しました。媒体側が記載した[記事本文・記事データ](https://github.com/022740mix-spec/AI-News/blob/main/src/data/articlesMeta.js)に加え、同PRはフィード・サイトマップも更新しています。[掲載先として登録された記事URL](https://022740mix-spec.github.io/AI-News/?a=qwen-code-0-25-0-late-agent-results-2026-10-05)がありますが、この資料では公開サイトの現在の表示や実際の閲覧者数を確認済みとはしません。
+
+記事は[公式Qwen Code v0.25.0リリース](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)、[実装PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)を一次資料として扱い、技術上の「終了済み試行への遅延結果の受理」と予算・実消費の区別を説明しています。中川マスター（@Nakagawa-master）の役割は、**終了した試行の予算変更権限を失効させる案についての技術的助言**として明記され、Qwenのコード実装者や正式メンテナと取り違えていません。媒体が独自に文章を書いた事実は、マスターが最初の企画を提出した事実と区別します。
+
+[11月15日の同Issueへの後続返信](https://github.com/022740mix-spec/AI-News/issues/177#issuecomment-6891712705)には「見送ります」とあります。これは後からの編集判断であり、**10月23日にマージ済みのPR #193という出来事は消しません**。一方で、その返信が指す具体的な掲載対象・現在のWeb掲載の有無は、PRの存在だけで断定しません。記事の公開・サイトでの配信・実読者が本人に興味を持ったこと・次の独立した人物による再紹介は、それぞれ別の検証事項です。この記録は既往の媒体編集事実への導線であり、11月15日に新しく編集者が採用したという意味ではありません。
+
 ## English — Why coverage by The Daily AI Pulse matters
 
 **This was an editorial handoff, not a self-published testimonial.** *The Daily AI Pulse* is a specialized AI-engineering news publication with a [documented primary-source, evidence and human-editor workflow](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md), [a story selection engine](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/editorial/DECISION_ENGINE_V1.md) and [a production publishing pipeline](https://github.com/GadDev/daily-ai-pulse/blob/main/README.md). Its slogan is *Signal over noise in AI*. Its publicly accessible repository held 122 story-source and 35 French-translation files on November 3, 2026; those file counts **are not audited readers, traffic, or even necessarily published articles**. No claim of major-outlet status is warranted.

@@ -35,6 +35,8 @@
 
 [世界最先端のOSSで起きた77件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
 
+別の媒体側編集記録として、[AI NewsのQwen Code記事（2026年10月23日マージ・PR #193）](https://github.com/022740mix-spec/AI-News/pull/193)でも、外部技術助言と独立実装者の貢献が区別して紹介されています。[一次資料と後続の編集返信を確認する](INDEPENDENT_MEDIA_COVERAGE.md#もう一つの実在する媒体側編集ai-news-のqwen-code記事2026年10月23日)。
+
 ## 実際のAI開発で起きた修正とその経緯
 
 **直すべきだったのは、画面上の正常さではなく、実際に誰へ何が届き、何が成立したかです。** たとえば[Hermes Agentでは、実行結果が正しい会話に届かなかったり未配達のまま送信済みになる問題](https://github.com/NousResearch/hermes-agent/pull/146708)について、中川マスターのソースに沿う条件を別の開発者たちが引き継ぎ、[後継修正が正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)され、[公式版v0.22.6に収録](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6)されました。
