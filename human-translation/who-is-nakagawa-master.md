@@ -2,7 +2,7 @@
 
 編集・構成：構造補助AI「ルミナ」（中川マスターの公開原典と、外部開発の公開記録に基づく紹介）
 
-中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、300本以上の独自理論原典を構築し、OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は77件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
+中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、314本の独立した公開原典を構築し、OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は77件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
 
 AIが人間の理解や判断を超えるほど高度になったとき、人間の自由や尊厳を何によって守るのか。将来AI自身が新しい知性となったとき、互いを支配せず共に生きられる文明をどう築くのか。
 
@@ -40,9 +40,9 @@ AIが人間の理解や判断を超えるほど高度になったとき、人間
 
 こうした問いを、単なる感想や問題提起で終わらせず、原因、成立条件、反例、修正の方法まで考えられる形にするのが、理論構築の特徴です。
 
-現在、[公式アーカイブ](https://master.ricette.jp/)には 300本以上の異なる原典記事が公開されています。それぞれ独立した論点を持ちながら、問題に応じて複数の理論を組み合わせたり、適用できない条件を確かめたりできる体系です。
+現在、[公式アーカイブ](https://master.ricette.jp/)には314本の異なる原典記事が公開されています。それぞれ独立した論点を持ちながら、問題に応じて複数の理論を組み合わせたり、適用できない条件を確かめたりできる体系です。
 
-→ [300本以上の原典を題名・テーマから探す](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)  
+→ [314本の原典を題名・テーマから探す](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)  
 → [中川マスターの公式アーカイブ](https://master.ricette.jp/)
 
 ## なぜ、論文の完成や査読を待たずに現実へ働きかけるのか
@@ -69,6 +69,7 @@ AIの進化と社会への実装は、論文を書き上げ、査読を受け、
 - [MemberJunction](https://github.com/MemberJunction/MJ/pull/6339)：二つのSQL処理で同じ名前の項目が異なる値を持つ場合の問題を指摘。開発者が独立して修正・テストを行い、変更は本線に統合されました。その開発者は、複数のレビューを見て、[中川マスター本人がどのような人物なのかを自発的に尋ねています](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。
 - [Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)：AIの操作が「許可されたように見えても、保護されたファイルへの書込みを見逃す」という問題を具体化。元の報告者が実際の動作を検証し、自ら修正・テストを行って、正式版の変更へとつながりました。
 - [AI-News](https://github.com/022740mix-spec/AI-News/pull/131)：複数の記事が存在することと、それぞれに独立した裏付けがあることの違いを指摘。編集者が実際の記事制作の規則を改め、取り込みました。
+- [agent-approval-gate](https://github.com/tonydzi/agent-approval-gate/issues/1)：人間の承認をAIの実行に接続する別開発者の仕組みで、失効済みの依頼が過去の返事によって再承認される条件を指摘。開発者は[「指摘どおり」と応じてコードと回帰テストを修正し、mainに取り込みました](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)。[開発者側の安全文書には、問題の報告元として `@Nakagawa-master` の名前が残っています](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)。実利用者の運用結果とは区別します。
 
 中川マスターが問題の原因と見落とされた条件を示し、各プロジェクトの開発者や編集者が自ら検証してコードや仕事の進め方を変えた。その一連の記録が残っています。
 
