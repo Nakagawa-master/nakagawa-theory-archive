@@ -1,6 +1,6 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
-**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典の公開数は現在315件（2026年11月15日・著者本人の最新確認）。親原典の正本は[公式アーカイブ](https://master.ricette.jp/)。GitHubの対応する公式派生物・親原典URL索引は[OD001〜OD314の314件](derivatives/)まで収録しており、新規1件は未同期です。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
+**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典の公開数は現在314件（2026年11月15日・著者本人の訂正確認）。親原典の正本は[公式アーカイブ](https://master.ricette.jp/)。GitHubの対応する公式派生物・親原典URL索引も[OD001〜OD314の314件](derivatives/)を収録しています。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
@@ -14,7 +14,7 @@
 
 **別の開発者が自分のAI自動実行環境へ実際に採用：** Qwen Codeを継続実行する開発者 @Michael-Logies は、中川マスターが示した[「前回の古い記録を今回の成功と取り違えない」具体的な検査方法](https://github.com/QwenLM/qwen-code/issues/15545#issuecomment-6400711883)を、[自身の既存ランチャーとStopフックへ取り入れたと明言](https://github.com/QwenLM/qwen-code/issues/15545#issuecomment-6402615805)しています。各実行前に判定記録を破棄し、「継続・引継ぎ・判定不能」を区別。本人の報告では、古い記録を排除する反例を含む19件のサブプロセス／一連の実行テストで検証しました。これは別人による自分の実装への採用であり、Qwen本体へのマージや広範な利用者数とは分けて確認できます。
 
-**独立執筆者が自分のAI設計論を変更：** [著者 @kishibashi3 のAIエージェント設計・第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)では、「取り消せる操作ならAIに任せてよい」という元の考えが、中川マスターの具体的な `ask → auto` の反例で十分ではないと分かり、独立著者自身が第6条件「自己権限の固定」を追加しました。[著者はマスター本人に、文章が固まる前の指摘に感謝し、修正内容を説明しています](https://github.com/kishibashi3/publications/pull/57#issuecomment-5749065842)。[執筆者自身のPR #57は正式マージ](https://github.com/kishibashi3/publications/pull/57)され、本文は `@Nakagawa-master` と元のIssueを明示しています。これは他の執筆者による実際の判断・文章の変更です。読者数や公開315原典の採用を意味するものではありません。
+**独立執筆者が自分のAI設計論を変更：** [著者 @kishibashi3 のAIエージェント設計・第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)では、「取り消せる操作ならAIに任せてよい」という元の考えが、中川マスターの具体的な `ask → auto` の反例で十分ではないと分かり、独立著者自身が第6条件「自己権限の固定」を追加しました。[著者はマスター本人に、文章が固まる前の指摘に感謝し、修正内容を説明しています](https://github.com/kishibashi3/publications/pull/57#issuecomment-5749065842)。[執筆者自身のPR #57は正式マージ](https://github.com/kishibashi3/publications/pull/57)され、本文は `@Nakagawa-master` と元のIssueを明示しています。これは他の執筆者による実際の判断・文章の変更です。読者数や公開314原典の採用を意味するものではありません。
 
 - **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。**[公式リリース文書に `@Nakagawa-master` の名前を掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)**（掲載対象は[別件の #160136](https://github.com/openclaw/openclaw/pull/160136)）。さらに別の[#160856](https://github.com/openclaw/openclaw/pull/160856)では、指摘を報告元と明記した独立開発者が**回帰テスト49件成功・正式マージ**。
 - **[MemberJunction｜権限を守るSQLの列名を壊さない](https://github.com/MemberJunction/MJ/pull/6319#issuecomment-6630489113)** — SQL Serverの列名の中にあるエスケープ済みの `]]` を、列名の終わりと誤認すると、名前の一部が誤って値のパラメーターになります。中川マスターが正反例を示し、別の開発者が[解析処理と回帰テストを修正](https://github.com/MemberJunction/MJ/commit/ad0f7654b6b665099b18aa1b31ce80fe2389af13)。その変更を取り込んだ[後継PR #6544が2026年11月11日UTCにマージ](https://github.com/MemberJunction/MJ/pull/6544)されました。正式配布版への収録と利用者自身の更新・復旧は、マージと分けて確認する必要があります。[三言語での実例と出典](REAL_WORLD_IMPACT.md)。
@@ -57,7 +57,7 @@
 
 ## 公開原典・テーマ別索引
 
-**現在公開315件の親原典はすべて独立した正本で、等しく重要です。** [公式サイトの原典入口](https://master.ricette.jp/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。各原典とその相互関係から、一つの原典を複数の現実課題へ適用し、複数の原典を新たな問いへ組み合わせられます。
+**現在公開314件の親原典はすべて独立した正本で、等しく重要です。** [公式サイトの原典入口](https://master.ricette.jp/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。各原典とその相互関係から、一つの原典を複数の現実課題へ適用し、複数の原典を新たな問いへ組み合わせられます。
 
 - [**314原典の各題名と24テーマの一覧**](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [既存313件の英語向け原典経路](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md)
 - [**OD001〜OD314と個別の公式親原典URLの対応**](derivatives/official-derivatives-map.json) ／ [各セットの公式7面派生物](derivatives/)
