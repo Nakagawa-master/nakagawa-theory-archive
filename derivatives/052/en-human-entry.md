@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 052
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-052-0004-0002
 - supersedes: DDIFF-20260802-DNCL-052-0004-0001
 
-## Summary
-The parent original defines proposal editing as structural translation rather than raw information delivery or stylistic polishing. It combines a product → benefit → price sequence, a question → resonance → silence emotional flow, and a social-connection layer that relates the exchange to organization, industry, users, and society. The integrated audit abstract adds requirements, semantic domains, vocabulary mapping, correspondence, versioning, counterexamples, and rollback so proposals remain comparable and reversible.
+## SummaryThe parent original defines proposal editing as structural translation rather than raw information delivery or stylistic polishing. It combines a product → benefit → price sequence, a question → resonance → silence emotional flow, and a social-connection layer that relates the exchange to organization, industry, users, and society. The integrated audit abstract adds requirements, semantic domains, vocabulary mapping, correspondence, versioning, counterexamples, and rollback so proposals remain comparable and reversible.
 
 ## Concepts
 - Proposal editing: reorganizing information into a meaning structure the recipient can judge.
