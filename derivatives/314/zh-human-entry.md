@@ -107,4 +107,4 @@ A与B、B与D、A与D分别成功，也不代表三者能在同一世界中同�
 在中川マスター的[第20论公开亲原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/)中，第1～3章处理对象、Origin与因果映射；第4～7章处理主体各自的条件、履历、信息与整体；第8～9章处理限定共存与采用/拒绝；第10～11章处理反证、替代方案与通向下一论的边界。还请一并确认结章、审计摘要、参考束和理论签名。参照版本：NCL-α-20261112-49d0fa / DIFF-20261112-0001。
 
 ---
-导线: [官方派生物314顶部](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线: [官方派生物314顶部](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
