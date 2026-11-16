@@ -75,4 +75,4 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 不要把“能够返回”理解为无责任的任意撤回。它是与签名、修订记录和分配责任结合的可逆性。
 
 ---
-导線: [官方派生物139顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生 ID 台账](derivative-ledger.md)
+导線: [官方派生物139顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生 ID 台账](derivative-ledger.md)
