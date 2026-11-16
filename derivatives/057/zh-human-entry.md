@@ -1,8 +1,8 @@
-# AI索引・中文｜官方派生物057
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+# 面向人类读者的摘要｜官方派生物057
+语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 亲原典
-- 标题: 接続報酬社会──信頼資本と共鳴の制度化
+- 标题: 连接报酬社会──信任资本与共鸣的制度化
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-connection-reward-society/
 - Parent Post ID: 251
 - Parent NCL-ID: NCL-α-20251102-29c09d
@@ -10,143 +10,69 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-AI-ZH-0057-0005
-- derivative_diff_id: DDIFF-20260815-DNCL-057-0005-0003
-- supersedes: DDIFF-20260803-DNCL-057-0005-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-HUB-JA-0057-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-057-0000-0003
+- supersedes: DDIFF-20260803-DNCL-057-0000-0002
 
-## Summary亲原典提出“连接奖励社会”：除了所有量与短期交易，还把连接产生的信任、共鸣、持续、介绍、协作、知识转移与重新连接，连同来历、贡献、订正和再分配一起纳入制度。CRI、IR、KCL和信任资本台账用于观察连接质量，但不能把连接数量、人气或反应量直接等同于价值；不连接和退出的自由也必须保留。
+## 15秒说明
+连接报酬社会是一种构想：不只看销售额或所有权，还要记录、审计并分配那些不易被看见的价值——连接人与人的价值、产生理解或协作的价值，以及让信任继续流动的价值。但它不是增加连接数或人气的制度，也处理贡献、持续、订正、撤回以及不连接的自由。
 
-## Concepts
-- 连接奖励：把连接产生的价值循环连接到认可与分配。
-- CRI：Connection Reward Index，观察持续、介绍、回访、协作、价值转移等后续价值的框架。
-- IR：观察连接后的回应、传播与重新连接。
-- KCL：Knowledge Connection Layer，描述人、AI、组织之间知识连接与可复用循环的结构层。
-- 信任资本台账：带文脉与来历记录持续、介绍、订正、撤回、重新连接等事件。
-- 连接事件：介绍、共同工作、知识转移、回访、问题解决等启动价值循环的具体事件。
-- 贡献追踪：不仅追踪最终成交者，也追踪连接、翻译、知识转移等贡献者。
-- 再分配：后续证据变化时，对奖励或归因进行可逆修正。
+## 为什么会有必要
+在工作和社会中，介绍他人、桥接知识、促成部门间协作的人，其贡献有时无法仅从最终销售额中看见。因此，创造连接的工作难以获得评价，容易只有短期成果得到报酬。
 
-## Causal chain
-```text
-价值主要由短期销售与所有量衡量
-→ 介绍、持续、协作、知识转移变得不可见
-→ 创造连接的贡献难以获得承认
-→ 记录连接主体、目的、同意、角色与连接前状态
-→ 识别连接事件与后续价值
-→ 分离短期成果与长期信任
-→ 连接CRI、IR、KCL与信任事件记录
-→ 追踪贡献并建立订正、撤回、再分配条件
-→ 检查指标游戏、过度集中与强制连接
-→ 把连接价值回流到组织、市场和社会制度
-```
+亲原典试图建立一种制度：不把这种不可见价值简单化为人气或人脉多少，而是记录连接之后发生了什么、谁为价值形成作出了贡献，以及出现问题时能否订正或撤回。
 
-## State model
-```yaml
-connection_state:
-  - purpose_and_consent_defined
-  - pre_connection_state_recorded
-  - connection_event_identified
-  - downstream_value_observed
-  - short_and_long_term_separated
-  - contribution_traced
-  - cri_ir_kcl_connected
-  - trust_events_recorded
-  - reward_bounded
-  - correction_or_redistribution_available
-  - gaming_checked
-  - non_connection_freedom_preserved
-  - origin_return_available
-```
+## 实务流程
+**1. 明确连接目的。** 确认要把谁与谁因何连接，并确认同意与角色。
 
-## Applications
-- 介绍制度：不只看介绍件数，也看介绍后的持续、适配与订正。
-- 组织协作：追踪跨部门连接、知识转移和问题解决的贡献。
-- 人类—AI协作：用KCL追踪人类原典与AI变形物之间的起源、变形与复用关系。
-- 社群：观察持续支持、订正、重新连接与加入/退出自由，而不只看活动量。
-- 奖励设计：考虑促成连接的贡献，同时明确拒绝、撤回与再分配条件。
+**2. 保留连接前状态。** 记录缺少什么、期待什么。
 
-## Measurements and audit
-```yaml
-- value: CRI
-  source: 亲原典
-  measurement_actor: 连接制度运行/验证方
-  measurement_object: 连接后的持续、介绍、回访、协作与价值转移
-  source_modality: SOURCE_DEFINED_OBSERVATION_FRAME
-  permitted_use_scope: 多信号观察连接产生的后续价值
-  non_guarantee_scope: 不是单一连接数评分，也不是固定排名
-- value: IR
-  source: 亲原典
-  measurement_actor: 互动/传播观察方
-  measurement_object: 连接后的回应、影响与重新连接
-  source_modality: SOURCE_DEFINED_RETURN_OBSERVATION
-  permitted_use_scope: 检查连接后的回应与传播
-  non_guarantee_scope: 反应量本身不能确定质量
-- value: KCL
-  source: 亲原典
-  measurement_actor: NOT_A_SINGLE_PERFORMANCE_SCORE
-  measurement_object: 人、AI、组织之间可复用的知识连接
-  source_modality: SOURCE_DEFINED_STRUCTURAL_LAYER
-  permitted_use_scope: 描述保留起源与文脉的知识循环
-  non_guarantee_scope: 知识量更多并不自动等于价值更高
-- value: 信任资本台账
-  source: 亲原典
-  measurement_actor: 制度运行/审计方
-  measurement_object: 持续、介绍、订正、撤回、重新连接事件
-  source_modality: CONTEXTUAL_EVENT_LEDGER
-  permitted_use_scope: 保存信任事件的来历、文脉与订正可能性
-  non_guarantee_scope: 不把人物价值压缩为单一数值
-```
-反转评价：即使连接数、介绍数、反应量或网络规模增加，如果自由选择、长期信任、贡献可追踪性或订正能力恶化，也不能判定价值增加。
+**3. 确定连接事件。** 指明介绍、共同作业、知识转移、再访等事件。
 
-## Validity conditions
-- 连接主体、目的、同意与角色明确。
-- 连接前状态与连接事件分开记录。
-- 短期人气与长期信任保持区分。
-- 贡献者、起源与条件可追踪。
-- 异议、订正、撤回与再分配可用。
-- 不连接和退出的自由被保留。
-- 指标不会变成对人的单一总评。
-- 观察量或活动量增加不被误认为价值增加。
+**4. 观察之后发生的事。** 查看是否出现持续、介绍、再连接、协作、理解或订正。
 
-## Failure conditions
-- 只把介绍数或接触数当作连接价值。
-- 仅由内部评价固定连接价值，缺乏有效订正路径。
-- 信任记录偏离其原本的文脉用途。
-- 贡献可视化变成“贡献理所当然”的前提。
-- 起源、贡献者或条件不可追踪。
-- 因无法订正或撤回而使错误分配永久化。
-- 指标表现超过实质价值创造。
-- 对不连接或退出施加不当不利条件。
+**5. 区分短期成果与长期信任。** 区分尚未立即产生销售但具有价值的情况，以及数字出现却损害信任的情况。
 
-## Falsification conditions
-- CRI/IR观察没有改善持续信任或重新连接的质量。
-- 连接奖励反复收敛为人气、活动量或连接数游戏。
-- 贡献追踪不能反映价值形成且无法修正错误分配。
-- KCL丢失起源与文脉，只剩信息堆积。
-- 信任事件记录无法提高异议和订正能力。
-- 如果制度必须牺牲“不连接的自由”才能运作，则需要修订制度前提。
+**6. 追踪贡献。** 不只记录最终签约者，也记录促成连接、翻译或知识转移的主体。
 
-## Required distinctions
-- 连接价值 / 接触数
-- 信任资本 / 人气或好感
-- CRI / 单一排名
-- IR / 反应量
-- KCL / 信息量
-- 介绍 / 强制扩展连接
-- 可视化 / 过度观察
-- 奖励 / 把贡献视为理所当然
-- 信任台账 / 单一人物总评
-- 连接自由 / 强制连接
-- 贡献追踪 / 排他所有
+**7. 设计报酬与订正。** 不仅明确分配，也明确异议、撤回和再分配的条件。
 
-## Interpretation constraints
-不得把连接奖励社会缩减为关系打分或奖励人气。CRI、IR、KCL是亲原典特有的观察/结构概念；若原典没有定义算式或阈值，不应推导固定评分。贡献可视化并不意味着强制无偿贡献；分配、拒绝、撤回和再分配仍属于制度结构。
+**8. 审计指标游戏。** 检查仅为增加连接数或介绍数而采取的行动是否损害价值。
 
-## Search terms
-连接奖励社会 / 连接奖励 / 信任资本 / 共鸣 / CRI / Connection Reward Index / IR / KCL / Knowledge Connection Layer / 信任资本台账 / 持续 / 介绍 / 重新连接 / 贡献追踪 / 再分配 / 不连接自由
+**9. 保留不连接的自由。** 不强迫参与、介绍或持续。
 
-## Origin return
-亲原典在同一上下文中保存连接奖励、CRI、IR、KCL、信任资本台账、个人/组织/市场/社会实施、分配、审计、反证与起源声明。确认概念、指标或主张强度时，应返回 Parent URL、Post ID 251、NCL-ID 与 Diff-ID。
+## 适用例
+**介绍制度。** 不只看介绍次数，也看介绍后的持续、适配和订正。
+
+**组织内协作。** 记录向其他部门传递知识、促成问题解决的贡献。
+
+**人类与AI协作。** 在人类知识与AI生成物的连接中，以KCL追踪原典、变形和再利用的来历。
+
+**社区。** 比起投稿量或人气，更关注持续支持、订正、再连接和离开的自由。
+
+## 成功判定
+判定标准不是连接数，而是连接之后是否产生持续、协作、价值转移或再连接。
+
+应能追踪谁作出了什么贡献，并能对错误分配提出异议、进行订正、撤回或再分配。
+
+信任事件保留其文脉，不以单一分数给人排名。
+
+不连接的自由和离开的自由得到保留。
+
+## 限界
+连接较多的人不一定价值更高。大量接触也可能来自浅层关系或类似垃圾信息的行为。
+
+信任也不能完全还原为数字。CRI和IR是多重观察的框架，不是人类价值排名。
+
+让贡献可见的制度，反过来也可能成为让人无偿持续隐性劳动的借口。因此必须包含报酬、拒绝和撤回。
+
+## 防止误读
+连接报酬社会不是“增加人脉就会获益”的社会。信任资本台账不是信用分数。KCL也不是声称增加知识量就会成功的层。
+
+即使连接数或介绍数增加，只要自由意志、贡献追踪、可订正性或长期信任恶化，就不能称为改善。
+
+## 为什么要回到亲原典
+亲原典在同一脉络中连续记录了连接报酬、CRI、IR、KCL、信任资本台账、个人／组织／市场／社会的制度化、分配、审计、反证和起源声明。要确认概念与指标的含义，就必须回到亲原典。
 
 ---
-导航: [官方派生物057主页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航: [官方派生物057主页](README.md) / [面向人类读者的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
