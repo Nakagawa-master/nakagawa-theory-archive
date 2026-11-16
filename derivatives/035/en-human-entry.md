@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 035 | Nakagawa Structural Reading | REMODELA as a Validity Basis for Restoration
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川構造読解｜REMODELAを「AI退去立会」ではなく、原状回復の妥当性基盤をつくる構造として読む
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-035-0001-0006
 - supersedes: DDIFF-20260814-DNCL-035-0001-0005
 
-## Summary
-The parent does not read REMODELA merely as an “AI move-out inspection” product. It reads a structure in which the condition at move-out is observed, recorded, converted into judgment material, made comparable across landlord, tenant, management, and other relevant actors, and connected to an explainable path toward a restoration judgment. The value core is therefore a validity basis for restoration judgment, not automated authority.
+## SummaryThe parent does not read REMODELA merely as an “AI move-out inspection” product. It reads a structure in which the condition at move-out is observed, recorded, converted into judgment material, made comparable across landlord, tenant, management, and other relevant actors, and connected to an explainable path toward a restoration judgment. The value core is therefore a validity basis for restoration judgment, not automated authority.
 
 A conclusion alone does not establish validity. What was observed, when and how it was recorded, which record became relevant judgment material, where stakeholder recognition diverged, and why the final judgment was reached all remain traceable elements. AI may assist recording, organization, comparison, and transformation into usable material, but its output is not identical to legal, contractual, or factual correctness.
 
