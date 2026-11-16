@@ -4,7 +4,6 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 ## Parent Original
 - Parent official title (Japanese original): 接続文明ロードマップ2030–2055：構造的欠陥が導く「秩序ある置換」の必然
-- Supplementary translation: Connection Civilization Roadmap 2030–2055: The Inevitability of “Ordered Replacement” Led by Structural Defects
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-connection-civilization-roadmap-inevitability/
 - Parent Post ID: 448
 - Parent NCL-ID: NCL-α-20251102-66f8a1
