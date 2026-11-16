@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 036 | Nakagawa Structural Reading | RHEMS Japan and Decision-Transforming Operations
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川構造読解｜RHEMS Japanを「FinOps企業」ではなく、見えない運用を意思決定へ変換する構造として読む
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-036-0001-0004
 - supersedes: DDIFF-20260814-DNCL-036-0001-0003
 
-## Summary
-The parent origin does not reduce RHEMS Japan to the surface label “FinOps company.” It reads a structure in which operations, differences, loads, costs, exceptions, and changes arising in the field are converted into material that decision-makers can compare, explain, and trace for improvement, evaluation, prioritization, and investment decisions.
+## SummaryThe parent origin does not reduce RHEMS Japan to the surface label “FinOps company.” It reads a structure in which operations, differences, loads, costs, exceptions, and changes arising in the field are converted into material that decision-makers can compare, explain, and trace for improvement, evaluation, prioritization, and investment decisions.
 
 The value kernel is not visualization by itself. Information may become more visible while decision value falls if important differences are buried, relevance to a decision is unclear, or the decision layer cannot reconstruct what changed and why it matters. The structural transition is from operational information to decision-usable material.
 
