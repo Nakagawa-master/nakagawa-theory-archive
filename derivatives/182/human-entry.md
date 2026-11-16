@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物182
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - Parent title: 「善意」と「偽善」をどう見分けるか —— 多層連結価値監査とC/E判定のアルゴリズム（構造的司法OS Vol.2）
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-multilayer-audit-c-e-judgment/
