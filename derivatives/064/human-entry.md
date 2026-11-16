@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物064
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川式 合意設計論──第一印象を「合意の記憶」に変える方法
