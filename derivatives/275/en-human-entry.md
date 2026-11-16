@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: Structural design of civilization's Irreversible Point — the final threshold preventing collapse measured by RC/CEA
+- Parent title: 文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
 - Parent Post ID: 559
 - Parent NCL-ID: NCL-α-20251102-cb4f73
