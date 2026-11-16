@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物196
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 文明はなぜ必ず誤るのか ── 因果を内在化できない人類のための「外在構造監査」としての易経
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-external-causal-audit-i-ching-civilization-os/
