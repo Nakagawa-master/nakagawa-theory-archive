@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**77 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**78 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1717,6 +1717,16 @@ This is a verifiable third-party decision, documentation change and merge arisin
 A separate developer then [fixed the scanner and authored an executable regression test](https://github.com/MemberJunction/MJ/commit/ad0f7654b6b665099b18aa1b31ce80fe2389af13) for exactly this boundary. The original PR was absorbed into [MemberJunction PR #6544](https://github.com/MemberJunction/MJ/pull/6544), which **merged on 11 November 2026 UTC**; the upstream default branch retains the same repaired code and test blobs. The author of the software was the independent developer, and no direct statement crediting Master was verified.
 
 This is evidence of matching independent implementation and an upstream merge, **not evidence of an actual data breach, a containing release, installed-user recovery, personal endorsement or independent reading of the original theory corpus**. See [Nakagawa Master's wider original work](human-translation/who-is-nakagawa-master.md).
+
+## 78. Qwen Code | Cross-workspace agent delegation: independent implementation merged upstream and shipped in a containing nightly build
+
+**An old permission to use a tool is not, by itself, permission to run that tool in a newly selected workspace.** While the independently authored [Qwen Code cross-workspace sub-session PR #17454](https://github.com/QwenLM/qwen-code/pull/17454) was being reviewed, Nakagawa Master identified a [legacy blanket-allow path](https://github.com/QwenLM/qwen-code/pull/17454#issuecomment-6915388636) and a [scheduler fast path that could bypass a later confirmation dialog](https://github.com/QwenLM/qwen-code/pull/17454#issuecomment-6916844599). The distinction was not merely about how to display a confirmation: a previously granted tool permission must not silently grow to cover a newly designated execution destination.
+
+The original feature and its subsequent fixes were implemented by independent developer **@qqqys**, with further independent reviews. The resulting code ties named-workspace approval to the resolved canonical target and runtime generation, requires fresh consent after target rebinding, and prevents prior tool-wide grants from silently covering a different workspace. [Reviewer @wenshao confirmed these boundaries at the final head](https://github.com/QwenLM/qwen-code/pull/17454#pullrequestreview-5923182559), reporting **691 passing checks and zero failures**. This credits the developer's own engineering and the other reviewers' contributions; matching conditions are not proof of exclusive causation.
+
+The PR [merged upstream at 16:22 UTC on 16 November 2026](https://github.com/QwenLM/qwen-code/commit/1e455fd68a26acc0515e9b32f08d7a5634f54a13). Its merge commit is included in the separately published [Qwen Code v0.27.4 nightly release](https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4-nightly.20261116.eb3a599ef3) of 22:32 UTC that day; the release notes also name #17454. A stable containing release, an affected user's installed outcome and a further independent person-to-person relay have not been established.
+
+For the underlying structural distinction, see [Nakagawa Master's original *The Memory of Consensus*](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/): remembering that an agreement existed and proving that it currently authorizes a changed action are different questions. This is a source-fitting interpretation, **not a claim that the independent Qwen author read that original**. [Explore the author's other original work](human-translation/who-is-nakagawa-master.md).
 
 ## What the public source record reveals
 
