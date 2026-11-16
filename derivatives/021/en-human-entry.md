@@ -1,144 +1,91 @@
-# English AI Index | Official Derivative 021 | Physics of Consensus Formation Vol. 6
+# Human-Oriented Summary | Official Derivative 021
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である
+- Title: The Physics of Consensus, Part 6: Deviation and Immunity — Immunity Is Not “Punishment” but “Difference Disclosure”
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
 - Parent Post ID: 2919
 - Parent NCL-ID: NCL-α-20260215-71cedd
 - Parent Diff-ID: DIFF-20260215-0021
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-EN-0021-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-021-0001-0007
-- supersedes: DDIFF-20260813-DNCL-021-0004-0006
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-JA-0021-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-021-0000-0007
+- supersedes: DDIFF-20260813-DNCL-021-0000-0006
 
-## SummaryThe parent treats deviation not primarily as a violation to punish, but as a difference D between design and operation that must become observable so understanding U, repair responsibility R, and history H can recover and restore `S = U × R × H`. Immunity is therefore not the absence of deviation. It is the ability to expose a difference, fix a repair entry point, preserve history, and return the system to a repairable stable state quickly.
+## 15-Second Explanation
+This original work reads an organization with immunity as a system that can correct problems quickly once they become visible, rather than as an organization that never causes problems. The focus is not on reducing deviation to zero, but on making deviation D visible as a difference, connecting responsibility R and history H to an entry point for repair, and quickly restoring S = U × R × H.
 
-The parent contrasts two causal paths. Punishment-centered handling can produce `punishment → lower R → concealment → lower S → amplified D` when actors avoid reporting and responsibility becomes culprit-seeking rather than repair. Difference disclosure can instead produce `difference disclosure → fixed repair R → repairability → S recovery → damped D` when disclosure preserves verifiable differences, history, and a repair owner.
+Punishment-centered operations may appear to reduce violations in the short term, but they can suppress reporting, cause deviations to remain latent, weaken R and H, and consequently amplify D. Difference disclosure functions as immunity not by treating the amount disclosed itself as good, but when it connects to the responsible agent for repair, history, and a recovery path.
 
-D_det, D_loss, and S recovery time are interpreted together. A rise in detected deviations can coexist with improved immunity when hidden or lost deviation falls and recovery becomes faster. Conversely, fewer detected incidents can mask worse health if losses rise and repair slows. The parent does not define universal detection percentages, immunity scores, or fixed recovery thresholds.
+## Why It Becomes Necessary
+In systems and organizations, it is impossible to reduce the differences between design and operation, exceptions, mistakes, fraud, accidents, and omissions in judgment completely to zero. If “reducing the number of cases” alone becomes the goal, latent behavior such as not reporting, not recording, staying silent even after finding something, and avoiding responsibility may increase.
 
-## Concepts
-- Physics of Consensus Formation Vol. 6
-- deviation D
-- immunity
-- difference disclosure
-- S = U × R × H
-- D_det / detected deviation
-- D_loss / hidden or realized loss
-- S recovery time
-- repair responsibility R
-- difference history H
-- reporting suppression
-- concealment
-- repairability
-- recovery speed
+A small apparent number of deviations and actual safety are different things. What matters is how quickly deviations are detected, how much undetected loss is reduced, and how quickly S can be restored.
 
-## Causal chain
-```text
-A design-operation difference D occurs
-↓
-Punishment-centered handling may increase responsibility avoidance and reporting suppression
-↓
-R weakens and deviation becomes concealed
-↓
-H is lost and S deteriorates
-↓
-D amplifies
-```
+## Practical Process
+**1. Look at D_det.** Count detected deviations. However, do not automatically regard an increase as deterioration.
 
-```text
-Difference D is detected
-↓
-The difference is disclosed in a verifiable form
-↓
-Repair responsibility R and the repair entry point are fixed
-↓
-History H remains continuous
-↓
-Repairability rises and S recovers
-↓
-D is damped
-```
+**2. Look at D_loss.** Check whether overlooked deviations, losses that were not recorded, and impacts that could not be recovered are decreasing.
 
-## State model
-```yaml
-- deviation_d_occurs
-- deviation_detectable_or_hidden
-- detected_deviation_d_det_observed
-- hidden_or_lost_deviation_d_loss_observed
-- punishment_pressure_observed
-- reporting_suppression_observed
-- repair_responsibility_r_fixed_or_diffused
-- difference_history_h_preserved_or_lost
-- repair_entry_available
-- consensus_stability_s_recovering_or_degrading
-- recovery_time_observed
-- deviation_amplifying_or_damping
-- difference_disclosure_used_for_repair_not_exposure
-- origin_return_verified
-```
+**3. Look at R.** Check whether the entry point for repair—who records, who repairs, and who returns the decision—can be uniquely traced.
 
-## Applications
-- Whistleblowing systems: more reports can coexist with improved immunity when D_loss falls, repair ownership is clearer, and recovery becomes faster.
-- Quality management: early visible differences, preserved history, and repair routing can be more informative than a low count of reported defects by itself.
-- AI operations: unobserved loss, correction history, and recovery speed complement raw error counts.
-- Governance: stronger punishment can reduce visible incident counts by suppressing reporting and increasing concealment.
-- Disclosure systems: publication contributes to immunity when differences remain connected to responsibility, history, and recurrence prevention.
+**4. Look at H.** Check whether what changed, why it changed, and what repair was performed remain as a history of differences.
 
-## Measurements and audit
-The parent does not define universal immunity scores, fixed detection percentages, or fixed recovery-time pass thresholds.
+**5. Look at S recovery time.** Track the time from when a problem becomes visible until U/R/H return to a state in which repair is possible.
 
-- Observation focus: whether higher D_det coexists with lower D_loss.
-- Observation focus: whether lower D_det reflects fewer deviations or reporting suppression.
-- Observation focus: whether R is fixed as a repair entry point after difference disclosure.
-- Observation focus: whether H is preserved as differences, change reasons, and repair history.
-- Observation focus: whether S recovery time is becoming shorter.
-- Observation focus: whether stronger punishment increases reporting suppression, concealment, or responsibility avoidance.
-- Observation focus: whether difference disclosure has become exposure, retaliation, or person-targeted attack.
-- Observation focus: whether health is being inferred from detected counts alone.
+**6. Look at the effects of punishment.** Even where disciplinary action is necessary, check whether it is increasing reporting suppression, avoidance of responsibility, or latency.
 
-## Validity conditions
-- Immunity differs from zero deviation.
-- D_det, D_loss, and S recovery time form a combined observation bundle.
-- R remains traceable as a repair entry point.
-- Difference history H remains available.
-- Difference disclosure remains connected to repairability.
-- Punishment-centered operation can be evaluated through concealment and reporting suppression.
-- Disclosure that becomes exposure or retaliation no longer serves the same repair function.
+**7. Look at the effects of difference disclosure.** Audit whether disclosure connects to repair or has turned into exposure, retaliation, or fuel for an uproar.
 
-## Failure conditions
-- Fewer detected deviations are treated as automatic evidence of greater safety.
-- Higher D_det is treated as automatic deterioration.
-- Harsher punishment is treated as automatic improvement in immunity.
-- Transparency or disclosure volume is treated as immunity by itself.
-- Difference disclosure is converted into exposure, retaliation, or person-targeted attack.
-- Source-absent fixed pass values are assigned to D_det, D_loss, or recovery time.
+## Application Examples
+**Internal reporting.** Do not judge an increase in the number of reports as deterioration by itself; check whether D_loss is falling, R is becoming clearer, and recovery time is shortening.
 
-## Falsification conditions
-The parent origin's integrated audit summary states: the model is reviewed by checking whether rising D_det coincides with lower D_loss and shorter S recovery time; if D_det falls while D_loss remains unknown or rises, or increased difference disclosure is accompanied by falling U/R, formal disclosure, or K-overload noise, the distance, granularity, and indexing of the disclosure bandwidth are redesigned.
+**Quality control.** Rather than reducing the number of defect reports, audit whether differences surface early, history remains, and they are connected to repair.
 
-## Required distinctions
-- deviation occurrence / immune failure
-- higher D_det / deterioration
-- lower D_loss / merely more reporting
-- responsibility R / punishment target
-- difference disclosure / transparency advocacy
-- difference disclosure / exposure
-- punishment / repair
-- zero deviation / safety
-- detected count / health
+**AI operations.** Track not only the number of errors, but also undetected loss, correction history, and the speed of recovery when recurrence occurs.
 
-## Interpretation boundaries
-The parent is not reducible to anti-punishment advocacy, whistleblowing promotion, transparency worship, or generic compliance. Punishment itself is not categorically rejected; the structural question is whether handling preserves reportability, repair responsibility, history, and recovery. Public disclosure volume alone does not establish immunity, and fixed detection-rate targets, immunity scores, or pass thresholds are not generally defined by the parent.
+**Organizational governance.** Even if the apparent number of violations falls after harsher punishment, check whether reporting suppression and latency have increased.
 
-## Search terms
-Physics of Consensus Formation; deviation and immunity; difference disclosure; S U R H; D_det; D_loss; S recovery time; repair responsibility R; difference history H; repairability; Nakagawa Master
+## Success Criteria
+First, D_loss is falling even if D_det is increasing.
 
-## Origin return
-The exact causal contrast between punishment and difference disclosure, together with the combined interpretation of D_det, D_loss, and S recovery time, is defined by the Parent URL, Parent Post ID 2919, Parent NCL-ID, and Parent Diff-ID.
+Second, repair responsibility R becomes clear after difference disclosure.
+
+Third, history H remains as a record of differences, reasons for changes, and repairs.
+
+Fourth, S recovery time becomes shorter.
+
+Fifth, disclosure does not turn into exposure or retaliation, but connects to the next repair.
+
+## Handling Numbers and Metrics
+The original work has a structure for viewing immunity by combining D_det, D_loss, and S recovery time. However, this public reading does not define fixed values such as “safe if detected cases are no more than ○,” “pass if the detection rate is ○%,” or “immunity exists if recovery is within ○ hours.”
+
+The important point is reversal-based evaluation. Do not decide that an increase in D_det alone is deterioration; by looking at whether a decrease in D_loss and a shortening of recovery time are occurring at the same time, distinguish an increase in visible deviations from a substantive improvement in immunity.
+
+## Limitations
+This argument does not categorically reject punishment. There may be cases in which disciplinary action is necessary for fraud or willful violations. However, if that action weakens reporting, repair, and history, it is a failure as immunity.
+
+Difference disclosure is not omnipotent. If disclosure turns into information overload, exposure, retaliation, or an uproar and instead weakens repair responsibility or history, it does not become immunity.
+
+## Misreading Prevention
+Do not reduce it to criticism of harsher punishment alone.
+
+Do not reduce it to recommending internal reporting alone.
+
+Do not turn it into praise of transparency.
+
+Do not dilute it into a general compliance argument.
+
+Do not assume that fewer deviations mean greater safety.
+
+Do not automatically regard an increase in D_det as deterioration.
+
+Do not convert disclosure into exposure or retaliation.
+
+## Why Return to the Original
+The parent original contrasts punishment → lower R → latency → worse S → amplified D with difference disclosure → fixed R → repair possible → restored S → attenuated D, and observes immunity by combining D_det / D_loss / S recovery time. To avoid diluting it into mere criticism of harsher punishment or an argument for transparency, return to the Parent URL to confirm the precise boundaries of meaning.
 
 ---
-Navigation: [Official Derivative 021 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Pathway: [Official Derivative 021 top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
