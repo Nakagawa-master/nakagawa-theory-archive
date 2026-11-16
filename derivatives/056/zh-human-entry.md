@@ -1,4 +1,5 @@
 # AI索引・中文｜官方派生物056
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 亲原典
 - 标题: 問いの深度 設計学──灯火プロトコルの哲学
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-056-0005-0002
 - supersedes: DDIFF-20260803-DNCL-056-0005-0001
 
-## Summary
-亲原典把问题视为安排注意、关系、判断、因果、制度与起源连接条件的结构操作，而不仅是获取信息。PQ-5由Purpose、Hypothesis、Medium、Constraints、Origin五个要素构成；D0–D5把问题分成六种作用深度；SQS在提问前后保留Silence–Question–Silence的观察与判断空间；D-gap比较设计深度与实际到达深度；R-index用于观察沉默、重答、再提问、重启等状态。更深并不天然更好，必须保持目的适配、非强制、事实验证与起源回归。
+## Summary亲原典把问题视为安排注意、关系、判断、因果、制度与起源连接条件的结构操作，而不仅是获取信息。PQ-5由Purpose、Hypothesis、Medium、Constraints、Origin五个要素构成；D0–D5把问题分成六种作用深度；SQS在提问前后保留Silence–Question–Silence的观察与判断空间；D-gap比较设计深度与实际到达深度；R-index用于观察沉默、重答、再提问、重启等状态。更深并不天然更好，必须保持目的适配、非强制、事实验证与起源回归。
 
 ## Concepts
 - PQ-5：Purpose、Hypothesis、Medium、Constraints、Origin五个亲原典明确列举的要素。
