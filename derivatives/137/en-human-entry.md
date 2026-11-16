@@ -84,7 +84,7 @@ Threshold θ and observation window δ in the audit outline are abstract symbols
 ## Preventing Misreading
 Do not turn Structural Operative Intelligence into a superiority claim that humans are smarter than AI. The original separates optimizing a given objective from designing objectives, rules, boundaries, and future debt.
 
-Do not assign value to an accident that did not occur without conditions. Un发生 value requires causal correspondence between intervention and avoided outcome.
+Do not assign value to an accident that did not occur without conditions. Unrealized value requires causal correspondence between intervention and avoided outcome.
 
 Do not reduce civilization-OS design to abstract commentary. Understand it as structure connected to law, education, information spaces, AI-use boundaries, ownership, trust, responsibility, operation, and audit.
 
