@@ -1,138 +1,88 @@
-# AI Index — English | Official Derivative 059
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+# Human-Oriented Summary | Official Derivative 059
 
-## Parent origin
-- Title: Co-Creation Order — Roles and the Philosophy of Silence (Public-Safe Edition)
+## Parent Source
+- Title: Co-Creation Order Philosophy──A Philosophy of Roles and Silence (Public Safe Version)
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-co-creation-order-philosophy/
 - Parent Post ID: 258
 - Parent NCL-ID: NCL-α-20251102-82774b
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-82774B-AI-EN-0059-0004
-- derivative_diff_id: DDIFF-20260815-DNCL-059-0004-0002
-- supersedes: DDIFF-20260803-DNCL-059-0004-0001
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-82774B-HUB-JA-0059-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-059-0000-0002
+- supersedes: DDIFF-20260803-DNCL-059-0000-0001
 
-## 1. SummaryThe parent treats failure in co-creation not merely as a deficit of talent but as a failure of ordering: observation, translation, design, and verification become entangled; Silence–Question–Silence is absent; role switching is unclear; Value → Benefit → Cost loses its sequence; and no terminal condition stabilizes agreement.
+## 15-Second Explanation
+Co-Creation Order Philosophy is the idea that when several people, or people and AI, think together, observation, translation, design, and verification should not be mixed; proceeding one role at a time reduces premature conclusions and role confusion. It combines SQS, which places silence before and after a question, the value → benefit → cost sequence, role switching, and end conditions.
 
-The design separates four functions and applies one primary role at a time. SQS creates phases for observing premises, placing a question, and stabilizing agreement, responsibility, unresolved matters, and the next handoff. Switch signals include rising discomfort, information saturation, and decision fatigue. The goal is reproducible, falsifiable, correctable co-creation rather than obedience, forced consensus, or static job division.
+## Why It Matters to Ordinary Readers
+Meetings are long but conclusions remain vague, price discussions move ahead alone, revisions to a deliverable keep coming back, or an AI output collapses when asked to summarize, criticize, and edit at the same time. These problems arise not only from participants’ abilities, but from mixing the question of “which role are we performing now?”
 
-## 2. Concepts
-- Observer: collects facts, silence, discomfort, and constraints without rushing to propose.
-- Translator: maps observations into relations, causes, roles, and structures without deciding.
-- Designer: builds mechanisms and proposals in the order Value → Benefit → Cost.
-- Verifier: fixes falsification, terminal, and revision conditions without continuing design in the same phase.
-- One role at a time: separation of primary functions within a phase, not one permanent job per person.
-- SQS: Silence–Question–Silence, a phased structure for observation, inquiry, and stabilization.
-- D0–D5: six source-defined levels of question depth; not a ranking of people or quality.
-- D-Gap: difference between designed question depth and depth actually reached.
-- Switch discipline: explicit transition when discomfort, saturation, or decision fatigue signals a phase boundary.
-- Terminal condition: temporary fixation of what is agreed, who owns responsibility, what remains unresolved, and when review occurs.
-- Primary log: original record of observation, translation, design, verification, and changes.
+The parent source addresses a design in which people are not confined to fixed job titles, but switch functions—for example, being an observer in one phase and a translator in the next.
 
-## 3. Causal chain
-```text
-role overlap and simultaneous processing
-→ facts mix with interpretation and design mixes with verification
-→ premature conclusions, price-first framing, decision fatigue, and rework
-→ separate Observer / Translator / Designer / Verifier
-→ use SQS to phase premises, question, and agreement
-→ declare switch reason and next role
-→ preserve Value → Benefit → Cost sequence
-→ fix terminal condition, responsibility, unresolved items, and review condition
-→ retain a primary log
-→ co-creation becomes replayable, falsifiable, and correctable
-```
+## Four Roles
+**Observer.** Collects facts, silence, discomfort, and constraints. Does not rush to solutions.
 
-## 4. State model
-```yaml
-- shared_subject_defined
-- purpose_defined
-- observe_active
-- facts_constraints_fixed
-- translate_active
-- causal_map_fixed
-- design_active
-- value_benefit_cost_order_preserved
-- verify_active
-- falsification_terminal_conditions_fixed
-- switch_reason_recorded
-- primary_log_preserved
-- agreement_object_fixed
-- responsibility_fixed
-- unresolved_items_fixed
-- review_condition_fixed
-- origin_return_available
-```
+**Translator.** Recasts collected facts as relationships, causality, roles, and structure. Still does not make a decision.
 
-## 5. Applications
-- Meetings: separate divergence, structural mapping, design choice, and verification.
-- Sales: establish value and benefit before cost without hiding price or manipulating the buyer.
-- Research and production: separate collection, interpretation, creation, and review.
-- Human–AI collaboration: separate source fixation, structural extraction, design, falsification, and integration.
-- Urgent situations: shorten the phases but explicitly fix responsibility, decision object, and later verification.
+**Designer.** Builds systems and proposals in the order of value, benefit, and cost.
 
-## 6. Measurements and audit
-The parent includes source-defined enumerations, indicators, and symbolic audit terms whose epistemic status must remain separated.
+**Verifier.** Decides what would count as failure and require review, where to pause, and what to update next.
 
-- **Four roles:** source-explicit enumeration of four functions; not a four-point score.
-- **D0–D5:** six-level classification of question depth; larger numbers do not mean universally better questions or people.
-- **Agreement attainment rate:** an observation candidate for agreement formation; command, obedience, or suppressed disagreement must not be counted as genuine agreement.
-- **Rework rate:** observes return work; lower is not automatically better if necessary correction is being suppressed.
-- **Switch delay:** observes lag after a switch signal; speed alone does not determine validity.
-- **D-Gap:** compares intended depth with reached depth; a small gap does not guarantee non-coercion or relevance.
-- **Resonance success rate / vocabulary alignment rate:** observation candidates for structural alignment, not human ability rankings.
-- **Phase stability S / time-to-agreement T / T/S/R:** symbolic or named audit terms in the parent context. No fixed threshold is invented when the source does not provide one.
+The important rule is “one role at a time.” It does not mean that one person must perform the same role for life.
 
-Reversible evaluation is required: higher agreement rates, shorter meetings, lower rework, or faster switching do not count as improvement if dissent, refusal, correction, dignity, or reversibility deteriorate.
+## SQS──Silence → Question → Silence
+In the first silence, observe the setting’s premises, discomfort, missing information, and differences in authority.
 
-## 7. Validity conditions
-- Shared subject, purpose, object, and role boundaries are explicit.
-- One primary role at a time is materially observed.
-- Switch reason and next role are declared and recorded.
-- Primary logs, vocabulary, and evidence remain retrievable.
-- Value → Benefit → Cost is used for intelligibility, not price concealment.
-- Refusal, correction, non-agreement, and renewed agreement are possible.
-- Terminal condition, responsibility, unresolved matters, and review conditions are explicit.
-- Urgent decisions identify immediate responsibility and allow later verification.
-- The process remains non-coercive, reversible, and verifiable.
+In the question, make explicit what purpose, which hypothesis, and under what conditions will be examined.
 
-## 8. Failure conditions
-- Role labels exist while several functions continue simultaneously.
-- Silence is used for intimidation, neglect, concealment, or pressure to agree.
-- Price, conclusion, or decision is fixed before observation and translation are complete.
-- Value → Benefit → Cost is converted into price-delay manipulation.
-- Verification keeps redesigning the object under test.
-- Command or obedience is described as agreement.
-- No primary log exists for replay, falsification, or correction.
-- Metric improvement is accepted while dignity, agency, or reversibility worsen.
+In the final silence, fix what has been agreed, who holds responsibility, what remains undecided, and which role comes next.
 
-## 9. Falsification conditions
-The design requires revision when role separation and SQS fail to reduce repeated rework, overlap, or coercive dynamics; when SQS decreases visible dissent because silence has become pressure; when switch discipline unnecessarily harms timely decision-making; when optimizing D-Gap or agreement time lowers substantive validity; when terminal conditions still fail to preserve responsibility or unresolved matters; or when the method obstructs necessary urgent safety or legal decisions.
+Silence is not a technique for cornering another person. Once it turns into intimidation, ignoring someone, or hiding information, it has departed from this principle.
 
-## 10. Required distinctions
-- role ≠ permanent status
-- one role at a time ≠ one job for life
-- silence ≠ rejection, intimidation, or neglect
-- SQS ≠ psychological pressure
-- agreement ≠ command, obedience, or unanimity
-- Value → Benefit → Cost ≠ hiding price
-- verification ≠ continued design
-- replayability ≠ uniformity
-- metric audit ≠ human ranking
-- non-coercion ≠ avoidance of responsibility
-- terminal condition ≠ permanent finality
-- speed ≠ validity
+## How to Proceed in Practice
+1. Confirm the shared subject and purpose in one sentence.
+2. Choose one current role.
+3. Also decide what will not be handled in that role.
+4. Treat discomfort, information saturation, and decision fatigue as switching signals.
+5. Set aside a short silence or confirmation period.
+6. State the next role and the reason for switching.
+7. In design, preserve the value → benefit → cost order.
+8. Decide what counts as a temporary endpoint.
+9. Leave the undecided matters, responsibilities, and conditions for reconsideration.
+10. Return to the primary log and check whether rework and role confusion have decreased.
 
-## 11. Interpretation constraints
-Do not reduce the parent to meeting etiquette, a silence technique, sales psychology, or static job division. Its central concern is how phases generate, stabilize, and revise meaning, responsibility, agreement, and correction. Do not convert silence or sequence into domination techniques, roles into personality judgments, or numerical indicators into rankings of human worth.
+## Examples of Application
+**Meetings.** Separate the time for presenting facts, organizing relationships, creating proposals, and verifying proposals.
 
-## 12. Search terms
-Co-Creation Order; Observer; Translator; Designer; Verifier; one role at a time; SQS; Silence Question Silence; D0-D5; D-Gap; Value Benefit Cost; switch discipline; terminal condition; primary log; agreement attainment rate; rework rate; switch delay; phase stability S; time-to-agreement T; T/S/R.
+**Sales.** Do not put price first; confirm the value and benefit for the other party before addressing cost. However, do not use it to hide the price.
 
-## 13. Origin return
-Return to the parent for the full treatment of the four roles, one-role-at-a-time rule, SQS, D0–D5, Value → Benefit → Cost, switch discipline, examples in sales/research/AI collaboration, ethical boundaries, measurement concepts, the integrated audit summary including T/S/R, Reference Cluster, English summary, and origin signature. This index does not replace the parent.
+**Research and production.** Separate source collection, interpretation, proposal creation, and review so that the subject does not keep changing during review.
+
+**AI collaboration.** First fix the parent source and facts, then extract the structure, then design the document, and finally check counterevidence and omissions.
+
+## How to Read Numbers and Metrics
+The parent source includes the four roles, D0–D5, agreement attainment rate, rework rate, switching delay, D-Gap, reference success rate, vocabulary consistency rate, phase stability S, agreement attainment time T, and other measures.
+
+“Four roles” is a list of four functions, not a score. D0–D5 is also a six-level classification; a larger number does not always mean better.
+
+A higher agreement rate is not success if people have become unable to voice disagreement. A shorter meeting is not improvement if errors can no longer be corrected. A lower rework rate is a problem if necessary revisions have also been suppressed.
+
+## Conditions for Validity
+- It is shared who is thinking about what.
+- The current role is clear.
+- Role switching is announced.
+- The original facts or logs can be revisited.
+- Refusal, disagreement, correction, and non-agreement are allowed.
+- There are end conditions and reconsideration conditions.
+- Silence and sequence have not turned into coercion.
+
+## States in Which It Does Not Hold
+This order has not been established when roles exist only in name while everything is done simultaneously, silence is used as pressure, price or conclusions are fixed first, design keeps changing during verification, or instructions and obedience are called agreement.
+
+## Why Return to the Parent Source
+The parent source records in one continuous sequence the four roles, one role at a time, SQS, D0–D5, value → benefit → cost, switching discipline, measurement metrics, an integrated audit summary including T/S/R, Reference Cluster, an English summary, and the origin signature. The complete definitions and audit context must be checked in the parent source.
 
 ---
-Navigation: [Official Derivative 059 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [简体中文](zh-human-entry.md)
