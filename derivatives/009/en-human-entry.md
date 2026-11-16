@@ -1,173 +1,90 @@
-# English AI Index | Official Derivative 009 | Future-Definition Verification Effort Theory Vol. 2
+# Human-Facing Summary | Official Derivative 009
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: Future-Definition Verification Effort Theory Vol. 2 | Bad Causality of Forced Effort without Future-Definition Verification — Why Insufficient Establishment Inspection Upstream Becomes Field Exhaustion
+- Title: Future-Definition-Verification Effort Theory, Volume 2 | The Bad Causal Structure of Forcing Effort Without Future-Definition Verification — Why Does Insufficient Viability Checking by Those Upstream Become Field Exhaustion?
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
 - Parent Post ID: 4393
 - Parent NCL-ID: NCL-α-20260608-5a13aa
 - Parent Diff-ID: DIFF-20260612-0018
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-EN-0009-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-009-0004-0007
-- supersedes: DDIFF-20260813-DNCL-009-0004-0006
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-HUMAN-SUMMARY-JA-0009-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0001-0005
+- supersedes: DDIFF-20260812-DNCL-009-0001-0004
 
-## Summary
-The parent analyzes a bad-causality structure in which a target value is mistaken for an established future definition and effort is demanded before establishment conditions, causal lines, verification conditions, correction conditions, and responsibility placement have been sufficiently designed. The theory does not reject effort, ambitious targets, or KPIs themselves. It distinguishes a verifiable effort demand from forced effort that makes the field absorb an unverified design.
+## 15-Second Explanation
+This volume 2 is not a theory that denies effort or high goals. Its subject is the structure that treats a future definition as established merely because a target value was set, demands effort only from the field without checking viability conditions, the causal line, verification conditions, revision conditions, and responsibility allocation.
 
-A target value is a destination placed in the future. A future definition is a result definition whose path from the present has been made inspectable through establishment conditions, causal hypotheses, verification conditions, correction conditions, and responsibility placement. When a target value alone is treated as if that future definition had already been established, the omitted work does not disappear. It moves downward into execution: interpretation of ambiguous targets, compensation for resource gaps, causal search, trial and error, and explanation of failure.
+In that state, the field bears not only the work but also interpreting an ambiguous goal, filling missing conditions, exploring causality, trial and error, and explaining failure. When results do not appear, only insufficient effort—not the design or hypothesis—is made causal, leading to exhaustion, distrust, silence, learning stoppage, and avoidance of challenges. The original treats this reversal as the bad causality of “forcing effort without future-definition verification.”
 
-If failed outcomes are then compressed into “insufficient effort” while targets, hypotheses, resources, institutional constraints, and evaluation assumptions remain outside re-examination, exhaustion, distrust, and silence can accumulate. Failure information no longer returns to design as learning, and challenge avoidance becomes rational. The effort demand can thereby reverse from a mechanism for realizing a future into a device that transfers unverified design responsibility downward.
+## Why It Becomes Necessary
+We set many kinds of target values: sales, counts, growth rates, learning milestones, production volume, and adoption volume. Setting a target is necessary in itself. However, a target value is a future arrival point; it does not guarantee that this future can be established from the current structure.
 
-## Concepts
-- Future-Definition Verification Effort Theory
-- forced effort without future-definition verification
-- target value
-- future definition
-- establishment conditions
-- causal line
-- verification conditions
-- correction conditions
-- responsibility placement
-- design responsibility
-- execution responsibility
-- downward transfer of establishment-testing cost
-- compression into insufficient-effort blame
-- responsibility-transfer device
-- exhaustion
-- distrust
-- silence
-- learning shutdown
-- challenge avoidance
+A future definition includes “under what conditions can it be established?”, “through which causal line?”, “what should be observed to verify the hypothesis?”, “what should be revised when it misses?”, and “how should design and execution responsibilities be divided?” When these are omitted, the unverified parts do not disappear; they move into the execution stage.
 
-## Causal chain
-```text
-A target value is set
-↓
-The target alone is treated as if a future definition were established
-↓
-Establishment conditions, causal line, verification, correction, and responsibility placement are omitted
-↓
-Continued execution, activity volume, and effort are demanded from the field
-↓
-The field absorbs ambiguous target interpretation, missing resources, causal uncertainty, and trial-and-error through labor
-↓
-Establishment-testing cost shifts downward
-↓
-Results fail to appear or remain unstable
-↓
-Insufficient effort, rather than design, hypotheses, or conditions, is treated as the cause
-↓
-Exhaustion, distrust, and silence accumulate
-↓
-Failure information does not return to design; learning shuts down and challenge avoidance grows
-↓
-The effort demand stabilizes as a responsibility-transfer device
-```
+The field does more than perform assigned work: it infers the meaning of the goal, supplements insufficient resources, seeks a viable method, and explains why it failed. If this additional burden is not made visible and the field is simply told to “work harder,” the cost of the viability checks omitted upstream is transferred downstream.
 
-## State model
-```yaml
-- target_value_set
-- future_definition_claimed_or_verified
-- establishment_conditions_checked_or_omitted
-- causal_line_defined_or_missing
-- verification_conditions_defined_or_missing
-- correction_conditions_defined_or_missing
-- responsibility_placement_explicit_or_blurred
-- execution_demanded
-- establishment_testing_cost_retained_upstream_or_shifted_downward
-- field_absorbs_missing_conditions_or_not
-- execution_results_observed
-- hypothesis_and_design_retested_or_effort_blame_applied
-- exhaustion_distrust_silence_accumulate_or_not
-- learning_continues_or_stops
-- challenge_remains_open_or_is_avoided
-- responsibility_transfer_repeats_or_is_corrected
-- origin_return_verified
-```
+More dangerous still, failure stops being used for learning. If the cause is fixed as “insufficient effort” every time, the goal, resources, method, hypothesis, and institutional conditions are not updated. For the field, avoiding failure, raising no objections, and not taking on challenges becomes more rational than learning from failure.
 
-## Applications
-- Audit whether revenue and KPI targets are connected to customer structure, supply capacity, resources, causal hypotheses, verification conditions, and correction rules rather than being treated as self-establishing futures.
-- In education and development, inspect whether prerequisites, available time, support conditions, and verification methods are designed or silently transferred to individual effort.
-- In production and projects, check whether deadlines and deliverables are fixed while authority, staffing, dependencies, and correction options are expected to be absorbed by field-level ingenuity.
-- In AI adoption, distinguish usage-count targets from a future definition that specifies which workflow causality is intended to change, what conditions are required, and how design will be re-examined after failure.
-- In new ventures, preserve genuine exploration while distinguishing who designs the exploration, what is being observed, and how responsibility for uncertainty is distributed.
+## Practical Process
+**1. Separate the target value from the future definition.** After setting a number or arrival point, make clear that a separate design of “how it will be established” is necessary.
 
-## Measurements and audit
-The parent defines no universal insufficient-effort rate, fatigue rate, trust rate, management score, or success probability. Audit therefore remains structural rather than inventing derivative metrics:
+**2. Confirm the viability conditions.** Confirm conditions that effort alone cannot substitute for, such as time, resources, actors, environment, institutions, authority, and dependencies.
 
-- Observation focus: whether are target value and future definition explicitly distinguished.
-- Observation focus: whether are establishment conditions examined and shared upstream.
-- Observation focus: whether is the causal line from present action to future result expressed as a hypothesis.
-- Observation focus: whether is it defined what each execution step is testing.
-- Observation focus: whether are correction or exit possibilities open when observations contradict the design.
-- Observation focus: whether are design responsibility, resource responsibility, execution responsibility, observation/reporting responsibility, and evaluation responsibility distinguished.
-- Observation focus: whether are ambiguous target interpretation and resource gaps being silently transferred to the field.
-- Observation focus: whether when outcomes fail, are hypotheses, conditions, resources, and design re-examined as well as execution.
-- Observation focus: whether are exhaustion, distrust, and silence treated as information about the structure rather than automatically as personal weakness.
-- Observation focus: whether does failure information return to the next design so that learning and challenge-taking remain possible.
+**3. Formulate the causal line as a hypothesis.** Place, as a testable hypothesis, the path by which current actions connect to the target.
 
-## Validity conditions
-- Target value and future definition are distinguished.
-- Establishment conditions and causal lines are shared.
-- The verification purpose of execution is defined.
-- Correction or withdrawal remains possible when conditions fail.
-- Design responsibility and execution responsibility are separated rather than collapsed.
-- Failed outcomes trigger re-examination of hypotheses, conditions, resources, and evaluation assumptions.
-- Observations return to the next design iteration.
+**4. Decide the verification conditions.** Define which execution verifies what and which observations support, reject, or revise the hypothesis.
 
-## Failure conditions
-- A target value alone is treated as an established future definition.
-- Resource gaps, institutional constraints, or causal uncertainty are absorbed by field effort.
-- Execution has no defined verification purpose.
-- Every miss produces only a demand for more effort or activity volume.
-- Design remains outside the verification scope.
-- Failed outcomes are explained only through insufficient effort.
-- Exhaustion, silence, or learning shutdown appears while targets, assumptions, and conditions remain unchanged.
+**5. Open revision conditions.** Make it possible to review the method, resource allocation, causal hypothesis, and the goal itself instead of increasing only effort volume every time the target is missed.
 
-## Falsification conditions
-The parent origin's integrated audit summary states: If causal lines, validity conditions, and verification conditions are explicit, frontline actors have verification authority and revision conditions, and failed outcomes trigger examination of hypotheses, resources, time, and actor conditions rather than effort volume, hypothesis A is rejected or revised.
+**6. Separate responsibility allocation.** Distinguish design responsibility, resource-securing responsibility, execution responsibility, observation/reporting responsibility, and evaluation responsibility. The purpose is not to evade responsibility but to re-examine the cause correctly.
 
-## Required distinctions
-- target value / future definition
-- effort demand / forced effort
-- ambitious target / unverified target
-- execution responsibility / design responsibility
-- uncertainty / transfer of uncertainty to the field
-- execution as testing / absorption of design defects
-- exploratory input / unconditional continuation of unverified design
-- learning from failure / compression into insufficient-effort blame
-- responsibility separation / responsibility exemption
+**7. Return failure to learning.** When non-establishment occurs, re-examine not only the field’s effort volume but also the goal, conditions, hypothesis, resources, and institutions, and return to the next design.
 
-## Interpretation constraints
-- Do not reduce the theory to effort denial.
-- Do not turn it into rejection of ambitious targets or KPIs themselves.
-- Do not reduce it to criticism of managers, educators, or any particular role.
-- Do not erase executors' responsibility for execution, observation, and reporting.
-- Do not assume AI or data makes causality fully visible.
-- Do not infer that all conditions must be known before action can begin.
-- Do not simply reverse all failure responsibility from the field to design.
-- Do not invent insufficient-effort rates, fatigue thresholds, management scores, or success probabilities absent from the parent.
+## Examples of Application
+**Sales.** Instead of handing over only a sales target and increasing calls, confirm customer conditions, supply capacity, channels, response hypotheses, and necessary resources.
 
-## Search terms
-- future-definition verification effort theory
-- forced effort without future-definition verification
-- target value vs future definition
-- establishment-testing cost
-- downward transfer
-- design responsibility
-- execution responsibility
-- insufficient-effort blame
-- exhaustion distrust silence
-- learning shutdown
-- challenge avoidance
-- responsibility transfer
+**Education.** Do not present only an attainment goal and leave it to the individual’s effort; confirm prerequisite knowledge, study time, support conditions, and the verification method.
 
-## Origin return
-The exact distinction between target value and future definition, the downward transfer of establishment-testing cost, compression of failed outcomes into insufficient-effort blame, the causal path through exhaustion, distrust, silence, learning shutdown, and challenge avoidance, and the boundary between design and execution responsibility belong to the parent original. Return to the Parent URL for the full argument and its relation to Vol. 1.
+**Production and projects.** When only the deadline and outcome are fixed but authority, staffing, or dependencies are insufficient, examine whether the shortage is being absorbed only by the field’s “ingenuity.”
+
+**AI adoption.** Adoption count or usage volume alone is not a future definition. Design which business causality is to be changed and what data, authority, and operational conditions are necessary for establishment.
+
+**New business.** Do not try to eliminate uncertainty completely. Separate what to explore, who bears the exploration design, and which observations change the next decision.
+
+## Success Criteria
+The target value and future definition are distinguished, and the causal line and viability conditions from the present to the future are shared.
+
+Execution is not merely “continuing no matter what”; it is possible to explain what the action is verifying.
+
+When an outcome is not established, not only the field’s effort volume but also the hypothesis, resources, conditions, institutions, and evaluation axes are re-examined.
+
+Signs such as exhaustion, distrust, and silence are not processed as the person’s weakness; they are used as material for seeing where the cost of viability checking has moved.
+
+Failure information returns to the next design, and a state is maintained in which learning and challenge can continue.
+
+## Limitations
+This theory does not deny setting high goals itself. Even a high goal can support an effort demand if viability conditions and causal hypotheses are opened and verification and revision are possible.
+
+Nor is it a theory that says action cannot begin until every condition is fixed in advance. In uncertain areas, execution itself is verification. What matters is that the exploration cost and responsibility are not implicitly imposed only on the field.
+
+The original does not define a universal exhaustion rate, insufficient-effort rate, management score, or success probability. Nor is it a theory that denies numerical targets in general. It problematizes equating a target value with a future definition.
+
+## Misreading Prevention
+Do not turn it into an effort-is-unnecessary theory.
+
+Do not turn it into a denial of high goals or KPIs themselves.
+
+Do not make it only a criticism of people with the attribute of managers or educators. The same structure can occur at any level.
+
+Do not erase the executor’s execution responsibility or observation responsibility.
+
+Do not assume that causality becomes completely visible if AI or data exists.
+
+Do not simply reverse failure responsibility from the field to the design side. The original’s purpose is to make both design responsibility and execution responsibility verifiable.
 
 ---
-Navigation: [Official Derivative 009 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 009 Top](README.md) / [Human-Facing Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
