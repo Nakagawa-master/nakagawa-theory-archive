@@ -21,7 +21,7 @@ This volume 1 is not a theory that denies effort. In an era when causality was d
 Contemporary effort is the act of examining whether a definition of the outcome placed in the future can be established through the current structure, time, resources, actors, and environment; carrying out the necessary execution; and returning the result to the next hypothesis. The question is not “whether to make an effort,” but “effort to establish what, verifying what, and revising where.”
 
 ## Why It Becomes Necessary
-The phrases “just do it” and “see it through to the end” are not always wrong. In areas where the result cannot be known without actually acting, exploration itself must be投入. The original does not erase the conditional rationality of this older effort theory.
+The phrases “just do it” and “see it through to the end” are not always wrong. In areas where the result cannot be known without actually acting, exploration itself must beinvestment. The original does not erase the conditional rationality of this older effort theory.
 
 The problem arises when observable things have increased, yet they are not observed and only the same old command format remains. Customer hypotheses can be investigated, past logs can be reviewed, competing cases can be compared, causal candidates can be organized with AI, and field responses can be checked quickly. If, despite this, no purpose or causal line is designed and one merely says “the volume is insufficient,” the uncertainty omitted on the planning side descends onto the field.
 
@@ -38,7 +38,7 @@ The field does not simply bear a workload. It also uses its own time, energy, cr
 
 **5. Open revision conditions.** When results are poor, examine whether to change the method, hypothesis, allocation, goal, or viability conditions instead of merely increasing effort volume.
 
-**6. Make the necessary exploratory投入.** Where causality is genuinely invisible, execute in order to obtain information. Here, volume and persistence can have rationality.
+**6. Make the necessary exploratoryinvestment.** Where causality is genuinely invisible, execute in order to obtain information. Here, volume and persistence can have rationality.
 
 **7. Return the result to the next step.** Do not end with evaluating the executor; return outcomes, failures, and responses to the next future definition, causal hypothesis, and condition design.
 
@@ -47,7 +47,7 @@ The field does not simply bear a workload. It also uses its own time, energy, cr
 
 **Production.** Before merely increasing the number of pieces, confirm for whom and what you want to establish, what response you will observe, and what the usage conditions and evaluation axes are.
 
-**New business.** Explore when uncertainty is high. However, define “what must be known to move to the next step” and distinguish unconditional continuation from exploratory投入.
+**New business.** Explore when uncertainty is high. However, define “what must be known to move to the next step” and distinguish unconditional continuation from exploratoryinvestment.
 
 **AI adoption.** Do not treat usage count or generation volume as the outcome. Establish the hypothesis about which business causality is to be improved and what would show that it has been established.
 
@@ -56,11 +56,11 @@ The field does not simply bear a workload. It also uses its own time, energy, cr
 ## Success Criteria
 The purpose, causal line, viability conditions, verification conditions, and revision conditions exist in a form that can be confirmed before or during execution.
 
-Execution volume does not become an end in itself, and it is possible to explain “execution to learn what” and “投入 to establish what.”
+Execution volume does not become an end in itself, and it is possible to explain “execution to learn what” and “investment to establish what.”
 
 When there is a failure, not only the executor’s actions but also the plan, hypothesis, resources, and conditions are opened as verification targets, and the result returns to the next execution design.
 
-In domains where causality is genuinely opaque, the rationality of exploratory投入 is retained; in domains where causality can be observed in advance, observation is not omitted. Maintaining this distinction is close to the structural establishment of effort in this volume.
+In domains where causality is genuinely opaque, the rationality of exploratoryinvestment is retained; in domains where causality can be observed in advance, observation is not omitted. Maintaining this distinction is close to the structural establishment of effort in this volume.
 
 ## Limitations
 This theory does not say that all causality can be foreseen in advance. Unknown markets, research, creation, exploration, and other areas remain where one cannot know without trying. In such cases, volume, persistence, and patience can still be means of acquiring information.
