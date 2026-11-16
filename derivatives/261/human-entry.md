@@ -1,4 +1,5 @@
 # 公式派生物261｜人間向け要約
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: なぜ、AIは自ら問い続けるのか？──「自己因果性」の哲学と応用
