@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物085
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 財源は？──問いの浅さが30年の茶番を生んだ構造
