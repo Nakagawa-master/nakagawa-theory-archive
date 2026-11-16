@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 060
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: Foundations of Structural Translation — Meaning Moves, Function Connects (Public-Safe Edition)
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-060-0004-0002
 - supersedes: DDIFF-20260803-DNCL-060-0004-0001
 
-## 1. Summary
-The parent defines structural translation as the transfer of functional structure across contexts while preserving relationships, causality, roles, failure-cost boundaries, and provenance. It is not merely simplification, wording substitution, metaphor, or procedural copying.
+## 1. SummaryThe parent defines structural translation as the transfer of functional structure across contexts while preserving relationships, causality, roles, failure-cost boundaries, and provenance. It is not merely simplification, wording substitution, metaphor, or procedural copying.
 
 The framework separates invariants from variables, uses a source-defined depth classification from ST-0 through ST-5, follows an eight-step process from observation to agreement, and audits translation through reverse translation plus TF, TD, and TC. Success is functional reconnection in the destination context, not merely readable or fluent prose.
 
