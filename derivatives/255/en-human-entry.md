@@ -4,7 +4,6 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 ## Parent Original
 - Parent official title (Japanese original): 「貨幣と接続」の因果的統合──ポスト・パラドックス社会の二重構造設計
-- Supplementary translation: Causal Integration of “Money and Connection” — Dual-Structure Design for a Post-Paradox Society
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-money-connection-causal-integration/
 - Parent Post ID: 441
 - Parent NCL-ID: NCL-α-20251102-b2b017
