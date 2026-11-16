@@ -81,4 +81,4 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 ---
 
-导航：[官方派生物174顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引·日语](ai-index.md) / [AI索引·中文](zh-ai-index.md) / [AI索引·中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航：[官方派生物174顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引·日语](ai-index.md) / [AI索引·英语](en-ai-index.md) / [AI索引·中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
