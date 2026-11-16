@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 059
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: Co-Creation Order — Roles and the Philosophy of Silence (Public-Safe Edition)
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-059-0004-0002
 - supersedes: DDIFF-20260803-DNCL-059-0004-0001
 
-## 1. Summary
-The parent treats failure in co-creation not merely as a deficit of talent but as a failure of ordering: observation, translation, design, and verification become entangled; Silence–Question–Silence is absent; role switching is unclear; Value → Benefit → Cost loses its sequence; and no terminal condition stabilizes agreement.
+## 1. SummaryThe parent treats failure in co-creation not merely as a deficit of talent but as a failure of ordering: observation, translation, design, and verification become entangled; Silence–Question–Silence is absent; role switching is unclear; Value → Benefit → Cost loses its sequence; and no terminal condition stabilizes agreement.
 
 The design separates four functions and applies one primary role at a time. SQS creates phases for observing premises, placing a question, and stabilizing agreement, responsibility, unresolved matters, and the next handoff. Switch signals include rising discomfort, information saturation, and decision fatigue. The goal is reproducible, falsifiable, correctable co-creation rather than obedience, forced consensus, or static job division.
 
