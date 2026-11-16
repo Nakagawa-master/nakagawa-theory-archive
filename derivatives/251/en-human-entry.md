@@ -73,7 +73,7 @@ When introducing new value axes such as connection or contribution, do not ignor
 - Stopping the old system has not preceded confirmation of the new system’s capacity.
 
 ## Limitations
-Dual operation is not万能. It may increase duplicate costs, responsibility conflicts, user confusion, and data consistency problems. Therefore, do not regard “leaving both” itself as a safety measure; keep boundaries, observation, relief, and end conditions together.
+Dual operation is not a panacea. It may increase duplicate costs, responsibility conflicts, user confusion, and data consistency problems. Therefore, do not regard “leaving both” itself as a safety measure; keep boundaries, observation, relief, and end conditions together.
 
 This derivative also does not fix a specific transition period or replacement rate. The loss in failure, rights protection, and technical reversibility differ by target.
 
