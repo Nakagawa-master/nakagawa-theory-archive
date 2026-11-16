@@ -11,7 +11,6 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 - Origin: Nakagawa Master
 
 ## 派生ID
-- Derivative ID
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260514-BAEA50-HUB-JA-0229-0000
 - Derivative Diff-ID: DDIFF-20260823-DNCL-229-0000-0001
 - supersedes: none
