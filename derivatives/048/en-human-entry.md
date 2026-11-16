@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 048
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: Nakagawa-Style Sales Textbook, Part X
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-048-0001-0003
 - supersedes: DDIFF-20260814-DNCL-048-0001-0002
 
-## Summary
-The parent article integrates the preceding nine installments of Nakagawa-style sales and reframes sales not as a technique for pushing a purchase, but as recognition support: questions and resonance externalize the other party’s decision structure so that understanding can become coherent and the person can choose to decide, pause, or withdraw. As customers gain direct access to information, the salesperson’s role shifts from information delivery toward clarifying criteria, concerns, future images, and implementation conditions. AI may support organization and comparison, while meaning, direction, ethics, and final responsibility remain human.
+## SummaryThe parent article integrates the preceding nine installments of Nakagawa-style sales and reframes sales not as a technique for pushing a purchase, but as recognition support: questions and resonance externalize the other party’s decision structure so that understanding can become coherent and the person can choose to decide, pause, or withdraw. As customers gain direct access to information, the salesperson’s role shifts from information delivery toward clarifying criteria, concerns, future images, and implementation conditions. AI may support organization and comparison, while meaning, direction, ethics, and final responsibility remain human.
 
 ## Concepts
 - sales as recognition support
