@@ -1,5 +1,7 @@
 # Human-Oriented Summary | Official Derivative 181
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## Parent Source
 - Title: Do Not Judge “Sin”; Correct “Misalignment” — Principles of a Structural Judicial OS and the Full Picture of the “Multilayer Connected-Value Audit”
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/
