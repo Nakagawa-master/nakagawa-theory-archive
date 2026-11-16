@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 050
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-050-0001-0002
 - supersedes: DDIFF-20260802-DNCL-050-0004-0001
 
-## Summary
-Sales, marketing, and branding are treated as one connected architecture of inquiry, understanding, resonance, promise, delivery, and memory. Sales develops deep understanding in an individual context; marketing translates the same question structure into the market; branding stabilizes repeated promises, conduct, and outcomes into durable meaning. Attraction is voluntary inclination rather than pressure, and resonance is alignment with the customer's own decision criteria rather than simple liking.
+## SummarySales, marketing, and branding are treated as one connected architecture of inquiry, understanding, resonance, promise, delivery, and memory. Sales develops deep understanding in an individual context; marketing translates the same question structure into the market; branding stabilizes repeated promises, conduct, and outcomes into durable meaning. Attraction is voluntary inclination rather than pressure, and resonance is alignment with the customer's own decision criteria rather than simple liking.
 
 ## Concepts
 - Sales: understanding individual wishes, anxieties, constraints, and decision criteria.
