@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 021 | Physics of Consensus Formation Vol. 6
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260813-DNCL-021-0001-0007
 - supersedes: DDIFF-20260813-DNCL-021-0004-0006
 
-## Summary
-The parent treats deviation not primarily as a violation to punish, but as a difference D between design and operation that must become observable so understanding U, repair responsibility R, and history H can recover and restore `S = U × R × H`. Immunity is therefore not the absence of deviation. It is the ability to expose a difference, fix a repair entry point, preserve history, and return the system to a repairable stable state quickly.
+## SummaryThe parent treats deviation not primarily as a violation to punish, but as a difference D between design and operation that must become observable so understanding U, repair responsibility R, and history H can recover and restore `S = U × R × H`. Immunity is therefore not the absence of deviation. It is the ability to expose a difference, fix a repair entry point, preserve history, and return the system to a repairable stable state quickly.
 
 The parent contrasts two causal paths. Punishment-centered handling can produce `punishment → lower R → concealment → lower S → amplified D` when actors avoid reporting and responsibility becomes culprit-seeking rather than repair. Difference disclosure can instead produce `difference disclosure → fixed repair R → repairability → S recovery → damped D` when disclosure preserves verifiable differences, history, and a repair owner.
 
