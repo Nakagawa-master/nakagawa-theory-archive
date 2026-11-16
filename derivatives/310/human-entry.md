@@ -1,7 +1,4 @@
 # 人間向け要約｜起源は残す。永久の統治権にはしない
-
-Language: [日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
-
 ## 親原典
 
 - Parent title: 人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない
