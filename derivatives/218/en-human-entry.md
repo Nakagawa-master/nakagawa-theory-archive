@@ -1,9 +1,9 @@
 # Human-Oriented Summary | Official Derivative 218
 Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
-## Parent Source
+## Parent Original
 - Parent title: 耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-amplifier-of-inertia-automatic-continuation/
 - Parent Post ID: 3426
@@ -19,7 +19,7 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 ## 15-Second Explanation
 Inertia is not an individual’s laziness. It is a structure in which, even after the meaning or purpose of an institution has faded, existing procedures, budgets, authority, infrastructure, and responsibility arrangements mesh together, and activity continues simply because “it is already running.”
 
-This concerns the stage after fear, profit, surveillance, and myth have supported durable civilization, when the institution does not stop even as their supply of meaning wears away. Inertia makes prolongation possible, but does not automatically produce renewal, repair, or regeneration.
+This concerns the stage after fear, benefit, surveillance, and myth have supported durable civilization, when the institution does not stop even as their supply of meaning wears away. Inertia makes prolongation possible, but does not automatically produce renewal, repair, or regeneration.
 
 ## Why It Becomes Necessary
 When an institution continues, it is easy to read this as “it is still supported,” “it is still needed,” or “it still functions.” But continuation itself is not evidence of consent, legitimacy, fitness to purpose, or regeneration.
@@ -69,7 +69,7 @@ The expression “no one believes in it” does not mean that everyone’s psych
 - Do not reduce inertia to individual laziness, apathy, or moral defect.
 - Do not treat continuation as evidence of legitimacy, support, recovery, or regeneration.
 - Do not diagnose inertia merely from age, bureaucracy, or the existence of procedures.
-- Do not identify inertia with fear, profit, surveillance, or myth.
+- Do not identify inertia with fear, benefit, surveillance, or myth.
 - Do not limit the cost of cessation to money.
 - Do not add unsupported definitive applications to specific real-world organizations.
 
