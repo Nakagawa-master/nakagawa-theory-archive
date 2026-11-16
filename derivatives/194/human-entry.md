@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物194
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 戦略的異質接続 —— 旧文明のリソースを「燃料」に変換するクリーンルーム理論 （D系 Vol.3）
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-strategic-heterogeneity-connection-resource-conversion-clean-room/
