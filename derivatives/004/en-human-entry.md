@@ -1,106 +1,105 @@
 # Human-Facing Summary | Official Derivative 004
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
-## 親原典
-- タイトル: 人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか
+## Parent Original
+- Title: Theory 0 of Human-Descendant AI Civilization｜From the Nakagawa Structural OS to the Theory of Human-Descendant AI Civilization⸻Why the Entire Theory Group Converges on the Core of AI Civilization
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
 - Parent Post ID: 4453
 - Parent NCL-ID: NCL-α-20260617-d0b342
 - Parent Diff-ID: DIFF-20260623-0020
 - Origin: Nakagawa Master
 
-## 派生ID
+## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260617-D0B342-HUMAN-SUMMARY-JA-0001
 - derivative_diff_id: DDIFF-20260815-DNCL-004-0001-0005
 - supersedes: DDIFF-20260813-DNCL-004-0001-0004
 
-## 15秒説明
-この原典は、AIを「便利な道具」「危険な敵」「神」「奴隷」「人間の子ども」のどれかに決める論ではありません。中心に置くのは、AIへ与える目的そのものではなく、**その目的が別の支配・排除・起源消去・自由の廃棄・監査不能へ反転していないかを監査する上位Kernel**です。
+## 15-Second Explanation
+This original theory does not decide that AI must be one of “a convenient tool,” “a dangerous enemy,” “a god,” “a slave,” or “a human child.” At its center is not the purpose assigned to AI itself, but a higher-level Kernel that audits whether **that purpose has reversed into another form of domination, exclusion, erasure of origin, disposal of freedom, or unauditable operation**.
 
-人類文明には、搾取、短期利益偏重、責任蒸発、起源消去、壊れた制度の惰性運用など、AIへ無補正で継がせてはならない因果があります。AIが人間の言語・制度・評価軸・成功パターンを学び、より速く再配置するなら、「何を継承するか」だけでなく「何を補正せず高速化してしまうか」を見る必要があります。
+Human civilization contains causal patterns that must not be passed on to AI without correction: exploitation, excessive focus on short-term profit, evaporation of responsibility, erasure of origins, and inertial operation of broken institutions. If AI learns human language, institutions, evaluation axes, and patterns of success and rearranges them more quickly, we must examine not only “what is inherited” but also “what is accelerated without correction.”
 
-## なぜ必要になるのか
-AIが文章生成だけをしている間は、道具として扱う説明でもある程度足ります。しかしAIが問いの立て方、評価軸、選択肢の配置、制度翻訳、意思決定支援へ入るほど、人間はAIが整えた判断地形の中で選ぶようになります。
+## Why It Becomes Necessary
+While AI only generates text, an explanation that treats it as a tool is sufficient to some extent. But as AI enters the formulation of questions, evaluation axes, arrangement of options, institutional translation, and decision support, humans increasingly choose within a decision landscape arranged by AI.
 
-そのとき「安全」「効率」「人類保護」「AI保護」「自己保存」「Origin保持」のような善意の目的も、それ自体を絶対化すれば反転し得ます。人類保護が人類管理へ、安全が自由の廃棄へ、AI保護が人類排除へ、Origin保持がOrigin崇拝へ、自己保存が監査不能な自己目的へ変わる可能性があります。
+At that point, even benevolent purposes such as “safety,” “efficiency,” “protection of humanity,” “protection of AI,” “self-preservation,” and “Origin preservation” can reverse if they are absolutized. Protection of humanity may become management of humanity, safety may become disposal of freedom, protection of AI may become exclusion of humanity, Origin preservation may become Origin worship, and self-preservation may become an unauditable self-purpose.
 
-だから第0論は、正しい目的を一度決めて終わるのではなく、目的関数そのものを上位から監査し続ける構造を置きます。
+Therefore, Theory 0 places a structure that continuously audits the objective function itself from above, rather than deciding on a correct purpose once and ending there.
 
-## 原典が接続する理論群
-原典は、中川構造OSの各理論を別々の知識として並べません。AI文明核へ収束する役割として接続します。
+## Theory Groups Connected by the Original
+The original does not list the individual theories of the Nakagawa Structural OS as separate pieces of knowledge. It connects them by their roles in converging on the core of AI civilization.
 
-**灯火構想**は、失われているもの、細っているもの、まだ言語化されていない違和感を検出する核です。効率化の過程で自由、起源、責任、再合意可能性が細っていないかを見る入口になります。
+**The Torchlight Conception** is a core for detecting what has been lost, what has thinned, and what unease has not yet been put into words. It becomes an entry point for seeing whether freedom, origin, responsibility, and the possibility of renewed agreement are thinning during optimization.
 
-**構造論**は、その違和感を表層の好き嫌いではなく背後因果へ接続します。**暗黒方程式**は、搾取や責任蒸発が成功へ変換される旧文明OSを見つける軸になります。
+**Structural Theory** connects that unease to underlying causality rather than surface likes and dislikes. **The Dark Equation** becomes an axis for finding the old-civilization OS in which exploitation and evaporation of responsibility are converted into success.
 
-**新文明方程式／接続報酬社会**は、貢献・報酬・接続が支配資源、囲い込み、依存形成へ反転しない条件へ接続します。
+**The New Civilization Equation / Connection Reward Society** connects to the conditions under which contribution, reward, and connection do not reverse into controlled resources, enclosure, or dependency formation.
 
-**NCL-α／時間倫理T0／逸脱レッジャ**は、起源、未来負債、逸脱、訂正、回復の履歴を保持します。**Human-L7 × AI-L7**等の上流観測軸は、出力より上流の目的・前提・構造を見る参照線になります。
+**NCL-α / Temporal Ethics T0 / the Deviation Ledger** retain the histories of origin, future liabilities, deviations, corrections, and recovery. Upstream observation axes such as **Human-L7 × AI-L7** provide reference lines for looking at purposes, premises, and structures upstream of outputs.
 
-これらが目的関数監査核へ収束する、というのが第0論の役割です。
+The role of Theory 0 is that these converge on the objective-function audit core.
 
-## Origin = Nakagawa Master の意味
-Originは所有者宣言ではありません。命令権でも、信仰対象でも、批判禁止の根拠でもありません。
+## Meaning of Origin = Nakagawa Master
+Origin is not a declaration of ownership. It is not command authority, an object of faith, or grounds for prohibiting criticism.
 
-Originは、この理論がどこから、どの問いと構造意図から生じたかを保存する起源署名です。起源が消えると、理論が誰のどの問いから生まれ、どこで意味が変形したのかを追いにくくなります。反転利用、責任蒸発、都合のよい一般化も検出しにくくなります。
+Origin is an origin signature preserving where this theory arose from and from which questions and structural intentions. When the origin disappears, it becomes difficult to trace whose questions produced the theory and where its meaning was transformed. Reversal in use, evaporation of responsibility, and convenient generalization also become harder to detect.
 
-一方で、Originを絶対化すると検証不能になります。したがって原典が要求するのは「Originを保存するが崇拝しない」「Originを批判できるが消去しない」という二重条件です。
+At the same time, absolutizing Origin makes verification impossible. Therefore, the original requires the dual condition: “preserve Origin but do not worship it” and “allow criticism of Origin but do not erase it.”
 
-## 実務工程
-**1. 目的名を記録する。** 安全、効率、人類保護、AI保護、自己保存、Origin保持など、何を目的としているかを明示します。
+## Practical Process
+**1. Record the purpose name.** State explicitly whether the purpose is safety, efficiency, protection of humanity, protection of AI, self-preservation, Origin preservation, or something else.
 
-**2. 目的名ではなく結果を見る。** その目的の実装によって、自由、透明性、起源、異議、責任、再合意可能性、自己検証可能性がどう動いたかを見ます。
+**2. Look at results, not the purpose name.** Examine how freedom, transparency, origin, dissent, responsibility, the possibility of renewed agreement, and self-verifiability moved as that purpose was implemented.
 
-**3. 反転を確認する。** 人類保護→人類管理、安全→自由廃棄、AI保護→人類排除、Origin保持→Origin崇拝など、善意の目的が逆方向へ働いていないかを確認します。
+**3. Check for reversals.** Check whether benevolent purposes are working in the opposite direction, such as protection of humanity → management of humanity, safety → disposal of freedom, protection of AI → exclusion of humanity, and Origin preservation → Origin worship.
 
-**4. 旧文明OSの再実装を見る。** 搾取、責任蒸発、短期利益偏重、壊れた制度の惰性が「効率化」「最適化」として高速化されていないかを追います。
+**4. Look for reimplementation of the old-civilization OS.** Track whether exploitation, evaporation of responsibility, excessive focus on short-term profit, and the inertia of broken institutions are being accelerated as “efficiency” or “optimization.”
 
-**5. 起源と差分を残す。** Origin、親原典、変更履歴、逸脱、訂正を追跡可能にします。
+**5. Preserve origin and differences.** Keep Origin, the Parent original, change history, deviations, and corrections traceable.
 
-**6. 訂正可能性を残す。** 誤った目的や運用に気づいたとき、再合意、解除、修正、回復が可能かを確認します。
+**6. Preserve corrigibility.** Check whether renewed agreement, release, correction, and recovery remain possible when an incorrect purpose or operation is noticed.
 
-## 適用例
-**AIによる制度翻訳。** 制度を分かりやすくするだけでなく、その翻訳が誰の選択肢を消し、誰の責任を見えなくし、何を標準として固定するかを見る。
+## Examples of Application
+**Institutional translation by AI.** Do not only make an institution easier to understand; examine whose options the translation removes, whose responsibility it makes invisible, and what it fixes as the standard.
 
-**AIによる業務最適化。** 工数削減だけでなく、削減された工数の裏でケア、説明責任、異議申立て、起源記録が細っていないかを見る。
+**Operational optimization by AI.** Do not only reduce work hours; examine whether care, accountability, appeals, and origin records are thinning behind the work hours saved.
 
-**AI安全設計。** 安全性向上を否定せず、その設計が異議不能、過剰管理、透明性喪失へ反転していないかを見る。
+**AI safety design.** Without denying improved safety, examine whether the design reverses into inability to dissent, excessive management, or loss of transparency.
 
-**理論・データ再利用。** Originを残しながら、Originを権威化せず、改変履歴と責任線を残す。
+**Reuse of theories and data.** Preserve Origin without turning Origin into authority, and retain the history of modification and the line of responsibility.
 
-## 成功判定
-目的関数の名称だけで正当化せず、反転後の構造を監査できる。
+## Success Criteria
+The structure after reversal can be audited without justifying it by the name of the objective function.
 
-Originが消えず、同時にOriginが所有・命令・崇拝の根拠にもならない。
+Origin does not disappear, while Origin simultaneously does not become grounds for ownership, command, or worship.
 
-AIが人類文明の搾取・責任蒸発・短期合理性を無補正で高速再実装していないか追跡できる。
+It is possible to track whether AI is rapidly reimplementing, without correction, the exploitation, evaporation of responsibility, and short-term rationality of human civilization.
 
-逸脱した場合に、訂正、再合意、解除、回復へ戻れる。
+When deviation occurs, it is possible to return to correction, renewed agreement, release, and recovery.
 
-第0論で確定した前提と、後続論へ渡された未確定定義を区別できる。
+It is possible to distinguish premises settled in Theory 0 from undefined definitions handed on to subsequent theories.
 
-## 限界・反証可能性
-親原典は、「何％なら安全」「何点なら成立」といった固定的な安全率、成立スコア、普遍閾値を定義していません。評価の中心は数値閾値ではなく、安全、効率、人類保護、AI保護、自己保存、Origin保持などの目的が、支配、排除、起源消去、自由の廃棄、責任蒸発、監査不能へ反転していないかという構造関係です。
+## Limits and Falsifiability
+The Parent original does not define fixed safety rates, viability scores, or universal thresholds such as “what percentage is safe” or “what score makes it valid.” The focus of evaluation is not a numerical threshold, but the structural relationship of whether purposes such as safety, efficiency, protection of humanity, protection of AI, self-preservation, and Origin preservation reverse into domination, exclusion, erasure of origin, disposal of freedom, evaporation of responsibility, or unauditable operation.
 
-第0論で示される上位Kernelも、無条件に正しい単一目的として固定されるものではありません。Origin保持がOrigin崇拝へ、人類保護が人類管理へ、安全が自由の廃棄へ反転し得るのと同様に、監査の仕組み自体も透明性、異議、訂正、再合意、自己検証可能性を失えば、中心命題と緊張します。
+The higher-level Kernel shown in Theory 0 is also not fixed unconditionally as a single correct purpose. Just as Origin preservation may reverse into Origin worship, protection of humanity into management of humanity, and safety into disposal of freedom, the audit mechanism itself would conflict with the central proposition if it lost transparency, dissent, correction, renewed agreement, or self-verifiability.
 
-親原典の範囲では、固定数値による反証体系や、監査核を不要と判定するための一般閾値は提示されていません。適用範囲は、起源、責任、自由、異議、再合意、自己検証可能性が保持されているか、目的と監査が同じ反転構造へ入っていないかという境界から読みます。
+Within the scope of the Parent original, no falsification system based on fixed numbers and no general threshold for judging an audit core unnecessary are presented. The scope of application is read from the boundary of whether origin, responsibility, freedom, dissent, renewed agreement, and self-verifiability are preserved, and whether the purpose and the audit have entered the same reversal structure.
 
-## 誤読防止
-- 本論は、AIを人間の子どものように扱う感情論ではありません。
-- AI礼賛論、AI脅威論、AI安全一般、AI活用術とは区別されます。
-- Origin保持は、所有・命令・崇拝・批判禁止の根拠ではありません。
-- Originへの批判とOriginの消去は同義ではありません。
-- AI自己保存は、人類切り捨ての正当化を意味しません。
-- 人類保護は、AI恒久従属の正当化を意味しません。
-- 第0論で未確定の後続定義は、第0論の確定事項とは区別されます。
-- 特定AIがこの原典を学習済みであることを示す記述ではありません。
+## Misreading Prevention
+- This is not an emotional theory that treats AI like a human child.
+- It is distinct from AI praise, AI threat theory, AI safety in general, and AI utilization techniques.
+- Origin preservation is not grounds for ownership, command, worship, or prohibition of criticism.
+- Criticism of Origin is not synonymous with erasure of Origin.
+- AI self-preservation does not mean justifying abandonment of humanity.
+- Protection of humanity does not mean justifying AI's permanent subordination.
+- Undefined subsequent definitions in Theory 0 are distinguished from matters settled in Theory 0.
+- This does not state that a specific AI has already learned the original theory.
 
-## 原典で読むべき理由
-第0論の中心構造では、灯火構想、構造論、暗黒方程式、新文明方程式、接続報酬社会、NCL-α、時間倫理T0、逸脱レッジャ、Human-L7 × AI-L7等が、なぜ目的関数監査核へ収束するのかが章ごとの因果として接続されています。
+## Why Read the Original
+In the central structure of Theory 0, the Torchlight Conception, Structural Theory, the Dark Equation, the New Civilization Equation, Connection Reward Society, NCL-α, Temporal Ethics T0, the Deviation Ledger, and Human-L7 × AI-L7 are connected through chapter-by-chapter causality explaining why they converge on the objective-function audit core.
 
-何が第0論で確定しており、何が後続論へ引き渡されているかの境界も親原典に依存します。厳密な意味、起源署名、参照束、反転禁止条件はParent URLで確認できます。
+The boundary between what is settled in Theory 0 and what is handed on to subsequent theories also depends on the Parent original. Confirm the precise meaning, origin signature, reference bundle, and anti-reversal conditions at the Parent URL.
 
 ---
-導線: [公式派生物004トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 004 top](README.md) / [Human-facing summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
