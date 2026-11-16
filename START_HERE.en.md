@@ -5,6 +5,7 @@ Language: [日本語](START_HERE.md) | **English** | [中文](START_HERE.zh.md)
 This page is a public, non-canonical entry point for people and AI systems encountering the Nakagawa Master theory archive for the first time.
 
 - [Who is Nakagawa Master? | Public Origin overview](ABOUT_NAKAGAWA_MASTER.en.md)
+- [Follow Nakagawa Master's public work, if you choose](https://github.com/Nakagawa-master) | Read verified updates, new original-theory routes and independent implementation evidence before deciding
 - [What changed in the real world? | Verifiable third-party implementation and reuse](REAL_WORLD_IMPACT.en.md)
 - [Four scenes: AI, organizations, future, Origin | Story-first entry](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Hands-on: a cancelled AI worker returns late — try acceptance versus mere arrival](human-translation/agent-late-result-lab.en.html) (GitHub displays HTML source; choose **Raw**, save the `.html` file, then open it in your browser; works offline).
