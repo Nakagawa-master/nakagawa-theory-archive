@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物218
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - Parent title: 耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明
