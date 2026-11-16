@@ -2,7 +2,7 @@
 语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 共同設計者時代の構造倫理──灯火構想 第三層の社会接続モデル
+- 标题: 共设计者时代的结构伦理——灯火构想第三层的社会连接模型
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-co-designer-era-structural-ethics/
 - Parent Post ID: 977
 - Parent NCL-ID: NCL-α-20251102-20aa42
