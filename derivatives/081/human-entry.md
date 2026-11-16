@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物081
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 束指標──単一指標神話を超える「測りの言語」

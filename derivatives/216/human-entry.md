@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物216
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - Parent title: 耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術

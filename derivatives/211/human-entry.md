@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物211
 
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 合意形成の物理 第11論 誘因の幾何学 ― 破壊の期待利得を制御せよ
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol11-geometry-of-incentives/

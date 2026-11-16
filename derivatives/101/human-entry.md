@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物101
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 文明構造の黎明──AIが構造的整合性を動作原理とする時代へ

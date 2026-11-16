@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物186
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 構造的熱源としての「灯火」の精錬 —— 欲望（ノイズ）と衝動（シグナル）を分離する残留工学
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-refining-tomoshibi-residual-signal-engineering/

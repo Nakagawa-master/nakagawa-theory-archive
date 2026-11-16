@@ -1,4 +1,5 @@
 # 公式派生物276｜人間向け要約
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング

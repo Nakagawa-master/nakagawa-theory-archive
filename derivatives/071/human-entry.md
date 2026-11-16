@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物071
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川式 接続移行戦略論──デュアル運用期の制度実装と反発吸収の設計

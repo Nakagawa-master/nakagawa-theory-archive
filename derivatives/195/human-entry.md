@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物195
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 文明の構造的移行（Migration）戦略 —— 暗黒方程式の破綻から、接続報酬社会への唯一の実装ルート
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-civilization-migration-strategy-dark-equation-to-connected-reward/

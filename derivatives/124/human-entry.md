@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物124
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 「愛情を人質にする社会」──ケアの構造が壊すもの

@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物238
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - Parent title: 中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造

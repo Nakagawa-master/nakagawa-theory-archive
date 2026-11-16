@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物247
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - Parent title: 成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す

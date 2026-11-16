@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物199
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 不動産市場OS Vol.2【理論編】張力均衡（Tension Equilibrium）とヘイト制御 ⸻ 透明化が必ず生む摩擦を、循環の推進力に変換する
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol2-tension-equilibrium/

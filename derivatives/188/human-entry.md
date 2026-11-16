@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物188
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - Parent title: 「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-intermission-public-causality-silence-is-causal/

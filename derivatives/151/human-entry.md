@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物151
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計

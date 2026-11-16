@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物200
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 不動産市場OS Vol.3【数値設計編】「価格」から「構造」へ ―― AI査定・将来収支・リスク係数の完全定義
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol3-numerical-design/

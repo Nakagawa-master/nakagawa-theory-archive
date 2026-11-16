@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物158
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: AI・環境副作用制御：不可逆線の優先保護と責任転嫁禁止条項が担保する説明責任

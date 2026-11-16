@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物189
 
+> 言語切替：[日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 価値の物理学の再定義 —— 「交換」から「共鳴」へ 共鳴市場OS 一般理論（C系 Vol.1）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-redefining-value-physics-exchange-to-resonance-general-theory/

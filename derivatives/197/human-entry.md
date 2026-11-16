@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物197
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系）
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/

@@ -1,4 +1,5 @@
 # 公式派生物251｜人間向け要約
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川式 接続移行戦略論──デュアル運用期の「秩序ある置換」設計

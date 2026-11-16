@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物054
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 灯火構想群・特別稿──灯火AIネットワーク設計思想 v1.0

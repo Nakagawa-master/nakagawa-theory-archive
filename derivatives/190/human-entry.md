@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物190
 
+> 言語切替：[日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 重力のエンジニアリング ——「狩猟（セールス）」から「誘引（シグナリング）」への実装プロトコル（C系 Vol.2）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-gravity-engineering-implementation-protocol-hunting-to-signaling/

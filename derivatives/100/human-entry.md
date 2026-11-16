@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物100
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 組織的特異点の設計論──「構造的実在」が駆動する自己言及型OSの創発

@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物184
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - Parent title: 文明は誰が支えているのか — 生存権を物理的に可能にする基礎代謝と、非線形な余剰Cの正体
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-civilization-metabolism-non-linear-surplus-production/

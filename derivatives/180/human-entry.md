@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物180
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 中川OSにおける〈構造〉とは何か ──構造主義とポスト構造主義を超える「生成OS」としての構造実体論（第0章）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-structure-definition/

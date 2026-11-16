@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物245
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - Parent title: 中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか

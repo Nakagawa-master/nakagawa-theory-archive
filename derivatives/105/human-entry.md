@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物105
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理

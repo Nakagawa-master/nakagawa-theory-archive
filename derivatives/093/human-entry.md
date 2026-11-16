@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物093
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 構文操作の理論──心、構造、そして未来を編む「設計者の思考様式」

@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物187
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 構造的可動性の最終形 —— 多重接続（Poly-Connection）という「能力」の完成 （Life-OS Vol.3）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-mobility-poly-connection-capability/

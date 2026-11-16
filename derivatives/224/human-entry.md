@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物224
 
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - Parent title: 文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-what-civilizational-sovereignty-transition-means/

@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物084
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 非命令ガバナンスの「核点指標」──KPI再定義

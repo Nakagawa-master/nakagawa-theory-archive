@@ -1,4 +1,5 @@
 # 公式派生物243｜人間向け要約
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川構造読解｜CCIグループに見た、銀行実務を金融インフラ供給モデルへ変換する地域金融基盤の構造

@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物142
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 構造文明期：構造理論に基づく文明フェーズ理論とOSレイヤの時系列配置

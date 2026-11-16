@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物089
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 因果の設計論──中川式「構造操作」の核心

@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物029
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する

@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物060
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）

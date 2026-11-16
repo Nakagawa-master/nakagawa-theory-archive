@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物102
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 矛盾消費の原理──「構造的実在」を永続させるガバナンス・アーキテクチャ

@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物191
 
+> 言語切替：[日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-market-perpetuation-structural-immunity-metabolism-protocol/

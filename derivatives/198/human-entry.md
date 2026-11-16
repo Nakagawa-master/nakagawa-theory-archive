@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物198
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 不動産市場OS Vol.1【民間実装編】市場OSの思想と初期構造 ―― 需要先行型モデルによる不動産循環の再設計
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-real-estate-market-os-private-implementation/

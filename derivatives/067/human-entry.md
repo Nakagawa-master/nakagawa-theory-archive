@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物067
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川式 接続価値会計論──「つながり」を評価単位にする社会設計
