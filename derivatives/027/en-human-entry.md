@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 027 | Nakagawa Structural Reading | Invax as Material-View Update
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: 中川構造読解｜インバックスを「残土活用」ではなく、土木の材料観を更新する実装OSとして読む
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260813-DNCL-027-0000-0008
 - supersedes: DDIFF-20260813-DNCL-027-0000-0007
 
-## Summary
-The origin reads Invax not merely as surplus-soil reuse, but as an implementation OS that translates heterogeneous soil into conditionally usable construction material through a continuous chain of soil assessment, mix testing, mixing, curing, quality confirmation, field correction, verification, and movement toward standardization. The value kernel is an update in what civil engineering treats as “material.”
+## SummaryThe origin reads Invax not merely as surplus-soil reuse, but as an implementation OS that translates heterogeneous soil into conditionally usable construction material through a continuous chain of soil assessment, mix testing, mixing, curing, quality confirmation, field correction, verification, and movement toward standardization. The value kernel is an update in what civil engineering treats as “material.”
 
 Nakagawa Master chose that material-view update, rather than the surface category “surplus-soil reuse,” as the value core of the external article because a reuse story alone cannot explain the change in the underlying definition of material. The continuous process that turns a disposal target into conditionally usable material through assessment, correction, and verification is the structural value difference placed at the center of the article.
 
