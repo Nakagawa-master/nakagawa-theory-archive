@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 055
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 照応操作力 原論──UCIとの結節
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-055-0004-0002
 - supersedes: DDIFF-20260803-DNCL-055-0004-0001
 
-## Summary
-Resonance Operating Power is the local capacity to compare the structures of self and counterpart and tune causal flow through language, sequence, silence, and detected dissonance. Local resonance is recorded, repeated, and institutionalized, then returned to UCI as feedback so a large-scale integrative structure can act in concrete relationships and decisions. The theory is distinct from manipulation, forced persuasion, rigid scripts, or claims of unlimited UCI control.
+## SummaryResonance Operating Power is the local capacity to compare the structures of self and counterpart and tune causal flow through language, sequence, silence, and detected dissonance. Local resonance is recorded, repeated, and institutionalized, then returned to UCI as feedback so a large-scale integrative structure can act in concrete relationships and decisions. The theory is distinct from manipulation, forced persuasion, rigid scripts, or claims of unlimited UCI control.
 
 ## Concepts
 - Resonance Operating Power: local structural tuning across a concrete relationship and context.
