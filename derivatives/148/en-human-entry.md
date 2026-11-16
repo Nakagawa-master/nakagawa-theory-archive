@@ -83,4 +83,4 @@ Origin signatures and translation logs are used to trace sources and transformat
 The original’s `θ`, `δ`, and `M` represent subject-specific falsification and revision conditions; they are not universal numbers.
 
 ---
-Path: [Official Derivative 148 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Path: [Official Derivative 148 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
