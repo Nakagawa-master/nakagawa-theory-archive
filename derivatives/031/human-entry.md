@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物031
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川構造読解｜Ashiraseはなぜ「歩行支援デバイス」ではなく、歩ける社会の情報インフラとして読まれるべきなのか
