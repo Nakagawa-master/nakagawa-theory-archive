@@ -75,4 +75,4 @@
 亲原典连续记录了权利及对应义务、通知、理由说明、临时停止、独立审查、更正、删除、补偿、防止再次发生、遗忘与审计的边界、合理便利以及Reference Cluster。完整定义请返回 Parent URL / Post ID 299 / NCL-ID / Diff-ID 确认。
 
 ---
-导航: [官方派生物070主页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・中文](zh-ai-index.md) / [AI索引・英语](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航: [官方派生物070主页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
