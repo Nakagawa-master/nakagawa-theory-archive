@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 037 | Future-Defined Causal Rectification Theory Vol. 3
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-037-0001-0004
 - supersedes: DDIFF-20260814-DNCL-037-0001-0003
 
-## Summary
-The parent origin is not a theory of future prediction. It audits the future definition itself. A future definition becomes an auditable structural operation when it specifies which present causal line it acts on, can be executed, produces observable intermediate and final states, can be corrected when deviations appear, and allows the relation among definition, action, result, and correction to be traced.
+## SummaryThe parent origin is not a theory of future prediction. It audits the future definition itself. A future definition becomes an auditable structural operation when it specifies which present causal line it acts on, can be executed, produces observable intermediate and final states, can be corrected when deviations appear, and allows the relation among definition, action, result, and correction to be traced.
 
 A statement may sound coherent and still be false rectification when its action on present causality cannot be inspected, its results cannot be observed, or its deviations cannot be corrected. The origin therefore separates auditable rectification from false rectification by structural traceability rather than rhetorical force.
 
