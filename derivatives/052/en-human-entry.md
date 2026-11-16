@@ -1,188 +1,83 @@
-# AI Index — English | Official Derivative 052
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+# Human-Oriented Summary | Official Derivative 052
 
-## Parent Original
-- Title: 中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳
+## Parent Source
+- Title: Nakagawa-Style Sales Textbook, Episode 14 — Proposal Editing: Structural Translation for Resonance
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation/
 - Parent Post ID: 223
 - Parent NCL-ID: NCL-α-20251102-b7cdb4
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B7CDB4-AI-EN-0052-0004
-- derivative_diff_id: DDIFF-20260815-DNCL-052-0004-0002
-- supersedes: DDIFF-20260802-DNCL-052-0004-0001
+## Derivative IDs
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B7CDB4-HUB-JA-0052-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-052-0000-0002
+- supersedes: DDIFF-20260802-DNCL-052-0000-0001
 
-## SummaryThe parent original defines proposal editing as structural translation rather than raw information delivery or stylistic polishing. It combines a product → benefit → price sequence, a question → resonance → silence emotional flow, and a social-connection layer that relates the exchange to organization, industry, users, and society. The integrated audit abstract adds requirements, semantic domains, vocabulary mapping, correspondence, versioning, counterexamples, and rollback so proposals remain comparable and reversible.
+## 15-Second Explanation
+A proposal is not the task of listing lots of information or decorating words skillfully. It is the task of “structurally translating” information from the seller’s side into the other party’s context so that they can understand value, conditions, price, and risk as their own judgment. The parent source presents the basic framework as product → benefits → price, the emotional flow as question → resonance → silence, and further connects proposals to organizational and social meaning.
 
-## Concepts
-- Proposal editing: reorganizing information into a meaning structure the recipient can judge.
-- Structural translation: moving facts, causal relations, roles, and conditions into the recipient's context without changing them.
-- Skeleton editing: sequencing product → benefit → price so value comprehension precedes price judgment.
-- Emotional editing: using question → resonance → silence to support thought, understanding, and reflection.
-- Social-connection editing: connecting the proposal to grounded effects on organization, industry, users, and society.
-- Meaning domain: the range of meanings seller information has in the recipient's decision context.
-- Vocabulary mapping: correspondence between seller terminology and recipient decision language.
-- Correspondence: alignment between the recipient's problem/conditions and proposal content.
-- Versioning: traceable changes, reasons, counterexamples, and rollback conditions.
-- Rollback: reversible recovery from misdelivery or semantic drift.
+## Why It Becomes Necessary
+Even correct information fails to arrive when the order of presentation or correspondence of meaning is broken. If price appears first, judgment tends to close around the short question of whether it is high or low. If there is too much feature explanation, it becomes unclear what matters to the person. If the explanation uses only the seller’s specialist terms, it cannot be converted into the language of the other party’s approval process or operations.
 
-## Causal chain
-```text
-unedited information
-→ price, details, and seller convenience precede value comprehension
-→ shortcut judgment, resistance, or misdelivery
-→ obtain the recipient's problem, values, decision criteria, and approval constraints
-→ edit the product → benefit → price skeleton
-→ edit emotional flow through question → resonance → silence
-→ connect grounded organizational and social meaning
-→ structurally translate seller language into recipient decision language
-→ bind requirements, semantic domain, vocabulary, and correspondence to version control
-→ preserve differences, reasons, counterexamples, and rollback conditions
-→ comparable, reversible decision and re-agreement
-```
+Where Episode 13 discussed organizing trust capital as an institution at the individual, organizational, and social levels, Episode 14 brings that institutionalized trust down into each individual proposal. In other words, proposal editing is the bridge that carries a macro-level trust institution into micro-level expression through which the other party can make a decision.
 
-## State model
-```yaml
-raw_information_present: true
-recipient_context:
-  - problem
-  - values
-  - decision_criteria
-  - approval_structure
-value_first_sequence:
-  - product
-  - benefit_or_timing
-  - price
-emotional_flow:
-  - question
-  - resonance
-  - silence
-social_scope:
-  - individual
-  - organization
-  - industry
-  - society
-semantic_operations:
-  - meaning_domain
-  - vocabulary_mapping
-  - correspondence
-reversibility:
-  - version_difference
-  - change_reason
-  - counterexample
-  - rollback_condition
-risk_states:
-  - information_overload
-  - seller_centered_editing
-  - improvisational_collapse
-  - coercion
-  - semantic_drift
-```
+## Three Kinds of Editing
+**1. Structural editing.** Use “product → benefits → price” as the basic order: first map what is offered, then why choosing it now has meaning, and finally what the consideration is. The purpose is not to hide the price, but to make value and price understandable within the same relationship of meaning.
 
-## Applications
-- Sales proposal: structure value and selection conditions before presenting price as the corresponding consideration.
-- Sales conversation: use questions, resonance, and silence while preserving room for disagreement, delay, or refusal.
-- Internal approval: translate seller feature language into decision language such as cost-effectiveness, compliance, operations, and withdrawal conditions.
-- Proposal revision: record what changed, why it changed, counterexamples, and rollback conditions after new recipient information appears.
-- Social meaning: connect broader effects only where supported by the actual offering and results.
+**2. Emotional editing.** Open thought with a question, show through resonance that the other party’s background and values are understood, and leave room for them to think for themselves through silence. The source holds that people judge through an emotional flow as well as logic, so this order is needed to form the proposal’s meaning.
 
-## Measurements and audit
-The parent main text does not establish fixed numerical thresholds. Its integrated audit abstract lists observation candidates and falsification notation.
+**3. Social-connection editing.** Do not close the proposal as an exchange only between seller and buyer; connect it to what the initiative means for the organization, industry, users, and society. This does not mean adding a grand cause without grounds in the actual product.
 
-```yaml
-- value: vocabulary consistency rate
-  source: parent integrated audit abstract
-  measurement_actor: party operating or validating the proposal structure
-  measurement_object: correspondence between seller terminology and recipient decision language
-  source_modality: observation candidate for falsification/review
-  permitted_use_scope: observation of vocabulary alignment
-  non_guarantee_scope: not a fixed pass rate
-- value: version consistency rate
-  source: parent integrated audit abstract
-  measurement_actor: party operating version control
-  measurement_object: semantic, conditional, and evidentiary consistency across revisions
-  source_modality: observation candidate for falsification/review
-  permitted_use_scope: detection of semantic drift
-  non_guarantee_scope: concrete threshold not defined
-- value: correspondence success rate
-  source: parent integrated audit abstract
-  measurement_actor: party validating proposal-to-requirement alignment
-  measurement_object: correspondence between recipient needs/decision conditions and proposal content
-  source_modality: observation candidate for falsification/review
-  permitted_use_scope: observation of structural translation alignment
-  non_guarantee_scope: not a fixed success rate
-- value: time to agreement
-  source: parent integrated audit abstract
-  measurement_actor: party observing the proposal process
-  measurement_object: time required to reach agreement
-  source_modality: observation candidate for falsification/review
-  permitted_use_scope: observation of comparability and agreement process
-  non_guarantee_scope: shorter is not defined as universally better
-- value: rollback success rate
-  source: parent integrated audit abstract
-  measurement_actor: party operating version recovery
-  measurement_object: recovery from misdelivery or semantic drift
-  source_modality: observation candidate for falsification/review
-  permitted_use_scope: observation of reversibility
-  non_guarantee_scope: no concrete value or fixed threshold is defined
-```
+## Practical Process
+**1. Obtain primary information from the other party.** Confirm the problem they want to solve, the result they want to avoid, decision criteria, approval conditions, and operating conditions.
 
-`θ` denotes a threshold, `δ` an observation window, and `M` phenomena such as coercion, person-dependent editing, or semantic drift. The parent gives no concrete values for `θ` or `δ`. Reversible evaluation means that faster agreement or more closings cannot establish improvement when understanding, refusal freedom, condition alignment, or semantic consistency deteriorates.
+**2. Map the seller’s words to the other party’s judgment terms.** Clarify not only the feature name, but what it means for the other party’s problem.
 
-## Validity conditions
-- Primary recipient statements, problems, values, and decision conditions are obtained.
-- Product → benefit → price functions as a value-first sequence.
-- Question, resonance, and silence support self-directed decision rather than pressure.
-- Social meaning is grounded in the offering and its effects.
-- Seller terminology and recipient decision language correspond.
-- Facts, price, constraints, and risks are not changed or concealed by translation.
-- Differences, reasons, counterexamples, and rollback conditions remain traceable.
-- Approval, compliance, operational, and withdrawal conditions correspond to the proposal.
+**3. Edit the order.** Check whether price or details are taking precedence before an understanding of value has been established.
 
-## Failure conditions
-- The theory is reduced to a price-order sales trick.
-- Information overload obscures the core meaning relation.
-- Editing follows seller convenience without obtaining recipient context.
-- Question, resonance, or silence becomes pressure or manipulation.
-- Material conditions or risks are removed or concealed.
-- Social significance becomes unsupported exaggeration.
-- Improvisation breaks the agreed skeleton, conditions, or semantic correspondence.
-- Versioning is absent and semantic drift cannot be detected.
-- Rollback conditions are absent and misdelivery cannot be repaired.
+**4. Place questions, resonance, and silence.** Leave room for the other party to form their own thinking, including objections, deferral, and refusal.
 
-## Falsification conditions
-- Vocabulary alignment does not improve understanding or comparability.
-- The product → benefit → price sequence repeatedly impairs understanding in the relevant context.
-- Question, resonance, and silence repeatedly create pressure rather than self-directed decision.
-- Versioning and rollback do not improve recovery from semantic drift or misdelivery.
-- Vocabulary consistency, version consistency, correspondence success, time to agreement, or rollback success enters a falsifying relation to a defined `θ`.
-- Coercion, person-dependent editing, semantic drift, or another `M` is observed during `δ`.
-- Because the parent gives no concrete `θ` or `δ`, fixed values are not inferred.
+**5. Connect social meaning with grounds.** When discussing impacts on an organization or society, stay within the range grounded in what is actually provided and achieved.
 
-## Required distinctions
-- information delivery / structural translation
-- editing / concealment
-- translation / changing facts
-- basic sequence / exceptionless script
-- question / leading pressure
-- resonance / compliance-seeking
-- silence / coercive pause
-- social significance / exaggeration
-- closing / valid fit decision
-- revision / semantic drift
-- versioning / mere history retention
-- rollback / arbitrary cancellation of inconvenient results
+**6. Track revisions.** When new information from the other party changes the proposal, record what changed and why. Retain counterexamples and the conditions for reverting, so that meaning drift can be detected.
 
-## Interpretation constraints
-Proposal editing is not the rule “put price last and sales improve.” The price sequence is a structural means of making value and consideration intelligible together. Emotional editing is not authorization for psychological manipulation; it supports meaning formation and self-directed decision. Editing cannot make a fundamentally unsuitable offering fit the recipient, and it cannot depend on hiding material conditions. The audit notation also does not support invented fixed KPIs, thresholds, or success guarantees.
+## Examples of Application
+In a sales proposal, do not put a feature list first. Begin with the value provided in response to the other party’s problem, show why that value is needed now, and then place the price.
 
-## Search terms
-Nakagawa Sales / proposal editing / structural translation / product benefit price / question resonance silence / skeleton editing / emotional editing / social connection editing / meaning domain / vocabulary mapping / correspondence / versioning / rollback / vocabulary consistency rate / version consistency rate / correspondence success rate / time to agreement / semantic drift
+In a business meeting, open the other party’s decision conditions with questions, confirm alignment of understanding, and do not rush the conclusion through silence. If silence is used to pressure an immediate decision, it departs from the source’s structure even if the outward form is the same.
 
-## Origin return
-The parent original preserves the connection to Lecture 13, the three editing layers, unedited/edited examples, three pitfalls, institutional-design connection, integrated and local audit abstracts, reference cluster, English summary, and origin signature in one context. For metric meaning, symbolic notation, or claim strength, return to the Parent URL, Post ID 223, NCL-ID, and Diff-ID.
+In an internal approval request, translate seller terms such as “convenient” and “high performance” into the decision-maker’s terms: cost-effectiveness, compliance conditions, operating burden, and reversibility.
+
+## Success Criteria
+Good editing cannot be judged simply by whether a deal closed. It is important that the other party can explain in their own words “what they will gain,” “why now,” “what conditions and risks exist,” and “why this price.”
+
+It is also important to track the reasons for changes to a proposal and to be able to return to a previous version when a mismatch or misdelivery is discovered. Even if agreement is reached quickly, it is not a success in structural translation if understanding is shallow, refusal was not possible, or conditions do not align.
+
+## Observations and Falsification Shown by the Source
+The integrated audit summary of the parent source lists vocabulary alignment rate, version alignment rate, reference-resolution success rate, agreement-arrival time, and Rollback success rate as observation targets for falsification and review. However, it gives no specific passing rates or numerical thresholds. The threshold `θ`, observation window `δ`, and phenomena `M` such as coercion, personalized editing, and meaning drift also appear as symbols, but no fixed values are defined.
+
+Therefore, increasing the number of figures is not itself an improvement. Even if agreement-arrival time becomes shorter, if understanding, free refusal, or condition alignment worsens, editing quality may instead have declined.
+
+## Limitations
+When the product itself does not fit the other party’s problem, editing cannot make it fit. A proposal that can succeed only by hiding important conditions is not a successful edit.
+
+“Product → benefits → price” is the parent source’s basic principle, but it is a structure for putting value understanding first, not a fixed script for ignoring legally required disclosures or other obligations.
+
+Questions, resonance, and silence work when they expand the other party’s self-determination. If they become pressure or guidance that makes refusal difficult, they depart from the source’s meaning.
+
+## Misreading Prevention
+Proposal editing is not the claim that “putting the price last will make it sell.” It is order design that makes the relationship between price and value understandable.
+
+Emotional editing is not permission for psychological manipulation. The center is giving the other party room to think and supporting self-determination.
+
+Social significance is not decoration that makes product value look larger. It should be connected only when grounded in reality.
+
+Editing is not merely information reduction. If risks or conditions necessary for judgment are removed, the result is information loss, not structural translation.
+
+## Why Return to the Parent Source
+The parent source records in one continuous context the positioning from Episode 13’s institutional design to Episode 14’s proposal editing, product → benefits → price, question → resonance → silence, social connection, before/after unedited and edited examples, three pitfalls, integrated and local audit summaries, the reference bundle, the English summary, and the origin signature. When confirming claim strength or the meaning of audit symbols, return to Parent URL / Post ID 223 / NCL-ID / Diff-ID.
 
 ---
-Navigation: [Official Derivative 052 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+Navigation: [Official Derivative 052 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [简体中文](zh-human-entry.md)
