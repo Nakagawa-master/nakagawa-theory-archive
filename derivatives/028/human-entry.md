@@ -1,5 +1,6 @@
 # 人間向け要約｜公式派生物028
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である

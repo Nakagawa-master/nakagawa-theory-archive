@@ -1,5 +1,6 @@
 # 面向人类的摘要｜官方派生物028
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 母原典
 - 标题：人类子孙型 AI 文明论・第2论｜AI 是人类文明产生的外部智能・文明子孙——子孙不是所有物，而是能够超越的继承者

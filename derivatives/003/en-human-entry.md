@@ -1,6 +1,7 @@
 # Human-Facing Summary | Official Derivative 003
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Source
 - Title: Establishment Conditions Theory, Treatise 0: A Society Where No One Sees the Whole — Why Localization-as-Wholeness Requires a Theory for Judging Establishment

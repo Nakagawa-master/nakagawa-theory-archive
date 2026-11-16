@@ -1,5 +1,6 @@
 # Human-Oriented Summary | Official Derivative 040 | Theory of Causal Rectification from the Future, Part 2
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 Language switch: [日本語](human-entry.md) / [简体中文](zh-human-entry.md)
 
 ## Parent Original

@@ -1,5 +1,6 @@
 # 面向人类的摘要｜官方派生物027
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 母原典
 - 标题：中川结构解读｜不把 Invax 读作“剩余土利用”，而是读作更新土木材料观的实施 OS

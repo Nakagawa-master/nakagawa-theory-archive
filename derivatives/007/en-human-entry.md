@@ -1,6 +1,7 @@
 # Human-Facing Summary | Official Derivative 007
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: Civilizational Sovereignty Shift Theory, Volume 2 | Along which axis does intellectual inequality shift the civilizational upstream? — Read it as a civilizational-renewal gap, not an ability gap
