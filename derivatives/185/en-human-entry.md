@@ -94,4 +94,4 @@ The Parent Original’s heat source, flow, pipe, dam, entropy, and so on also in
 - Structural confluence is not obedience to an organization. The person must retain reversibility: choosing the flow and being able to leave and reconnect.
 
 ---
-Navigation: [Official Derivative 185 top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 185 top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
