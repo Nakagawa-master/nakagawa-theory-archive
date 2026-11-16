@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物223
 
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - Parent title: 文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-03/
