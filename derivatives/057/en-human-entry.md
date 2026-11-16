@@ -1,8 +1,8 @@
-# AI Index — English | Official Derivative 057
+# Human-Oriented Summary | Official Derivative 057
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 接続報酬社会──信頼資本と共鳴の制度化
+- Title: Connection-Reward Society — Institutionalizing Trust Capital and Resonance
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-connection-reward-society/
 - Parent Post ID: 251
 - Parent NCL-ID: NCL-α-20251102-29c09d
@@ -10,143 +10,69 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-AI-EN-0057-0004
-- derivative_diff_id: DDIFF-20260815-DNCL-057-0004-0003
-- supersedes: DDIFF-20260803-DNCL-057-0004-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-HUB-JA-0057-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-057-0000-0003
+- supersedes: DDIFF-20260803-DNCL-057-0000-0002
 
-## SummaryThe parent proposes a connection-reward society that recognizes value created through trust, resonance, continuity, referral, collaboration, knowledge transfer, and reconnection rather than only ownership or short-term transactions. CRI, IR, KCL, and a trust-capital ledger support observation of connection quality, contribution, provenance, correction, withdrawal, and redistribution. The theory does not equate more connections, popularity, or reaction volume with more value and preserves freedom not to connect.
+## 15-Second Explanation
+A connection-reward society is a concept for recording, auditing, and distributing value that is difficult to see through sales or ownership alone: the value of connecting people, creating understanding or collaboration, and circulating trust onward. It is not a system for increasing the number of connections or popularity; it also addresses contribution, continuity, correction, withdrawal, and the freedom not to connect.
 
-## Concepts
-- Connection reward: linking value created by connections to recognition and distribution.
-- CRI: Connection Reward Index, a frame for observing continuity, referral, return, collaboration, and value transfer after connection.
-- IR: structure for observing responses, propagation, and reconnection after interaction.
-- KCL: Knowledge Connection Layer, describing connection and reusable circulation of knowledge across humans, AI, and organizations.
-- Trust-capital ledger: contextual lineage record of continuity, referral, correction, withdrawal, and reconnection events.
-- Connection event: a concrete event such as introduction, joint work, knowledge transfer, return, or problem solving that initiates value circulation.
-- Contribution tracing: tracking actors who enabled connection, translation, or transfer rather than only the final transaction.
-- Redistribution: reversible correction of reward or attribution when later evidence changes the evaluation.
+## Why It Becomes Necessary
+In work and society, the contributions of people who make introductions, bridge knowledge, or enable collaboration between departments may not be visible in final sales alone. As a result, work that creates connections is difficult to recognize, while only short-term results are easily rewarded.
 
-## Causal chain
-```text
-value is measured mainly by short-term sales and ownership
-→ referral, continuity, collaboration, and knowledge transfer become invisible
-→ contributors who create connections are under-recognized
-→ record actors, purpose, consent, roles, and pre-connection state
-→ identify connection events and downstream value
-→ separate short-term outcome from long-term trust
-→ connect CRI, IR, KCL, and contextual trust records
-→ trace contribution and establish correction/withdrawal/redistribution
-→ audit metric gaming, improper concentration, and forced connection
-→ return connection value into organizational, market, and social institutions
-```
+The parent source seeks to turn this invisible value into an institution that records not only what continued after a connection and who contributed to value formation, but also whether correction or withdrawal was possible when problems occurred—without simplifying it into popularity or the size of one's network.
 
-## State model
-```yaml
-connection_state:
-  - purpose_and_consent_defined
-  - pre_connection_state_recorded
-  - connection_event_identified
-  - downstream_value_observed
-  - short_and_long_term_separated
-  - contribution_traced
-  - cri_ir_kcl_connected
-  - trust_events_recorded
-  - reward_bounded
-  - correction_or_redistribution_available
-  - gaming_checked
-  - non_connection_freedom_preserved
-  - origin_return_available
-```
+## Practical Process
+**1. State the purpose of the connection.** Confirm who is being connected to whom and for what purpose, along with consent and roles.
+
+**2. Preserve the pre-connection state.** Record what was lacking and what was expected.
+
+**3. Identify the connection event.** Specify events such as an introduction, joint work, knowledge transfer, or return visit.
+
+**4. Observe what follows.** Check whether continuity, introductions, reconnection, collaboration, understanding, or correction occurred.
+
+**5. Separate short-term results from long-term trust.** Distinguish cases where value exists even without immediate sales from cases where numbers appear but trust is damaged.
+
+**6. Trace contribution.** Record not only the final contracting party but also the actors who made the connection, translation, or knowledge transfer possible.
+
+**7. Design reward and correction.** Make explicit not only distribution but also the conditions for objection, withdrawal, and redistribution.
+
+**8. Audit metric gaming.** Check whether actions taken only to increase connection or referral counts are damaging value.
+
+**9. Preserve the freedom not to connect.** Do not force participation, introductions, or continuation.
 
 ## Applications
-- Referral programs: examine post-referral continuity, fit, and correction rather than referral count alone.
-- Organizational collaboration: trace cross-team connection, knowledge transfer, and problem-solving contributions.
-- Human–AI collaboration: use KCL to track source, transformation, and reuse relationships between human knowledge and AI artifacts.
-- Communities: evaluate sustained support, correction, reconnection, and freedom to join or leave rather than activity volume alone.
-- Reward design: consider enabling contributions while retaining refusal, withdrawal, and redistribution conditions.
+**Referral programs.** Look beyond referral counts to continuity, fit, and correction after the referral.
 
-## Measurements and audit
-```yaml
-- value: CRI
-  source: parent original
-  measurement_actor: connection-system operator/evaluator
-  measurement_object: continuity, referral, return, collaboration, value transfer after connection
-  source_modality: SOURCE_DEFINED_OBSERVATION_FRAME
-  permitted_use_scope: multi-signal observation of downstream connection value
-  non_guarantee_scope: not a single connection-count score or fixed ranking
-- value: IR
-  source: parent original
-  measurement_actor: interaction/propagation observer
-  measurement_object: response, influence, and reconnection after connection
-  source_modality: SOURCE_DEFINED_RETURN_OBSERVATION
-  permitted_use_scope: examining downstream response and propagation
-  non_guarantee_scope: reaction volume alone does not establish quality
-- value: KCL
-  source: parent original
-  measurement_actor: NOT_A_SINGLE_PERFORMANCE_SCORE
-  measurement_object: reusable knowledge connection across human, AI, and organizational actors
-  source_modality: SOURCE_DEFINED_STRUCTURAL_LAYER
-  permitted_use_scope: describing knowledge circulation with origin and context
-  non_guarantee_scope: greater knowledge volume is not automatically greater value
-- value: trust-capital ledger
-  source: parent original
-  measurement_actor: institutional operation/audit side
-  measurement_object: continuity, referral, correction, withdrawal, reconnection events
-  source_modality: CONTEXTUAL_EVENT_LEDGER
-  permitted_use_scope: preserving lineage, context, and correction of trust events
-  non_guarantee_scope: not a single-value rating of persons
-```
-Reversible evaluation: more connections, referrals, reactions, or network scale do not establish higher value if free choice, long-term trust, contribution traceability, or correction capability deteriorate.
+**Organizational collaboration.** Record contributions that transfer knowledge to other departments and make problem solving possible.
 
-## Validity conditions
-- Connection actors, purpose, consent, and roles are explicit.
-- Pre-connection state is distinguished from the connection event.
-- Short-term popularity is separated from long-term trust.
-- Contributors, origin, and conditions are traceable.
-- Objection, correction, withdrawal, and redistribution remain available.
-- Freedom not to connect and freedom to leave are preserved.
-- Indicators are not converted into a single totalizing evaluation of people.
-- Observation/activity volume is not mistaken for value creation.
+**Human–AI collaboration.** In connections between human knowledge and AI-generated artifacts, trace the provenance of the original, transformations, and reuse as KCL.
 
-## Failure conditions
-- Referral or contact count alone is treated as connection value.
-- Internal evaluation alone fixes value without meaningful correction routes.
-- Trust records drift away from their contextual purpose.
-- Contribution visibility becomes an assumption that contributions are owed without terms.
-- Origin, contributors, or conditions cannot be traced.
-- Misallocation becomes permanent because correction or withdrawal is unavailable.
-- Metric performance exceeds substantive value creation.
-- Non-connection or exit is unfairly penalized.
+**Communities.** Look at sustained support, correction, reconnection, and the freedom to leave rather than post volume or popularity.
 
-## Falsification conditions
-- CRI/IR observation does not improve quality of sustained trust or reconnection.
-- Connection reward repeatedly converges to popularity, activity, or connection-count gaming.
-- Contribution tracing fails to represent value formation and misallocation cannot be corrected.
-- KCL loses origin and context and becomes mere accumulation of information.
-- Trust-event recording fails to improve objection and correction capability.
-- If the system cannot function while preserving freedom not to connect, its institutional assumptions require revision.
+## Success Criteria
+Success is shown not by the number of connections but by continuity, collaboration, value transfer, or reconnection occurring afterward.
 
-## Required distinctions
-- connection value / contact count
-- trust capital / popularity or favorability
-- CRI / single ranking
-- IR / reaction volume
-- KCL / information volume
-- referral / forced networking
-- visibility / excessive observation
-- reward / assumption of owed contribution
-- trust ledger / totalized person evaluation
-- freedom to connect / forced connection
-- contribution tracing / exclusive ownership
+It must be possible to trace who contributed what, and to object to, correct, withdraw, or redistribute an erroneous allocation.
 
-## Interpretation constraints
-Do not reduce the connection-reward society to scoring relationships or rewarding popularity. CRI, IR, and KCL are source-specific observational/structural concepts; where no formula or threshold is defined, no fixed score should be inferred. Making contributions visible is not a justification for compulsory unpaid contribution; distribution, refusal, withdrawal, and redistribution remain part of the structure.
+Trust events remain in context, without ranking people by a single score.
 
-## Search terms
-connection reward society / connection reward / trust capital / resonance / CRI / Connection Reward Index / IR / KCL / Knowledge Connection Layer / trust-capital ledger / continuity / referral / reconnection / contribution tracing / redistribution / freedom not to connect
+The freedom not to connect and the freedom to leave are preserved.
 
-## Origin return
-The parent preserves connection reward, CRI, IR, KCL, the trust-capital ledger, implementation across individuals/organizations/markets/society, allocation, audit, falsification, and origin declaration in one context. For concepts, metrics, or claim strength, return to the Parent URL, Post ID 251, NCL-ID, and Diff-ID.
+## Limits
+People with more connections are not necessarily more valuable. Large amounts of contact can also be produced by shallow relationships or spam-like behavior.
+
+Trust cannot be reduced completely to numbers. CRI and IR are frames for multiple observations, not rankings of human value.
+
+A system that makes contributions visible can conversely become an excuse to make people continue invisible labor without pay. It must include reward, refusal, and withdrawal.
+
+## Preventing Misreading
+A connection-reward society is not a society where gaining more contacts automatically brings benefits. A trust-capital ledger is not a credit score. KCL is not a layer claiming that success follows from increasing the amount of knowledge.
+
+Even if connection or referral counts increase, it is not an improvement if free will, contribution traceability, correctability, or long-term trust deteriorate.
+
+## Why Return to the Parent Original
+The parent original records in one continuous context connection reward, CRI, IR, KCL, the trust-capital ledger, institutionalization for individuals, organizations, markets, and society, distribution, audit, falsification, and the origin declaration. Return to the parent is necessary to confirm the meaning of its concepts and indicators.
 
 ---
-Navigation: [Official Derivative 057 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+Navigation: [Official Derivative 057 hub](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
