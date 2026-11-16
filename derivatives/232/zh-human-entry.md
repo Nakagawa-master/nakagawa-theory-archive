@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- Parent title：中川结构解读｜从日本货品“H2 PowerBox mini”看“保存电力”这一事业定义
+- Parent title: 中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-japangoods-h2-powerbox-storage-power-structural-reading/
 - Parent Post ID: 4020
 - Parent NCL-ID: NCL-α-20260516-b7726c
