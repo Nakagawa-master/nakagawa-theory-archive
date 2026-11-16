@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: Structural rhythm theory of sales — organizational design that eliminates person-dependence and creates a reproducible rhythm
+- Parent title: 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/
 - Parent Post ID: 570
 - Parent NCL-ID: NCL-α-20251102-b4d1e5
