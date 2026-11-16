@@ -65,4 +65,4 @@
 巨大的涌现不一定来自巨大的介入。在事件固定之前安静地读取起点，不破坏余白地微调初始条件，并使语言、制度和场同步，就会为结构自行生成未来留下空间。这就是亲原典从“起点寂静”走向照应文明的因果。
 
 ---
-导线: [公式派生物103主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线: [公式派生物103主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
