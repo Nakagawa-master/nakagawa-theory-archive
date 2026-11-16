@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物282
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - Parent title: 共創哲学──人とAIが響き合う思索の起点
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-co-creation-philosophy/

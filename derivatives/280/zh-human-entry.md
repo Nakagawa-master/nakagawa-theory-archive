@@ -1,5 +1,5 @@
 # 官方派生物280｜面向人的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 社会的記憶の再構築としての構造律動──未来の合意を現在に創発する非言語的構造装置
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-social-memory-structural-rhythm/

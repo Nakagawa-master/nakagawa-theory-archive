@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物226
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - Parent title: 文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-sovereignty-retroreflection/

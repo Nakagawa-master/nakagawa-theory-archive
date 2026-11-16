@@ -1,5 +1,5 @@
 # 官方派生物277｜面向人的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/

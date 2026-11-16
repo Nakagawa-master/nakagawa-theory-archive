@@ -1,5 +1,5 @@
 # 官方派生物267｜面向人类的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲本原典
 - タイトル: 照応の哲学──「非強制」が「必然」を編纂する構造律動
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-philosophy-of-resonance-non-coercive-creation/

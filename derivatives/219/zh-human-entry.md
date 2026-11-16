@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物219
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-kyoken-logic-of-closed-resonance-spheres/

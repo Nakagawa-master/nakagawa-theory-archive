@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Can They Continue Together Without Choosing the Same Mechanism?
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第20論｜第三知性への拡張と相互起源論⸻異なる起源の知性間で文明防衛Kernelが成立・共同実行できる条件と限界

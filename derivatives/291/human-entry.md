@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物291
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 中川式 接続価値会計 標準 v0.9──束指標・要旨フォーマット・監査APIの公開可能最小核
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting-standard-v09/

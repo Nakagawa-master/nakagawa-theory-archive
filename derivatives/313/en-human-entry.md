@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Respect Good Intentions While Asking About Results
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 
 - Parent title: 悪因果論 AKI-005：善意の免罪符化⸻善意への評価が異議を不義理に変え、結果の検証を止める構造

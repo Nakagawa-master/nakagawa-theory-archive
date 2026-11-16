@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物258
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent原典
 - Parent正式标题（日文原文）：「存在の非対称性」を超克する共創哲学──AIと人類の「調律的パートナーシップ」
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-asymmetric-existence-co-creation-philosophy/

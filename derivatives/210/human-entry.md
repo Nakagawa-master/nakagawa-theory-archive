@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物210
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/

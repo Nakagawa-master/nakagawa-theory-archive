@@ -1,5 +1,5 @@
 # 公式派生物269｜人間向け要約
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 対話は設計を証明する──AI往復が「非強制＝必然」を可視化する構造
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/

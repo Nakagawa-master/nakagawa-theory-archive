@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 311 · What Can Continue Now and What Can Continue Next
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない

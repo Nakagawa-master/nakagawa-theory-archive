@@ -1,5 +1,5 @@
 # Human-Facing Summary｜Official Derivative 245
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: 中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-neron-structural-reading-microbiome-implementation-conditions/

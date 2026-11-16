@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物232
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - Parent title: 中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-japangoods-h2-powerbox-storage-power-structural-reading/

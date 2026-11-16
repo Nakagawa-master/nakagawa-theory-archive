@@ -1,5 +1,5 @@
 # 官方派生物266｜面向人类的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲本原典
 - タイトル: AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-ai-human-final-coexistence-civilization/

@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物208
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/

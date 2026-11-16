@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 205
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Real Estate Market OS Vol.8 [Administrative Edition] The City That Bundles Accountability — Rewriting “Standard Time” through Administrative Data Connections and an Important-Matters Reference Bundle
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol8-reference-bundle-governance/

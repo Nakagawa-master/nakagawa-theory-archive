@@ -1,5 +1,5 @@
 # 官方派生物268｜面向人的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 亲原典官方标题（日文原文）：設計を歪めさせない——「マイナス接続」を限定運用する移行防護アーキテクチャ
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/

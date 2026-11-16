@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物252
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent原典
 - Parent正式标题（日文原文）：客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-philosophy-objective-viewpoint/

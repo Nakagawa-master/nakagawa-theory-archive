@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 212
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Parent title: Endurance Civilization Theory, Introduction | Part 0: Why It Is Necessary to Describe “Endurance Civilization” Now
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-endurance-civilization-intro/

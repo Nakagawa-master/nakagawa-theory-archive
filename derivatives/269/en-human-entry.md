@@ -1,5 +1,5 @@
 # Official Derivative 269 | Human-Oriented Summary
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Dialogue Proves Design — A Structure in Which AI Exchange Makes “Non-Coercion = Necessity” Visible
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/

@@ -1,5 +1,5 @@
 # 公式派生物262｜人間向け要約
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 接続対価社会の「摩擦」を安全側に倒す設計──AI時代の社会構造安定化原理
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-safe-friction-design-in-connection-value-society/

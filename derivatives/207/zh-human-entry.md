@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物207
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：房地产市场OS Vol.10【原点宣言】NCL伦理固定：防止共识形成社会崩溃的继承规范与未来责任
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol10-origin-declaration-ncl/

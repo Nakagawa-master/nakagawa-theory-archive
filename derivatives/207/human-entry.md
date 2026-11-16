@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物207
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 不動産市場OS Vol.10【原点宣言】NCL倫理固定：合意形成社会を崩壊させないための継承規格と未来責任
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol10-origin-declaration-ncl/

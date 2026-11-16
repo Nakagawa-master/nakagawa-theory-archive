@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物225
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-post-sovereignty-social-branching/

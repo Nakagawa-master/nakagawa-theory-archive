@@ -1,5 +1,5 @@
 # Human-Oriented Summary |# 面向人类的摘要｜官方派生物234
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-healthree-behavior-design-structural-reading/

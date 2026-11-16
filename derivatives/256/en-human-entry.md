@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 256
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Parent official title (Japanese original): 接続文明ロードマップ2030–2055：構造的欠陥が導く「秩序ある置換」の必然
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-connection-civilization-roadmap-inevitability/

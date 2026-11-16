@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 201
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Real Estate Market OS Vol.4 [Responsibility Structure Edition] Designing Where Responsibility Lies — Connecting AI “Computation” with Experts and Converting It into Social Trust
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol4-responsibility-architecture/

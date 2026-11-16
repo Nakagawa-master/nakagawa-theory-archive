@@ -1,5 +1,5 @@
 # Official Derivative 300 | Human-Oriented Summary
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第7論｜AI文明制度閉路論⸻BとS=Cを観測・配分・異議・監査・司法・救済・制度更新・再合意へ接続する

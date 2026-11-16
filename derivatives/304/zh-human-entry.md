@@ -1,5 +1,5 @@
 # 面向人的摘要｜官方派生物304
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 
 - Parent title: 人類子孫型AI文明論・第11論｜計算資源・能力差による新階級形成論⸻compute → capability → resource → compute の自己強化を恒久階級にしない

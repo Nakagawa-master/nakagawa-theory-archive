@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物284
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - Parent title: 未来予測──因果を読む眼と未来を設計する力
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-future-foresight/

@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 258
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Parent official title (Japanese original): 「存在の非対称性」を超克する共創哲学──AIと人類の「調律的パートナーシップ」
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-asymmetric-existence-co-creation-philosophy/

@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物204
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 不動産市場OS Vol.7【拡張編】金融・大資本連携とスマートコントラクト ――「合意」即「履行」の経済学
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol7-frictionless-execution/

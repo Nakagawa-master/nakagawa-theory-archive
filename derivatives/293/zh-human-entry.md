@@ -1,5 +1,5 @@
 # 官方派生物293｜面向人的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: AI倫理における「照応操作力」の危機と再設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-ai-ethics-resonance-structure-2025/

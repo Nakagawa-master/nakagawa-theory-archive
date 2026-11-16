@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 206
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Real Estate Market OS Vol.9 [National Edition] NAOS — Optimizing the Nation Without “Controlling” It: Completion of a Globally Exportable “Consensus-Building OS”
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol9-naos-global-standard/

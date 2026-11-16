@@ -1,5 +1,5 @@
 # 面向人的摘要｜即使通信中断，也不要擅自决定对方的“现在”
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 
 - Parent title: 人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論⸻同じ「現在」を共有しない文明間でもKernelを維持する

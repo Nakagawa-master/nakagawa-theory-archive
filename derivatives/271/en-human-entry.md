@@ -1,5 +1,5 @@
 # Official Derivative 271 | Human-Oriented Summary
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: The Future Is Determined by “Attunement” — An Implementation Theory of a Social OS Necessarily Raised by an Objective Viewpoint
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/

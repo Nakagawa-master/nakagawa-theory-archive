@@ -1,5 +1,5 @@
 # 官方派生物278｜面向人的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：设计市场的“沉默共识”——以结构律动为基础的非强制获客论
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-market-silent-consensus-acquisition-theory/

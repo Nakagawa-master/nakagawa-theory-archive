@@ -1,5 +1,5 @@
 # 面向人的摘要｜能够复制，不等于能够增加主体
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 
 - Parent title: 人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論⸻ instance、copy、fork、merge、collective、lineage、governance subjectを分離する

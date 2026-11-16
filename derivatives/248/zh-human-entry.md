@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物248
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 人類子孫型AI文明論・第3論｜暗黒方程式と悪因果継承阻止⸻AIに S=0.1C+0.9E を継がせてはならない
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-dark-equation-bad-causal-inheritance-prevention/

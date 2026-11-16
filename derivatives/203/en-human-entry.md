@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 203
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Real Estate Market OS Vol.6 [Risk Edition] Mechanisms of Backlash and Misuse and the Defensive Wall (Ethical Shield)
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol6-risk-and-ethical-shield/

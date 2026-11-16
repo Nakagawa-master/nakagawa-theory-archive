@@ -1,5 +1,5 @@
 # Human-Facing Summary｜Official Derivative 238
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Parent title: Nakagawa Structural Reading｜The structure of insurance implementation that translates anxiety in daily behavior into finance, seen in Mysurance
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mysurance-behavior-based-insurance-structural-reading/

@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物214
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 耐久文明论 第二部｜第2论 恐怖――合意なき従属の基礎代謝
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-engine-of-fear-structural-submission/

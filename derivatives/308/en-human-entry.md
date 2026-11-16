@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Act Together Where Needed While Keeping Interpretations Apart
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第15論｜多AI再合意・Kernel分岐論⸻多数決・能力独裁・Origin独裁によらず解釈分裂を処理する

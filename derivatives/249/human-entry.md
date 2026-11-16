@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物249
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - Parent title: 接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/

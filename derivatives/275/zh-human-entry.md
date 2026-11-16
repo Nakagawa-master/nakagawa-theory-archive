@@ -1,5 +1,5 @@
 # 官方派生物275｜面向人的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/

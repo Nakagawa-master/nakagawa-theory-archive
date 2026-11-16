@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Verify Whether It Is the Same After Change by Lineage, Not by Name
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論⸻更新・replacement・fork・自己改変を区別する

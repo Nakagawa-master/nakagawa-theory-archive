@@ -1,5 +1,5 @@
 # Official Derivative 264 | Human-Oriented Summary
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Source
 - タイトル: AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-liberation-from-labor-and-connection-reward/

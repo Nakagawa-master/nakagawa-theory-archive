@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物250
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 監査要旨という読みの窓──構造的正統性を可視化する
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-audit-essence-window/

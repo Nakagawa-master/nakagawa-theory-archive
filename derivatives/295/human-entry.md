@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物295
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-004-expert-authority-immunity/

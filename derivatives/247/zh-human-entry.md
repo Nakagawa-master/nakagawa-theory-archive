@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物247
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/

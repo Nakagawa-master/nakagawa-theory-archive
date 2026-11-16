@@ -1,5 +1,5 @@
 # 官方派生物288｜面向人的摘要
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 中川式営業の教科書・第四回
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-04-dialogue-resonance/

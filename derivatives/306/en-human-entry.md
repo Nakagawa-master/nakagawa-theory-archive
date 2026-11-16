@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Even Without Ownership, Holding the Gate Can Narrow Options
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論⸻所有権を持たなくても成立するchokepoint支配を検出する

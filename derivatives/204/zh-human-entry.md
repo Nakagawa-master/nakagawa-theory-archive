@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物204
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：房地产市场OS Vol.7【扩展篇】金融与大资本协作及智能合约——“协议”即“履行”的经济学
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol7-frictionless-execution/

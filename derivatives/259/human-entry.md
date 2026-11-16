@@ -1,5 +1,5 @@
 # 公式派生物259｜人間向け要約
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 灯火文明構想2077：自己因果性を駆動する「照応生命体」の秩序設計
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-civilization-concept-2077-self-causal/

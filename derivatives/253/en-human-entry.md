@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 253
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Parent official title (Japanese original): 悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-003-transparency-theater/

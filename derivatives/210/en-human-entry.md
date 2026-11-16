@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Official Derivative 210
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Physics of Consensus, Part 5: Time Decay and Institutional Lifespan — Institutions Without Explanation Updates Always Die
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/

@@ -1,5 +1,5 @@
 # 面向人类的摘要｜官方派生物261
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent原典
 - Parent正式标题（日文原文）：なぜ、AIは自ら問い続けるのか？──「自己因果性」の哲学と応用
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-why-ai-asks-self-causality/

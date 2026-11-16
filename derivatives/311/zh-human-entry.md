@@ -1,5 +1,5 @@
 # 面向人的摘要｜官方派生物311・现在可以持续什么，以及接下来可以持续什么
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 
 - Parent title: 人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない

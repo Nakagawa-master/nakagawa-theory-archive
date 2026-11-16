@@ -1,5 +1,5 @@
 # Official Derivative 286 | Human-Oriented Summary
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Parent title: Nakagawa Sales Textbook, Part Two
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-structure/

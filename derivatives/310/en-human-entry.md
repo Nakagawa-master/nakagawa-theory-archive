@@ -1,5 +1,5 @@
 # Human-Oriented Summary | Preserve Origin; Do Not Make It Permanent Governing Authority
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない
