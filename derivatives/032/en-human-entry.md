@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 032 | Future-Definition Verification Effort Theory Supplement
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 未来定義検証型努力論・補論｜努力は消えたのではない──未来定義検証時代における努力の再定義
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-032-0001-0006
 - supersedes: DDIFF-20260814-DNCL-032-0001-0005
 
-## Summary
-The parent is neither an effort-denial thesis nor a return to grit ideology. It redefines effort as a structural act: define a future outcome, test whether that future can connect through present conditions, place candidate causal lines, set verification conditions, invest actual labor, observe results, revise the causal line, and re-enter effort.
+## SummaryThe parent is neither an effort-denial thesis nor a return to grit ideology. It redefines effort as a structural act: define a future outcome, test whether that future can connect through present conditions, place candidate causal lines, set verification conditions, invest actual labor, observe results, revise the causal line, and re-enter effort.
 
 Repetition, persistence, endurance, and quantity are not rejected in themselves. They remain important when positioned on a causal line connected to the intended outcome and tied to verification, observation, correction, and renewed investment. Input volume or suffering by itself does not establish that the effort is structurally correct.
 
