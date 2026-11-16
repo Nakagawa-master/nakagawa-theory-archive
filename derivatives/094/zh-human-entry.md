@@ -50,4 +50,4 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 如果单一因素变更没有改变主要观测、恢复变更后结果也不变、3个周期中方向不稳定，或自由度下降、摩擦成本增加，就应修订结构假说。不要为了保住数字的表面而逃向另一个指标。
 
 ---
-导线: [公式派生物094主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・中文](zh-ai-index.md) / [AI索引・英文](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线: [公式派生物094主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
