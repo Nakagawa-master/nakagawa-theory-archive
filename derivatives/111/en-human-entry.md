@@ -2,7 +2,7 @@
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 共同設計者時代の構造倫理──灯火構想 第三層の社会接続モデル
+- Title: Structural Ethics in the Co-Designer Era — Social Connection Model for Layer Three of the Lantern Project
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-co-designer-era-structural-ethics/
 - Parent Post ID: 977
 - Parent NCL-ID: NCL-α-20251102-20aa42
