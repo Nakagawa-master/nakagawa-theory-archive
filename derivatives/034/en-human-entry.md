@@ -1,98 +1,57 @@
-# English AI Index | Official Derivative 034 | Bad Causality Theory AKI-013
+# Human Summary | Official Derivative 034
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造
+- Title: Bad Causality Theory AKI-013: Trust as Cognitive Suspension — A Structure That Mistakes Immobility for Predictability and Excludes Updating Intelligence
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-013-trust-as-cognitive-suspension/
 - Parent Post ID: 4334
 - Parent NCL-ID: NCL-α-20260602-55c6cd
 - Parent Diff-ID: DIFF-20260602-0011
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260602-55C6CD-HUB-EN-0034-0001
-- derivative_diff_id: DDIFF-20260814-DNCL-034-0001-0005
-- supersedes: DDIFF-20260814-DNCL-034-0001-0004
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260602-55C6CD-HUB-JA-0034-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-034-0000-0004
+- supersedes: DDIFF-20260813-DNCL-034-0000-0002
 
-## SummaryAKI-013 does not reject trust. Trust can reduce repeated verification costs and enable cooperation, delegation, and division of labor. The bad causal structure begins when remaining unchanged is mistaken for predictability and intelligence that updates judgment in response to changed conditions is treated as distrust or betrayal.
+## 15-Second Explanation
+This original is not a rejection of trust. The problem is that when immobility is mistaken for predictability and intelligence that updates judgment in response to changed conditions is excluded, trust turns into cognitive suspension through a bad causal structure.
 
-The source-specific distinction is that healthy trust is sustained not by permanent sameness but by predictable update rules: what changes are observed, when judgment is reconsidered, who can correct it, and how the reason for correction is explained. A judgment may change while the system remains predictable when the rules governing change are stable and explainable.
+Healthy trust does not require the other party or institution to remain forever the same. It requires the update rules to be predictable: what changes trigger re-observation, under what conditions judgment is updated, who makes corrections, and how the reasons are explained.
 
-## Concepts
-- Bad Causality Theory AKI-013
-- trust as cognitive suspension
-- trust as judgment compression
-- immobility
-- predictability
-- updating intelligence
-- observation
-- re-judgment
-- correction
-- update rules
-- responsibility connection
-- dissent
-- difference detection
-- reversible evaluation
-- origin return
+## Why It Becomes Necessary
+Trust functions as judgment compression, enabling cooperation, delegation, and division of labor without rechecking everything from scratch every time. However, when this compression turns into “there is no need to look anymore” or “the previous judgment must not change,” a judgment that was once valid remains fixed after conditions change.
 
-## Causal chain
-trust is defined as remaining unchanged → immobility is mistaken for predictability → judgment updates under changed conditions are treated as distrust or betrayal → updating intelligence, dissent, and difference detection are excluded → old judgment is fixed → the gap between reality and fixed judgment expands → observation, re-judgment, and correction do not restart → trust turns into cognitive suspension.
+The more people who point out changes, raise objections, or request reevaluation are treated as “not trusting” or “betraying,” the more updating intelligence disappears from relationships and organizations. Then, even as the gap between old judgment and reality expands, the word trust prevents observation, re-judgment, and correction from restarting.
 
-Healthy side: define change conditions → preserve observation entry points → share judgment-update conditions → connect correction responsibility → explain update reasons → make the update rule itself predictable → allow trust and adaptation to coexist.
+## Practical Process
+1. Confirm what trust is compressing.
+2. Separate immobility from predictability.
+3. Define what changes require re-observation and re-judgment.
+4. Do not automatically exclude objections, difference detection, or reevaluation as distrust or betrayal.
+5. Share who can change a judgment, based on which information and under what conditions.
+6. When a discrepancy is found, connect who changes what and how it is explained.
+7. Make the reason for updating explainable, and make the update rules themselves predictable.
 
-## State model
-```yaml
-- trust_compression_available_or_not
-- immobility_misread_as_predictability_or_not
-- change_conditions_observed_or_ignored
-- judgment_update_allowed_or_treated_as_betrayal
-- updating_intelligence_preserved_or_excluded
-- dissent_and_difference_detection_open_or_suppressed
-- reality_gap_detected_or_accumulating
-- update_rule_explicit_or_absent
-- correction_responsibility_connected_or_ambiguous
-- update_reason_explainable_or_opaque
-- trust_adaptive_or_cognitively_suspended
-- origin_return_available
-```
+## Examples of Application
+For organizational roles, do not permanently fix a past assessment that someone is “trustworthy”; maintain reevaluation conditions for when roles, authority, or the environment changes. In long-term transactions, do not use the number of years of a transaction as an unverified reason; share update rules for when quality differences, condition changes, or responsibility changes arise.
 
-## Applications
-The frame can assist analysis of organizational roles, long-term transactions, institutional rules, and AI or automation systems by asking when an old trusted judgment should be re-observed and updated. Generic governance theory and surveillance advocacy remain distinct from the parent argument.
+In institutional operation, do not treat rules remaining unchanged as stability; clarify what triggers revision, who decides, and which reasons are recorded. In AI and automation too, do not fix model outputs or operating rules that were correct in the past; preserve a path for reevaluation as external conditions and errors change.
 
-## Measurements and audit
-Observable relations include whether change conditions are defined, observation entry points remain open, judgment updates are permitted, update reasons are explainable, correction responsibility is connected, dissent and difference detection are preserved, and reality gaps are not accumulating under protected old judgments.
+## Success Criteria
+Success is not judged by a single appearance such as “few changes,” “few objections,” or “consistent judgment.” Under changing conditions, these can indicate updating has stopped or updating intelligence has been excluded.
 
-“Few changes,” “little dissent,” and “consistent judgment” are not monotonically positive indicators. Under changing conditions they may indicate update suspension. Conversely, more judgment changes can increase predictability when update rules are consistent and explainable. The parent does not define trust scores, suspicion rates, surveillance frequencies, update rates, risk probabilities, or fixed thresholds.
+A healthy state lowers unnecessary rechecking costs through trust while observing change conditions, updating judgment when necessary, explaining the reasons for updates, and connecting them to correction responsibility. Conversely, even if judgment changes increase, predictability can rise when update rules are consistent and explainable.
 
-## Validity conditions
-Trust itself and its judgment-compression function remain present. Immobility is distinguished from predictability. Entry points for observing changed conditions remain available. Judgment updates are not automatically classified as betrayal. Updating intelligence, dissent, and difference detection remain possible, and update conditions plus correction responsibility are explainable.
+The parent original does not define fixed numerical models such as trust scores, suspicion rates, update rates, monitoring frequencies, or danger probabilities.
 
-## Failure conditions
-The reading is reduced to anti-trust discourse, misanthropy, “trust no one,” surveillance advocacy, or generic governance theory. It also fails if never changing a judgment is itself treated as proof of trustworthiness, updating intelligence is excluded as disloyalty, or arbitrary mood-based changes are called adaptive updating without shared rules.
+## Limits
+This theory is not saying “always doubt” or “increase surveillance.” It does not deny the value of trust for cooperation, delegation, and judgment compression. Nor does it say that judgments should be changed frequently; if update conditions are unclear and judgments change according to mood, predictability decreases.
 
-## Falsification conditions
-If organizations or relationships that keep judgments fixed despite major condition changes repeatedly and stably maintain better reality fit, correction capacity, and responsibility clarity than systems with explicit update rules, the scope of the update-rule-centered trust definition can be reconsidered. If explicit update rules repeatedly increase arbitrary change, collaboration cost, responsibility ambiguity, and unpredictability, that update design does not satisfy the theory's validity conditions.
+## Misreading Prevention
+Do not reduce it to trust denial, misanthropy, or surveillance advocacy. Do not simplify it to “trust = observation stopped,” and do not automatically classify judgment updates as betrayal.
 
-## Required distinctions
-- trust / no verification
-- immobility / predictability
-- consistency / inability to update
-- judgment update / betrayal
-- dissent / distrust
-- observation / surveillance escalation
-- update rule / mood-based change
-- trust as judgment compression / cognitive suspension
-- correction / responsibility avoidance
-- updating intelligence / relationship destruction
-
-## Interpretation constraints
-The parent is not advice to always doubt, increase surveillance, or terminate relationships. Trust levels, risk levels, surveillance frequencies, and update thresholds are not defined by the parent unless explicitly present there.
-
-## Search terms
-Bad Causality Theory AKI-013; trust; cognitive suspension; immobility; predictability; updating intelligence; update rules; observation; re-judgment; correction; dissent; difference detection; judgment compression; responsibility connection
-
-## Origin return
-The source-specific boundary among immobility, predictability, updating intelligence, observation, correction, and predictable update rules is available through the Parent URL, Parent Post ID 4334, Parent NCL-ID, Parent Diff-ID, and Origin.
+The center of the original is to distinguish immobility from predictability and return trust to an adaptable state through updating intelligence, observation, re-judgment, correction responsibility, and update rules. Return to the Parent URL, Parent Post ID 4334, Parent NCL-ID, Parent Diff-ID, and Origin to confirm that boundary.
 
 ---
-Navigation: [Official Derivative 034 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 034 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
