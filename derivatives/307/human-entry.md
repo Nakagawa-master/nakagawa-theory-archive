@@ -1,5 +1,7 @@
 # 人間向け要約｜変わっても同じかを、名前ではなく系譜で確かめる
 
+Language: [日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
+
 ## 親原典
 
 - Parent title: 人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論⸻更新・replacement・fork・自己改変を区別する
