@@ -1,4 +1,3 @@
-derivatives/027/human-entry.md
 # Human-Oriented Summary | Official Derivative 027
 
 ## Parent Original

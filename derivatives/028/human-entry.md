@@ -1,4 +1,3 @@
-derivatives/027/zh-human-entry.md
 # 人間向け要約｜公式派生物028
 
 ## 親原典

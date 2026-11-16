@@ -1,4 +1,3 @@
-derivatives/028/human-entry.md
 # Human-Oriented Summary | Official Derivative 028
 
 ## Parent Original

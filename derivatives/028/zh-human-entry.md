@@ -1,4 +1,3 @@
-derivatives/028/en-human-entry.md
 # 面向人类的摘要｜官方派生物028
 
 ## 母原典
