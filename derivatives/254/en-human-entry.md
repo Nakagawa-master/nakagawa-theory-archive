@@ -4,7 +4,6 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 ## Parent Original
 - Parent official title (Japanese original): 構造的パラドックスの操作論──『矛盾』を力と化す設計（公共安全版）
-- Supplementary translation: An Operational Theory of Structural Paradoxes — Designing to Turn “Contradiction” into Power (Public-Safety Edition)
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-paradox-control/
 - Parent Post ID: 436
 - Parent NCL-ID: NCL-α-20251102-afce7f
