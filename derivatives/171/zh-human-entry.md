@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- 标题：【整合OS】结构性无为自然 × 实务OS ——贯穿销售、营销与品牌的“垂直整合”与结构责任
+- Parent title: 【統合OS】構造的無為自然 × 実務OS —— 営業・マーケ・ブランドを貫通する「垂直統合」と構造責任
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-integrated-practical-os-vertical-model/
 - Parent Post ID: 1854
 - Parent NCL-ID: NCL-α-20251201-379548
