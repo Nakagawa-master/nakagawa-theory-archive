@@ -1,148 +1,68 @@
-# Human Summary | Official Derivative 016
-- Supplementary translated title: English AI Index | Official Derivative 016 | Physics of Consensus Formation Vol. 7
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+# Human-Oriented Summary｜Official Derivative 016
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 合意形成の物理 第7論｜合意形成インフラ ― 統治とは「観測帯域」の設計である
+- Title: The Physics of Consensus, Treatise 7｜Consensus-Building Infrastructure — Governance Is the Design of the “Observation Bandwidth”
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/
 - Parent Post ID: 2941
 - Parent NCL-ID: NCL-α-20260215-198686
 - Parent Diff-ID: DIFF-20260222-0022
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-198686-HUB-EN-0016-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-016-0001-0006
-- supersedes: DDIFF-20260813-DNCL-016-0001-0005
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-198686-HUB-JA-0016-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-016-0000-0006
+- supersedes: DDIFF-20260813-DNCL-016-0000-0005
 
-## Summary
-The parent treats governance not as command, power, majority rule, surveillance, or behavioral steering, but as observation-bandwidth design for maintaining `S = U × R × H`. Governance infrastructure exists when the reality needed for judgment and repair reaches the actors who need it, at a usable granularity, speed, and format, while interpretability, responsibility/repair traceability, and historical-difference traceability remain usable within human cognitive bandwidth K.
+## 15-Second Explanation
+The parent original does not regard governance as “making people obey” or “disclosing as much information as possible.” It understands governance as designing observability so that, when society breaks down, a third party can reproduce the meaning, trace who decided what on what grounds, and verify what changed, in a form that fits within human cognitive bandwidth K.
 
-U is interpretability / third-party reproducibility, R is responsibility traceability plus the ability to locate a repair entry point, and H is traceability of history, differences, and reasons for change. K is a structural variable representing human cognitive bandwidth. More disclosure is therefore not automatically more observability: if information exceeds the bandwidth in which relevant relations can be reconstructed, U may fall even while the amount of published material rises. A named responsible person does not establish R if correction authority cannot be located, and large archives do not establish H if differences and change reasons cannot be reconstructed.
+In the U of `S = U × R × H`, which continues from Treatise 1, U is understandability / third-party reproducibility, R is responsibility traceability and a repair entry point, and H is traceability of history, differences, and reasons for change. Treatise 7 holds that if these are not presented within a bandwidth that humans can actually handle, increasing the amount of information will not raise consensus stability S.
 
-Market, state, community, and AI society remain implementation differences rather than a value ranking. Each can provide different observation bundles and each can also fail. The relevant comparison is how each structure maintains or degrades U/R/H under the constraints of K.
+## Why It Becomes Necessary
+Even if a large amount of information is disclosed, if important grounds for decisions are buried, responsibility nodes cannot be reached, and differences cannot be followed, substantive observability for third parties remains low. The parent original reconceives transparency not as information volume itself, but as a cognitively accessible and verifiable bandwidth.
 
-## Concepts
-- Physics of Consensus Formation Vol. 7
-- consensus infrastructure
-- governance
-- observation bandwidth
-- consensus stability S
-- S = U × R × H
-- U: interpretability / third-party reproducibility
-- R: responsibility traceability / repair entry point
-- H: history, difference, and change-reason traceability
-- K: human cognitive bandwidth
-- information volume / observability
-- source-return path
-- observation granularity
-- observation speed
-- observation format
-- market / state / community / AI-society implementation differences
+AI and large-scale information-processing systems may handle massive amounts of information, but human decision bandwidth K is not infinite. Therefore, governance infrastructure must not simply increase data; it must organize information so that connections to source materials, responsibility lines, change differences, and repair entry points are not lost.
 
-## Causal chain
-```text
-governance_is_designed_as_command_control_or_more_disclosure
-↓
-commands_information_records_and_notifications_expand
-↓
-important_relations_are_buried_beyond_human_cognitive_bandwidth_K
-↓
-third_party_reproducibility_U_declines
-↓
-responsibility_nodes_and_repair_entry_points_are_buried_and_R_declines
-↓
-history_exists_but_differences_and_change_reasons_become_unusable_and_H_declines
-↓
-S_equals_U_times_R_times_H_declines
-↓
-formal_order_or_transparency_can_remain_while_explainability_and_repairability_decline
-↓
-society_becomes_less_able_to_repair_itself_after_error_or_change
-↓
-observation_bandwidth_requires_redesign_within_K
-```
+## Structural Variables of the Parent Original
+**S — Consensus stability.** As `S = U × R × H`, it represents the combined state of third-party reproducibility, responsibility tracing, and history/difference tracing.
 
-## State model
-```yaml
-- social_events_and_decisions_generated
-- information_recorded_or_missing
-- information_volume_low_fit_or_excessive
-- human_cognitive_bandwidth_k_respected_or_exceeded
-- u_interpretability_reproducible_or_overloaded
-- r_responsibility_and_repair_entry_traceable_or_buried
-- h_history_difference_reason_traceable_or_unusable
-- source_material_return_path_available_or_lost
-- observation_granularity_fit_or_misaligned
-- observation_speed_fit_or_delayed
-- observation_format_fit_or_fragmented
-- market_state_community_ai_implementation_distinguished
-- consensus_stability_s_maintained_or_declining
-- repairability_preserved_or_lost
-- origin_return_verified
-```
+**U — Understandability / third-party reproducibility.** It asks whether a third party can reach substantially the same meaning from the same primary materials.
 
-## Applications
-- Public administration can be assessed by whether users can reach changes, decision actors, reasons, and appeal/correction entry points rather than by disclosure volume alone.
-- KPI dashboards, meetings, chats, and notifications can exceed a bandwidth in which important differences and responsibility lines remain reconstructable.
-- Distributed market signals reveal some information while price alone does not preserve all responsibility and history.
-- Shared community context can lower interpretation cost while still losing third-party reproducibility or historical traceability.
-- AI compression can support K when return paths to sources, responsibility nodes, and change reasons remain intact.
+**R — Responsibility traceability and repair entry point.** It is the state in which one can trace who decided on what grounds and from where a correction can be made.
 
-## Measurements and audit
-The parent uses `S = U × R × H` and K as structural variables. It does not define arbitrary U/R/H/K scores, a universal information-volume limit, a universally optimal bandwidth, or a success probability. Target-specific numbers only acquire meaning together with their measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+**H — History/difference traceability.** It is the state in which a third party can verify what changed, when, and why.
 
-- Did increased information improve U, or reduce it through overload relative to K?
-- Can independent readers reproduce meaning from the same source material?
-- Can both responsibility and a practical repair entry point be traced?
-- Can differences and reasons for change be verified rather than merely archived?
-- Can a summary or dashboard return the user to primary material?
-- Is observation too granular to preserve the whole relation?
-- Is observation too coarse to preserve exceptions, responsibility, or differences?
-- Does information arrive in time for judgment and repair?
-- Are market, state, community, and AI society compared as implementations rather than ranked as values?
+**K — Human cognitive bandwidth.** It is a structural variable representing the processing bandwidth in which information can actually be understood, compared, and judged.
 
-## Validity conditions
-- Governance is not reduced to command, surveillance, or persuasion.
-- Information volume is distinguished from observability.
-- U/R/H remain usable within K.
-- Responsibility naming remains connected to repair entry points.
-- Historical volume remains connected to verifiable differences and change reasons.
-- Compression preserves return to primary material.
-- Market, state, community, and AI society remain implementation differences rather than a universal value ranking.
+## Observation Structure
+**1. Information volume and observability.** What matters is not only the volume of published materials, but a state in which the decision line can be reconstructed.
 
-## Failure conditions
-- More disclosure is treated as automatically better governance.
-- A fixed numeric K absent from the parent is treated as generally applicable.
-- Dashboard or surveillance deployment is treated as observation-bandwidth design by itself.
-- Naming a responsible person is treated as sufficient R without repairability.
-- Increasing log volume is treated as sufficient H.
-- AI processing bandwidth is treated as equivalent to human cognitive bandwidth.
-- One institutional form is declared universally superior beyond the parent.
+**2. U.** Terms, premises, and connections to source materials must be preserved so that meaning can be reproduced.
 
-## Falsification conditions
-The parent origin's integrated audit conditions state that if indicator and observation-window relationships do not behave as the source hypothesis expects, the hypothesis or measurement bundle is rejected or revised. The parent does not define additional universal thresholds or equations for this purpose.
+**3. R.** It is necessary to be able to reach the decision-maker, grounds, correction authority, and responsibility line.
 
-## Required distinctions
-- governance / behavior control
-- observability / information volume
-- transparency / cognitively usable verifiability
-- K / source-absent additional fixed information limit
-- responsibility naming / repairable R
-- history volume / verifiable H
-- summary / compression with no return path
-- market, state, community, AI society / value ranking
-- AI processing bandwidth / human cognitive bandwidth
-- dashboard deployment / observation-bandwidth design
+**4. H.** Differences, reasons for change, and correction history must be traceable.
 
-## Interpretation boundaries
-Maximal transparency is not equivalent to successful governance. Governance is distinct from surveillance, command, or behavioral manipulation. The parent does not define a general numeric K, and information quantity is not equivalent to U/R/H. AI's ability to process large contexts is also distinct from society-wide observability.
+**5. K.** When information volume burdens human cognitive bandwidth, important relationships and responsibility lines become substantively invisible.
 
-## Search terms
-Physics of Consensus Formation; consensus infrastructure; governance; observation bandwidth; S=U×R×H; cognitive bandwidth K; third-party reproducibility; responsibility traceability; repair entry point; historical difference; AI governance; Nakagawa Master
+**6. Compression and source materials.** With compression through summaries or dashboards, connections to source materials, responsibility lines, differences, and exception conditions support observability.
 
-## Origin return
-The precise governance-as-observation-bandwidth thesis, K, the institutional implementation differences, examples, limits, and later connections are available at the Parent URL, Parent Post ID 2941, Parent NCL-ID, and Parent Diff-ID.
+## Successful State
+What matters is not the number of published items or dashboards themselves, but a state in which meaning can be reproduced, responsibility and repair entry points can be traced, change differences can be verified, information fits within a bandwidth that can actually be handled, and the necessary source materials can be reached.
+
+Reducing information volume itself is not the objective. If compression causes source materials, responsibility lines, differences, or exception conditions to be lost, U/R/H may decline. The center is not the amount, but a verifiable observation bandwidth.
+
+## Limits
+This treatise is not a value theory that ranks the superiority of markets, states, communities, or AI societies; it is a structural theory comparing what observation bandwidth each institution forms and how it preserves U/R/H and repairability.
+
+The mere existence of dashboards, logs, or monitoring systems does not establish governance observability. What matters is that information is actually usable by humans and connected to source materials and responsibility lines.
+
+Transparency is not determined by information volume alone, and K does not mean a simple upper limit on information volume. Governance observability must also be distinguished from surveillance intensity itself.
+
+## Parent Original
+The definitions of S/U/R/H/K, their connections to institutional types, and the conditions for falsification and revision can be confirmed from the original information corresponding to the Parent URL, Parent Post ID 2941, Parent NCL-ID, and Parent Diff-ID.
 
 ---
-Navigation: [Official Derivative 016 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Route: [Official Derivative 016 Top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+---

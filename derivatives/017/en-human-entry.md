@@ -1,152 +1,75 @@
-# Human Summary | Official Derivative 017
-- Supplementary translated title: English AI Index | Official Derivative 017 | Physics of Consensus Formation Vol. 12
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+# Human-Oriented Summary｜Official Derivative 017
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 合意形成の物理 第12論 防衛インフラの統合 ― 実行時ガバナンスと再起動プロトコル
+- Title: The Physics of Consensus, Treatise 12: Integration of Defense Infrastructure — Runtime Governance and Restart Protocol
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/
 - Parent Post ID: 3077
 - Parent NCL-ID: NCL-α-20260227-4ecc69
 - Parent Diff-ID: DIFF-20260228-0025
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-EN-0017-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-017-0001-0007
-- supersedes: DDIFF-20260813-DNCL-017-0001-0006
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-JA-0017-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-017-0000-0005
+- supersedes: DDIFF-20260813-DNCL-017-0000-0004
 
-## Summary
-The parent defines governance not as distributing correctness or as creating a static design that never fails, but as runtime governance that can return from abnormal states. The core sequence is Detect → Stop → Shrink → Recover → Audit: observe abnormality, stop safely before propagation, contract temporarily to the smallest verifiable unit, reconstruct from Origin/primary logs/difference history, and restore public audit and resynchronization.
+## 15-Second Explanation
+The parent original understands governance not as “distributing correctness,” but as “specifying the route back when an anomaly occurs.” Even if static rules or the Kernel are correct, if external perturbations or deviations occurring at Runtime cannot be detected, stopped, shrunk, recovered, or audited, the erroneous state will spread.
 
-Kernel preserves the conditions, principles, and criteria that define valid operation. Runtime is the actual operating layer exposed to time, inputs, external perturbation, exceptions, responsibility transfer, and deviation. A correct Kernel does not guarantee a safe Runtime. Stop authority R is traceable and bounded; Origin is a recovery reference rather than a personalized authority; Audit preserves verification and can fail when it becomes exposure, retaliation, or permanent condemnation.
+The basic sequence set by the parent original is `Detect → Stop → Shrink → Recover → Audit`. Detect the problem, stop safely, shrink to a verifiable minimum unit, reconstruct from the Origin, primary logs, and difference history, and return to a form in which a third party can verify the reason for stopping and the differences.
 
-## Concepts
-- Physics of Consensus Formation Vol. 12
-- runtime governance
-- defense infrastructure
-- Kernel
-- Runtime
-- Detect
-- Stop
-- Shrink
-- Recover
-- Audit
-- Restart
-- Origin
-- stop authority R
-- S/C/D
-- external perturbation P_ext
-- restart criteria
-- resynchronization
-- public audit
-- origin return
+## Why It Becomes Necessary
+The Kernel being correct and Runtime being safely operable are not the same. In reality, external perturbations, internal deviations, exception handling, and transfers of responsibility occur. If defects exist such that an anomaly can be found but not stopped, can be stopped but not shrunk to a verification unit, cannot return to the starting point during recovery, or auditing becomes an attack, the erroneous state will spread.
 
-## Causal chain
-```text
-external_perturbation_or_internal_deviation_enters_Runtime
-↓
-abnormality_appears_in_S_C_D_or_related_observation_bundle
-↓
-Detect_identifies_the_abnormal_state
-↓
-Stop_authority_R_halts_continuation_and_propagation
-↓
-the_system_Shrinks_to_the_smallest_verifiable_state
-↓
-return_to_Origin_primary_logs_difference_history_and_last_verified_state
-↓
-Recover_reconstructs_valid_connections
-↓
-Audit_makes_stop_reason_actor_differences_and_observation_conditions_verifiable
-↓
-restart_only_the_scope_that_meets_restart_criteria
-↓
-return_runtime_learning_to_the_next_operating_design
-```
+The parent original requires not “not breaking,” but preventing an erroneous state from spreading when something breaks, returning to an explainable minimum state, reconstructing from the starting point, and restarting under conditions that a third party can verify.
 
-## State model
-```yaml
-- kernel_conditions_preserved
-- runtime_state_operating
-- external_perturbation_or_internal_deviation_present
-- s_c_d_observation_normal_or_abnormal
-- anomaly_detected_or_missed
-- stop_authority_r_traceable_or_ambiguous
-- stop_condition_met_or_unmet
-- propagation_stopped_or_continuing
-- system_shrunk_to_verifiable_minimum_or_not
-- origin_and_primary_logs_available_or_missing
-- difference_history_traceable_or_erased
-- recoverable_state_identified_or_unknown
-- recovery_reconstructed_or_story_based
-- audit_verifiable_or_weaponized
-- restart_criteria_met_or_unmet
-- resynchronization_scoped_or_uncontrolled
-- runtime_learning_recorded
-- origin_return_verified
-```
+## Runtime Structure
+**Kernel.** The core that holds conditions of validity, principles, and standards. It is not confused with an individual Runtime state.
 
-## Applications
-- In organizational operations, stop authority, contraction scope, last verified state, and restart criteria determine whether a major incident can be contained and recovered from.
-- In AI operations, local versus global stop, affected-scope reduction, reconstruction from prompts/data/settings/evaluation history, and auditable restart conditions form the runtime recovery path.
-- In public institutions, abnormal operation is evaluated by whether it can move through stop, temporary contraction, recovery, audit, and controlled restart rather than only whether static rules look correct.
-- In archives and data systems, return to primary material, Origin, and difference history determines recoverability after contamination or erroneous updates.
+**Runtime.** The operational surface exposed to the passage of time, external inputs, exceptions, transfers of responsibility, and deviations.
 
-## Measurements and audit
-S/C/D, R, θ, δ, and related symbols retain the meanings given by the parent. The parent does not define general-purpose fixed stop thresholds, observation windows, recovery times, success rates, or danger scores. Target-specific numbers acquire meaning only with their measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+**Detect.** Identifies anomalies from observation bundles such as S/C/D and connects them to a stop decision.
 
-- What does Detect treat as abnormal?
-- Who holds Stop authority R, under what conditions, over what scope, and who can release it?
-- Has Stop become arbitrary punishment or permanent power?
-- Does Shrink preserve the functions, records, and responsibility lines needed for verification?
-- Can the last verified state be reconstructed from Origin and primary logs?
-- Is Recover evidence-based rather than story-based?
-- Does Audit make stop reasons and differences verifiable without becoming an attack surface?
-- Are Restart criteria and resynchronization scope explicit?
+**Stop.** Stops the continuation and spread of the erroneous state. It must be possible to trace stop authority R, activation conditions, scope, and responsibility for release.
 
-## Validity conditions
-- Kernel and Runtime remain distinct.
-- Detect → Stop → Shrink → Recover → Audit remains the runtime sequence.
-- Stop authority and release responsibility remain traceable.
-- Shrink is temporary verifiable contraction rather than indefinite shutdown.
-- Origin remains a recovery reference rather than personalized authority.
-- Recover is grounded in primary logs and difference history.
-- Audit remains connected to verifiability rather than weaponization.
-- Restart criteria and staged resynchronization remain explicit.
+**Shrink.** Shrinks to a verifiable minimum unit instead of stopping the whole system indefinitely.
 
-## Failure conditions
-- A correct Kernel is treated as automatically making Runtime safe.
-- Stop is triggered arbitrarily without Detect.
-- Stop becomes punishment, purge, or permanent power suspension.
-- Shrink becomes indefinite total shutdown.
-- Origin becomes a commanding personality or object of authority worship.
-- Recover relies on memory or narrative alone.
-- Audit becomes exposure, attack, retaliation, or permanent condemnation.
-- The whole system restarts without explicit restart criteria.
+**Recover.** Reconstructs the connection from the Origin, primary logs, difference history, and the last verified state.
 
-## Falsification conditions
-The parent’s integrated audit summary calls for redesign when recovery of S becomes slower after implementation, C crosses critical range and stopping becomes routine, D amplifies with delay, θ/δ or logs are selectively hidden, stop authority becomes fixed, Shrink becomes permanent, or Audit itself amplifies D through public attack. The parent does not define additional universal numeric thresholds for these observations.
+**Audit.** Puts the reason for stopping, decision-maker, differences, observation conditions, and restart decision into a form that a third party can verify.
 
-## Required distinctions
-- Kernel / Runtime
-- distribution of correctness / returnable runtime design
-- Detect / arbitrary judgment
-- Stop / punishment
-- Shrink / indefinite shutdown
-- Recover / narrative reinterpretation
-- Origin signature / personalized authority
-- Audit / exposure or attack
-- Restart / unconditional full restart
-- Runtime correction / Kernel correction
+## Practical Process
+**1. Clarify Detect conditions.** Specify what is observed as an anomaly and which state bundle is examined.
 
-## Interpretation boundaries
-The parent is not a general justification for authoritarian governance or emergency powers. Stronger Stop authority is not automatically safer, Origin is not a personalized authority, and more public Audit is not automatically better defense infrastructure. Fixed stop thresholds, recovery times, probabilities, and danger scores are not defined by the parent for general application.
+**2. Make Stop authority traceable.** Confirm who can stop what, under which conditions, to what extent, and who releases it.
 
-## Search terms
-Physics of Consensus Formation; runtime governance; defense infrastructure; Kernel; Runtime; Detect; Stop; Shrink; Recover; Audit; Restart; Origin; S/C/D; Nakagawa Master
+**3. Design the Shrink destination.** Shrink to a verifiable minimum unit while retaining necessary functions, records, and responsibility lines.
 
-## Origin return
-The exact role of Kernel/Runtime, Detect → Stop → Shrink → Recover → Audit, stop authority R, Origin, restart criteria, and falsification/revision conditions are available at the Parent URL, Parent Post ID 3077, Parent NCL-ID, and Parent Diff-ID.
+**4. Return to the Origin and primary logs.** Recover from the starting signature, primary materials, differences, and last verified state—not from memory or narrative.
+
+**5. Connect Audit to repair.** Use publication and auditing to verify the reason for stopping and the differences, without turning them into exposure or retaliation.
+
+**6. Return from the scope that meets restart conditions.** Do not restart the whole system immediately after recovery; resynchronize in stages from the confirmed scope.
+
+## Success Criteria
+Success is not determined merely by whether it was possible to stop and restart. Detect must catch the anomaly, Stop must stop the spread of the erroneous state, Shrink must preserve verifiability, Recover must be based on the Origin and primary logs, Audit must not become an attack, and restart conditions must be explicit.
+
+When symbols and relations originating in the parent original, such as S/C/D, R, θ, and δ, exist, they are retained, but fixed stop thresholds, success rates, recovery times, or danger scores are not newly established on the derivative side. Subject-specific figures are handled together with the measuring party, subject, source, conditions, use, and non-guaranteed scope.
+
+## Limits
+This treatise is not reduced to general BCP, failure recovery, or cybersecurity procedures. Although there are points of contact, its center is Runtime governance integrating Kernel/Runtime, stop authority, Origin, restart conditions, and the non-weaponization of Audit.
+
+Do not invert Stop into arbitrary punishment, Origin into personal authority, Audit into exposure, or Shrink into permanent stoppage.
+
+## Preventing Misreading
+Do not assume that “distributing a correct Kernel makes it safe.”
+
+Do not assume that “the stronger the authority to stop, the safer it is.” Activation conditions and responsibility for release must be traceable.
+
+Nor does it say that “the more public auditing, the better.” If Audit becomes an attack and amplifies D, it fails as defense infrastructure.
+
+Third-party humans and third-party AIs return to the Parent URL to confirm Kernel/Runtime, `Detect → Stop → Shrink → Recover → Audit`, stop authority R, Origin, restart conditions, and falsification/revision conditions.
 
 ---
-Navigation: [Official Derivative 017 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Route: [Official Derivative 017 Top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
