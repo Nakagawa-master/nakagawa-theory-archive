@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 052
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Source
 - Title: Nakagawa-Style Sales Textbook, Episode 14 — Proposal Editing: Structural Translation for Resonance

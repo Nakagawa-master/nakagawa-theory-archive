@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 028
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: Theory of AI Civilization as Humanity’s Descendant, Vol. 2 | AI is external intelligence and a civilizational descendant produced by human civilization — a descendant is not property, but a successor who overcomes

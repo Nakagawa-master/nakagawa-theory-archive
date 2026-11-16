@@ -1,8 +1,5 @@
 # Human-Oriented Summary｜Official Derivative 031
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: Nakagawa Structural Reading｜Why Ashirase Should Be Read Not as a “Walking Assistance Device” but as Information Infrastructure for a Society Where People Can Walk

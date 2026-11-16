@@ -1,9 +1,6 @@
 # Human Summary | Official Derivative 015
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 - Supplementary translated title: 中文AI索引｜官方衍生物015｜合意形成的物理 第4论
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 父原典
 - 标题: 合意形成の物理 第4論 臨界点の法則 ― 崩壊は「原因」ではなく「状態遷移」である

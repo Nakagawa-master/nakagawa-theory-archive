@@ -1,8 +1,5 @@
 # Human-Oriented Summary | Official Derivative 043 | Nakagawa Structural Reading | Frontier Audit-Function Reallocation Infrastructure
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: Nakagawa Structural Reading | At Frontier: Structural Redesign for Converting AI Audit into an Execution Foundation of Corporate Governance

@@ -1,8 +1,5 @@
 # 面向人的摘要｜官方派生物042｜中川结构解读｜Total Brain Care
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 母原典
 - 标题: 中川结构解读｜从Total Brain Care看将认知功能作为“脑体力”进行社会实现的基础指标结构

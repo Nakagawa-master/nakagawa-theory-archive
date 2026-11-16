@@ -1,8 +1,5 @@
 # 面向人的摘要｜官方派生物035
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [简体中文](zh-human-entry.md)
 
 ## 母原典
 - 标题：中川结构解读｜不把 REMODELA 读作“AI退租现场确认”，而是读作构建原状恢复妥当性基础的结构

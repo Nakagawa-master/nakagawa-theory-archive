@@ -1,8 +1,5 @@
 # 面向人的摘要｜官方派生物031
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 亲原典
 - 标题: 中川结构解读｜为什么不应把 Ashirase 读作“步行辅助设备”，而应读作让社会能够步行的信息基础设施

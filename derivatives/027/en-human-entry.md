@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 027
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: Nakagawa Structural Reading | Reading Invax not as “surplus-soil utilization,” but as an implementation OS that updates the civil-engineering view of materials

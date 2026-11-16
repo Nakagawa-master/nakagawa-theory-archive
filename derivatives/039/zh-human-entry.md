@@ -1,8 +1,5 @@
 # 面向人的摘要｜官方派生物039｜中川结构解读｜Adory
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md)
 
 ## 母原典
 - 标题：中川结构解读｜不把 Adory 读作“LINE 问卷”，而是读作把现场不适转换为先行指标的结构

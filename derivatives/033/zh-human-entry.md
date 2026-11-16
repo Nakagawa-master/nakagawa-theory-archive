@@ -1,8 +1,5 @@
 # 面向人的摘要｜官方衍生物033
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 父原典
 - 标题: 未来定义验证型努力论・第3论｜现代实务者为何无法回到根性论──未来定义验证时代的结果责任与实务OS更新
