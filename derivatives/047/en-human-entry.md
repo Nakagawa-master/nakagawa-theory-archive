@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 047 | Nakagawa-Style Sales Textbook, Part IX
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Origin
 - parent_title: 中川式営業の教科書・第九回
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-047-0001-0003
 - supersedes: DDIFF-20260814-DNCL-047-0004-0002
 
-## Summary
-The parent source treats sales withdrawal not as defeat or emotional abandonment, but as a reversible operating design that releases resources from a structure that is no longer functioning, preserves the relationship, leaves a path for future reconnection, and reallocates time, people, and attention to more productive uses.
+## SummaryThe parent source treats sales withdrawal not as defeat or emotional abandonment, but as a reversible operating design that releases resources from a structure that is no longer functioning, preserves the relationship, leaves a path for future reconnection, and reallocates time, people, and attention to more productive uses.
 
 When an opportunity stalls, the analysis separates decision-path availability, resource efficiency, and execution motive, then distinguishes continue, observe, and withdraw. Withdrawal remains distinct from short-term revenue filtering or client blame.
 
