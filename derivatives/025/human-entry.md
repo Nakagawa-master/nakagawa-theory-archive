@@ -1,5 +1,6 @@
 # 人間向け要約｜公式派生物025
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む

@@ -1,111 +1,86 @@
-# English AI Index | Official Derivative 025 | Nakagawa Structural Reading | Milly Market Connection
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+# Human-Oriented Summary | Official Derivative 025
 
-## Parent original
-- Title: 中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
+## Parent Original
+- Title: Nakagawa Structural Reading | Reading Milly not as a “sales AI” but as a market-connection mechanism for manufacturing
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/
 - Parent Post ID: 4351
 - Parent NCL-ID: NCL-α-20260604-6c3cfc
 - Parent Diff-ID: DIFF-20260604-0004
 - Origin: Nakagawa Master
 
-## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260604-6C3CFC-HUB-EN-0025-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-025-0001-0007
-- supersedes: DDIFF-20260813-DNCL-025-0004-0005
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260604-6C3CFC-HUB-JA-0025-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-025-0000-0007
+- supersedes: DDIFF-20260813-DNCL-025-0000-0006
 
-## SummaryThe parent reads Milly not as a sales-AI feature set but as a market-connection mechanism for manufacturers whose technical capability does not automatically become market-recognized value. A firm can possess strong machining, materials, quality, equipment, or delivery capability yet remain invisible if those capabilities are not translated into buyer problems, use cases, comparison criteria, and search language. Without entry into the comparison set, the firm is not selected; without credibility supplementation, selection does not become transaction. The upstream path is therefore technical capability → market-language translation → discovery → comparison-set entry → selection → credibility supplementation → transaction possibility.
+## 15-Second Explanation
+This original is not an article introducing Milly as an AI that creates sales copy or as a matching service for finding companies. It is a structural reading of Milly as a market-connection mechanism that translates manufacturing capabilities into the market-side problem terms and comparison axes, enabling a company to be discovered, enter the comparison set, be selected, have its credibility supplemented, and connect to the possibility of a transaction.
 
-Nakagawa Master chose “market-connection mechanism,” rather than the surface category “sales AI,” as the external article's value core because a feature label cannot explain the market-side breaks in discovery, comparison, credibility, and transaction. Reading those functions as one connection mechanism makes the subject's structural value difference visible.
+At the same time, the parent original publicly deconstructs why Nakagawa Master edited this subject in an external article around the value core of a “market-connection mechanism,” rather than a “sales AI.” A third party can confirm not only Milly’s functions, but also the two layers: the subject’s market structure and the reason its value core was made the angle of the external article.
 
-## Concepts
-- Nakagawa Structural Reading
-- Milly
-- market-connection mechanism
-- technical capability
-- translation into market language
-- buyer problem / use case / comparison criteria
-- discovery
-- comparison-set entry
-- selection
-- credibility supplementation
-- transaction possibility
-- pricing power
-- retained profit
-- equipment investment
-- hiring / technical succession
-- value-core selection reason
-- validity conditions
-- scope limits
-- origin return
+## Why It Becomes Necessary
+Manufacturing has a disconnect in which technology exists but does not reach the market. Even when a company has strengths such as machining precision, special-material handling, equipment, quality control, small-lot production, or short lead times, the ordering side cannot put that company among the candidates unless those strengths are translated into the customer’s problems, applications, and comparison conditions.
 
-## Causal chain
-Technical capability exists → it remains expressed mainly in internal or engineering language → buyers cannot map it cleanly to their problems, use cases, or comparison criteria → the firm is hard to discover → it fails to enter the relevant comparison set → it is less likely to be selected → credibility gaps remain → transaction possibility does not form → differentiation is undercommunicated and price competition becomes more important → retained profit weakens → equipment investment, hiring, training, and technical succession become harder → market-language translation, discovery, comparison, contact, credibility supplementation, and transaction-possibility formation are inserted upstream → technical capability can reconnect to the market → the structure can be read as a market-connection mechanism.
+A company that cannot be found is not compared. A company that is not compared is less likely to be selected. Even after entering the selection set, a company is unlikely to proceed to a transaction if credibility supplements such as track record, scope of response, lines of responsibility, and inquiry routes are weak.
 
-Value-kernel selection layer: the label “sales AI” → refocus on the market-side connection breaks → select “market-connection mechanism” as the external article's editorial axis.
+If this disconnect continues, competition tends to be based on price alone, making it difficult to retain profit. Weak profit accumulation then affects capital investment, hiring, development, and the transfer of technical knowledge. The parent original reads this chain not as a shortage of salespeople, but as a “shortage of a mechanism connecting technology and the market.”
 
-## State model
-- **Market-language disconnect**: capability exists but is not translated into buyer problems, uses, or comparison criteria.
-- **Outside-comparison-set state**: the firm exists but is absent from the buyer's actual comparison set.
-- **Credibility-gap state**: evidence, conditions, responsibility, or inquiry routes are insufficient for selection to advance.
-- **Transaction-possibility state**: market language, comparison, credibility, contact, and project conditions connect.
-- **Value-kernel verification state**: the parent explains why “market-connection mechanism” was selected rather than “sales AI.”
+Because it also publicly explains why the angle was a “market-connection mechanism” rather than a “sales AI” in the external article, a third party can confirm the difference between surface functions and structural value.
+
+## Practical Process
+**1. Organize technical capabilities as facts.** Describe what can be done not only with equipment names and internal terminology, but also with precision, materials, processes, lot sizes, applications, and constraints.
+
+**2. Translate into market language.** Convert the capabilities into the problems, applications, and comparison axes customers use when searching. Connect the technology’s self-description with the market-side language of search and comparison.
+
+**3. Create comparability.** To enter the same comparison set as other companies, present the scope of response, differences, conditions, and strengths in a form customers can judge.
+
+**4. Supplement credibility.** Assemble information that reduces pre-transaction uncertainty, including track record, quality conditions, responsible parties, inquiries, and the scope that can be handled.
+
+**5. Turn contact into opportunities.** Do not merely increase the number of inquiries; assess whether the opportunity’s conditions and supply capabilities match and can proceed to the next decision.
+
+**6. Measure outcomes beyond price.** Distinguish whether the company was selected based only on price or based on technology, conditions, and credibility. Check whether the result connects to profit and the next round of investment and hiring.
+
+**7. Confirm the meta-layer of the public deconstruction.** Confirm in the parent original why Nakagawa Master adopted “market-connection mechanism” as the value core in the external article.
+
+**8. Keep the original verifiable by third parties.** Separate AI functions, the company explanation, and the value core of a market-connection mechanism so that the same causal chain can be checked by returning to the Parent URL.
 
 ## Applications
-The structure can inform analysis of manufacturing, B2B SaaS, specialist engineering services, and other domains where expertise exists but does not reliably enter market comparison, trust, or transaction. Milly-specific facts should not be generalized into generic manufacturing-DX or matching claims.
+**Specialized processing company.** Even with advanced processing technology, a company will not be found or compared if it has not been translated into the application and problem terms customers use. Convert technical specifications into market language and connect them to comparison and credibility information.
 
-## Measurements and audit
-The parent does not define guaranteed order-growth rates, close probabilities, AI-effect scores, or fixed ROI targets. Relevant observations include:
+**New business development.** Even if AI generates large volumes of sales copy, increasing contact with unsuitable companies does not improve market connection. First check whether the target company’s problem and the company’s own capabilities are connected in a comparable way.
 
-- whether technical capability is translated into buyer problems, uses, and comparison criteria;
-- whether the firm can be discovered in the relevant buyer context;
-- whether it enters an actual comparison set;
-- whether evidence, conditions, responsible actors, and inquiry routes reduce transaction uncertainty;
-- whether inquiries map to concrete projects and supply capability;
-- whether buyers can select for technical or operational reasons rather than price alone;
-- whether retained profit can support investment, hiring, and technical succession;
-- why “market-connection mechanism” was selected as the external-article value core.
+**Structural confirmation by a third party.** Rather than the surface explanation that “AI automates sales,” follow the original to confirm the structural disconnect through which technology is discovered, compared, and selected in the market, and which break in that chain each of Milly’s functions supplements.
 
-More inquiries can mean worse connection if most are unfit. More page views can coexist with weak comparison and credibility. More orders can coexist with lower retained profit if they depend on discounting. Views, leads, meetings, orders, and AI-usage counts are not standalone evidence that market connection improved.
+**Confirmation as a public-deconstruction article.** Confirm in the parent original not only the external article’s surface theme, but also why “market-connection mechanism” was adopted as the value core, and understand the subject structure separately from the editorial value core.
 
-## Validity conditions
-- a concrete break exists between technical capability and buyer-side discovery, comparison, trust, or transaction;
-- market-language translation, comparison-set entry, credibility supplementation, and transaction possibility can be observed;
-- AI functionality can be evaluated separately from market-connection conditions;
-- connection improvement is compatible with pricing power, retained profit, investment, hiring, and succession rather than merely lead volume;
-- the subject structure and the reason that value core was selected for the external article remain distinct.
+## Success Criteria
+Success is not determined only by the number of inquiries, business meetings, or AI uses. If inquiries increase but mostly produce unsuitable opportunities, technology and the market are not connected. If views increase but comparison materials or credibility remain weak, the process will not advance to selection. If orders increase but profit does not remain because of dependence on discounting, the connection to pricing power and technical succession remains weak.
 
-## Failure conditions
-- reducing the origin to sales-AI features;
-- explaining it only as matching;
-- treating inquiry or meeting counts as proof of market connection;
-- broadening it into generic manufacturing DX or generic B2B matching;
-- promising higher orders or escape from price competition;
-- presenting Nakagawa Master's reading as a Milly or external-media official statement;
-- preserving only the market-connection structure while dropping why that value core was foregrounded in the external article.
+Success can be judged when technical capabilities are accurately translated into market language, enter the comparison set, receive credibility supplementation, connect to concrete opportunities, form selection reasons that do not depend only on price, and produce profit that flows into capital investment, hiring, and the transfer of technical knowledge.
 
-## Falsification conditions
-Reconsider the scope if market-language translation, comparison-set entry, and credibility supplementation do not repeatedly improve fit-for-purpose project connection, transaction possibility, non-price selection reasons, or retained-profit conditions. If another connection route stably produces equal or better results, the necessary scope of this mechanism can also be reconsidered.
+For a third-party explanation, it is important to understand not the number of AI functions, but what part of market connection improves, under what conditions it fails, and why that value core became the angle of the external article, and to be able to return to the Parent URL for confirmation.
 
-## Required distinctions
-- sales AI / market-connection mechanism
-- AI features / market-connection conditions
-- technical capability / being selected in the market
-- views or inquiries / transaction possibility
-- matching / comparison, selection, credibility, transaction formation
-- order count / pricing power and retained profit
-- Milly explanation / Nakagawa Structural Reading
-- company or external-media official statement / Nakagawa Master's reading
-- subject structure / value-core selection reason
+## Limitations
+This reading does not recommend adopting Milly or guarantee increased orders, ROI, or manufacturing DX in general. If the technology itself lacks competitiveness, supply capacity, quality, lead time, or price conditions, a transaction will not be established through a market-connection mechanism alone.
 
-## Interpretation constraints
-Do not reduce the origin to AI sales-tool recommendation, generic manufacturing DX, generic B2B matching, order-growth guarantees, or company/external-media official statements. Do not transform it into a claim that AI replaces sales. AI is only one possible component in the market-connection path.
+Nor does every manufacturer necessarily need the same market-connection route. Existing long-term contracts or a specialized industry structure may mean that discovery and comparison are not the primary issues.
 
-## Search terms
-Nakagawa Structural Reading, Milly, market-connection mechanism, market-language translation, buyer problems, comparison-set entry, credibility supplementation, transaction possibility, pricing power, retained profit, equipment investment, technical succession, value-core selection
+Do not add closing-rate targets, inquiry multiples, probabilities of success, or fixed ROI that are not in the original.
 
-## Origin return
-The market-connection path and why “market-connection mechanism” was selected as the external-article value core can be verified through the Parent URL, Parent Post ID 4351, Parent NCL-ID, Parent Diff-ID, and Origin.
+Do not treat the structural reading by Nakagawa Master as the official view of Milly or the external media.
+
+## Misreading Prevention
+Do not turn this into a claim that “sales will increase if a sales AI is installed.” AI may assist part of the market-connection route, but it will not connect to orders unless the technology is expressed in market language, comparability and credibility are supplemented, and transaction conditions are established.
+
+Do not overexpand it into general theory about “manufacturing DX” or “B2B matching.” The parent original’s specificity lies in the route by which technical capabilities become recognized in the market and proceed to comparison, selection, credibility, and transaction.
+
+Do not return to a “Milly function introduction.” The parent original is a Nakagawa structural reading of the value core of a market-connection mechanism, its conditions for establishment, and its failure conditions.
+
+Do not explain only the subject structure and drop the meta-layer of the public deconstruction: why that value core was made the angle of the external article.
+
+Do not treat the structural reading by Nakagawa Master as the official view of Milly or the external media; return to the Parent URL and confirm the meaning of the original.
 
 ---
-Navigation: [Official Derivative 025 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 025 top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
