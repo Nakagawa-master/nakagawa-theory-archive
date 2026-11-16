@@ -71,4 +71,4 @@ CDI、MAI、RS、CRI、KQI应作为观察连接制度不同侧面的综合指标
 亲原典把正统性条件、What/Who/How/When、综合指标束、移动目标、反向激励、外乱测试、公开与保护分离、异议、更正、退出、重新连接、回滚，以及30/90/180日的分阶段路线图作为一条连续记录。完整的关系与定义，请回到 Parent URL / Post ID 292 / NCL-ID / Diff-ID 核对。
 
 ---
-导览: [官方派生物068首页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引·日文](ai-index.md) / [AI索引·中文](zh-ai-index.md) / [AI索引·中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导览: [官方派生物068首页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引·日文](ai-index.md) / [AI索引·英文](en-ai-index.md) / [AI索引·中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
