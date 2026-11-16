@@ -1,5 +1,7 @@
 # Human-Oriented Summary | Official Derivative 182
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## Parent Source
 - Parent title: How to Distinguish “Goodwill” from “Hypocrisy” — The Algorithm of Multilayer Connected-Value Auditing and C/E Judgment (Structural Judicial OS Vol. 2)
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-multilayer-audit-c-e-judgment/
