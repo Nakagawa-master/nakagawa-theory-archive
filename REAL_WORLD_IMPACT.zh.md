@@ -461,7 +461,7 @@ content-stable payload reuse
 ## 17. Publications｜把可逆性与authority增加分开，并在另一份文档中继续复用
 
 **对象：** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
-**当前状态：** #57 merged / 已确认GitHub Pages反映；#58 merged / 在同一receiver的另一份文档中继续复用；后续PR #71在更大范围的文档重组中继续保留D1–D8，目前open / mergeable
+**当前状态：** #57 merged / 已确认GitHub Pages反映；#58 merged / 同一独立作者在别的文档中复用；#71于2026-10-31正式merged并保留D8；第5章后续来源与实装追记#103于2026-10-12正式merged
 
 PR #52中的 `Nakagawa-master` review区分了“操作可以撤回”与“该操作是否扩大同一主体未来可以做什么”：
 
@@ -490,14 +490,15 @@ receiver把这一点重新解释为正文缺失的独立设计轴，并建立PR 
 - [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
 - [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
 
-后续PR #71又提供了一个时间上更晚的receiver-owned carry。receiver在统一AA文档体系时，PR正文明确写出“P1〜P3・D1〜D8的正文保持不变”。当前head `e06e748` 的 `drafts/agentic-agile/principles.md` 仍保留D8“自己权限固定”。这说明#57/#58中的边界在后续结构整理中没有消失；但PR #71目前仍是open / mergeable，因此不计为已merge。
+随后，该独立作者于2026年10月31日正式合并体系重组PR #71，在后续设计原则中继续保留D8“自己权限固定”。此外，作者于2026年10月12日合并第5章后续补充PR #103，保留2026年9月20日当时的原始记载，同时注明Local Operator #1310后来由另一位开发者通过PR #1324实现并进入v0.61.11。章节保留对 @Nakagawa-master 的明确来源链接。可以核实的是第三方作者自身的采用、合并和署名溯源；实际读者人数及新的独立用户采用仍需另行观察。
 
 - [PR #71｜后续文档体系重组](https://github.com/kishibashi3/publications/pull/71)
-- [PR #71 current head中的Principles](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
+- [PR #71 独立作者的正式合并提交](https://github.com/kishibashi3/publications/commit/14c67e349d5b1c7a5c0907efed6fda4cc186b9be)
+- [PR #103 第5章追加来源与后来实现、发布的真实状态，已合并](https://github.com/kishibashi3/publications/pull/103)
 
 **第三方AI技能中的实际延伸（2026-10-31核实）：** 同一外部作者通过[issue #81](https://github.com/kishibashi3/publications/issues/81)及[已合并PR #125](https://github.com/kishibashi3/publications/pull/125)（[merge commit](https://github.com/kishibashi3/publications/commit/f502a469ced9a406b39c71ff6e5504d470ef5d6a)），在其自行维护的[Claude Code `agent-design` skill](https://github.com/kishibashi3/publications/blob/main/plugins/thinking-shelf/skills/agent-design/SKILL.md)中加入了对“审批模式、allowlist、credential、自我放宽权限”等问题的章路由，要求读取第5章条件6，并把“受约束者不能自行批准放宽自身约束”写进设计原则。这是**同一receiver将已采纳的文章条件扩展到可选AI技能的发现/判断路径**，并非新受众或所有原典被采用的证明。作者[自己的审查](https://github.com/kishibashi3/publications/pull/125#issuecomment-6519048300)明确表示四个真实问题输入的技能路由还没有进行端到端验证；实际安装、独立AI回答、Nakagawa canonical Parent的直接阅读和引用、广泛人类影响均未证实。
 
-**公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge → 在后续receiver-owned文档体系重组head中继续保留同一D8。  
+**公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge → 在后续体系重组中正式合并并保留D8 → 作者再度合并第5章的来源、实现与发布事实补充。  
 
 ---
 ## 18. PostHog｜把反复agent的批准绑定到人类实际看过的instructions

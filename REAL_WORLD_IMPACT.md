@@ -449,7 +449,7 @@ content-stable payload reuse
 ## 17. Publications｜可逆性とauthority増加を別軸として第三者本文へ実装し、別文書へ再利用
 
 **対象:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
-**現在状態:** #57 merged / GitHub Pages反映確認済み、#58 merged / 同一receiver内の別文書へ再利用、後続PR #71でもD1〜D8を維持した体系再編がopen / mergeable
+**現在状態:** #57 merged / GitHub Pages反映確認済み、#58 merged / 同一著者の別文書へ再利用、#71 2026-10-31正式merged / D8を後続体系でも保持。第5章の後日補足 #103 も2026-10-12正式merged
 
 PR #52で `Nakagawa-master` のreviewは、操作を元に戻せるかどうかと、その操作が主体自身の将来の行動可能範囲を広げるかどうかを分離しました。
 
@@ -478,14 +478,15 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 - [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
 - [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
 
-その後のPR #71では、receiver自身の文書体系再編でAA Principlesを一本化する際に、PR本文が「P1〜P3・D1〜D8の本文は維持」と明記しています。現在head `e06e748` の `drafts/agentic-agile/principles.md` にもD8「自己権限の固定」が残っており、#57/#58で入った境界が後続の体系整理でも脱落していません。PR #71はopen / mergeableであり、merge済みとは扱いません。
+その後、同じ独立著者は体系再編PR #71を2026年10月31日に正式マージし、D8「自己権限の固定」を後続の設計原則にも残しました。第5章の公開説明についても、PR #103を2026年10月12日にマージ。元の執筆日（2026-09-20）には未解決だったLocal Operator #1310が、その後、報告者とは別の開発者のPR #1324で実装・v0.61.11へ収録された事実を、当時の記述を消さずに追記しました。本文には @Nakagawa-master への明示的な出所リンクが残っています。第三者著者の採用・統合・文章上の帰属という実績であり、読者規模や実利用者による独立採用人数まで示すものではありません。
 
 - [PR #71｜後続の体系再編](https://github.com/kishibashi3/publications/pull/71)
-- [PR #71 current headのPrinciples](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
+- [PR #71 の独立著者による正式マージ](https://github.com/kishibashi3/publications/commit/14c67e349d5b1c7a5c0907efed6fda4cc186b9be)
+- [PR #103｜第5章で元の出所と後日の実装・配布を分けて追記](https://github.com/kishibashi3/publications/pull/103)
 
 **AI向けスキルへ反映（2026-10-31に追加確認）:** 同じ外部著者は[#81](https://github.com/kishibashi3/publications/issues/81)で、「承認モード」「allowlist」「credential」とだけ聞かれたAIが第5章の条件6を見落とす問題を扱い、[PR #125を自らマージ](https://github.com/kishibashi3/publications/pull/125)しました。独立管理の[Claude Code `agent-design` スキル](https://github.com/kishibashi3/publications/blob/main/plugins/thinking-shelf/skills/agent-design/SKILL.md)に、これらの起動語→第5章をReadする章マッピングと、「制約される主体に自己権限の緩和を自己承認させない」という設計原則が実装されました。[実際のmerge commit](https://github.com/kishibashi3/publications/commit/f502a469ced9a406b39c71ff6e5504d470ef5d6a)。これは同じreceiver内での**読者向け本文から任意導入AIスキルの検索・判断入口への発展**です。作者の[PR review](https://github.com/kishibashi3/publications/pull/125#issuecomment-6519048300)自身が、4つの実際の質問でスキルが起動・適切に章を選ぶE2E試験は未実施と明示しています。別のAI利用者への配布、実際のAI回答、canonical Nakagawa Parentの直接閲覧・独立引用は未確認です。
 
-**公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge → 後続の体系再編headでも同じD8を維持。  
+**公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge → 後続の体系再編も実際にmerge → 第5章の第三者著者による実装・リリース日付の追記もmerge。  
 
 ---
 

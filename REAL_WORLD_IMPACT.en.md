@@ -462,7 +462,7 @@ together with a regenerated-chunk-id regression that makes the choice observable
 ## 17. Publications | Separate reversibility from authority increase, then reuse the boundary in another document
 
 **Surface:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
-**Current state:** #57 merged / GitHub Pages deployment verified; #58 merged / reused inside the same receiver's separate document; later PR #71 keeps D1–D8 through a broader document reorganization and remains open / mergeable
+**Current state:** #57 merged / GitHub Pages deployment verified; #58 merged / reused by the independent author in another document; #71 merged October 31, 2026 preserving D8; later source-time clarification #103 merged October 12, 2026
 
 A `Nakagawa-master` review on PR #52 separated whether an operation can be reversed from whether it increases what the same actor is allowed to do next:
 
@@ -491,14 +491,15 @@ The boundary then became a consistency constraint inside the receiver's publicat
 - [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
 - [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
 
-The carry continues in later PR #71. While consolidating the receiver's AA documents, the PR explicitly says that the P1–P3 and D1–D8 text is preserved. Its current head `e06e748` still contains D8, “self-authority fixation,” in `drafts/agentic-agile/principles.md`. This is evidence of continued receiver-owned preservation across a later structural rewrite; PR #71 is still open / mergeable and is not counted as merged.
+The independent author's subsequent consolidation PR #71 was merged on October 31, 2026, preserving the D8 self-authority boundary in the reorganized design principles. They also merged PR #103 on October 12, updating the reader-facing chapter without rewriting the original September 20 status: Local Operator #1310 was later implemented by a different developer in PR #1324 and included in v0.61.11. The chapter retains its explicit link to @Nakagawa-master as the origin of the reported distinction. These are verifiable independent author decisions and public source attribution; actual readership or independent affected-user adoption is a separate question.
 
 - [PR #71 | later document-system consolidation](https://github.com/kishibashi3/publications/pull/71)
-- [Principles at PR #71 current head](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
+- [PR #71 independently authored merge commit](https://github.com/kishibashi3/publications/commit/14c67e349d5b1c7a5c0907efed6fda4cc186b9be)
+- [PR #103 merged source-time and actual independent implementation note in chapter 5](https://github.com/kishibashi3/publications/pull/103)
 
 **Independent AI-skill routing carry (verified October 31, 2026):** The same third-party author independently owned [issue #81](https://github.com/kishibashi3/publications/issues/81) and [merged PR #125](https://github.com/kishibashi3/publications/pull/125) ([exact merge commit](https://github.com/kishibashi3/publications/commit/f502a469ced9a406b39c71ff6e5504d470ef5d6a)). Their optional [Claude Code `agent-design` skill](https://github.com/kishibashi3/publications/blob/main/plugins/thinking-shelf/skills/agent-design/SKILL.md) now routes ordinary questions about approval mode, allowlists, credentials and loosening an agent's own privileges to their chapter 05, condition 6, and states the self-authorization boundary in its operational rules. This is a **receiver-owned conversion of an existing credited chapter into an AI skill's discovery and decision pathway**, not evidence that an unrelated AI actually ran it. The receiver's [own review](https://github.com/kishibashi3/publications/pull/125#issuecomment-6519048300) explicitly leaves four end-to-end activation/decision prompts untested. Neither external installations, AI answers, independent reading/citation of a canonical Nakagawa Parent, nor a second recipient are established.
 
-**Publicly verifiable here:** origin-preserved review → third-party restatement → dedicated reader-facing implementation → merge / Pages deployment → reuse as a consistency rule in another document inside the same receiver → merge → preservation of the same D8 in a later receiver-owned document-system rewrite head.  
+**Publicly verifiable here:** origin-preserved review → third-party restatement → dedicated reader-facing implementation → merge / Pages deployment → reuse as a consistency rule in another document inside the same receiver → merge → merged preservation of D8 in the later document-system rewrite → merged third-party chapter update distinguishing original credit and later implementation/release.  
 
 ---
 ## 18. PostHog | Bind recurring-agent approval to the instructions the human actually reviewed
