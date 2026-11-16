@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物027
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川構造読解｜インバックスを「残土活用」ではなく、土木の材料観を更新する実装OSとして読む
