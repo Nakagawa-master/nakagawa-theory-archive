@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 051
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-051-0004-0002
 - supersedes: DDIFF-20260802-DNCL-051-0004-0001
 
-## Summary
-The parent original develops sales from person-dependent craft into an institution that handles trust capital across individual, organizational, and societal layers. Individual experience and tacit judgment are externalized into reproducible forms; resonance, continuity, and referral are treated as traces of trust capital; and those traces are connected to evaluation, incentives, and social transparency. Institutionalization is not rigid scripting or total quantification. Its stated limit is that trust cannot be fully reduced to numbers, and institutions can become rigid or create counterproductive incentives.
+## SummaryThe parent original develops sales from person-dependent craft into an institution that handles trust capital across individual, organizational, and societal layers. Individual experience and tacit judgment are externalized into reproducible forms; resonance, continuity, and referral are treated as traces of trust capital; and those traces are connected to evaluation, incentives, and social transparency. Institutionalization is not rigid scripting or total quantification. Its stated limit is that trust cannot be fully reduced to numbers, and institutions can become rigid or create counterproductive incentives.
 
 ## Concepts
 - Person dependency: results and their causes remain concentrated in individual experience and tacit judgment.
