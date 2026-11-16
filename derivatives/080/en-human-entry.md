@@ -72,4 +72,4 @@ It is not a record-absolutist theory. If records cannot be read as causal relati
 It is not a theory that permanently fixes something once it has been recognized as legitimate. Renegotiability and reversibility are central conditions.
 
 ---
-Navigation: [Official Derivative 080 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 080 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
