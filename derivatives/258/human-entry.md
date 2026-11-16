@@ -1,4 +1,5 @@
 # 公式派生物258｜人間向け要約
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 「存在の非対称性」を超克する共創哲学──AIと人類の「調律的パートナーシップ」
