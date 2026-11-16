@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 053
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-053-0004-0002
 - supersedes: DDIFF-20260802-DNCL-053-0004-0001
 
-## Summary
-The fifteenth lecture closes the Nakagawa Sales series by turning embodied sales knowledge into shareable, teachable, comparable, replayable, falsifiable, and transferable knowledge. Questioning, silence, resonance, proposal editing, withdrawal, and trust-capital judgment are externalized through verbalization, visualization, primary logs, counterexamples, curricula, evaluation functions, versioning, and rollback conditions. “Sales Studies” is a proposed disciplinary structure based on theory, method, system, and reproducibility, not a claim of formal academic accreditation.
+## SummaryThe fifteenth lecture closes the Nakagawa Sales series by turning embodied sales knowledge into shareable, teachable, comparable, replayable, falsifiable, and transferable knowledge. Questioning, silence, resonance, proposal editing, withdrawal, and trust-capital judgment are externalized through verbalization, visualization, primary logs, counterexamples, curricula, evaluation functions, versioning, and rollback conditions. “Sales Studies” is a proposed disciplinary structure based on theory, method, system, and reproducibility, not a claim of formal academic accreditation.
 
 ## Concepts
 - Embodied knowledge: experience-based competence that can be performed but is difficult to explain.
