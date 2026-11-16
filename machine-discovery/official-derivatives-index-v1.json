@@ -20,8 +20,8 @@
     "mapped_original_ncl_id_count": 314,
     "mapped_original_slug_count": 314,
     "numbered_derivative_sets": 314,
-    "markdown_faces_per_set": 7,
-    "total_derivative_markdown_pages": 2198,
+    "markdown_faces_per_set": 9,
+    "total_derivative_markdown_pages": 2826,
     "canonical_original_truth_location": "https://master.ricette.jp/",
     "all_original_parent_urls": "derivatives/official-derivatives-map.json entries[].canonical_parent_url; each matched derivative README is a separate provenance cross-check; the 24-item route index is a selected fast lane",
     "growing_corpus": true
@@ -35,6 +35,8 @@
   "surface_pattern": {
     "hub": "derivatives/{number}/README.md",
     "human_entry": "derivatives/{number}/human-entry.md",
+    "en_human_entry": "derivatives/{number}/en-human-entry.md",
+    "zh_human_entry": "derivatives/{number}/zh-human-entry.md",
     "faq": "derivatives/{number}/faq.md",
     "ja_ai_index": "derivatives/{number}/ai-index.md",
     "en_ai_index": "derivatives/{number}/en-ai-index.md",
