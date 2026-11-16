@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物039｜中川構造読解｜Adory
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語切替: [English](en-human-entry.md) / [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む
