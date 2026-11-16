@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 034 | Bad Causality Theory AKI-013
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-034-0001-0005
 - supersedes: DDIFF-20260814-DNCL-034-0001-0004
 
-## Summary
-AKI-013 does not reject trust. Trust can reduce repeated verification costs and enable cooperation, delegation, and division of labor. The bad causal structure begins when remaining unchanged is mistaken for predictability and intelligence that updates judgment in response to changed conditions is treated as distrust or betrayal.
+## SummaryAKI-013 does not reject trust. Trust can reduce repeated verification costs and enable cooperation, delegation, and division of labor. The bad causal structure begins when remaining unchanged is mistaken for predictability and intelligence that updates judgment in response to changed conditions is treated as distrust or betrayal.
 
 The source-specific distinction is that healthy trust is sustained not by permanent sameness but by predictable update rules: what changes are observed, when judgment is reconsidered, who can correct it, and how the reason for correction is explained. A judgment may change while the system remains predictable when the rules governing change are stable and explainable.
 
