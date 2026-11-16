@@ -70,4 +70,4 @@ NAOS不是将国家制度统一为一个的理论。税、登记、司法、ID�
 定义、Core/Plugin、Transaction Unit、T/S/R、非目的、权利与审计条件请回到亲原典确认。
 
 ---
-导线：[官方派生物206顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线：[官方派生物206顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
