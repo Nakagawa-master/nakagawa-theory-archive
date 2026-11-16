@@ -121,7 +121,7 @@
 - **Parent / NCL-ID / titleを照合したい** → [`official-derivatives-map.json`](official-derivatives-map.json)へ。
 - **AI・検索・RAG等で機械取得したい** → [`official-derivatives-index-v1.json`](../machine-discovery/official-derivatives-index-v1.json)へ。
 
-各ODのREADMEは、その公式派生物の9面と親原典への接続ハブです。上記の外側ナビゲーションは、OD001–OD314の各7面の内容やParent identityを変更しません。
+各ODのREADMEは、その公式派生物の9面と親原典への接続ハブです。上記の外側ナビゲーションは、OD001–OD314の各9面の内容やParent identityを変更しません。
 
 ### 旧ナビゲーションURLについて
 
