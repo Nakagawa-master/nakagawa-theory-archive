@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物226
+言語切替：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - Parent title: 文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射
