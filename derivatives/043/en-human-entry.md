@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 043 | Nakagawa Structural Reading | Frontier Audit-Function Reallocation Infrastructure
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Origin
 - parent_title: 中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-043-0001-0004
 - supersedes: DDIFF-20260814-DNCL-043-0004-0003
 
-## Summary
-The parent origin does not reduce Frontier's AI-agent-based internal audit to audit DX, automation, or labor saving. It reads the subject as an audit-function reallocation infrastructure: repeatable audit work moves to AI support while human auditors' time and responsibility return to materiality judgment, challenge, remediation design, management dialogue, and final accountability.
+## SummaryThe parent origin does not reduce Frontier's AI-agent-based internal audit to audit DX, automation, or labor saving. It reads the subject as an audit-function reallocation infrastructure: repeatable audit work moves to AI support while human auditors' time and responsibility return to materiality judgment, challenge, remediation design, management dialogue, and final accountability.
 
 The parent also contains Nakagawa Master's public structural-reading layer: extracting this value core from the external subject, translating it into an external-article question, and decomposing the causal line, responsibility boundary, audit independence, evidence traceability, and surveillance boundary in the parent origin.
 
