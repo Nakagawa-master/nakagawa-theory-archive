@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物078
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 灯火AIネットワークの理念層──可動域を保つ「接続のミドルウェア」
