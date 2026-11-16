@@ -80,4 +80,4 @@ Do not reduce “beat” to the frequency of routine meetings. Treat it as the t
 Do not evaluate only through one result. The original’s important transition is a rearrangement from “results” to “compliance with beats.”
 
 ---
-Navigation: [Official Derivative 128 top](README.md) / [Human-facing summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+Navigation: [Official Derivative 128 top](README.md) / [Human-facing summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
