@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物012
 
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 悪因果論 AKI-011｜理解演出による認識汚染
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/
