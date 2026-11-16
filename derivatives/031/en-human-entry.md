@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 031
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川構造読解｜Ashiraseはなぜ「歩行支援デバイス」ではなく、歩ける社会の情報インフラとして読まれるべきなのか
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-031-0001-0005
 - supersedes: DDIFF-20260813-DNCL-031-0001-0004
 
-## Summary
-The parent original reads Ashirase as **information infrastructure for a society in which people can walk**, rather than as a generic accessibility framework, assistive-device catalog, product recommendation, or safety claim.
+## SummaryThe parent original reads Ashirase as **information infrastructure for a society in which people can walk**, rather than as a generic accessibility framework, assistive-device catalog, product recommendation, or safety claim.
 
 Walking is not reduced to bodily ability alone. Direction, surrounding-environment information, decision material, and the cognitive burden of obtaining that information can determine whether effective mobility is possible even when bodily capacity remains. Information also does not become useful merely by existing. If acquiring it consumes too much visual, auditory, memory, or attentional capacity, the person can lose attention to surroundings and room for personal judgment. The parent therefore reads the connection of necessary information to a bodily-sensation channel usable during movement as a way to redistribute or reduce information-acquisition burden while preserving continued judgment and mobility.
 
