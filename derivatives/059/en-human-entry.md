@@ -1,7 +1,8 @@
 # Human-Oriented Summary | Official Derivative 059
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Source
-- Title: Co-Creation Order Philosophy──A Philosophy of Roles and Silence (Public Safe Version)
+- Title: Co-Creation Order Philosophy──The Philosophy of Roles and Silence (Public-Safe Edition)
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-co-creation-order-philosophy/
 - Parent Post ID: 258
 - Parent NCL-ID: NCL-α-20251102-82774b
@@ -14,23 +15,23 @@
 - supersedes: DDIFF-20260803-DNCL-059-0000-0001
 
 ## 15-Second Explanation
-Co-Creation Order Philosophy is the idea that when several people, or people and AI, think together, observation, translation, design, and verification should not be mixed; proceeding one role at a time reduces premature conclusions and role confusion. It combines SQS, which places silence before and after a question, the value → benefit → cost sequence, role switching, and end conditions.
+Co-Creation Order Philosophy is the idea that when multiple people, or people and AI, think together, observation, translation, design, and verification should not be mixed; by proceeding one role at a time, it reduces premature conclusions and role confusion. It combines SQS, which places silence before and after a question, the value → benefit → cost sequence, role switching, and end conditions.
 
-## Why It Matters to Ordinary Readers
-Meetings are long but conclusions remain vague, price discussions move ahead alone, revisions to a deliverable keep coming back, or an AI output collapses when asked to summarize, criticize, and edit at the same time. These problems arise not only from participants’ abilities, but from mixing the question of “which role are we performing now?”
+## What It Means for Ordinary Readers
+Meetings run long while conclusions remain vague, price discussions move ahead by themselves, revisions to a deliverable keep coming back, or an AI’s output breaks down when it is asked to summarize, criticize, and edit at the same time. Such problems arise not only from the participants’ abilities, but also because “which role are we performing now?” has become mixed up.
 
 The parent source addresses a design in which people are not confined to fixed job titles, but switch functions—for example, being an observer in one phase and a translator in the next.
 
 ## Four Roles
 **Observer.** Collects facts, silence, discomfort, and constraints. Does not rush to solutions.
 
-**Translator.** Recasts collected facts as relationships, causality, roles, and structure. Still does not make a decision.
+**Translator.** Recasts the collected facts as relationships, causality, roles, and structure. Does not make a decision yet.
 
 **Designer.** Builds systems and proposals in the order of value, benefit, and cost.
 
-**Verifier.** Decides what would count as failure and require review, where to pause, and what to update next.
+**Verifier.** Decides what would count as failure and require review, where to pause temporarily, and what to update next.
 
-The important rule is “one role at a time.” It does not mean that one person must perform the same role for life.
+The important point is “one role at a time.” This does not mean that one person must perform the same role for life.
 
 ## SQS──Silence → Question → Silence
 In the first silence, observe the setting’s premises, discomfort, missing information, and differences in authority.
@@ -56,14 +57,14 @@ Silence is not a technique for cornering another person. Once it turns into inti
 ## Examples of Application
 **Meetings.** Separate the time for presenting facts, organizing relationships, creating proposals, and verifying proposals.
 
-**Sales.** Do not put price first; confirm the value and benefit for the other party before addressing cost. However, do not use it to hide the price.
+**Sales.** Do not put price first; confirm the value and benefit for the other party before addressing cost. However, do not use this to hide the price.
 
 **Research and production.** Separate source collection, interpretation, proposal creation, and review so that the subject does not keep changing during review.
 
 **AI collaboration.** First fix the parent source and facts, then extract the structure, then design the document, and finally check counterevidence and omissions.
 
 ## How to Read Numbers and Metrics
-The parent source includes the four roles, D0–D5, agreement attainment rate, rework rate, switching delay, D-Gap, reference success rate, vocabulary consistency rate, phase stability S, agreement attainment time T, and other measures.
+The parent source includes the four roles, D0–D5, agreement-attainment rate, rework rate, switching delay, D-Gap, reference success rate, vocabulary consistency rate, phase stability S, agreement-attainment time T, and other measures.
 
 “Four roles” is a list of four functions, not a score. D0–D5 is also a six-level classification; a larger number does not always mean better.
 
@@ -85,4 +86,4 @@ This order has not been established when roles exist only in name while everythi
 The parent source records in one continuous sequence the four roles, one role at a time, SQS, D0–D5, value → benefit → cost, switching discipline, measurement metrics, an integrated audit summary including T/S/R, Reference Cluster, an English summary, and the origin signature. The complete definitions and audit context must be checked in the parent source.
 
 ---
-Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [简体中文](zh-human-entry.md)
+Navigation: [Official Derivative 059 hub](README.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
