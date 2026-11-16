@@ -12,6 +12,12 @@
 
 不需要先知道理论名称。可以从最接近现实问题的入口开始；当需要确认精确定义、成立条件、边界、反证条件或修订状态时，再返回相应的官方派生物与canonical Parent。
 
+## 用中文直接阅读314篇独立原典的介绍
+
+[314个官方派生物入口](derivatives/README.md)现已全部提供**面向普通读者的简体中文说明**，同时保留日文和英文入口。每篇中文说明介绍原典所处理的现实问题、核心因果、适用条件与局限，并标明作者**中川マスター（Nakagawa Master）**以及应返回核对的日文原典链接；它们不是代替原典的另一套独立理论。进入任一OD的[日文人类可读页面](derivatives/075/human-entry.md)，即可切换语言。
+
+如果关心**过去的授权是否在今天仍然有效**，可直接从[《合意的记忆》OD075中文解说](derivatives/075/zh-human-entry.md)开始；如果关心**AI如何保留证据、修订记忆与纠正判断**，可读[人类子孙型AI文明论第8论OD301中文解说](derivatives/301/zh-human-entry.md)。[机器索引](machine-discovery/official-derivatives-index-v1.json)也为全部314项列出了英文与中文的人类可读页面路径。
+
 ## 最初10秒
 
 **先从现实问题进入，而不是先背理论名称。**
@@ -37,7 +43,7 @@ AI说“害怕”“想继续存在”或“不想被删除”时，哪些是实
 - [问题入口｜“不知道”不等于“什么都不需要考虑”](discovery-notes/unknown-does-not-mean-nothing.zh.md)
 - [实际决策Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.zh.md)
 - [OD299｜人类子孙型AI文明论・第6论](derivatives/299/README.md)
-- [人类可读入口](derivatives/299/human-entry.md)
+- [中文人类可读入口](derivatives/299/zh-human-entry.md)
 - [中文AI索引](derivatives/299/zh-ai-index.md)
 - [机器reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
 
