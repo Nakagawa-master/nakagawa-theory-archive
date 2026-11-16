@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- Parent title：中川结构解读｜从文贤的遮蔽功能看AI时代“交付信息的责任”之设计
+- Parent title: 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-bunken-ai-masking-structural-reading/
 - Parent Post ID: 4010
 - Parent NCL-ID: NCL-α-20260515-a3cb43
