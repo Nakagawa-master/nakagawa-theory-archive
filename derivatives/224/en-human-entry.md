@@ -42,4 +42,4 @@ Theory 4 does not determine institutional branches or desirable policies in post
 Civilizational sovereignty transition is not synonymous with AI dictatorship, overthrow of the state, exclusion of humans, or immediate collapse. The fact that humans use AI is also not evidence that humans lead upstream. Conversely, even if AI is used extensively, if humans independently retain problem-setting, candidate generation, evaluation, institutional design, and self-description, and dependence is reversible, there is less need to call it sovereignty transition.
 
 ---
-Navigation: [Official Derivative 224 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・English](en-ai-index.md) / [AI index・Chinese](ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 224 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・English](en-ai-index.md) / [AI index・Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
