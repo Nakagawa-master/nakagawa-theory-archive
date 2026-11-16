@@ -1,5 +1,7 @@
 # 面向人类的摘要｜官方派生物180
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 父原典
 - 标题：中川OS中的〈结构〉是什么——超越结构主义与后结构主义的“生成OS”式结构实在论（第0章）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-structure-definition/
