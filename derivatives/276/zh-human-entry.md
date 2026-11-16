@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- 标题：品牌可以设计，但“律动”无法操作——产生结构性共鸣的美学营销
+- Parent title: ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-resonance-aesthetic-marketing/
 - Parent Post ID: 563
 - Parent NCL-ID: NCL-α-20251102-ed39bb
