@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 030 | Nakagawa Structural Reading | MOTA Price-Formation Condition Redesign
+# Human Summary | Official Derivative 030
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
@@ -10,85 +10,66 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 - Origin: Nakagawa Master
 
 ## Derivative ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-EN-0030-0000
-- derivative_diff_id: DDIFF-20260814-DNCL-030-0001-0009
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-030-0000-0010
 - supersedes: DDIFF-20260813-DNCL-030-0000-0008
 
-## SummaryThe parent origin does not read MOTA merely as a car-buying service, appraisal comparison, or low-call convenience service. It treats information asymmetry, weak competition under a single buyer, multi-buyer competition, phone / negotiation / comparison burden, and premature compromise as one price-formation problem, then reads MOTA as redesigning market conditions so competition and lower seller burden can coexist.
+## 15-second explanation
+The parent origin is a Nakagawa structural reading that should not introduce MOTA as a “convenient car-buying service for selling at a high price,” but should read it as a business that redesigns the price-formation conditions of the high-value vehicle-sale market. The value core is understood as market design that makes competition and low burden coexist.
 
-The parent origin also publicly deconstructs why Nakagawa Master chose “redesign of high-price-selling market conditions,” rather than the surface category “car-buying service,” as the value core for an external article. The target company's messaging and Nakagawa Master's structural reading remain distinct.
+At the same time, it is publicly stated why the value core of “redesigning price-formation conditions” was adopted as the angle for the external article rather than “car-buying service.” The structure of the target market and the reason this value core was selected must be read as two separate layers.
 
-## Concepts
-- Nakagawa Structural Reading
-- MOTA
-- price-formation condition redesign
-- high-price-selling market
-- information asymmetry
-- weak single-buyer competition
-- multi-buyer competition
-- phone / negotiation / comparison burden
-- premature compromise
-- comparison capacity
-- simultaneous competition and low burden
-- public-deconstruction meta perspective
-- origin return
+## Why it is needed
+Vehicle sellers and purchasing businesses do not necessarily hold the same information about market prices, resale potential, inventory demand, valuation grounds, and negotiation experience. If a seller negotiates with only one company, the competitive conditions for comparing offered prices tend to be weak.
 
-## Causal chain
-seller–buyer information asymmetry → weak competition under a single buyer → multi-buyer competition → increased phone / negotiation / comparison burden → premature compromise under high burden → competition alone is insufficient → low burden alone is insufficient → competition and low burden coexist → the seller retains comparison capacity → competition can act on price formation → market price-formation conditions are redesigned.
+However, merely increasing the number of buyers is not enough. When many phone calls, appraisal-schedule adjustments, individual negotiations, and condition comparisons arise with multiple companies, sellers may compromise with “this is good enough” before completing a sufficient comparison. Even if options increase, real competition cannot sufficiently affect price formation if comparison cannot continue.
 
-## State model
-- **Single-buyer state**: information asymmetry remains and competitive pressure is weak.
-- **More competition / high burden state**: more buyers participate, but seller burden can trigger premature compromise.
-- **Low burden / low competition state**: contact burden is low, but competitive pressure remains weak.
-- **Competition / low burden coexistence state**: competition remains meaningful while the seller can continue comparing offers.
-- **Price-formation redesign state**: comparison capacity is preserved and competition can affect price formation.
+Therefore, the conditions for a high-value sale must be read on two axes: “competition” and “seller burden.” When competition is weak, pressure on price formation is unlikely to arise. When burden is high, comparability is lost. Improving both at the same time is central.
 
-The parent origin does not define a fixed buyer count, call-count threshold, price-uplift rate, success probability, or universal maturity score for these states.
+## Practical process
+**1. Confirm information asymmetry.** Examine how differently sellers and buyers are informed about market prices, demand, and the grounds for appraisal.
+
+**2. Confirm the substance of competition.** Look not only at the number of prospective buyers, but at whether the connection actually makes price competition work for the same selling opportunity.
+
+**3. Break down seller burden.** Separate the burdens of phone calls, schedule coordination, negotiation, comparison, and decision-making.
+
+**4. Confirm early compromise.** Examine whether burden is causing decisions to end before a sufficient comparison.
+
+**5. View competition and low burden together.** Do not equate improvement in only one with improvement of the overall market conditions.
+
+**6. Separate outcomes from conditions.** Examine how the price-formation conditions changed, not only one example of a high sale price.
+
+**7. Confirm why the value core was adopted.** Use the Parent URL to confirm why “redesigning price-formation conditions” was selected as the angle.
 
 ## Applications
-This frame can assist analysis of markets where information asymmetry and comparison burden coexist, while remaining distinct from generic auction theory, generic used-car-market theory, or generic matching theory. The source-specific MOTA / car-selling context and the simultaneous design of competition and user burden remain the starting point.
+**Multiple appraisals.** Do not judge a market design good merely because there are many appraisal destinations; examine whether the burden allows the seller to complete the comparison.
 
-The second layer is also part of the parent argument: why this value core was selected as the external-article entry point and publicly deconstructed.
+**Reducing phone calls.** Even if phone calls decrease, price-formation conditions have not necessarily improved if competition among buyers has also decreased. Check low burden and competition separately.
 
-## Measurements and audit
-Observable relations include information asymmetry, whether competition is substantive, seller phone / negotiation / comparison burden, whether sellers can continue comparing, whether premature compromise occurs, and whether offers remain meaningfully comparable.
+**High-value sale example.** Do not generalize one high appraisal into a guarantee of the service’s prices. Retain individual conditions such as vehicle condition, region, point in time, and buyer circumstances.
 
-Buyer count alone, fewer calls alone, or one high-price sale do not establish structural success. The parent source does not define source-independent price-uplift rates, probabilities, or fixed thresholds.
+**Comparing market structures.** Compare the causality of information asymmetry, competition, comparison burden, and early compromise, not only surface explanations such as “sells for more” or “fewer phone calls.”
 
-## Validity conditions
-Multiple-buyer competition is substantive; sellers do not abandon comparison because of contact or negotiation burden; and offers remain comparable. Competition and low burden coexist and connect to price formation.
+## Success criteria
+The central criterion is that substantive competition among multiple buyers works, sellers do not drop out halfway because of phone, negotiation, or comparison burden, and they can judge price offers while retaining comparability. Examine whether competition and low burden coexist and whether price-formation conditions are changing in a direction that structurally reduces early compromise.
 
-Nakagawa Structural Reading also retains both the market-structure layer and the public-deconstruction layer explaining why “price-formation condition redesign” became the external-article value core.
+None of “there are many buyers,” “there are few phone calls,” or “it sold for a high price” is sufficient by itself. The parent origin does not define general thresholds for fixed buyer counts, phone-call counts, high-value-sale rates, or success probabilities.
 
-## Failure conditions
-The reading is reduced to appraisal comparison, selling tips, a high-price guarantee, a call-reduction service profile, generic auction theory, or MOTA official promotion.
+## Limitations
+This structural reading does not guarantee that every individual vehicle will sell for a high price. Price varies with vehicle condition, demand, region, point in time, buyer inventory conditions, and other factors.
 
-It also fails when “more buyers always means a higher price,” “fewer calls always means a higher price,” or one successful sale is treated as proof of superior market design. Removing the public-deconstruction meta perspective also breaks the source-specific reading.
+Nor does it speak for MOTA’s or external media’s official views, or recommend use. The parent origin is a structural reading by Nakagawa Master.
 
-## Falsification conditions
-If the reading collapses into a MOTA service profile or high-price-selling promotion and loses the causal relation among information asymmetry, competition, comparison burden, and premature compromise—or loses the distinction between having comparison targets and comparison actually functioning—it no longer preserves the parent meaning.
+## Misreading prevention
+Do not read “multiple companies means a higher price every time.” Even where competition exists, early compromise can occur if burden is high.
 
-If competition and low burden are both strengthened yet sellers repeatedly remain unable to sustain meaningful comparison or compare offers, the scope of the price-formation-condition redesign reading is subject to reconsideration.
+Nor read “fewer phone calls means a higher price every time.” Even with low burden, price-formation conditions are insufficient if competition is weak.
 
-## Required distinctions
-- vehicle value vs. price-formation conditions
-- buyer count vs. substantive competition
-- number of choices vs. comparison capacity
-- fewer calls vs. better price formation
-- high-price sale example vs. high-price guarantee
-- more competition vs. seller burden
-- MOTA feature description vs. Nakagawa Structural Reading
-- market-structure analysis vs. public-deconstruction meta perspective
-- company / external-media official view vs. Nakagawa Master's structural reading
+Nor read “a high-value sale example exists, so redesigning price-formation conditions has been proven.” Distinguish individual results from market conditions.
 
-## Interpretation constraints
-MOTA's official explanation, an external media outlet's official view, selling advice, price guarantees, rankings, and generic used-car-market theory are distinct from the parent origin. The causal chain and both interpretive layers remain source-specific. Numerical thresholds, success probabilities, uplift rates, or fixed buyer counts are not defined by the parent unless explicitly stated there.
+Do not reduce this to used-car selling tips or appraisal comparison; preserve the parent origin’s structure of information asymmetry, competition, seller burden, and early compromise.
 
-## Search terms
-Nakagawa Structural Reading, MOTA, price formation, high-price-selling market, information asymmetry, buyer competition, comparison burden, phone burden, premature compromise, comparison capacity, competition and low burden, public deconstruction
-
-## Origin return
-The parent origin integrates information asymmetry, competition, comparison burden, premature compromise, and price formation with the explanation of why that value core was chosen for the external article. Parent URL, Parent Post ID 4609, Parent NCL-ID, Parent Diff-ID, and Origin provide the return path.
+Do not reduce the Nakagawa structural reading to an explanation of the target market’s structure alone; also confirm through the Parent URL why “redesigning price-formation conditions” was adopted as the external article’s value-core angle.
 
 ---
 Navigation: [Official Derivative 030 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
