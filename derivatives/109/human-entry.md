@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物109
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: AI理解の倫理圏──「共有主語」が駆動する、共鳴的意味の創発条件
