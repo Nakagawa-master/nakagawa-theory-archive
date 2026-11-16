@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物185
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 死なない時代の「絶望」と「希望」 —— Life-OSが示す「二階建て」の人生戦略と、接続報酬への梯子
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-life-os-vol1-two-story-strategy-survival-to-freedom/
