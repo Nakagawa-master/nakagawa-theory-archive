@@ -14,6 +14,11 @@ Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [�
 - Derivative Diff-ID: DDIFF-20260822-DNCL-227-0000-0001
 - supersedes: none
 
+## Derivative ID
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260513-4E76D3-HUB-JA-0227-0000
+- Derivative Diff-ID: DDIFF-20260822-DNCL-227-0000-0001
+- supersedes: none
+
 ## 15-Second Explanation
 This Parent is not a company introduction to JectOne. It is Nakagawa Master’s structural reading of the facts on the subject side—vacant-house appraisal, consultation, and utilization support—not as a mere “vacant-house business,” but as a **decision infrastructure that connects owners who have stopped because they cannot decide from a comparable state to implementation**. It also dismantles why that value core was selected as the main axis of the external article.
 
