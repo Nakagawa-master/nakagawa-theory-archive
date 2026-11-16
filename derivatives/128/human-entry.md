@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物128
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 時間倫理の構造──将来負債を「信用資本」へ転換する社会設計
