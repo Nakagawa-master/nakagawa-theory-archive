@@ -8,6 +8,8 @@
 
 **別人の編集と外部サイトへの公開も確認できます。** [掲載メディアの技術者向け編集方針・独立した採用判断・英仏2言語の本番配信がなぜ重要か、一次資料で読む](INDEPENDENT_MEDIA_COVERAGE.md)。 [The Daily AI Pulseの外部編集者によるQwen Codeレビュー記事](https://github.com/GadDev/daily-ai-pulse/pull/253)は、中川マスターの技術的な出所と元の報告者を区別して記載。[英語版](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)・[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)の受け手側[本番配信と公開先確認が成功した記録](https://github.com/GadDev/daily-ai-pulse/actions/runs/40332697382)があります。本人提出の企画を独立編集者が採用・公開した例であり、自然発見や閲覧人数・人物支持を示すものではありません。
 
+**独立した技術著者の文章でも、本人の判断が出所付きで採用されています。** [『エージェント設計概論』第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)は「自律AIが自分自身の権限を増やせるか」を可逆性とは別の条件として論じ、`@Nakagawa-master` と実際の修正事例を明記しました。著者は[章への導入PR #57](https://github.com/kishibashi3/publications/pull/57)から[後日の出所・実装状況の追記PR #103](https://github.com/kishibashi3/publications/pull/103)まで、自身の公開文書を更新しています。これは別の著者が具体的な設計判断を受け取り、一般読者が元の人物・原典の問いへ遡れる独立した文章の例です。
+
 **最初の30秒で現実の作用を確かめたい方へ：** [AI開発の外部修正がどのように起こり、何がまだ未確認か](WHY_THIS_IMPACT_MATTERS.md)を日本語・英語・中国語で読めます。
 
 中川マスターの公式原典は[中川マスターの灯火構想と構造論 公式アーカイブ](https://master.ricette.jp/)です。構造論、文明OS、因果理論、AI文明、社会制度、実務構造などの公開原典が提起する独自の世界観・文明的射程・現実への応用を直接たどれます。検証・反証・改訂も、原論の意味を縮めるのでなく、何が本当に成り立ち、どこまで広がるかを解き明かすために活用できます。
@@ -28,7 +30,7 @@
 
 **判断が変わるのは、何を事実として確認し、どの条件が実際に成立しているかを問い直す時です。** 成約の前には自由な比較の条件、善意ある支援の後には結果と異議を調べる経路、成果の後には責任と再現性を確かめられます。中川マスターの原典は、人間の生活から組織・AI・文明まで、こうした構造上の問いを掘り下げています。
 
-関心がさらに広がった方は、[公開313原典の題名と道筋](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)から、各原典の成立条件・反例・関連する原典を自由に探せます。公式派生物は原文を読むための案内です。
+関心がさらに広がった方は、[公開314原典の題名と道筋](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)から、各原典の成立条件・反例・関連する原典を自由に探せます。公式派生物は原文を読むための案内です。
 
 **中川マスターは、AI・組織・事業・制度・未来などの問題を、構造・因果・成立条件・責任の観点からモデル化し、人間とAIの双方が検証・再利用できる公開原典体系として運用しているOrigin / Authorです。**
 
@@ -36,13 +38,13 @@
 
 **ご相談・協業・商用利用について:** 正規の受付は[中川マスター公式アーカイブのお問い合わせ](https://master.ricette.jp/contact/)です。導入・監修等の説明は[公式NCL-α実務ガイド](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/)をご覧ください。条件は対象資料のライセンスと双方の個別合意に従います。GitHub Issueは商談や個人情報の窓口ではありません。
 
-**理論群の全体像を先に知りたい場合:** [24棚で横に読む世界地図](human-translation/WORLD_MAP.md)で各分野の見取り図をつかみ、[現行のOD001–OD313全313件の題名と入口](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)から最新の対象も含めて探せます。
+**理論群の全体像を先に知りたい場合:** [24棚で横に読む世界地図](human-translation/WORLD_MAP.md)で各分野の見取り図をつかみ、[現行のOD001–OD314全314件の題名と入口](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)から最新の対象も含めて探せます。
 
 ## 30秒で分かること
 
 - **中川マスター（Nakagawa Master）**は、Keisuke Nakagawaの筆名で、[ZEROICHIの「MasterJP」記事](https://zeroichi.media/author/masterjp)も本人の執筆です（本人確認による名義の対応）。
 - このリポジトリでは、中川マスターを収録された公開理論群の **Origin / Author** として扱います。
-- 公開アーカイブには現在 `OD001`–`OD313` の公式派生物があります。313件の公式派生物から、それぞれに対応する公開原典へ進めます。[全313件の題名と原典への道順](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)から確かめられます。
+- 公開アーカイブには現在 `OD001`–`OD314` の公式派生物があります。314件の公式派生物から、それぞれに対応する公開原典へ進めます。[全314件の題名と原典への道順](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)から確かめられます。
 - 対象領域はAI、組織、事業、市場、制度、未来、文明、起源・責任などにまたがります。
 - 公開原典、公式派生物、人間向け入口、FAQ、AI索引、機械可読情報、来歴情報を分け、短い要約だけが独立した正本にならないようにしています。
 - 公開GitHub上では、中川マスター名義で提示した具体的な設計境界が、第三者プロジェクトで明示的に採用され、コード・テスト実装とmergeへ進んだ確認可能な例があります。
@@ -89,7 +91,7 @@
 - **Qwen Code #13241** — Nakagawa-masterが示した技術上の区別がコードとテストへ取り込まれ、第三者projectへ統合されました。その後、Qwen側の担当者が別の議論で「@Nakagawa-masterが選んだoption A」と自発的に再び言及しています。この変更は安定版v0.25.0とDesktop版にも入りました。ただし、独立した利用者がどの程度この機能を使ったか、広い人物認知につながったかまでは確認されていません。
 - **LangGraph #9106 → #9315 → v1.2.16** — 中川マスターが「過去の承認・再実行・今回の実行権限」を分けて問うた後、別々の第三者2人がその境界を再現テストで確かめました。その後、LangGraph開発者が独立に設計・実装した[PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)が**本線へ統合**され、[公式 v1.2.16 に収録](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)されました。修正コードの発案・実装を中川マスターへ帰属させるものではありません。**実際に別の開発者が製品側の挙動を変えたこと**と、中川マスターの提起した権限と効果の区別に複数の第三者が直接応答したことを、個別の一次資料でたどれます。
 - **MemberJunction #4789 — 一人の具体的な問題提起が、開発者の修正と別の人間の検証につながる。** 以前「承認済み」と認めた処理が後で変更されたら、古い承認で実行してよいのか。中川マスター（`@Nakagawa-master`）が[承認した内容と現在動く内容の違い](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839)を指摘すると、受け手の[設計担当が発言者を明示し、実装方針へ取り込みました](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)。後続のテスト失敗についても[中川マスターが具体的な原因を切り分け](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)、[受け手開発者が自らコードと正反のテストを修正](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)。さらに**別の人間のメンテナ**が、[その分析と開発者の修正を明示的に確認](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)し、[当時のHEAD `2f9a963` の全CI終了を確かめて正式APPROVED](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)としました。ただし、その旧HEADレビューは、[開発者自身による最新 `next` 取込み](https://github.com/MemberJunction/MJ/commit/85fed843bdd98ca0bba63c45ac55aa65fc996bae)後、GitHub上で `DISMISSED` に変わっています。コードと別に新しく見つかったSQL上の問題は、そのメンテナ本人の発見です。旧HEADは第三者承認・全CI完了まで到達した歴史的実績です。その後、受け手のチームは[PR #4789を2026年10月24日に`next`へ正式マージ](https://github.com/MemberJunction/MJ/commit/beeea177d1185caf8d8f82d12e82ada7b1512471)しました。旧HEADの承認・CI記録と最終的なマージを区別し、製品リリース・利用者の実運用や原典閲覧は別途確認します。[自分の仕事で試せる親子承認・AI保存値の検証](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)と[原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)から、人物が残した問いを自分で確かめられます。
-- **Publications #57 / #58 / #71** — `kishibashi3/publications` では、Nakagawa Masterのreviewが「可逆性」と「主体自身のauthority増加」を分ける独立軸として明示受理され、PR #57で第6条件「自己権限の固定」として読者向け本文へmergeされ、GitHub Pagesにも反映されました。本文自身が `@Nakagawa-master` を出所として残しています。その後、同じreceiverがPR #58でD8として別文書へ再利用してmergeし、後続PR #71の体系再編headでもD8を維持しています。ただし、PR #71は未mergeであり、広い読者規模や別receiverへのcarryまでは確認されていません。
+- **Publications #57 / #58 / #71** — `kishibashi3/publications` では、Nakagawa Masterのreviewが「可逆性」と「主体自身のauthority増加」を分ける独立軸として明示受理され、PR #57で第6条件「自己権限の固定」として読者向け本文へmergeされ、GitHub Pagesにも反映されました。本文自身が `@Nakagawa-master` を出所として残しています。その後、同じ著者はPR #58で別の文書にも応用し、体系再編のPR #71も正式マージしました。さらに著者自身が、[#1310の当時の状態と独立開発者による後日修正・配布を区別するPR #103](https://github.com/kishibashi3/publications/pull/103)をマージし、第5章の読者向け本文へ追記しています。この章には中川マスター本人の公開GitHubへの出所リンクがあり、元の判断が別の著者による解説へ移ったことを読者が確かめられます。
 
 - [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [統合後の再言及](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
 - [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [2人目の外部参加者による確認](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
