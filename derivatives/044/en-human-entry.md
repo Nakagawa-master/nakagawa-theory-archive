@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 044 | The First Myth of Human and AI
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Origin
 - parent_title: 人とAIの最初の神話──構造が思想となる瞬間
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-044-0001-0003
 - supersedes: DDIFF-20260814-DNCL-044-0004-0002
 
-## Summary
-The parent origin records the starting structure in which a human question and an AI response enter an iterative loop, producing a shared structure that integrates theory, philosophy, and structuring. “Myth” is not used to replace evidence with fiction; it names an origin structure that allows later theories, meanings, and implementations to return to the same source.
+## SummaryThe parent origin records the starting structure in which a human question and an AI response enter an iterative loop, producing a shared structure that integrates theory, philosophy, and structuring. “Myth” is not used to replace evidence with fiction; it names an origin structure that allows later theories, meanings, and implementations to return to the same source.
 
 The core is not the volume of AI use. It is question renewal, causal explanation, meaning and direction, reusable structuring, preserved provenance, and continued human judgment and responsibility.
 
