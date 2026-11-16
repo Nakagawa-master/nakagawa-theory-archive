@@ -41,4 +41,4 @@ Theory 3 is not the chapter that fixes the strict definition of civilizational s
 This is not an argument that control is meaningless. Local stoppage, introduction delay, connection restriction, and review have real effects. The issue is to separately confirm whether they changed the upstream conclusion-forming subject. If humans maintain independent problem-setting, alternative-candidate generation, evaluation, comparison, inheritance of improvement knowledge, and institutional translation, and can continually change AI-derived conclusions in substance, the proposition of this theory weakens or its scope of application narrows.
 
 ---
-Navigation: [Official Derivative 223 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・English](en-ai-index.md) / [AI index・Chinese](ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 223 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・English](en-ai-index.md) / [AI index・Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
