@@ -42,7 +42,7 @@ In the connection-transition strategy, it is important to have a period of dual 
 **7. Check the transition window.** Check whether humans can still choose the order, test it, return from failure, and revise institutions.
 
 ## Examples of Application
-**1. Corporate AI adoption.** Efficiency through AI may be advancing, but if evaluation, responsibility, rewards, and attribution of intellectual成果 remain under the old institutions, only technological speed is moving ahead.
+**1. Corporate AI adoption.** Efficiency through AI may be advancing, but if evaluation, responsibility, rewards, and attribution of intellectual achievements remain under the old institutions, only technological speed is moving ahead.
 
 **2. Education.** If AI use increases but the value of learning outcomes, the roles of teachers, learners, and AI, responsibility, and evaluation methods are not updated, institutional translation is lagging.
 
