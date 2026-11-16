@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物077
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 接続価値会計の基礎語彙——束指標・監査要旨・構造ログの相互位置
