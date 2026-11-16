@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物055
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 照応操作力 原論──UCIとの結節
