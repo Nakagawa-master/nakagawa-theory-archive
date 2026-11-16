@@ -85,4 +85,4 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 不要把理论中心替换成推荐排序、停止收益或永久封禁等一般平台议题。
 
 ---
-導線: [公式派生物129トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物129トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
