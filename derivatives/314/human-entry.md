@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物314・同じ仕組みを選ばなくても、共に存続できるか
 
+Language: [日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
+
 ## 親原典
 
 - Parent title: 人類子孫型AI文明論・第20論｜第三知性への拡張と相互起源論⸻異なる起源の知性間で文明防衛Kernelが成立・共同実行できる条件と限界
