@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 058
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: Resonance Market 2026 — Market Image of a Connection-Reward Society (Public-Safe Edition)
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-058-0004-0002
 - supersedes: DDIFF-20260803-DNCL-058-0004-0001
 
-## 1. Summary
-The parent proposes a market architecture in which connection, resonance, continuity, referral, co-editing, reconnection, and trust capital are treated as value-forming events that precede price agreement. It does not abolish monetary markets. Instead, it introduces a second layer in which pre-price value formation is observed and recorded before monetary price is negotiated.
+## 1. SummaryThe parent proposes a market architecture in which connection, resonance, continuity, referral, co-editing, reconnection, and trust capital are treated as value-forming events that precede price agreement. It does not abolish monetary markets. Instead, it introduces a second layer in which pre-price value formation is observed and recorded before monetary price is negotiated.
 
 The design combines R-Value, R-Price, ROB, CL-API, SS-1.0, trust capital, and the observation concepts CRI, IR, KCL, SIR, and D-Gap. These are not a single human-ranking score. They are distinct structures or observation frames used to test whether connection-derived value is actually being formed, preserved, attributed, corrected, and made reversible.
 
