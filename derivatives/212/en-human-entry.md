@@ -1,6 +1,6 @@
 # Human-Oriented Summary | Official Derivative 212
 
-Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - Parent title: Endurance Civilization Theory, Introduction | Part 0: Why It Is Necessary to Describe “Endurance Civilization” Now
@@ -80,4 +80,4 @@ The original treats endurance civilization not as an exceptional pathology of th
 - Do not confuse endurance with transition or restart. Unless restart conditions are preserved in the time gained through endurance, prolongation may remain only a prolongation of decay.
 
 ---
-Navigation: [Official Derivative 212 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 212 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
