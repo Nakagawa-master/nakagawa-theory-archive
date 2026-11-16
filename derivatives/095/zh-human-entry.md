@@ -45,4 +45,4 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 不要把连接对价社会变成“货币明天就消失”的日期预测。不要把连接对价缩约为社会信用分。不要用模仿数量或粉丝数替代共鸣。不要把结构性防卫当作排除异议的免罪符。保持原典的断定强度，但不要添加原典没有给出的数值确定性。
 
 ---
-导线: [公式派生物095主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・中文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线: [公式派生物095主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
