@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物095
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 接続対価社会の構造論──貨幣が意味を失う未来の『価値の設計図』
