@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 045 | Nakagawa-Style Sales Textbook, Part VII
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Origin
 - parent_title: 中川式営業の教科書・第七回
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-045-0001-0003
 - supersedes: DDIFF-20260814-DNCL-045-0004-0002
 
-## Summary
-The parent origin defines decision support not as accumulating more reasons to say yes, but as structurally reducing the remaining reasons not to choose so that the client can compare, explain, and decide for themselves.
+## SummaryThe parent origin defines decision support not as accumulating more reasons to say yes, but as structurally reducing the remaining reasons not to choose so that the client can compare, explain, and decide for themselves.
 
 Even when proposal value is understood, price, execution, risk, competition, and priority concerns can still stop a decision. Those concerns remain the client's own reasons rather than reasons invented or denied by the salesperson; they become articulable, comparable, and explainable, while genuine structural constraints remain valid grounds to pause, withdraw, or reconnect later.
 
