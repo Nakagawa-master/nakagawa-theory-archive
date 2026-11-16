@@ -1,4 +1,5 @@
 # 公式派生物239｜人間向け要約
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 意味収束理論・初版⸻ 成立可能な未来定義が、過去・現在ノードの意味ベクトルを再配列する
