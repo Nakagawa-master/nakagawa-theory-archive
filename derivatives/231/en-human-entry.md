@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Parent title: Nakagawa Structural Reading | The design of “responsibility for handing over information” in the AI era, seen in Bunken's masking function
+- Parent title: 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-bunken-ai-masking-structural-reading/
 - Parent Post ID: 4010
 - Parent NCL-ID: NCL-α-20260515-a3cb43
