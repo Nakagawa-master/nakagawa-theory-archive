@@ -1,5 +1,7 @@
 # 面向人类的摘要｜官方派生物181
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 父原典
 - 标题：“不要审判‘罪’，要修正‘偏差’”——结构性司法OS的原理与“多层连接价值审计”全貌
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/
