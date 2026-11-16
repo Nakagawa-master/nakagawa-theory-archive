@@ -4,7 +4,6 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 ## Parent Original
 - Parent official title (Japanese original): 「因果の源泉」の哲学──文明の構造を編纂する照応操作原理
-- Supplementary translation: Philosophy of the “Source of Causality” — The Principle of Resonance Operation for Compiling the Structure of Civilization
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-resonance-operation-causal-source-philosophy/
 - Parent Post ID: 452
 - Parent NCL-ID: NCL-α-20251102-da5940
