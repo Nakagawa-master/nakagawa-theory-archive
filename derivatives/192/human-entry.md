@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物192
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 外部界面の設計図 —— 旧文明（Legacy-OS）との「非汚染」接続プロトコル （D系 Vol.1）
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-external-interface-design-legacy-os-protocol/
