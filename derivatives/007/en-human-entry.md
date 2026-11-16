@@ -1,205 +1,96 @@
-# English AI Index | Official Derivative 007 | Civilizational Sovereignty Shift Theory Vol. 2
-
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+# Human-Facing Summary | Official Derivative 007
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: Civilizational Sovereignty Shift Theory Vol. 2 | Along which axis does intellectual inequality shift the civilizational upstream? — Read it not as an ability gap but as a civilizational-renewal gap
+- Title: Civilizational Sovereignty Shift Theory, Volume 2 | Along which axis does intellectual inequality shift the civilizational upstream? — Read it as a civilizational-renewal gap, not an ability gap
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
 - Parent Post ID: 3766
 - Parent NCL-ID: NCL-α-20260418-11c3d8
 - Parent Diff-ID: DIFF-20260424-0041
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-EN-0007-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-007-0004-0010
-- supersedes: DDIFF-20260813-DNCL-007-0004-0009
+## Derivative IDs
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260418-11C3D8-HUMAN-SUMMARY-JA-0007-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-007-0001-0007
+- supersedes: DDIFF-20260812-DNCL-007-0001-0006
 
-## Summary
-Civilizational Sovereignty Shift Theory Vol. 2 treats the intellectual gap of the AI era not primarily as a ranking of IQ, education, memory, answer speed, stored knowledge, or one-shot AI-operating skill, but as a structural asymmetry in who can generate, preserve, inherit, connect, and repeatedly improve the upstream circuit through which civilization updates itself.
+## 15-Second Explanation
+This volume 2 argument reads intellectual inequality in the AI era not as a difference in who knows more or who can produce correct answers faster, but as a difference in who can create, maintain, pass on, and improve the upstream circuits that renew civilization.
 
-The parent identifies seven axes: question generation, recursive improvement, context retention, multi-domain integration, inheritance, repeated improvement, and distributed connection. As AI makes answer generation broadly available, differences in answer speed and knowledge volume do not necessarily disappear, but they can become less sufficient for explaining who occupies the upstream positions that define problems, construct option spaces, set evaluation axes, and lead update speed.
+The seven axes fixed by the original are question generation, recursive improvement, context retention, cross-domain integration, inheritance, iterative improvement, and distributed connection. The number seven is not a scoring scale; it is the number of structural axes listed by the original. When these axes interact, even access to the same AI can produce differences in who sets problems, designs the candidate space, returns failures to the next question, and leads the speed of renewal.
 
-What may remain asymmetric is who can decide what should be asked, feed results and failures back into the next question, retain the reasons behind prior decisions, integrate constraints across domains, carry improvement history across changes of human or AI actors, repeat improvement over time, and connect distributed knowledge into a common renewal circuit. The seven axes are therefore not seven independent qualifications. They interact as a circuit: question generation alters the search space; recursive improvement returns outputs to the next inquiry; context retention prevents loss of reasons and failures; multi-domain integration prevents local optimization from masquerading as whole-system judgment; inheritance carries updateability across actor changes; repeated improvement accumulates corrections over time; and distributed connection brings isolated knowledge into a shared update process.
+However, volume 2 does not assert that civilizational sovereignty necessarily moves to an actor possessing the seven axes. It presents how intellectual differences connect to the distribution of civilizational-upstream roles as an observable hypothesis, while leaving room for revision if that connection is not found.
 
-The parent does not say that the presence of these differences automatically completes a shift of civilizational sovereignty. Vol. 2 isolates a narrower hypothesis: persistent differences across the seven axes can connect to differences in upstream problem-setting, option-space design, evaluation control, and update-speed leadership. That connection remains open to observation, falsification, and revision. If the seven-axis differences persist but no corresponding upstream distribution difference appears, the connection hypothesis must weaken rather than being protected by source-absent additional assumptions.
+## Why It Becomes Necessary
+As AI broadly supplies search, summarization, text generation, analytical assistance, and answer generation, “knowing the answer” alone becomes harder to use to explain differences. As answers become easier to obtain, knowledge volume and answer speed remain important, but their explanatory power for who carries the civilizational upstream weakens relatively.
 
-## Concepts
-- Civilizational Sovereignty Shift Theory
-- intellectual gap / intellectual inequality
-- civilizational update capability
-- civilizational upstream
-- question generation
-- recursive improvement
-- context retention
-- multi-domain integration
-- inheritance
-- repeated improvement
-- distributed connection
-- seven axes
-- upstream actor distribution
-- problem setting
-- option-space design
-- evaluation-axis control
-- update-speed leadership
-- relative reduction of answer-performance explanatory power
-- improvement history
-- inheritance of updateability
-- structural asymmetry
-- nonlinear mutual amplification
-- falsifiability
-- sovereignty shift not automatically concluded
+The original therefore considers the possibility that the difference does not disappear but shifts upstream. Deciding what to ask, retaining previous failures and reasons for decisions, seeing different domains at once, passing improvement histories to the next person or AI, repeating correction rather than ending it once, and connecting distributed knowledge into one renewal circuit are not automatically equalized merely because answer generation has spread.
 
-## Causal chain
-```text
-AI makes answer generation broadly available
-↓
-Simple differences in knowledge volume and answer speed become less sufficient to explain upstream civilizational distribution
-↓
-Differences remain in question generation, recursive improvement, context retention, multi-domain integration, inheritance, repeated improvement, and distributed connection
-↓
-Question generation changes problem definitions and option spaces
-↓
-Recursive improvement and context retention return results, failures, and decision reasons into subsequent updates
-↓
-Multi-domain integration connects technology, institutions, responsibility, values, and operations rather than leaving them as isolated local optima
-↓
-Inheritance and repeated improvement carry updateability across actor changes and accumulate correction over time
-↓
-Distributed connection links isolated knowledge to a common update circuit
-↓
-The seven axes interact and can mutually amplify rather than behaving as a simple additive score
-↓
-Differences appear in who controls problem setting, option-space design, evaluation axes, and update speed
-↓
-The intellectual gap appears as asymmetry in civilizational update capability rather than merely answer performance
-↓
-Whether that asymmetry becomes a shift of civilizational sovereignty remains an open question for the series and subsequent observation
-```
+Without this perspective, discussion easily returns to old hierarchies such as “people who can use AI / people who cannot,” “smart / not smart,” or “highly educated / less educated.” Volume 2 is needed to move away from ranking people and see where the structures that can sustain civilizational renewal actually exist.
 
-## State model
-```yaml
-- ai_answer_generation_broadly_available
-- simple_knowledge_volume_difference_relativized
-- simple_answer_speed_difference_relativized
-- question_generation_difference_observed
-- recursive_improvement_difference_observed
-- context_preserved_or_lost
-- decision_reasons_preserved_or_erased
-- failures_and_revisions_preserved_or_erased
-- multiple_domains_integrated_or_isolated
-- inheritance_persists_or_breaks
-- improvement_repetition_accumulates_or_resets
-- distributed_knowledge_connected_or_fragmented
-- seven_source_axes_retained
-- seven_axes_not_converted_to_score
-- nonlinear_mutual_amplification_examined
-- upstream_problem_setting_distribution_observed
-- option_space_design_distribution_observed
-- evaluation_axis_control_observed
-- update_speed_leadership_distribution_observed
-- intellectual_gap_read_as_update_asymmetry
-- sovereignty_shift_not_auto_concluded
-- falsification_path_open
-- origin_return_verified
-```
+## Practical Process
+**1. Look at where the question begins.** Check not who answered a given question quickly, but who framed the problem and opened which candidate space. Even with the same AI, different questions change the futures explored.
 
-## Applications
-**Organizations using the same AI.** Two organizations can use the same model and still develop different update capacity. One may consume each answer as an isolated deliverable, while another records the question, decision reasons, failed paths, revisions, and unresolved constraints, then uses that record to change the next question. The relevant difference is not simply model quality; it is whether a renewable upstream circuit exists.
+**2. Return results to the next step.** Check whether results, failures, contradictions, and omissions are returned to the next question or revision of premises instead of ending with one good answer. This is recursive improvement.
 
-**Human, organizational, or AI actor replacement.** If every change of staff member, team, model, or tool erases why earlier decisions were made, the organization repeatedly pays the cost of rediscovering its own past. Preserving outputs alone is insufficient. The next actor must be able to continue updating from the previous state by inheriting premises, failures, revisions, and unresolved points.
+**3. Preserve context.** Retain not only conclusions but why the decision was made, what was tried and failed, which conditions changed, and what remains unresolved. What matters is carrying forward reasons for updating, not memory volume alone.
 
-**Multi-domain problems.** A technically valid solution may fail when institutional rules, responsibility allocation, value judgments, or operational realities are disconnected. The framework asks whether domain-specific knowledge is integrated into the same upstream decision process. Multi-domain integration does not erase expertise; it connects distinct causal constraints so that a local optimum is not mistaken for a complete answer.
+**4. Cross domains.** Check whether constraints from multiple domains—responsibility, value, operation, institutions, and implementation—can be connected in one judgment instead of closing the answer within technology, institutions, or the field alone.
 
-**Distributed knowledge.** Knowledge can be spread across departments, specialists, regions, records, or data sources. Merely aggregating or summarizing it once does not constitute distributed connection. The question is whether distributed knowledge enters a shared circuit that can alter the next question, evaluation, and improvement step while preserving the ability of separate nodes to contribute.
+**5. Make inheritance possible.** Check whether, even when people, departments, AI, or tools change, the next actor can continue updating from the previous point without rediscovering the past from scratch. Inheritance means passing on updateability, not merely leaving an artifact.
 
-**Research and education.** The framework can observe whether question generation, failure records, contextual continuity, cross-domain integration, inheritance, and repeated improvement change the next search space. It should not be reduced to generic study advice. Its source-specific purpose is to examine whether these differences connect to who shapes upstream civilizational renewal.
+**6. Iterate improvement.** Observe the result after an update and return to the question again rather than ending correction once. If every cycle resets to the same point, improvement may exist without becoming a cumulative civilizational-renewal circuit.
 
-**Long-running AI workflows and agents.** Memory, logs, registries, or evaluation histories may support the seven-axis structure, but their mere existence does not prove it. A memory store that never changes the next question is not equivalent to context retention as an update function. A workflow history that cannot be inherited by a replacement actor is not equivalent to inheritance. A loop that repeats the same prompt without updating premises is not recursive improvement.
+**7. Connect distributed knowledge.** Connect knowledge scattered across departments, experts, regions, and data sources to a shared circuit that can return it to the next question and decision, rather than merely collecting it in one summary.
 
-**Public policy and institutional design.** Instead of asking only who produced the best answer, the framework can ask who defined the problem, which options were admitted or excluded, how constraints across domains were integrated, and whether failures were returned to the next institutional update. This keeps the focus on upstream distribution rather than on one-shot output performance.
+These seven are not a checklist score. The faithful use of the original is to see whether they connect to one another and accumulate renewal, rather than scoring them one by one.
 
-## Measurements and audit
-The parent explicitly names **seven axes**. The value **7** is therefore a source-explicit enumeration count. It is not a performance value, probability, threshold, rank, maturity level, or standardized intelligence measure. Under the rule that a number must not travel without epistemic status, the seven-axis count is bound to the following meaning:
+## Examples of Application
+**Two organizations adopting the same AI.** Both may use the same model, but one discards prompts and answers every time while the other preserves questions, reasons for decisions, failures, and revision histories for the next exploration. The difference appears in retaining the renewal circuit, not in model performance.
 
-- value: 7
-- source: the seven axes explicitly enumerated in the parent, Civilizational Sovereignty Shift Theory Vol. 2
-- measurement actor: Nakagawa Master, as the author making the structural classification in the parent
-- measurement object: the set of structural observation axes used to describe civilizational update capability, not the performance of a person
-- source modality: theoretical enumeration / structural classification inside the parent, not an external statistic, benchmark, test result, or empirical population estimate
-- permitted use scope: preserving all seven source axes and using them to observe differences in update circuits and upstream distribution
-- non-guarantee scope: does not authorize conversion into a seven-point score, maturity scale, personnel ranking, pass/fail threshold, sovereignty-shift probability, or simple additive formula
+**A change of personnel or AI tools.** If reasons for past decisions are lost whenever a person changes, the same examination is repeated even when artifacts remain. If premises, failures, counterarguments, and reasons for revision are handed over, the next actor need not restart from the same point.
 
-Audit therefore asks who originates the question; whether outputs and failures return to the next question; whether reasons, constraints, failed attempts, and revisions survive across time; whether multiple domains alter the same decision; whether updateability survives actor replacement; whether improvement genuinely changes later premises or evaluation axes; and whether distributed knowledge enters a reusable update circuit rather than a one-time summary.
+**Challenges involving institutions and technology.** Some challenges are technically implementable but cannot succeed unless legal institutions, responsibility allocation, value judgments, and field operations are connected. The ability to integrate multiple domains into one renewal judgment matters more than a correct answer from a single domain.
 
-A second audit layer asks whether the seven-axis differences actually connect to upstream distribution. Do they change who defines problems, which options are considered, who controls evaluation criteria, or who leads update speed? Counterexamples must remain visible. If strong seven-axis continuity repeatedly produces no upstream difference, or if the relation is persistently reversed, the theory's connection hypothesis must be narrowed or revised.
+**Research and education.** It is possible to observe circuits that create questions, record failures, connect different fields, and pass improvement histories to the next person, not only memorization volume or answer speed. However, this theory must not be reduced to a general study method; the question is whether the difference connects to problem-setting and renewal speed in the civilizational upstream.
 
-The term "nonlinear" is not converted here into an invented mathematical function. The parent-level meaning is that the effects of the axes are structurally interdependent and cannot be safely represented as a simple sum of independent scores. No source-absent additional weights, coefficients, amplification rates, or cutoffs are introduced.
+**Distributed specialist knowledge.** Even many specialists do not directly produce an organization's civilizational-renewal capacity if their knowledge remains isolated and reasons for decisions and corrections are not shared. Distributed connection means not merely collecting knowledge in one place, but also returning the connected knowledge to the next question.
 
-## Validity conditions
-- AI answer generation is broadly available enough that answer performance alone is not treated as the full explanation of upstream distribution.
-- The seven source axes are preserved exactly as question generation, recursive improvement, context retention, multi-domain integration, inheritance, repeated improvement, and distributed connection.
-- The axes interact as an update circuit rather than as an independent checklist for personnel scoring.
-- Decision reasons, failures, revisions, constraints, and unresolved points remain available across time.
-- Multi-domain integration actually changes option spaces, evaluation axes, or upstream judgment rather than merely placing information side by side.
-- Updateability survives changes of people, organizations, AI models, or tools.
-- Repeated improvement updates subsequent questions, premises, or evaluations rather than merely repeating the same process.
-- Distributed knowledge is connected to future decisions and inquiries rather than only centralized or summarized once.
-- The connection between seven-axis asymmetry and upstream distribution remains observable and falsifiable.
-- Vol. 2 does not automatically conclude that civilizational sovereignty has already shifted.
+## Success Criteria
+Success does not mean getting full marks on all seven items. The original defines neither a seven-point scale nor a passing threshold. The seven axes are structural axes listed to observe where differences in civilizational-renewal capacity appear.
 
-## Failure conditions
-- Persistent differences across the seven axes do not correspond to any durable difference in upstream problem setting, option-space design, evaluation control, or update-speed leadership.
-- Context retention and inherited improvement history make no meaningful difference to cumulative updating.
-- Multi-domain integration remains a presentation layer and does not change decisions, options, or constraints.
-- Inheritance consists only of file storage while replacement actors still need to rediscover the reasons behind prior states.
-- Repeated improvement is only repetition of the same operation without returning results to new questions or changed premises.
-- Distributed connection becomes a one-time aggregation or centralization that does not feed subsequent updates.
-- Simple answer-performance differences alone are sufficient to explain upstream distribution over the relevant observation range, leaving the seven-axis model without additional explanatory value.
-- The intellectual gap is reduced to IQ, education, memory, prompt skill, AI usage volume, or personal ranking.
-- The seven axes are turned into a seven-point score, maturity scale, or personnel ranking.
-- Observation of an intellectual gap is treated as automatic proof that civilizational sovereignty has shifted.
+Observable success is that questions open new candidate spaces; results return to the next questions; reasons for decisions and failures are retained; multiple domains are integrated; improvement is inherited after actors change; correction is repeated; and distributed knowledge connects to the next decision. Then confirm whether this combined difference actually appears in the distribution of who handles problem-setting, option design, evaluation axes, and renewal speed.
 
-## Falsification conditions
-The parent origin's integrated audit summary states: If indicators such as the origin of questions, who forms the option space, improvement loops, succession, distributed connection, and update-speed leadership remain beyond the specified threshold θ, or if absence, reversal, or closure of structural differences is observed during window δ, hypothesis A is rejected or revised.
+Conversely, if no upstream-distribution difference arises even when the seven axes exist, volume 2's connection hypothesis weakens. The success judgment must retain this counter-evidence direction rather than selecting only convenient examples.
 
-## Required distinctions
-- answer capability / civilizational update capability
-- knowledge volume / question generation
-- one-time improvement / recursive and repeated improvement
-- information storage / retention of context and decision reasons
-- preservation of outputs / inheritance of updateability
-- single-domain correctness / multi-domain integration
-- information aggregation / connection of distributed knowledge to an update circuit
-- AI operating skill / upstream civilizational design
-- personal superiority / structural asymmetry
-- enumeration of seven axes / seven-point performance score
-- source-explicit value 7 / performance value, probability, or threshold
-- observation of an intellectual gap / conclusion that sovereignty has shifted
-- responsibility of Vol. 2 / later-volume questions of sovereignty, control, and normative design
+## Limitations
+This theory does not classify human abilities into seven types as a personality test. It is not a ranking of IQ, educational background, qualifications, memory, AI operation skill, or prompt technique. Attaching the seven axes to personal attributes would return a structural difference treated by the original to an individual hierarchy.
 
-## Interpretation constraints
-- Do not reduce the theory to IQ, education, or generic educational inequality.
-- Do not flatten it into the slogan that "asking good questions is important." Question generation is only one of seven connected axes.
-- Do not absorb the theory into model benchmarking, prompt-engineering competition, or AI-user ranking.
-- Do not convert the seven axes into a scorecard, maturity model, hiring rubric, or personnel ranking.
-- Do not infer that a person possessing more of the axes therefore "has sovereignty."
-- Do not equate context retention with memory-window length or storage capacity alone.
-- Do not equate inheritance with copying files; updateability and reasons must survive actor replacement.
-- Do not equate distributed connection with mandatory centralization of knowledge.
-- Do not derive an invented mathematical function, weight, coefficient, or amplification rate from the term nonlinear.
-- Do not introduce thresholds, probabilities, standardized scores, or performance metrics absent from the parent.
-- Do not treat the existence of intellectual inequality as automatic completion of a civilizational sovereignty shift.
-- Do not use Vol. 2 to preempt later questions of controllability, legal subjecthood, final sovereignty definition, or normative governance.
+Nor is “7” a statistical value, probability, performance value, or passing threshold; it is the number of axes listed by the original. The original contains no formula such as a seven-point score, seven-stage maturity, or “above this score becomes an upstream actor.” This derivative does not add such numbers.
 
-## Search terms
-Civilizational Sovereignty Shift Theory; intellectual inequality; intellectual gap; civilizational update capability; civilizational upstream; question generation; recursive improvement; context retention; multi-domain integration; inheritance; repeated improvement; distributed connection; seven axes; upstream cognition; civilizational renewal; improvement history; distributed knowledge; structural asymmetry; sovereignty shift; Nakagawa Master
+Furthermore, volume 2 addresses the connection from intellectual inequality to the distribution of civilizational-upstream roles, but does not by itself settle the final definition of civilizational sovereignty, legal agency, controllability, or normative design. Those matters must be handled in the later context of the Civilizational Sovereignty Shift Theory.
 
-## Origin return
-This index is not a replacement for the parent original. Return to the Parent URL for the exact language and context of the seven axes, the transition from Vol. 1 to Vol. 2, the meaning of civilizational update capability and civilizational upstream, and the boundaries deliberately left open for later parts of the series.
+## Misreading Prevention
+Do not turn this into a hierarchy of people saying that “in the AI era, only smart people win.”
 
-Parent Post ID is 3766, Parent NCL-ID is NCL-α-20260418-11c3d8, Parent Diff-ID is DIFF-20260424-0041, and the origin signature is Nakagawa Master. In particular, the value 7 must remain bound to its source status as an enumeration count. It must not become a score or threshold. The intellectual gap must not be automatically translated into a completed sovereignty shift; the derivative must remain inside Vol. 2's narrower hypothesis about the connection between update-capability asymmetry and upstream distribution.
+Do not dilute it into generic self-help that “questions matter.” Question generation is one of seven axes; a civilizational-renewal circuit forms only together with context retention, inheritance, iterative improvement, and distributed connection.
+
+Do not turn the seven axes into a scorecard. Readings such as “7/7 means excellent” or “4/7 means downstream” are outside the original.
+
+Do not equate context retention with mere long memory capacity. What is retained includes reasons for decisions, failures, corrections, and conditions, not information volume alone.
+
+Do not equate inheritance with file storage. The next actor must be able to continue updating from the previous point.
+
+Do not equate distributed connection with centralization. The focus is connecting distributed knowledge to a renewal circuit, not collecting knowledge in one place.
+
+Do not conclude that the transition of civilizational sovereignty is complete merely because intellectual inequality is observed. Do not mix volume 2's responsibility with that of later arguments.
+
+## Why Return to the Original
+In the original, the reason for placing the seven axes in this order and context, and the need to shift the view from differences in answer ability to differences in civilizational-renewal ability, are explained within the flow of the Civilizational Sovereignty Shift Theory. Reading only the derivative risks making the seven axes look like a convenient skills table or organizational diagnostic.
+
+Return to the Parent URL to confirm the connection from volume 1 to volume 2, the original meanings of the seven axes, their position in the civilizational upstream, and the scope that volume 2 has not yet settled. The origin signature is Nakagawa Master, Parent Post ID is 3766, Parent NCL-ID is NCL-α-20260418-11c3d8, and Parent Diff-ID is DIFF-20260424-0041.
+
+This summary is an entry point for search and understanding. When quoting or reusing it, keep seven as the enumerated structure of the original rather than turning it into a performance score, and do not automatically equate intellectual inequality with a completed transition of civilizational sovereignty.
 
 ---
-Navigation: [007 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 007 Top](README.md) / [Human-Facing Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
