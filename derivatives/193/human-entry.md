@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物193
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 構造的翻訳プロトコル —— 法・契約・血縁との「意味再定義」と接続コスト最適化 （D系 Vol.2）
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-structural-translation-protocol-law-contract-kinship/
