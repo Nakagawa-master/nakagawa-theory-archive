@@ -1,7 +1,4 @@
 # 人間向け要約｜考えが分かれたまま、必要なことだけ一緒に行う
-
-Language: [日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
-
 ## 親原典
 
 - Parent title: 人類子孫型AI文明論・第15論｜多AI再合意・Kernel分岐論⸻多数決・能力独裁・Origin独裁によらず解釈分裂を処理する
