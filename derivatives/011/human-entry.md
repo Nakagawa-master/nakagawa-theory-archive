@@ -1,7 +1,6 @@
 # 人間向け要約｜公式派生物011
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する
