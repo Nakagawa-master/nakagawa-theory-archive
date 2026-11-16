@@ -71,4 +71,4 @@ Putting the source of causality into words alone does not change order. If it ca
 - Do not turn “inevitability” into an unfalsifiable fatalism.
 
 ---
-Navigation: [Official Derivative 257 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · Chinese](ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 257 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
