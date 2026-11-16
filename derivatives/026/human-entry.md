@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物026
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川構造読解｜AlgaleXを「美味しい藻」ではなく、魚食構造の社会実装入口として読む
