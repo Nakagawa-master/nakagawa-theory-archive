@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物008
 
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/
