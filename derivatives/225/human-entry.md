@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物225
+言語切替：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - Parent title: 文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較
