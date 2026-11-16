@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 042 | Nakagawa Structural Reading | Total Brain Care
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川構造読解｜トータルブレインケアに見た、認知機能を“脳体力”として社会実装する基盤指標の構造
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-042-0001-0003
 - supersedes: DDIFF-20260814-DNCL-042-0001-0002
 
-## Summary
-The parent reads Total Brain Care not as a product profile but as a structure for socially translating the specialist concept of cognitive function into the everyday term “brain fitness,” making it easier to discuss and understand in ordinary social contexts and to treat as a foundational indicator for social implementation.
+## SummaryThe parent reads Total Brain Care not as a product profile but as a structure for socially translating the specialist concept of cognitive function into the everyday term “brain fitness,” making it easier to discuss and understand in ordinary social contexts and to treat as a foundational indicator for social implementation.
 
 The value kernel is not test performance or high scores. It is **social translation**: creating a shared linguistic entry point between a specialist concept and everyday life. “Brain fitness” is not a medical diagnosis and does not turn a measurement into a total score of a person's ability or human value.
 
