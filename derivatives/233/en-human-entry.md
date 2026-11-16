@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: Nakagawa Structural Reading | The structure seen in Kurashiteku's “Houkan AI Ope” that turns implicit knowledge in regulated industries into executable assets
+- Parent title: 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading/
 - Parent Post ID: 4028
 - Parent NCL-ID: NCL-α-20260516-b731e7
