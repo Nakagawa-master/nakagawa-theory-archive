@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物133
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 「山と人の再照応：熊食が拓く“共存構造”への転回」
