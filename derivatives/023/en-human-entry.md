@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 023 | Nakagawa Structural Reading | Community Fund Defense
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent original
 - Title: 中川構造読解｜Fundsはなぜ修繕積立金を「投資」ではなく共同体資金防衛として読まれるべきなのか
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260813-DNCL-023-0001-0010
 - supersedes: DDIFF-20260813-DNCL-023-0004-0005
 
-## Summary
-The parent reads condominium repair reserve funds not as discretionary investment capital but as purpose-bound communal money whose function is to preserve future repair capacity, the shared living base, resident consensus, and explainability. The core question is not return maximization. Nominal balances can remain intact while rising construction, labor, material, and repair costs reduce the amount of actual repair work those balances can purchase. At the same time, communal repair funds cannot freely pursue high-risk strategies because principal preservation, liquidity at repair dates, institutional fit, explainability, and collective decision procedures constrain acceptable operation.
+## SummaryThe parent reads condominium repair reserve funds not as discretionary investment capital but as purpose-bound communal money whose function is to preserve future repair capacity, the shared living base, resident consensus, and explainability. The core question is not return maximization. Nominal balances can remain intact while rising construction, labor, material, and repair costs reduce the amount of actual repair work those balances can purchase. At the same time, communal repair funds cannot freely pursue high-risk strategies because principal preservation, liquidity at repair dates, institutional fit, explainability, and collective decision procedures constrain acceptable operation.
 
 Nakagawa Master chose “community fund defense,” rather than product features or yield, as the value core of the external article because a return-centered framing can erase the purpose of the money: preserving a community's future repair capability and shared living base. The subject structure and the reason for selecting this value kernel must both remain visible. Nakagawa Master's reading is distinct from an official statement of Funds or any external media, and the parent does not present individualized investment advice.
 
