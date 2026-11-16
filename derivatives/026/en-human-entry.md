@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 026 | Nakagawa Structural Reading | AlgaleX as Social Implementation Entry
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: 中川構造読解｜AlgaleXを「美味しい藻」ではなく、魚食構造の社会実装入口として読む
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260813-DNCL-026-0000-0007
 - supersedes: DDIFF-20260813-DNCL-026-0000-0006
 
-## Summary
-The origin reads AlgaleX / uma-mo not merely as “delicious algae,” but as a social implementation entry for a larger fish-food structure. It traces the causal chain from sustaining fish consumption through aquaculture and dependence on wild-fish-derived feed back to algae at the beginning of the food chain, then explains why the upstream concept first enters food markets and professional kitchens to gain taste, use cases, reasons for adoption, and repeatability.
+## SummaryThe origin reads AlgaleX / uma-mo not merely as “delicious algae,” but as a social implementation entry for a larger fish-food structure. It traces the causal chain from sustaining fish consumption through aquaculture and dependence on wild-fish-derived feed back to algae at the beginning of the food chain, then explains why the upstream concept first enters food markets and professional kitchens to gain taste, use cases, reasons for adoption, and repeatability.
 
 Nakagawa Master chose “social implementation entry for the fish-food structure,” rather than the surface category “delicious algae,” as the value core of the external article because product appeal alone cannot explain the connection to fish, aquaculture, and feed upstream. Treating kitchen use, adoption reasons, and repeatability as an entry into upstream redesign makes the structural value difference visible.
 
