@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 024 | Nakagawa Structural Reading | Reimplementation of Time Freedom
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent original
 - Title: 中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260813-DNCL-024-0001-0010
 - supersedes: DDIFF-20260813-DNCL-024-0004-0006
 
-## Summary
-The parent reads Valuetope not merely as unmanned car rental, but as a mobility supply OS that reconnects a specific time-freedom gap between two established supply models. Car sharing offers 24-hour, non-face-to-face access but can lose economic rationality for long-duration use; conventional rental cars can remain rational for longer use but are constrained by store hours and face-to-face procedures. Valuetope is structurally read through the bundle of non-face-to-face operation, pricing, location strategy, and inquiry/recovery routes that can reconnect those separated advantages.
+## SummaryThe parent reads Valuetope not merely as unmanned car rental, but as a mobility supply OS that reconnects a specific time-freedom gap between two established supply models. Car sharing offers 24-hour, non-face-to-face access but can lose economic rationality for long-duration use; conventional rental cars can remain rational for longer use but are constrained by store hours and face-to-face procedures. Valuetope is structurally read through the bundle of non-face-to-face operation, pricing, location strategy, and inquiry/recovery routes that can reconnect those separated advantages.
 
 Nakagawa Master chose “reimplementation of time freedom,” rather than “unmanned rental car,” as the central angle of the external article because “unmanned” describes a means but not what the user regains. Reading the gap between store-hour constraints and long-duration economics through the social result of time freedom unifies multiple service functions into one causal structure.
 
