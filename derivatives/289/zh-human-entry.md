@@ -51,4 +51,4 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 理解顺序不是心理操纵。审批翻译不是攻略客户组织。提案的目的，是创造客户能重新说明自身理由与条件的状态。
 
 ---
-导线：[官方派生物289顶部](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](ai-index.md) / [AI索引・中文](zh-ai-index.md)
+导线：[官方派生物289顶部](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](zh-ai-index.md)
