@@ -12,7 +12,7 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 ## 派生ID
 - Derivative NCL-ID: DNCL-NCL-ALPHA-2E8BBF-HUB-JA-0296-0000
-- Derivative Diff-ID: DDIFF-20260828-DNCL-296-0000-0001
+- Derivative Diff-ID: DDIFF-20260831-DNCL-296-0000-0001
 - supersedes: none
 
 ## 15秒说明
