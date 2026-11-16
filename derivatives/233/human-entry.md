@@ -1,7 +1,5 @@
 # 公式派生物233｜人間向け要約
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 親原典
 - タイトル: 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading/

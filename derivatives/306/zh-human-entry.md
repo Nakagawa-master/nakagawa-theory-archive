@@ -1,7 +1,5 @@
 # 面向人的摘要｜即使不拥有，也可能因掌握入口而缩小选择
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 亲原典
 
 - Parent title: 人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論⸻所有権を持たなくても成立するchokepoint支配を検出する

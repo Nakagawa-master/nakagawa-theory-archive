@@ -1,7 +1,5 @@
 # 面向人类的摘要｜官方派生物253
-
-语言 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent原典
 - Parent正式标题（日文原文）：悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造
 - 补充译题：恶因果论 AKI-003：透明性作秀——信息公开被作为可验证性替代品的结构

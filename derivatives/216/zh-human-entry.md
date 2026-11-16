@@ -1,6 +1,5 @@
 # 面向人类的摘要｜官方派生物216
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-engine-of-surveillance-order-without-consent/

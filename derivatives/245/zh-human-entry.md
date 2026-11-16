@@ -1,6 +1,5 @@
 # 面向人类的摘要｜官方派生物245
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题: 中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-neron-structural-reading-microbiome-implementation-conditions/

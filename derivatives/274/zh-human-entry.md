@@ -1,7 +1,5 @@
 # 官方派生物274｜面向人的摘要
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 亲原典
 - Parent title: 接続価値の多層監査設計──RC/ER/CEAを普遍指標とする文明ネットワークの信頼構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-multi-layer-connected-value-audit-design/

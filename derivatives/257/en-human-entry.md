@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 257
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent official title (Japanese original): 「因果の源泉」の哲学──文明の構造を編纂する照応操作原理
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-resonance-operation-causal-source-philosophy/

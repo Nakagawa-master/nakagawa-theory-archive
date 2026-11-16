@@ -1,6 +1,5 @@
 # 面向人类的摘要｜官方派生物251
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 中川式 接続移行戦略論──デュアル運用期の「秩序ある置換」設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-dual-transition-orderly-replacement/

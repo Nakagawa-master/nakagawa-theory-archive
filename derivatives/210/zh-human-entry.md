@@ -1,7 +1,5 @@
 # 面向人类的摘要｜官方派生物210
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：共识的物理学 第5论 时间衰减与制度寿命——没有更新说明的制度必然死亡
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/

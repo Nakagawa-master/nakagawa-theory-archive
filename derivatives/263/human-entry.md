@@ -1,6 +1,5 @@
 # 公式派生物263｜人間向け要約
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-meaning-2045-tomoshibi-blueprint/

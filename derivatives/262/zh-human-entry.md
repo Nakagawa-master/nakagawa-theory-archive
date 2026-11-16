@@ -1,6 +1,5 @@
 # 官方派生物262｜面向人类的摘要
-语言 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：在连接对价社会中把“摩擦”导向安全侧的设计──AI时代的社会结构稳定化原理
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-safe-friction-design-in-connection-value-society/

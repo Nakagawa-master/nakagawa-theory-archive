@@ -1,6 +1,5 @@
 # 官方派生物263｜面向人类的摘要
-语言 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：2045年，人类的“意义”会变成什么──灯火文明的设计图与人类必须承担的唯一角色
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-meaning-2045-tomoshibi-blueprint/

@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 204
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Real Estate Market OS Vol.7 [Expansion Edition] Financial and Large-Capital Collaboration and Smart Contracts — The Economics of “Agreement” as “Performance”
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol7-frictionless-execution/

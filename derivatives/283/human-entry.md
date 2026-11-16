@@ -1,7 +1,5 @@
 # 人間向け要約｜公式派生物283
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 親原典
 - Parent title: 社会構造論──因果を読み解き未来を設計する
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-social-structure-theory/

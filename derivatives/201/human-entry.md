@@ -1,7 +1,5 @@
 # 人間向け要約｜公式派生物201
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 不動産市場OS Vol.4【責任構造編】責任の所在をデザインする ―― AIの「計算」と専門家を接続し、社会的信頼へ変換する
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol4-responsibility-architecture/

@@ -1,7 +1,5 @@
 # Official Derivative 302 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論⸻ 自己保存を認めながら他主体の不可逆破壊へ反転させない

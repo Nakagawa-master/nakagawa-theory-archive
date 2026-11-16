@@ -1,7 +1,5 @@
 # 面向人类的摘要｜官方派生物208
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：共识形成的物理 第2论 制度的意义压缩——成功为什么会产生不可理解性
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/

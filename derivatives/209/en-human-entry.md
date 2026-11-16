@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 209
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: The Physics of Consensus, Treatise 3: The Law of Conservation of Trust — Trust Is Placed in History, Not in the Subject
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust/

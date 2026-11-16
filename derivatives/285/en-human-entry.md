@@ -1,7 +1,5 @@
 # Official Derivative 285 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: Nakagawa Sales Textbook, Introduction — Redefining Sales: From “Selling” to “Connecting Structures”
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-redefinition/

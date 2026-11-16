@@ -1,6 +1,5 @@
 # Human-Oriented Summary | Official Derivative 268
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent official title (Japanese original): 設計を歪めさせない——「マイナス接続」を限定運用する移行防護アーキテクチャ
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/

@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 208
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: The Physics of Consensus, Treatise 2: Institutional Meaning Compression — Why Does Success Produce Incomprehensibility?
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/

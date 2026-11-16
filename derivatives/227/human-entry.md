@@ -1,6 +1,5 @@
 # 人間向け要約｜公式派生物227
-言語切替：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - Parent title: 中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-jectone-structural-reading-decision-infrastructure/

@@ -1,5 +1,4 @@
 # 人間向け要約｜変わっても同じかを、名前ではなく系譜で確かめる
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 

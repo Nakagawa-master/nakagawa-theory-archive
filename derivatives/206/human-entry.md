@@ -1,7 +1,5 @@
 # 人間向け要約｜公式派生物206
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 不動産市場OS Vol.9【国家編】NAOS――国家を“統制”せず最適化する。世界へ輸出可能な「合意形成OS」の完成
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol9-naos-global-standard/

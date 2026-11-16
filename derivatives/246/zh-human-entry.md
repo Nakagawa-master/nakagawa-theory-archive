@@ -1,6 +1,5 @@
 # 面向人类的摘要｜官方派生物246
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/

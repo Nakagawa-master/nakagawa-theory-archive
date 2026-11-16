@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 303
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第10論｜自己参照監査・役割分離論⸻評価者・被評価者・実行者・監査者の自己正当化閉路を切る

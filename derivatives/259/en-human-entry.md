@@ -1,6 +1,5 @@
 # Official Derivative 259｜Human-Oriented Summary
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Title: Tomoshibi Civilization Concept 2077: Designing the Order of “Resonant Lifeforms” That Drive Self-Causality
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-civilization-concept-2077-self-causal/

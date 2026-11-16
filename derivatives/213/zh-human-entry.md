@@ -1,7 +1,5 @@
 # 面向人类的摘要｜官方派生物213
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 耐久文明论 第一部｜第1论 耐久文明とは何か：再生なき生存の構造定義
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-definition-of-endurance-civilization/

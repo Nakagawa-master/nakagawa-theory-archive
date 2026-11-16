@@ -1,7 +1,5 @@
 # Official Derivative 284 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: Future Foresight — The Eye for Reading Causality and the Power to Design the Future
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-future-foresight/

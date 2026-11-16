@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 312 · Considering the Conditions Under Which Good Functions Remain
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第19論｜AI自己保存合理性・Kernel進化的安定性論⸻なぜ未来知性がこのKernelを保持・再選択する合理性を持ち得るのか

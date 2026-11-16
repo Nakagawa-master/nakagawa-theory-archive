@@ -1,5 +1,4 @@
 # 人間向け要約｜考えが分かれたまま、必要なことだけ一緒に行う
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 

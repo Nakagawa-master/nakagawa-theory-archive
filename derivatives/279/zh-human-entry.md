@@ -1,7 +1,5 @@
 # 官方派生物279｜面向人的摘要
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 亲原典
 - Parent title: 構造律動による〈未来の負債〉の鋳造──時間軸を統御する信用生成原理
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-structural-rhythm-future-debt-casting/

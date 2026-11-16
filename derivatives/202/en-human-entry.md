@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 202
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Real Estate Market OS Vol.5 [Participant Edition] Redefining Market Participants and Designing Incentives
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol5-participant-redefinition/

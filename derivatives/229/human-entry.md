@@ -1,7 +1,5 @@
 # 人間向け要約｜公式派生物229
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 親原典
 - Parent title: 中川構造読解｜プリマベーラを“AI導入支援”ではなく、意思決定構造を近代化する実装装置として読む
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-primavera-structural-reading-ai-decision-structure/

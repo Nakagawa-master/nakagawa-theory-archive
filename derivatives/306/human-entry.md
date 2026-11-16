@@ -1,5 +1,4 @@
 # 人間向け要約｜所有していなくても、入口を握れば選択肢を狭め得る
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 

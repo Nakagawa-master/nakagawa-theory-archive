@@ -1,6 +1,5 @@
 # 公式派生物237｜人間向け要約
-Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計  
 https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/

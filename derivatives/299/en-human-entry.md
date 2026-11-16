@@ -1,7 +1,5 @@
 # Official Derivative 299 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論⸻「分からない」を、無保護にも無条件人格化にも変換しない

@@ -1,7 +1,5 @@
 # 面向人类的摘要｜官方派生物256
-
-语言 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent原典
 - Parent正式标题（日文原文）：接続文明ロードマップ2030–2055：構造的欠陥が導く「秩序ある置換」の必然
 - 补充译题：连接文明路线图2030–2055：由结构性缺陷导向的“有序替换”之必然

@@ -1,7 +1,5 @@
 # Official Derivative 280 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: Structural Rhythm as Reconstruction of Social Memory — A Nonverbal Structural Device for Eliciting Future Consensus in the Present
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-social-memory-structural-rhythm/

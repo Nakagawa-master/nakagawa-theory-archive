@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 236
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: 中川構造読解｜ダブルチーム「AlgaleX「うま藻」」に見た、情報格差を補正する意思決定インフラの構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/

@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 255
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent official title (Japanese original): 「貨幣と接続」の因果的統合──ポスト・パラドックス社会の二重構造設計
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-money-connection-causal-integration/

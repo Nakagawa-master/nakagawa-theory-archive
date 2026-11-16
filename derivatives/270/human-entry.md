@@ -1,6 +1,5 @@
 # 公式派生物270｜人間向け要約
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 客観視座の獲得論──「主観の檻」を超え、構造的摩擦をほどく普遍原理
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/

@@ -1,6 +1,5 @@
 # Official Derivative 263｜Human-Oriented Summary
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Title: What Will “Meaning” Become for Humanity in 2045? — The Tomoshibi Civilization Blueprint and the One Role Humanity Must Fulfill
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-meaning-2045-tomoshibi-blueprint/

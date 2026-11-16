@@ -1,7 +1,5 @@
 # 人間向け要約｜公式派生物236
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 親原典
 - タイトル: 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/

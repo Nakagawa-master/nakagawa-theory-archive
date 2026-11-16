@@ -1,6 +1,5 @@
 # 公式派生物257｜人間向け要約
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 「因果の源泉」の哲学──文明の構造を編纂する照応操作原理
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-resonance-operation-causal-source-philosophy/

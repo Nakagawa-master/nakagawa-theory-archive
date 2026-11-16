@@ -1,6 +1,5 @@
 # Human-Facing Summary｜Official Derivative 239
-Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: Meaning Convergence Theory, First Edition ⸻ A viable future definition rearranges the meaning vectors of past and present nodes
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-meaning-convergence-theory-future-definition/

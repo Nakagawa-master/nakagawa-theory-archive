@@ -1,7 +1,5 @@
 # 面向人类的摘要｜官方派生物206
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：房地产市场OS Vol.9【国家篇】NAOS——不“统制”国家而实现优化。可向世界输出的“共识形成OS”完成
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol9-naos-global-standard/

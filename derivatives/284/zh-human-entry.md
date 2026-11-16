@@ -1,7 +1,5 @@
 # 官方派生物284｜面向人的摘要
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 亲原典
 - Parent title: 未来予測──因果を読む眼と未来を設計する力
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-future-foresight/

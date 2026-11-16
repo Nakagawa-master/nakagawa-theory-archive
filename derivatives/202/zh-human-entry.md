@@ -1,7 +1,5 @@
 # 面向人类的摘要｜官方派生物202
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题：房地产市场OS Vol.5【参与者篇】重新定义市场参与者与激励设计
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol5-participant-redefinition/

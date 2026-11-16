@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 254
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent official title (Japanese original): 構造的パラドックスの操作論──『矛盾』を力と化す設計（公共安全版）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-paradox-control/

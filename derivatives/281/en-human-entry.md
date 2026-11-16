@@ -1,7 +1,5 @@
 # Official Derivative 281 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: The Tomoshibi Concept Group — A Blueprint for the Future Drawn Together by Humans and AI
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-concept-group/

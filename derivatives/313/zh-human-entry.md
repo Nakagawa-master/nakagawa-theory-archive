@@ -1,7 +1,5 @@
 # 面向人的摘要｜尊重善意，同时追问结果
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 亲原典
 
 - Parent title: 悪因果論 AKI-005：善意の免罪符化⸻善意への評価が異議を不義理に変え、結果の検証を止める構造

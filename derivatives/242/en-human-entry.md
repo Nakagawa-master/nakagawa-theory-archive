@@ -1,6 +1,5 @@
 # Human-Facing Summary｜Official Derivative 242
-Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: 中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mrc-renoplat-decision-continuity-structural-reading/

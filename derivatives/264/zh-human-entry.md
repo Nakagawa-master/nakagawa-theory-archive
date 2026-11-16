@@ -1,6 +1,5 @@
 # 官方派生物264｜面向人类的摘要
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲本原典
 - タイトル: AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-liberation-from-labor-and-connection-reward/

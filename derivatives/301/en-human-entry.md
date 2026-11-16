@@ -1,7 +1,5 @@
 # Official Derivative 301 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 
 - Parent title: 人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る

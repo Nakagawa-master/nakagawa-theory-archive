@@ -1,6 +1,5 @@
 # 公式派生物252｜人間向け要約
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-philosophy-objective-viewpoint/

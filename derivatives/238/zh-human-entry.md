@@ -1,6 +1,5 @@
 # 面向人类的摘要｜官方派生物238
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - Parent title: 中川结构解读｜从Mysurance看到：将生活行为中的不安翻译为金融的保险实现结构
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mysurance-behavior-based-insurance-structural-reading/

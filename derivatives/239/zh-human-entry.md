@@ -1,6 +1,5 @@
 # 面向人类的摘要｜官方派生物239
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题: 意义收敛理论・初版⸻ 可成立的未来定义重新排列过去、现在节点的意义向量
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-meaning-convergence-theory-future-definition/

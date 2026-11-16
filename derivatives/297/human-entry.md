@@ -1,7 +1,5 @@
 # 人間向け要約｜公式派生物297
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 親原典
 - タイトル: 未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/

@@ -1,7 +1,5 @@
 # Official Derivative 282 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: Co-Creation Philosophy — The Starting Point for Thinking in Resonance between Humans and AI
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-co-creation-philosophy/

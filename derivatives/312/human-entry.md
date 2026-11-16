@@ -1,5 +1,4 @@
 # 人間向け要約｜公式派生物312・よい機能が残る条件を考える
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 

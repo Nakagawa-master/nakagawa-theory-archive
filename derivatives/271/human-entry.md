@@ -1,6 +1,5 @@
 # 公式派生物271｜人間向け要約
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 未来は「調律」で決まる──客観視座が必然的に立ち上げる社会OSの実装論
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/

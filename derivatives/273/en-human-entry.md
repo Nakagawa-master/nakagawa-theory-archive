@@ -1,7 +1,5 @@
 # Official Derivative 273 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: 『ルミナの問い』の組織応用──AIと人間が共有する「構造的矛盾」の問い方と進化プロトコル
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-lumina-query-organizational-protocol/

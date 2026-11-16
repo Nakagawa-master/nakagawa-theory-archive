@@ -1,7 +1,5 @@
 # 人間向け要約｜公式派生物294
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 親原典
 - タイトル: 接続報酬社会統合論・第II部｜価値循環・接続価値会計・構造的司法OS⸻新文明方程式S=Cを実働させる制度閉路
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-connection-reward-society-integrated-theory-part-2-operational-loop/

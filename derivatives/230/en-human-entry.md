@@ -1,7 +1,5 @@
 # Human-Oriented Summary | Official Derivative 230
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: 中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-leaneve-structural-reading-revenue-rewiring-model/

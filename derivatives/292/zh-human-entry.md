@@ -1,7 +1,5 @@
 # 官方派生物292｜面向人的摘要
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 亲原典
 - Parent title: 中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法 （公开安全版）
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-nakagawa-connection-governance-design/

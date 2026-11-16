@@ -1,6 +1,5 @@
 # 公式派生物260｜人間向け要約
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 現象の因果律──「主観・客観・真我」の構造的統一原理
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-phenomenon-causality-structural-unification-principle/

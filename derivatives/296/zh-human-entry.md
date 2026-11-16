@@ -1,7 +1,5 @@
 # 官方派生物296｜面向人的摘要
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 亲原典
 - Parent title: 人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/

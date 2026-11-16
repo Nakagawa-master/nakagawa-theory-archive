@@ -1,7 +1,5 @@
 # 人間向け要約｜公式派生物203
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 不動産市場OS Vol.6【リスク編】炎上・誤用のメカニズムと防御壁（Ethical Shield）
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol6-risk-and-ethical-shield/

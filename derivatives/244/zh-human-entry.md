@@ -1,6 +1,5 @@
 # 面向人类的摘要｜官方派生物244
-语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 亲原典
 - 标题: 中川構造読解｜イルミメディカルはなぜ「光治療ベンチャー」ではなく、深部光医療の成立条件を更新する基盤インフラとして読まれるべきなのか
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure/

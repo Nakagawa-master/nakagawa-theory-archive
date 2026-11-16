@@ -1,6 +1,5 @@
 # 人間向け要約｜公式派生物221
-
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - Parent title: 耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-diplomacy-clean-room-theory/

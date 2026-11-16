@@ -1,6 +1,5 @@
 # Human-Facing Summary｜Official Derivative 241
-Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Title: 中川構造読解｜シグナルトーク「Eat Up Monster」に見た、遅すぎる健康因果を遊べる速度へ変換する行動変容インフラの構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-signaltalk-eat-up-monster-behavior-change-structural-reading/

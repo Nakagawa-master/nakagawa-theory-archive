@@ -1,7 +1,5 @@
 # Official Derivative 276 | Human-Oriented Summary
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-resonance-aesthetic-marketing/

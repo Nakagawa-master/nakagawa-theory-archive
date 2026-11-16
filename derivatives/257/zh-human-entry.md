@@ -1,7 +1,5 @@
 # 面向人类的摘要｜官方派生物257
-
-语言 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent原典
 - Parent正式标题（日文原文）： 「因果の源泉」の哲学──文明の構造を編纂する照応操作原理
 - 补充译题：“因果源泉”的哲学——编纂文明结构的照应操作原理

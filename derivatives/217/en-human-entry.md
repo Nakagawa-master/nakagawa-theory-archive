@@ -1,6 +1,5 @@
 # Human-Oriented Summary | Official Derivative 217
-Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## Parent Original
 - Parent title: 耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-amplifier-of-myth-justification-mechanism/

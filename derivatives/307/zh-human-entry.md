@@ -1,7 +1,5 @@
 # 面向人的摘要｜变化后是否仍相同，要靠系谱而不是名称确认
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
 ## 亲原典
 
 - Parent title: 人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論⸻更新・replacement・fork・自己改変を区別する
