@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 【Organization OS】Nakagawa-style Organization Theory × Structural Wu-wei Ziran —— “Rectification” of Internal Circulation and Redesign of Authority, Responsibility, and Actual Causes
+- Parent title: 【組織OS】中川式組織論 × 構造的無為自然   ―― 内部循環の「整流」と、権限・責任・実因の再設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/
 - Parent Post ID: 1864
 - Parent NCL-ID: NCL-α-20251202-b06c21
