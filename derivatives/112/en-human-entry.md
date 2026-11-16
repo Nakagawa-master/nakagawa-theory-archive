@@ -2,7 +2,7 @@
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 拍・温度・余白をどう測るか──L0/L1/L2計測セットと構造倫理の運転プロトコル
+- Title: How to Measure Beat, Temperature, and Margin — L0/L1/L2 Measurement Set and Structural Ethics Operating Protocol
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-instrumentation-beat-temp-margin/
 - Parent Post ID: 1002
 - Parent NCL-ID: NCL-α-20251102-2844e0
