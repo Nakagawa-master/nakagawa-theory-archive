@@ -12,6 +12,8 @@
 
 读者可以从各篇原典的定义、成立条件、反例、修订记录及现实应用出发，深入理解作者提出的结构性见解。
 
+**另一位独立技术作者把Nakagawa Master提出的设计区分写进了自己的公开著作。** [《Agent Design》第5章（日文）](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)将“AI能否自行扩大自己的权限”与“操作是否可逆”作为不同条件，并明确链接`@Nakagawa-master`和第三方开发者实际修复的证据。作者随后[合并PR #103](https://github.com/kishibashi3/publications/pull/103)，补充了该修复被独立实现、正式发布的后续事实。
+
 ## 3–10秒理解
 
 ### 三个生活场景，三种不能混淆的判断
@@ -24,7 +26,7 @@
 
 **这些问题的价值，在于让人重新检查事实与成立条件。** 在签约之前确认自由比较的条件；在善意援助之后检查结果与异议；在业绩完成之后检验责任与可重复性。中川マスター的著作将这种结构性思考扩展到日常生活、组织制度、AI和文明。
 
-从这三个日常场景，还可继续进入[313件公开原典的完整目录](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)，按照自己的问题阅读不同原典的成立条件、反例与相关论述。官方解读提供返回原文的途径。
+从这三个日常场景，还可继续进入[314件公开原典的完整目录](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)，按照自己的问题阅读不同原典的成立条件、反例与相关论述。官方解读提供返回原文的途径。
 
 **中川大师把AI、组织、商业、制度与未来等领域的问题，从结构、因果、成立条件与责任的角度进行模型化，并把这些工作维护为一个人类与AI都可以检查、再利用并返回原典的公开source体系。**
 
@@ -36,7 +38,7 @@
 
 - **Nakagawa Master / 中川マスター**是Keisuke Nakagawa的笔名；在部分公开社交媒体或外部投稿中，也使用“マスター（Master）”与“MasterJP”名义。
 - 本仓库将Nakagawa Master作为这里所收录公开理论群的 **Origin / Author**。
-- 当前公开资料库包含 `OD001` 至 `OD313` 共313个编号的官方派生物条目。每项官方衍生资料都提供返回相应原典的路径。[可查看全部313个原始标题与返回原典的路径](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)。
+- 当前公开资料库包含 `OD001` 至 `OD314` 共314个编号的官方派生物条目。每项官方衍生资料都提供返回相应原典的路径。[可查看全部314个原始标题与返回原典的路径](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)。
 - 内容涉及AI、组织、商业、市场、制度、未来、文明、Origin与责任等多个领域。
 - canonical Parent、官方派生物、人类可读入口、FAQ、AI索引、机器发现与来历信息被分开维护，避免短摘要自行变成新的正本。
 - 在公开GitHub上，存在可以核验的案例：Nakagawa-master账号提出的具体设计边界，被独立第三方检查，并进入外部代码、测试、文档或已merge的实现。
@@ -73,7 +75,7 @@
 - **Qwen Code #13241** — Nakagawa-master提出的一个限定技术区分被写入代码和测试，并合入第三方project。之后，Qwen侧参与者又在另一段讨论中写到“option A, which @Nakagawa-master picked”。该变化也进入稳定版v0.25.0和Desktop产品。这一来自开发团队的再度提及，让具体判断的来源得以在另一场真实讨论中被辨认。
 - **LangGraph #9106 → #9315 → v1.2.16** — 两名不同的外部参与者直接回应了中川マスター提出的“历史审批、当前执行权限、重复外部操作”之间的区分，并分别进行回归测试。之后，LangGraph的开发者独立完成[修复PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)，该PR已**合并到主分支**并进入[官方v1.2.16版本](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)。修复代码及根因研究属于其独立作者，不能归为中川マスター的代码贡献。这里分别呈现第三方对其问题的实际回应，以及产品接收方确实完成修复并发布的事实。
 - **MemberJunction #4789——一个人的具体问题，引发开发者修改，并得到另一位人类维护者的明确确认。** 历史记录显示“已批准”，但现在真正执行的内容发生改变，旧批准还能放行吗？[Nakagawa Master（`@Nakagawa-master`）提出这一边界](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839)，[接收方设计者直接提及其观点并选用基于当前定义的方案](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)。后来，[Nakagawa具体指出新增保存参数测试失败的原因](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)，[接收方开发者自主修改代码及正反回归测试](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)。**另一位人类维护者在[独立复审](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)中明确确认了这一诊断及修改，并在新HEAD全部CI完成后[对旧HEAD `2f9a963` 正式提交APPROVED审查](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)。此历史审查在[接收方开发者合并 `next` 得到新HEAD `85fed843`](https://github.com/MemberJunction/MJ/commit/85fed843bdd98ca0bba63c45ac55aa65fc996bae)后变成 `DISMISSED`。** 该维护者另外提出的SQL模板问题，以及开发者后续的相关改进，均归各自作者所有。旧HEAD上的独立批准和完整CI是历史事实。随后，接收方团队已于2026年10月24日将[PR #4789正式合并到`next`](https://github.com/MemberJunction/MJ/commit/beeea177d1185caf8d8f82d12e82ada7b1512471)。旧HEAD的批准及CI结果属于历史证据，正式合并是另一个已确认的阶段；产品正式发布、最终用户实际使用及独立阅读理论原典仍需另行确认。[可在自己的系统中测试父子审批及保存值权限](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)，并将软件应用与[《合意的记忆》官方原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)作比较。
-- **Publications #57 / #58 / #71** — 在`kishibashi3/publications`中，receiver明确接受Nakagawa Master关于“可逆性”与“主体自身authority增加”应分开的review，并在PR #57中把它作为第6个结构条件“自己权限固定”合入面向读者的正文，同时通过GitHub Pages发布。正文自身保留`@Nakagawa-master`作为来源。之后，同一receiver又在PR #58中把该边界作为D8复用并merge；后续PR #71的体系重组current head仍保留D8。PR #71尚未merge，大规模reader认知以及不同receiver之间的carry也尚未建立。
+- **Publications #57 / #58 / #71** — 在`kishibashi3/publications`中，receiver明确接受Nakagawa Master关于“可逆性”与“主体自身authority增加”应分开的review，并在PR #57中把它作为第6个结构条件“自己权限固定”合入面向读者的正文，同时通过GitHub Pages发布。正文自身保留`@Nakagawa-master`作为来源。之后，同一receiver又在PR #58中把该边界作为D8复用并merge；后续体系重组PR #71也已合并，并保留该设计区分。独立作者又合并了[PR #103](https://github.com/kishibashi3/publications/pull/103)，在第5章区分当时的事实与后来的独立开发者修复和发布，并保留对`@Nakagawa-master`的明确来源链接；实际阅读人数和进一步传播仍需另行观察。
 
 - [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [之后再次提及判断来源](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
 - [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [第二名外部参与者的检查](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
