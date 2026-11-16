@@ -3,7 +3,7 @@
 语言 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- 标题：文明审计 II：AI重新实现“黑暗方程式”与文明崩溃的必然性——搾取优化（Exploitation Optimization）引发的未来负债爆发
+- 标题：文明审计 II：AI重新实现“黑暗方程式”与文明崩溃的必然性——剥削优化（Exploitation Optimization）引发的未来负债爆发
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-audit-ai-reimplementation-dark-equation-crisis/
 - Parent Post ID: 1747
 - Parent NCL-ID: NCL-α-20251122-b89d99
@@ -33,7 +33,7 @@
 7. 比较AI的分析、模仿、扩散速度与人类、制度的纠正和修复速度。
 8. 通过T0观察是否正在用短期利益预支未来价值。
 9. 审计一次资料缺损、原典消失、贡献者减少、循环学习化和制度功能停止重叠出现的不可逆迹象。
-10. 按对象定义 `θ`、`δ`、`M`，使搾取优化假设和转移效果保持可修订。
+10. 按对象定义 `θ`、`δ`、`M`，使剥削优化假设和转移效果保持可修订。
 
 ## 应用例
 **生成内容。** 即使投稿量和生成速度上升，只要一次资料引用、作者归属、报酬回流和新的一次制作减少，就不能判定为成功。
