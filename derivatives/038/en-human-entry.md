@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 038 | Nakagawa Structural Reading | wakai
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-038-0001-0003
 - supersedes: DDIFF-20260814-DNCL-038-0001-0002
 
-## Summary
-The parent does not reduce wakai to the surface category of “smartphone mediation.” It reads a structural problem in which consensus formation is required but cannot enter or re-enter discussion because emotional conflict, contact avoidance, procedural burden, or distance from everyday life blocks access to the available institutional path.
+## SummaryThe parent does not reduce wakai to the surface category of “smartphone mediation.” It reads a structural problem in which consensus formation is required but cannot enter or re-enter discussion because emotional conflict, contact avoidance, procedural burden, or distance from everyday life blocks access to the available institutional path.
 
 The source-specific value kernel is a **stoppage-release pathway**. Non-face-to-face distance, explicit procedure, neutrality, documentation, and accompanying support can create a new entry point, allowing statement, confirmation, and revision to restart so that stalled consensus formation becomes capable of moving forward again.
 
