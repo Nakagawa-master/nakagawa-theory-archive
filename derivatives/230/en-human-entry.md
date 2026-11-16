@@ -42,4 +42,4 @@ Time, people, and space that appear to be surplus cannot always be reused, and t
 “Revenue rewiring” is Nakagawa Master’s structural reading, not Leaneve’s official definition. It is neither a recommendation to evade regulations nor an argument that every fixed cost can be monetized. It reads the rearrangement of unrecovered value that arises under regulations, taking those regulations as a premise.
 
 ---
-Navigation: [Official Derivative 230 top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 230 top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
