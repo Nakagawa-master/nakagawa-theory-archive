@@ -70,4 +70,4 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 另外，“易经＝审计装置”不是把它作为占卜的别名来赋予权威，而是主张将其从预测未来中分离出来，重新配置为观察配置、关系、时机与因果通行条件的外在参照。
 
 ---
-导航：[官方派生物196顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引·日语](ai-index.md) / [AI索引·英语](en-ai-index.md) / [AI索引·中文](ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航：[官方派生物196顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引·日语](ai-index.md) / [AI索引·英语](en-ai-index.md) / [AI索引·中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
