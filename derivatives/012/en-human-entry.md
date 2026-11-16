@@ -1,9 +1,9 @@
-# English AI Index | Official Derivative 012
+# Human-Oriented Summary | Official Derivative 012
 
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
-## Parent Origin
-- Title: 悪因果論 AKI-011｜理解演出による認識汚染
+## Parent Original
+- Title: Bad Causality Theory AKI-011 | Recognition Pollution Through the Performance of Understanding
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/
 - Parent Post ID: 4075
 - Parent NCL-ID: NCL-α-20260517-fe6641
@@ -11,137 +11,80 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 - Origin: Nakagawa Master
 
 ## Derivative ID
-- derivative_ncl_id: DNCL-AKI-011-AI-INDEX-EN-0012-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-012-0004-0007
-- supersedes: DDIFF-20260813-DNCL-012-0004-0006
+- derivative_ncl_id: DNCL-AKI-011-HUMAN-SUMMARY-JA-0012-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0001-0006
+- supersedes: DDIFF-20260813-DNCL-012-0001-0005
 
-## Summary
-AKI-011 does not treat clarity itself as harmful. It analyzes the bad causality in which an explanation without sufficient structural decomposition produces a sense of completed understanding before the subject is actually understood well enough to be handled, closes inquiry and verification, fixes shallow interpretation into shared vocabulary, shifts the burden of explanation onto challengers, and progressively degrades recognition, judgment, implementation capacity, correctability, and trust.
+## 15-Second Explanation
+This origin does not criticize clear explanations themselves. It addresses the bad causality in which, although one does not understand a subject well enough to handle it, a feeling of “now I understand” is established first through metaphors, assertions, trend words, short summaries, or similar devices, causing the questions and verification that should have followed to stop. When that shallow understanding becomes shared vocabulary, recognition, judgment, implementation, correctability, and even trust progressively deteriorate.
 
-Understanding, in the parent origin, is a state in which establishment conditions, limits, exceptions, falsification possibilities, scope of application, unresolved areas, and the next questions remain visible. Performance of understanding is a state in which metaphors, assertions, trend phrases, concise summaries, or authoritative wording create completion without that structure.
+## Why It Is Needed
+When faced with a complex phenomenon, people seek a short, organized explanation. That is not itself wrong. The problem occurs when an explanation drops establishment conditions, exceptions, falsification, scope of application, and unresolved areas while giving reassurance, and closes questions with the feeling of having understood.
 
-AI summaries, social media, organizational vocabulary, education, and executive explanations may amplify this causality, but they are not categorically condemned. Concise explanation is non-applicable when it preserves conditions, exceptions, falsification, uncertainty, and next questions while improving judgment, implementation, and correctability.
+If one is ignorant, one can still say “I do not know.” But once one assumes that something has already been understood, the need for additional confirmation itself becomes invisible. This is the danger in AKI-011.
 
-## Concepts
-- Bad Causality Theory AKI-011
-- performance of understanding
-- recognition pollution
-- understanding / performance of understanding
-- completed-understanding feeling
-- closure of questions
-- verification stop
-- shared-vocabulary fixation
-- burden-of-explanation reversal
-- propagation of misrecognition
-- judgment degradation
-- implementation erosion
-- correctability
-- trust erosion
-- AI/social amplification
+Moreover, when such a shallow explanation becomes convenient shared vocabulary in companies, social media, education, AI summaries, criticism, and similar settings, merely using the words counts as having explained something. The result is that those who question it are asked for reasons, while the shallow premise reinforces itself.
 
-## Causal chain
-```text
-A complex phenomenon creates uncertainty
-↓
-Demand rises for a clear, simple explanation
-↓
-A metaphor, assertion, trend phrase, concise summary, or AI summary is supplied without sufficient structural decomposition
-↓
-A feeling of "already understood" forms
-↓
-Questions about establishment conditions, exceptions, falsification, applicability, and uncertainty stop
-↓
-The shallow explanation becomes shared vocabulary
-↓
-The burden of explanation shifts onto those who challenge it
-↓
-The shallow premise repeatedly enters judgment, responsibility, and implementation
-↓
-Recognition, judgment accuracy, implementation capacity, correctability, and trust degrade
-```
+## Practical Process
+**1. See what the explanation leaves out.** Check whether conditions, exceptions, falsification, scope of application, or unresolved areas have been omitted.
 
-## State model
-```yaml
-- complex_phenomenon_present
-- demand_for_simple_explanation_rises
-- concise_or_authoritative_explanation_supplied
-- structural_decomposition_sufficient_or_insufficient
-- completed_understanding_feeling_forms_or_not
-- conditions_exceptions_falsification_uncertainty_visible_or_hidden
-- inquiry_remains_open_or_closes
-- shared_vocabulary_forms_or_not
-- burden_of_explanation_shifts_or_not
-- shallow_premise_enters_judgment_and_implementation
-- recognition_judgment_implementation_correctability_trust_improve_or_degrade
-- origin_return_verified
-```
+**2. Check the feeling of completion.** After the explanation, see whether it makes visible what should be confirmed next, or leaves only the feeling that there is no need to think further.
 
-## Applications
-- Audit AI summaries for deletion of conditions, exceptions, falsification, uncertainty, and next questions.
-- Audit whether social-media assertions serve as entries into inquiry or as endpoints that manufacture completion.
-- Audit organizational shared vocabulary for terms that function as unverifiable assumptions rather than operationally defined concepts.
-- Audit education and training for whether simplification leaves correction paths and next questions open.
-- Audit executive commentary for single-cause framing, trend-word fixation, and burden-of-explanation reversal.
+**3. See the failure conditions of metaphors and assertions.** Check whether the range in which they are valid and the conditions under which they cease to apply are explained.
 
-## Measurements and audit
-The parent origin does not define a universal understanding score, pollution rate, risk percentage, occurrence probability, or threshold. The parent origin does not define scores, percentages, probabilities, or thresholds for audit convenience.
+**4. Audit shared vocabulary.** Check whether convenient terms have lost their concrete conditions and are being used as premises that require no verification.
 
-Audit the visibility of next questions, establishment conditions, exception conditions, falsification conditions, applicability limits, and unresolved areas; the failure boundary of metaphors; changes in judgment and implementation precision; verifiability after shared vocabulary forms; burden-of-explanation reversal; and whether correction routes remain open.
+**5. See the reversal of explanatory responsibility.** Check whether only those who question the term, rather than those who use it, are required to provide additional explanation.
 
-## Validity conditions
-- Do not treat clarity itself as harmful.
-- Separate understanding from performance of understanding.
-- Inspect whether inquiry remains open.
-- Preserve establishment conditions, exceptions, falsification, applicability, and uncertainty.
-- Preserve verifiability after vocabulary becomes shared.
-- Inspect burden-of-explanation reversal.
-- Check whether judgment, implementation, and correctability actually improve.
+**6. See the effect on judgment and implementation.** Check whether concrete judgment or implementation becomes more precise after the explanation, or whether the field is instead filling in ambiguous words through individual interpretation.
 
-## Failure conditions
-- Reduce the origin to criticism of lying, pretended expertise, communication style, or individual comprehension deficits.
-- Convert it into praise of difficult writing.
-- Categorically prohibit AI summaries, metaphors, or concise explanation.
-- Reduce the problem to information quantity alone.
-- Remove shared-vocabulary fixation, burden-of-explanation reversal, and recognition pollution from the causal chain.
-- Add political, medical, legal, or universal scoring claims absent from the origin.
+**7. Leave a correction path.** Check whether the premise can be corrected when the explanation does not match reality.
 
-## Falsification conditions
-The parent origin's integrated audit summary states: If an accessible explanation leads readers to the next questions, states validity, exception, falsification, scope, and unresolved conditions, and actually improves judgment accuracy or implementation possibility, hypothesis A does not apply to that case.
+## Examples of Application
+**AI summaries.** Shortening the original text is not itself a problem. If conditions, exceptions, falsification, and unresolved areas are dropped to create the feeling of “in short, it is only this,” it becomes performance of understanding.
 
-## Required distinctions
-- understanding / performance of understanding
-- clarity / completed-understanding feeling
-- explanation as entry / explanation as endpoint
-- shared vocabulary / unverifiable shared premise
-- concision / deletion of conditions
-- summary / closure of inquiry
-- ignorance / update-stop caused by feeling already informed
-- individual misunderstanding / recognition pollution
+**Social media.** It does not apply when a short assertion is used as an entry point that opens questions. Conversely, when it circulates as a single cause or single conclusion and people who raise questions are treated as troublesome, the bad causality becomes stronger.
 
-## Interpretation constraints
-Do not rewrite the parent as a rule to make writing difficult or to avoid brevity. Do not fix AI or social media as the causal culprit itself. The problem is the causal sequence in which insufficient structural decomposition produces completed-understanding feeling, closes inquiry and verification, and fixes shallow recognition into a shared premise. Do not add scores, thresholds, probabilities, or generalized policy judgments absent from the origin.
+**Internal meetings.** When terms such as “customer-centric,” “DX,” “AI utilization,” and “the essence” become shared vocabulary without conditions or failure boundaries, the organization appears to have explained something while being unable to design anything.
 
-## Search terms
-```text
-Bad Causality Theory AKI-011
-performance of understanding
-recognition pollution
-completed-understanding feeling
-closure of questions
-verification stop
-shared vocabulary
-burden of explanation reversal
-AI summary
-shallow understanding
-judgment accuracy
-implementation capacity
-correctability
-trust erosion
-Nakagawa Master
-```
+**Education.** A clear explanation promotes understanding when exceptions, unresolved parts, and the next questions remain visible afterward. When it becomes “memorize it and you are done,” it approaches performance of understanding.
 
-## Origin return
-This index is a retrieval surface, not a replacement for the parent origin. Return to the Parent URL and Parent NCL-ID / Diff-ID for the precise bad-causality account of social reward, shared-vocabulary fixation, burden-of-explanation reversal, exclusion of deeper questions, and erosion of recognition, judgment, implementation, correctability, and trust.
+## Success Criteria
+First, the explanation must leave the next question.
+
+Second, establishment conditions, exception conditions, falsification conditions, scope of application, and unresolved areas must be visible.
+
+Third, even after shared vocabulary forms, the meaning and application conditions of the term must remain verifiable and correctable.
+
+Fourth, judgment precision, implementation possibility, and correctability after reading must increase.
+
+Fifth, the limits of the explanation and the communicator’s unresolved parts must not be made invisible.
+
+## Handling Numbers
+The parent original does not define universal scores such as “understanding level 80 points,” “recognition pollution rate 30%,” or “risk level 70%.” This public reading must not add its own scores, percentages, thresholds, or occurrence probabilities for persuasive effect.
+
+Even when the origin or subject contains numbers, handle them only after clarifying what they measure, who measured them, under what conditions they are valid, and what they do not guarantee. The mere existence of a number does not establish that understanding has been achieved.
+
+## Limitations
+This theory does not categorically reject concision, metaphors, summaries, AI summaries, or trend words. A good explanation can be short while leaving questions, conditions, exceptions, falsification, and unresolved areas open.
+
+Nor is it a theory that says “writing more difficultly is safer.” Difficult language can create the same problem when it is used as an authority performance that closes questions.
+
+## Misreading Prevention
+Do not reduce performance of understanding to “lying.”
+
+Do not make it only a criticism of pretending to know.
+
+Do not close it as the individual responsibility of people with insufficient comprehension.
+
+Do not make AI or social media themselves the causal agents of the bad causality.
+
+Do not prohibit short explanations or metaphors.
+
+Do not make difficulty the answer.
+
+## Why Return to the Origin
+In the parent original, the feeling of completed understanding receives social rewards and becomes shared vocabulary; explanatory responsibility shifts to those who question it; and shallow recognition wears down recognition, judgment, implementation, and trust as one bad causality. To avoid reducing this to the general advice “watch out for shallow understanding,” return to the Parent URL to confirm the precise causal line and application boundaries.
 
 ---
-Navigation: [Official Derivative 012 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 012 Top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index・Japanese](ai-index.md) / [AI Index・English](en-ai-index.md) / [AI Index・Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
