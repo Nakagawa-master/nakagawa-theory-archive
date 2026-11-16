@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 046 | Nakagawa-Style Sales Textbook, Part VIII
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Origin
 - parent_title: 中川式営業の教科書・第八回
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-046-0001-0003
 - supersedes: DDIFF-20260814-DNCL-046-0004-0002
 
-## Summary
-The parent source treats silence, breathing, posture, gaze, voice, distance, and focus shifts as a nonverbal structure for regulating tension, resonance, and trust in sales dialogue. An important question is followed by protected thinking time; avoided contradictions are faced through honest pressure; stalled dialogue is moved to another valid axis; and pressure can be cooled, withdrawn, or repositioned when it becomes defensive.
+## SummaryThe parent source treats silence, breathing, posture, gaze, voice, distance, and focus shifts as a nonverbal structure for regulating tension, resonance, and trust in sales dialogue. An important question is followed by protected thinking time; avoided contradictions are faced through honest pressure; stalled dialogue is moved to another valid axis; and pressure can be cooled, withdrawn, or repositioned when it becomes defensive.
 
 The source's fifteen-second expression is a practical guideline for avoiding the salesperson's anxious impulse to fill the space immediately after an important question. It is context-dependent rather than a universal optimum, fixed success threshold, or guaranteed closing rule.
 
