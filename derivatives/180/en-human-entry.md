@@ -1,5 +1,7 @@
 # Human-Oriented Summary | Official Derivative 180
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## Parent Source
 - Title: What Is “Structure” in the Nakagawa OS? — Structural Ontology as a “Generative OS” Beyond Structuralism and Post-Structuralism (Chapter 0)
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-structure-definition/
