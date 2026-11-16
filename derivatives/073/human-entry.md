@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物073
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川式 接続公共圏OS──自治体・大学・企業・市民連合の実装モデル
