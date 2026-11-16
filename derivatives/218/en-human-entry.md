@@ -1,4 +1,5 @@
 # Human-Oriented Summary | Official Derivative 218
+Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
@@ -73,4 +74,4 @@ The expression “no one believes in it” does not mean that everyone’s psych
 - Do not add unsupported definitive applications to specific real-world organizations.
 
 ---
-Navigation: [Official Derivative 218 Top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 218 Top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
