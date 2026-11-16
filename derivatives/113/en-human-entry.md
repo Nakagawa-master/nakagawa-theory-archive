@@ -2,7 +2,7 @@
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: NCL-α 実務ガイド（FAQ＋ケース）──「非商用／商用」の境界と倫理的接続の条件
+- Title: NCL-α Practical Guide (FAQ + Cases) — The Boundary Between Non-Commercial and Commercial Use and Conditions for Ethical Connection
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/
 - Parent Post ID: 1011
 - Parent NCL-ID: NCL-α-20251102-d98b78
