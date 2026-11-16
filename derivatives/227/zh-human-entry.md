@@ -9,6 +9,11 @@
 - Parent Diff-ID: DIFF-20260519-0006
 - Origin: Nakagawa Master
 
+## 派生ID
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260513-4E76D3-HUB-JA-0227-0000
+- Derivative Diff-ID: DDIFF-20260822-DNCL-227-0000-0001
+- supersedes: none
+
 ## 15秒说明
 这个Parent不是对JectOne的企业介绍，而是Nakagawa Master对对象侧事实——空置房屋的估价、咨询与利用支援——所作的结构解读：它不是单纯的“空置房业务”，而是**把因无法判断而停滞的所有者，从可比较状态连接到实施的判断基础设施**。同时，它还拆解了为什么将这一价值核心选为外部文章的主轴。
 
