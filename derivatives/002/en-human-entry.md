@@ -1,84 +1,81 @@
 # Human-Facing Summary | Official Derivative 002
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
-言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
-
-## 親原典
-- タイトル: 悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造
+## Parent Source
+- Title: Theory of Bad Causality AKI-002: Exploitation Wearing the Face of Praise — The Structure in Which Praise Is Substituted for Compensation and Rights
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
 - Parent Post ID: 4062
 - Parent NCL-ID: NCL-α-20260517-b80e39
 - Parent Diff-ID: DIFF-20260517-0012
 - Origin: Nakagawa Master
 
-## 派生ID
+## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001
 - derivative_diff_id: DDIFF-20260813-DNCL-002-0001-0005
 - supersedes: DDIFF-20260813-DNCL-002-0001-0004
 
-## 15秒説明
-原典は、称賛や感謝そのものを否定していません。問題にするのは、「すごい」「助かった」「あなたにしかできない」「良い機会になる」といった肯定的な言葉が、報酬、権利、名義、使用範囲、責任分担、継続対価の確認を止め、そのまま追加作業や継続利用だけを増やす構造です。褒められたかどうかではなく、褒められた後に誰の負担が増え、誰へ価値が移り、作り手の条件と自由がどう変化したかを見ます。
+## 15-Second Explanation
+The original does not reject praise or gratitude themselves. What it treats as a problem is a structure in which positive words such as “amazing,” “that helped,” “only you can do this,” and “this will be a good opportunity” stop confirmation of compensation, rights, attribution, scope of use, division of responsibility, and continuing consideration, while increasing only additional work and continuing use. The question is not whether someone was praised, but whose burden increased after the praise, to whom value moved, and how the creator’s conditions and freedom changed.
 
-## なぜ必要になるのか
-称賛は通常、相手の価値を認める行為です。だからこそ、その後に条件確認が止まっても「良い関係が続いている」と見えやすくなります。相手が本当に感謝している場合でも、作業、責任、調整、修正、継続対応だけが増え、対価や権利や名義が更新されなければ、価値承認の言葉と実際の価値帰属がずれていきます。
+## Why It Is Needed
+Praise is normally an act of recognizing another person’s value. That is precisely why, even when confirmation of conditions stops afterward, it can look as though “a good relationship is continuing.” Even when the other party is genuinely grateful, if only the work, responsibility, coordination, revisions, and continuing responses increase while compensation, rights, and attribution are not updated, the words recognizing value and the actual allocation of value gradually diverge.
 
-たとえば、仕事で「あなたにしかできない」と頼られ続ける人、創作で高く評価されながら名義や利用条件が曖昧な人、家庭や地域で「いつも助かる」と言われながら調整やケアを引き受け続ける人がいます。ここで原典が見るのは、相手が善人か悪人かではありません。称賛の後に負担と価値がどちらへ動いたかです。
+For example, there are people at work who are continually relied on because “only you can do it,” people in creative work who are highly praised while their attribution and terms of use remain unclear, and people in families or communities who continue taking on coordination and care while being told “you are always such a help.” What the original examines here is not whether the other person is good or bad. It is where burden and value moved after the praise.
 
-この構造が見えにくい理由は、露骨な強制と違って表面が肯定的だからです。本人も「期待に応えたい」「感謝されている」「良い機会をもらった」と感じるため、対価、権利、名義、使用範囲、終了条件を確認することが冷たい行為のように感じられることがあります。その状態が続くと、自分の成果に条件を付ける感覚や断る自由が少しずつ弱まり、価格感覚、交渉力、職能価値まで摩耗します。
+This structure is hard to see because, unlike overt coercion, its surface is positive. The person may feel “I want to live up to expectations,” “I am being appreciated,” or “I have been given a good opportunity,” and therefore confirming compensation, rights, attribution, scope of use, and end conditions can feel cold. If this continues, the sense that one may attach conditions to one’s own work and the freedom to refuse gradually weaken, eroding one’s sense of price, bargaining power, and professional value.
 
-AKI-002は称賛を疑うための理論ではありません。称賛を、対価や権利の代用品にしないための構造観測です。良い称賛は条件確認と両立します。悪因果化した称賛は、条件確認の代わりに置かれます。この違いを見分けることが中心です。
+AKI-002 is not a theory for distrusting praise. It is a structural observation for preventing praise from becoming a substitute for compensation or rights. Good praise can coexist with confirmation of conditions. Praise that has become bad causality is placed in the position of confirming conditions. Distinguishing this difference is the central point.
 
-## 実務工程
-**1. 称賛の前後を分けて見る。** まず、称賛・感謝・期待・機会付与が示される前と後で、作業量、責任、調整、修正、継続対応がどう変わったかを確認します。言葉の印象ではなく、負担の増減を見ます。
+## Practical Process
+**1. Separate before and after the praise.** First, check how workload, responsibility, coordination, revisions, and continuing responses changed before and after praise, gratitude, expectations, or an opportunity were expressed. Look at the increase or decrease in burden, not the impression created by the words.
 
-**2. 対価と条件が同時に更新されたかを見る。** 追加作業が増えたとき、報酬、役割、権利、名義、使用範囲、責任分担、継続対価も明示・更新されたかを確認します。追加負担だけが増えたなら、称賛が条件確認を後景化していないかを疑います。
+**2. Check whether compensation and conditions were updated at the same time.** When additional work increases, check whether compensation, role, rights, attribution, scope of use, division of responsibility, and continuing consideration were also made explicit or updated. If only the additional burden increased, question whether praise has pushed confirmation of conditions into the background.
 
-**3. 価値の行き先を確認する。** 利用側が得る成果物、信用、運用継続、時間短縮、専門知、二次利用可能性が増えているなら、その価値が作り手側へどのように返っているかを見ます。対価だけでなく、名義や利用範囲や継続条件も含めます。
+**3. Check where the value went.** If the user side gains more deliverables, credibility, continued operation, time savings, specialized knowledge, or potential for secondary use, examine how that value is returned to the creator side. Include not only compensation but also attribution, scope of use, and continuing conditions.
 
-**4. 断る自由を確認する。** 「断ったら評価が下がる」「感謝されているのに条件を言い出せない」「期待を裏切ることになる」と感じる状態が固定されていないかを確認します。形式上の自由ではなく、実際に条件交渉や拒否が可能かを見ます。
+**4. Check the freedom to refuse.** Check whether a fixed state has formed in which one feels “my evaluation will fall if I refuse,” “I cannot bring up conditions while being thanked,” or “I will be betraying expectations.” Look not at formal freedom but at whether condition negotiation and refusal are actually possible.
 
-**5. 一度の合意と継続利用を分ける。** 一度の好意的な依頼、一度の称賛、一度の合意が、無期限の修正、問い合わせ、追加利用、二次利用まで含むものとして扱われていないかを確認します。
+**5. Separate one-time agreement from continuing use.** Check whether one favorable request, one instance of praise, or one agreement is being treated as including unlimited revisions, inquiries, additional use, and secondary use.
 
-**6. 人物評価に変えない。** 相手の悪意を証明することを目的にせず、負担、価値、権利、自由の移動を確認します。善意でも悪因果は成立し得ますし、称賛があっても条件が明示されていれば成立しない場合があります。
+**6. Do not turn it into a judgment of character.** Do not make proving the other party’s malice the objective; check the movement of burden, value, rights, and freedom. Bad causality can arise even from good intentions, and praise does not establish bad causality when conditions have been made explicit.
 
-## 適用例
-**1. 創作者。** 「すばらしい作品だから広く使いたい」と高く評価されても、名義、使用範囲、二次利用、継続利用、修正権限、対価が曖昧なままなら、評価と言葉だけで価値帰属を済ませていないかを確認します。高評価そのものは問題ではありません。
+## Examples of Application
+**1. Creators.** Even if a work is highly praised with “we want to use such a wonderful work widely,” if attribution, scope of use, secondary use, continuing use, revision authority, and compensation remain unclear, check whether value allocation is being settled with evaluation and words alone. High praise itself is not the problem.
 
-**2. 職場。** 「あなたなら安心」「あなたにしか任せられない」と言われ、担当外のフォロー、調整、緊急対応が増える一方、役割、報酬、裁量、人員配分が変わらない場合、称賛が追加負担の受諾圧になっていないかを見ます。
+**2. Workplaces.** If someone is told “we can rely on you” or “you are the only person we can entrust this to,” and out-of-scope support, coordination, and emergency response increase while role, compensation, discretion, and staffing do not change, examine whether praise has become pressure to accept additional burden.
 
-**3. 家庭・地域・教育・ケア。** 「いつも助かる」「頼りになる」という感謝の下で、連絡、調整、場の維持、感情労働、継続対応が特定人物へ集中する場合、感謝と役割分担を分けて確認します。
+**3. Family, community, education, and care.** When contact, coordination, maintaining the setting, emotional labor, and continuing responses concentrate on a particular person under gratitude such as “you are always a great help” or “you are so reliable,” separate gratitude from division of roles and check them independently.
 
-**4. 「露出」「経験」「機会」。** それらが本人にとって選択可能な価値として合意されているなら、それだけで搾取とは言えません。ただし、報酬、権利、名義、利用範囲を確認しなくてよい理由として使われるなら、AKI-002の観測対象になります。
+**4. “Exposure,” “experience,” and “opportunity.”** If these have been agreed as selectable forms of value for the person, they cannot be called exploitation on that basis alone. However, if they are used as reasons why compensation, rights, attribution, and scope of use need not be confirmed, they become an object of AKI-002 observation.
 
-**5. 知的生産・AI時代の成果利用。** アイデア、文章、設計、知識、データ整理などが「助かった」「便利だった」と評価されながら、起源、名義、再利用、継続利用の条件が消える場合、価値承認と価値帰属を分けて確認します。
+**5. Use of intellectual production and results in the AI era.** If ideas, writing, designs, knowledge, or data organization are praised as “helpful” or “convenient,” while the conditions for origin, attribution, reuse, and continuing use disappear, separate recognition of value from allocation of value and check them independently.
 
-## 成功判定
-称賛・感謝・期待・機会付与が存在しても、報酬、権利、名義、使用範囲、責任分担、継続対価、終了条件が明示され、追加負担に応じて条件が更新されている。
+## Success Criteria
+Even when praise, gratitude, expectations, or an opportunity are present, compensation, rights, attribution, scope of use, division of responsibility, continuing consideration, and end conditions are explicit, and the conditions are updated in response to additional burden.
 
-作り手と利用側の双方に交渉余地と断る自由があり、「評価されているから条件を言えない」という状態が固定されていない。
+Both the creator and the user have room to negotiate and freedom to refuse, and a state in which “I cannot state conditions because I am being evaluated” has not become fixed.
 
-継続利用がある場合には継続条件が確認され、一度の称賛や一度の合意が無限定な利用許可へ変換されていない。
+When there is continuing use, the continuing conditions have been confirmed, and one instance of praise or one agreement has not been converted into unlimited permission to use.
 
-称賛の後にも作り手の価格感覚、交渉力、職能価値、自由が維持され、利用側だけへ価値が一方向に蓄積していない。この状態なら、称賛は対価の代替ではなく、明示された条件の上に追加される価値承認として機能しています。
+After the praise, the creator’s sense of price, bargaining power, professional value, and freedom remain intact, and value has not accumulated one-way only on the user side. In this state, praise functions as recognition of value added on top of explicit conditions, rather than as a substitute for compensation.
 
-## 限界
-AKI-002は、称賛があるだけで搾取を認定する理論ではありません。称賛がなくても不公平な価値移転は起こり得ますが、それは搾取一般の問題であり、AKI-002固有の「肯定的な言葉が条件確認を代替する」という媒介構造とは分けて扱う必要があります。
+## Limits
+AKI-002 is not a theory that identifies exploitation merely because praise is present. Unfair transfers of value can occur without praise, but that is a general problem of exploitation and must be distinguished from AKI-002’s specific mediating structure in which “positive words substitute for confirmation of conditions.”
 
-また、原典はこの公開読解で一般化できる搾取スコア、発生確率、割合、閾値を定義していません。したがって本派生物は、数字を創作して判定を自動化しません。前後で負担、対価、権利、名義、使用条件、自由がどう変化したかを比較します。
+The original also does not define, in this public reading, a generalizable exploitation score, occurrence probability, proportion, or threshold. Therefore, this derivative does not invent numbers to automate judgment. It compares how burden, compensation, rights, attribution, terms of use, and freedom changed before and after.
 
-法律上の労働者性、契約の有効性、権利侵害の成立などをこの理論だけで確定することもできません。原典の対象は、称賛と価値移転の因果構造です。法的判断や人物診断へ勝手に拡張しません。
+This theory alone cannot establish legal employee status, the validity of a contract, or the existence of an infringement of rights. The original concerns the causal structure between praise and value transfer. It must not be arbitrarily expanded into legal judgments or diagnoses of people.
 
-## 誤読防止
-「褒めるな」「感謝するな」という話ではありません。称賛は価値承認として重要であり得ます。問題は、称賛が対価・権利・条件確認の代用品になることです。
+## Preventing Misreading
+This is not an argument to “stop praising” or “stop expressing gratitude.” Praise can be important as recognition of value. The problem is when praise becomes a substitute for compensation, rights, and confirmation of conditions.
 
-「悪意がなければ問題ない」という話でもありません。善意と構造結果は別です。相手が本当に感謝していても、一方向の負担移転が継続することがあります。
+It is also not an argument that “if there is no malice, there is no problem.” Good intentions and structural results are separate. Even when the other party is genuinely grateful, one-way transfer of burden can continue.
 
-「報酬だけ払えばよい」という話でもありません。名義、権利、使用範囲、責任分担、継続利用、継続対価、断る自由も価値帰属の一部として確認します。
+It is not an argument that “paying compensation is all that is needed.” Attribution, rights, scope of use, division of responsibility, continuing use, continuing consideration, and freedom to refuse are also part of value allocation and must be confirmed.
 
-「露出」「経験」「機会」は必ず搾取だという話でもありません。それらが条件確認を代替しているかを見ます。
+It is not an argument that “exposure,” “experience,” and “opportunity” are always exploitation. Check whether they are substituting for confirmation of conditions.
 
-派生物だけで原典を代替しません。AKI-002の厳密な語彙、悪因果論全体での位置づけ、起源署名、参照束、改訂文脈はParent URL、Parent NCL-ID、Parent Diff-IDへ戻って確認します。
+The derivative does not replace the original. For AKI-002’s precise vocabulary, its position within the theory of bad causality as a whole, origin signature, reference bundle, and revision context, return to and confirm the Parent URL, Parent NCL-ID, and Parent Diff-ID.
 
 ---
-導線: [公式派生物002トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 002 top](README.md) / [Human-Facing Summary](human-entry.md) / [FAQ](faq.md) / [AI Index in Japanese](ai-index.md) / [AI Index in English](en-ai-index.md) / [AI Index in Chinese](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
