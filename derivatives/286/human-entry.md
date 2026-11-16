@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物286
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - Parent title: 中川式営業の教科書・第二回
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-structure/
