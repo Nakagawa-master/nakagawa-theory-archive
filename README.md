@@ -4,6 +4,8 @@
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
+**English / 简体中文：** 314の独立した原典それぞれについて、[人間が読むための英語解説](START_HERE.en.md)と[簡体中文解説](START_HERE.zh.md)を公開しました。単なるAI索引ではなく、具体的な問題、中心の因果、適用条件、限界をそれぞれの言語で読み、各原典の筆者である中川マスターと正本URLへ帰れます。例：[「合意の記憶」英語版](derivatives/075/en-human-entry.md)・[中国語版](derivatives/075/zh-human-entry.md)。
+
 **公開された外部作用事例：77件**。[各事例の元の指摘、受け手の応答・実装・現在の段階](REAL_WORLD_IMPACT.md)を、第三者自身の一次資料につないでいます。
 
 **実際に問題の見方を変えた独立した読者（2026年11月16日）：** [ChatGPTの記憶・文脈問題を報告した @karenheuges](https://github.com/openai/codex/issues/61703#issuecomment-6915542007) は、中川マスターが[提示した「事実の保存・因果関係・現在有効性の確認」を区別する新しい成立条件](https://github.com/openai/codex/issues/61703#issuecomment-6905743455)を受け、「元の報告では定式化できていなかった欠落部分」と認め、自分の問題理解を3層に整理し直しました。出典となる原著は[「合意の記憶」](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)と[「人類子孫型AI文明論・第8論」](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)です。外部の人が自ら考え方を更新した実例であり、OpenAI製品の修正や、報告者による原著全編の支持を示すものではありません。
