@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 030 | Nakagawa Structural Reading | MOTA Price-Formation Condition Redesign
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: 中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-030-0001-0009
 - supersedes: DDIFF-20260813-DNCL-030-0000-0008
 
-## Summary
-The parent origin does not read MOTA merely as a car-buying service, appraisal comparison, or low-call convenience service. It treats information asymmetry, weak competition under a single buyer, multi-buyer competition, phone / negotiation / comparison burden, and premature compromise as one price-formation problem, then reads MOTA as redesigning market conditions so competition and lower seller burden can coexist.
+## SummaryThe parent origin does not read MOTA merely as a car-buying service, appraisal comparison, or low-call convenience service. It treats information asymmetry, weak competition under a single buyer, multi-buyer competition, phone / negotiation / comparison burden, and premature compromise as one price-formation problem, then reads MOTA as redesigning market conditions so competition and lower seller burden can coexist.
 
 The parent origin also publicly deconstructs why Nakagawa Master chose “redesign of high-price-selling market conditions,” rather than the surface category “car-buying service,” as the value core for an external article. The target company's messaging and Nakagawa Master's structural reading remain distinct.
 
