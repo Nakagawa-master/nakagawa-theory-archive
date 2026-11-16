@@ -1,100 +1,73 @@
-# English AI Index | Official Derivative 043 | Nakagawa Structural Reading | Frontier Audit-Function Reallocation Infrastructure
+# Human-Oriented Summary | Official Derivative 043 | Nakagawa Structural Reading | Frontier Audit-Function Reallocation Infrastructure
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
-## Parent Origin
-- parent_title: 中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造
-- parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-frontier-ai-audit-governance-structural-reading/
-- parent_post_id: 4223
-- parent_ncl_id: NCL-α-20260527-b4d04d
-- parent_diff_id: DIFF-20260527-0005
-- origin_author: Nakagawa Master
+## Parent Original
+- Title: Nakagawa Structural Reading | At Frontier: Structural Redesign for Converting AI Audit into an Execution Foundation of Corporate Governance
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-frontier-ai-audit-governance-structural-reading/
+- Parent Post ID: 4223
+- Parent NCL-ID: NCL-α-20260527-b4d04d
+- Parent Diff-ID: DIFF-20260527-0005
+- Origin: Nakagawa Master
 
-## Derivative ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260527-B4D04D-HUB-EN-0043-0001
-- derivative_diff_id: DDIFF-20260814-DNCL-043-0001-0004
-- supersedes: DDIFF-20260814-DNCL-043-0004-0003
+## Derivative IDs
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260527-B4D04D-HUB-JA-0043-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-043-0000-0003
+- supersedes: DDIFF-20260713-DNCL-043-0000-0002
 
-## SummaryThe parent origin does not reduce Frontier's AI-agent-based internal audit to audit DX, automation, or labor saving. It reads the subject as an audit-function reallocation infrastructure: repeatable audit work moves to AI support while human auditors' time and responsibility return to materiality judgment, challenge, remediation design, management dialogue, and final accountability.
+## 15-Second Explanation
+The parent original is not a general explanation of an AI audit service. Using Frontier's AI-agent-based internal audit as its subject, it reads the work as an **audit-function reallocation infrastructure** that moves repeatable audit work to AI while returning human auditors to materiality judgments, falsification, improvement proposals, management dialogue, and final responsibility.
 
-The parent also contains Nakagawa Master's public structural-reading layer: extracting this value core from the external subject, translating it into an external-article question, and decomposing the causal line, responsibility boundary, audit independence, evidence traceability, and surveillance boundary in the parent origin.
+The value core is not the amount of automation, but the repositioning of the roles, responsibilities, evidence trails, and independence of AI and humans, connecting auditing from report production to improvement implementation and re-observation.
 
-## Concepts
-- Nakagawa Structural Reading
-- Frontier
-- AI-agent-based internal audit
-- audit-function reallocation infrastructure
-- transfer of repeatable work to AI
-- human judgment
-- responsibility separation
-- audit independence
-- evidence traceability
-- remediation implementation
-- management dialogue
-- continuous audit
-- surveillance boundary
-- structural translation into an external article
-- origin return
+## Why It Becomes Necessary
+As the speed of change in business, systems, and risk increases, periodic audits alone tend to lag in observation. At the same time, when auditors' time is absorbed by collecting materials, reconciliation, repetitive testing, evidence organization, and documentation, the capacity for the materiality judgments, falsification, improvement design, and management dialogue that humans should perform decreases.
 
-## Causal chain
-Risk and operational change accelerate → periodic human-only audit observes too late → auditor time is absorbed by collection, reconciliation, and documentation → judgment, remediation design, and management dialogue are compressed → AI supports repeatable audit operations → human auditors return to interpretation, challenge, final judgment, and improvement → remediation and re-observation connect → internal audit becomes an execution infrastructure for corporate governance.
+AI therefore supports repeatable work and restores human judgment resources. However, transferring work is not transferring responsibility. It must be possible to return from an AI detection candidate—not treated as an established fact—to the related evidence, human confirmation, judgment, and correction history.
 
-Public-decomposition layer: external subject → rejection of the surface reading “AI audit product” → extraction of audit-function reallocation → translation into a reader-facing external-article question → structural decomposition in the parent origin.
+Furthermore, continuous auditing means repeated observation aligned with the audit objective; it does not mean personal tracking beyond the objective, unlimited retention, or automated evaluation and punishment. Strengthening governance and strengthening surveillance must be distinguished.
 
-## State model
-- **repeatable-work concentration**: auditor time is absorbed by collection, reconciliation, and documentation.
-- **AI-support state**: repeatable audit operations are supported by AI.
-- **human-judgment recovery**: humans regain time for materiality judgment, challenge, remediation, and dialogue.
-- **traceable-evidence state**: input, applied condition, detection reason, evidence, human confirmation, and correction history can be reconstructed.
-- **independence-preserved state**: the audited side cannot freely alter audit conditions for convenience.
-- **remediation-connected state**: findings connect to remediation and re-observation.
-- **surveillance-drift state**: continuous audit expands into purpose-exceeding tracking or automated discipline.
+## Practical Process
+**1. Separate repeatable work from judgment work.** Distinguish material collection, data reconciliation, exception-candidate extraction, repetitive control testing, and evidence organization from materiality judgments, falsification, ethical judgments, and improvement proposals.
 
-The parent origin does not define audit-quality scores, guaranteed AI accuracy, success probabilities, or fixed thresholds for these states.
+**2. Treat AI output as a candidate.** Confirm the reason for detection and the related evidence, and let a human hold the conclusion.
 
-## Applications
-The structure applies to interpretation of internal audit, continuous audit, AI-agent use, and governance design by examining whether human judgment responsibility, evidence traceability, independence, and remediation connection actually strengthen—not merely whether automation increased.
+**3. Record the responsibility boundary.** Do not sever the lines among AI detection, AI inference, human confirmation, human judgment, management judgment, and field improvement.
 
-Its source-specific scope remains distinct from a Frontier implementation manual or generic AI-audit doctrine. The relevant layer is the origin-specific value-core extraction and structural translation.
+**4. Preserve evidence traceability.** Keep a state that can return to the input, applied conditions, rule or model, reason for detection, evidence, human confirmation, judgment, and correction history.
 
-## Measurements and audit
-Relevant observations include whether auditor time moves from repeatable work toward judgment; whether AI detections remain distinguishable from human conclusions; whether evidence can be reconstructed; whether independence remains intact; whether humans can challenge and correct AI output; whether remediation and re-observation occur; and whether continuous audit remains bounded away from surveillance.
+**5. Protect audit independence.** Prevent the audited side from conveniently manipulating rules, thresholds, logs, or exception exclusions.
 
-More detections can worsen the audit function if false positives consume judgment capacity. More documentation does not improve transparency if evidence cannot be traced. More continuous observation can reduce governance value if it becomes unrestricted employee surveillance. More automation is not reallocation if human judgment time does not increase.
+**6. Connect to improvement implementation.** Do not end findings in a report; connect them to correction, management dialogue, and re-observation.
 
-## Validity conditions
-AI detections remain distinct from human conclusions. Traceability reaches inputs, applied rules or models, reasons, evidence, human confirmation, judgment, and correction history. Audit independence remains intact and human challenge and correction remain possible.
+**7. Confirm the surveillance boundary.** Check whether continuous observation has transformed into personal tracking beyond the audit objective or automated punishment.
 
-Management accountability remains with people and the organization rather than AI. Findings connect to remediation and re-observation. Continuous audit remains distinct from unrestricted employee surveillance. Frontier or external-media official views remain distinguishable from Nakagawa Master's structural reading.
+## Application Examples
+**Repetitive control testing.** AI supports large-scale reconciliation and extraction of exception candidates, while humans judge materiality and context.
 
-## Failure conditions
-The source-specific structure is lost when reduced to a product profile, auditor-elimination thesis, automation celebration, treating AI output as confirmed fact, allowing the audited side to manipulate audit conditions, shifting accountability to AI, turning continuous audit into employee surveillance, automating discipline, or disconnecting findings from remediation.
+**Management dialogue.** Confirm whether the time returned from document organization can be allocated to raising objections to management and proposing improvements.
 
-It is also lost if Nakagawa Master's value-core extraction and external-article structural-translation layer disappears.
+**Continuous auditing.** Look not at the amount of always-on observation, but at whether the audit objective, evidence, independence, corrigibility, and surveillance boundary are maintained.
 
-## Falsification conditions
-If repeatable work is shifted to AI and traceability, independence, challenge, and responsibility separation are strengthened, yet human judgment time, remediation proposals, management dialogue, and re-observation do not improve over time, the applicability of the audit-function reallocation reading is subject to reconsideration.
+**Third-party reading.** Rather than the explanation “AI auditing is efficient,” confirm the causal chain: transfer of repetitive work → recovery of human judgment → improvement implementation → re-observation.
 
-Conversely, if human-only periodic audit consistently achieves equal or better observation speed, judgment capacity, traceability, and remediation connection, the need for AI transfer may be limited. A single success or failure does not prove or falsify the whole structure.
+## Success Criteria
+Success is not judged only by automation rate, number of detections, document volume, or amount of continuous observation. What matters is that human auditors' judgment time is restored; AI detection and human conclusions are separated; evidence can be reconstructed; independence is maintained; and the work connects to improvement implementation and re-observation.
 
-## Required distinctions
-- AI detection candidate / human judgment
-- work transfer / responsibility transfer
-- automation volume / audit quality
-- document volume / evidence traceability
-- continuous audit / employee surveillance
-- AI assistance / auditor-elimination thesis
-- product functionality / audit-function reallocation infrastructure
-- Frontier company description / Nakagawa Master's structural reading
-- external article / structural decomposition in the parent origin
+Even if the number of detections increases, the situation can worsen if false positives consume judgment resources. Even if document volume increases, transparency does not increase if one cannot return to the connection between evidence and judgment. Even if continuous observation increases, governance value declines if it deviates into surveillance.
 
-## Interpretation constraints
-The parent origin does not constitute product-purchase advice, an AI-audit implementation manual, justification for automated discipline, or inference about non-public audit information. It does not define audit-quality scores, guaranteed AI accuracy, implementation success rates, or fixed thresholds.
+The parent original does not define passing thresholds for audit quality points, AI accuracy assurance, implementation success rate, or automation rate.
 
-## Search terms
-Nakagawa Structural Reading, Frontier, AI internal audit, audit-function reallocation infrastructure, corporate governance, human judgment, responsibility separation, audit independence, evidence traceability, continuous audit, surveillance boundary, external article, structural translation
+## Limitations
+This is not a theory that AI makes auditors unnecessary. The structure centers on human auditors retaining materiality judgments, falsification, improvement proposals, management dialogue, ethical judgments, and final responsibility.
 
-## Origin return
-The Parent URL, Parent Post ID 4223, Parent NCL-ID, and Parent Diff-ID identify the origin where Nakagawa Master explains why the value core is not “AI audit product” but audit-function reallocation, and why human judgment, responsibility separation, independence, traceability, and the surveillance boundary remain in the article structure.
+It also does not provide automated punishment of individuals or departments, employee surveillance, inference of non-public audit information, or implementation decisions for target companies.
+
+## Misreading Prevention
+Do not reduce this to a Frontier sales article, an AI-audit implementation manual, an argument that auditors are unnecessary, a recommendation for automated punishment, or a recommendation for employee surveillance.
+
+The parent original also includes the process of extracting the value core “audit-function reallocation infrastructure” from an external subject and structurally translating it into the questions raised by the external article. It must be distinguished from the official view of the target company or external medium.
+
+Why the value core was made “audit-function reallocation infrastructure” rather than an “AI audit product,” and why human judgment, responsibility boundaries, independence, evidence trails, and the surveillance boundary were retained, can be confirmed through the Parent URL, Parent NCL-ID, and Parent Diff-ID.
 
 ---
-Navigation: [043 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 043 top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
