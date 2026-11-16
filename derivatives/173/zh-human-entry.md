@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- 标题：【时间OS】中川式时间论 × 结构性无为自然 ——未来线的“解读”与走向具现化的整流过程
+- Parent title: 【時間OS】中川式時間論 × 構造的無為自然   ―― 未来線の「解読」と、具現化への整流プロセス
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-time-os-future-line-reading/
 - Parent Post ID: 1873
 - Parent NCL-ID: NCL-α-20251202-7368c1
