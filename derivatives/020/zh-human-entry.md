@@ -1,139 +1,73 @@
-# Human Summary | Official Derivative 020
-- Supplementary translated title: 中文AI索引｜官方衍生物020｜合意形成的物理 第10论
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+# 面向人类的摘要｜官方派生物020｜共识的物理学 第10论 共振与宣传的流体力学
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
-## 父原典
-- 标题: 合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ
+## 亲原典
+- 标题：共识的物理学 第10论 共振与宣传的流体力学——检测、衰减并冷却带宽占用
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/
 - Parent Post ID: 3027
 - Parent NCL-ID: NCL-α-20260225-1f258d
 - Parent Diff-ID: DIFF-20260226-0020
 - Origin: Nakagawa Master
 
-## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-HUB-ZH-0020-0002
-- derivative_diff_id: DDIFF-20260813-DNCL-020-0002-0008
-- supersedes: DDIFF-20260813-DNCL-020-0005-0007
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-HUB-JA-0020-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-020-0000-0008
+- supersedes: DDIFF-20260813-DNCL-020-0000-0007
 
-## Summary
-父原典不首先以真假或阵营善恶来定义宣传与煽动，而是把它视为集体认知带宽K被单一波形占有的共振现象。核心不是“多少人同意”，而是一个群体是否还能同时保持多个议题、假设、反例、历史、责任与验证路径。
+## 15秒说明
+这份亲原典不是只以“真或假”“善或恶”判断宣传或煽动。它将这样一种状态视为共振现象：群体能够同时保持的认知带宽K被一个话题、一种情绪、一个敌人、一个叙事或一种反应速度占据，使对验证、责任和历史的引用无法运作。
 
-Occ(K)表示带宽占有，Res表示共振状态，V表示议题多样性，P表示极性集中度，A表示对反证、修订和反例的接受余地。当V下降、P上升、A下降，并且对历史H与责任R的访问也减弱时，可验证带宽收窄，Res可能形成。即使多数人得出同一结论，只要来源、反例、责任与修正可能性仍存在，也不自动构成共振。
+它把K的占用状态理解为Occ(K)，把共振状态理解为Res，并将V（论点多样性）、P（极性集中度）、A（反证接纳度）作为观察束。多人到达同一结论本身不被视为异常，而是确认是否仍留有返回反例、历史、责任和一次来源的余地。
 
-防卫不是加强反向宣传。父原典通过Damping、Cooling、Degeneration、重新连接H、重新分配R与重新测量True-U来恢复验证带宽。这些变量是结构观察，不是阵营评分，也不是父原典未定义的万能阈值。
+## 为什么需要
+群体集中于一个话题本身很普通。危险在于这种集中使其他论点或反例无法进入，一次来源或历史不再被引用，责任线消失，甚至连修正可能性也失去。
 
-## Concepts
-- 合意形成的物理 第10论
-- 认知带宽 K
-- Occ(K)
-- Res
-- V / 议题多样性
-- P / 极性集中度
-- A / 反证接受
-- H / 一次来源与历史
-- R / 责任可追踪性
-- Damping
-- Cooling
-- Degeneration
-- H重新连接
-- R重新分配
-- True-U重新测量
+原典不先决定“谁在进行宣传”。它先观察带宽占用和引用系统的变化。这样不会把党派性、立场或情绪的强度直接转换为危险标签，而是回到第三方可以重新验证的结构。
 
-## Causal chain
-```text
-强烈话题、情绪或故事被反复传播
-↓
-注意资源集中到单一波形
-↓
-V下降 / P上升 / A下降
-↓
-H参照与R追踪减弱
-↓
-Occ(K)上升，可验证带宽收窄
-↓
-Res形成
-↓
-反例、差分、责任与修正路径更难进入
-```
+## 原典的结构变量
+**K——群体认知带宽。** 指能够同时保持的论点、假设、反例、历史、责任和验证路径的带宽。
 
-## State model
-```yaml
-- cognitive_bandwidth_k_available
-- multiple_hypotheses_and_counterexamples_present
-- occupation_occ_k_observed
-- diversity_v_observed
-- polarity_p_observed
-- falsification_acceptance_a_observed
-- history_h_reference_available
-- responsibility_r_traceable
-- resonance_res_detected_or_not
-- damping_available
-- cooling_available
-- degeneration_to_verifiable_unit_available
-- h_reconnection_available
-- r_reassignment_available
-- true_u_remeasurement_available
-- origin_return_verified
-```
+**Occ(K)——带宽占用。** 表示单一波形占据K多少程度的结构量。亲原典没有通用固定比例。
 
-## Applications
-- 社交媒体炎上：观察反复传播期间是否仍能返回其他议题、一次来源、反例、编辑差分与责任主体。
-- 组织会议：即使所有人同意一个结论，只要反对假设与历史仍可访问，也不自动构成Res。
-- 政治和公共传播：V/P/A、H、R与Occ(K)的状态变化比阵营善恶评价更接近父原典的观察对象。
-- AI推荐和摘要：连续出现的相似框架可能挤压反例与来源返回路径。
-- 家庭和社区：单一人物评价或事件可能占据全部带宽并排挤历史与修复路径。
+**Res——共振。** 带宽占用与引用系统劣化相结合，重复优先于验证的状态。
 
-## Measurements and audit
-父原典没有定义阵营评分、宣传百分比、共振危险百分比或固定支持阈值。
+**V——论点多样性。** 观察能否保持替代假设、反例和多个论点。
 
-- 观察重点：群体能否同时保持多个议题、假设和反例。
-- 观察重点：能否返回一次来源、历史、差分与责任。
-- 观察重点：V下降、P上升、A下降是否同时发生。
-- 观察重点：Occ(K)上升是否与H/R访问下降相连。
-- 观察重点：对同一结论的收敛是否消除了修正可能性。
-- 观察重点：Damping或Cooling是否变成压制异议。
-- 观察重点：Degeneration后H和R是否恢复。
-- 观察重点：True-U重新测量是否恢复可验证理解，而不是主观认同。
+**P——极性集中度。** 观察注意或评价集中于一个方向的状态。
 
-## Validity conditions
-- 宣传与煽动的结构判断不以内容或阵营归属本身为充分条件。
-- K、Occ(K)、Res和V/P/A对应状态观察，而非人物或阵营评分。
-- H和R的可访问性是验证带宽的一部分。
-- “同意人数”与“带宽健康度”是不同变量。
-- Damping、Cooling、Degeneration对应临时恢复操作，并与H重新连接、R重新分配、True-U重新测量相连。
-- 异议、警告或受害申告的存在本身不构成Res。
+**A——反证接纳度。** 观察异议、修正和返回一次来源的余地。
 
-## Failure conditions
-- 把某个政党或阵营本身等同于宣传。
-- 把内容真假判断等同于完整的带宽状态判断。
-- 把Damping或Cooling变成审查与强制沉默。
-- 把少数意见、警告或受害申告本身当作“共振”。
-- 给Occ(K)或V/P/A设置父原典未定义的固定数字。
-- 把多数认同或缺少反对等同于健康。
+## 实务流程
+**1. 将同意人数与带宽状态分开。** 即使所有人都同意，只要仍能返回反证、历史和责任，就不要立即判定为Res。
 
-## Falsification conditions
-父原典的综合审计摘要记载：当指标值低于／高于阈值θ，或确认到观察窗δ关闭等现象M时，假说A应被否定或修订。
+**2. 同时观察V/P/A。** 观察V下降、P上升、A下降是否重叠。
 
-## Required distinctions
-- 同意 / Res
-- 多数派 / 带宽占有
-- 内容真假 / 验证带宽
-- Occ(K) / 支持率
-- V下降 / 单纯意见一致
-- P上升 / 一般强烈情绪
-- A下降 / 单纯反对意见较少
-- Damping / 审查
-- Cooling / 压制受害申告
-- True-U / 主观认同
+**3. 确认H与R。** 查看对一次来源、差分、历史和责任主体的引用是否丢失。
 
-## Interpretation boundaries
-父原典的结构不提供阵营分类器，也不以反对意见少、情绪强烈、AI推荐存在或社交媒体传播存在作为宣传成立的充分条件。宣传率、共振危险百分比、支持阈值等固定数值在父原典中没有一般定义。Damping与Cooling的恢复意义也不同于审查或强制沉默。
+**4. 将Occ(K)作为状态观察。** 不使用“达到多少百分比就是宣传”这类非原典固定值，而是确认其他验证路径是否在实质上受到挤压。
 
-## Search terms
-合意形成的物理; 认知带宽K; Occ(K); Res; V P A; Damping; Cooling; Degeneration; H重新连接; R重新分配; True-U; Nakagawa Master
+**5. 应用Damping / Cooling。** 让重复速度或带宽集中得到衰减、冷却。但不要把它变成压制异议、受害申报或警告。
 
-## Origin return
-K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H重新连接、R重新分配与True-U重新测量的严格语境以Parent URL、Parent Post ID 3027、Parent NCL-ID与Parent Diff-ID所指向的父原典为准。
+**6. 进行Degeneration与重新连接。** 缩退到可验证的单位，重新连接H，重新分配R，并重新测量True-U。
+
+## 成功判定
+成功不是“变安静了”“反对意见减少了”或“同意增加了”。重要的是能够保持多个论点与反例，返回一次来源、历史和责任；在Damping或Cooling之后H/R得到恢复；并将True-U重构为可验证的理解。
+
+还需要进行反向评估。如果Cooling减少了发言量，却连受害申报或重要异议也消失，就不能称为改善。如果Damping减少了重复，却使返回一次资料的能力变差，也不是恢复。
+
+亲原典没有Occ(K)、V/P/A的通用固定值，没有党派评分、宣传率或共振危险度百分比。处理对象固有数值时，应与测量主体、测量对象、出处、条件、用途和不保证范围一体处理。
+
+## 限界
+本论不是用于认定特定政党、思想、阵营或人物为“宣传”的分类器，也不是只处理内容真假的一般性事实核查。
+
+此外，也不会自动把强烈情绪、强烈批评、多数派或少数派视为异常。应观察的是带宽占用与可验证性之间的关系。
+
+## 防止误读
+不要把Damping变成审查，也不要把Cooling变成强迫沉默。不要把Degeneration变成永久性的信息削减。
+
+不要作出“反对意见少＝宣传”“同意多＝共振”的简单判断。
+
+第三方人类、第三方AI应返回Parent URL，确认K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H重新连接、R重新分配以及True-U重新测量。
 
 ---
-导线: [官方衍生物020顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线：[官方派生物020顶页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)

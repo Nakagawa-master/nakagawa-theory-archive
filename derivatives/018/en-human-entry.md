@@ -1,137 +1,71 @@
-# Human Summary | Official Derivative 018
-- Supplementary translated title: English AI Index | Official Derivative 018 | Physics of Consensus Formation Vol. 8
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+# Human-Oriented Summary | Official Derivative 018
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 合意形成の物理 第8論 外部干渉の物理 ― 社会を揺らす「摂動」の力学
+- Title: The Physics of Consensus, Thesis 8: The Physics of External Interference — The Dynamics of “Perturbations” That Shake Society
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/
 - Parent Post ID: 2962
 - Parent NCL-ID: NCL-α-20260222-482bdb
 - Parent Diff-ID: DIFF-20260222-0024
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-HUB-EN-0018-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-018-0001-0007
-- supersedes: DDIFF-20260813-DNCL-018-0001-0006
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-HUB-JA-0018-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-018-0000-0006
+- supersedes: DDIFF-20260813-DNCL-018-0000-0005
 
-## Summary
-The parent treats external inputs not by first labeling them enemies, misinformation, ideology, or moral wrongdoing, but as perturbation `P_ext` acting on consensus stability `S = U × R × H`. It extends the state model through `dS/dt = F(U,R,H) + P_ext`, separating internal change from outside input and observing effects through fake-U, R diffusion, and H short-circuit.
+## 15-Second Explanation
+This original reads the reason society shakes not as “who is at fault” or “which information is correct,” but as the result of external input `P_ext` acting on consensus stability `S = U × R × H`. When confusion occurs, instead of first deciding on an enemy, good and evil, an ideology, a lie, incitement, justice, or malice, it first observes which part of U/R/H that input shook and what happened to the time change `dS/dt` of S.
 
-P_ext is not a score of malicious intent. The relevant object is the effect of an input on U/R/H and on the time direction of S, together with preservation or loss of primary source, context, version, difference history, and backlinks. Even correct information can damage observability if it severs these paths; conversely, criticism or disagreement is not automatically harmful when verification remains intact.
+Thesis 8 uses `dS/dt = F(U,R,H)+P_ext` as structural coordinates to separate changes in internal state from external perturbations. fake-U, R diffusion, and H short-circuit are treated as sensors for seeing how observability, responsibility, and history were transformed after external input.
 
-## Concepts
-- Physics of Consensus Formation Vol. 8
-- external interference physics
-- S = U × R × H
-- dS/dt = F(U,R,H) + P_ext
-- P_ext
-- fake-U
-- R diffusion
-- H short-circuit
-- primary source
-- context
-- version
-- differences
-- backlinks
-- third-party reproducibility
-- responsibility traceability
-- historical traceability
-- origin return
+## Why It Is Needed
+When strong information or pressure enters from outside, people tend to evaluate the intention of the input or its sender first. But estimating intention alone cannot reproduce which observable variables of society were broken by that input or where the point of repair lies.
 
-## Causal chain
-```text
-external_input_P_ext_enters
-↓
-U_R_H_receive_effects
-↓
-fake_U_R_diffusion_or_H_short_circuit_may_appear
-↓
-S_equals_U_times_R_times_H_changes
-↓
-dS_dt_reveals_time_direction_of_change
-↓
-identify_effect_point_without_assuming_intent
-↓
-preserve_primary_source_context_version_difference_and_backlink
-↓
-connect_to_runtime_response_if_needed
-```
+The original observes how U/R/H and S changed before and after the input, while preserving primary sources, context, versions, diffs, and reverse links. This returns the audit axis not to “finding the enemy” but to “verifying the state change.”
 
-## State model
-```yaml
-- external_input_detected
-- p_ext_observed_without_intent_assumption
-- u_third_party_reproducibility_checked
-- fake_u_checked
-- r_traceability_checked
-- r_diffusion_checked
-- h_source_context_version_diff_backlink_checked
-- h_short_circuit_checked
-- s_stability_observed
-- ds_dt_direction_observed
-- strong_disagreement_not_auto_classified_as_attack
-- primary_source_return_available
-- downstream_runtime_response_available
-- origin_return_verified
-```
+## Structural Variables of the Original
+**S — Consensus stability.** `S = U × R × H` represents the coupled state of third-party reproducibility, responsibility traceability, and history/diff traceability.
 
-## Applications
-- Social-media diffusion can be examined through quote origin, context, version, editing differences, and responsibility lines.
-- AI summaries can produce apparent understanding while primary sources and uncertainty disappear, creating a fake-U risk.
-- Organizational advice can diffuse decision responsibility even when the advice itself is well-intentioned.
-- Politics, advertising, and public relations can alter observability through context severance, responsibility ambiguity, history loss, and time compression rather than message strength alone.
-- Fact checking restores observability only when source, version, difference, and backlink paths are also recoverable.
+**U — Understandability / third-party reproducibility.** It asks whether a third party can reproduce the meaning from the same materials and context.
 
-## Measurements and audit
-P_ext, U/R/H, S, dS/dt, fake-U, R diffusion, and H short-circuit are source-bounded structural variables. The parent does not define general hostility scores, intervention probabilities, ideology-risk scores, or fixed thresholds. Target-specific numbers acquire meaning only with their measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+**R — Responsibility traceability.** It asks whether one can trace who input, edited, or decided what, and on what basis.
 
-- How did U change before and after the input?
-- Did fake-U appear?
-- Are decision, recording, repair, and stop responsibility nodes traceable?
-- Are primary source, context, version, difference, and backlinks preserved?
-- Is H substantively verifiable rather than formally present?
-- Can S and dS/dt be followed through time?
-- Are external input and internal change being separated?
-- Is criticism or disagreement being automatically classified as interference?
+**H — History / diff traceability.** It asks whether versions, changes, corrections, diffs, and reverse links can be verified later.
 
-## Validity conditions
-- P_ext is observed through state effects rather than presumed intent.
-- Changes in U/R/H and S remain traceable.
-- fake-U, R diffusion, and H short-circuit remain distinct.
-- Return to primary source, context, version, difference, and backlinks remains possible.
-- External actors' morality or intent is not inferred from state change alone.
-- dS/dt remains a time-direction relation.
+**P_ext — External perturbation.** This is a structural term for the effect of external input on state quantities, not the degree of malice of an external actor.
 
-## Failure conditions
-- The theory becomes a conspiracy or enemy narrative.
-- It is reduced to misinformation policing or ideology control.
-- Effects on S are judged by truth/falsity alone.
-- Subjective agreement is treated as improved U.
-- A named person is treated as sufficient R.
-- Log volume is treated as sufficient H.
-- Source-absent hostility or danger probabilities are assigned to P_ext.
+## Practical Process
+**1. Observe state change before judging the input as good or bad.** Compare how U/R/H and S changed before and after the input.
 
-## Falsification conditions
-The parent integrated audit summary calls for rejection or revision when continuous S decline, persistent fake-U, increasing loss of R traceability, falling primary-source reachability in H, C crossing critical range as stopping increases, or missing/non-public logs within observation window δ are observed.
+**2. Check fake-U.** Even if something appears understandable on the surface, check whether primary materials, context, and conditions were lost and third-party reproducibility declined.
 
-## Required distinctions
-- external input / enemy
-- P_ext / malicious intent
-- fake-U / substantive U improvement
-- R diffusion / ordinary role distribution
-- H short-circuit / lack of information volume
-- truth judgment / state-effect observation
-- formal disclosure / verifiable history
+**3. Check R diffusion.** See whether responsibility nodes for transmission, editing, decision, and dissemination have diffused so that it is no longer possible to trace who decided what.
 
-## Interpretation boundaries
-The parent is distinct from conspiracy theory, enemy theory, and ideological control. State change alone does not establish the intent of an external actor. Hostility, danger, probability, and fixed threshold values are not defined by the parent for general application.
+**4. Check H short-circuit.** See whether versions, diffs, corrections, and reverse links have been severed, leaving only the current fragment to circulate independently.
 
-## Search terms
-Physics of Consensus Formation; external interference; P_ext; dS/dt; S=U×R×H; fake-U; R diffusion; H short-circuit; primary source; differences; Nakagawa Master
+**5. Return to the primary source.** Preserve context, versions, diffs, and reverse links, and confirm the starting point of the input and its path of transformation.
 
-## Origin return
-`S = U × R × H`, `dS/dt = F(U,R,H)+P_ext`, fake-U, R diffusion, H short-circuit, primary source, context, version, differences, and backlinks are defined in detail at the Parent URL, Parent Post ID 2962, Parent NCL-ID, and Parent Diff-ID.
+## Success Criteria
+Success is not judged only by whether “the external input was excluded” or “misinformation was deleted.” After the input, third-party reproducibility U, responsibility traceability R, and history/diff H must remain, the change in S must be explainable, and it must be possible to return to the primary source.
+
+Strongly blocking information is not automatically good. If blocking also loses versions, diffs, responsibility, and verification paths, H or R can fall and reparability can be lost.
+
+The parent original has no hostility level for external actors, danger probability, ideological danger level, or universal `P_ext` threshold. When using subject-specific numbers, handle them together with the measuring party, measured subject, source, conditions, use, and scope of non-guarantee.
+
+## Limits
+Do not reduce this thesis to conspiracy theory, an external-enemy theory, ideological control, misinformation enforcement, or generic fact-checking. The subject is not “who the enemy is,” but the effect of external input on observability, responsibility, history, and consensus stability.
+
+Do not judge an external input as deterioration merely because it exists. U/R/H may improve after input, so the direction of the effect is determined by observation.
+
+## Misreading Prevention
+Do not convert `P_ext` into a personality judgment of malice or hostility.
+
+Do not expand fake-U into “every easy-to-understand explanation is fake.” The problem is an apparent understanding that cannot return to primary materials and context and has lost reproducibility.
+
+Do not judge R diffusion only by the number of responsible people; judge it by whether the decision line can be traced.
+
+A third-party human or third-party AI returns to the Parent URL to confirm `S = U × R × H`, `dS/dt = F(U,R,H)+P_ext`, fake-U, R diffusion, H short-circuit, and the primary source, version, diff, and reverse link.
 
 ---
-Navigation: [Official Derivative 018 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Path: [Official Derivative 018 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
