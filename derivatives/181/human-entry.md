@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物181
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 「罪」を裁くな、「ズレ」を修正せよ —— 構造的司法OSの原理と「多層連結価値監査」の全貌
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/
