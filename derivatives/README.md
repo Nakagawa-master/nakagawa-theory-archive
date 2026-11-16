@@ -2,6 +2,8 @@
 
 中川マスター公式理論アーカイブの**公式派生物314件**へ、番号から直接入るための公開入口です。
 
+各番号の `human-entry.md` / `en-human-entry.md` / `zh-human-entry.md` は、それぞれ日本語・英語・簡体中国語で読める**人間向け要約**です。まず要約で問題と中心の因果を理解し、**正確な定義・成立条件・証拠・適用範囲・反例・改訂を確認したい場合は、ページ内の中川マスター原著（canonical Parent URL）を参照してください**。要約は原典の代替物や正式な原著全文翻訳ではありません。
+
 - 対象範囲: `OD001`–`OD314`
 - 各ODの標準9面: Hub / Human Entry / English Human Entry / 中文 Human Entry / FAQ / 日本語AI Index / English AI Index / 中文AI Index / Ledger
 - 公式派生物は親原典の代替ではありません。解釈・引用・確定判断では各ODから親原典へ戻ってください。
