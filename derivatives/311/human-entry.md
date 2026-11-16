@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物311・いま続けられることと、次も続けられること
 
+Language: [日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
+
 ## 親原典
 
 - Parent title: 人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない
