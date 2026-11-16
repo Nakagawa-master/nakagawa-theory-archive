@@ -1,5 +1,6 @@
 # 公式派生物242｜人間向け要約
 Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mrc-renoplat-decision-continuity-structural-reading/
