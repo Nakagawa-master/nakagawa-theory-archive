@@ -1,145 +1,68 @@
-# AI Index — English | Official Derivative 031
+# Human-Oriented Summary｜Official Derivative 031
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 中川構造読解｜Ashiraseはなぜ「歩行支援デバイス」ではなく、歩ける社会の情報インフラとして読まれるべきなのか
+- Title: Nakagawa Structural Reading｜Why Ashirase Should Be Read Not as a “Walking Assistance Device” but as Information Infrastructure for a Society Where People Can Walk
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-ashirase-structural-reading-walking-information-infrastructure/
 - Parent Post ID: 4536
 - Parent NCL-ID: NCL-α-20260623-cfaa58
 - Parent Diff-ID: DIFF-20260623-0001
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-EN-0031-0001
-- derivative_diff_id: DDIFF-20260814-DNCL-031-0001-0005
-- supersedes: DDIFF-20260813-DNCL-031-0001-0004
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-031-0000-0005
+- supersedes: DDIFF-20260813-DNCL-031-0000-0004
 
-## SummaryThe parent original reads Ashirase as **information infrastructure for a society in which people can walk**, rather than as a generic accessibility framework, assistive-device catalog, product recommendation, or safety claim.
+## 15-Second Explanation
+The parent original is not an article that introduces Ashirase as a “convenient walking assistance device.” It reads walking as requiring not only the movement of the legs, but also that information necessary for direction, the surrounding environment, and the next decision reaches the person in a usable form, without making the cognitive load during movement excessive. For this reason, it understands Ashirase as **information infrastructure that makes a society where people can walk possible**.
 
-Walking is not reduced to bodily ability alone. Direction, surrounding-environment information, decision material, and the cognitive burden of obtaining that information can determine whether effective mobility is possible even when bodily capacity remains. Information also does not become useful merely by existing. If acquiring it consumes too much visual, auditory, memory, or attentional capacity, the person can lose attention to surroundings and room for personal judgment. The parent therefore reads the connection of necessary information to a bodily-sensation channel usable during movement as a way to redistribute or reduce information-acquisition burden while preserving continued judgment and mobility.
+At the same time, the parent original publicly unpacks why Nakagawa Master adopted the value core of “information infrastructure for a society where people can walk,” rather than “walking assistance device,” as the angle in an external article. The structure of the target technology and the reason for making its value core the angle of the external article form one integrated whole.
 
-The source has a second, inseparable layer: it publicly deconstructs why Nakagawa Master selected “information infrastructure for a walkable society” rather than the surface category “walking-assistance device” as the value core of an external article.
+## Why It Is Needed
+Whether a person can walk is not determined by physical function alone. Even if the legs move and standing can be maintained, autonomous movement becomes difficult when the person does not know the direction to proceed, cannot grasp branches or obstacles, or does not know what to decide next.
 
-## Concepts
-- Nakagawa Structural Reading
-- Ashirase
-- walkable society
-- walking information infrastructure
-- bodily ability
-- effective mobility
-- direction information
-- environmental information
-- decision material
-- information deficit
-- cognitive load
-- bodily-sensation connection
-- attention to surroundings
-- autonomous judgment
-- continued mobility
-- information environment
-- public deconstruction
-- value-core selection
-- origin return
+It is not enough for information merely to exist. Even if there is a sign that the person cannot use, even if there is voice guidance while the person needs to hear surrounding sounds, or when checking a smartphone screen concentrates attention on the device, the form of information can increase cognitive load during movement.
 
-## Causal chain
-```text
-A person attempts to move
-↓
-Bodily ability alone may not provide direction, environmental, branch, obstacle, or decision information
-↓
-Missing information makes the next movement decision harder and restricts effective mobility
-↓
-Obtaining information can impose excessive visual, auditory, memory, and attentional load
-↓
-Necessary movement information is connected to a bodily-sensation channel usable during movement
-↓
-Information-acquisition load is distributed or reduced
-↓
-Attention to surroundings and personal judgment can remain available
-↓
-Walking becomes easier to continue
-↓
-Mobility is supported by the information environment rather than individual effort alone
-↓
-Ashirase can be read as walking information infrastructure
-↓
-The parent publicly deconstructs why this value core was selected for the external article
-```
+What the parent original examines is not increasing information, but **connecting necessary information to a sensory route that the person can use while moving, and lowering the burden of judgment**. When this connection is established, the person can continue moving more easily while retaining attention to the surroundings and room for their own judgment.
 
-## State model
-```yaml
-- bodily_mobility_exists_or_is_limited
-- direction_information_is_available_or_missing
-- environmental_information_is_accessible_or_inaccessible
-- decision_material_is_usable_or_missing
-- cognitive_load_is_manageable_or_excessive
-- information_is_connected_to_usable_bodily_sensation_or_not
-- attention_to_surroundings_is_preserved_or_consumed
-- personal_judgment_capacity_is_preserved_or_reduced
-- walking_can_continue_or_is_interrupted
-- mobility_is_supported_by_information_environment_or_left_to_individual_effort
-- device_surface_is_distinguished_from_social_information_function
-- public_deconstruction_meta_layer_is_preserved
-- parent_origin_return_is_available
-```
+Therefore, a “society where people can walk” does not mean a society where a person could walk if they simply made more effort. It means a state in which the information environment on the social side can supplement the information conditions that physical ability alone cannot provide. Ashirase is an entry point for thinking concretely about that structure.
 
-## Applications
-- Walking-support technologies can be examined by which information deficit they address and through which usable sensory channel, rather than by feature count alone.
-- Station, street, and facility guidance can be examined by whether information is usable while moving, not merely whether signage or guidance exists.
-- Wearable information presentation can be examined through changes in cognitive burden, surrounding attention, and room for personal judgment rather than information quantity alone.
-- Ashirase remains distinct from a generic assistive-device, navigation-device, or welfare-product classification.
-- The second layer remains part of the source: why this value core was selected for the external article.
+## Practical Process
+1. Separate physical ability from the possibility of movement.
+2. Identify what is lacking among direction, branches, the surrounding environment, and the information needed for the next decision.
+3. Check not whether information exists, but whether it arrives in a form the person can use while moving.
+4. Examine whether the cognitive load on vision, hearing, memory, and attention has become excessive.
+5. Examine whether necessary information is connected to a sensory route through which it can be received without stopping the act of moving.
+6. Confirm that, even after assistance, the person retains room to read the surrounding situation and choose the next action.
+7. Confirm not only a single arrival result, but how the information conditions changed and whether movement could continue.
+8. Confirm at the Parent URL why “information infrastructure for a society where people can walk” was adopted as the value core of the external article.
 
-## Measurements and audit
-Observable relations include which missing direction, environmental, or decision information interrupts mobility; whether required information reaches the person in a form usable while moving; whether information acquisition imposes excessive cognitive burden; whether attention to surroundings remains available; whether room for personal movement decisions remains; and whether the information environment expands effective mobility.
+## Application Examples
+In walking navigation, distinguish between having route guidance to the destination and the person being able to use that information without undue difficulty while moving. Even if guidance is accurate, practical freedom of movement may not expand if the burden of checking it is high.
 
-The parent original does not define walking-success rates, accident-reduction rates, arrival-time improvement rates, cognitive-load scores, safety scores, fixed adoption rates, probabilities, or thresholds. Numbers from other materials remain external facts rather than quantitative claims of this parent original.
+In stations and public spaces, check not only whether signs or voice guidance have been installed, but whether they are in a form that the people who need them can actually use, and whether judgment can continue at branches. Wearable assistance should also be evaluated not by the number of functions, but by what information shortage it supplements through which sensory route, and how it changes cognitive load.
 
-More information can be structurally worse if processing burden rises and attention to surroundings falls. More accurate guidance can still fail if it is not usable through the relevant sensory channel. Stronger assistance is not automatically better if it narrows room for personal judgment.
+## Success Criteria
+Success is not determined only by wearing the device, increasing the number of guidance prompts, or increasing the amount of information. It is important that the person receive necessary information in a usable form, continue moving without excessively increasing the burden of judgment, and retain attention to the surroundings and room for their own judgment.
 
-## Validity conditions
-- Walking is not reduced to bodily ability alone.
-- Missing direction, environment, and decision information retains a causal role in effective mobility.
-- The existence of information is distinguished from information usable during movement.
-- Necessary information connects to a usable bodily-sensation channel with associated redistribution or reduction of cognitive burden.
-- Attention to surroundings and room for personal judgment remain present.
-- A walking-assistance device is distinguished from walking information infrastructure.
-- Ashirase's product description is distinguished from Nakagawa Master's structural reading.
-- Both the target-technology structure and the public-deconstruction layer explaining value-core selection remain present.
+Even if information increases, the situation may worsen if processing load becomes large. Even detailed guidance does not work if it is in a sensory form the person cannot use. Even if assistance is strong, a different problem from the parent original’s value core of a “society where people can walk” arises if the person can no longer judge the situation independently.
 
-## Failure conditions
-- Reduction to a product profile, usage recommendation, purchase decision, medical advice, or safety guarantee.
-- Replacement with generic accessibility or generic assistive-technology theory.
-- Treating more information, higher guidance accuracy, or stronger assistance as monotonically better.
-- Treating source-absent numerical success thresholds or improvement rates as parent claims.
-- Attributing mobility limits only to bodily ability or individual effort.
-- Preserving only the technology structure while deleting the public-deconstruction layer.
-- Presenting Nakagawa Master's reading as the official position of Ashirase or an external media outlet.
+The parent original does not define fixed numerical thresholds such as walking success rate, accident reduction rate, cognitive load score, or safety score. Evaluation returns to the structural connections among direction, environment, and decision information; usability; cognitive load; connection to bodily sensation; room for the person’s judgment; and the possibility of continuing movement.
 
-## Falsification conditions
-The parent original does not provide a fixed falsification system based on success rates, accident rates, or cognitive-load thresholds. Observable causal connections are information deficit, usability of information, cognitive burden, bodily-sensation connection, room for judgment, and continued mobility.
+## Limitations
+The parent original does not provide medical advice, walking-training instruction, safety assurance, accident-avoidance assurance, or a product-use recommendation. Conditions of use differ according to an individual’s physical condition, visual, auditory, and sensory characteristics, road environment, traffic conditions, and so on.
 
-If observations do not align with the structural reading, the relevant causal connection and the scope of the reading can be reassessed against the Parent URL. Product-performance verdicts and independently invented numeric cutoffs are separate from the parent argument.
+Nor does the reading of “information infrastructure” generalize that “all assistive technologies are social infrastructure.” Its specificity lies in using Ashirase as the subject to connect the information necessary for walking to bodily sensation and lower cognitive load.
 
-## Required distinctions
-- bodily ability / effective mobility
-- existence of information / usable information
-- amount of information / decision-usable information
-- guidance provision / room for personal judgment
-- cognitive-load reduction / full delegation of judgment
-- walking-assistance device / walking information infrastructure
-- Ashirase product description / Nakagawa Master's structural reading
-- target-technology structure / public-deconstruction meta layer
-- product-performance evaluation / parent structural claim
+Ashirase’s product explanation, Nakagawa Master’s structural reading, and the explanation in external media are distinguished.
 
-## Interpretation constraints
-Ashirase's official explanation, an external media outlet's official view, medical advice, safety guarantees, accident-avoidance guarantees, usage recommendations, and product rankings are distinct from the parent original. Individual safety decisions remain dependent on bodily condition and environment. External facts are also distinct from the parent original's structural reading.
+## Misreading Prevention
+Do not return to a product introduction that says, “It is convenient because it is a walking assistance device.” Do not read it as “the more information, the better” or “the more accurate the guidance, the safer it must be.” If increasing information volume increases cognitive load or divided attention, it may reduce the possibility of movement.
 
-## Search terms
-Nakagawa Structural Reading; Ashirase; walking assistance device; walkable society; walking information infrastructure; bodily ability; effective mobility; direction information; environmental information; decision material; information deficit; cognitive load; bodily sensation; autonomous judgment; information environment; public deconstruction; origin return; Nakagawa Master
+Nor should it be reduced to a self-responsibility argument that “the person cannot walk because they have not tried hard enough.” The parent original reads the establishment of movement as including the information environment on the social side.
 
-## Origin return
-The relationship among bodily ability, information deficit, cognitive load, bodily-sensation connection, personal judgment, and effective mobility, together with the explanation of why “walking information infrastructure” was selected as the external article's value core, is available through the Parent URL, Parent Post ID 4536, Parent NCL-ID, Parent Diff-ID, and Origin.
+Nakagawa’s structural reading is not only an explanation of the target technology’s structure. You can return to the Parent URL, Parent Post ID 4536, Parent NCL-ID, Parent Diff-ID, and Origin to confirm why “information infrastructure for a society where people can walk” was adopted as the value core of the external article.
 
 ---
-Navigation: [Official Derivative 031 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 031 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・English](en-ai-index.md) / [AI index・Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
