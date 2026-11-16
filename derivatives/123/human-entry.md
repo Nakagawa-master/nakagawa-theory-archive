@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物123
+言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 「不快だから犯罪にしてほしい」という社会に、どこまで刑法は付き合うべきか
