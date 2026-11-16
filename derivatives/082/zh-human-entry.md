@@ -72,4 +72,4 @@ CVA不是把所有价值转换成一个精确数字的机制。相反，为了�
 不把决策速度本身视为成功。即使量化共识很快，如果质性共识或再达成共识窗口丢失，CVA结构就没有成立。
 
 ---
-导航: [官方派生物082首页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・中文](zh-ai-index.md) / [AI索引・中文](zh-ai-index.md)
+导航: [官方派生物082首页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](zh-ai-index.md)
