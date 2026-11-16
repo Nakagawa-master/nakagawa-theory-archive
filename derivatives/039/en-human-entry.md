@@ -1,4 +1,5 @@
 # Human-Oriented Summary | Official Derivative 039 | Nakagawa Structural Reading | Adory
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 Language switch: [日本語](human-entry.md) / [简体中文](zh-human-entry.md)
 
 ## Parent Original

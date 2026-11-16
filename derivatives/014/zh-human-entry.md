@@ -1,4 +1,5 @@
 # Human Summary | Official Derivative 014
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 - Supplementary translated title: 中文AI索引｜官方衍生物014｜合意形成的物理 第1论
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 

@@ -1,4 +1,5 @@
 # 面向人的摘要｜官方派生物040｜逆因果整流理论・第2论
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 语言切换：[日本語](human-entry.md) / [English](en-human-entry.md)
 
 ## 母原典

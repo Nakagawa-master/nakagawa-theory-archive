@@ -1,4 +1,5 @@
 # 人間向け要約｜公式派生物052
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳

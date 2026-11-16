@@ -1,5 +1,6 @@
 # Human-Oriented Summary | Official Derivative 020 | The Physics of Consensus, Thesis 10: Resonance and the Fluid Dynamics of Propaganda
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: The Physics of Consensus, Thesis 10: The Fluid Dynamics of Resonance and Propaganda — Detect, Dampen, and Cool Bandwidth Occupation

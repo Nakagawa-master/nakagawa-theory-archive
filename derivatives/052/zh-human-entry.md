@@ -1,4 +1,5 @@
 # 面向人的摘要｜官方派生物052
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
 - 标题：中川式销售教科书・第十四回──提案编辑术：为产生共鸣而进行的结构翻译
