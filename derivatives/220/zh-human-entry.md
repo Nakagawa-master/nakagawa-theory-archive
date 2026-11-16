@@ -3,7 +3,7 @@
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- Parent title：耐久文明论 第四部｜第8论 相变⸻耐久文明在哪里崩溃
+- Parent title: 耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-phase-transition-limit-of-endurance/
 - Parent Post ID: 3492
 - Parent NCL-ID: NCL-α-20260315-6a456a
