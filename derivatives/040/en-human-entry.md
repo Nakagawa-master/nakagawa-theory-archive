@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 040 | Reverse-Causal Rectification Theory, Part II
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-040-0001-0003
 - supersedes: DDIFF-20260814-DNCL-040-0001-0002
 
-## Summary
-The parent distinguishes Reverse-Causal Rectification Theory from Meaning Convergence Theory, Time OS, Future Debt Theory, backcasting, and quantum metaphors rather than collapsing them into one “future-oriented” idea.
+## SummaryThe parent distinguishes Reverse-Causal Rectification Theory from Meaning Convergence Theory, Time OS, Future Debt Theory, backcasting, and quantum metaphors rather than collapsing them into one “future-oriented” idea.
 
 Its source-specific difference is that an adopted future definition functions as a criterion for evaluating and realigning present structure: meaning, action, resource allocation, relationships, and time. It is not future prediction, wish fulfillment, or a claim that the future physically rewrites the past.
 
