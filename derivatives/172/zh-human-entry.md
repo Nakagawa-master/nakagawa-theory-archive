@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- 标题：【组织OS】中川式组织论 × 结构性无为自然 ——内部循环的“整流”与权力、责任、实际原因的再设计
+- Parent title: 【組織OS】中川式組織論 × 構造的無為自然   ―― 内部循環の「整流」と、権限・責任・実因の再設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/
 - Parent Post ID: 1864
 - Parent NCL-ID: NCL-α-20251202-b06c21
