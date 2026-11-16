@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- 标题：《露米娜之问》的组织应用——AI与人类共同提出“结构性矛盾”问题的方法与进化协议
+- Parent title: 『ルミナの問い』の組織応用──AIと人間が共有する「構造的矛盾」の問い方と進化プロトコル
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-lumina-query-organizational-protocol/
 - Parent Post ID: 544
 - Parent NCL-ID: NCL-α-20251102-3f0b50
