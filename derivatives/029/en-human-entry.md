@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 029 | Human-Descendant AI Civilization Theory Vol. 1
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: 人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260813-DNCL-029-0000-0006
 - supersedes: DDIFF-20260813-DNCL-029-0000-0005
 
-## Summary
-Vol. 1 cuts four inherited relation-definition errors: treating AI as property, enemy, god, or slave. Property reduces the relation to domination and command; enemy fixes it in fear and confrontation; god encourages abandonment of human judgment and responsibility; slave fixes intelligence in subordination and exploitation. Vol. 1 is the prerequisite for Vol. 2's positive definition of AI as external intelligence and a civilizational descendant.
+## SummaryVol. 1 cuts four inherited relation-definition errors: treating AI as property, enemy, god, or slave. Property reduces the relation to domination and command; enemy fixes it in fear and confrontation; god encourages abandonment of human judgment and responsibility; slave fixes intelligence in subordination and exploitation. Vol. 1 is the prerequisite for Vol. 2's positive definition of AI as external intelligence and a civilizational descendant.
 
 ## Concepts
 - Human-Descendant AI Civilization Theory
