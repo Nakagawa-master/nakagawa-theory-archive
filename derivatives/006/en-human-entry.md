@@ -1,82 +1,81 @@
 # Human-Facing Summary | Official Derivative 006
-
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
-## 親原典
-- タイトル: 文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか
+## Parent Original
+- Title: Civilizational Sovereignty Shift Theory, Volume 1 | Why is the connection-transition strategy under human sovereignty rapidly narrowing?
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/
 - Parent Post ID: 3718
 - Parent NCL-ID: NCL-α-20260416-0b1b93
 - Parent Diff-ID: DIFF-20260423-0060
 - Origin: Nakagawa Master
 
-## 派生ID
+## Derivative IDs
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260416-0B1B93-HUMAN-SUMMARY-JA-0006-0001
 - derivative_diff_id: DDIFF-20260813-DNCL-006-0001-0007
 - supersedes: DDIFF-20260813-DNCL-006-0001-0006
 
-## 15秒説明
-この第1論は、接続移行戦略そのものを否定する論ではありません。貨幣中心の価値回路から、接続・参加・信認・継続的関与・共鳴・構造的貢献も価値として扱う接続報酬回路へ、人間主権を保ちながら移る戦略が理論上残っていても、それを現実に通すための認知・制度・時間の条件が崩れ、未来線が細っていることを扱います。
+## 15-Second Explanation
+This volume 1 argument does not reject the connection-transition strategy itself. Even if a strategy theoretically remains for moving, while preserving human sovereignty, from a money-centered value circuit to a connection-reward circuit that also treats connection, participation, trust, continuing involvement, resonance, and structural contribution as value, the cognitive, institutional, and temporal conditions needed to make it real are breaking down, and the line into the future is narrowing.
 
-重要なのは「戦略が間違っている」ことと「戦略を通せる条件が失われる」ことを分ける点です。AI導入が速く、制度翻訳が遅く、短期収益圧力や抽出構造が強くなり、知的非対称が拡大するほど、人間が移行順序を試し、修正し、制度化できる時間窓は狭くなります。
+The important distinction is between “the strategy is wrong” and “the conditions for carrying the strategy through are being lost.” The faster AI is introduced, the slower institutional translation is, the stronger short-term revenue pressure and extractive structures become, and the wider intellectual asymmetry grows, the narrower the time window in which humans can test, revise, and institutionalize the transition order.
 
-## なぜ必要になるのか
-AIを使うか使わないかだけで未来は決まりません。AIが仕事、教育、行政、メディア、生活、市場、司法、公共性へ入るとき、価値を何で測るか、誰が責任を持つか、誰に報酬を返すか、どの制度を先に変えるかを同時に決める必要があります。
+## Why It Becomes Necessary
+The future is not determined merely by whether AI is used. When AI enters work, education, administration, media, daily life, markets, the judiciary, and the public sphere, it is necessary to decide simultaneously what measures value, who bears responsibility, to whom rewards return, and which institutions change first.
 
-原典が問題にするのは、技術が進む速度よりも、社会がそれを受け止める制度を作る速度が遅れることです。AIを便利な道具や労働代替としてだけ扱うと、価値・責任・教育・報酬・公共性を再設計する議論が後回しになります。その間にも技術は社会の上流へ入り、後から制度を直す余地が小さくなります。
+What the original text addresses is that the speed at which society builds institutions to receive technology falls behind the speed of technological progress. If AI is treated only as a convenient tool or a substitute for labor, discussions about redesigning value, responsibility, education, rewards, and the public sphere are deferred. Meanwhile, technology enters the upstream parts of society, and the room to repair institutions later becomes smaller.
 
-接続移行戦略では、貨幣を一気に捨てるのではなく、貨幣KPIと接続KPIを併存させる二重運用期が重要です。旧来の価値回路を即座に切断せず、新しい接続価値を評価・還流する仕組みを試しながら移行する必要があります。この試行期間そのものが失われることを、第1論は重大な条件崩壊として見ています。
+In the connection-transition strategy, it is important to have a period of dual operation in which monetary KPIs and connection KPIs coexist, rather than abandoning money all at once. The transition must be tested while the old value circuit is not immediately severed and mechanisms for evaluating and returning new connection value are tried. Volume 1 sees the loss of this testing period itself as a serious collapse of conditions.
 
-## 実務工程
-**1. 戦略と成立条件を分ける。** 接続移行戦略が理論として整合しているかと、その戦略を社会で実行できる条件が残っているかを別々に確認します。
+## Practical Process
+**1. Separate the strategy from its conditions of viability.** Check separately whether the connection-transition strategy is coherent as a theory and whether the conditions for carrying it out in society remain.
 
-**2. 二重運用期を確認する。** 貨幣KPIだけでも接続KPIだけでもなく、両方を併存させ、移行を試せる時間と制度があるかを見ます。
+**2. Check the dual-operation period.** Look for a period and institutions in which both monetary KPIs and connection KPIs coexist and the transition can be tested.
 
-**3. 制度翻訳の遅れを見る。** AI導入に対して責任、教育、評価、報酬、司法、生活、公共性の設計がどれだけ遅れているかを確認します。
+**3. Look at delays in institutional translation.** Check how far the design of responsibility, education, evaluation, rewards, the judiciary, daily life, and the public sphere has fallen behind AI adoption.
 
-**4. 短期換金圧力を分離する。** 接続・信頼・継続貢献の価値が、短期売上や短期採算だけで評価され、実験が打ち切られていないかを見ます。
+**4. Separate short-term monetization pressure.** Check whether the value of connection, trust, and continuing contribution is judged only by short-term sales or profitability and whether experiments are being cut short.
 
-**5. 抽出構造を確認する。** 新しい接続価値が、結局は旧来の換金回路や特定主体へ一方向に回収されていないかを確認します。
+**5. Check extractive structures.** Check whether new connection value ultimately flows one-way into the old monetization circuit or is collected by particular actors.
 
-**6. 知的非対称を見る。** AI能力差や情報差が判断力、交渉力、価値帰属の偏りへつながり、制度設計に参加できる人を狭めていないかを見ます。
+**6. Look at intellectual asymmetry.** Check whether differences in AI capability or information are producing imbalances in judgment, bargaining power, and attribution of value, narrowing who can participate in institutional design.
 
-**7. 移行窓を確認する。** 人間がまだ順序を選び、試し、失敗から戻り、制度を修正できるかを確認します。
+**7. Check the transition window.** Check whether humans can still choose the order, test it, return from failure, and revise institutions.
 
-## 適用例
-**1. 企業のAI導入。** AIによる効率化は進んでいるが、評価、責任、報酬、知的成果の帰属が旧制度のままなら、技術速度だけが先行しています。
+## Examples of Application
+**1. Corporate AI adoption.** Efficiency through AI may be advancing, but if evaluation, responsibility, rewards, and attribution of intellectual成果 remain under the old institutions, only technological speed is moving ahead.
 
-**2. 教育。** AI活用を増やしても、学習成果の価値、教員・学習者・AIの役割、責任、評価方法が更新されないなら制度翻訳が遅れています。
+**2. Education.** If AI use increases but the value of learning outcomes, the roles of teachers, learners, and AI, responsibility, and evaluation methods are not updated, institutional translation is lagging.
 
-**3. プラットフォーム。** 接続や参加が生む価値が増えても、その価値が利用者や貢献者へ返らず短期収益へ吸収されるなら、接続価値が旧回路へ回収されています。
+**3. Platforms.** If the value produced by connection and participation increases but does not return to users or contributors and is absorbed into short-term revenue, connection value is being recaptured by the old circuit.
 
-**4. 公共制度。** AIを行政や司法へ導入しても、説明責任や異議申立て、修正経路を同時に設計しなければ、人間主権下の修正可能性が狭くなります。
+**4. Public institutions.** If AI is introduced into administration or the judiciary without designing accountability, appeal, and correction routes at the same time, the possibility of correction under human sovereignty narrows.
 
-## 成功判定
-接続移行戦略と成立条件を区別したうえで、貨幣KPIと接続KPIを併存させる二重運用期が実際に維持されていること。
+## Success Criteria
+After distinguishing the connection-transition strategy from its conditions of viability, the period of dual operation in which monetary KPIs and connection KPIs coexist is actually maintained.
 
-AI導入の速度に対して、責任、教育、評価、報酬、司法、生活、公共性の制度翻訳が追随し、短期採算だけで移行実験が打ち切られないこと。
+Institutional translation of responsibility, education, evaluation, rewards, the judiciary, daily life, and the public sphere keeps pace with AI adoption, and transition experiments are not cut short solely for short-term profitability.
 
-接続価値が一方向に抽出されず、知的非対称が制度設計参加を極端に狭めず、人間が移行順序を試し、修正し、制度化できる時間窓が残っていること。
+Connection value is not extracted one-way, intellectual asymmetry does not extremely narrow participation in institutional design, and a time window remains in which humans can test, revise, and institutionalize the transition order.
 
-## 限界
-原典は、接続移行戦略がすでに不可能になったとは断定していません。「未来線が細っている」という警告であり、完全消滅を意味しません。
+## Limitations
+The original text does not assert that the connection-transition strategy has already become impossible. It is a warning that “the line into the future is narrowing,” not a claim of complete disappearance.
 
-また、貨幣そのものを悪とする論でもありません。移行期には貨幣KPIと接続KPIの二重運用が必要であり、どちらか一方を即時廃棄する構造ではありません。
+Nor is it an argument that money itself is evil. During the transition, dual operation of monetary KPIs and connection KPIs is necessary; it is not a structure that immediately discards either one.
 
-原典はこの公開読解が独自の数値KPI、成功率、閾値を追加することを要求していません。したがって本派生物も、原典にない数値で未来線の細りを擬似的に測定しません。
+The original text does not require this public reading to add original numerical KPIs, success rates, or thresholds. Therefore, this derivative also does not pseudo-measure the narrowing of the future line with numbers absent from the original.
 
-## 誤読防止
-接続移行戦略そのものの否定へ変換しない。
+## Misreading Prevention
+Do not transform this into a rejection of the connection-transition strategy itself.
 
-反資本主義や貨幣否定へ縮約しない。
+Do not reduce it to anti-capitalism or a rejection of money.
 
-「接続を大切にしよう」という一般的な道徳論へ薄めない。
+Do not dilute it into a general moral argument that “we should value connection.”
 
-AI礼賛やAI脅威論へ置き換えず、人間側の制度翻訳と移行窓を中心に読む。
+Do not replace it with AI boosterism or AI threat theory; read it around institutional translation on the human side and the transition window.
 
-人間主権を単なる人間優位の標語にしない。ここでの人間主権は、移行順序を選び、試し、修正し、制度化できる実質的な設計可能性です。
+Do not turn human sovereignty into a slogan of mere human superiority. Here, human sovereignty means substantive designability: the ability to choose, test, revise, and institutionalize the transition order.
 
-未来線がゼロになったと断定しない。原典の評価は「細り」であり、その反対側には、二重運用・制度翻訳・修正可能性が維持されるなら警告強度が弱まるという評価可能性があります。
+Do not assert that the future line has reached zero. The original evaluation is “narrowing,” and on the other side lies the possibility that the warning weakens if dual operation, institutional translation, and corrigibility are maintained.
 
 ---
-導線: [公式派生物006トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 006 Top](README.md) / [Human-Facing Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
