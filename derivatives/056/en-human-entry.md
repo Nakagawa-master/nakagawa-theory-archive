@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 056
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 問いの深度 設計学──灯火プロトコルの哲学
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-056-0004-0002
 - supersedes: DDIFF-20260803-DNCL-056-0004-0001
 
-## Summary
-The parent treats questions not as mere requests for information but as structural operations that arrange attention, relation, judgment, causality, institutionalization, and origin. PQ-5 specifies Purpose, Hypothesis, Medium, Constraints, and Origin. D0–D5 classifies six inquiry depths, while SQS places Silence–Question–Silence around the inquiry. D-gap compares designed and actually reached depth, and R-index observations support revision of the question and its context. Greater depth is not inherently better; fit to purpose, non-coercion, factual verification, and origin return are required.
+## SummaryThe parent treats questions not as mere requests for information but as structural operations that arrange attention, relation, judgment, causality, institutionalization, and origin. PQ-5 specifies Purpose, Hypothesis, Medium, Constraints, and Origin. D0–D5 classifies six inquiry depths, while SQS places Silence–Question–Silence around the inquiry. D-gap compares designed and actually reached depth, and R-index observations support revision of the question and its context. Greater depth is not inherently better; fit to purpose, non-coercion, factual verification, and origin return are required.
 
 ## Concepts
 - PQ-5: five source-explicit components of inquiry design: Purpose, Hypothesis, Medium, Constraints, Origin.
