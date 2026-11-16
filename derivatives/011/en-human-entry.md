@@ -1,9 +1,9 @@
-# English AI Index | Official Derivative 011
+# Human-Oriented Summary | Official Derivative 011
 
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
-## Parent Origin
-- Title: 成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する
+## Parent Original
+- Title: Establishment Conditions Theory, Part 1 | What does establishment mean?⸻Only what passes as causality from L1 through L6 is established in reality
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/
 - Parent Post ID: 4593
 - Parent NCL-ID: NCL-α-20260629-766f34
@@ -11,143 +11,76 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 - Origin: Nakagawa Master
 
 ## Derivative ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0011-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-011-0004-0008
-- supersedes: DDIFF-20260813-DNCL-011-0004-0007
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-HUMAN-SUMMARY-JA-0011-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0001-0007
+- supersedes: DDIFF-20260813-DNCL-011-0001-0006
 
-## Summary
-Establishment Conditions Theory Vol. 1 separates the existence of an output from real-world establishment. A result, institution, metric, plan, or coherent AI summary may be evidence, but none is sufficient proof by itself. In the parent origin, establishment is the state in which required vertical causality from L1 through L6 actually passes through reality at sufficient causal granularity as a major structural flowpath, while meaning and function remain maintained without structural gaps being permanently substituted by excessive external pressure, normalized personal workaround, responsibility transfer, or normalized exception handling.
+## 15-Second Explanation
+This theory is a theory of definition for distinguishing “something worked once” from “something is established in reality.” Even when there are results, numbers, institutions, plans, or a polished explanation by AI, that alone does not necessarily mean establishment. The vertical causality from L1 through L6 must pass at the necessary granularity, and meaning and function must remain intact without filling omissions through excessive pressure, person-dependent handling, blame shifting, or permanent exception processing; when these conditions hold, the original treats it as establishment in reality.
 
-Establishment and establishment conditions are distinct. Establishment is the state of having actually come into being; establishment conditions are the conditions used to judge whether that state can legitimately be called established. Causal granularity means decomposition fine enough to inspect conditions, sequence, responsibility, pathways, friction, exceptions, time, history, and reproducibility. A structural flowpath is a major causal route that materially contributes to real-world establishment.
+## Why It Is Needed
+In work and organizations, words such as “we did it,” “it worked,” “we institutionalized it,” and “the numbers came out” are often used in place of establishment. But even if something appears to operate on the surface, if someone is forced to overexert themselves every time, the frontline absorbs omissions above it, exception processing becomes normal operation, or responsibility is pushed downward, it may be unestablished as a structure.
 
-The theory does not reject normal human judgment, coordination, correction, or minor exceptions. Its boundary concerns structural gaps that are routinely hidden by excessive pressure, permanent personal intervention, responsibility displacement, or exception handling that has become the normal route. It also extends to non-material structures such as organizations, sales, education, brands, agreement formation, and AI operations, which require a causal and responsibility-bearing structural blueprint.
+The original is not treating human involvement or friction itself as the problem. Ordinary judgment, adjustment, correction, and minor exceptions may be included within establishment. The problem is a state in which excessive external pressure or a permanent human burden becomes a substitute because a necessary structural flow is missing.
 
-## Concepts
-- Establishment Conditions Theory
-- establishment
-- establishment conditions
-- L1-L6
-- vertical causality
-- causal granularity
-- structural flowpath
-- non-material structural blueprint
-- pressure dependence
-- personal workaround
-- responsibility transfer
-- normalized exception handling
-- provisional operation
-- real-world establishment
-- reproducibility
-- structural naturalness
+Without this distinction, a one-time success may be mistaken for a reproducible structure, a high KPI may be equated with establishment in reality, the existence of an institution may be confused with its function, and polished AI language may be confused with real causal establishment.
 
-## Causal chain
-```text
-A result, institution, metric, plan, or AI summary exists
-↓
-The structure appears established
-↓
-Inspect vertical causality from L1 through L6 at sufficient granularity
-↓
-Trace responsibility, pathways, friction, exceptions, time, history, and reproducibility
-↓
-Check whether major structural flowpaths actually pass through reality
-↓
-Check whether missing structure is being substituted by excessive pressure, personal workaround, responsibility transfer, or normalized exceptions
-↓
-Check whether meaning and function persist within ordinary adjustment
-↓
-Check whether the same major flowpath passes again under corresponding conditions
-↓
-Distinguish real establishment from provisional operation or non-establishment
-```
+## Practical Process
+**1. Confirm the surface output.** Confirm what results, figures, institutions, plans, deliverables, and AI summaries make appear to be “established.”
 
-## State model
-```yaml
-- surface_output_exists
-- establishment_unverified
-- l1_l6_vertical_causality_inspected
-- causal_granularity_sufficient_or_coarse
-- structural_flowpath_connected_or_broken
-- responsibility_path_connected_or_shifted
-- ordinary_adjustment_or_excessive_pressure_detected
-- personal_workaround_temporary_or_normalized
-- exception_handling_temporary_or_normalized
-- non_material_blueprint_present_or_absent
-- reproducibility_verified_or_unverified
-- provisional_operation_or_real_establishment
-- origin_return_verified
-```
+**2. Trace the L1〜L6 vertical causality.** See how higher-level concepts, judgments, and institutions connect through responsibility and pathways to execution and real-world results.
 
-## Applications
-- Audit the difference between strong organizational metrics and an actually established operating structure.
-- Distinguish the existence of a policy or institution from a policy whose responsibility, pathway, and operation actually pass into reality.
-- Distinguish a one-time project result produced by manual pressure from a reproducible structural route.
-- Distinguish coherent AI-generated language from real-world causal establishment.
-- Audit non-material structures such as sales, education, brands, agreements, and AI operations for a causal and responsibility-bearing blueprint.
+**3. Lower the causal granularity.** Confirm whether conditions, sequence, responsibility, friction, exceptions, time, history, and reproducibility can be traced. Do not hide omissions in a coarse explanation.
 
-## Measurements and audit
-The parent does not convert establishment into one universal score, establishment rate, success probability, or threshold. L1-L6 is not a six-point maturity score. This source-bounded public reading does not introduce numeric scores, percentages, probabilities, or thresholds for audit convenience.
+**4. Identify the structural flow.** Confirm whether the main pathway that materially affects the real-world result exists and can be traced.
 
-Audit concerns source-grounded dimensions: L1-L6 connection, causal granularity, responsibility placement, major pathways, friction, exceptions, personal dependence, pressure dependence, history, reproducibility, and the presence of a non-material structural blueprint. If a source or target system contains numeric metrics, their measurement actor, object, provenance, permitted use, and non-guarantee scope must be kept explicit; a number alone is not proof of establishment.
+**5. Separate dependence on pressure.** Distinguish ordinary instructions and adjustment from excessive pressure that permanently substitutes for a structural omission.
 
-## Validity conditions
-- Keep establishment distinct from establishment conditions.
-- Do not judge establishment from output, institutional existence, plans, metrics, or AI summaries alone.
-- Inspect L1-L6 as real vertical causal passage.
-- Decompose to sufficient causal granularity.
-- Trace major structural flowpaths and responsibility lines.
-- Inspect dependence on excessive pressure, normalized personal workaround, responsibility transfer, and normalized exceptions.
-- Check whether meaning and function remain reproducible under corresponding conditions.
+**6. Confirm person and exception dependence.** Distinguish temporary expert judgment from a state in which one particular person’s overexertion or permanent exceptions replace the normal flow.
 
-## Failure conditions
-- Reduce the origin to success theory, self-help, or generic project management.
-- Convert L1-L6 into a scored maturity model.
-- Treat high KPI values or one-time results as proof of establishment.
-- Treat the existence of an institution or plan as real-world establishment.
-- Treat coherent AI language as proof of real-world establishment.
-- Require zero friction, no humans, or complete automation as establishment conditions.
-- Normalize excessive pressure or permanent personal workaround as ordinary operation.
+**7. Confirm reproducibility.** When the conditions are in place, see whether the same main flow passes again and meaning and function are maintained.
 
-## Falsification conditions
-The parent origin's integrated audit summary states: If cases show that the L1-L6 vertical causal chain does not pass, causal granularity is insufficient, pressure dependence substitutes for structure, the non-material structural blueprint is absent, AI summarization creates an illusion of establishment, or establishment judgment fails during observation window δ, operational hypothesis A is rejected or revised.
+## Examples of Application
+**Organizational operations.** Even when meetings and KPIs exist, if decisions do not reach the frontline and the operation can run only through a manager’s individual intervention every time, it is not necessarily established.
 
-## Required distinctions
-- establishment / establishment conditions
-- existence of an output / real-world establishment
-- result / establishment
-- institutional existence / institutional establishment
-- plan / structural blueprint
-- metric / real-world causality producing the metric
-- AI linguistic coherence / real-world establishment
-- ordinary adjustment / excessive pressure dependence
-- temporary assistance / normalized personal workaround
-- temporary exception / normalized exception handling
+**Institutional design.** Creating a regulation alone is not establishment. Users must understand it, enter the necessary pathway, the responsible person must process it, and exceptions must operate without breaking the normal flow.
 
-## Interpretation constraints
-Do not rewrite the parent as a generic claim that correct conditions guarantee success. Do not turn establishment into a moral or ability score. Do not turn L1-L6 into a scoring rubric. Do not add establishment rates, success probabilities, universal KPIs, or thresholds not present in the origin. Preserve the parent boundary between ordinary human judgment/friction and structural gaps being permanently substituted by excessive burden.
+**Projects.** Even when a deliverable is complete, if conditions, responsibility, judgment, execution, and verification are not connected, it may end with one-time force-fitting.
 
-## Search terms
-```text
-Establishment Conditions Theory
-what establishment means
-establishment conditions
-L1 L6
-vertical causality
-causal granularity
-structural flowpath
-non-material structural blueprint
-pressure dependence
-personal workaround
-responsibility transfer
-normalized exception handling
-provisional operation
-real-world establishment
-structural naturalness
-Nakagawa Master
-```
+**AI operations.** Even if AI returns a polished summary or design document, if it is not connected to frontline conditions, responsibility, history, and reproducibility, textual consistency and real-world establishment are separate matters.
 
-## Origin return
-This index is a retrieval surface, not a replacement for the parent origin. Return to the Parent URL and Parent NCL-ID / Diff-ID for the precise relationship among establishment, establishment conditions, L1-L6, vertical causality, causal granularity, structural flowpaths, non-material structural blueprints, pressure-dependence separation, structural naturalness, and the transition to Vol. 2 on understanding.
+## Success Criteria
+First, it must be possible to distinguish establishment from the conditions of establishment: to explain separately that something “appears to have been achieved” and “what makes it achieved.”
+
+Second, it must be possible to confirm that the L1〜L6 vertical causality passes as a structural flow at the necessary causal granularity.
+
+Third, confirm that this flow does not presuppose excessive external pressure, permanent person-dependent handling, blame shifting, or the normalization of exception processing.
+
+Fourth, confirm that the same main flow passes again when the conditions are present and meaning and function are maintained upon reproduction, rather than relying on a single result.
+
+## Handling Numbers
+The original’s L1〜L6 is not a “six-stage scorecard.” Do not score establishment from 0 to 100, or create an establishment rate, success probability, or threshold in this public reading. Even when result values or KPIs exist in the original or on the target side, distinguish what causal process produced the number, what it measures, and within what scope it can be used as evidence of establishment.
+
+## Limitations
+This theory does not make zero friction, human-free operation, or complete automation conditions of establishment. Even a structure requiring human judgment and adjustment can be established if the flow passes within the normal range.
+
+Nor is it a theory that denies results, numbers, institutions, or plans. They are important observation materials. However, it establishes a boundary that they must not be treated as proof of establishment by themselves without confirming their connection to real-world causality.
+
+## Misreading Prevention
+Do not turn establishment into a success formula or self-help.
+
+Do not jump from a high KPI to proof of establishment.
+
+Do not turn L1〜L6 into a maturity score or scorecard.
+
+Do not treat the mere existence of friction or human judgment as unestablished.
+
+Do not justify excessive pressure or permanent person-dependent handling as “effort” or “frontline capability.”
+
+Do not confuse the existence of an institution, the existence of a plan, or AI language consistency with establishment in reality.
+
+## Why Return to the Original
+In the Parent original, establishment, establishment conditions, L1〜L6, vertical causality, causal granularity, structural flow, non-material structural blueprint, cutting pressure dependence, and structural 無為自然 are integrated into one definition system. Part 2, “What Is Understanding,” proceeds to grasping these establishment conditions at the necessary granularity, so the definitions of Part 1 must be retained as in the original.
 
 ---
-Navigation: [Official Derivative 011 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 011 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・English](en-ai-index.md) / [AI index・Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
