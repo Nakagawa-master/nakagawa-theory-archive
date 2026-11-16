@@ -3,7 +3,7 @@
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- Parent title：耐久文明论 第五部｜第9论 D系洁净室──在腐败结构中设置未污染区域
+- Parent title: 耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-diplomacy-clean-room-theory/
 - Parent Post ID: 3524
 - Parent NCL-ID: NCL-α-20260316-0c31d1
