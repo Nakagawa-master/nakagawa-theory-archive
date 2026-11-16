@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物293
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: AI倫理における「照応操作力」の危機と再設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-ai-ethics-resonance-structure-2025/
