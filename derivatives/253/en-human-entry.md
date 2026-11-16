@@ -4,7 +4,6 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 ## Parent Original
 - Parent official title (Japanese original): 悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造
-- Supplementary translation: Bad Causality Theory AKI-003: Transparency Theater — The Structure in Which Disclosure of Information Is Made a Substitute for Verifiability
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-003-transparency-theater/
 - Parent Post ID: 4686
 - Parent NCL-ID: NCL-α-20260719-aae661
