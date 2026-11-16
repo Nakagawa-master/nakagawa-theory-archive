@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 025 | Nakagawa Structural Reading | Milly Market Connection
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent original
 - Title: 中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260813-DNCL-025-0001-0007
 - supersedes: DDIFF-20260813-DNCL-025-0004-0005
 
-## Summary
-The parent reads Milly not as a sales-AI feature set but as a market-connection mechanism for manufacturers whose technical capability does not automatically become market-recognized value. A firm can possess strong machining, materials, quality, equipment, or delivery capability yet remain invisible if those capabilities are not translated into buyer problems, use cases, comparison criteria, and search language. Without entry into the comparison set, the firm is not selected; without credibility supplementation, selection does not become transaction. The upstream path is therefore technical capability → market-language translation → discovery → comparison-set entry → selection → credibility supplementation → transaction possibility.
+## SummaryThe parent reads Milly not as a sales-AI feature set but as a market-connection mechanism for manufacturers whose technical capability does not automatically become market-recognized value. A firm can possess strong machining, materials, quality, equipment, or delivery capability yet remain invisible if those capabilities are not translated into buyer problems, use cases, comparison criteria, and search language. Without entry into the comparison set, the firm is not selected; without credibility supplementation, selection does not become transaction. The upstream path is therefore technical capability → market-language translation → discovery → comparison-set entry → selection → credibility supplementation → transaction possibility.
 
 Nakagawa Master chose “market-connection mechanism,” rather than the surface category “sales AI,” as the external article's value core because a feature label cannot explain the market-side breaks in discovery, comparison, credibility, and transaction. Reading those functions as one connection mechanism makes the subject's structural value difference visible.
 
