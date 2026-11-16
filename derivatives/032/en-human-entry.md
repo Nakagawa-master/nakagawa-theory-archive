@@ -1,141 +1,64 @@
-# English AI Index | Official Derivative 032 | Future-Definition Verification Effort Theory Supplement
+# Human-Oriented Summary｜Official Derivative 032
 Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: 未来定義検証型努力論・補論｜努力は消えたのではない──未来定義検証時代における努力の再定義
+- Title: Future-Definition Verification Model of Effort・Supplement｜Effort Has Not Disappeared—Redefining Effort in the Age of Future-Definition Verification
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
 - Parent Post ID: 4436
 - Parent NCL-ID: NCL-α-20260613-007d94
 - Parent Diff-ID: DIFF-20260613-0012
 - Origin: Nakagawa Master
 
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260613-007D94-HUB-EN-0032-0001
-- derivative_diff_id: DDIFF-20260814-DNCL-032-0001-0006
-- supersedes: DDIFF-20260814-DNCL-032-0001-0005
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260613-007D94-HUB-JA-0032-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-032-0000-0005
+- supersedes: DDIFF-20260813-DNCL-032-0000-0004
 
-## SummaryThe parent is neither an effort-denial thesis nor a return to grit ideology. It redefines effort as a structural act: define a future outcome, test whether that future can connect through present conditions, place candidate causal lines, set verification conditions, invest actual labor, observe results, revise the causal line, and re-enter effort.
+## 15-Second Explanation
+Effort has not disappeared. The parent original redefines effort not as something measured only by “amount, grit, and endurance,” but as a structural act: define a future outcome, confirm whether that future can be established through the current structure, invest labor into a causal line that can establish it, observe the result, revise it, and invest again.
 
-Repetition, persistence, endurance, and quantity are not rejected in themselves. They remain important when positioned on a causal line connected to the intended outcome and tied to verification, observation, correction, and renewed investment. Input volume or suffering by itself does not establish that the effort is structurally correct.
+In other words, the value of effort is not determined only by whether it was painful or continued for a long time. It is established only when it includes which future it is directed toward, which causal line receives the investment, what is observed to judge right or wrong, and what is revised from failure before returning to the next step.
 
-## Concepts
-- Future-Definition Verification Effort Theory
-- redefinition of effort
-- future definition
-- present-structure connection
-- candidate causal line
-- verification condition
-- labor investment
-- observation
-- correction
-- re-entry
-- repetition
-- persistence
-- result responsibility
-- reversible evaluation
-- origin return
+## Why It Is Needed
+The traditional view of effort functions strongly in situations where repetition, continuity, endurance, quantity, and long-term investment bring someone closer to ability or results. However, when the causal line leading to results itself is uncertain, a judgment centered only on input volume—“if you keep going, you will get there someday”—cannot confirm the connection between the future and reality.
 
-## Causal chain
-```text
-define_future_outcome
-↓
-check_connection_through_present_capability_resources_institutions_market_and_time
-↓
-place_candidate_causal_lines
-↓
-set_support_and_falsification_conditions
-↓
-invest_actual_labor
-↓
-observe_intermediate_and_final_results
-↓
-identify_where_the_causal_line_held_or_broke
-↓
-revise_line_method_sequence_or_conditions
-↓
-reenter_labor_on_the_revised_line
-↓
-increase_connection_precision_between_future_definition_and_present_structure
-```
+Even a large amount of effort cannot determine what is to be established if the future definition is vague. Without examining the connection to the current structure, it is impossible to know whether the direction of effort fits ability, resources, institutions, markets, and time conditions. Without verification conditions, when results do not appear it is impossible to distinguish between “insufficient input” and “the causal line is wrong.”
 
-## State model
-```yaml
-- future_is_defined_or_ambiguous
-- present_structure_is_connected_or_ignored
-- causal_line_is_hypothesized_or_absent
-- verification_conditions_are_set_or_missing
-- labor_is_invested_or_analysis_only
-- results_are_observed_or_untracked
-- causal_line_is_supported_or_broken
-- correction_is_made_or_effort_is_merely_intensified
-- labor_is_reentered_or_abandoned_without_learning
-- repetition_is_causally_connected_or_ritualized
-- effort_is_future_definition_verification_or_volume_only
-- origin_return_is_available
-```
+Therefore, the parent original does not reduce effort; it adds future definition, connection confirmation, causal hypotheses, verification, observation, and revision to effort. This is not an effort-lightening measure, but a structural update for connecting effort to the establishment of the future.
 
-## Applications
-**Learning and training.** Connect target capability, present capability, practice method, verification task, and correction instead of treating study time alone as proof of effort quality.
+## Practical Process
+1. Define the future outcome.
+2. Confirm the connections to current ability, resources, institutions, markets, time, stakeholders, and constraints.
+3. Set candidate causal lines showing which actions lead to the outcome through which intermediate changes.
+4. Decide verification conditions: what would support the line, and what would indicate that revision is needed.
+5. Actually invest effort.
+6. Observe the result and intermediate states.
+7. Revise mismatches in sequence, method, target, and conditions.
+8. Reinvest into the revised causal line.
 
-**Business development.** Observe which problem, offer, action, and intermediate response support the next causal connection rather than increasing outreach or production volume alone.
+## Application Examples
+In learning, do not treat study time alone as the amount of effort; connect it to target ability, current ability, practice methods, confirmation tasks, and weakness correction. In business, instead of merely increasing the number of sales contacts or the amount produced, observe whose problem is being addressed with what, and which response supports the next causal step.
 
-**Research and development.** Keep hypothesis, trial, observation, failure, and revision in one loop. A high number of trials is not the same as deeper causal understanding.
+In research, make hypothesis, experiment, observation, failure, and revision one continuous sequence. A failed attempt can also become information that improves the conditions for the next investment if it returns to causal-line revision.
 
-**Creation and editing.** Evaluate which reader state is intended to change, which structure is used, and what observed result requires revision rather than using output count or work hours alone.
+## Success Criteria
+The establishment of effort is not determined only by input time or the magnitude of pain. It is important that the future definition be clear, the connection to the current structure be confirmed, candidate causal lines and verification conditions exist, effort actually be invested, results be observed, and the process be able to return to revision and reinvestment.
 
-**AI use.** AI may help organize future definitions, candidate causal lines, and observation material, while action, judgment, responsibility, and re-entry remain part of the human operational loop.
+Even if input time increases, the effort structure can worsen if its connection to results deteriorates. Even if efficiency rises, an incorrect future definition may make it possible to move quickly in the wrong direction. Even if the number of successes increases, reproducibility does not necessarily mean that causal understanding has deepened.
 
-## Measurements and audit
-Observable relations include whether the future is explicit, whether present-structure constraints are connected, whether a causal line is stated, whether support and falsification conditions exist, whether actual labor is invested, whether intermediate and final results are tracked, whether failure triggers causal revision, and whether re-entry carries learning forward.
+The parent original does not define fixed numerical models such as an effort score, optimal effort time, effort efficiency rate, or success probability.
 
-The parent does not define effort scores, grit scores, optimal effort hours, success probabilities, efficiency rates, fixed improvement rates, or universal thresholds.
+## Limitations
+It is not always possible to precisely define a causal line in advance in every domain. In domains with high uncertainty, the trial itself becomes causal exploration. Even then, it is important to observe the result and return to revision which connections were established and which were severed.
 
-Reversible evaluation remains central. More hours can be structurally worse if outcome connection deteriorates. Higher efficiency can accelerate movement toward a wrongly defined future. More successful instances do not prove causal understanding if the result is not reproducible.
+Repetition, continuity, perseverance, and quantity are not treated as worthless. When they lie within a causal line connected to results and are accompanied by verification and revision, they are important forms of effort. Conversely, pain or long-term investment alone is not treated as evidence of correctness.
 
-## Validity conditions
-- A future outcome is defined.
-- Connection through the present structure is checked.
-- Candidate causal lines are stated.
-- Support and falsification conditions are available.
-- Actual labor is invested.
-- Intermediate and final results are observed.
-- The line, method, sequence, or conditions are revised in response to evidence.
-- Labor is re-entered after revision.
-- Repetition, persistence, and quantity are not treated as independent virtues, but neither are they declared worthless.
+AI and logs can assist in organizing future definitions, causal candidates, and observation materials, but they do not replace action, judgment, responsibility, or reinvestment.
 
-## Failure conditions
-- Reduction to effort denial, grit ideology, productivity hacks, generic self-help, or analysis-only thinking.
-- Responding to poor results only by increasing input volume.
-- Increasing quantity while the future remains undefined.
-- Treating successful outcomes as proof without checking intermediate causality and reproducibility.
-- Treating source-absent numerical thresholds, probabilities, fixed effort levels, or scores as parent claims.
+## Misreading Prevention
+Do not reduce this to an argument that effort is unnecessary, a grit doctrine, a productivity hack, or an analysis-everything theory. Quantity, continuity, efficiency, and the number of successes do not independently show that the effort structure has been established.
 
-## Falsification conditions
-If future definition, present-structure connection, candidate causal lines, verification conditions, observation, and correction repeatedly fail to improve understanding of outcome connection, reproducibility, or correction capacity compared with input-volume-centered effort, the scope of this redefinition can be reconsidered.
-
-In domains where causal lines cannot realistically be specified in advance yet quantity, repetition, and endurance repeatedly produce stable outcomes, the degree to which future-definition verification is necessary can also be reconsidered. A single success or failure does not settle the entire causal structure.
-
-## Required distinctions
-- effort volume / causal connection
-- persistence time / outcome establishment
-- grit / verifiable effort
-- analysis / actual labor investment
-- future wish / future definition
-- present awareness / present-structure connection
-- hypothesis / verification condition
-- successful outcome / reproducible causality
-- efficiency / effort denial
-- failure / insufficient effort
-- correction / abandonment
-
-## Interpretation constraints
-Less effort is not automatically better, and suffering or long hours are not proof of effort value. Future-definition verification also does not make indefinite analysis a substitute for action; actual labor remains inside the structure. AI and logging tools assist organization but do not replace action and responsibility.
-
-## Search terms
-Future-Definition Verification Effort Theory; redefinition of effort; future definition; present structure; causal line; verification condition; labor investment; observation; correction; re-entry; grit; effort denial; repetition; persistence; result responsibility; reversible evaluation; Nakagawa Master
-
-## Origin return
-The authoritative relationship among repetition, endurance, quantity, future definition, present-structure connection, causal line, verification condition, observation, correction, and re-entry is available through the Parent URL, Parent Post ID 4436, Parent NCL-ID, Parent Diff-ID, and Origin.
+The center of the original is the closed loop: future definition → current structure → causal line → verification → investment → observation → revision → reinvestment. It does not erase the meaning of repetition, endurance, or quantity that traditional effort has carried; the boundary for repositioning them within this closed loop can be confirmed by returning to the Parent URL, Parent Post ID 4436, Parent NCL-ID, Parent Diff-ID, and Origin.
 
 ---
-Navigation: [Official Derivative 032 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 032 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・English](en-ai-index.md) / [AI index・Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
