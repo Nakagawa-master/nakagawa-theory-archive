@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物009
 
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 未来定義検証型努力論・第2論｜未来定義検証なき努力強制の悪因果構造──上位者の成立検査不足は、なぜ現場の疲弊に変わるのか
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
