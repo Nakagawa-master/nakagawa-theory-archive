@@ -1,4 +1,5 @@
 # 面向人类的摘要｜官方派生物218
+语言切换：[日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
@@ -73,4 +74,4 @@
 - 不要向特定现实组织追加原典没有支持的断定性适用。
 
 ---
-导航: [官方派生物218主页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引·日文](ai-index.md) / [AI索引·中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航: [官方派生物218主页](README.md) / [面向人类的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引·日文](ai-index.md) / [AI索引·英文](en-ai-index.md) / [AI索引·中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
