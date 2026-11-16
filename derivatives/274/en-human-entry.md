@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
-- Title: Multi-layer audit design for connected value — the trust structure of a civilization network using RC/ER/CEA as universal indicators
+- Parent title: 接続価値の多層監査設計──RC/ER/CEAを普遍指標とする文明ネットワークの信頼構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-multi-layer-connected-value-audit-design/
 - Parent Post ID: 550
 - Parent NCL-ID: NCL-α-20251102-6f86bf
