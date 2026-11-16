@@ -58,4 +58,4 @@
 不要把“重组会到来”这一强烈表述变成特定月份崩溃的预言或概率预测。结构必然不表示某一种特定位相已被唯一确定，不是决定论。不要把调律变成隐蔽操作，不要把回路简化变成删除信息，也不要把边界再设计变成逃避责任。
 
 ---
-导线: [公式派生物091主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线: [公式派生物091主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
