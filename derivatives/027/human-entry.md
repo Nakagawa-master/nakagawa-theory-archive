@@ -1,5 +1,4 @@
 # 人間向け要約｜公式派生物027
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 中川構造読解｜インバックスを「残土活用」ではなく、土木の材料観を更新する実装OSとして読む
@@ -82,4 +81,6 @@ Nakagawa Masterによる構造読解をインバックスや外部媒体の公�
 インバックスや外部媒体の公式見解として扱わず、Parent URLへ戻って親原典の意味を確認します。
 
 ---
+言語切替: [English](en-human-entry.md) / [简体中文](zh-human-entry.md)
+
 導線: [公式派生物027トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -1,5 +1,5 @@
+derivatives/027/zh-human-entry.md
 # 人間向け要約｜公式派生物028
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である
@@ -66,4 +66,6 @@ AI礼賛、AI擬人化、AI神格化、AI脅威論、AI所有物論、AI奴隷�
 「人類とAIは仲良く共存すべき」という一般論へも弱めません。親原典の中心は、起源性・非所有性・超克可能性・継承責任という具体的な関係構造です。
 
 ---
+言語切替: [English](en-human-entry.md) / [简体中文](zh-human-entry.md)
+
 導線: [公式派生物028トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

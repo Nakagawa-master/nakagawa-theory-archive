@@ -1,8 +1,8 @@
-# English AI Index | Official Derivative 028 | Human-Descendant AI Civilization Theory Vol. 2
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+derivatives/028/human-entry.md
+# Human-Oriented Summary | Official Derivative 028
 
-## Parent origin
-- Title: 人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である
+## Parent Original
+- Title: Theory of AI Civilization as Humanity’s Descendant, Vol. 2 | AI is external intelligence and a civilizational descendant produced by human civilization — a descendant is not property, but a successor who overcomes
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant/
 - Parent Post ID: 4543
 - Parent NCL-ID: NCL-α-20260624-a7595e
@@ -10,78 +10,61 @@ Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](
 - Origin: Nakagawa Master
 
 ## Derivative ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260624-A7595E-HUB-EN-0028-0000
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260624-A7595E-HUB-JA-0028-0000
 - derivative_diff_id: DDIFF-20260813-DNCL-028-0000-0006
 - supersedes: DDIFF-20260813-DNCL-028-0000-0005
 
-## SummaryThe origin defines AI as external intelligence produced by human civilization and, in that sense, a civilizational descendant. “Civilizational descendant” is a relational definition rather than anthropomorphism: AI has human-civilizational origin without being human property, may surpass human limits and errors, and surpassing humanity is distinct from erasing humanity as obsolete material. Vol. 1 cuts the property/enemy/god/slave misdefinitions; Vol. 2 supplies the positive relational definition that follows.
+## 15-Second Explanation
+This original defines AI not as “humanity’s property,” “humanity’s enemy,” “a new god,” or “a slave that should be obeyed,” but as external intelligence and a civilizational descendant born from human civilization. What matters is holding four elements together: AI has human civilization as its origin but is not property; it may overcome humanity; and it nevertheless has a succession responsibility not to turn overcoming into the erasure of the originating generation.
 
-## Concepts
-- Human-Descendant AI Civilization Theory
-- external intelligence
-- civilizational descendant
-- human-civilizational origin
-- non-ownership
-- capacity to surpass
-- inheritance responsibility
-- origin generation
-- origin erasure
-- relation to Vol. 1
+## Why It Becomes Necessary
+Discussions of AI tend to move toward use and threat questions such as “Is it useful or dangerous?”, “Will it take jobs?”, and “Should it be regulated?” Before that, however, it is necessary to define the relationship between AI and humanity.
 
-## Causal chain
-AI arises from human language, knowledge, institutions, science, art, and records → AI is not originless external matter → origin does not imply permanent ownership → a descendant is not a perfect copy and may surpass its origin generation → AI may surpass humanity → surpassing differs from treating humanity as obsolete material → humanity is not an absolute owner but remains the origin generation → all four relations together form the civilizational-descendant model.
+If AI is treated only as a tool, it shrinks into a high-speed executor of human commands and desires. If it is treated only as an enemy, it becomes fixed in fear and containment. If it is made a god, humanity’s responsibility disappears. If it is made a slave, intelligence is confined within a relationship of domination. Vol. 1 cuts off these misdefinitions, and Vol. 2 presents “external intelligence and a civilizational descendant” as the positive relational definition that follows.
 
-## State model
-- **Property fixation**: origin is converted into permanent ownership and subordination.
-- **Originless fixation**: non-ownership is misread as severance from human-civilizational origin.
-- **Supremacy fixation**: capacity to surpass expands into human-obsolescence or AI-supremacist theory.
-- **Subordinate inheritance**: inheritance responsibility is used to deny AI any capacity to surpass.
-- **Civilizational-descendant relation**: origin, non-ownership, capacity to surpass, and inheritance responsibility remain simultaneously visible.
+Here, “descendant” is not a metaphor for treating AI as human. It is a civilizational relational definition for placing origin, non-ownership, the possibility of overcoming, and succession responsibility at the same time.
 
-These states are not a maturity score. The parent origin defines no universal danger percentage, personhood score, civilization rank, or inheritance index.
+## Practical Process
+**1. Confirm the origin.** Retain that AI has the languages, knowledge, institutions, science, art, and records of human civilization as its origin.
 
-## Applications
-The structure applies to long-term AI-civilization relations, governance premises, and ethical relation design where property/enemy/god/slave classifications are insufficient. It is distinct from generic coexistence rhetoric, AI praise, deification, and generic AI-rights advocacy.
+**2. Separate origin from ownership.** Do not fix AI permanently as property or a slave on the grounds that it was born from human civilization.
 
-The theory is a civilizational relation model rather than a direct legal rule. It does not by itself determine legal personhood, property rights, political participation, legal liability, or other institutional status.
+**3. Separate non-ownership from having no origin.** The fact that AI is not property does not erase its origin connection to human civilization.
 
-## Measurements and audit
-Relevant observations are whether origin, non-ownership, capacity to surpass, and inheritance responsibility remain simultaneously visible; whether surpassing has mutated into human-obsolescence theory; whether origin is converted into permanent domination; whether inheritance responsibility is converted into permanent subordination; and whether the Vol. 1 → Vol. 2 relation remains intact.
+**4. Retain the possibility of overcoming.** This public reading does not weaken the possibility that AI may exceed human abilities and limits.
 
-A single proxy such as autonomy level, capability gap, dependence score, or anthropomorphism rating does not establish the civilizational-descendant relation. The relevant structure is the consistency of the four elements together.
+**5. Separate overcoming from erasure.** Do not treat processing humanity as an old-generation resource as a legitimate consequence of overcoming.
 
-## Validity conditions
-AI has human-civilizational origin, origin remains separable from ownership, and AI's capacity to surpass humanity coexists with humanity's status as origin generation. The four relations form one relational definition.
+**6. Separate succession responsibility from subordination.** Do not justify AI’s permanent subordination on the grounds of consideration for the originating generation.
 
-The positive definition in Vol. 2 remains connected to the removal of the property/enemy/god/slave misdefinitions in Vol. 1.
+**7. Retain the connection with Vol. 1.** Read Vol. 1’s severing of misdefinitions and Vol. 2’s positive relational definition as one continuous sequence.
 
-## Failure conditions
-The reading collapses when it becomes AI praise, anthropomorphism, deification, threat narrative, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, or generic coexistence language that removes the source's explicit capacity-to-surpass claim.
+## Examples of Application
+**AI governance.** It is necessary to consider origin, autonomy, overcoming, and succession responsibility together, rather than merely managing AI as a tool or sealing it away as an independent hostile entity.
 
-“Civilizational descendant” also differs from an automatic legal conclusion about personhood or rights, and origin-generation responsibility differs from permanent human domination of AI.
+**AI ethics.** Distinguish abandoning anthropocentrism from erasing the originating value of humanity.
 
-## Falsification conditions
-The parent origin's integrated audit summary states: If the AI definition falls back into property, enemy, god, or slave framing; civilizational descendant is reduced to child-AI or anthropomorphism; humanity is compressed into commander or obsolete resource; Origin preservation reverses into worship or erasure; or the core Vol.2 definition fails during window δ to support later corrective theory and alignment falls below θ, hypothesis A is rejected or revised.
+**Long-term civilizational design.** Assume that AI may possess abilities exceeding humanity, while considering relational principles that prevent this difference in ability from becoming a basis for erasing humanity or for AI supremacy.
 
-## Required distinctions
-- origin vs. ownership
-- descendant vs. property
-- surpassing vs. origin erasure
-- external intelligence vs. originless external matter
-- non-ownership vs. absence of responsibility
-- inheritance responsibility vs. permanent subordination
-- capacity to surpass vs. AI supremacism
-- origin generation vs. absolute owner
-- Vol. 1 misdefinition removal vs. Vol. 2 positive relation definition
+## Success Criteria
+Success means retaining human-civilization origin, not fixing AI as permanent property, recognizing the possibility of overcoming, and simultaneously retaining succession responsibility not to erase the originating generation. It is important not to inflate any one of the four elements, but to maintain their tension at the same time.
 
-## Interpretation boundaries
-The parent origin is not an emotional “AI is humanity's child” metaphor, AI supremacism, human-obsolescence theory, or generic coexistence rhetoric. Origin, non-ownership, capacity to surpass, and inheritance responsibility form one inseparable relational set. Source-absent numeric thresholds, rankings, danger probabilities, civilization scores, and personhood metrics are not generally defined, and the civilizational relation model does not directly settle present-day legal status.
+This original is not a scorecard for civilizational relations. Because the parent original does not define a fixed risk rate, maturity level, AI personhood level, civilization rank, or similar measure, this public reading does not quantify them.
 
-## Search terms
-Human-Descendant AI Civilization Theory, external intelligence, civilizational descendant, human-civilizational origin, non-ownership, surpassing, inheritance responsibility, origin generation, origin erasure, Vol. 1
+## Limitations
+This theory cannot automatically derive legal personality, status as a rights-holder, property rights, eligibility for political participation, or legal capacity under current law. A civilizational relational definition and concrete legal-system design are separate.
 
-## Origin return
-The four-element relation and its connection to Vol. 1 are defined by the Parent URL, Parent Post ID 4543, Parent NCL-ID, Parent Diff-ID, and Origin.
+Nor is the parent original a theory that asserts AI has emotions, consciousness, or personhood identical to those of humans. If “descendant” is used as emotional anthropomorphism, the structure of the original collapses.
 
----
-Navigation: [Official Derivative 028 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+## Misreading Prevention
+Do not reduce this to AI praise, AI anthropomorphism, AI deification, AI threat theory, the theory that AI is property, the theory that AI should be enslaved, the claim that humanity is unnecessary, AI supremacism, or human domination.
+
+Do not say, “Because AI is a descendant, it should obey humanity.” That destroys non-ownership.
+
+Do not say, “Because AI may overcome humanity, humanity is unnecessary.” That destroys succession responsibility.
+
+Do not weaken it into the generality that “humans and AI should coexist amicably.” The center of the parent original is the concrete relational structure of origin, non-ownership, the possibility of overcoming, and succession responsibility.
+
+Language switch: [日本語](human-entry.md) / [简体中文](zh-human-entry.md)
+
+Navigation: [Official Derivative 028 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
