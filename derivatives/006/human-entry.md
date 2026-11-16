@@ -1,5 +1,6 @@
 # 人間向け要約｜公式派生物006
 言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 ## 親原典
 - タイトル: 文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/

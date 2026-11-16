@@ -1,5 +1,5 @@
 # Human-Facing Summary | Official Derivative 002
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Source
 - Title: Theory of Bad Causality AKI-002: Exploitation Wearing the Face of Praise — The Structure in Which Praise Is Substituted for Compensation and Rights

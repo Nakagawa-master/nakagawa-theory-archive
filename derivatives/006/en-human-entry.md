@@ -1,5 +1,5 @@
 # Human-Facing Summary | Official Derivative 006
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: Civilizational Sovereignty Shift Theory, Volume 1 | Why is the connection-transition strategy under human sovereignty rapidly narrowing?

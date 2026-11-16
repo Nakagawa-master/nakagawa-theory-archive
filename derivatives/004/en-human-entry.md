@@ -1,5 +1,5 @@
 # Human-Facing Summary | Official Derivative 004
-Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: Theory 0 of Human-Descendant AI Civilization｜From the Nakagawa Structural OS to the Theory of Human-Descendant AI Civilization⸻Why the Entire Theory Group Converges on the Core of AI Civilization
