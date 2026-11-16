@@ -1,5 +1,7 @@
 # 人間向け要約｜公式派生物205
 
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 親原典
 - タイトル: 不動産市場OS Vol.8【行政編】説明責任を束ねる都市 ―― 行政データ接続と重説参照束による「基準時間」の書き換え
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-market-os-vol8-reference-bundle-governance/
