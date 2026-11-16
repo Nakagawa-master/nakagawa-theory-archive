@@ -3,7 +3,7 @@
 Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
-- 标题：销售的结构律动论——排除个人依赖、创造可复现节奏的组织设计
+- Parent title: 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/
 - Parent Post ID: 570
 - Parent NCL-ID: NCL-α-20251102-b4d1e5
