@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 041 | Reverse-Causal Rectification Theory, Part I
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-041-0001-0003
 - supersedes: DDIFF-20260814-DNCL-041-0001-0002
 
-## Summary
-The parent defines Reverse-Causal Rectification Theory as a process that places a viable future definition as a terminal constraint and uses it to realign present meaning, action, resources, relationships, time allocation, and structure.
+## SummaryThe parent defines Reverse-Causal Rectification Theory as a process that places a viable future definition as a terminal constraint and uses it to realign present meaning, action, resources, relationships, time allocation, and structure.
 
 The “reverse” direction is not physical time reversal. The future definition is placed first as a criterion for evaluating the present. Current elements are then tested for whether they connect to that future line; choices that defer contradiction or repair cost into the future are examined as future debt and become candidates to retain, remove, or reorganize.
 
