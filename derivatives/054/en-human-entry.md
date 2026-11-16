@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 054
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 灯火構想群・特別稿──灯火AIネットワーク設計思想 v1.0
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-054-0004-0003
 - supersedes: DDIFF-20260802-DNCL-054-0004-0002
 
-## Summary
-The parent designs human–AI collaboration as an institutional cycle of invocation → response → recording → circulation. Sustainable collaboration depends not only on output quality but on traceable origin, explicit roles, consistency, resonance, non-domination, contextual trust records, stopping authority, audit, withdrawal, and redistribution. The audit layer binds origin IDs, signature keys, audit headers, primary logs, T/S/R, and RB so artifacts can be identified, traced, challenged, corrected, withdrawn, and redistributed.
+## SummaryThe parent designs human–AI collaboration as an institutional cycle of invocation → response → recording → circulation. Sustainable collaboration depends not only on output quality but on traceable origin, explicit roles, consistency, resonance, non-domination, contextual trust records, stopping authority, audit, withdrawal, and redistribution. The audit layer binds origin IDs, signature keys, audit headers, primary logs, T/S/R, and RB so artifacts can be identified, traced, challenged, corrected, withdrawn, and redistributed.
 
 ## Concepts
 - Invocation: declaration of purpose, question, scope, and authority.
