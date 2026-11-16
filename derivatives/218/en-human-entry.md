@@ -1,8 +1,6 @@
 # Human-Oriented Summary | Official Derivative 218
 Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
-Language switch: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
-
 ## Parent Original
 - Parent title: 耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-amplifier-of-inertia-automatic-continuation/
