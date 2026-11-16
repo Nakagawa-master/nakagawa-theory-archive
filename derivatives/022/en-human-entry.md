@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 022 | Bad Causality Theory AKI-014
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent original
 - Title: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260813-DNCL-022-0001-0008
 - supersedes: DDIFF-20260813-DNCL-022-0004-0006
 
-## Summary
-The parent origin locates the central failure not in AI capability itself but in a blank of connective responsibility. Business value, customer judgment, sales, marketing, PR, product, management, information assets, and AI reference structures must be connected to the same establishment conditions. When nobody owns that connective layer, domain experts can remain locally correct while their premises diverge. AI then formalizes those divergent premises into polished outputs; the polish makes misalignment look canonical; the outputs are stored as internal knowledge; humans and AI re-reference them; and the resulting business-OS contamination recursively reproduces itself until the organization can no longer coherently explain its own value, customer logic, responsibility lines, or repair points.
+## SummaryThe parent origin locates the central failure not in AI capability itself but in a blank of connective responsibility. Business value, customer judgment, sales, marketing, PR, product, management, information assets, and AI reference structures must be connected to the same establishment conditions. When nobody owns that connective layer, domain experts can remain locally correct while their premises diverge. AI then formalizes those divergent premises into polished outputs; the polish makes misalignment look canonical; the outputs are stored as internal knowledge; humans and AI re-reference them; and the resulting business-OS contamination recursively reproduces itself until the organization can no longer coherently explain its own value, customer logic, responsibility lines, or repair points.
 
 ## Concepts
 - Bad Causality Theory AKI-014
