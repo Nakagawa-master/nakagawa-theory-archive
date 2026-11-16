@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 033 | Future-Definition Verification Effort Theory Vol. 3
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか──未来定義検証時代における結果責任と実務OSの更新
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-033-0001-0005
 - supersedes: DDIFF-20260814-DNCL-033-0001-0004
 
-## Summary
-The parent does not define modern practitioners as people who simply lack grit. Outcome responsibility remains, while the conditions under which results are established have become multiple and distributed across customers, institutions, organizations, information, technology, tools, and external environments. Effort quantity alone can therefore no longer explain causal connection to outcomes.
+## SummaryThe parent does not define modern practitioners as people who simply lack grit. Outcome responsibility remains, while the conditions under which results are established have become multiple and distributed across customers, institutions, organizations, information, technology, tools, and external environments. Effort quantity alone can therefore no longer explain causal connection to outcomes.
 
 The practical OS is: define the future outcome, read its connection to the present structure, place candidate causal lines and verification conditions, act, observe results and intermediate states, correct the causal line, and re-enter. The theory does not remove responsibility; it converts outcome responsibility into causally inspectable responsibility.
 
