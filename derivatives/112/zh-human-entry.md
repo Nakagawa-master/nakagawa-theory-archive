@@ -1,5 +1,5 @@
 # 面向人的摘要｜公式派生物112
-语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - 标题: 如何测量拍、温度与余白——L0/L1/L2计量套件与结构伦理运转协议

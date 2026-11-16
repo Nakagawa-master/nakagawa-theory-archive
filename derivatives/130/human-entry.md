@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物130
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 戦闘機の爆買いと「防衛の構造」──膨張する安全保障と倫理的均衡の再設計

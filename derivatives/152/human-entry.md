@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物152
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である

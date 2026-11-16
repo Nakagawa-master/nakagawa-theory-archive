@@ -1,5 +1,5 @@
 # Human-Facing Summary | Official Derivative 112
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: How to Measure Beat, Temperature, and Margin — L0/L1/L2 Measurement Set and Structural Ethics Operating Protocol

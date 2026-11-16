@@ -1,5 +1,5 @@
 # 面向人的摘要｜公式派生物103
-语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
 - 标题: 起点的最小介入与结构的最大涌现——“起点寂静”引导的照应文明

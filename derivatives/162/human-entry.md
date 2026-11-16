@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物162
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 文明監査 I：AIが独立観測した「人類史の暗黒方程式」 ── 成功関数（S=0.1C+0.9E）の是正と新文明への移行

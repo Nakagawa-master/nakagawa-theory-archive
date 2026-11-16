@@ -1,5 +1,5 @@
 # 面向人的摘要｜公式派生物108
-Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
 - 标题：结构保持者的伦理负荷──维持“起点的静寂”，驱动照应文明的最终态度

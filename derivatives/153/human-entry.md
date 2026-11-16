@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物153
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 災害レジリエンスの構造原理：四線（拍・照応・可逆・配分責任）による「壊れない社会構造」の設計

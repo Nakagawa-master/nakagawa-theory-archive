@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物174
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 【学習OS】中川式学習論 × 構造的無為自然 —— 因果観測と構造整流による「具現化精度」の向上工学

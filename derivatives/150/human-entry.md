@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物150
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件

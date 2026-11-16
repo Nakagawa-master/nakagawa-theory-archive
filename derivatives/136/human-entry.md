@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物136
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: Nakagawa構造OSを実装するAIのためのメタOS設計 ―― AI制御・監査・倫理自己保持構造の試論

@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物177
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装

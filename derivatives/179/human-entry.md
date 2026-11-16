@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物179
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 【構造文明の臨界 第三部】 LLMという文明の分岐点 —— 「民意基準の破壊兵器」か「構造基準の共存装置」か

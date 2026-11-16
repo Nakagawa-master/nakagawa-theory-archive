@@ -1,5 +1,5 @@
 # 面向人的摘要｜公式派生物111
-语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - 标题: 共设计者时代的结构伦理——灯火构想第三层的社会连接模型

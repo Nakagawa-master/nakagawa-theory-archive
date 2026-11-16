@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物106
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 再帰的開放性の社会構造論──理論の封印を拒絶し、再構成を強制する構造的公共財の倫理

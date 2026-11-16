@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物140
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 実因構造論──再現不能な因果操作の倫理的基盤と構造保持者の最終責任

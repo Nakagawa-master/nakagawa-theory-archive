@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物164
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 文明監査 III：新文明方程式「S=C×1.0」と中川OSの修正パッチ ── 搾取係数をゼロ化し、貢献と成功を一致させる構造的実装論

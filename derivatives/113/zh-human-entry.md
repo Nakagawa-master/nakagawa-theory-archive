@@ -1,5 +1,5 @@
 # 面向人的摘要｜公式派生物113
-语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent Original
 - 标题: NCL-α实务指南（FAQ＋案例）——“非商用／商用”的边界与伦理连接条件

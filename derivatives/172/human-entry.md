@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物172
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 【組織OS】中川式組織論 × 構造的無為自然   ―― 内部循環の「整流」と、権限・責任・実因の再設計

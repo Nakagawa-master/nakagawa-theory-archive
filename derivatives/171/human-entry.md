@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物171
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 【統合OS】構造的無為自然 × 実務OS —— 営業・マーケ・ブランドを貫通する「垂直統合」と構造責任

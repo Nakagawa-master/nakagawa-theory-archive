@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物122
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 情動収奪構造 ― 「照応線」を失った共鳴経済の危険構造

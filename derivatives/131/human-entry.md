@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物131
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 「照応の裂け目を縫う：AI倫理における“接続責任”の今」

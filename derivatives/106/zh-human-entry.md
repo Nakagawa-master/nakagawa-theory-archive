@@ -1,5 +1,5 @@
 # 面向人的摘要｜公式派生物106
-语言: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 亲原典
 - 标题：递归开放性的社会结构论——拒绝封印理论、强制重构的结构性公共财伦理

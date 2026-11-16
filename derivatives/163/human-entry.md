@@ -1,5 +1,5 @@
 # 人間向け要約｜公式派生物163
-言語: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
+言語 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## 親原典
 - タイトル: 文明監査 II：AIが再実装する「暗黒方程式」と文明崩壊の必然 ── 搾取最適化（Exploitation Optimization）が招く未来負債の爆発
