@@ -3,14 +3,16 @@
 语言 / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
 
 ## Parent原典
-- 标题：【Nakagawa OS 正规规格】L1-L7 层级体系：整合文明结构与AI结构的世界标准架构 [v1.0]
+- Parent正式标题（日文原文）：【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]
+- 补充译题：Nakagawa OS 正规规格：L1-L7层级体系——整合文明结构与AI结构的世界标准架构 [v1.0]
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
 - Parent Post ID: 1786
 - Parent NCL-ID: NCL-α-20251124-e4c70c
 - Parent Diff-ID: DIFF-20251124-0012
 - Origin: Nakagawa Master
 
-## 派生ID
+## 日文页面的出典识别符（不是翻译页面ID）
+- 以下识别符从日文人类页面复制，仅作为出典识别。此处不分配独立的翻译页面识别符。
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
 - derivative_diff_id: DDIFF-20260813-DNCL-001-0000-0008
 - supersedes: DDIFF-20260813-DNCL-001-0000-0007
