@@ -1,5 +1,7 @@
 # 面向人类的摘要｜官方派生物182
 
+Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-entry.md) | [简体中文](zh-human-entry.md)
+
 ## 父原典
 - Parent title：“如何区分‘善意’与‘伪善’”——多层连接价值审计与C/E判定算法（结构性司法OS Vol.2）
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-multilayer-audit-c-e-judgment/
