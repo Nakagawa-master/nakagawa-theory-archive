@@ -70,4 +70,4 @@ Do not dilute the original-specific causal terms—Emotional Justice Theory, Bur
 Do not replace Tomoshibi Structural Ethics with general consent, exit, platform-safety, or AI-ethics concepts; preserve the four lines as the recovery lines themselves.
 
 ---
-Navigation: [Official Derivative 122 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・Chinese](zh-ai-index.md) / [AI index・Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 122 top](README.md) / [Human-oriented summary](human-entry.md) / [FAQ](faq.md) / [AI index・Japanese](ai-index.md) / [AI index・English](en-ai-index.md) / [AI index・Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
