@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 057
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 接続報酬社会──信頼資本と共鳴の制度化
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260815-DNCL-057-0004-0003
 - supersedes: DDIFF-20260803-DNCL-057-0004-0002
 
-## Summary
-The parent proposes a connection-reward society that recognizes value created through trust, resonance, continuity, referral, collaboration, knowledge transfer, and reconnection rather than only ownership or short-term transactions. CRI, IR, KCL, and a trust-capital ledger support observation of connection quality, contribution, provenance, correction, withdrawal, and redistribution. The theory does not equate more connections, popularity, or reaction volume with more value and preserves freedom not to connect.
+## SummaryThe parent proposes a connection-reward society that recognizes value created through trust, resonance, continuity, referral, collaboration, knowledge transfer, and reconnection rather than only ownership or short-term transactions. CRI, IR, KCL, and a trust-capital ledger support observation of connection quality, contribution, provenance, correction, withdrawal, and redistribution. The theory does not equate more connections, popularity, or reaction volume with more value and preserves freedom not to connect.
 
 ## Concepts
 - Connection reward: linking value created by connections to recognition and distribution.
