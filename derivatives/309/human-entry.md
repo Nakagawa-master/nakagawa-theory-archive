@@ -1,5 +1,7 @@
 # 人間向け要約｜連絡が途絶えても、相手の「今」を勝手に決めない
 
+Language: [日本語](human-entry.md) | [English](en-human-entry.md) | [中文](zh-human-entry.md)
+
 ## 親原典
 
 - Parent title: 人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論⸻同じ「現在」を共有しない文明間でもKernelを維持する
