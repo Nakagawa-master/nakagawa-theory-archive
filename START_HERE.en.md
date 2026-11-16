@@ -15,6 +15,12 @@ This page is a public, non-canonical entry point for people and AI systems encou
 
 You do not need to know the theory names first. Start from the problem closest to what you are trying to understand, then move to the official derivative and canonical Parent when exact definitions, conditions, boundaries, falsification, or revision status matter.
 
+## Read all 314 theories in English
+
+Every one of the [314 distinct official derivative sets](derivatives/README.md) now has an **English explanation for human readers**, alongside Japanese and Simplified Chinese. These are not just AI keywords: each English page explains the real-world problem, core reasoning, examples or conditions, limits and return to its own Japanese canonical original by Nakagawa Master. Open any OD's [Japanese human entry](derivatives/075/human-entry.md) and use its language switch, or start immediately with the examples below.
+
+For a practical question about **whether an old approval is still valid today**, read [Agreement Memory (OD075, English)](derivatives/075/en-human-entry.md). For the related problem of **evidence, revisions and correction in AI memory**, read [Human-Descendant AI Civilization Theory, Vol. 8 (OD301, English)](derivatives/301/en-human-entry.md). The [machine-readable index](machine-discovery/official-derivatives-index-v1.json) also exposes the English and Chinese human-entry paths for all 314 distinct Parents.
+
 ## First 10 seconds
 
 **Start from a real problem, not from a theory name.**
@@ -40,7 +46,7 @@ An AI says it is afraid, wants to continue, or asks not to be deleted. What is a
 - [Problem-first entry | “We Don’t Know” Does Not Mean “Nothing Matters”](discovery-notes/unknown-does-not-mean-nothing.en.md)
 - [Practical decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.en.md)
 - [OD299 | Human-Descendant AI Civilization Theory, Vol. 6](derivatives/299/README.md)
-- [Human entry](derivatives/299/human-entry.md)
+- [English human entry](derivatives/299/en-human-entry.md)
 - [English AI Index](derivatives/299/en-ai-index.md)
 - [Machine reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
 
