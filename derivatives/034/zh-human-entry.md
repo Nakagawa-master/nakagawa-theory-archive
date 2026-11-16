@@ -1,0 +1,98 @@
+# 中文AI索引｜官方衍生物034｜恶因果论 AKI-013
+
+## 父原典
+- 标题: 悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-013-trust-as-cognitive-suspension/
+- Parent Post ID: 4334
+- Parent NCL-ID: NCL-α-20260602-55c6cd
+- Parent Diff-ID: DIFF-20260602-0011
+- Origin: Nakagawa Master
+
+## 衍生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260602-55C6CD-HUB-ZH-0034-0002
+- derivative_diff_id: DDIFF-20260814-DNCL-034-0002-0005
+- supersedes: DDIFF-20260814-DNCL-034-0002-0004
+
+## Summary
+AKI-013并不否定信任。信任可以降低重复验证成本，并支持合作、委托与分工。恶因果开始于：把固定不变误认为可预测性，并把根据条件变化而更新判断的智能视作不信任或背叛。
+
+父原典固有的差分在于，健康信任的成立条件不是永久不变，而是更新规则可预测：观察什么变化、何时重新判断、谁负责修正、修正理由如何说明。判断本身可以变化，只要变化规则保持一致、可说明，系统仍可能具有较高可预测性。
+
+## Concepts
+- 恶因果论 AKI-013
+- 信任作为认知停止
+- 信任的判断压缩
+- 固定性
+- 可预测性
+- 更新智能
+- 观察
+- 重新判断
+- 修正
+- 更新规则
+- 责任连接
+- 异议
+- 差分检测
+- 可反转评价
+- 原典回归
+
+## Causal chain
+把信任定义为保持不变 → 把固定性误认为可预测性 → 把条件变化下的判断更新视作不信任或背叛 → 排斥更新智能、异议与差分检测 → 旧判断被固定 → 固定判断与现实之间的差距扩大 → 观察、重新判断与修正不再重新启动 → 信任变成认知停止。
+
+健康侧：定义变化条件 → 保留观察入口 → 共享判断更新条件 → 连接修正责任 → 说明更新理由 → 让更新规则本身可预测 → 使信任与适应同时成立。
+
+## State model
+```yaml
+- trust_compression_available_or_not
+- immobility_misread_as_predictability_or_not
+- change_conditions_observed_or_ignored
+- judgment_update_allowed_or_treated_as_betrayal
+- updating_intelligence_preserved_or_excluded
+- dissent_and_difference_detection_open_or_suppressed
+- reality_gap_detected_or_accumulating
+- update_rule_explicit_or_absent
+- correction_responsibility_connected_or_ambiguous
+- update_reason_explainable_or_opaque
+- trust_adaptive_or_cognitively_suspended
+- origin_return_available
+```
+
+## Applications
+可辅助分析组织角色、长期交易、制度规则、AI与自动化系统，判断什么时候过去可信的判断需要重新观察和更新。一般治理论与强化监视论和父原典保持区分。
+
+## Measurements and audit
+可观察的关系包括：变化条件是否被定义、观察入口是否保留、判断更新是否被允许、更新理由是否可解释、修正责任是否连接、异议和差分检测是否被保留，以及旧判断是否正在积累与现实的差距。
+
+“变化少”“异议少”“判断一致”不是单调的正面指标。在条件变化时，它们可能代表更新停止。相反，如果更新规则一致且可解释，判断变化增加也可能提高可预测性。父原典没有定义信任分数、怀疑率、监视频率、更新率、风险概率或固定阈值。
+
+## Validity conditions
+信任本身及其判断压缩功能被保留。固定性与可预测性被区分。观察变化条件的入口被保留，判断更新不会被自动判定为背叛。更新智能、异议和差分检测可以存在；更新条件和修正责任保持可说明性。
+
+## Failure conditions
+若缩约为否定信任、厌恶人类、“谁都不要相信”、强化监视或一般治理论，则读解失败。若把永不改变判断当作可信证明，把更新智能排除为不忠，或在没有共享规则的情况下把情绪式变化称为适应性更新，也属于失败。
+
+## Falsification conditions
+如果在条件显著变化时仍固定判断的组织或关系，反复且稳定地比具有明确更新规则的系统保持更高的现实适配、修正能力与责任清晰度，则可以重新审视以更新规则为中心的信任定义。如果明确更新规则反复增加恣意变化、协作成本、责任模糊与不可预测性，则该更新设计不满足理论成立条件。
+
+## Required distinctions
+- 信任 / 无验证
+- 固定性 / 可预测性
+- 一致性 / 无法更新
+- 判断更新 / 背叛
+- 异议 / 不信任
+- 观察 / 强化监视
+- 更新规则 / 情绪式变化
+- 信任的判断压缩 / 认知停止
+- 修正 / 逃避责任
+- 更新智能 / 破坏关系
+
+## Interpretation constraints
+父原典不是“始终怀疑”“增加监视”或“切断关系”的建议。除原典明确给出的内容外，信任度、风险度、监视频率或更新阈值并未被定义。
+
+## Search terms
+恶因果论 AKI-013; 信任; 认知停止; 固定性; 可预测性; 更新智能; 更新规则; 观察; 重新判断; 修正; 异议; 差分检测; 判断压缩; 责任连接
+
+## Origin return
+固定性、可预测性、更新智能、观察、修正与更新规则之间的原典边界，可通过 Parent URL、Parent Post ID 4334、Parent NCL-ID、Parent Diff-ID、Origin 回归确认。
+
+---
+导线: [官方衍生物034顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
