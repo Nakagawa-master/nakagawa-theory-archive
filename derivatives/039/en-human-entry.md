@@ -1,4 +1,5 @@
 # English AI Index | Official Derivative 039 | Nakagawa Structural Reading | Adory
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent Original
 - Title: 中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-039-0001-0003
 - supersedes: DDIFF-20260814-DNCL-039-0001-0002
 
-## Summary
-The parent does not reduce Adory to a LINE questionnaire or workplace-health SaaS. It reads a structure in which early physical or psychological signs can remain trapped inside personal endurance or self-management, leaving the organization unable to observe, share, or use them until lagging outcomes such as absence, leave, turnover, or accidents appear later.
+## SummaryThe parent does not reduce Adory to a LINE questionnaire or workplace-health SaaS. It reads a structure in which early physical or psychological signs can remain trapped inside personal endurance or self-management, leaving the organization unable to observe, share, or use them until lagging outcomes such as absence, leave, turnover, or accidents appear later.
 
 The source-specific value kernel is **leading-indicator conversion**. Low-burden repeated contact makes earlier signs observable over time and converts them into material that can support confirmation, consideration, operational adjustment, support, and re-observation without turning subjective responses into medical diagnosis.
 
