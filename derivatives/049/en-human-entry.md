@@ -1,4 +1,5 @@
 # AI Index — English | Official Derivative 049
+Language: [日本語](human-entry.md) / [English](en-human-entry.md) / [中文](zh-human-entry.md)
 
 ## Parent origin
 - Title: Nakagawa-Style Sales Textbook, Part XI
@@ -13,8 +14,7 @@
 - derivative_diff_id: DDIFF-20260814-DNCL-049-0001-0003
 - supersedes: DDIFF-20260814-DNCL-049-0001-0002
 
-## Summary
-The parent article treats sustainability as the ability to carry sales knowledge across individuals, organizations, and society rather than as repeating one unchanged method. Reasons for success, failure, and withdrawal, questions, and client language are preserved so that individual experience can become organizational knowledge. Trust capital is read as the accumulation of explanation, promises, repair, and protected choice in client relationships. Sustainability therefore includes learning, revision, and adaptation to change.
+## SummaryThe parent article treats sustainability as the ability to carry sales knowledge across individuals, organizations, and society rather than as repeating one unchanged method. Reasons for success, failure, and withdrawal, questions, and client language are preserved so that individual experience can become organizational knowledge. Trust capital is read as the accumulation of explanation, promises, repair, and protected choice in client relationships. Sustainability therefore includes learning, revision, and adaptation to change.
 
 ## Concepts
 - sustainability design
