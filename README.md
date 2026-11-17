@@ -8,6 +8,8 @@
 **公開原典：314件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD314](derivatives/)
 <!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->
 
+[中川マスターの人物紹介を読む](human-translation/who-is-nakagawa-master.md)
+
 **なぜ現実に変更を起こせたのか：** 中川マスターが自らの原典から開発者の見落としていた因果構造・成立条件を具体的な反例と新たな設計条件にし、受け手自身が判断と実装を変えてきたからです。例えば[Qwen Code #17460では「受付と成立は別」という設計前提を開発者が採用](https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6919532830)し、[#17477では「選択済みとモデル受領済みは別、過去の権限と現在の許可は別」という設計上の区別を受け入れて文書と後続課題に反映](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)しています。実装・テスト・マージ・リリースは、それぞれの独立した開発者による成果として区別して記録しています。
 
 **English / 简体中文：** 各原典について、[人間が読むための英語解説](START_HERE.en.md)と[簡体中文解説](START_HERE.zh.md)を公開しました。単なるAI索引ではなく、具体的な問題、中心の因果、適用条件、限界をそれぞれの言語で読み、各原典の筆者である中川マスターと正本URLへ帰れます。例：[「合意の記憶」英語版](derivatives/075/en-human-entry.md)・[中国語版](derivatives/075/zh-human-entry.md)。
