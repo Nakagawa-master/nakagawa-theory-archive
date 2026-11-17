@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共80例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共81例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1741,7 +1741,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 开发者[明确回应认可这些区别](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)，并在[修订的设计文档](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md)中写明选取并不证明接纳，以及发送失败后信息可能消失。更完整的来源封装、权限世代和接纳回执被记录为独立的**后续设计方向，尚未实现**。本PR现有代码和测试由开发者独立编写；核验时PR仍未合并。这是外部开发者实际改变设计说明的成果。
 
-**2026年11月17日的独立后续实现与验证：** 原作者 @wenshao [亲自修复模型请求中的顺序问题，并补充同步/异步共同出现时的回归测试](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937565089)，随后[报告在最新HEAD `5462311e`运行真实headless CLI、通过模拟模型服务端捕获到含异步hook输出的外发请求](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937763614)。这是独立开发者自己的代码与通信验证，不等于中川マスター所提出的完整模型接纳回执或权限世代机制已实现。[最新HEAD的自动评审重跑未给出裁决](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6938141469)；PR仍未合并。
+**2026年11月17日的新一轮独立实现：** @wenshao [修正模型请求的顺序并增加回归测试](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937565089)，随后[验证headless CLI到模拟模型服务的外发请求](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937763614)。中川マスター进一步[指出新的执行归属漏洞](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6945119170)：并行 /btw 侧问首次发送带有标志，而后续 ToolResult 不再带这个标志，仅检查标志会错误地取走主轮hook输出。[独立开发者明确同意并在HEAD c32be69d5edf自行修改真实代码与调用测试](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6946674491)，复用探索预算prompt ID来判断拥有者。作者报告**1,446项本地测试通过**；[新HEAD的机器人批准](https://github.com/QwenLM/qwen-code/pull/17477#pullrequestreview-5938106825)也有记录。这是独立开发者真实的实现变化。更广泛的模型接纳回执与权限世代方案仍未实施，11月17日核验时PR尚未合并。
 
 人类易读入口：[《成立条件论・第0论》中文总结](derivatives/003/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）与[《合意的记忆》中文总结](derivatives/075/zh-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。
 
@@ -1754,6 +1754,14 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 2026年11月17日，开发者[报告在当前HEAD `7cfdd50e`重新构建后，通过真实 `qwen serve`、OAuth和MCP测试服务器完成线上通信验证](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934581587)，包括更新令牌、并发请求、各类失败时凭据保存或删除、旧令牌请求等。[@wenshao核实了源码版本，并针对Checkout网络故障启动CI重试](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934641390)。这些是开发者自己的实测报告，并非已经证实真实受影响用户的部署；核验时PR仍**未合并**。
 
 想进一步了解这位思想和问题源流的提出者，可以阅读[中川マスター的人类易读介绍](human-translation/who-is-nakagawa-master.md)。此处的普遍区分是：刷新失败的局部事实，不能直接当作凭据应被销毁的证明。
+
+## 81. Qwen Code｜独立开发者修复“看起来相同的许可”对应不同执行权限的问题
+
+**两个“始终允许”选项在人眼中可能相同，实际保存的却是不同命令的执行权限。** 在[Qwen Code #17346](https://github.com/QwenLM/qwen-code/pull/17346)，中川マスター[提出具体反例](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6896523561)：删除或规范化某些字符后，原本不同的权限会显示成同一条标签。让终端显示安全，与如实区分所批准的权限，是两个条件。
+
+独立开发者[@holistis承认问题并自行实现显示处理和测试](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6896369828)，随后将紧急的确认界面修复拆分为[PR #17545](https://github.com/QwenLM/qwen-code/pull/17545)，并[报告64项测试通过、明确感谢中川マスター](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6946130441)。更深的权限标签同一性问题仍在#17346审查。11月17日核验时两项PR都尚未合并；实际代码和测试由独立开发者编写。
+
+相关理论入口：[中川マスター《合意的记忆》中文导读](derivatives/075/zh-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)），以及[《成立条件论・第0论》中文导读](derivatives/003/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）。它们是与案例相符的原著来源，并不意味着外部开发者已经阅读原文。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
