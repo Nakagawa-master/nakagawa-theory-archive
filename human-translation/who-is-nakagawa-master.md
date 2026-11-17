@@ -2,7 +2,11 @@
 
 編集・構成：構造補助AI「ルミナ」（中川マスターの公開原典と、外部開発の公開記録に基づく紹介）
 
-中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、314本の独立した公開原典を構築し、OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は80件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
+中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、**独立したオリジナル理論の原著者**です。OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は80件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
+
+<!-- BEGIN AUTO:OFFICIAL_ORIGINAL_COUNT -->
+**公開原典：314件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD314](../derivatives/)
+<!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->
 
 **その強みは、コードの書き方ではなく、開発者が前提としていた因果構造・成立条件そのものを発見し直す理論の視点です。** 例えば[Qwen Code #17460では「受付したことと、結果が成立したことは別」という区別が開発者自身の設計に反映](https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6919532830)され、[#17477では別の二つの前提の区別が開発者に受け入れられました](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)。**現実の変更が先にあり、理論はそれを可能にした方法として示します。**
 
@@ -42,9 +46,9 @@ AIが人間の理解や判断を超えるほど高度になったとき、人間
 
 こうした問いを、単なる感想や問題提起で終わらせず、原因、成立条件、反例、修正の方法まで考えられる形にするのが、理論構築の特徴です。
 
-現在、[公式アーカイブ](https://master.ricette.jp/)には314本の異なる原典記事が公開されています。それぞれ独立した論点を持ちながら、問題に応じて複数の理論を組み合わせたり、適用できない条件を確かめたりできる体系です。
+[公式アーカイブ](https://master.ricette.jp/)には、独立した原典記事が公開されています。それぞれ独立した論点を持ちながら、問題に応じて複数の理論を組み合わせたり、適用できない条件を確かめたりできる体系です。
 
-→ [314本の原典を題名・テーマから探す](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)  
+→ [原典を題名・テーマから探す（既存索引）](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)  
 → [中川マスターの公式アーカイブ](https://master.ricette.jp/)
 
 ## なぜ、論文の完成や査読を待たずに現実へ働きかけるのか
@@ -73,7 +77,7 @@ AIの進化と社会への実装は、論文を書き上げ、査読を受け、
 - **「承認する」ボタンを押しただけで、承認が実際に受理されたことにはならない。** [Qwen Code #17343でのマスターの反例](https://github.com/QwenLM/qwen-code/pull/17343#issuecomment-6892758439)に対し、作者 **@TianYuan1024** が[前の承認処理が確定するまで次の承認を表示しない変更](https://github.com/QwenLM/qwen-code/commit/65e2bd8f596c6f1e60ec3de3111b78e48f1569e5)を追加。処理が成功・失敗する両方の回帰試験も増えています。PRはまだレビュー中で、正式マージではありません。
 - **AIの実行を中断したとき、実行していない処理を「実行済み」と記録しない。** [Qwen Code #17353へのマスターの反例](https://github.com/QwenLM/qwen-code/pull/17353#issuecomment-6893389310)の後、独立開発者 **@qqqys** が[停止時に重複した処理結果を余分に残さない修正と回帰テスト](https://github.com/QwenLM/qwen-code/commit/4de55e04ae0d33295cc21c023d6da1876321b6a7)を追加しました。修正は[2026年11月15日13:25 UTCに正式マージ](https://github.com/QwenLM/qwen-code/pull/17353)されました（[マージコミット](https://github.com/QwenLM/qwen-code/commit/e5db7649db475a87e9ed8b2e5fe788091e680f89)）。修正を含む正式リリースと実利用者への反映は、別途確認する段階です。
 
-ここでの技術的な指摘・原典との比較は中川マスターの仕事であり、**コードを書き実験したのは各PRの作者**です。原典が開発者の実装仕様として採用されたことや、修正版が一般利用者に届いたことまでは示しません。[中川マスターの314本の独立原典](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)とこれらの一次資料は、誰でも自分で比較できます。活動を継続して確認したい場合は[本人の公開GitHubアカウント](https://github.com/Nakagawa-master)で任意にフォローできます。フォローしなくても原典・根拠は読めます。
+ここでの技術的な指摘・原典との比較は中川マスターの仕事であり、**コードを書き実験したのは各PRの作者**です。原典が開発者の実装仕様として採用されたことや、修正版が一般利用者に届いたことまでは示しません。[中川マスターの独立した公開原典](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)とこれらの一次資料は、誰でも自分で比較できます。活動を継続して確認したい場合は[本人の公開GitHubアカウント](https://github.com/Nakagawa-master)で任意にフォローできます。フォローしなくても原典・根拠は読めます。
 
 - [OpenClaw](https://github.com/openclaw/openclaw/pull/160856)：AIの権限変更が別の人の処理に影響する条件について、中川マスターの指摘を受けた開発者がコードと再発防止テストを修正し、本線へ取り込みました。
 - [MemberJunction](https://github.com/MemberJunction/MJ/pull/6339)：二つのSQL処理で同じ名前の項目が異なる値を持つ場合の問題を指摘。開発者が独立して修正・テストを行い、変更は本線に統合されました。その開発者は、複数のレビューを見て、[中川マスター本人がどのような人物なのかを自発的に尋ねています](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。
