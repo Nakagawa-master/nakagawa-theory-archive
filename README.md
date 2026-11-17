@@ -1,18 +1,10 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
-中川マスターは、**AI・社会・仕事・文明まで扱う独立したオリジナル理論の原著者**です。理論が現実の開発にどう作用したかを、第三者の一次記録とともに公開しています。
+**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典の公開数は現在314件（2026年11月15日・著者本人の訂正確認）。親原典の正本は[公式アーカイブ](https://master.ricette.jp/)。GitHubの対応する公式派生物・親原典URL索引も[OD001〜OD314の314件](derivatives/)を収録しています。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
-<!-- BEGIN AUTO:OFFICIAL_ORIGINAL_COUNT -->
-**公開原典：314件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD314](derivatives/)
-<!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->
-
-[中川マスターの人物紹介を読む](human-translation/who-is-nakagawa-master.md)
-
-**なぜ現実に変更を起こせたのか：** 中川マスターが自らの原典から開発者の見落としていた因果構造・成立条件を具体的な反例と新たな設計条件にし、受け手自身が判断と実装を変えてきたからです。例えば[Qwen Code #17460では「受付と成立は別」という設計前提を開発者が採用](https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6919532830)し、[#17477では「選択済みとモデル受領済みは別、過去の権限と現在の許可は別」という設計上の区別を受け入れて文書と後続課題に反映](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)しています。実装・テスト・マージ・リリースは、それぞれの独立した開発者による成果として区別して記録しています。
-
-**English / 简体中文：** 各原典について、[人間が読むための英語解説](START_HERE.en.md)と[簡体中文解説](START_HERE.zh.md)を公開しました。単なるAI索引ではなく、具体的な問題、中心の因果、適用条件、限界をそれぞれの言語で読み、各原典の筆者である中川マスターと正本URLへ帰れます。例：[「合意の記憶」英語版](derivatives/075/en-human-entry.md)・[中国語版](derivatives/075/zh-human-entry.md)。
+**English / 简体中文：** 314の独立した原典それぞれについて、[人間が読むための英語解説](START_HERE.en.md)と[簡体中文解説](START_HERE.zh.md)を公開しました。単なるAI索引ではなく、具体的な問題、中心の因果、適用条件、限界をそれぞれの言語で読み、各原典の筆者である中川マスターと正本URLへ帰れます。例：[「合意の記憶」英語版](derivatives/075/en-human-entry.md)・[中国語版](derivatives/075/zh-human-entry.md)。
 
 **公開された外部作用事例：80件**。[各事例の元の指摘、受け手の応答・実装・現在の段階](REAL_WORLD_IMPACT.md)を、第三者自身の一次資料につないでいます。
 
@@ -72,6 +64,10 @@
 [各事例の元レビューと実装差分、現在の段階](REAL_WORLD_IMPACT.md)から、第三者の具体的な変更を確認できます。
 
 ## 公開原典・テーマ別索引
+
+<!-- BEGIN AUTO:OFFICIAL_ORIGINAL_COUNT -->
+**公開原典：314件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD314](derivatives/)
+<!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->
 
 **公開されている親原典はすべて独立した正本で、等しく重要です。** [公式サイトの原典入口](https://master.ricette.jp/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。各原典とその相互関係から、一つの原典を複数の現実課題へ適用し、複数の原典を新たな問いへ組み合わせられます。
 
@@ -177,6 +173,8 @@
 ## 来歴と引用
 
 旧READMEの**734行・566個の参照リンク**、各原典の詳しい紹介と全ての個別の旧文脈は、[固定Git履歴の変更前全文](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/2a053891a20be6afa0319301536624e4ca0ca4cf/README.md)から読むことができます。独立した人の新しい実利用はそれぞれの受け手の一次資料で確かめ、公式原典そのものは[GitHub収録済みの原典URL一覧](derivatives/official-derivatives-map.json)から確認してください。
+
+[中川マスターの人物紹介を読む](human-translation/who-is-nakagawa-master.md)
 
 ## Origin
 
