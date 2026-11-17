@@ -1873,7 +1873,7 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 元の機能は別の開発者 **@qqqys** が独立して制作しています。その後の実装では、指定したworkspaceを実際の正規パス・runtime世代に結びつけ、名前が同じでも実行先が変われば再承認を要求し、以前のtool-wide許可が新しい実行先へ自動拡張されないようにしました。[@wenshaoの最終HEADでの独立レビュー](https://github.com/QwenLM/qwen-code/pull/17454#pullrequestreview-5923182559)は関連する承認・再束縛の修正を確認し、計691件成功・失敗0件を記録しています。他のレビュアーや作者自身の判断・実装もこの成果に含まれます。
 
-このPRは**2026年11月16日16:22 UTCに[上流マージ](https://github.com/QwenLM/qwen-code/commit/1e455fd68a26acc0515e9b32f08d7a5634f54a13)**され、同日22:32 UTC公開の[Qwen Code v0.27.4 nightly](https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4-nightly.20261116.eb3a599ef3)へ実際に収録されました（リリース記録に#17454が掲載され、当該マージは配布ブランチの祖先です）。一方、正式安定版の含有、修正版をインストールした利用者の実作用、別人からの自発的なマスター本人の紹介は未確認です。マスターの先行指摘と実装の重要条件が一致することは確かめられますが、第三者の独立した発明・実装をマスター単独の制作とは扱いません。
+このPRは**2026年11月16日16:22 UTCに[上流マージ](https://github.com/QwenLM/qwen-code/commit/1e455fd68a26acc0515e9b32f08d7a5634f54a13)**され、同日22:32 UTC公開の[Qwen Code v0.27.4 nightly](https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4-nightly.20261116.eb3a599ef3)へ実際に収録されました（リリース記録に#17454が掲載され、当該マージは配布ブランチの祖先です）。**追加確認（2026年11月18日）：** [Qwen Code正式版 v0.28.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.0) は11月17日に公開され、[コミット祖先比較](https://github.com/QwenLM/qwen-code/compare/1e455fd68a26acc0515e9b32f08d7a5634f54a13...v0.28.0)で#17454のマージコミットを含むことを確認しました。nightlyに続き**正式安定版への収録も成立**しています。修正版をインストールした利用者の実作用、別人からの自発的なマスター本人の紹介は未確認です。マスターの先行指摘と実装の重要条件が一致することは確かめられますが、第三者の独立した発明・実装をマスター単独の制作とは扱いません。
 
 この違いを原典から考える入口は、[中川マスター「合意の記憶」](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)です。過去の合意という事実と、変更後の条件でも現在有効な権限であるかを区別する観点が対応します。これは原典との適合関係の提示であり、Qwenの独立開発者が原典本文を読んだという主張ではありません。[中川マスター本人とほかの原典](human-translation/who-is-nakagawa-master.md)も確認できます。
 
