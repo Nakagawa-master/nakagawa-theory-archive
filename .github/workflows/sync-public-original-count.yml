@@ -1,11 +1,17 @@
-name: Sync official original count to reader pages
+name: Sync original and public-impact counts to reader pages
 
 on:
   push:
     branches: [main]
     paths:
       - derivatives/official-derivatives-map.json
+      - REAL_WORLD_IMPACT.md
+      - REAL_WORLD_IMPACT.en.md
+      - REAL_WORLD_IMPACT.zh.md
+      - machine-discovery/external-effect-evidence-index-v1.json
+      - llms.txt
       - scripts/sync_public_original_count.py
+      - scripts/validate_impact_index.py
       - README.md
       - human-translation/who-is-nakagawa-master.md
       - .github/workflows/sync-public-original-count.yml
@@ -32,14 +38,18 @@ jobs:
           python-version: "3.12"
       - name: Regenerate reader-visible count from official map
         run: python scripts/sync_public_original_count.py
-      - name: Publish only changed reader pages
+      - name: Regenerate external-impact case count from verified numbered cases
+        run: python scripts/validate_impact_index.py --sync
+      - name: Publish only numeric count changes to reader pages
         run: |
-          if ! git diff --quiet -- README.md human-translation/who-is-nakagawa-master.md; then
+          if ! git diff --quiet -- README.md human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md human-translation/who-is-nakagawa-master.md
-            git commit -m "docs: sync official original counts from authoritative map"
+            git add README.md human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt
+            git commit -m "docs: sync source-derived original and public-impact counts"
             git push origin HEAD:main
           fi
-      - name: Verify both reader pages match official source
+      - name: Verify reader original counts match canonical map
         run: python scripts/sync_public_original_count.py --check
+      - name: Verify public-impact counts match numbered case sections
+        run: python scripts/validate_impact_index.py
