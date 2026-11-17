@@ -1883,6 +1883,8 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 開発者は[マスター本人への返信で、この区別を正しいと明確に認め](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)、[更新した設計文書](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md)にも「選択して取り出した」事実と「モデルが受領した」事実を区別して記録しました。マスターが提案した発生元・権限世代・受領記録を含む広い仕組みは別の設計方向として認知されましたが、**まだ実装されていません**。現行のコードとテストは独立開発者自身の仕事で、PRは確認時点で未マージです。
 
+**11月17日の後続実装・検証：** 原実装者 @wenshao は[レビューで指摘されたモデル入力順序を自ら修正し、順序・同時入力の回帰テストを追加](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937565089)。さらに最新HEAD `5462311e`について、[実際のheadless CLIから模擬モデルサーバーへ送信されたリクエストで非同期hook出力の到達を確認](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937763614)したと報告しました。これは作者自身の追加実装と送信経路試験であり、マスターが提案した「モデルによる受領の証跡」や「権限世代」の完全な実装ではありません。最新HEADへの[自動レビュー再実行は判定を返さず](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6938141469)、PRは未マージです。
+
 考え方の入口は中川マスターの[成立条件論・第0論／人間向け要約](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）、[合意の記憶／人間向け要約](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）です。
 
 ## 80. Qwen Code｜期限切れの認証情報を再送しない・有効な認証情報を誤削除しない：第三者開発者の実装と実機経路検証
