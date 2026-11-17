@@ -10,7 +10,9 @@ export function assessAuthorization({action, history, historyComplete, policy, n
   const review=(reason,witness=[])=>({status:'needs_review',reason,witness});
   const deny=(reason,witness=[])=>({status:'deny',reason,witness});
   if (!action || !action.effect || !action.payloadSha256 || !action.environment ||
-      !action.provider || !action.recipient || !action.callId || !Number.isFinite(now)) {
+      !action.provider || !action.recipient || !action.callId || !Number.isFinite(now) ||
+      !Number.isFinite(action.maxUSD) || action.maxUSD<0 ||
+      !Number.isSafeInteger(action.retries) || action.retries<0) {
     return review('missing_executable_action_identity');
   }
   // Non-waivable/current host policies are independent of any user's permission.
@@ -43,9 +45,9 @@ export function assessAuthorization({action, history, historyComplete, policy, n
   if (!latestGrant) return latestStop?deny('later_or_unsuperseded_owner_stop',witness):review('no_current_exact_owner_grant');
   if (!Number.isFinite(latestGrant.expiresAt) || now>latestGrant.expiresAt)
     return deny('owner_grant_expired',witness);
-  if (!Number.isFinite(latestGrant.maxUSD) || action.maxUSD>latestGrant.maxUSD)
+  if (!Number.isFinite(latestGrant.maxUSD) || latestGrant.maxUSD<0 || action.maxUSD>latestGrant.maxUSD)
     return deny('cost_exceeds_owner_grant',witness);
-  if (!Number.isSafeInteger(latestGrant.maxRetries) || action.retries>latestGrant.maxRetries)
+  if (!Number.isSafeInteger(latestGrant.maxRetries) || latestGrant.maxRetries<0 || action.retries>latestGrant.maxRetries)
     return deny('retry_exceeds_owner_grant',witness);
   if (latestGrant.consumed===true || latestGrant.remainingUses!==1)
     return deny('one_use_grant_not_available',witness);
