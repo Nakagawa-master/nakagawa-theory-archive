@@ -9,11 +9,6 @@
 
 **中川マスター本人の活動と原典を継続して読む：** [公開GitHubアカウント](https://github.com/Nakagawa-master)から、新しい実例と原典をたどり、必要に応じてフォローできます。実際の検証や反例は[第三者による検証・再利用の公開フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)で共有できます。
 
-
-
-
-
-
 - **[ChatGPTの記憶・文脈問題を報告した読者の判断変化](https://github.com/openai/codex/issues/61703#issuecomment-6915542007)** — 中川マスターが示した「事実の保存」「因果関係」「現在有効性」の区別を受け、報告者自身が問題の捉え方を更新しました。製品側の修正とは別の、実在する第三者の応答です。
 - **[Claude Code用「agent-design」スキルへの独立実装](https://github.com/kishibashi3/publications/pull/125)** — 別の著者が、中川マスターの指摘を取り入れた「自己権限の固定」を、承認モード・allowlist・認証情報から探せる章案内として自分のClaude Code向けスキルに実装・マージしました。Anthropic公式製品への採用という意味ではありません。
 - **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。**[公式リリース文書に `@Nakagawa-master` の名前を掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)**（掲載対象は[別件の #160136](https://github.com/openclaw/openclaw/pull/160136)）。さらに別の[#160856](https://github.com/openclaw/openclaw/pull/160856)では、指摘を報告元と明記した独立開発者が**回帰テスト49件成功・正式マージ**。
