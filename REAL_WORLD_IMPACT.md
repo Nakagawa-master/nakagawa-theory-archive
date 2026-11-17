@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は81件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は82件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**81の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**82の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1904,6 +1904,16 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 独立開発者 [@holistis は実際の欠落を認め、区別を保つ表示処理とテストを自ら実装](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6896369828)しました。その後、緊急の確認画面修正を[別PR #17545](https://github.com/QwenLM/qwen-code/pull/17545)へ分離し、[64件のテスト成功とマスターへの謝意を明記](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6946130441)。より深い権限ラベルの同一性問題は#17346で継続審査され、11月17日の確認時点で両PRは未マージです。実装者本人の著作と、マスターの構造的な指摘を区別します。
 
 中川マスターの関連原典：[『合意の記憶』人間向け説明](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）、[『成立条件論・第0論』人間向け説明](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）。これは適合する考え方の入口であり、外部開発者が原典を読んだという主張ではありません。
+
+## 82. Qwen Code｜「要求を受け付けた」と「意図した操作が成立した」を分ける設計が本線マージ
+
+**APIが要求を受理しても、その操作が正しい相手に対して実際に成立したとは限りません。** 中川マスターは[統一チャット設計PR #17460](https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6918059891)で、通信上の受理・結果の成立・結果不明時の再照合を区別すべきだと提案しました。画面の「完了」が局所的なAPI成功だけを示すなら、利用者が二重実行や誤った次の判断をしかねない、という設計前提の変更です。
+
+独立開発者 **@wenshao** は、その区別を後続の[PR #17520](https://github.com/QwenLM/qwen-code/pull/17520)で実装。Qwenのchat-coreに要求受理と結果成立の真理値表、未確定状態の保持とテストを追加しました。**2026年11月17日に上流へマージ**（[実際のマージコミット](https://github.com/QwenLM/qwen-code/commit/ac8588da2a9f213993f7fc61adf929de216967f8)）。コードとテストはQwen開発者自身の著作です。
+
+続いて中川マスターは[「結果を示す証拠は、今回のsession・turn・attempt・requestに属するのか」という別の前提](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6946613371)を提起。[独立レビュアー @yiliang114 は具体的な反例を実行・再現し、マスターの指摘を明記](https://github.com/QwenLM/qwen-code/pull/17520#pullrequestreview-5939308806)。[開発者自身の検証](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6948482799)も同じ不足を確認しました。ただし、**この証拠と操作対象の結び付けは、マージ済み#17520の実コードには未実装であり、後続アダプター工程に残っています**。成立した実装と、独立した人に認識された未解決の設計境界を混同しません。
+
+原著者の考え方：[成立条件論・第0論の人間向け説明](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）、[合意の記憶の人間向け説明](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。これらは読者への源流リンクであり、Qwen開発者が原典を読んだという主張ではありません。
 
 ## 公開された成果と、原典へ戻る道筋
 
