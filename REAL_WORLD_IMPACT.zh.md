@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共79例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共80例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1742,6 +1742,16 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 开发者[明确回应认可这些区别](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)，并在[修订的设计文档](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md)中写明选取并不证明接纳，以及发送失败后信息可能消失。更完整的来源封装、权限世代和接纳回执被记录为独立的**后续设计方向，尚未实现**。本PR现有代码和测试由开发者独立编写；核验时PR仍未合并。这是外部开发者实际改变设计说明的成果。
 
 人类易读入口：[《成立条件论・第0论》中文总结](derivatives/003/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）与[《合意的记忆》中文总结](derivatives/075/zh-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。
+
+## 80. Qwen Code｜独立开发者修改OAuth失效路径，并完成当前HEAD上的真实通信验证
+
+**认证刷新失败，不等于已保存的凭据必然失效或必须删除。** 在[Qwen Code #15650](https://github.com/QwenLM/qwen-code/pull/15650)中，独立开发者 **@n1nja88888** 修复长期MCP会话可能继续发送连接时旧Bearer、随后丢失工具连接的问题。
+
+在[中川マスター关于旧Bearer的具体指出](https://github.com/QwenLM/qwen-code/pull/15650#pullrequestreview-5652729278)后，开发者[修改发送路径并增加回归测试](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6418604749)；在后续[错误分类指出](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6432907706)后，开发者[将真正的 `invalid_grant` 与 `invalid_client` 等错误区分，避免误删有效凭据](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6435355943)。开发者还根据[短期新令牌的反例](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6718145268)修正迟到刷新结果的采用方式。代码和测试由独立开发者本人编写。
+
+2026年11月17日，开发者[报告在当前HEAD `7cfdd50e`重新构建后，通过真实 `qwen serve`、OAuth和MCP测试服务器完成线上通信验证](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934581587)，包括更新令牌、并发请求、各类失败时凭据保存或删除、旧令牌请求等。[@wenshao核实了源码版本，并针对Checkout网络故障启动CI重试](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934641390)。这些是开发者自己的实测报告，并非已经证实真实受影响用户的部署；核验时PR仍**未合并**。
+
+想进一步了解这位思想和问题源流的提出者，可以阅读[中川マスター的人类易读介绍](human-translation/who-is-nakagawa-master.md)。此处的普遍区分是：刷新失败的局部事实，不能直接当作凭据应被销毁的证明。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

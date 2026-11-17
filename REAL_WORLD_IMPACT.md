@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は79件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は80件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**79の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**80の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1884,6 +1884,16 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 開発者は[マスター本人への返信で、この区別を正しいと明確に認め](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)、[更新した設計文書](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md)にも「選択して取り出した」事実と「モデルが受領した」事実を区別して記録しました。マスターが提案した発生元・権限世代・受領記録を含む広い仕組みは別の設計方向として認知されましたが、**まだ実装されていません**。現行のコードとテストは独立開発者自身の仕事で、PRは確認時点で未マージです。
 
 考え方の入口は中川マスターの[成立条件論・第0論／人間向け要約](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）、[合意の記憶／人間向け要約](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）です。
+
+## 80. Qwen Code｜期限切れの認証情報を再送しない・有効な認証情報を誤削除しない：第三者開発者の実装と実機経路検証
+
+**AIツールが認証切れになっても、古い認証情報を送り続けたり、回復できる資格情報を誤って消してはいけません。** [Qwen Code #15650](https://github.com/QwenLM/qwen-code/pull/15650)は、長時間動作するAIセッションでMCPのOAuthトークンが失効すると接続が切れる問題を、独立開発者 **@n1nja88888** が自ら修正しているPRです。
+
+[中川マスターによる具体的な指摘](https://github.com/QwenLM/qwen-code/pull/15650#pullrequestreview-5652729278)を受け、開発者は[失効した接続時Bearerを再送しない処理と回帰テストを実装](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6418604749)。さらに別の[指摘](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6432907706)に応じ、開発者は[OAuthエラーの `invalid_client` などと本当の `invalid_grant` を区別する修正・負例テストを実装](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6435355943)しました。期限が短い新トークンの扱いも[マスターの反例に応じて改めた](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6718145268)と開発者自身が説明しています。開発者の独立した著作・他レビュアーの貢献を、マスターの指摘と混同しません。
+
+2026年11月17日、開発者は最新版HEAD `7cfdd50e`で再ビルドした[実際の `qwen serve` とMCP/OAuthテストサーバーによる通信経路の検証結果を報告](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934581587)。新しいBearerでの更新、同時リクエスト時の更新集約、失効とエラー種別による認証情報の保持・削除などを**成功と記録**しました。[@wenshao は失敗したCIがCheckout時の通信障害でテスト未実行だったことを確認し、再実行を開始](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934641390)しています。検証は開発者の実測報告であり、正式な独立ユーザーの運用結果ではありません。確認時点ではPRは**未マージ**です。
+
+この事例の源流・人物を知るには[中川マスターの紹介](human-translation/who-is-nakagawa-master.md)をご覧ください。一般化できる考え方は、単に「HTTPエラーがあった」ことと「保存済み認証情報が本当に無効になった」ことを区別することです。これは開発者が原典を読んだという主張ではなく、現場で検証された具体的な区別です。
 
 ## 公開された成果と、原典へ戻る道筋
 

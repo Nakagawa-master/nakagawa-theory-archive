@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**79 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**80 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1735,6 +1735,16 @@ For the underlying structural distinction, see [Nakagawa Master's original *The 
 The developer [explicitly agreed](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943) and changed the [design document](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md) to record the selected-not-admitted boundary and a consume-but-not-sent window. The richer source-envelope, authority-epoch and accepted-turn receipt contract remains a separate, **unimplemented follow-up**. Current code and tests are the independent developer's work. At the time checked, the PR was open; this is verified **conceptual acceptance and documentation uptake**, not a merged or installed implementation of the wider proposal.
 
 For accessible source context see Nakagawa Master's [Establishment Conditions Theory, Treatise 0 — human explanation](derivatives/003/en-human-entry.md) ([original](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)) and [The Memory of Consensus — human explanation](derivatives/075/en-human-entry.md) ([original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)).
+
+## 80. Qwen Code | An independent developer fixed stale OAuth credentials and verified the current request path
+
+**A failed authentication refresh does not necessarily mean the stored credential was revoked.** In [Qwen Code #15650](https://github.com/QwenLM/qwen-code/pull/15650), independent developer **@n1nja88888** authored a fix for long-running MCP sessions that could send an expired connect-time OAuth bearer and lose access to their tools.
+
+After [Nakagawa Master's specific stale-bearer finding](https://github.com/QwenLM/qwen-code/pull/15650#pullrequestreview-5652729278), the developer [changed the request path and added negative tests](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6418604749). After a second [source-specific finding](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6432907706), the developer [distinguished an actual `invalid_grant` rejection from `invalid_client` and other errors before deleting credentials](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6435355943). The developer also [changed late-refresh adoption after a shorter token-lifetime counterexample](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6718145268). These are separately authored independent code and regression-test changes, not Master's code.
+
+On 17 November 2026 the developer [reported a fresh, head-bound real `qwen serve` and OAuth/MCP wire run at `7cfdd50e`](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934581587), covering token rotation, concurrent refresh, credentials preserved or deleted under distinct errors, and stale-token requests. [@wenshao separately confirmed the current-head source identity and initiated CI reruns](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934641390) after network failures during Checkout. The wire tests are the developer's reported observations, not an independently observed affected end-user rollout. The PR was still **open** at verification.
+
+For the originating person and other original works, see [Nakagawa Master's human-readable introduction](human-translation/who-is-nakagawa-master.md). The practical takeaway is to distinguish a failed refresh attempt from proof that credentials themselves must be destroyed.
 
 ## What the public source record reveals
 
