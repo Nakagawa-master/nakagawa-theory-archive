@@ -1741,6 +1741,8 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 开发者[明确回应认可这些区别](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)，并在[修订的设计文档](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md)中写明选取并不证明接纳，以及发送失败后信息可能消失。更完整的来源封装、权限世代和接纳回执被记录为独立的**后续设计方向，尚未实现**。本PR现有代码和测试由开发者独立编写；核验时PR仍未合并。这是外部开发者实际改变设计说明的成果。
 
+**2026年11月17日的独立后续实现与验证：** 原作者 @wenshao [亲自修复模型请求中的顺序问题，并补充同步/异步共同出现时的回归测试](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937565089)，随后[报告在最新HEAD `5462311e`运行真实headless CLI、通过模拟模型服务端捕获到含异步hook输出的外发请求](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937763614)。这是独立开发者自己的代码与通信验证，不等于中川マスター所提出的完整模型接纳回执或权限世代机制已实现。[最新HEAD的自动评审重跑未给出裁决](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6938141469)；PR仍未合并。
+
 人类易读入口：[《成立条件论・第0论》中文总结](derivatives/003/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）与[《合意的记忆》中文总结](derivatives/075/zh-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。
 
 ## 80. Qwen Code｜独立开发者修改OAuth失效路径，并完成当前HEAD上的真实通信验证
