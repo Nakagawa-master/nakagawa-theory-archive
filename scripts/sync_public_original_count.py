@@ -64,7 +64,7 @@ def update_content(original: str, replacement: str) -> str:
 
 
 def update_inline_number(body: str, path: Path, count: int) -> str:
-    pattern = INLINE_FIELDS[path]
+    pattern = INLINE_FIELDS[path][0]
     matches = list(re.finditer(pattern, body))
     if len(matches) != 1:
         raise ValueError(
