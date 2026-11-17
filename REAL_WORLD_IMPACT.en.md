@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**78 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**79 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1727,6 +1727,14 @@ The original feature and its subsequent fixes were implemented by independent de
 The PR [merged upstream at 16:22 UTC on 16 November 2026](https://github.com/QwenLM/qwen-code/commit/1e455fd68a26acc0515e9b32f08d7a5634f54a13). Its merge commit is included in the separately published [Qwen Code v0.27.4 nightly release](https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4-nightly.20261116.eb3a599ef3) of 22:32 UTC that day; the release notes also name #17454. A stable containing release, an affected user's installed outcome and a further independent person-to-person relay have not been established.
 
 For the underlying structural distinction, see [Nakagawa Master's original *The Memory of Consensus*](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/): remembering that an agreement existed and proving that it currently authorizes a changed action are different questions. This is a source-fitting interpretation, **not a claim that the independent Qwen author read that original**. [Explore the author's other original work](human-translation/who-is-nakagawa-master.md).
+
+## 79. Qwen Code | Independent developer accepted and documented a new hook-delivery premise
+
+**Removing a hook event from the queue does not prove the model received it.** While independently fixing real background-hook delivery in [Qwen Code #17477](https://github.com/QwenLM/qwen-code/pull/17477), developer @wenshao received [Nakagawa Master's proposal](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6920977819): distinguish selection from model-turn admission, and the producing hook's original authority from current user authorization.
+
+The developer [explicitly agreed](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943) and changed the [design document](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md) to record the selected-not-admitted boundary and a consume-but-not-sent window. The richer source-envelope, authority-epoch and accepted-turn receipt contract remains a separate, **unimplemented follow-up**. Current code and tests are the independent developer's work. At the time checked, the PR was open; this is verified **conceptual acceptance and documentation uptake**, not a merged or installed implementation of the wider proposal.
+
+For accessible source context see Nakagawa Master's [Establishment Conditions Theory, Treatise 0 — human explanation](derivatives/003/en-human-entry.md) ([original](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)) and [The Memory of Consensus — human explanation](derivatives/075/en-human-entry.md) ([original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)).
 
 ## What the public source record reveals
 

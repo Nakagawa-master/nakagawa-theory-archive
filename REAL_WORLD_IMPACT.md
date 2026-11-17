@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は78件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は79件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**78の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**79の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1876,6 +1876,14 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 このPRは**2026年11月16日16:22 UTCに[上流マージ](https://github.com/QwenLM/qwen-code/commit/1e455fd68a26acc0515e9b32f08d7a5634f54a13)**され、同日22:32 UTC公開の[Qwen Code v0.27.4 nightly](https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4-nightly.20261116.eb3a599ef3)へ実際に収録されました（リリース記録に#17454が掲載され、当該マージは配布ブランチの祖先です）。一方、正式安定版の含有、修正版をインストールした利用者の実作用、別人からの自発的なマスター本人の紹介は未確認です。マスターの先行指摘と実装の重要条件が一致することは確かめられますが、第三者の独立した発明・実装をマスター単独の制作とは扱いません。
 
 この違いを原典から考える入口は、[中川マスター「合意の記憶」](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)です。過去の合意という事実と、変更後の条件でも現在有効な権限であるかを区別する観点が対応します。これは原典との適合関係の提示であり、Qwenの独立開発者が原典本文を読んだという主張ではありません。[中川マスター本人とほかの原典](human-translation/who-is-nakagawa-master.md)も確認できます。
+
+## 79. Qwen Code｜hook出力を「取り出した」と「モデルが受け入れた」は違う：独立開発者が前提を受容
+
+**送信予定の情報を取り出しただけでは、AIモデルに届いた証拠にはなりません。** [Qwen Code #17477](https://github.com/QwenLM/qwen-code/pull/17477)では、独立開発者 @wenshao が背景hookの出力をモデルへ届ける実装を進めています。中川マスターは[具体的な提案](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6920977819)で、取り出しと受領の違い、出力発生時の権限と後の実行時の権限の違いを示しました。
+
+開発者は[マスター本人への返信で、この区別を正しいと明確に認め](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)、[更新した設計文書](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md)にも「選択して取り出した」事実と「モデルが受領した」事実を区別して記録しました。マスターが提案した発生元・権限世代・受領記録を含む広い仕組みは別の設計方向として認知されましたが、**まだ実装されていません**。現行のコードとテストは独立開発者自身の仕事で、PRは確認時点で未マージです。
+
+考え方の入口は中川マスターの[成立条件論・第0論／人間向け要約](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）、[合意の記憶／人間向け要約](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）です。
 
 ## 公開された成果と、原典へ戻る道筋
 

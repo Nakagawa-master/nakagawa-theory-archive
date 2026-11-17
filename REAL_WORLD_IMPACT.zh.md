@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共78例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共79例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1734,6 +1734,14 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 该PR于**2026年11月16日16:22 UTC[正式合并上游](https://github.com/QwenLM/qwen-code/commit/1e455fd68a26acc0515e9b32f08d7a5634f54a13)**，并被同日22:32 UTC发布的[Qwen Code v0.27.4 nightly](https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4-nightly.20261116.eb3a599ef3)实际收录；发布说明也列有#17454。尚未确认相应稳定版本、受影响用户实际安装并获得改善、或另一位独立人士主动传播对中川マスター本人的认识。
 
 相关的原典结构可从[中川マスター《合意的记忆》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)理解：保留过去已同意的事实，与判断在执行条件变化后授权是否仍有效，是两个不同问题。这是原典与实际工程问题的对应关系，并**非声称Qwen开发者已经阅读原典全文**。[进一步了解中川マスター及其其他原创理论](human-translation/who-is-nakagawa-master.md)。
+
+## 79. Qwen Code｜独立开发者认可hook事件取出与模型接纳并非同一件事
+
+**把后台hook信息从队列中取出，并不等于AI模型已经收到。** 独立开发者 @wenshao 在[Qwen Code #17477](https://github.com/QwenLM/qwen-code/pull/17477)修复真实的后台hook输出丢失问题时，中川マスター[提出](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6920977819)要区分信息取出与模型轮次接纳，以及事件产生时的权限与当前用户授权。
+
+开发者[明确回应认可这些区别](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)，并在[修订的设计文档](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md)中写明选取并不证明接纳，以及发送失败后信息可能消失。更完整的来源封装、权限世代和接纳回执被记录为独立的**后续设计方向，尚未实现**。本PR现有代码和测试由开发者独立编写；核验时PR仍未合并。这是外部开发者实际改变设计说明的成果。
+
+人类易读入口：[《成立条件论・第0论》中文总结](derivatives/003/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）与[《合意的记忆》中文总结](derivatives/075/zh-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
