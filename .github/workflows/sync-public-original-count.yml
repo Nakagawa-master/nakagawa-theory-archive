@@ -1,0 +1,45 @@
+name: Sync official original count to reader pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - derivatives/official-derivatives-map.json
+      - scripts/sync_public_original_count.py
+      - README.md
+      - human-translation/who-is-nakagawa-master.md
+      - .github/workflows/sync-public-original-count.yml
+  schedule:
+    - cron: "13 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-original-count-main
+  cancel-in-progress: false
+
+jobs:
+  update-reader-count:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate reader-visible count from official map
+        run: python scripts/sync_public_original_count.py
+      - name: Publish only changed reader pages
+        run: |
+          if ! git diff --quiet -- README.md human-translation/who-is-nakagawa-master.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md human-translation/who-is-nakagawa-master.md
+            git commit -m "docs: sync official original counts from authoritative map"
+            git push origin HEAD:main
+          fi
+      - name: Verify both reader pages match official source
+        run: python scripts/sync_public_original_count.py --check
