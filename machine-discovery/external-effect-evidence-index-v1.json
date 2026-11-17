@@ -4142,16 +4142,16 @@
         "required_lint_static": "success",
         "blocking_condition": "One current-HEAD human APPROVED (wenshao), second approval absent, and a CHANGES_REQUESTED by yiliang114 remains. Its optional-chain crash claim is contradicted by the continuous JavaScript optional-call semantics (Node control plus independent qqqys review). Four required contexts reported passed by the author, while separate Java managed-agent CI jobs failed. Reviewer/maintainer decisions and containing release are pending.",
         "independent_author_request": "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6645682376",
-      "source_checks_2026_11_08": {
-        "current_head": "33e286a24aefa59170007e28a8fe7d77e8ff15f3",
-        "human_approval": "https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5812361394",
-        "current_head_review_dispute": "https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5812448982",
-        "maintainer_author_decision_request": "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6721921096",
-        "other_ci_failure": "https://github.com/QwenLM/qwen-code/actions/runs/42375266794",
-        "outside_implementation": "Independently authored privacy repair plus delivery, ordering and cancel-receipt repairs; not an upstream merge.",
-        "native_merge": "NO",
-        "containing_release_or_installed_user": "UNKNOWN"
-      }
+        "source_checks_2026_11_08": {
+          "current_head": "33e286a24aefa59170007e28a8fe7d77e8ff15f3",
+          "human_approval": "https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5812361394",
+          "current_head_review_dispute": "https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5812448982",
+          "maintainer_author_decision_request": "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6721921096",
+          "other_ci_failure": "https://github.com/QwenLM/qwen-code/actions/runs/42375266794",
+          "outside_implementation": "Independently authored privacy repair plus delivery, ordering and cancel-receipt repairs; not an upstream merge.",
+          "native_merge": "NO",
+          "containing_release_or_installed_user": "UNKNOWN"
+        }
       },
       "current_stage": "independent_receiver_source_and_tests_OPEN_PR",
       "human_case": "REAL_WORLD_IMPACT.md#55",
@@ -4841,11 +4841,11 @@
       },
       "causal_boundary": "Master's contribution was a bounded source-predicted scenario and a pair of nonfit acceptance conditions; the independent maintainer-like PR author chose and implemented the event ID. The author reports real dev-server validation; the assistant did not independently execute that test. A different edit in the same commit on re-suspension metadata responds to a separate reviewer and is not attributed to Master.",
       "not_claimed": [
-          "actual installed external user affected_user_observation",
+        "actual installed external user affected_user_observation",
         "independent third party using the modified package",
         "unprompted reading or endorsement of Nakagawa original Parents by independent AI",
         "independently observed named-author recognition",
-          "affected installed user verified the originally failing execution after release"
+        "affected installed user verified the originally failing execution after release"
       ],
       "independent_separate_review": {
         "reviewer": "coderabbitai[bot]",
@@ -5403,7 +5403,18 @@
         "author_explanation": "https://github.com/QwenLM/qwen-code/issues/15597#issuecomment-6702935960",
         "tests": "Unit tests reported by PR author; actual user headless e2e command not re-run by author or assistant",
         "status": "OPEN at independent author HEAD e25ae750 on November 8, 2026; not merged or released; no actual affected-user post-fix saved-memory result",
-        "followup_2026_11_08": {"master_contribution_to_issue_lifecycle": "Master identified that Fixes #15597 would incorrectly auto-close a broader unresolved report on merge; implementer explicitly switched both references to Refs #15597, independent author acceptance.", "master_review": "https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025", "author_response": "https://github.com/QwenLM/qwen-code/pull/16522#issuecomment-6705340631", "separate_reviewers_not_master": "Different review entities detected snapshot Config vs live PermissionManager and malformed permission-rule mutant; those are not Master discoveries.", "independent_author_code_and_test": ["https://github.com/QwenLM/qwen-code/pull/16522#discussion_r4504381724", "https://github.com/QwenLM/qwen-code/pull/16522#discussion_r4504383963"], "author_reported_focused_tests": "34/34, without a real qwen -p installed end-to-end test; major reporter issue remains open.", "unknown": "original reporter after-merge retest, full remember/dream behavior, issue resolution, actual release and independent original-source reading."}
+        "followup_2026_11_08": {
+          "master_contribution_to_issue_lifecycle": "Master identified that Fixes #15597 would incorrectly auto-close a broader unresolved report on merge; implementer explicitly switched both references to Refs #15597, independent author acceptance.",
+          "master_review": "https://github.com/QwenLM/qwen-code/pull/16522#pullrequestreview-5811110025",
+          "author_response": "https://github.com/QwenLM/qwen-code/pull/16522#issuecomment-6705340631",
+          "separate_reviewers_not_master": "Different review entities detected snapshot Config vs live PermissionManager and malformed permission-rule mutant; those are not Master discoveries.",
+          "independent_author_code_and_test": [
+            "https://github.com/QwenLM/qwen-code/pull/16522#discussion_r4504381724",
+            "https://github.com/QwenLM/qwen-code/pull/16522#discussion_r4504383963"
+          ],
+          "author_reported_focused_tests": "34/34, without a real qwen -p installed end-to-end test; major reporter issue remains open.",
+          "unknown": "original reporter after-merge retest, full remember/dream behavior, issue resolution, actual release and independent original-source reading."
+        }
       },
       "conceptual_original_reading_paths": [
         {
@@ -5526,14 +5537,14 @@
         "human_approvals_current_head": 2,
         "ci_snapshot": "36 check-runs: 5 success, 5 queued, 26 skipped; this is not overall green. Qwen bot precheck requests a maintainer-triggered manual review step.",
         "review_gate": "https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6720313226",
-    "current_head_wire_evidence_gate": {
-      "observed_utc": "2026-11-08T13:52:55Z",
-      "external_maintainer_source": "https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6722337913",
-      "required": "pr-ui-verify PASS report explicitly bound to 61efc50b, supported by captured network requests or a real test run showing actual outbound OAuth Authorization header behavior and credential deletion behavior after refresh failure and re-authentication",
-      "status": "NOT_PRESENT_AT_THIS_SOURCE_CHECK",
-      "distinction": "Two human source approvals and older-head loopback evidence cannot substitute for a current-head wire-visible verification report. Current CI also queued; no merge.",
-      "safe_receipt": "Use non-secret synthetic test tokens, redacted request captures, same exact HEAD, and controls for fresh bearer, null/expired token, late shorter-lifetime adoption and re-authentication preserving newer credentials."
-    },
+        "current_head_wire_evidence_gate": {
+          "observed_utc": "2026-11-08T13:52:55Z",
+          "external_maintainer_source": "https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6722337913",
+          "required": "pr-ui-verify PASS report explicitly bound to 61efc50b, supported by captured network requests or a real test run showing actual outbound OAuth Authorization header behavior and credential deletion behavior after refresh failure and re-authentication",
+          "status": "NOT_PRESENT_AT_THIS_SOURCE_CHECK",
+          "distinction": "Two human source approvals and older-head loopback evidence cannot substitute for a current-head wire-visible verification report. Current CI also queued; no merge.",
+          "safe_receipt": "Use non-secret synthetic test tokens, redacted request captures, same exact HEAD, and controls for fresh bearer, null/expired token, late shorter-lifetime adoption and re-authentication preserving newer credentials."
+        },
         "release_gate": "Qwen Code and Qwen Desktop v0.27.0 were publicly released before this PR merge; they cannot be treated as containing this still-unmerged fix.",
         "installed_user_retest": "NOT_VERIFIED",
         "future_required_evidence": "Native merge; containing release with code ancestry; authorized original affected session's installed after-update same-session MCP tool continuity; distinct independent person-origin relay and separately chosen original Parent by unaffiliated AI."
@@ -5692,6 +5703,56 @@
       "autonomous_external_ai_original_corpus_choice": "NOT_VERIFIED",
       "person_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/who-is-nakagawa-master.md",
       "canonical_original_archive": "https://master.ricette.jp/"
+    },
+    {
+      "case_id": "qwen-17460-17520-unified-chat-admission-versus-outcome-merged",
+      "topic": "Chat UI transport admission is not proof of the intended operation's established outcome; a later witness also needs exact action-target provenance.",
+      "external_repository": "QwenLM/qwen-code",
+      "original_published_judgment": {
+        "author": "Nakagawa Master / 中川マスター (Keisuke Nakagawa)",
+        "source": "https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6918059891",
+        "type": "source-specific proposal in external developer design PR",
+        "distinction": "Separate backend acceptance, outcome evidence and unknown reconciliation in a common chat controller."
+      },
+      "independent_developer_design_decision": {
+        "actor": "wenshao",
+        "explicit_acceptance": "https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6918406337",
+        "confirmed_design_change": "https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6919532830",
+        "scope": "Slice-1 admission accepted/rejected/unknown and outcome established/unsettled/failed, not evidence that later witness-target binding was implemented."
+      },
+      "independently_authored_implementation": {
+        "author": "wenshao",
+        "pull_request": "https://github.com/QwenLM/qwen-code/pull/17520",
+        "merged_code": "https://github.com/QwenLM/qwen-code/blob/ac8588da2a9f213993f7fc61adf929de216967f8/packages/web-shell/client/chat-core/intent.ts",
+        "merged_contract": "https://github.com/QwenLM/qwen-code/blob/ac8588da2a9f213993f7fc61adf929de216967f8/packages/web-shell/client/chat-core/contract.ts",
+        "observed_change": "Separate accepted/unknown admission from settled/unsettled result; preserve unresolved operations and exact IntentTarget fields; independently authored tests accompany code."
+      },
+      "upstream_merge": {
+        "verified": true,
+        "time_utc": "2026-11-17T14:49:39Z",
+        "commit": "ac8588da2a9f213993f7fc61adf929de216967f8",
+        "commit_url": "https://github.com/QwenLM/qwen-code/commit/ac8588da2a9f213993f7fc61adf929de216967f8"
+      },
+      "distinct_outstanding_boundary": {
+        "master_later_source": "https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6946613371",
+        "independent_developer_reproduction": "https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6948482799",
+        "independent_reviewer": "https://github.com/QwenLM/qwen-code/pull/17520#pullrequestreview-5939308806",
+        "state": "An unbound outcome witness can be applied to another session/turn/attempt/request; reproduced and deferred to adapter slices, NOT implemented by the cited merge."
+      },
+      "original_causal_sources": [
+        "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+        "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"
+      ],
+      "person_aware_public_reading": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md",
+      "current_stage": "Independent developer explicitly accepted original-source design distinction, implemented it and merged code upstream; separate later witness-target refinement acknowledged but not implemented.",
+      "not_claimed": [
+        "developer read entire original theory text or endorsed the original corpus",
+        "later witness-target binding is already implemented",
+        "a stable containing package release has been verified",
+        "affected user installed this change or independently observed recovery",
+        "a separate unaffiliated human voluntarily credited Nakagawa Master as a person",
+        "unconnected AI independently chose the original corpus"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
