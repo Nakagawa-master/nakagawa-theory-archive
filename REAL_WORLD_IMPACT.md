@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は80件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は81件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**80の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**81の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1883,7 +1883,7 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 開発者は[マスター本人への返信で、この区別を正しいと明確に認め](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)、[更新した設計文書](https://github.com/QwenLM/qwen-code/blob/bb4094978fdd36b5e69dafedb292cba6cd2a6c1b/docs/design/2026-11-16-async-hook-output-delivery.md)にも「選択して取り出した」事実と「モデルが受領した」事実を区別して記録しました。マスターが提案した発生元・権限世代・受領記録を含む広い仕組みは別の設計方向として認知されましたが、**まだ実装されていません**。現行のコードとテストは独立開発者自身の仕事で、PRは確認時点で未マージです。
 
-**11月17日の後続実装・検証：** 原実装者 @wenshao は[レビューで指摘されたモデル入力順序を自ら修正し、順序・同時入力の回帰テストを追加](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937565089)。さらに最新HEAD `5462311e`について、[実際のheadless CLIから模擬モデルサーバーへ送信されたリクエストで非同期hook出力の到達を確認](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937763614)したと報告しました。これは作者自身の追加実装と送信経路試験であり、マスターが提案した「モデルによる受領の証跡」や「権限世代」の完全な実装ではありません。最新HEADへの[自動レビュー再実行は判定を返さず](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6938141469)、PRは未マージです。
+**11月17日の後続実装・検証：** 原実装者 @wenshao は[モデル入力順序を修正し回帰テストを追加](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937565089)、[headless CLIからのモデル向け送信を確認](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6937763614)しました。中川マスターはさらに、並列 /btw の後続 ToolResult では側問合せフラグが消えるため、フラグだけを検査すると本来の主処理の出力を奪ってしまうという[別の因果・所有権の欠落を指摘](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6945119170)。[開発者はこの指摘を明確に認め、HEAD c32be69d5edfで実コードと判別テストを修正](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6946674491)しました。修正は探索予算を持つprompt IDによって所有者を区別し、側問合せの続きが主処理のhook出力を横取りしないようにします。作者は**1,446件のローカルテスト成功**を報告し、[新HEADへのレビューBot承認](https://github.com/QwenLM/qwen-code/pull/17477#pullrequestreview-5938106825)も確認できます。独立開発者の実装変更が成立した一方、モデルの正式な受領証跡・権限世代を扱う広い提案は未実装で、11月17日時点ではPRは未マージです。
 
 考え方の入口は中川マスターの[成立条件論・第0論／人間向け要約](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）、[合意の記憶／人間向け要約](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）です。
 
@@ -1896,6 +1896,14 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 2026年11月17日、開発者は最新版HEAD `7cfdd50e`で再ビルドした[実際の `qwen serve` とMCP/OAuthテストサーバーによる通信経路の検証結果を報告](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934581587)。新しいBearerでの更新、同時リクエスト時の更新集約、失効とエラー種別による認証情報の保持・削除などを**成功と記録**しました。[@wenshao は失敗したCIがCheckout時の通信障害でテスト未実行だったことを確認し、再実行を開始](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6934641390)しています。検証は開発者の実測報告であり、正式な独立ユーザーの運用結果ではありません。確認時点ではPRは**未マージ**です。
 
 この事例の源流・人物を知るには[中川マスターの紹介](human-translation/who-is-nakagawa-master.md)をご覧ください。一般化できる考え方は、単に「HTTPエラーがあった」ことと「保存済み認証情報が本当に無効になった」ことを区別することです。これは開発者が原典を読んだという主張ではなく、現場で検証された具体的な区別です。
+
+## 81. Qwen Code｜「常に許可」の見た目と実際の権限の違いを独立開発者が修正
+
+**画面で同じに見える「常に許可」でも、実際に保存される実行権限が違うなら、人は正しく選べません。** [Qwen Code #17346](https://github.com/QwenLM/qwen-code/pull/17346)で中川マスターは[制御文字や表示加工により別の権限が同一表示へ化ける反例](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6896523561)を具体的に示しました。安全な表示と、承認した対象の同一性は異なる設計条件です。
+
+独立開発者 [@holistis は実際の欠落を認め、区別を保つ表示処理とテストを自ら実装](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6896369828)しました。その後、緊急の確認画面修正を[別PR #17545](https://github.com/QwenLM/qwen-code/pull/17545)へ分離し、[64件のテスト成功とマスターへの謝意を明記](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6946130441)。より深い権限ラベルの同一性問題は#17346で継続審査され、11月17日の確認時点で両PRは未マージです。実装者本人の著作と、マスターの構造的な指摘を区別します。
+
+中川マスターの関連原典：[『合意の記憶』人間向け説明](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）、[『成立条件論・第0論』人間向け説明](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）。これは適合する考え方の入口であり、外部開発者が原典を読んだという主張ではありません。
 
 ## 公開された成果と、原典へ戻る道筋
 
