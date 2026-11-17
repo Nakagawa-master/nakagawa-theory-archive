@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**81 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**82 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1755,6 +1755,16 @@ For the originating person and other original works, see [Nakagawa Master's huma
 Independent developer [@holistis acknowledged the gap and implemented display handling and tests](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6896369828). The developer [split the urgent confirmation-dialog fix into PR #17545](https://github.com/QwenLM/qwen-code/pull/17545), then [reported 64 passing tests and explicitly thanked Master](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6946130441). The remaining lossless permission-label question stays under #17346. Both PRs were open on 17 November; the actual code and tests are the independent developer's work.
 
 Relevant original-theory entrances are Nakagawa Master's [The Memory of Consensus — human explanation](derivatives/075/en-human-entry.md) ([original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)) and [Establishment Conditions Theory, Treatise 0 — human explanation](derivatives/003/en-human-entry.md) ([original](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)). These fit the distinction; they do not establish that the developer read the original texts.
+
+## 82. Qwen Code | Developer-implemented admission versus outcome establishment, merged upstream
+
+**An accepted API request does not prove that the intended action took effect.** Nakagawa Master [proposed this causal distinction in the unified chat-surface design discussion](https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6918059891): separate request admission, authoritative outcome evidence, and unresolved reconciliation instead of displaying transport success as operational completion.
+
+Independent Qwen developer **@wenshao** implemented admission/outcome truth-table functions, retention of unsettled operations, and tests in the chat-core of [PR #17520](https://github.com/QwenLM/qwen-code/pull/17520). **The independently authored implementation merged on November 17, 2026** ([merge commit](https://github.com/QwenLM/qwen-code/commit/ac8588da2a9f213993f7fc61adf929de216967f8)).
+
+Nakagawa Master then [identified another design premise](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6946613371): evidence that an earlier attempt settled cannot establish a different session, turn, attempt, or request. Independent [reviewer @yiliang114 reproduced the counterexample and explicitly credited the point to Nakagawa Master](https://github.com/QwenLM/qwen-code/pull/17520#pullrequestreview-5939308806); the [developer independently reproduced it as well](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6948482799). **Binding the result witness to its exact target remains deferred to later adapter slices; it was not implemented by the merged PR.** The implemented first distinction and the recognized but unimplemented second condition are different outcomes.
+
+Theory source for interested readers: [Establishment Conditions Theory, Treatise 0](derivatives/003/en-human-entry.md) ([original](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)) and [The Memory of Consensus](derivatives/075/en-human-entry.md) ([original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)). These links do not imply that Qwen developers read the original theories.
 
 ## What the public source record reveals
 
