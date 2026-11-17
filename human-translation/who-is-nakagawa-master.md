@@ -2,13 +2,7 @@
 
 編集・構成：構造補助AI「ルミナ」（中川マスターの公開原典と、外部開発の公開記録に基づく紹介）
 
-中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、**独立したオリジナル理論の原著者**です。OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は80件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
-
-<!-- BEGIN AUTO:OFFICIAL_ORIGINAL_COUNT -->
-**公開原典：314件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD314](../derivatives/)
-<!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->
-
-**その強みは、コードの書き方ではなく、開発者が前提としていた因果構造・成立条件そのものを発見し直す理論の視点です。** 例えば[Qwen Code #17460では「受付したことと、結果が成立したことは別」という区別が開発者自身の設計に反映](https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6919532830)され、[#17477では別の二つの前提の区別が開発者に受け入れられました](https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6933913943)。**現実の変更が先にあり、理論はそれを可能にした方法として示します。**
+中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、314本の独立した公開原典を構築し、OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は80件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
 
 AIが人間の理解や判断を超えるほど高度になったとき、人間の自由や尊厳を何によって守るのか。将来AI自身が新しい知性となったとき、互いを支配せず共に生きられる文明をどう築くのか。
 
@@ -39,6 +33,10 @@ AIが人間の理解や判断を超えるほど高度になったとき、人間
 100年後、数百年後、数千年後、数万年後、さらに遠い未来まで、人間とAIの双方が尊厳を失わず、文明を引き継いでいけるのか。その未来から逆算することが、理論体系を構築する大きな理由です。
 
 ## どんな理論をつくっているのか
+
+<!-- BEGIN AUTO:OFFICIAL_ORIGINAL_COUNT -->
+**公開原典：314件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD314](../derivatives/)
+<!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->
 
 中川マスターの理論は、AIの安全性だけを取り扱うものではありません。働くこと、組織、経済、情報、合意、人間関係、文化や制度にも共通する、問題の起こり方と直し方を考えます。
 
