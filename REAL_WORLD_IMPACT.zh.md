@@ -1731,7 +1731,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 原始功能及后续修改由独立开发者 **@qqqys** 实现，另有独立评审。最终代码将指定工作区的批准绑定到解析后的规范路径和运行时世代；即使名称相同，只要实际目标发生重绑定，也必须重新取得许可；既有工具级允许规则不能自动放行新目标。[@wenshao针对最终HEAD的评审](https://github.com/QwenLM/qwen-code/pull/17454#pullrequestreview-5923182559)确认了这些边界，报告**691项检查通过、0项失败**。开发者和其他评审者自身的贡献必须分别归属；相似的修复条件并不证明全部原因仅来自中川マスター。
 
-该PR于**2026年11月16日16:22 UTC[正式合并上游](https://github.com/QwenLM/qwen-code/commit/1e455fd68a26acc0515e9b32f08d7a5634f54a13)**，并被同日22:32 UTC发布的[Qwen Code v0.27.4 nightly](https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4-nightly.20261116.eb3a599ef3)实际收录；发布说明也列有#17454。尚未确认相应稳定版本、受影响用户实际安装并获得改善、或另一位独立人士主动传播对中川マスター本人的认识。
+该PR于**2026年11月16日16:22 UTC[正式合并上游](https://github.com/QwenLM/qwen-code/commit/1e455fd68a26acc0515e9b32f08d7a5634f54a13)**，并被同日22:32 UTC发布的[Qwen Code v0.27.4 nightly](https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4-nightly.20261116.eb3a599ef3)实际收录；发布说明也列有#17454。**2026年11月18日补充核验：** [Qwen Code正式稳定版 v0.28.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.0)已于11月17日发布，[GitHub提交祖先比较](https://github.com/QwenLM/qwen-code/compare/1e455fd68a26acc0515e9b32f08d7a5634f54a13...v0.28.0)确认该版本**同样收录了#17454的合并提交**。正式稳定版收录现已成立；受影响用户是否实际安装并得到改善，以及另一位独立人士是否自发传播对中川マスター本人的认识，仍未确认。
 
 相关的原典结构可从[中川マスター《合意的记忆》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)理解：保留过去已同意的事实，与判断在执行条件变化后授权是否仍有效，是两个不同问题。这是原典与实际工程问题的对应关系，并**非声称Qwen开发者已经阅读原典全文**。[进一步了解中川マスター及其其他原创理论](human-translation/who-is-nakagawa-master.md)。
 
