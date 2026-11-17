@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共81例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共82例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1762,6 +1762,16 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 独立开发者[@holistis承认问题并自行实现显示处理和测试](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6896369828)，随后将紧急的确认界面修复拆分为[PR #17545](https://github.com/QwenLM/qwen-code/pull/17545)，并[报告64项测试通过、明确感谢中川マスター](https://github.com/QwenLM/qwen-code/pull/17346#issuecomment-6946130441)。更深的权限标签同一性问题仍在#17346审查。11月17日核验时两项PR都尚未合并；实际代码和测试由独立开发者编写。
 
 相关理论入口：[中川マスター《合意的记忆》中文导读](derivatives/075/zh-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)），以及[《成立条件论・第0论》中文导读](derivatives/003/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）。它们是与案例相符的原著来源，并不意味着外部开发者已经阅读原文。
+
+## 82. Qwen Code｜开发者将“请求被接收”和“结果真正成立”分开实现并合入主线
+
+**API接受请求，不代表用户期望的操作已经真正生效。** 中川大师在[统一聊天界面设计PR #17460](https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6918059891)中提出，应区分通信受理、结果成立的权威证据，以及结果未知时的核对过程；不能把接口成功直接显示为操作完成。
+
+独立开发者 **@wenshao** 在[PR #17520](https://github.com/QwenLM/qwen-code/pull/17520)中实现了受理/结果真值表、未确定状态的保留和相关测试。**该开发者独立编写的代码于2026年11月17日合入上游主线**（[合并提交](https://github.com/QwenLM/qwen-code/commit/ac8588da2a9f213993f7fc61adf929de216967f8)）。
+
+中川大师随后[提出更深一层的证据归属条件](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6946613371)：一个session、turn、attempt或request的成功证据，不能证明另一个操作成立。[独立审查者 @yiliang114 复现反例并明确注明中川大师的观点](https://github.com/QwenLM/qwen-code/pull/17520#pullrequestreview-5939308806)，[开发者自己的验证](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6948482799)也确认了问题。**这一将结果证据绑定到正确目标的条件尚未进入已合并的#17520实现，仍留待后续适配器阶段。** 已实现的设计与尚未实现的新条件应分别核验。
+
+原典入口：[成立条件论·第0论英文人类可读说明](derivatives/003/en-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）和[合意的记忆英文说明](derivatives/075/en-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。这些链接不表示开发者已阅读原典全文。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
