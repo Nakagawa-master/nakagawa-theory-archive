@@ -5744,7 +5744,7 @@
         "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"
       ],
       "person_aware_public_reading": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md",
-      "current_stage": "Independent developer explicitly accepted original-source design distinction, implemented it and merged code upstream; separate later witness-target refinement acknowledged but not implemented.",
+      "current_stage": "Separate human developer adopted design, authored and merged source/tests upstream; exact merge included in Qwen Code v0.28.1-preview.0 pre-release; stable containing version and real installed-user result not established. Later witness-target refinement independently acknowledged but not implemented.",
       "not_claimed": [
         "developer read entire original theory text or endorsed the original corpus",
         "later witness-target binding is already implemented",
@@ -5752,7 +5752,15 @@
         "affected user installed this change or independently observed recovery",
         "a separate unaffiliated human voluntarily credited Nakagawa Master as a person",
         "unconnected AI independently chose the original corpus"
-      ]
+      ],
+      "containing_preview_release": {
+        "verified": true,
+        "tag": "v0.28.1-preview.0",
+        "published_utc": "2026-11-17T18:36:36Z",
+        "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.1-preview.0",
+        "verification": "Published preview release tag is descendant of upstream merge commit according to GitHub compare: merge..tag status=ahead, behind_by=0. Official release notes list PR #17520.",
+        "status": "Pre-release only. Stable containing version, actual install, result for affected users, separate-person origin recognition all NOT established."
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
