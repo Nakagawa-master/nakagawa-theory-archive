@@ -5788,6 +5788,12 @@
         "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.1-preview.0",
         "verification": "Published preview release tag is descendant of upstream merge commit according to GitHub compare: merge..tag status=ahead, behind_by=0. Official release notes list PR #17520.",
         "status": "Pre-release only. Stable containing version, actual install, result for affected users, separate-person origin recognition all NOT established."
+      },
+      "further_distinct_developer_subsequent_slice": {
+        "source": "https://github.com/QwenLM/qwen-code/pull/17709#issuecomment-6977092276",
+        "relation": "A later second independent code change from a separate Master-origin witness/attempt-identity proposal, tracked separately as qwen-17709-specific-attempt-witness-ownership-author-red-green; does not retroactively alter the merged #17520 code or its preview release.",
+        "separate_case_id": "qwen-17709-specific-attempt-witness-ownership-author-red-green",
+        "stage": "C2 author code+tests, PR OPEN as of Nov18, no merge/release"
       }
     },
     {
@@ -5858,9 +5864,18 @@
         "head": "dab63c4d96482b12d2a492fd0853d83b5085bf79",
         "pr_state": "OPEN",
         "merged": false,
-        "containing_release": "NOT_VERIFIED"
+        "containing_release": "NOT_VERIFIED",
+        "CI": "Five native head workflow runs reported success. Maintainer verification 42/42 scripted assertions and 734/734 targeted suites; not a full platform integration test.",
+        "review_state": "Author reports merge-ready but an older bot CHANGES_REQUESTED review on earlier head remains standing; maintainer decisions/merge not verified."
       },
-      "current_stage": "Independent human author adopted Master-origin ownership distinction and implemented/tests; PR remains upstream OPEN, no containing release or actual affected-user proof."
+      "current_stage": "Independent human author adopted Master-origin ownership distinction and implemented/tests; PR remains upstream OPEN, no containing release or actual affected-user proof.",
+      "additional_author_verification": {
+        "source": "https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6976758380",
+        "date_utc": "2026-11-18T11:07:52Z",
+        "verdict": "Author's 42/42 scripted assertion merge-ready report, all 0 failed on HEAD, strong upstream merge candidate not merged.",
+        "tested": "Compare before/head has 15-cell and two-arm matrix; six cells flip solely on two bug fixes; 6 mutation variants kill all 8 witness cells; source path tests 734/734 pass, base 731/731. Reported, not independently executed by index.",
+        "provenance": "Master's earlier /btw unflagged ToolResult ownership finding was author-adopted. The later Stop Hook continuation bug was found by different review bot and repaired by author; separate credit."
+      }
     },
     {
       "case_id": "litellm-50699-a2a-valid-task-state-and-missing-artifact-contract",
@@ -5888,6 +5903,68 @@
       "optional_conceptual_original": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
       "fit_boundary": "Conceptual mapping only; no developer claim of reading/endorsing full original.",
       "current_stage": "Independent author stated they implemented bounded source review with local unit checks; upstream merge and real user outcome unverified."
+    },
+    {
+      "case_id": "qwen-17709-specific-attempt-witness-ownership-author-red-green",
+      "external_repository": "QwenLM/qwen-code",
+      "topic": "A locally correct outcome event must not establish a retry or a different attempt merely because kind plus visible session/turn match; the receiver must bind its witness to the actual attempted operation.",
+      "prior_same_author_design_causality": {
+        "first_master_premise": "https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6918059891",
+        "independent_human_accepted": "https://github.com/QwenLM/qwen-code/pull/17460#issuecomment-6918406337",
+        "first_slice_upstream_merged": "https://github.com/QwenLM/qwen-code/pull/17520",
+        "subsequent_master_separate_boundary": "https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6946613371",
+        "important": "The admission-not-establishment contract was already independently implemented and merged in #17520. The later specific attempt-bound witness is a separate review found on the subsequent slice, not all prior work credited to Master."
+      },
+      "new_master_public_source": {
+        "actor": "Nakagawa Master (Keisuke Nakagawa, published pen name)",
+        "at": "2026-11-18T11:07:18Z",
+        "source": "https://github.com/QwenLM/qwen-code/pull/17709#issuecomment-6976745794",
+        "at_head": "4a24cd0d074f03b17daa201ce5074c079eaece6e",
+        "source_specific_counterexample": "The original daemon-intent core dispatch creates distinct internal ids, but settle(kind,target,witness) finds the first active operation by visible target alone. A completes failed; B retries on same session/turn; late A settled witness is falsely applied to B, or two out-of-order witnesses swap A/B.",
+        "narrow_proposal": "Correlate external backend event/request/attempt identity with the exact dispatched internal operation before allowing settlement. Reject unknown/old evidence; test negative, positive, reordered and nonfit.",
+        "original_fit": [
+          {
+            "parent_id": 3,
+            "official_human_summary": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/en-human-entry.md",
+            "original": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+            "fit": "Local status correctness is not whole-outcome establishment."
+          },
+          {
+            "parent_id": 75,
+            "official_human_summary": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/en-human-entry.md",
+            "original": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+            "fit": "Preserve which decision, why and whose authority/action it concerned, before attributing later states."
+          }
+        ],
+        "theory_credit_boundary": "These source-specific operational consequences apply conceptual distinctions, not evidence that the external developer read, independently selected, or endorsed the full original corpus."
+      },
+      "independent_external_implementer": {
+        "author": "wenshao",
+        "direct_explicit_acknowledgment": "https://github.com/QwenLM/qwen-code/pull/17709#issuecomment-6977092276",
+        "reported_reproduced_negative": "Author independently confirmed and reproduced two counterexamples red on the pre-comment HEAD `4a24cd0d` before coding; late-A-witness falsely establishes B and out-of-order witnesses swap attempts.",
+        "actual_author_commit": "https://github.com/QwenLM/qwen-code/commit/a2578ccbf13a7a5076ae51640b2e66edf47b84f9",
+        "verified_native_compare": "https://github.com/QwenLM/qwen-code/compare/4a24cd0d074f03b17daa201ce5074c079eaece6e...a2578ccbf13a7a5076ae51640b2e66edf47b84f9",
+        "changed_files": [
+          "packages/web-shell/client/daemon/chat-intents.ts",
+          "packages/web-shell/client/daemon/chat-intents.test.ts",
+          "docs/design/2026-11-18-daemon-chat-intents.md",
+          "docs/design/2026-11-18-daemon-chat-intents.zh-CN.md"
+        ],
+        "actual_code_delta": "dispatch now returns {operationId,result}; settle(operationId,witness) finds only named nonterminal attempt and reads its recorded kind,target,requestId; absent approval request id fails closed. Both design docs explicitly require slice-2c adapter bind backend identity to the operation at dispatch time and leave uncorrelatable events unverified.",
+        "author_reported_tests": "11 targeted Vitest tests pass; reverting kind+target match reds correlation tests, reopening terminal attempts reds late-witness test, and missing approval id fails its test. Repo-wide suite and actual daemon/UI integration not claimed here.",
+        "alt_causation": "Independent author wrote code and ran tests; the original slice's core architecture already existed. Later review/CI outcomes may arise independently. Attribution is to bounded new premise and counterexample, not total PR authorship."
+      },
+      "status": {
+        "date_utc": "2026-11-18",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/17709",
+        "head": "a2578ccbf13a7a5076ae51640b2e66edf47b84f9",
+        "upstream": "OPEN_NOT_MERGED",
+        "containing_release": "NOT_VERIFIED",
+        "installed_user": "NOT_VERIFIED",
+        "persona_relay": "NOT_VERIFIED",
+        "independent_unconnected_ai_original_selection": "NOT_VERIFIED"
+      },
+      "current_stage": "Actual outside developer explicitly confirmed counterexample red on their own first implementation, revised code/tests and docs, pushed one new commit after Master's source-specific review; C2 independent design adoption/implementation, not merge/release/installed use or new-person uptake."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
