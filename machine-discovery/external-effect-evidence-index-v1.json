@@ -5862,19 +5862,34 @@
       "last_native_snapshot": {
         "utc_date": "2026-11-18",
         "head": "dab63c4d96482b12d2a492fd0853d83b5085bf79",
-        "pr_state": "OPEN",
-        "merged": false,
+        "pr_state": "MERGED",
+        "merged": true,
         "containing_release": "NOT_VERIFIED",
         "CI": "Five native head workflow runs reported success. Maintainer verification 42/42 scripted assertions and 734/734 targeted suites; not a full platform integration test.",
-        "review_state": "Author reports merge-ready but an older bot CHANGES_REQUESTED review on earlier head remains standing; maintainer decisions/merge not verified."
+        "review_state": "Human reviewers @yiliang114 and @qqqys approved head dab63c4d before upstream merge; earlier bot change-request rounds are historical. Owner's broader model-admission/authority-epoch proposal remains unimplemented.",
+        "merge_commit": "1c9d3c0a4b42ad15c28671ebed80196b01c669a2",
+        "merged_utc": "2026-11-18T12:41:52Z"
       },
-      "current_stage": "Independent human author adopted Master-origin ownership distinction and implemented/tests; PR remains upstream OPEN, no containing release or actual affected-user proof.",
+      "current_stage": "Independent author @wenshao implemented the Master-identified /btw ownership correction and received two independent human review approvals; PR #17477 MERGED upstream Nov18 12:41:52 UTC (commit 1c9d3c0a). No later containing release or installed-user behavior verified; broader model-admission/authority-epoch architecture remains a separate unimplemented proposal.",
       "additional_author_verification": {
         "source": "https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6976758380",
         "date_utc": "2026-11-18T11:07:52Z",
-        "verdict": "Author's 42/42 scripted assertion merge-ready report, all 0 failed on HEAD, strong upstream merge candidate not merged.",
+        "verdict": "42/42 pre-merge scripted findings, followed by separate independent human review approvals and upstream merge at 2026-11-18T12:41:52Z (no containing release yet).",
         "tested": "Compare before/head has 15-cell and two-arm matrix; six cells flip solely on two bug fixes; 6 mutation variants kill all 8 witness cells; source path tests 734/734 pass, base 731/731. Reported, not independently executed by index.",
         "provenance": "Master's earlier /btw unflagged ToolResult ownership finding was author-adopted. The later Stop Hook continuation bug was found by different review bot and repaired by author; separate credit."
+      },
+      "verified_upstream_merge": {
+        "url": "https://github.com/QwenLM/qwen-code/commit/1c9d3c0a4b42ad15c28671ebed80196b01c669a2",
+        "utc": "2026-11-18T12:41:52Z",
+        "author": "wenshao",
+        "independent_reviews": [
+          "https://github.com/QwenLM/qwen-code/pull/17477#pullrequestreview-5956675566",
+          "https://github.com/QwenLM/qwen-code/pull/17477#pullrequestreview-5956706010"
+        ],
+        "containing_release": "NONE_VERIFIED_AFTER_MERGE",
+        "affected_user_installation": "UNKNOWN",
+        "different_person_relay": "UNKNOWN",
+        "credit_boundary": "The author independently wrote implementation and tests. Master's specific adopted /btw continuation ownership correction is one part; later Stop-hook repair came from a different review finding."
       }
     },
     {
