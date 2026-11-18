@@ -4133,6 +4133,28 @@
         ]
       },
       "current_source_snapshot": {
+        "date_jst": "2026-11-18",
+        "pr_state": "OPEN",
+        "merged": false,
+        "current_head": "a5ea4cfa6b8dee3de0a2e974c11df50c4aea60bd",
+        "required_review_approvals": 2,
+        "approval_status": "Maintainers still coordinating stale CHANGES_REQUESTED dismissal and two approvals. Human @wenshao explicitly accepted ownership of dismissal and 2 failed CI shard re-runs 2026-11-18; no confirmed successful rerun or merge in this check.",
+        "evidence": [
+          "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6968509522",
+          "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6887385765"
+        ],
+        "nonattribution": "Other contributor's ordering fix accepted separately; do not attribute all PR code to Master. No release or verified end-user recovery."
+      },
+      "current_stage": "independent_receiver_source_and_tests_OPEN_PR",
+      "human_case": "REAL_WORLD_IMPACT.md#55",
+      "not_claimed": [
+        "observed live data leakage",
+        "maintainer merge",
+        "stable release",
+        "end-user realized benefit",
+        "receiving author read the canonical original theory texts"
+      ],
+      "previous_source_snapshot": {
         "date_jst": "2026-11-08",
         "pr_state": "OPEN",
         "merged": false,
@@ -4152,16 +4174,7 @@
           "native_merge": "NO",
           "containing_release_or_installed_user": "UNKNOWN"
         }
-      },
-      "current_stage": "independent_receiver_source_and_tests_OPEN_PR",
-      "human_case": "REAL_WORLD_IMPACT.md#55",
-      "not_claimed": [
-        "observed live data leakage",
-        "maintainer merge",
-        "stable release",
-        "end-user realized benefit",
-        "receiving author read the canonical original theory texts"
-      ]
+      }
     },
     {
       "case_id": "litellm-49359-mcp-error-type-contract-receiver-fork-commit",
@@ -4187,9 +4200,9 @@
       "further_independent_receiver": {
         "actor": "lester076",
         "url": "https://github.com/BerriAI/litellm/pull/49624",
-        "response": "Independent author @lester076 incorporated Master's exact required/optional-field review in actual MCP-to-Anthropic code and regression tests; latest PR HEAD 97cce25 keeps three original TypedDict fields required and only is_error: NotRequired[bool]. Both current commits credit first developer @chauvuusvn with Co-authored-by trailers after that developer's request. Two independent engineering actors and native co-author attribution verified; PR still OPEN, no passed upstream CI, merge, deployment or broad public PERSON effect.",
+        "response": "Independent author @lester076 incorporated Master's exact required/optional-field review in actual MCP-to-Anthropic code and regression tests; latest PR HEAD 6cb8e999 (new later commits unverified for exact implementation impact) keeps three original TypedDict fields required and only is_error: NotRequired[bool]. Both current commits credit first developer @chauvuusvn with Co-authored-by trailers after that developer's request. Two independent engineering actors and native co-author attribution verified; PR still OPEN, no passed upstream CI, merge, deployment or broad public PERSON effect.",
         "issue_handoff": "https://github.com/BerriAI/litellm/issues/49359#issuecomment-6572947215",
-        "pr_head_sha": "97cce25d4e18ecf5d2575c383d01416804fa6b29",
+        "pr_head_sha": "6cb8e9998a3e6286a4077b27f8131db798d28a25",
         "master_new_review": "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6573055353",
         "next_native_outside_proof": "Maintainer-authorized native CI, substantive upstream review/merge; subsequent independently observed release, actual MCP tool-error handling and outside user/editor relay. Do not infer delivery from a PR.",
         "fixed_type_evidence": "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6574736711",
@@ -4201,15 +4214,16 @@
           "https://github.com/BerriAI/litellm/commit/97cce25d4e18ecf5d2575c383d01416804fa6b29"
         ]
       },
-      "current_stage": "first_developer_corrected_fork_code__SECOND_developer_opened_credited_upstream_PR_AND_FIXED_EXACT_NOTREQUIRED_INVARIANT_AFTER_MASTER_SECOND_REVIEW_outside_authored_change__PR_OPEN_NO_NATIVE_TEST_PASS",
+      "current_stage": "Two independent third-party engineers wrote fork/upstream source; upstream PR #49624 OPEN at 2026-11-18; second implementer expressly fixed Master's exact optional-vs-required-key contract and added static negative check. New bot review on 6cb8e99 did not report new issues. Not merged/released/user-tested by index.",
       "human_case": "REAL_WORLD_IMPACT.md#56",
       "current_next_stage": "Original PR contributors/maintainers to resolve CLA status and enable applicable upstream CI, independent PR merge and real use; preserve accurate technical attribution without treating an automated CLA reminder as new adoption.",
       "cla_status_at_latest_check": {
         "event_url": "https://github.com/BerriAI/litellm/pull/49624#issuecomment-6650763308",
         "date": "2026-11-05T05:45:37Z",
-        "state": "CLA assistant shows not_signed; the appropriate PR contributors and maintainers must resolve any necessary agreement checks. This notification is not a new technical review or Nakagawa Master mention.",
-        "merge_status": "PR open, previous native checks action_required; upstream merge and real installed-user verification not established."
-      }
+        "state": "CLA assistant shows signed for all committers at this point",
+        "merge_status": "PR remains OPEN at verified HEAD 6cb8e9998a3e6286a4077b27f8131db798d28a25 (2026-11-18); no upstream merge or released/user outcome verified."
+      },
+      "last_native_check": "2026-11-18 UTC, exact author response issuecomment-6574736711; current PR HEAD 6cb8e999, signed CLA result shown, no merge."
     },
     {
       "case_id": "litellm-49313-cache-tenant-key-bypasses-implemented-pr49576",
@@ -5591,8 +5605,8 @@
         "ownership": "A separate reviewer/bot, not Nakagawa Master, showed a deliberate operator Disconnect could still be reversed through a non-abort reconnect/replay path; pooled transport/coalescing issues remain separately reported."
       },
       "source_snapshot": {
-        "checked_on": "2026-11-10",
-        "head": "314d434dbf6f1115d8fe45445bcd40600977c36d",
+        "checked_on": "2026-11-18",
+        "head": "bfd32862d39b0b3354e7a26362ceebc783b32c24",
         "status": "OPEN",
         "merged": false,
         "containing_release": "NOT_VERIFIED",
@@ -5606,7 +5620,7 @@
         "optional_conceptually_fitting_original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
         "fit_and_nonfit": "A connected transport or an owner-initiated teardown is not equivalent to a recoverable failure; the original's establishment-conditions distinction can be compared conceptually only if this system-specific distinction fits. The external author did not claim to read or use the original theory."
       },
-      "current_stage": "Independent outside author confirmed two Master-origin technical counterexamples and changed code/tests; pull request remains OPEN.",
+      "current_stage": "Independent author changed code and tested a generation-state causal distinction after Master's exact counterexample; PR OPEN at head bfd32862, no containing release, installed recovery or independent PERSON relay.",
       "not_claimed": [
         "author or reviewer endorsement of the entire original theory corpus",
         "upstream merged or shipped fix",
@@ -5614,7 +5628,21 @@
         "independent reader elected to credit Nakagawa Master personally",
         "unaffiliated AI spontaneously chose or read the canonical original",
         "second outside reviewer findings authored by Nakagawa Master"
-      ]
+      ],
+      "previous_source_snapshot": {
+        "checked_on": "2026-11-10",
+        "head": "314d434dbf6f1115d8fe45445bcd40600977c36d",
+        "status": "OPEN",
+        "merged": false,
+        "containing_release": "NOT_VERIFIED",
+        "affected_installed_user_recovery": "NOT_VERIFIED"
+      },
+      "additional_independent_author_outcome": {
+        "master_three_generation_counterexample": "https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6896526451",
+        "author_explicit_red_green_acceptance": "https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6897670051",
+        "causal_sequence": "Independent author ran the three-lifetime stopped-g1 / connected-g2,g3 / late-g1-rejection test; observed red on their previous implementation, then changed generation-scoped stop logic and obtained green. The author later fixed a separate silent-drop issue following an independent review bot's Critical, which must NOT be attributed to Master.",
+        "state": "Upstream open; merge, containing release and live affected-user recovery not established."
+      }
     },
     {
       "case_id": "langgraph-9478-retried-subgraph-drops-new-human-answer-two-contract-independent-fork",
@@ -5761,6 +5789,105 @@
         "verification": "Published preview release tag is descendant of upstream merge commit according to GitHub compare: merge..tag status=ahead, behind_by=0. Official release notes list PR #17520.",
         "status": "Pre-release only. Stable containing version, actual install, result for affected users, separate-person origin recognition all NOT established."
       }
+    },
+    {
+      "case_id": "untether-1207-outage-final-delivery-three-state-dev-merge",
+      "external_repository": "littlebearapps/untether",
+      "topic": "A completed agent's final Telegram message can be lost when a definite transport failure is recorded as sent; safely recovering after a restart requires independent persisted delivery state and honest unknown-delivery handling.",
+      "original_reporter": "https://github.com/littlebearapps/untether/issues/1207",
+      "nakagawa_master_bounded_source": {
+        "actor": "Nakagawa Master",
+        "comment": "https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514299785",
+        "source_specific_distinction": "Attempted/in-flight is not confirmed delivery. Preserve final payload and destination beyond runner lifetime; distinguish definite unsuccessful outcomes, ambiguous delivery, acknowledged receipt, no duplicate automatic replay for ambiguity, and actual progress receipt.",
+        "conceptual_originals_optional": [
+          "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+          "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"
+        ],
+        "conceptual_attribution_boundary": "The original theory sources offer a conceptual lens for establishment/decision-memory differences. The receiving developer's explicit acknowledgment is of the source-specific GitHub review; the author did not claim to read or endorse these theory originals."
+      },
+      "independent_developer": {
+        "author": "nathanschram",
+        "explicit_confirmation": "https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514896543",
+        "statement": "Author independently traced master's early send-result mismatch, agreed with the three-state division and chose a 0.36.2rc1 fix. Their explicit 5xx replay decision is an acknowledged risk tradeoff; no universal exactly-once guarantee inferred.",
+        "independent_code_commits": [
+          "https://github.com/littlebearapps/untether/commit/79ce8ef34d48b590c8bda359590ff08dfc5fb854",
+          "https://github.com/littlebearapps/untether/commit/2539d0a7b4b97205cebb984d1b661121073b4742"
+        ],
+        "test_source": "https://github.com/littlebearapps/untether/issues/1207#issuecomment-6972073133",
+        "test_scope": "Author reported dev-bot outage tests R362-1207a-d: definite failure after run, poll recovery, restart, multipart final, normal healthy run; reported one copy per chunk. Not tested locally by this index."
+      },
+      "verified_upstream_merge": {
+        "pr": "https://github.com/littlebearapps/untether/pull/1246",
+        "merged_at_utc": "2026-11-18T08:39:45Z",
+        "merge_commit": "b50696e5fdf26b828081a5c2765e405499b353c2",
+        "target_branch": "dev",
+        "scope": "22-issue v0.36.2rc1 development batch including issue #1207; NOT main/stable release"
+      },
+      "current_stage": "Independent developer accepted causal premise, authored and locally verified executable retry/persistence repair, merged into dev only; formal v0.36.2rc1 containing release, general installed-user recovery and separate human person relay NOT VERIFIED.",
+      "not_claimed": [
+        "all Telegram 5xx responses are always definitely unsent",
+        "perfect exactly-once delivery in all networks",
+        "production rollout",
+        "main-branch containing stable release",
+        "outside user independently credited Master as a person",
+        "developer endorsed whole original theories"
+      ]
+    },
+    {
+      "case_id": "qwen-17477-async-hook-side-query-owned-delivery-independent-author",
+      "external_repository": "QwenLM/qwen-code",
+      "topic": "A background async Hook output is not genuinely delivered to its rightful active turn when a concurrent side query silently drains it, including an unflagged ToolResult continuation.",
+      "original_pull_request": "https://github.com/QwenLM/qwen-code/pull/17477",
+      "nakagawa_master_action": {
+        "actor": "Nakagawa Master",
+        "source": "https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6945119170",
+        "exact_distinction": "A flag-only gate cannot distinguish the later unflagged side ToolResult from the owning turn. Reuse current budget-owner prompt id; prove the side first-send and its ToolResult both leave the pending hook output for the owner.",
+        "conceptual_original": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+        "original_fit_boundary": "This is an optional conceptual link about actual outcome vs local success, not a claim the implementing engineer read the original."
+      },
+      "independent_author_outcome": {
+        "author": "wenshao",
+        "direct_adoption": "https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6946674491",
+        "implementation": "The independent author changed the owner predicate and authored tests using the real sendMessageStream path, with negative mutation witnesses for the flag-only and ungated implementations.",
+        "subsequent_distinct_external_finding": "https://github.com/QwenLM/qwen-code/pull/17477#discussion_r4610378868",
+        "subsequent_author_fix": "https://github.com/QwenLM/qwen-code/pull/17477#discussion_r4610504023",
+        "authorship_boundary": "Later 2026-11-18 Hook-continuation flag propagation was a distinct review-bot-found gap and author-implemented fix; do not falsely credit that new finding to Master."
+      },
+      "last_native_snapshot": {
+        "utc_date": "2026-11-18",
+        "head": "dab63c4d96482b12d2a492fd0853d83b5085bf79",
+        "pr_state": "OPEN",
+        "merged": false,
+        "containing_release": "NOT_VERIFIED"
+      },
+      "current_stage": "Independent human author adopted Master-origin ownership distinction and implemented/tests; PR remains upstream OPEN, no containing release or actual affected-user proof."
+    },
+    {
+      "case_id": "litellm-50699-a2a-valid-task-state-and-missing-artifact-contract",
+      "external_repository": "BerriAI/litellm",
+      "topic": "An A2A task with missing status.state must not be silently treated as a successful chat completion simply because conversion can produce output; verified terminality depends on a state/evidence contract.",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "pr": "https://github.com/BerriAI/litellm/pull/50699",
+        "kind": "source-specific review of missing/invalid task state and allowed exception for actual artifacts",
+        "note": "Exact Master comment may be read from PR timeline when reusing; do not equate proposal with all PR behavior."
+      },
+      "independent_author": {
+        "author": "aarunbhardwaj",
+        "source": "https://github.com/BerriAI/litellm/pull/50699",
+        "reply": "2026-11-16T07:09:38Z",
+        "acknowledgment": "Author explicitly says they addressed the fail-open missing status.state case and thanks Nakagawa Master; introduced require_a2a_task_state used in sync/async and polling, refuses no-status no-artifact tasks while retaining existing artifact-backed completion. Reported 42 targeted unit tests passing locally."
+      },
+      "latest_snapshot": {
+        "date": "2026-11-18",
+        "head": "d35e70ef506348ccbda3824da92488b3c8444911",
+        "state": "OPEN",
+        "merged": false,
+        "release": "NOT_VERIFIED"
+      },
+      "optional_conceptual_original": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+      "fit_boundary": "Conceptual mapping only; no developer claim of reading/endorsing full original.",
+      "current_stage": "Independent author stated they implemented bounded source review with local unit checks; upstream merge and real user outcome unverified."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
