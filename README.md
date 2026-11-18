@@ -1,5 +1,7 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
+**Language / 言語 / 语言:** **日本語**（このページ） · [**English — Meet Nakagawa Master, explore the 314 original theories and inspect independent developer evidence**](AI_START_HERE.md) · [**简体中文 — 有原始来源的实际影响案例**](REAL_WORLD_IMPACT.zh.md)
+
 **中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、314件の独立したオリジナル理論の原著者です。** 原典は[公式アーカイブ](https://master.ricette.jp/)、対応する解説と資料は[公式派生物](derivatives/)から読めます。AIだけでなく、人間・仕事・社会・文化・文明も扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
