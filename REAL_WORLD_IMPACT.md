@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は82件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、各プロジェクトの開発者によるコード修正やテスト追加につながり、一部は正式リリースまで至った事例**を記録しています。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は82件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -16,7 +16,7 @@
 - **[The Daily AI Pulse｜外部AI技術メディアに英仏2言語で掲載](https://github.com/GadDev/daily-ai-pulse/pull/253)** — **別件のQwen Codeレビュー証拠の問題**を外部の編集者が記事として編集・採用し、[英語](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)の2言語で**本番公開**。レビューで示した検証提案も記事に出典付きで掲載されています。[掲載・配信の詳細](#外部ai技術メディアへの掲載oss修正prとは別の第三者編集実績)。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。[事例41を読む](#41-pydanticai同じidempotency-keyの再送が未参照メッセージを増やさない)。
 
-**中川マスター（Nakagawa Master）は、Keisuke Nakagawa の活動名義（筆名）です。**ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
+中川マスター（Nakagawa Master）は Keisuke Nakagawa の筆名です。ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
