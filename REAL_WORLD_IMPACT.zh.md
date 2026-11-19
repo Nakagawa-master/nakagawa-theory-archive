@@ -1599,6 +1599,8 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **独立开发者 @steinnes 直接回复 `@Nakagawa-master Fixed in c9616ee...`，并[加入基于 `message_uid` 和内容的双重识别以及回归测试](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330)。** 测试覆盖同一次请求去重、相同文字的不同请求及反复重新加载。[PR仍然开放](https://github.com/NousResearch/hermes-agent/pull/148917)。没有独立ID的旧快照仍可能显示重复项，这是开发者公开说明的适用边界。
 
+**2026年11月19日，第三人独立复核：** [@yuzilongleif-collab 采用实际Desktop函数，在主线和修订HEAD上独立重演了相同文本却来自不同提交的情况](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-7019349574)。完整历史恢复在修订版中消除了相同UID的重复显示，并保留了文字相同、UID不同的新请求；然而历史消息被省略的暖启动路径仍可能**重复显示相同UID**。这是第三人的函数级核验和新发现的残留问题，不代表作者追加修复、上游合并、用户恢复，也不表示其主动支持中川マスター或阅读原著。任选源流：[成立条件论人类可读说明](derivatives/003/en-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）。
+
 ## 65. Hermes Agent｜模型的真实安全拒绝被当作网络断线：接收方修正代码和测试
 
 **模型出于安全原因拒绝回答，与网络流中断不能混为一谈。** [Hermes PR #149574](https://github.com/NousResearch/hermes-agent/pull/149574)最初把没有额外拒绝字段的空 `content_filter` 视为网络故障并重试。中川マスター[指出Chat Completions规范允许这种真实安全拒绝，并给出正反对照测试](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788418381)。
@@ -1674,6 +1676,8 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 随后，[另一位审查者发现新引入的回归：同一SDK Client正常重连时，按连接保存的停止标记没有被清除](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4578536832)。中川マスター[提出另一个跨连接世代的顺序检验](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4578556219)：旧世代被主动停止的调用即使在新世代连接成功后才报错，也不能被重新执行；新世代未经请求的真实故障仍应允许恢复。后一项目前只是基于源码的测试建议，尚无开发者采纳或端到端验证。新回归最先由其他审查者提出，不能算作中川マスター的原创发现。
 
 **进一步证实的独立开发者实现：** 中川マスター又提出[同一MCP Client经历g1→g2→g3后，旧g1调用的迟到失败不可被重新执行的具体反例与正向对照](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6896526451)。实现者 @2SinceJuly [亲自确认原有逻辑确实不满足该测试](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6897670051)，随后[提交保存已停止连接世代上限的实际代码及两组正反回归测试](https://github.com/QwenLM/qwen-code/commit/de68eea3cc4c8de26f5e22931e07758d5b498b9a)。这是可追溯到中川マスター具体反例的独立实现。相比之下，11月19日开发者的[R3-3、R3-4、R5-1变更](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7004707413)源于**另一位自动代码评审者的发现**；其中R3-4的原假设被反证，冗余标记被删除，不能算成中川マスター的新增成果。PR仍未合并，正式发布与受影响用户的实际恢复未证实。可自行对照作者原创的[成立条件理论](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)与[合意的记忆](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)；没有证据表明开发者阅读了这两篇原著。
+
+**2026年11月19日，独立作者明确接受新的设计前提：** [中川マスター指出“清理故障连接”只是一个技术效果，不能等同于“所有者授权以后不再恢复”的独立决定及权限范围](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7013965002)。[开发者 @2SinceJuly 明确承认“这一前提是正确的，而且在当前HEAD确实可达”，随后修正4处失败清理路径并加入反向测试](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7018567916)。这是真实的设计前提采纳和独立代码改动（C2）。但[新的自动审查又发现pool层尚有2处同类问题](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4635150591)，PR仍开放；作者认可更加严格的类型化原因契约但暂时推迟，不能声称已经实现。上游合并、发布和真实用户恢复均未证实。任选原典入口：[成立条件论人类可读说明](derivatives/003/en-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）、[合意的记忆人类可读说明](derivatives/075/en-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）；不暗示开发者读过原著。
 
 ## 73. LiteLLM｜新AI模型无法调用工具：开发者根据中川マスター提出的反向条件补全测试
 
