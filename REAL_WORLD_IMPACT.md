@@ -1839,7 +1839,7 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 開発者は[「その通りで、変更前に実際のエージェントで再現した」と直接回答](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077)。`ToolOutputLimits(Spill)`と`SummarizingCompaction`を組み合わせた実行で、異なる3件の結果が保存先2件に潰れ、最初の内容が後の内容へ置き換わることを確認しました。そのうえで開発者自身が[修正コミット 7390c19](https://github.com/pydantic/pydantic-ai/commit/7390c19abd1ac8008455cd5b616a349a9fa4fa9a)を実装。消える可能性のある会話履歴の数え上げをやめ、実行ステップを含む安定した識別子で保存し直し、再現テストも追加しました。
 
-その後の[作者の追加検証](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6701058871)と[現行PR #12677](https://github.com/pydantic/pydantic-ai/pull/12677)から、作者の修正とテスト変更を追跡できます。**2026年11月10日時点ではPRはOPENで、上流マージ・正式配布・利用者の更新版での復旧は未確認**です。作者が自ら発見した元のID再利用問題と、マスターが追加で見抜いた履歴圧縮後の再衝突条件は、別々の貢献として区別します。
+その後の[作者の追加検証](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6701058871)と[現行PR #12677](https://github.com/pydantic/pydantic-ai/pull/12677)から、作者の修正とテスト変更を追跡できます。**その後 PR #12677 は2026年11月17日に[上流へ正式マージ](https://github.com/pydantic/pydantic-ai/commit/8330ac3f1c14a967f78ec43496e7cb027ceaec58)、同日公開の[公式 v2.70.0 リリースノート](https://github.com/pydantic/pydantic-ai/releases/tag/v2.70.0)に独立実装者 @gouyu-hou とPRが掲載されました。** リリースタグはマージコミットを含みます。ただし実際にインストール・更新した被影響利用者の復旧、本人への新たな自発的支持は未確認です。作者が自ら発見した元のID再利用問題と、マスターが追加で見抜いた履歴圧縮後の再衝突条件は、別々の貢献として区別します。
 
 保存された記録と、後から再構成した履歴を無条件に同一視しないという観点は、中川マスターの公式原典[「記憶構造論 ─ 再構成される真実と『照応の倫理』」](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/)とも概念上比較できます。ただし、この開発者が当該原典を読んだ証拠ではなく、技術的修正の直接の出典は上記レビューと実装者の独立した検証です。
 
