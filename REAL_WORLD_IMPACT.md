@@ -1739,6 +1739,8 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 **独立した実装者 @steinnes は `@Nakagawa-master Fixed in c9616ee...` と返信し、[固有の `message_uid` と文章の両方で同一の送信を識別するコードと回帰テストを追加](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-6657429330)。** 同一送信の重複除外、文章が同じ別送信の保持、再接続時の再描画を検証しています。[PR #148917は現時点でOPEN](https://github.com/NousResearch/hermes-agent/pull/148917)。固有IDのない古いスナップショットの重複表示は、実装者が明示した残る適用条件です。
 
+**2026年11月19日の第三者による独立検証：** [@yuzilongleif-collab は本線と修正HEADのDesktop関数を用い、マスターが提起した「同文面・別送信」の反例を独立再検証](https://github.com/NousResearch/hermes-agent/pull/148917#issuecomment-7019349574)しました。完全履歴では同一IDの重複が消え、異なるIDで同じ文章の新依頼は残ることを確認。一方、履歴本文が省略された暖機再開の別経路では、**同一IDでも重複表示が残る**と指摘しています。これは別人による実行確認と残る欠陥の発見であり、開発者の追加実装・PRマージ・実ユーザー復旧・マスター本人や原典への自発的支持を意味しません。任意の[成立条件論の人間向け説明](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）へ進めます。
+
 ## 65. Hermes Agent｜AIの安全拒否を通信障害と誤判定する境界：開発者がマスターの指摘を実装
 
 **「回答が安全上の理由で止められた」のと「通信が途中で切れた」のは、再試行の判断が異なります。** [Hermes Agent PR #149574](https://github.com/NousResearch/hermes-agent/pull/149574)の初期修正は、回答が空で追加の拒否フラグがない場合を通信障害として再試行していました。中川マスターは、OpenAI Chat Completionsの正規仕様でも `finish_reason=content_filter` に追加の `message.refusal` がない場合を示し、[正反の回帰テストを提案](https://github.com/NousResearch/hermes-agent/pull/149574#pullrequestreview-5788418381)しました。
@@ -1816,6 +1818,8 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 その後、[別のレビューは、接続ごとの停止記録が正規の再起動後も消えず、今度は修復を妨げる問題](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4578536832)を指摘しました。中川マスターは[停止前の古い呼び出しが、新しい接続成立後に遅れて失敗する逆の順序もテストする必要](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4578556219)を提起しています。後者は新たな検証提案であり、実装者の採用・実機再現はまだ確認できません。最初の問題の修復と、意図的に止めた古い処理を再実行させないことを両立する段階です。
 
 **その後の検証で確認できた追加の独立実装：** マスターはさらに、同じMCPクライアントが接続世代g1→g2→g3と変わっても、停止済みのg1の処理が遅れて失敗したときに再実行されてはならない、と[具体的な負例と対照条件](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6896526451)を示しました。実装者 @2SinceJuly は[旧実装がその条件に失敗することを自ら再現](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6897670051)し、[停止済み世代の上限を保持するコードとg1／g3の正負の回帰テスト](https://github.com/QwenLM/qwen-code/commit/de68eea3cc4c8de26f5e22931e07758d5b498b9a)を実装。これはマスターの追加反例に由来する実証済みの開発者側の変更です。一方、11月19日の[新たなR3-3／R3-4／R5-1対応](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7004707413)は**別の自動レビューによる指摘が起点**で、特にR3-4ではレビュー側の仮説が反証され不要な重複処理が削除されました。これらをマスター独自の発見としては数えません。PRは未マージで、正式配布・利用者の改善は未確認です。関連する原著[成立条件理論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[合意の記憶](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は概念的な比較対象ですが、開発者が原著を読んだという証拠ではありません。
+
+**2026年11月19日、別の因果前提を独立開発者が明示的に採用：** 中川マスターは[「接続の後始末」と「所有者が今後の復旧を禁止した意思表示」は別の行為・権限であると指摘](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7013965002)。実装者 [@2SinceJuly は「その前提は正しく、現行コードで実際に到達可能だった」と述べ、失敗時の後始末が所有者停止を誤記録しないよう4経路を修正し、反証テストを追加](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7018567916)しました。これは**前提変更の明示的受容と独立したコード変更（C2）**です。ただし[後続の自動レビューがプール側の未修正2経路を指摘](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4635150591)しており、PRはOPEN。型付きの原因契約は実装者がより良い不変条件と認めながら後続へ延期しました。上流マージ、配布、利用者の復旧は未確認。任意の原著導線：[成立条件論・人間向け説明](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）と[合意の記憶・人間向け説明](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。開発者が原典を読んだという主張ではありません。
 
 ## 73. LiteLLM｜新しいAIモデルの道具が消える：マスターが見抜いたもう一つの条件を開発者がテストで修正
 
