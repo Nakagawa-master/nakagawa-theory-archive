@@ -1697,7 +1697,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **独立作者[直接确认并在真实Agent运行中重现这一问题](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6688486077)**：结合`ToolOutputLimits(Spill)`和历史压缩，三个不同的大型结果最终只剩两份文件，第一份还被较新的结果覆盖。随后作者亲自提交[修复 7390c19](https://github.com/pydantic/pydantic-ai/commit/7390c19abd1ac8008455cd5b616a349a9fa4fa9a)，使用稳定的执行步骤而非被压缩的历史消息计数形成存储标识，并加入复现测试。
 
-作者还发布了[后续测试情况](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6701058871)。截至2026年11月10日，**PR #12677仍为OPEN**，上游合并、正式发布和受影响用户更新后的恢复情况尚未核实。原本重复ID问题由开发者自己提出，修复代码也由开发者编写；中川マスター的独立贡献是发现历史压缩后的再次冲突条件并提出可验证的测试。
+作者还发布了[后续测试情况](https://github.com/pydantic/pydantic-ai/pull/12677#issuecomment-6701058871)。**PR #12677 于2026年11月17日[正式合入上游](https://github.com/pydantic/pydantic-ai/commit/8330ac3f1c14a967f78ec43496e7cb027ceaec58)**；同日发布的[官方 v2.70.0 版本说明](https://github.com/pydantic/pydantic-ai/releases/tag/v2.70.0)明确列出独立实现者 @gouyu-hou 和本PR，发布标签源码也包含合并提交。这证实了代码合并与官方发布源码收录，**但尚未证明受影响用户实际安装后恢复，亦不等于另一个人主动支持中川マスター本人**。原本重复ID问题由开发者自己提出，修复代码也由开发者编写；中川マスター的独立贡献是发现历史压缩后的再次冲突条件并提出可验证的测试。
 
 对于“被保存的记录”和“后来重构的上下文”之间的区别，读者还可自行对照中川マスター的[《记忆结构论》官方原典](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/)。这不表示该PR开发者曾阅读或采用该理论原文。
 
