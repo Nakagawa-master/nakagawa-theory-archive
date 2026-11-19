@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共82例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共83例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1776,6 +1776,16 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 中川大师随后[提出更深一层的证据归属条件](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6946613371)：一个session、turn、attempt或request的成功证据，不能证明另一个操作成立。[独立审查者 @yiliang114 复现反例并明确注明中川大师的观点](https://github.com/QwenLM/qwen-code/pull/17520#pullrequestreview-5939308806)，[开发者自己的验证](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6948482799)也确认了问题。**这一将结果证据绑定到正确目标的条件尚未进入已合并的#17520实现，仍留待后续适配器阶段。** 已实现的设计与尚未实现的新条件应分别核验。
 
 原典入口：[成立条件论·第0论英文人类可读说明](derivatives/003/en-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）和[合意的记忆英文说明](derivatives/075/en-human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。这些链接不表示开发者已阅读原典全文。
+
+## 83. Untether｜AI完成任务却丢失最终答复：独立开发者采纳中川大师对送达状态的区分
+
+AI完成一项耗时的任务，不代表用户一定收到最终答复。[Untether的实际问题报告者 @nathanschram 记录了一次Telegram服务故障](https://github.com/littlebearapps/untether/issues/1207)：发送最终答复失败，网络恢复后仍未重试，手机界面只剩下过时的进度消息。
+
+[中川大师分析了实际源代码，并给出具体反例](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514299785)：即使发送接口返回 `None` 而没有抛出异常，系统也可能把最终答复标记成“已发送”。他提出分别保存“已经尝试发送”“有对方确认的送达证据”“是否送达仍不确定”三种事实；明确未送达的结果应在运行进程结束后继续保留并安全重发，而确认可能丢失的结果不可盲目重复发送。
+
+独立报告者兼开发者 [@nathanschram 直接回复中川大师，明确感谢这项有帮助的审查并确认了具体原因](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514896543)，随后将三状态区分和可跨重启保留的最终答复写入修复方案。开发团队[报告了断网恢复、重启后补发以及五段消息各送达一次等实际开发测试](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6972073133)。包含这项修复的[PR #1246已于2026年11月18日合入项目的开发分支](https://github.com/littlebearapps/untether/pull/1246)。具体代码和测试由接收方独立编写。
+
+开发分支合入与稳定版发布是不同阶段。[截至本次核验，已发布稳定版为v0.36.1](https://github.com/littlebearapps/untether/releases/tag/v0.36.1)，修复进入v0.36.2正式版及实际受影响用户的恢复仍需另行确认。相关原创思想可参阅中川大师的[成立条件论·第0论](derivatives/003/en-human-entry.md)（[原著](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）与[合意的记忆](derivatives/075/en-human-entry.md)（[原著](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。这些链接不表示外部开发者已经阅读过原著。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
