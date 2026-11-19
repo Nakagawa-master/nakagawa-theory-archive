@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は82件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は83件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**82の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**83の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1918,6 +1918,16 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 続いて中川マスターは[「結果を示す証拠は、今回のsession・turn・attempt・requestに属するのか」という別の前提](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6946613371)を提起。[独立レビュアー @yiliang114 は具体的な反例を実行・再現し、マスターの指摘を明記](https://github.com/QwenLM/qwen-code/pull/17520#pullrequestreview-5939308806)。[開発者自身の検証](https://github.com/QwenLM/qwen-code/pull/17520#issuecomment-6948482799)も同じ不足を確認しました。ただし、**この証拠と操作対象の結び付けは、マージ済み#17520の実コードには未実装であり、後続アダプター工程に残っています**。成立した実装と、独立した人に認識された未解決の設計境界を混同しません。
 
 原著者の考え方：[成立条件論・第0論の人間向け説明](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）、[合意の記憶の人間向け説明](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。これらは読者への源流リンクであり、Qwen開発者が原典を読んだという主張ではありません。
+
+## 83. Untether｜AIの最終回答が通信障害で失われた：中川マスターの受領状態の区別を開発者が採用・開発ブランチへ統合
+
+AIに長時間作業を任せたのに、完成した答えだけがスマートフォンへ届かない。通信が回復しても最後の返答が再送されず、画面には古い進捗だけが残る。この現実の不具合を、[Untether利用者・報告者 @nathanschram が実際のTelegram障害記録から報告](https://github.com/littlebearapps/untether/issues/1207)しました。
+
+[中川マスターは2026年11月の元コードを読み、送信失敗時に `None` が返っても「送信済み」の状態が立ち、再送も進捗保持も失われる具体的な因果を示しました](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514299785)。そして「送信を試みた」「Telegramから受領の証拠がある」「受領できたか不明」を同一視しない設計を提案。相手が明確に受け取らなかった場合だけ保存済みの最終回答を再送し、届いたか不明な場合は安易に二重送信しないこと、プロセス終了後の再起動まで検証することを求めました。
+
+独立した報告者・開発者 **@nathanschram は[マスター本人に有用な指摘だと直接返信](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514896543)**し、調査で原因を確認したうえで、三状態の区別と再起動後も残る最終回答の保持を実装方針に採用しました。実際に開発側が[通信障害・復旧・分割送信・再起動の受入試験結果を報告](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6972073133)。対象の改修を含む[開発PR #1246は2026年11月18日に開発ブランチへマージ](https://github.com/littlebearapps/untether/pull/1246)されました。修正コードとテストは受け手側の著作です。
+
+このマージは製品の安定版への収録を意味しません。確認時点の[公開済み安定版はv0.36.1](https://github.com/littlebearapps/untether/releases/tag/v0.36.1)で、v0.36.2への正式収録と、問題を体験した利用者本人の復旧は次の確認対象です。原著者が区別した「局所的な送信成功」と「相手への実際の到達」の違いは、[成立条件論・第0論](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）や[合意の記憶](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）からも考えられます。開発者がこれら原著を読んだと断定するものではありません。
 
 ## 公開された成果と、原典へ戻る道筋
 
