@@ -1673,6 +1673,8 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 随后，[另一位审查者发现新引入的回归：同一SDK Client正常重连时，按连接保存的停止标记没有被清除](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4578536832)。中川マスター[提出另一个跨连接世代的顺序检验](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4578556219)：旧世代被主动停止的调用即使在新世代连接成功后才报错，也不能被重新执行；新世代未经请求的真实故障仍应允许恢复。后一项目前只是基于源码的测试建议，尚无开发者采纳或端到端验证。新回归最先由其他审查者提出，不能算作中川マスター的原创发现。
 
+**进一步证实的独立开发者实现：** 中川マスター又提出[同一MCP Client经历g1→g2→g3后，旧g1调用的迟到失败不可被重新执行的具体反例与正向对照](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6896526451)。实现者 @2SinceJuly [亲自确认原有逻辑确实不满足该测试](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6897670051)，随后[提交保存已停止连接世代上限的实际代码及两组正反回归测试](https://github.com/QwenLM/qwen-code/commit/de68eea3cc4c8de26f5e22931e07758d5b498b9a)。这是可追溯到中川マスター具体反例的独立实现。相比之下，11月19日开发者的[R3-3、R3-4、R5-1变更](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7004707413)源于**另一位自动代码评审者的发现**；其中R3-4的原假设被反证，冗余标记被删除，不能算成中川マスター的新增成果。PR仍未合并，正式发布与受影响用户的实际恢复未证实。可自行对照作者原创的[成立条件理论](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)与[合意的记忆](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)；没有证据表明开发者阅读了这两篇原著。
+
 ## 73. LiteLLM｜新AI模型无法调用工具：开发者根据中川マスター提出的反向条件补全测试
 
 **新模型尚未进入提供者的能力目录，AI工具调用就失效了。** [LiteLLM用户问题 #48145](https://github.com/BerriAI/litellm/issues/48145)真实报告：JSON配置的提供者使用未登记模型时，`tools`无法正确传递；用户还对比了新旧LiteLLM版本。“尚未登记能力”不等于“已确认不支持工具”。
