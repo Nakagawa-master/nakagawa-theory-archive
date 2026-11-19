@@ -1815,6 +1815,8 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 その後、[別のレビューは、接続ごとの停止記録が正規の再起動後も消えず、今度は修復を妨げる問題](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4578536832)を指摘しました。中川マスターは[停止前の古い呼び出しが、新しい接続成立後に遅れて失敗する逆の順序もテストする必要](https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4578556219)を提起しています。後者は新たな検証提案であり、実装者の採用・実機再現はまだ確認できません。最初の問題の修復と、意図的に止めた古い処理を再実行させないことを両立する段階です。
 
+**その後の検証で確認できた追加の独立実装：** マスターはさらに、同じMCPクライアントが接続世代g1→g2→g3と変わっても、停止済みのg1の処理が遅れて失敗したときに再実行されてはならない、と[具体的な負例と対照条件](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6896526451)を示しました。実装者 @2SinceJuly は[旧実装がその条件に失敗することを自ら再現](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6897670051)し、[停止済み世代の上限を保持するコードとg1／g3の正負の回帰テスト](https://github.com/QwenLM/qwen-code/commit/de68eea3cc4c8de26f5e22931e07758d5b498b9a)を実装。これはマスターの追加反例に由来する実証済みの開発者側の変更です。一方、11月19日の[新たなR3-3／R3-4／R5-1対応](https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7004707413)は**別の自動レビューによる指摘が起点**で、特にR3-4ではレビュー側の仮説が反証され不要な重複処理が削除されました。これらをマスター独自の発見としては数えません。PRは未マージで、正式配布・利用者の改善は未確認です。関連する原著[成立条件理論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)と[合意の記憶](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は概念的な比較対象ですが、開発者が原著を読んだという証拠ではありません。
+
 ## 73. LiteLLM｜新しいAIモデルの道具が消える：マスターが見抜いたもう一つの条件を開発者がテストで修正
 
 **新しいAIモデルを導入したら、それまで動いていたツール呼び出しが使えなくなる。** [LiteLLMの利用者報告 #48145](https://github.com/BerriAI/litellm/issues/48145)では、JSONで定義された提供者の未登録モデルに`tools`が渡らず、以前のバージョンでは使えた道具が失われたと報告されています。ソフトウェアが「そのモデルの対応能力をまだ知らない」ことと「道具を使えないこと」は同じではありません。
