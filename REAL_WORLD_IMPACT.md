@@ -1,22 +1,22 @@
 # REAL WORLD IMPACT
 
-*世界最先端のAI・OSS開発等に働きかけ、実装されるに至った記録*
+*世界最先端のAI・OSS開発等に働きかけ、実装されるに至った取り組み記録*
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は82件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**中川マスターの因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながった**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は82件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、各プロジェクトの開発者によるコード修正やテスト追加につながり、一部は正式リリースまで至った事例**を記録しています。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
-たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
+たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
-- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 指摘を[開発者が修正PRの報告元として明記](https://github.com/openclaw/openclaw/pull/160856)。修正前に失敗するテストを用意し、修正後に**49件のテスト成功・本線マージ**まで進みました。別の[公式リリース文書には `@Nakagawa-master` の名前も掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。[事例51を読む](#51-openclawaiの権限変更で他人の処理まで止まる問題をレビューし公式リリースノートに名前が掲載)。
+- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 指摘を[開発者が修正PRの報告元として明記](https://github.com/openclaw/openclaw/pull/160856)。修正前に失敗するテストを用意し、修正後に**49件のテスト成功・本線マージ**まで進みました。別の[公式リリース文書にはレビュー投稿者の名前も掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。[事例51を読む](#51-openclawaiの権限変更で他人の処理まで止まる問題をレビューし公式リリースノートに名前が掲載)。
 - **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。[事例3を読む](#3-memberjunction同じidと上書きしてよい所有権を分ける)。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。[事例1を読む](#1-posthogaiが提示した数値とposthog自身の測定値を分ける)。
-- **[Qwen Code｜読み取りだけのコマンドを拒否する一方、保護ファイルへの書き込みを見逃す権限判定](https://github.com/QwenLM/qwen-code/pull/15681)** — 当初の `2>&1` 誤拒否とは別に、実際の `>&protected.txt` の書込先を解析器が `&protected.txt` と誤認すると、特定ファイルへの書込禁止が一致しない点を[中川マスターが指摘](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が実際の権限判定で修正前 `allow`／修正後 `deny` を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、自ら修正・回帰テストを実装した[#15681 が2026年11月1日にマージ](https://github.com/QwenLM/qwen-code/pull/15681)。**[11月2日公開のQwen Code正式版 v0.26.6のリリースノートには #15681 と独立実装者 @Suaroman が明記](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)**され、タグはマージコミットの子孫です。
-- **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。[事例47を読む](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)。
-- **[The Daily AI Pulse｜外部AI技術メディアに英仏2言語で掲載](https://github.com/GadDev/daily-ai-pulse/pull/253)** — **別件のQwen Codeレビュー証拠の問題**を外部の編集者が記事として編集・採用し、[英語](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)の2言語で**本番公開**。中川マスターの検証提案も記事に出典付きで掲載されています。[掲載・配信の詳細](#外部ai技術メディアへの掲載oss修正prとは別の第三者編集実績)。
+- **[Qwen Code｜読み取りだけのコマンドを拒否する一方、保護ファイルへの書き込みを見逃す権限判定](https://github.com/QwenLM/qwen-code/pull/15681)** — 当初の `2>&1` 誤拒否とは別に、実際の `>&protected.txt` の書込先を解析器が `&protected.txt` と誤認すると、特定ファイルへの書込禁止が一致しない点が[レビューで指摘されました](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が実際の権限判定で修正前 `allow`／修正後 `deny` を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、自ら修正・回帰テストを実装した[#15681 が2026年11月1日にマージ](https://github.com/QwenLM/qwen-code/pull/15681)。**[11月2日公開のQwen Code正式版 v0.26.6のリリースノートには #15681 と独立実装者 @Suaroman が明記](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)**され、タグはマージコミットの子孫です。
+- **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。提示された反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。[事例47を読む](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)。
+- **[The Daily AI Pulse｜外部AI技術メディアに英仏2言語で掲載](https://github.com/GadDev/daily-ai-pulse/pull/253)** — **別件のQwen Codeレビュー証拠の問題**を外部の編集者が記事として編集・採用し、[英語](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)の2言語で**本番公開**。レビューで示した検証提案も記事に出典付きで掲載されています。[掲載・配信の詳細](#外部ai技術メディアへの掲載oss修正prとは別の第三者編集実績)。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。[事例41を読む](#41-pydanticai同じidempotency-keyの再送が未参照メッセージを増やさない)。
 
-中川マスター（Nakagawa Master）は Keisuke Nakagawa の筆名です。ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
+**中川マスター（Nakagawa Master）は、Keisuke Nakagawa の活動名義（筆名）です。**ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
