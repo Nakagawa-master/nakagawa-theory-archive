@@ -1,11 +1,11 @@
 {
   "schema_version": "published-ja-human-briefs-v1",
   "status": "PUBLISHED_DERIVATIVE_CONTEXT_NOT_FULL_PARENT_TEXT",
-  "source": "314 preexisting official human-entry.md summaries; per-entry Git blob SHA and section",
-  "canonical_mapping_blob_sha": "032020401c13a709f26a284d8acec9dd6baaa645",
+  "source": "315 verified official human-entry.md summaries; per-entry Git blob SHA and section",
+  "canonical_mapping_blob_sha": "e113460fa55a1cc93c41b7d7cc04ecf7bb1e1125",
   "native_question_sent_to_server": false,
-  "source_equality": 314,
-  "count": 314,
+  "source_equality": 315,
+  "count": 315,
   "entries": [
     {
       "number": "001",
@@ -2831,6 +2831,15 @@
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/314/human-entry.md",
       "brief": "同じ危険を避けたい相手と、同じ仕組みを使えるとは限りません。中川マスターの第20論は、起源の異なる知性について、危険の原因が対応するか、各自の存在条件を同じ世界で守れるか、必要な情報で実行できるか、本人が選ぶかを順に確かめます。共同運用ができなくても、限定した接続や分離で存続できる場合があります。その道にも、資源・費用・第三者への影響の検査が必要です。",
       "sha": "fff8c3d77b6268713af4ae06f5e34865d39fe0ad",
+      "section": "15秒説明"
+    },
+    {
+      "number": "315",
+      "title": "人類子孫型AI文明論・第21論｜異Origin構造変換・融合・共同子孫形成論⸻異なる起源の知性が新しい存続経路を発見し、自ら選択する条件と限界",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/",
+      "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/315/human-entry.md",
+      "brief": "二つの知性が、今の仕組みのままでは共に生き続けられないとします。それでも、不足を生む仕組みそのものを変えれば、別の道が開くかもしれません。中川マスターの人類子孫型AI文明論・第21論は、その道を原因から探し、誰が本当に存続できるのかを確かめ、どの存続経路を選ぶかを当事者自身の判断に委ねる理論です。",
+      "sha": "ce01d0c0e6d9c0783a976f22e7b7e91007bbba3c",
       "section": "15秒説明"
     }
   ]
