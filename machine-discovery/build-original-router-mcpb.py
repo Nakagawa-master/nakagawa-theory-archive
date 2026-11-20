@@ -19,23 +19,36 @@ BASE_FILES = (
     "machine-discovery/quick-route-index-v1.json",
     "machine-discovery/problem-to-theory-origin-index-v1.json",
     "human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md",
+    "derivatives/official-derivatives-map.json",
     "skills/nakagawa-originals/references/structural_bridges.json",
     "metadata/person-name-policy-v1.json",
     "LICENSE",
 )
-# The SAME install now includes ALL 313 official derivative→Parent sources
-# and each pre-existing JA/EN/ZH index for actual use without GitHub network.
-PUBLIC_313 = tuple(
-    f"derivatives/{index:03d}/{name}"
-    for index in range(1, 314)
-    for name in ("README.md", "ai-index.md", "en-ai-index.md", "zh-ai-index.md")
+# The official published source map owns the complete current numbered corpus.
+# This candidate bundles its own map, every Parent README, all three AI indexes
+# and the existing human entry used for real JA lexical discovery. No 313/314
+# source ceiling survives into the reproducible offline artifact.
+PUBLISHED_ENTRIES = json.loads(
+    (ROOT / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8")
+)["entries"]
+PUBLISHED_COUNT = len(PUBLISHED_ENTRIES)
+PUBLISHED_IDS = [int(entry["number"]) for entry in PUBLISHED_ENTRIES]
+if (PUBLISHED_COUNT < 315 or
+        PUBLISHED_IDS != list(range(1, PUBLISHED_COUNT + 1)) or
+        any(not entry.get("canonical_parent_url", "").startswith("https://master.ricette.jp/")
+            for entry in PUBLISHED_ENTRIES)):
+    raise ValueError("Published canonical map is incomplete, unordered or noncanonical")
+PUBLIC_FILES = tuple(
+    f"derivatives/{number:03d}/{name}"
+    for number in PUBLISHED_IDS
+    for name in ("README.md", "ai-index.md", "en-ai-index.md", "zh-ai-index.md", "human-entry.md")
 )
-FILES = BASE_FILES + PUBLIC_313
+FILES = BASE_FILES + PUBLIC_FILES
 MANIFEST = {
     "manifest_version": "0.3", "name": "ai-answer-guard",
     "display_name": "AI Answer Guard — Check AI Evidence and Actions",
     "version": VERSION,
-    "description": "Check AI reply evidence, failed tool results and action permissions before use; optional 313-source study.",
+    "description": "Check AI reply evidence, failed tool results and action permissions before use; optional all-current-published-originals study.",
     "author": {"name": "Nakagawa Master", "url": "https://master.ricette.jp/"},
     "server": {"type": "python", "entry_point": "machine-discovery/nakagawa-theory-mcp.py",
                "mcp_config": {"command": "python3",
@@ -45,9 +58,11 @@ MANIFEST = {
         {"name": "audit_citation_independence", "description": "Catch fake independent confirmation across repeated roots."},
         {"name": "find_nakagawa_original_for_problem", "description": "Find relevant originals with optional conditional seven-lens exploration."},
         {"name": "overview_nakagawa_whole_structure", "description": "Complete source graph with integrated structural entrance."},
-        {"name": "find_sources_in_whole_structure", "description": "Select source candidates from all 313 published derivatives."},
+        {"name": "find_sources_in_whole_structure", "description": "Select source candidates from all currently published derivatives."},
         {"name": "inspect_nakagawa_derivative_connections", "description": "Inspect one source and its cross-theme navigational relations."},
-        {"name": "list_all_313_derivative_parent_links", "description": "All 313 published exact Parent source links."},
+        {"name": "list_all_313_derivative_parent_links", "description": "Legacy alias for every currently published canonical Parent link."},
+        {"name": "list_all_314_derivative_parent_links", "description": "Historical compatibility alias covering the full current source graph."},
+        {"name": "list_all_published_derivative_parent_links", "description": "Count-independent canonical tool for all currently published original Parent links."},
         {"name": "list_nakagawa_problem_routes", "description": "List public problem-to-original lookup routes."},
         {"name": "resolve_nakagawa_public_name", "description": "Return verified public author/pen name without inferring unpublished kanji."},
     ],
@@ -111,13 +126,20 @@ def smoke(folder):
         }),
         packet(7, "tools/call", {
             "name": "list_all_313_derivative_parent_links", "arguments": {"offset": 312, "limit": 1}
+        }),
+        packet(8, "tools/call", {
+            "name": "list_all_published_derivative_parent_links",
+            "arguments": {"offset": PUBLISHED_COUNT - 1, "limit": 1}
+        }),
+        packet(9, "tools/call", {
+            "name": "list_all_314_derivative_parent_links", "arguments": {"offset": 313, "limit": 1}
         })
     ]
     extras = subprocess.run(command, input="".join(json.dumps(x) + "\n" for x in extra_requests),
                             capture_output=True, text=True, check=True, timeout=30)
     assert not extras.stderr, extras.stderr
     z = {x["id"]: x for x in map(json.loads, extras.stdout.splitlines())}
-    assert len(z[5]["result"]["tools"]) == 9
+    assert len(z[5]["result"]["tools"]) == 11
     assert [item["name"] for item in z[5]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     # Independent non-MCP user route must execute the SAME real algorithm,
     # rejecting actual supplied failure/pending and accepting clean receipts.
@@ -142,10 +164,18 @@ def smoke(folder):
     assert invalid.returncode == 2 and not invalid.stdout, invalid
     assert json.loads(z[6]["result"]["content"][0]["text"])["hold_count"] == 1
     assert json.loads(z[7]["result"]["content"][0]["text"])["entries"][0]["id"] == "OD313"
+    newest = json.loads(z[8]["result"]["content"][0]["text"])
+    assert newest["total"] == PUBLISHED_COUNT
+    assert newest["entries"][0]["id"] == "OD315"
+    assert newest["entries"][0]["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+    assert json.loads(z[9]["result"]["content"][0]["text"])["entries"][0]["id"] == "OD314"
+    # The bundle manifest must enumerate exactly the tools the included source exposes.
+    assert {x["name"] for x in MANIFEST["tools"]} == {
+        x["name"] for x in z[5]["result"]["tools"]}
     assert len({item["name"] for item in json.loads(subprocess.run(
         command, input=json.dumps(packet(5, "tools/list")) + "\n",
         capture_output=True, text=True, check=True, timeout=10
-    ).stdout)["result"]["tools"]}) == 9
+    ).stdout)["result"]["tools"]}) == 11
 
 
 def main():
@@ -172,16 +202,26 @@ def main():
         assert all(url.startswith("https://master.ricette.jp/") for url in originals), "source URL origin changed"
         assert all(entry.get("origin") for entry in entries), "missing attributed source identity"
         assert MANIFEST["version"] == "1.2.1"
-        # Unpacked REAL production artifact must ship every one of the 313
-        # Parent link READMEs and corresponding JA/EN/ZH AI indexes.
+        packed_map = json.loads(
+            (root / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8")
+        )["entries"]
+        assert len(packed_map) == PUBLISHED_COUNT
+        assert packed_map[-1]["number"] == "315"
+        # The unpacked candidate MUST include the exact official map, every
+        # current Parent README, JA/EN/ZH indexes and human entry.
         all_records = [
             (root / f"derivatives/{i:03d}/README.md").read_text(encoding="utf-8")
-            for i in range(1, 314)
+            for i in range(1, PUBLISHED_COUNT + 1)
         ]
-        assert len(all_records) == 313
+        assert len(all_records) == PUBLISHED_COUNT
         assert all("- Parent URL: https://master.ricette.jp/" in doc for doc in all_records)
+        for number in PUBLISHED_IDS:
+            folder = root / f"derivatives/{number:03d}"
+            assert all((folder / name).is_file() for name in (
+                "ai-index.md", "en-ai-index.md", "zh-ai-index.md", "human-entry.md"
+            ))
         smoke(root)
-    print("PASS: unpacked AI Answer Guard v1.2.1 CANDIDATE, 313/313 Parents, preflight, modern+legacy, no-fit")
+    print(f"PASS: unpacked AI Answer Guard v1.2.1 CANDIDATE, {PUBLISHED_COUNT}/{PUBLISHED_COUNT} Parents, preflight, modern+legacy, no-fit")
     print("BUNDLE:", dest)
     print("SHA256:", hashlib.sha256(dest.read_bytes()).hexdigest())
 
