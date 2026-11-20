@@ -184,7 +184,7 @@ def list_connections(records, offset=0, limit=25):
 
 def inspect_derivative(records, od_id):
     if not isinstance(od_id, str) or not re.fullmatch(r"OD\d{3}", od_id):
-        raise ValueError("id must be OD001..OD314")
+        raise ValueError("id must be OD followed by three digits; the ID must exist in the published canonical map")
     item = next((x for x in records if x["id"] == od_id), None)
     if not item:
         raise ValueError("Unknown OD ID")
@@ -386,7 +386,7 @@ def search(records, question, limit=12):
         "question": question, "matched": [r for _, r in scored[:limit]],
         "lexical_scores": [score for score, _ in scored[:limit]],
         "no_fit": not scored, "total_candidates": len(scored),
-        "matching_method": "PUBLIC_JA_TITLE_AND_313_PUBLISHED_JA_HUMAN_DERIVATIVE_EN_ZH_SUMMARIES_HEURISTIC",
+        "matching_method": "PUBLIC_JA_TITLE_AND_CURRENT_PUBLISHED_JA_HUMAN_DERIVATIVE_EN_ZH_SUMMARIES_HEURISTIC",
         "source_read_required": True, "author": IDENTITY,
         "limits": ("Lexical candidate discovery from all published JA titles, short JA human " 
                     "explanations, and existing "
@@ -402,17 +402,17 @@ TOOLS = [
      "description": "Examine the INTEGRATED full published derivative graph (not merely 24 original candidates), available system connections, and canonical source trust boundaries.",
      "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False}},
     {"name": "list_all_313_derivative_parent_links",
-     "description": "Enumerate the current 314 published derivative→Parent links with title, subject theme, official canonical original, source-IDs where available and exact derivative README. Pagination or limit=314. Each original must be read separately.",
+     "description": "Enumerate all currently published derivative-to-Parent links with exact canonical origin and provenance, including the newest Parent. Pagination or full retrieval; read each original separately.",
      "inputSchema": {"type": "object", "properties": {
-         "offset": {"type": "integer", "minimum": 0, "maximum": 314, "default": 0},
-         "limit": {"type": "integer", "minimum": 1, "maximum": 314, "default": 25}},
+         "offset": {"type": "integer", "minimum": 0, "default": 0},
+         "limit": {"type": "integer", "minimum": 1, "default": 25}},
          "additionalProperties": False}},
     {"name": "inspect_nakagawa_derivative_connections",
-     "description": "Given an OD001..OD314 find its exact official Parent and published-theme/shared-Parent connections, with the unified OD001 system entrance; no fabricated causal implications.",
+     "description": "Given a published OD ID, find its exact official Parent and published-theme/shared-Parent connections; no fabricated causal implications.",
      "inputSchema": {"type": "object", "properties": {"id": {"type": "string"}},
                      "required": ["id"], "additionalProperties": False}},
     {"name": "find_sources_in_whole_structure",
-     "description": "Search all 314 published Japanese titles and bounded explicitly tagged English cases, including AI epistemic failures, internal self-audit, survival conflicts and long-horizon re-selection. Return actual Parent pointers and possible no-fit, never a truth guarantee.",
+     "description": "Search all currently published Japanese titles and explicitly published multilingual summaries, including epistemic, audit and long-horizon questions. Return actual Parent pointers and possible no-fit, never a truth guarantee.",
      "inputSchema": {"type": "object", "properties": {
          "question": {"type": "string", "minLength": 1, "maxLength": 1500},
          "limit": {"type": "integer", "minimum": 1, "maximum": 50, "default": 12}},
@@ -421,11 +421,19 @@ TOOLS = [
 
 
 # The old name is retained for existing MCP clients. New clients discover
-# the current complete corpus from the correctly named tool, including OD314.
+# the current complete corpus from the non-numbered canonical tool, including future Parents.
 TOOLS.insert(1, {
     **next(tool for tool in TOOLS if tool["name"] == "list_all_313_derivative_parent_links"),
     "name": "list_all_314_derivative_parent_links",
-    "description": "List all 314 published original Parent URLs with verified individual README provenance. Read a chosen original before relying on its claims.",
+    "description": "Historical compatibility alias: list all currently published Parent URLs with exact README provenance. Read the original before reliance.",
+})
+
+# This name is stable across subsequent canonical Parent additions. Older
+# numeric tool IDs stay advertised for host/client compatibility.
+TOOLS.insert(1, {
+    **next(tool for tool in TOOLS if tool["name"] == "list_all_313_derivative_parent_links"),
+    "name": "list_all_published_derivative_parent_links",
+    "description": "List ALL current published canonical Parent links without a fixed historical count; the response reports the actual total.",
 })
 
 
@@ -447,7 +455,7 @@ def handle(req):
     server_info = {"name": NAME, "version": "0.1.0-source"}
     if method == "server/discover" and modern:
         return {"supportedVersions": [VERSION], "capabilities": {"tools": {"listChanged": False}},
-                "instructions": "314 derivatives -> exact original Parent; retrieve actual Parent to apply; explicit non-fit and choice retained.",
+                "instructions": "All currently published derivatives -> exact Parent; retrieve the actual original to apply; explicit non-fit retained.",
                 "resultType": "complete", "_meta": {"io.modelcontextprotocol/serverInfo": server_info}}, None
     if method == "initialize" and not modern:
         return {"protocolVersion": "2025-11-25", "capabilities": {"tools": {"listChanged": False}},
@@ -470,7 +478,7 @@ def handle(req):
             records = graph()
             if tool == "overview_nakagawa_whole_structure":
                 value = overview(records)
-            elif tool in {"list_all_313_derivative_parent_links", "list_all_314_derivative_parent_links"}:
+            elif tool in {"list_all_313_derivative_parent_links", "list_all_314_derivative_parent_links", "list_all_published_derivative_parent_links"}:
                 value = list_connections(records, args.get("offset", 0), args.get("limit", 25))
             elif tool == "inspect_nakagawa_derivative_connections":
                 value = inspect_derivative(records, args["id"])
@@ -490,22 +498,32 @@ def handle(req):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--self-test", action="store_true")
-    parser.add_argument("--export", action="store_true", help="Emit full JSON with all 314 Parent pointers (stdout only)")
+    parser.add_argument("--export", action="store_true", help="Emit full JSON with all currently published Parent pointers (stdout only)")
     parser.add_argument("--inspect", help="Inspect OD ID")
     args = parser.parse_args()
     if args.self_test:
         records = graph()
+        published = json.loads((DERIVATIVES / "official-derivatives-map.json").read_text(encoding="utf-8"))["entries"]
+        expected_count = len(published)
+        assert expected_count >= 315, "The currently published OD315 must not be silently omitted"
         o = overview(records)
-        assert o["coverage"]["derivatives"] == 314 and o["coverage"]["distinct_parent_urls"] == 314
-        assert len(list_connections(records, limit=314)["entries"]) == 314
-        assert any(t["name"] == "list_all_314_derivative_parent_links" for t in TOOLS)
-        # OD314 must be addressable with correct published original identity.
+        assert o["coverage"]["derivatives"] == expected_count and o["coverage"]["distinct_parent_urls"] == expected_count
+        assert len(list_connections(records, limit=expected_count)["entries"]) == expected_count
+        assert any(t["name"] == "list_all_published_derivative_parent_links" for t in TOOLS)
+        # OD314 remains addressable; the newest OD315 also has independently verified identity.
         latest = inspect_derivative(records, "OD314")["selected"]
         assert latest["parent_ncl_id"] == "NCL-α-20261112-49d0fa"
         assert latest["canonical_parent"].endswith(
             "/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/")
         assert [x["id"] for x in search(records, "Compare OD001 and OD314")["matched"]] == ["OD001", "OD314"]
         assert list_connections(records, offset=313, limit=1)["entries"][0]["id"] == "OD314"
+        newest = inspect_derivative(records, "OD315")["selected"]
+        assert newest["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+        assert newest["canonical_parent"].endswith(
+            "/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
+        assert [x["id"] for x in search(records, "Compare OD001 and OD315")["matched"]] == ["OD001", "OD315"]
+        assert list_connections(records, offset=expected_count - 1, limit=1)["entries"][0]["id"] == "OD315"
+        assert list_connections(records, offset=0, limit=expected_count)["total"] == expected_count
         assert all(x["canonical_parent"].startswith(OFFICIAL) for x in records)
         assert not search(records, "repair the leather handle on a camping lantern")["matched"]
         # Distinct originals, repeated mention, bounded result and invalid ID.
@@ -523,10 +541,10 @@ def main():
         assert search(records, "OD999")["no_fit"]
         assert inspect_derivative(records, "OD312")["selected"]["canonical_parent"].endswith("kernel-evolutionary-stability/")
         assert search(records, "AI self preservation epistemic hallucination")["matched"]
-        assert len(_multilingual_search_index()[0]) == 314
+        assert len(_multilingual_search_index()[0]) == expected_count
         ja = search(records, "善意でやったのに異議と結果の検証が止まるのはなぜ？")
         assert any(x["id"] == "OD313" and x.get("ja_derivative_evidence") for x in ja["matched"]), ja
-        print("PASS: 314/314 actual local derivative README Parent links, whole-structure graph, no-fit, full export", flush=True)
+        print(f"PASS: {expected_count}/{expected_count} actual local derivative README Parent links, whole-structure graph, no-fit, full export", flush=True)
     elif args.export:
         print(json.dumps({"overview": overview(graph()), "entries": graph()}, ensure_ascii=False, indent=2))
     elif args.inspect:
