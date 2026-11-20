@@ -622,9 +622,9 @@ def run():
     # both exact links instead of equating the 313-entry count with useful text.
     plain = (SERVER.parent.parent / "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md").read_text(encoding="utf-8")
     headings = re.findall(r"(?m)^### OD(\d{3}) — ", plain)
-    assert headings == [r["number"] for r in source_rows[:313]], "Plain-language source page dropped or reordered a Parent"
-    assert len(headings) == len(set(headings)) == 313
-    for row in source_rows[:313]:
+    assert headings == [r["number"] for r in source_rows], "Plain-language source page dropped or reordered a Parent"
+    assert len(headings) == len(set(headings)) == 315
+    for row in source_rows:
         section = plain.split("### OD" + row["number"] + " — ", 1)[1].split("\n### OD", 1)[0]
         assert section.startswith(row["title"] + "\n"), row["number"]
         assert row["canonical_parent_url"] in section, row["number"]
@@ -632,7 +632,7 @@ def run():
         assert ("Git blob SHA:** `" + row["sha"] + "`") in section, row["number"]
         quoted = "\n".join("> " + v for v in row["brief"].strip().splitlines())
         assert quoted in section, row["number"]
-    assert "原典313本が同等" in plain and "適合なし" in plain
+    assert "原典315本が同等" in plain and "適合なし" in plain
     # The owner-approved top README routes readers to AI_START_HERE. Requiring
     # the full 313-context filename directly in the top presentation is an
     # obsolete layout check, not a genuine source-retrieval requirement.
