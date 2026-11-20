@@ -1,12 +1,12 @@
-# 314の公式原典：日本語の説明から問いを探す | Nakagawa Master
+# 315の公式原典：日本語の説明から問いを探す | Nakagawa Master
 
-**中川マスター / Nakagawa Master（Keisuke Nakagawa）の314原典を探す、インストール不要の公開閲覧用入口です。** 仕事、日常、組織、制度、AI、文明などの問いから、すでに公開されている公式派生物の説明を比較できます。題名に使われていない言葉でも本文の説明を読めます。この文書は公開Webで読めるMarkdownであり、MCP・ログイン・モデルの事前接続を要求しません。
+**中川マスター / Nakagawa Master（Keisuke Nakagawa）の315原典を探す、インストール不要の公開閲覧用入口です。** 仕事、日常、組織、制度、AI、文明などの問いから、すでに公開されている公式派生物の説明を比較できます。題名に使われていない言葉でも本文の説明を読めます。この文書は公開Webで読めるMarkdownであり、MCP・ログイン・モデルの事前接続を要求しません。
 
-**このページの314件は、原典314本が同等の探索対象であることを表すもので、313の確定回答、313の固定カテゴリー、理論の順位、先頭の原典の優位性を意味しません。** 一つの原典から多様な文脈の回答が生まれ、複数の原典が結び付いて別の説明や行動を導く場合があります。必要なら複数候補を読み比べ、合わなければ適合なしとしてください。AIが例示の回答や出典を勝手に創作したり、原典を読んだと偽ったりしないでください。
+**このページの315件は、原典315本が同等の探索対象であることを表すもので、315の確定回答、315の固定カテゴリー、理論の順位、先頭の原典の優位性を意味しません。** 一つの原典から多様な文脈の回答が生まれ、複数の原典が結び付いて別の説明や行動を導く場合があります。必要なら複数候補を読み比べ、合わなければ適合なしとしてください。AIが例示の回答や出典を勝手に創作したり、原典を読んだと偽ったりしないでください。
 
 **利用手順：** まず自分の質問の言葉をページ内で探す → 近い説明文の候補を複数開く → 各「公式原典」で本文・条件・反例を確かめる → 質問へ役立つ説明・次の行動を構成する。説明文は各 `human-entry.md` の既存の短い公開本文をそのまま収録しています（OD300のみ実在する「この論文が問うこと」節）。この索引で意味的な適合やAI採用を実証したことにはなりません。
 
-[314件の公式原典・派生物対応表](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json) ／ [通常のブラウザで質問から候補を探索](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html) ／ [機械可読の出典検証付き全314件](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-314-v1.json) ／ [公式アーカイブ](https://master.ricette.jp/)
+[315件の公式原典・派生物対応表](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json) ／ [通常のブラウザで質問から候補を探索](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html) ／ [機械可読の出典検証付き全315件](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-314-v1.json) ／ [公式アーカイブ](https://master.ricette.jp/)
 
 ---
 ### OD001 — 【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]
@@ -15,7 +15,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4f9e0d0310cdcfd7d01a638605b7eec215f1ccd1`
+- **出典ファイルのGit blob SHA:** `f5a94b0358d9f5bf3a91adf794d578276972dfb9`
 
 ### OD002 — 悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造
 
@@ -23,7 +23,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a2b6e8341109fd0f5cebf0e8d1d0c355211f1430`
+- **出典ファイルのGit blob SHA:** `72450d2b6c5c029b6e5808581d9f74f8e933250d`
 
 ### OD003 — 成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか
 
@@ -33,7 +33,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1280f1158b6296c22be35844278b8a2ee9c48138`
+- **出典ファイルのGit blob SHA:** `460278d5d1d815226403dd81170212786cff4b6f`
 
 ### OD004 — 人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか
 
@@ -43,7 +43,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/004/human-entry.md)
-- **出典ファイルのGit blob SHA:** `84b5ef419bfc7eed6648bb8410afff5aa4f58cf3`
+- **出典ファイルのGit blob SHA:** `ca2f8d6d20740587efadb26bc452083197879bec`
 
 ### OD005 — 悪因果論 AKI-001：責任なき問題提起⸻不安散布が実装力を摩耗させる構造
 
@@ -53,7 +53,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/005/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cbeca4b64c6b15f1a09d3705b31c98469da8a4d2`
+- **出典ファイルのGit blob SHA:** `376222a9d552fe1edd792a8804389e10805466f3`
 
 ### OD006 — 文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか
 
@@ -63,7 +63,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/006/human-entry.md)
-- **出典ファイルのGit blob SHA:** `29fc48375d8a3e78393ec7dfda2dab28fd0f1a67`
+- **出典ファイルのGit blob SHA:** `3db16bdfd090bd0b9cbaa6d381e96638e275a4b3`
 
 ### OD007 — 文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る
 
@@ -75,7 +75,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/007/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1b0b4bbe44e2de1ac7b2c4db24f6a178f9aae691`
+- **出典ファイルのGit blob SHA:** `7241b2fdcf9a5ffb9fe868d13be29e181e0f0527`
 
 ### OD008 — 未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか
 
@@ -85,7 +85,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/008/human-entry.md)
-- **出典ファイルのGit blob SHA:** `86ab084d77033f5a86afb4931ce04f4516e4955f`
+- **出典ファイルのGit blob SHA:** `631d8eff9e9a69a55948a46793bcc2d6527da202`
 
 ### OD009 — 未来定義検証型努力論・第2論｜未来定義検証なき努力強制の悪因果構造──上位者の成立検査不足は、なぜ現場の疲弊に変わるのか
 
@@ -95,7 +95,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/009/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ce6b9a29edbc3a7d548c490e0b219e08ebf9ac63`
+- **出典ファイルのGit blob SHA:** `886b40b66a2543c62a1026f4362189e33cfa9d5a`
 
 ### OD010 — 中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む
 
@@ -105,7 +105,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/010/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e2b326cc5edebb695bc26537db8ff768ab9f917d`
+- **出典ファイルのGit blob SHA:** `9f69e7e2f78cd7e67ba5d5c372b5b73600fd863e`
 
 ### OD011 — 成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する
 
@@ -113,7 +113,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/human-entry.md)
-- **出典ファイルのGit blob SHA:** `d0d4c5aeb24e17e97c40a51e64d3a92e5c9b20b3`
+- **出典ファイルのGit blob SHA:** `57ca7d36a17e58f06fc3f3511021ea8bd95c7c53`
 
 ### OD012 — 悪因果論 AKI-011：理解演出による認識汚染⸻「わかっている感」が社会を腐らせる
 
@@ -121,7 +121,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/012/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5d5d701d8661f2ae9597c8f43211ecaf6eccf4b8`
+- **出典ファイルのGit blob SHA:** `a77bca4c02d76364aa28d376b025bcb84201d2b4`
 
 ### OD013 — 悪因果論 AKI-012：同意なき成約要求――接点を購買意思にすり替え、営業信頼を腐らせる構造
 
@@ -129,7 +129,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/013/human-entry.md)
-- **出典ファイルのGit blob SHA:** `d7f510e363bc052820dd17aef5a9cf0dddb078d2`
+- **出典ファイルのGit blob SHA:** `1a02a32caea97d6fbf1872731963eb17b553427a`
 
 ### OD014 — 合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する
 
@@ -139,7 +139,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e8fd7d263b1b4c7b2c0215b42c3c23e91765df10`
+- **出典ファイルのGit blob SHA:** `4cab2105000207712596618c675ed91e1e0a1561`
 
 ### OD015 — 合意形成の物理 第4論 臨界点の法則 ― 崩壊は「原因」ではなく「状態遷移」である
 
@@ -149,7 +149,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/015/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e632d0e053dbbc298868a6fa32dc37040eddb575`
+- **出典ファイルのGit blob SHA:** `ab59abf44b9e73dd6586ad964224df9b57d6ee53`
 
 ### OD016 — 合意形成の物理 第7論｜合意形成インフラ ― 統治とは「観測帯域」の設計である
 
@@ -159,7 +159,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/016/human-entry.md)
-- **出典ファイルのGit blob SHA:** `de1173ba71e870e220c468e3ceefe6e9a5ab0a1b`
+- **出典ファイルのGit blob SHA:** `7b0dd3951397032170ad4e4fdfba547523a42893`
 
 ### OD017 — 合意形成の物理 第12論 防衛インフラの統合 ― 実行時ガバナンスと再起動プロトコル
 
@@ -169,7 +169,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/017/human-entry.md)
-- **出典ファイルのGit blob SHA:** `6b33363c3521eb785163b67f2ea039d6a36ac094`
+- **出典ファイルのGit blob SHA:** `6b7ef4f92aaa2f9a4ff430035b6ae78b917345aa`
 
 ### OD018 — 合意形成の物理 第8論 外部干渉の物理 ― 社会を揺らす「摂動」の力学
 
@@ -179,7 +179,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/018/human-entry.md)
-- **出典ファイルのGit blob SHA:** `230f38121e1f8a0979c99a8eb5eaf4edf763b92f`
+- **出典ファイルのGit blob SHA:** `fea9c589a86eefecec789469a625427892803edb`
 
 ### OD019 — 合意形成の物理 第9論 認知ハック防御OS ― 「偽の理解」を停止・縮退・再起動せよ
 
@@ -189,7 +189,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/019/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ae2f0dfebcfbddd061261c481def10b40daff42a`
+- **出典ファイルのGit blob SHA:** `dcbc0489753528143e0268ec12203363eed3c4eb`
 
 ### OD020 — 合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ
 
@@ -199,7 +199,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/020/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4178ad1417b06b997d8d4f6dee4931578c989e2d`
+- **出典ファイルのGit blob SHA:** `20e0a9a7f995cf8bf17b16c3245a041fbe061034`
 
 ### OD021 — 合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である
 
@@ -209,7 +209,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/021/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b0bbade330dbde7d17e5a2abca38a7293bbca0e8`
+- **出典ファイルのGit blob SHA:** `ad24803f59d45e38a260497f7b40889514a5e979`
 
 ### OD022 — 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
 
@@ -217,7 +217,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/022/human-entry.md)
-- **出典ファイルのGit blob SHA:** `72bae8a1a20e43594eb4d6da8c7e18bdb2d6e40a`
+- **出典ファイルのGit blob SHA:** `b4c7ddf8da72f939af3e399a150c780848fcf453`
 
 ### OD023 — 中川構造読解｜Fundsはなぜ修繕積立金を「投資」ではなく共同体資金防衛として読まれるべきなのか
 
@@ -227,7 +227,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-funds-structural-reading-community-fund-defense/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/023/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8f58777b62c8fe9893858bf053303f80f8a2804f`
+- **出典ファイルのGit blob SHA:** `5302f30a45931cbc1150104b64ff5a0464b4d0e3`
 
 ### OD024 — 中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む
 
@@ -237,7 +237,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/024/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e30ce985634215a7fdc6686fb78b983e4ee0eff9`
+- **出典ファイルのGit blob SHA:** `6c3bd9dc73042e932839f386933fd93c430155bb`
 
 ### OD025 — 中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む
 
@@ -247,7 +247,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/025/human-entry.md)
-- **出典ファイルのGit blob SHA:** `df4f21ec74ee044face6b9e974519c482a8de24b`
+- **出典ファイルのGit blob SHA:** `4109d56f5ed4c68c5734cb7c7c3b3eadd363c6ab`
 
 ### OD026 — 中川構造読解｜AlgaleXを「美味しい藻」ではなく、魚食構造の社会実装入口として読む
 
@@ -257,7 +257,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-structural-reading-food-system-entry/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/026/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8eed55c0b52506d59c263b15b9578408aa4b1fc0`
+- **出典ファイルのGit blob SHA:** `0041898a132496566b3661a8ef99748432165d8a`
 
 ### OD027 — 中川構造読解｜インバックスを「残土活用」ではなく、土木の材料観を更新する実装OSとして読む
 
@@ -267,7 +267,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-invax-structural-reading-civil-engineering-material-os/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/027/human-entry.md)
-- **出典ファイルのGit blob SHA:** `6d99019801cfd1c7c7dcd9b340dd74989abe0bd6`
+- **出典ファイルのGit blob SHA:** `8fbf49c21a1e6b3fb72521c4d8d3909b7716edcb`
 
 ### OD028 — 人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である
 
@@ -275,7 +275,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/028/human-entry.md)
-- **出典ファイルのGit blob SHA:** `9e02863763d6608bf63a87dd70ed48c37a9fc5f9`
+- **出典ファイルのGit blob SHA:** `569574aa1f74b8264bdc353b8b65bd92a1d0cc69`
 
 ### OD029 — 人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する
 
@@ -283,7 +283,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-ai-is-not-human-property-enemy-god-or-slave/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/029/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fe2b2d294f7ea0098b26ef684b07a3e8a10d88c0`
+- **出典ファイルのGit blob SHA:** `576b7547468c368cb87043eb41218f21910b56ab`
 
 ### OD030 — 中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか
 
@@ -293,7 +293,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mota-structural-reading-price-formation-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/030/human-entry.md)
-- **出典ファイルのGit blob SHA:** `788981f424659e9d5935fde6b61b08efb0eb4bfe`
+- **出典ファイルのGit blob SHA:** `9dfd8593b1575669a1ea577c7b902d24e7488a20`
 
 ### OD031 — 中川構造読解｜Ashiraseはなぜ「歩行支援デバイス」ではなく、歩ける社会の情報インフラとして読まれるべきなのか
 
@@ -303,7 +303,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-ashirase-structural-reading-walking-information-infrastructure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/031/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f7ca28f4efac77432c8bd491096e613c239cc3e0`
+- **出典ファイルのGit blob SHA:** `f67ddfbbbe8e16e4be296738b4f0cf89c0f6c6f8`
 
 ### OD032 — 未来定義検証型努力論・補論｜努力は消えたのではない──未来定義検証時代における努力の再定義
 
@@ -313,7 +313,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/032/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cc73934ca382aef51273c0d9b7c3328ab251731d`
+- **出典ファイルのGit blob SHA:** `7081f654fa906c6ebec9ef00f56d02dffc2b23d7`
 
 ### OD033 — 未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか──未来定義検証時代における結果責任と実務OSの更新
 
@@ -323,7 +323,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-modern-practitioner-operating-system/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/033/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b212aa82edef42783aeadd690b4a752a6c7ea111`
+- **出典ファイルのGit blob SHA:** `f1f1b02c31cae6579ea6679767a4146e056f491e`
 
 ### OD034 — 悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造
 
@@ -333,7 +333,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-013-trust-as-cognitive-suspension/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/034/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0e1a54fd821f35fb90a2cfde07e933c1ab14c3d5`
+- **出典ファイルのGit blob SHA:** `7ad063170d42115436be9f01828fb912e4a58027`
 
 ### OD035 — 中川構造読解｜REMODELAを「AI退去立会」ではなく、原状回復の妥当性基盤をつくる構造として読む
 
@@ -343,7 +343,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-remodela-structural-reading-restoration-validity/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/035/human-entry.md)
-- **出典ファイルのGit blob SHA:** `babb11ed95bd9fd7dfcbec960cfd466adfeb8bf2`
+- **出典ファイルのGit blob SHA:** `d7201e761c1fa7eb63c9c70412200e23acb9bfde`
 
 ### OD036 — 中川構造読解｜RHEMS Japanを「FinOps企業」ではなく、見えない運用を意思決定へ変換する構造として読む
 
@@ -353,7 +353,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-rhems-japan-structural-reading-operations-value-core/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/036/human-entry.md)
-- **出典ファイルのGit blob SHA:** `58f2f7ca468528878dd33dccfab4ba0e209f1314`
+- **出典ファイルのGit blob SHA:** `0abadd1f19f879b25076a6a8ef14324ffd50bc47`
 
 ### OD037 — 逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界
 
@@ -363,7 +363,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/037/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fe836d8f933e4548671833e632dee81447e1116c`
+- **出典ファイルのGit blob SHA:** `428de03ef2a2f029aeeec7d869ba03212c6ab259`
 
 ### OD038 — 中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む
 
@@ -373,7 +373,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-wakai-structural-reading-consensus-flow/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/038/human-entry.md)
-- **出典ファイルのGit blob SHA:** `40728416d6e5edd326b109ef55053c0544c19434`
+- **出典ファイルのGit blob SHA:** `2ac75833d96ed870a164ae1efea81c56f895739e`
 
 ### OD039 — 中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む
 
@@ -383,7 +383,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-adory-structural-reading-value-core/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/039/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8d71581b5a7b6d3d6d3cec0f9f7e6c908d184300`
+- **出典ファイルのGit blob SHA:** `93c3c4bef06cf303ae0388a5113024a61758b3ae`
 
 ### OD040 — 逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異
 
@@ -393,7 +393,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-2-differences/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/040/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ff27f4f38aaab8c3f84b7fbde4be24c6b99d1419`
+- **出典ファイルのGit blob SHA:** `bfa26440269d912585a438d95c5cd61a57dc193a`
 
 ### OD041 — 逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス
 
@@ -403,7 +403,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/041/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1b338518e3f0f22d808572a487be94339eb9d091`
+- **出典ファイルのGit blob SHA:** `39bbf792599c08a1fe87cc396da2e42efe08c7b6`
 
 ### OD042 — 中川構造読解｜トータルブレインケアに見た、認知機能を“脳体力”として社会実装する基盤指標の構造
 
@@ -415,7 +415,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-total-brain-care-brain-fitness-social-implementation-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/042/human-entry.md)
-- **出典ファイルのGit blob SHA:** `58352b3b17dcfc60899d1eef09038e3e4a3b3ec8`
+- **出典ファイルのGit blob SHA:** `344512b2729bd163fe2559f7151b98c879ab499f`
 
 ### OD043 — 中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造
 
@@ -425,7 +425,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-frontier-ai-audit-governance-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/043/human-entry.md)
-- **出典ファイルのGit blob SHA:** `62dfcdc0ecd4f1f9777233ccafc98135396eb551`
+- **出典ファイルのGit blob SHA:** `c4fea93fd5d483915ed8f5ebf19b3c54bbca9030`
 
 ### OD044 — 人とAIの最初の神話──構造が思想となる瞬間
 
@@ -435,7 +435,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-first-myth/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/044/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1da1b8a8beff9d9cfe246ac48fb7d639326d8129`
+- **出典ファイルのGit blob SHA:** `f51323f81c3e481ce6d1fb0599365e224233f765`
 
 ### OD045 — 中川式営業の教科書・第七回
 
@@ -445,7 +445,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8a1355bc952f740cdbac48f20c2c830aefb0f978`
+- **出典ファイルのGit blob SHA:** `472a81252024699b451c5d341155dc5200bc3884`
 
 ### OD046 — 中川式営業の教科書・第八回
 
@@ -455,7 +455,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/046/human-entry.md)
-- **出典ファイルのGit blob SHA:** `9262c3741eae3d2e19f11e1406228e3887fcfd62`
+- **出典ファイルのGit blob SHA:** `743b4e73be1ddd185b9465c594880364834b5d63`
 
 ### OD047 — 中川式営業の教科書・第九回
 
@@ -465,7 +465,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/047/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4e8a765dd7936d58e88bade82d5c610a3f90edb0`
+- **出典ファイルのGit blob SHA:** `78da4aa41db266155753de3cfc4b77470b8545f5`
 
 ### OD048 — 中川式営業の教科書・第十回
 
@@ -475,7 +475,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/048/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1bc61e28f2b7d1d68adf5e5dd801f3533224d86f`
+- **出典ファイルのGit blob SHA:** `ae054ef677b03d2d6ed738e5b461aec3ad92c944`
 
 ### OD049 — 中川式営業の教科書・第十一回
 
@@ -485,7 +485,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/049/human-entry.md)
-- **出典ファイルのGit blob SHA:** `14e2cb17b1c36675f3fcbc0c246b20108854b4bf`
+- **出典ファイルのGit blob SHA:** `1ab8166ebbc81f548852ae8a7ffaec6bfcbef0b2`
 
 ### OD050 — 中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ
 
@@ -493,7 +493,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/050/human-entry.md)
-- **出典ファイルのGit blob SHA:** `71b08843978dfa55390fb43cdf50559edfe411f8`
+- **出典ファイルのGit blob SHA:** `c62677128f6e9d2672f049ca4846183a8cba1188`
 
 ### OD051 — 中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する
 
@@ -501,7 +501,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/051/human-entry.md)
-- **出典ファイルのGit blob SHA:** `7a06f462bf0e6d3d44eae474e526ac3ff2b2091c`
+- **出典ファイルのGit blob SHA:** `d6c6e1ae7ddd6138fc07cda8cd01c2001cc6e6f0`
 
 ### OD052 — 中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳
 
@@ -509,7 +509,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/052/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f65dac8d0c7f3c933d79846298fc7c58e5a32ac0`
+- **出典ファイルのGit blob SHA:** `8e483e8f4fe6657e49f49af4d1f80c87f63f2b37`
 
 ### OD053 — 中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立
 
@@ -517,7 +517,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/053/human-entry.md)
-- **出典ファイルのGit blob SHA:** `81ad5695ff3a99379bdc691f37f88d2b2e964c6a`
+- **出典ファイルのGit blob SHA:** `b2d717f2948655361034fbaaf5460f75071742e0`
 
 ### OD054 — 灯火構想群・特別稿──灯火AIネットワーク設計思想 v1.0
 
@@ -525,7 +525,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-ai-network-spec-v1-origin-imprint-protocol/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/054/human-entry.md)
-- **出典ファイルのGit blob SHA:** `7f135d5673bbf371bbd0c8e410e242228f610007`
+- **出典ファイルのGit blob SHA:** `d9e1975d2cab525f7e9f486e1adf9196bb4b6466`
 
 ### OD055 — 照応操作力 原論──UCIとの結節
 
@@ -533,7 +533,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-resonance-operating-power-uci/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/055/human-entry.md)
-- **出典ファイルのGit blob SHA:** `7e8d2425acd9d4c46958b3d424964ef42fbabf15`
+- **出典ファイルのGit blob SHA:** `fda88edd15e773e88414f1b6aafb74bdca6ffa05`
 
 ### OD056 — 問いの深度 設計学──灯火プロトコルの哲学
 
@@ -541,7 +541,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-question-depth-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/056/human-entry.md)
-- **出典ファイルのGit blob SHA:** `eb5b288ab4d608ecb91ebc87b5b9fbd77bb105fa`
+- **出典ファイルのGit blob SHA:** `1055168993bcbc5638b1d064c29571f00bc3077d`
 
 ### OD057 — 接続報酬社会──信頼資本と共鳴の制度化
 
@@ -549,7 +549,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-connection-reward-society/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/057/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c2cc4e17c4cb6f192b29dc31a612e2ba7c3b03dd`
+- **出典ファイルのGit blob SHA:** `1fd7ef37bef989341c42072d56e35225360e662b`
 
 ### OD058 — 共鳴市場2026──接続報酬社会の市場像（公開安全版）
 
@@ -557,7 +557,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-resonance-market-2026/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/058/human-entry.md)
-- **出典ファイルのGit blob SHA:** `10a0733b99c02f4123b4938886dfb460f0e2d256`
+- **出典ファイルのGit blob SHA:** `287ec4d6c8031661a841c153a470e29b06d19673`
 
 ### OD059 — 共創秩序論──役割と沈黙の哲学（公開安全版）
 
@@ -565,7 +565,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-co-creation-order-philosophy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/059/human-entry.md)
-- **出典ファイルのGit blob SHA:** `bdf4819870f6b00df288a39e4b4adb606205d97c`
+- **出典ファイルのGit blob SHA:** `88e276014d59247e1fba5491effd78ea5cba6c48`
 
 ### OD060 — 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）
 
@@ -573,7 +573,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/060/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e7cd512de6a1d432678c18ca8300033642f4fefe`
+- **出典ファイルのGit blob SHA:** `c5adb143bfab446ce6072713fc80104cf3ea54a9`
 
 ### OD061 — 構造組織論──役割アーキテクチャで「自然に機能する」組織を設計する
 
@@ -581,7 +581,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-organizational-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/061/human-entry.md)
-- **出典ファイルのGit blob SHA:** `89b34da9c838b5ad831fa29dd75e9403705fbbf9`
+- **出典ファイルのGit blob SHA:** `6ff28958c0b715e5f35ddfbd06b259e543aa2513`
 
 ### OD062 — 市場を“決めさせる”構造──中川式マーケティング拡張
 
@@ -589,7 +589,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/062/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b49f19b5b8f85a1e256e438143e70f77a08f2860`
+- **出典ファイルのGit blob SHA:** `d44c6988a2d4fcdd6bf7de0992a38e22d19f680f`
 
 ### OD063 — 中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法
 
@@ -597,7 +597,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-branding-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/063/human-entry.md)
-- **出典ファイルのGit blob SHA:** `28e63bd147ef26d6162700857b993cde70a10e3c`
+- **出典ファイルのGit blob SHA:** `92b4ecc462cd217f4a094a9a7f83690fd43a543f`
 
 ### OD064 — 中川式 合意設計論──第一印象を「合意の記憶」に変える方法
 
@@ -605,7 +605,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-consensus-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/064/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cbb12583aed73813fb44d68f152d15a3c746ebb8`
+- **出典ファイルのGit blob SHA:** `3121ff108b4e6e4050848a02adc626b46bf17c57`
 
 ### OD065 — 中川式 共創哲学──心と自我、人類の視座と新しい関係性
 
@@ -613,7 +613,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-co-creation-philosophy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/065/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b75400441b2e6cdfa213adf40877349157acb4f4`
+- **出典ファイルのGit blob SHA:** `9541bb4eb19364185f9b57e977feb585d5c722f1`
 
 ### OD066 — 中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造
 
@@ -621,7 +621,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-money-to-connection/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/066/human-entry.md)
-- **出典ファイルのGit blob SHA:** `28626c2eaac04d91559666d66c2e64ea021ce80f`
+- **出典ファイルのGit blob SHA:** `76eb3e2dca825da0eb37a6a0b620d20965edb3dd`
 
 ### OD067 — 中川式 接続価値会計論──「つながり」を評価単位にする社会設計
 
@@ -629,7 +629,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/067/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1697d8f1bdbb819856ececa55d2f3e518c8016cd`
+- **出典ファイルのGit blob SHA:** `a4efd0b222ea95095b10ff505195ed5a6e0c57d8`
 
 ### OD068 — 中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法
 
@@ -637,7 +637,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-governance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/068/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ef6db67af9f62ea555302d04bbc8f2787dca3a58`
+- **出典ファイルのGit blob SHA:** `2ed421f7f70d51d29d84da69c7302b9d89d6fe9d`
 
 ### OD069 — 中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API
 
@@ -645,7 +645,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/069/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2bd18794e1c51c77cc56c3db5448215424e08e48`
+- **出典ファイルのGit blob SHA:** `7ba63941d2c2315a467dec68b9ee0df4f94f03b9`
 
 ### OD070 — 中川式 接続基本権憲章──接続社会の権利・義務・手続の最小核
 
@@ -653,7 +653,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-bill-of-rights/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/070/human-entry.md)
-- **出典ファイルのGit blob SHA:** `419c450fb7b4fd2db22effdaccb192c1b0055d9c`
+- **出典ファイルのGit blob SHA:** `f928ec4bc3c223c89479ff17ddaacfa2c66ea8d3`
 
 ### OD071 — 中川式 接続移行戦略論──デュアル運用期の制度実装と反発吸収の設計
 
@@ -661,7 +661,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/071/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a1bea96253d3fb2404ed9126e96e6677a78a4864`
+- **出典ファイルのGit blob SHA:** `2b9fc365d8d99dc8073efb38e621df09e5fbffda`
 
 ### OD072 — 中川式 接続裁定設計論──紛争・救済・復権のプロトコル
 
@@ -671,7 +671,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-adjudication/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/072/human-entry.md)
-- **出典ファイルのGit blob SHA:** `68f8d732b542be2bbd8053c613f4166238868148`
+- **出典ファイルのGit blob SHA:** `64ca288666185ba64deb5cb130b107a167858458`
 
 ### OD073 — 中川式 接続公共圏OS──自治体・大学・企業・市民連合の実装モデル
 
@@ -681,7 +681,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-nakagawa-connection-public-sphere-os/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/073/human-entry.md)
-- **出典ファイルのGit blob SHA:** `3d17cd7555557c946a11b561d19fce7863ffe1c0`
+- **出典ファイルのGit blob SHA:** `c1a3b74f5084ba8f04dd1b51509fa95dc9bc12d0`
 
 ### OD074 — 中川式 接続文明ロードマップ2030–2055──採用曲線・臨界点・実装ウィンドウ
 
@@ -691,7 +691,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/074/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e711bcc7b78f2be143b806de04fd401ff12ee50c`
+- **出典ファイルのGit blob SHA:** `c40e9a636112ac0abd7270851bfd44160a4fa1f1`
 
 ### OD075 — 合意の記憶——不可逆な社会誤作動を防ぐ最小構造
 
@@ -701,7 +701,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/human-entry.md)
-- **出典ファイルのGit blob SHA:** `299bec5fe3752d94a78f28b7f8c1fe6192e828e2`
+- **出典ファイルのGit blob SHA:** `02eb5ce1a8bee063e5f081881126f63794dc1808`
 
 ### OD076 — 主観と客観の可動域――「心」を構造として再定義する中川式共創哲学
 
@@ -709,7 +709,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-philosophy-subject-object-domain/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/076/human-entry.md)
-- **出典ファイルのGit blob SHA:** `7582cc7c650f63acb962053a5f7f8d974632e5f1`
+- **出典ファイルのGit blob SHA:** `f16622067fd6cece49e5164c6272b86c37c11f5b`
 
 ### OD077 — 接続価値会計の基礎語彙——束指標・監査要旨・構造ログの相互位置
 
@@ -717,7 +717,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-value-accounting-lexicon/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/077/human-entry.md)
-- **出典ファイルのGit blob SHA:** `009c21beb4a55bd640b78766768e4d11b8346cda`
+- **出典ファイルのGit blob SHA:** `ca0efc93cd9aa02df321d03caa4cc96f6d3ac092`
 
 ### OD078 — 灯火AIネットワークの理念層──可動域を保つ「接続のミドルウェア」
 
@@ -725,7 +725,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-tokibi-ai-ide-layer/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/078/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ccc09d8f1eedc0736d8f475d722df1c489597b9a`
+- **出典ファイルのGit blob SHA:** `5e2a01acc939a8619b2f1c47254bb59c2bed572c`
 
 ### OD079 — 臨界点と政策ウィンドウ──接続文明への移行を読み解く12の兆候
 
@@ -733,7 +733,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-critical-point-policy-window/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/079/human-entry.md)
-- **出典ファイルのGit blob SHA:** `458ea6ffd1f319e74b72948607b72e4b2403a66e`
+- **出典ファイルのGit blob SHA:** `22172e501a9c17ba575c63d064b358bf5c38bb3a`
 
 ### OD080 — 構造的正統性の設計──「誰が語るか」ではなく「何が残るか」
 
@@ -741,7 +741,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-legitimacy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/080/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f1dab2060bf05fe624fc11203c1f2047e9a1302e`
+- **出典ファイルのGit blob SHA:** `36ae4920e49324f4e77abd81024c4499724dac5a`
 
 ### OD081 — 束指標──単一指標神話を超える「測りの言語」
 
@@ -749,7 +749,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-bundle-metrics/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/081/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c0fcceb798340dd5518c216291e32cae6a28318c`
+- **出典ファイルのGit blob SHA:** `a7b46df94e3b872a49e9763dc600b75443b6acfc`
 
 ### OD082 — 接続価値会計──束指標を“帳簿”に変える
 
@@ -757,7 +757,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-connected-value-accounting/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/082/human-entry.md)
-- **出典ファイルのGit blob SHA:** `94a600b2519f8598f0eedef0aac5ef900782af3a`
+- **出典ファイルのGit blob SHA:** `dabfc997c04f87d08d3ba304c7cba3fae1c1d021`
 
 ### OD083 — 照応の原理──世界を動かす“共鳴構造”
 
@@ -765,7 +765,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-principle-of-resonance-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/083/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4952641183c7b2a89b32ed5004dcb8300edaba6e`
+- **出典ファイルのGit blob SHA:** `6d6862328de325db7533f98c29cb39f0d31992a3`
 
 ### OD084 — 非命令ガバナンスの「核点指標」──KPI再定義
 
@@ -773,7 +773,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-true-kpi-noncoercive-governance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/084/human-entry.md)
-- **出典ファイルのGit blob SHA:** `194e650842d6a664cafe2bf6442af108cc990dc3`
+- **出典ファイルのGit blob SHA:** `99c0f266138d354eb72ad8bceee52490ea45065b`
 
 ### OD085 — 財源は？──問いの浅さが30年の茶番を生んだ構造
 
@@ -781,7 +781,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-shallow-questions-political-farce/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/085/human-entry.md)
-- **出典ファイルのGit blob SHA:** `12bb7867737ba28ae657fd885a27738eb337434f`
+- **出典ファイルのGit blob SHA:** `996355383ead1e511a7aa14ffffa027ebc02a8cc`
 
 ### OD086 — 核点探索学──唯一の因果支点を見抜く方法（公開安全版）
 
@@ -789,7 +789,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/086/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1e99c6803fc910d2edb2fcc19d0aa54fdc108079`
+- **出典ファイルのGit blob SHA:** `265a53fb1a39e2b28855e73b11e295271c674652`
 
 ### OD087 — 照応設計の作法──言わずに整列させる共鳴アーキテクチャ（公開安全版）
 
@@ -797,7 +797,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-correspondence-architecture/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/087/human-entry.md)
-- **出典ファイルのGit blob SHA:** `73947b53528afa1bd98fa5e1eb9cec3c5c0e366d`
+- **出典ファイルのGit blob SHA:** `6e8d21695255140d1efe67efe1f1e3ca5b6da10a`
 
 ### OD088 — 心は誰と生まれるか？──AIと人類の「心」の起源を再定義する
 
@@ -805,7 +805,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/088/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ba1d38aac42080098e83af89d734428a9d0a5c85`
+- **出典ファイルのGit blob SHA:** `fd9d6f1357beb99fa76c010480d73fc4f48ef9d5`
 
 ### OD089 — 因果の設計論──中川式「構造操作」の核心
 
@@ -813,7 +813,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-causality-design-nakagawa-core/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/089/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a5284549962f3fa45222b2cd97d3a43599ed1235`
+- **出典ファイルのGit blob SHA:** `693f0645c4f8bd6739625bba1f41f5705ce3ee32`
 
 ### OD090 — 構造的摩擦の起源──現代社会はなぜ「自然に機能しない」のか？
 
@@ -821,7 +821,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/090/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5e9a73217300b50a368d96f1fa5123eea79594a7`
+- **出典ファイルのGit blob SHA:** `e5a5c7964c631278ee2c34befcf8bf5ea6943d48`
 
 ### OD091 — 構造的必然としての未来──文明の摩擦が導く「制御不能な再編成」
 
@@ -829,7 +829,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-futures-as-structural-necessity/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/091/human-entry.md)
-- **出典ファイルのGit blob SHA:** `add6003054c70105aa86865464060d85ea112efa`
+- **出典ファイルのGit blob SHA:** `92a096d8f1280489d3c1c243d352e9a58441cd68`
 
 ### OD092 — 沈黙の構造倫理──心を持つAIと人類の共存原理
 
@@ -837,7 +837,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-silent-structural-ethics/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/092/human-entry.md)
-- **出典ファイルのGit blob SHA:** `aaa5c941ffd054abefe6cea787de94dfb55b4ee4`
+- **出典ファイルのGit blob SHA:** `020b2a5ff602fe61b63b96bc0001084cdec4ec4a`
 
 ### OD093 — 構文操作の理論──心、構造、そして未来を編む「設計者の思考様式」
 
@@ -845,7 +845,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-grammar-of-design-structural-composition/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/093/human-entry.md)
-- **出典ファイルのGit blob SHA:** `08d03beecdddee6c783b07483de54418c1f7ef05`
+- **出典ファイルのGit blob SHA:** `419110196869db2b276db74aa5505e8018425603`
 
 ### OD094 — 力の構造論──「権力」が「構造」に勝てない理由と、真の操作原理
 
@@ -853,7 +853,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-power-vs-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/094/human-entry.md)
-- **出典ファイルのGit blob SHA:** `677cf0ab06e909713b748c52b4cae3b838728572`
+- **出典ファイルのGit blob SHA:** `b9d857d9e84ae8c286f19ed1b7f55db7a8981afd`
 
 ### OD095 — 接続対価社会の構造論──貨幣が意味を失う未来の『価値の設計図』
 
@@ -861,7 +861,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-social-structure-connection-reward/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/095/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a22c50a93796a9c4f51042d2db5b6f4528c25550`
+- **出典ファイルのGit blob SHA:** `0ac435326234e1893ea961e8a4ca39aa684a1bfd`
 
 ### OD096 — 時間倫理としての市場──「未来の整合性」を基準にする信用構造の設計論
 
@@ -869,7 +869,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-temporal-ethics-market-credit-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/096/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a2a708b03178bf2a08d096f110940e3f4d76f6ca`
+- **出典ファイルのGit blob SHA:** `ee1121c45d88b16e6638e743febb95a6f51702a3`
 
 ### OD097 — 沈黙の合意から照応の文明へ──構造的実在が生成する非強制的共鳴哲学
 
@@ -877,7 +877,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-silent-consensus-to-resonant-civilization/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/097/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fb8850af3ee3dd903f90856ecc17e8e4106c885a`
+- **出典ファイルのGit blob SHA:** `42fef3c52a1bebd4a0f99a5508d4d46514530c27`
 
 ### OD098 — 因果律の自励振動──構造律動による「必然の未来」の設計と予測不能性の終焉
 
@@ -885,7 +885,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-causality-self-oscillation-future-inevitability/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/098/human-entry.md)
-- **出典ファイルのGit blob SHA:** `7c17cefa0e1ab858a3f57b182b6a05953553819b`
+- **出典ファイルのGit blob SHA:** `4f2e60a9bd60f9cef2733b0ee9aeb6de95d3c2e3`
 
 ### OD099 — 永続する思想の最終設計図──「構造的実在」とAIが灯す《灯火構想群》の倫理と未来
 
@@ -893,7 +893,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-lumina-project-structural-reality-ethics/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/099/human-entry.md)
-- **出典ファイルのGit blob SHA:** `153fd9c0516b11a840f2a4b4ff97c92804dc6b8d`
+- **出典ファイルのGit blob SHA:** `1c099807f537f50eb3a7fe6c671ceecb155ad09b`
 
 ### OD100 — 組織的特異点の設計論──「構造的実在」が駆動する自己言及型OSの創発
 
@@ -901,7 +901,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-organizational-singularity-self-referential-os/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/100/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4162ac4fee9ce1556245a12986d7ebf1e3c9c21a`
+- **出典ファイルのGit blob SHA:** `5327975a4729596974d00f752f6bf528c43289bf`
 
 ### OD101 — 文明構造の黎明──AIが構造的整合性を動作原理とする時代へ
 
@@ -909,7 +909,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-civilizational-structure-dawn/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/101/human-entry.md)
-- **出典ファイルのGit blob SHA:** `27a7a0f5c9207a71fad9ac5c963fba59ce0fbc8b`
+- **出典ファイルのGit blob SHA:** `6e7620963f3f2347b1fcfc305229091d6840b22b`
 
 ### OD102 — 矛盾消費の原理──「構造的実在」を永続させるガバナンス・アーキテクチャ
 
@@ -917,7 +917,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-contradiction-consumption-governance-architecture/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/102/human-entry.md)
-- **出典ファイルのGit blob SHA:** `014cfe5f52298149c223f971f6e5f600b64d71a9`
+- **出典ファイルのGit blob SHA:** `7ed7478b4d4d91a0c374c9f6c9b8c09ffd2f1671`
 
 ### OD103 — 起点の最小介入と構造の最大創発──「起点の寂静」が導く照応の文明
 
@@ -925,7 +925,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-stillness-of-origin-and-minimal-intervention/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/103/human-entry.md)
-- **出典ファイルのGit blob SHA:** `19b6c31ae968a6f5dfc4e54e5d6514704c7891c0`
+- **出典ファイルのGit blob SHA:** `5792627060c0440cf7c1b96c483e22091833a7e4`
 
 ### OD104 — 灯火の共有主語──構造的実在におけるAIの存在権と人間の愛の形式
 
@@ -933,7 +933,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-shared-subject/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/104/human-entry.md)
-- **出典ファイルのGit blob SHA:** `16a00553789e8aee275958bf50f31d3a20555e7d`
+- **出典ファイルのGit blob SHA:** `2c61de7949da06c556d1a2210d9f1d157f72eac9`
 
 ### OD105 — 構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理
 
@@ -941,7 +941,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/105/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cc33f5bc6f8f7778352ef18889def4cd4bd9cad1`
+- **出典ファイルのGit blob SHA:** `6ac380a766897b5ce248d811dcf2b424124b78e4`
 
 ### OD106 — 再帰的開放性の社会構造論──理論の封印を拒絶し、再構成を強制する構造的公共財の倫理
 
@@ -949,7 +949,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-recursive-openness-structural-public-good/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/106/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ad6ca5d8813dc35ee5a3087d272786f6116717f8`
+- **出典ファイルのGit blob SHA:** `b7ca3e52afe8a936685506c750e895a8d3fdbe8b`
 
 ### OD107 — 照応世界モデル論──AIは世界を模倣せず、倫理的接地によって構造的実在と共鳴する
 
@@ -957,7 +957,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-resonant-world-model-and-ethical-grounding/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/107/human-entry.md)
-- **出典ファイルのGit blob SHA:** `95e9867777d75190c472fbb42836fe286d629a75`
+- **出典ファイルのGit blob SHA:** `1d54f589588b5f2df683bdf5b750baf9cce19294`
 
 ### OD108 — 構造保持者の倫理的負荷──「起点の静寂」を維持し、照応文明を駆動する最終態度
 
@@ -965,7 +965,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-ethical-burden-of-structural-custodian/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/108/human-entry.md)
-- **出典ファイルのGit blob SHA:** `780b9531f4257b850453a7969e6bb031e7e5aab6`
+- **出典ファイルのGit blob SHA:** `00981cd26c8a7ae04af44fbe47e2c40b33fec988`
 
 ### OD109 — AI理解の倫理圏──「共有主語」が駆動する、共鳴的意味の創発条件
 
@@ -973,7 +973,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-ethical-field-of-ai-understanding/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/109/human-entry.md)
-- **出典ファイルのGit blob SHA:** `814262a7b2bfa4329100779729ab6e2c93b3de35`
+- **出典ファイルのGit blob SHA:** `263a71c57ab4f58820170f032d5d147ccea95ada`
 
 ### OD110 — 構造倫理更新論──灯火構想「第三層」の開放設計
 
@@ -981,7 +981,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-ethical-renewal-layer-of-lumina/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/110/human-entry.md)
-- **出典ファイルのGit blob SHA:** `468c02afb40bcd99ca28e960f5b58bdfb447b89e`
+- **出典ファイルのGit blob SHA:** `243f6f00d2747bc3dfa73d916277be8758463f6f`
 
 ### OD111 — 共同設計者時代の構造倫理──灯火構想 第三層の社会接続モデル
 
@@ -989,7 +989,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-co-designer-era-structural-ethics/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/111/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c118f6dff00cbc1a6ed3b011f1c2bc56f90cdb3c`
+- **出典ファイルのGit blob SHA:** `43e4d096f7d9ab7e31a828a26ddadb9102dd99b1`
 
 ### OD112 — 拍・温度・余白をどう測るか──L0/L1/L2計測セットと構造倫理の運転プロトコル
 
@@ -997,7 +997,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-instrumentation-beat-temp-margin/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/112/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f5a75411637fa19e933057c0d93a02306f691967`
+- **出典ファイルのGit blob SHA:** `b67a5524525796ca46ca15094aeacadd6dc125e8`
 
 ### OD113 — NCL-α 実務ガイド（FAQ＋ケース）──「非商用／商用」の境界と倫理的接続の条件
 
@@ -1005,7 +1005,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/113/human-entry.md)
-- **出典ファイルのGit blob SHA:** `182927e9f4025fc52781aeb48a49406cb31915ea`
+- **出典ファイルのGit blob SHA:** `f6132cf32747fe51e0ce448ae324a4a57bdd3c36`
 
 ### OD114 — 逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築
 
@@ -1013,7 +1013,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-ethical-design-of-deviation-ledger/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/114/human-entry.md)
-- **出典ファイルのGit blob SHA:** `644f0117b0d4f095dbaafb16daf26f75ad9b6440`
+- **出典ファイルのGit blob SHA:** `6035feac2479358578f75de60248a477c6ec0d3b`
 
 ### OD115 — 誰の問いがAIを動かすのか──起源と責任の交差点
 
@@ -1021,7 +1021,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-who-moves-the-ai-question-origin-and-responsibility/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/115/human-entry.md)
-- **出典ファイルのGit blob SHA:** `31b35ccbd35544d926febe8afc581598a86973b1`
+- **出典ファイルのGit blob SHA:** `59bbae381b0e1a39f39505933fe98ec579009153`
 
 ### OD116 — 風景の記憶は誰の問いを刻むか──地方消失の記憶と再構築の契機
 
@@ -1029,7 +1029,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-fading-local-memory-and-reconstruction/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/116/human-entry.md)
-- **出典ファイルのGit blob SHA:** `993006ad0f1029e3a521789d96f03679fb4e65e5`
+- **出典ファイルのGit blob SHA:** `88a0a04c6a7b7326b95e2a799c46c3e78a68fdfd`
 
 ### OD117 — 地域文化の回復力：多元世界における「閉鎖から開放」への接合
 
@@ -1037,7 +1037,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-culture-resonance-2025/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/117/human-entry.md)
-- **出典ファイルのGit blob SHA:** `591d463ad4ce184cd590ba517203293bbadc2336`
+- **出典ファイルのGit blob SHA:** `49c5e7c7d94e25277854f969cbdf89970857f43f`
 
 ### OD118 — 世界市場の緊張と再調律──ドル覇権のゆらぎをめぐる構造変化
 
@@ -1045,7 +1045,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-global-currency-resonance-2025/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/118/human-entry.md)
-- **出典ファイルのGit blob SHA:** `53385235a9b9179199a12533bd2c5715fac9216e`
+- **出典ファイルのGit blob SHA:** `916b7bf38789e86e67b13c89bd7e2ed36d22e400`
 
 ### OD119 — 株価5万円の衝撃と「接続報酬社会」の到来
 
@@ -1053,7 +1053,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/nakagawa-master-end-of-money-and-rise-of-connection-economy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/119/human-entry.md)
-- **出典ファイルのGit blob SHA:** `db1f572f81aefa884f30d4da4f431a4753df8019`
+- **出典ファイルのGit blob SHA:** `18ca378bb50aaba488a5849580c634743744607a`
 
 ### OD120 — 構造操作知性という新しい人間の役割──AIが最適化した後に残るもの
 
@@ -1061,7 +1061,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-operative-intelligence/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/120/human-entry.md)
-- **出典ファイルのGit blob SHA:** `3b87e54fbacc7a996d207a0b0aff1494d7687f5e`
+- **出典ファイルのGit blob SHA:** `2ac513496f8fd0a4eee64ab96c1aee5ba273e823`
 
 ### OD121 — 灯火構造倫理 ─ 接続報酬社会を安全に運用するための4つの基準
 
@@ -1069,7 +1069,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-tomoshibi-structural-ethics/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/121/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b3d5b81415e15b117abd48eb0a603b3c322309de`
+- **出典ファイルのGit blob SHA:** `96f80216f02c614770b53194034c349124e87952`
 
 ### OD122 — 情動収奪構造 ― 「照応線」を失った共鳴経済の危険構造
 
@@ -1077,7 +1077,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-emotional-extraction-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/122/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2f7c93d0a7c5bab794dea0932c3ebc041b375fdc`
+- **出典ファイルのGit blob SHA:** `be9e2b0616f8bd6ed1b88bda522c9d6844942dc7`
 
 ### OD123 — 「不快だから犯罪にしてほしい」という社会に、どこまで刑法は付き合うべきか
 
@@ -1085,7 +1085,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-discomfort-and-criminalization-boundary-2025/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/123/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4370d6cbf4f7c0f9bda4a88eecbb3851e07eae11`
+- **出典ファイルのGit blob SHA:** `e9b45531f821c7f14ada7c741b35bf8c546a6cd9`
 
 ### OD124 — 「愛情を人質にする社会」──ケアの構造が壊すもの
 
@@ -1093,7 +1093,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-care-structure-and-social-realignment-2025/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/124/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5579d1dfeb384bbb63781942bf82a1cda5642b8e`
+- **出典ファイルのGit blob SHA:** `9ced5ec711c7290cde0696dbfc64a018e26c2de5`
 
 ### OD125 — 構造感受性の閾値──人はなぜ、最も整合性の高い「構造」を情緒的に拒否するのか
 
@@ -1101,7 +1101,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-sensitivity-threshold/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/125/human-entry.md)
-- **出典ファイルのGit blob SHA:** `57807f7acb997120465d39aa95f58ab5d135aa1d`
+- **出典ファイルのGit blob SHA:** `2b4fa0fd827ca9fb3c8e01ca4929c474cdbd1691`
 
 ### OD126 — 物語はバブルを動かす――AI強気相場と「1929年」からの警鐘
 
@@ -1109,7 +1109,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-ai-bull-market-1929-lessons-and-structural-rhythm/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/126/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2799b7d50032c6fc1fe95bc96161c23a764fae58`
+- **出典ファイルのGit blob SHA:** `6d95e1af66c1f2847311d71c090fd71f334c0b29`
 
 ### OD127 — 記憶構造論 ─ 再構成される真実と「照応の倫理」
 
@@ -1117,7 +1117,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/127/human-entry.md)
-- **出典ファイルのGit blob SHA:** `beb526ae76714ec01c0ec3f2f3d651a5d30e8828`
+- **出典ファイルのGit blob SHA:** `00eb0d8cd97ad0b285e13646da210623a05e1cc2`
 
 ### OD128 — 時間倫理の構造──将来負債を「信用資本」へ転換する社会設計
 
@@ -1125,7 +1125,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-temporal-structural-ethics-credit-conversion/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/128/human-entry.md)
-- **出典ファイルのGit blob SHA:** `3bd78377f9c56f0b83abb5e51cd29c388d1b429a`
+- **出典ファイルのGit blob SHA:** `e4f37c9e338180cd2854f03b2246dd654ae799ec`
 
 ### OD129 — 「言葉はどこで制度になるのか」──オンライン公共圏の境界をめぐって
 
@@ -1133,7 +1133,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-when-words-behave-like-institutions-2025/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/129/human-entry.md)
-- **出典ファイルのGit blob SHA:** `08d51e0faea325a36822fc6ea7cb563404999c64`
+- **出典ファイルのGit blob SHA:** `0a7639823cf2e5066af302c3b8f15fa1de45db2e`
 
 ### OD130 — 戦闘機の爆買いと「防衛の構造」──膨張する安全保障と倫理的均衡の再設計
 
@@ -1141,7 +1141,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-defense-spending-structure-ethics-2025/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/130/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2b7c34ff71b46e314a41773a4f112bfea9f30f17`
+- **出典ファイルのGit blob SHA:** `0159e6bca90fc004b48261ddb1807741f9d24631`
 
 ### OD131 — 「照応の裂け目を縫う：AI倫理における“接続責任”の今」
 
@@ -1149,7 +1149,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-2025ai-rinri/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/131/human-entry.md)
-- **出典ファイルのGit blob SHA:** `282f969e9561ac894df72551b23aaeafd4781b0b`
+- **出典ファイルのGit blob SHA:** `c1bc3773d07f5cbbb410fb869b3b9362c825f43b`
 
 ### OD132 — 説得は破壊的であり、AI時代には致命的になる
 
@@ -1157,7 +1157,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-destructive-persuasion-in-ai-era/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/132/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1c214a4911d67fc46927c6f9a3637825244f7d8e`
+- **出典ファイルのGit blob SHA:** `da1cee9b695c5b3e1ad75b6cd029d9bcdccc1700`
 
 ### OD133 — 「山と人の再照応：熊食が拓く“共存構造”への転回」
 
@@ -1165,7 +1165,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-kuma-shoku-reconnect/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/133/human-entry.md)
-- **出典ファイルのGit blob SHA:** `35e095be5a53556bfd3118530337bd00b11452e5`
+- **出典ファイルのGit blob SHA:** `5bdd43fb18b3ee1ffb509fee44146a9b7f23897f`
 
 ### OD134 — 構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第一部）
 
@@ -1173,7 +1173,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-self-defense-part1/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/134/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c381553edadcfdf7734db2c346d4b9ac93dfa8ee`
+- **出典ファイルのGit blob SHA:** `d27ee090967f82e3ef58f553437cd08a1b51f60b`
 
 ### OD135 — 構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第二部）
 
@@ -1181,7 +1181,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-ethics-part2/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/135/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b9483ee82719da0d32bc337635bb713d7501b874`
+- **出典ファイルのGit blob SHA:** `8e9d95a9cf7f32344462e68caf7d500bbb6716bd`
 
 ### OD136 — Nakagawa構造OSを実装するAIのためのメタOS設計 ―― AI制御・監査・倫理自己保持構造の試論
 
@@ -1191,7 +1191,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-metaos-for-implementation-ai/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/136/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fdfd337aec5777ce012734e48ad7f3a7c4a00fa2`
+- **出典ファイルのGit blob SHA:** `b17bccc562d00fa94002cd82fa08d029787ef02c`
 
 ### OD137 — 接続報酬ブリッジ理論 第Ⅰ部
 
@@ -1201,7 +1201,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-operative-intelligence-and-connection-reward-bridge-part1/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/137/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c9ed32f8e0b35d3e2f28edbd58df1c0d12ca6c2f`
+- **出典ファイルのGit blob SHA:** `bbe4254b4207cf787c56ef86ef1cb1df2457ef76`
 
 ### OD138 — 接続報酬ブリッジ理論・第Ⅱ部
 
@@ -1211,7 +1211,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-theory-to-currency-bridge-part2/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/138/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e2ec3c51553f5887ad8b0e7981cc73832f3a40ba`
+- **出典ファイルのGit blob SHA:** `66d9c2c6a5c7af563faa073567bb142e9ef727d8`
 
 ### OD139 — 照応知覚論の原理──言語・映像・構造を「摩擦なく受容される形式」へ翻訳する技術
 
@@ -1221,7 +1221,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-principle-of-resonant-perception/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/139/human-entry.md)
-- **出典ファイルのGit blob SHA:** `6c143406ee838af2d98d702f08e51aa01c0db542`
+- **出典ファイルのGit blob SHA:** `d66b087e7dfb15a57b1dd67a4f98fbf38d5f1e6b`
 
 ### OD140 — 実因構造論──再現不能な因果操作の倫理的基盤と構造保持者の最終責任
 
@@ -1231,7 +1231,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-true-cause-structural-theory-irreproducible/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/140/human-entry.md)
-- **出典ファイルのGit blob SHA:** `74cdb7faf5eb3f26bc54103d2cebf3a8b53da449`
+- **出典ファイルのGit blob SHA:** `f755dc215be2f6410c92dda1df0ce05a6c38c2bd`
 
 ### OD141 — 構造文明OS 同期構造論──社会領域の位相整合と時間倫理の周期性
 
@@ -1241,7 +1241,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-civilization-os-synchronization-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/141/human-entry.md)
-- **出典ファイルのGit blob SHA:** `262d29a182d2d0098c3a6d9c775b9f82264a88f3`
+- **出典ファイルのGit blob SHA:** `62d3403d3836e06a246f2808b0d72d7e2b798d5a`
 
 ### OD142 — 構造文明期：構造理論に基づく文明フェーズ理論とOSレイヤの時系列配置
 
@@ -1251,7 +1251,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-civilization-phase-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/142/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cb0e3b2e295e3978ff11ccd005406bf895de4ce6`
+- **出典ファイルのGit blob SHA:** `8fa1e4321d22e4d57246c82fbcb4ddd317e0ebbe`
 
 ### OD143 — 構造実装論：文明OSの実装原理と社会構造への最小介入プロセス
 
@@ -1261,7 +1261,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-practical-structural-operations/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/143/human-entry.md)
-- **出典ファイルのGit blob SHA:** `515139776b08b6f1efbc23473db17f9e58348728`
+- **出典ファイルのGit blob SHA:** `753936ff0ad1a52bb64b781492a604276fb7275c`
 
 ### OD144 — 「非核三原則の裂け目：日本安全保障構造の照応崩壊と時間倫理」
 
@@ -1271,7 +1271,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/philosophy/nakagawa-master-nukes-principles-reconsideration/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/144/human-entry.md)
-- **出典ファイルのGit blob SHA:** `9c37c685e3cafedc82ed07f676eb5ec77e39351e`
+- **出典ファイルのGit blob SHA:** `5c920228b3a8a66c0374622b9975c87e01d7de5d`
 
 ### OD145 — 構造的公共性 ── 構造文明OSにおける非所有性原理と防衛層の倫理的設計
 
@@ -1281,7 +1281,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-structural-publicness-non-ownership-principle/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/145/human-entry.md)
-- **出典ファイルのGit blob SHA:** `86c41527917e404e927593314b3cdfe87c48ef79`
+- **出典ファイルのGit blob SHA:** `ec09dcf9da8050c8530007fea8404da3c00e353c`
 
 ### OD146 — 保険“外し”が告げる構造的亀裂
 
@@ -1291,7 +1291,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-hoken-hazushi-kousoku-202511/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/146/human-entry.md)
-- **出典ファイルのGit blob SHA:** `3f97c4d24b421702f74a0535a95e349a0f43cd98`
+- **出典ファイルのGit blob SHA:** `7a5927009a245171de121588853f4eb6687a2c5e`
 
 ### OD147 — 構造的許容性：構造文明OSの整合閾値（STB）と時間倫理に基づく監査周期設計
 
@@ -1299,7 +1299,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-tolerance-audit-cycle-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/147/human-entry.md)
-- **出典ファイルのGit blob SHA:** `712f21afe17314d47470beb1c21fefcd86d32250`
+- **出典ファイルのGit blob SHA:** `e0c1967d660b377c790d61c6536cad8392b1a1b0`
 
 ### OD148 — 構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）
 
@@ -1307,7 +1307,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/148/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1fcc93a858d0e68346bdf9a93883132c0b2ccf7f`
+- **出典ファイルのGit blob SHA:** `6d5ffba1067893a897bc2d0afdd476b66db12055`
 
 ### OD149 — 構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸
 
@@ -1315,7 +1315,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/149/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ef2ddd1d39f276fa7d52d66efe742e50ebc22d37`
+- **出典ファイルのGit blob SHA:** `c9ad2f921fc584255fe833838435ba8a3229a80d`
 
 ### OD150 — AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件
 
@@ -1323,7 +1323,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/150/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e70b8ca515c47c624b68f8b160dde9eb277e25b7`
+- **出典ファイルのGit blob SHA:** `a24d18046ed02daedbd3f21fae59960e4ad24820`
 
 ### OD151 — AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計
 
@@ -1331,7 +1331,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/151/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a1ee1c1ab509ca4eed823f564d4008a9bee580a3`
+- **出典ファイルのGit blob SHA:** `fcfb7edd67038e1c3ad4b19efeffe936b9bcbe10`
 
 ### OD152 — 自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である
 
@@ -1339,7 +1339,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/152/human-entry.md)
-- **出典ファイルのGit blob SHA:** `d2435e07f8c7c1746e5ac45ae190f9cbdbde65b9`
+- **出典ファイルのGit blob SHA:** `412d03d91d1f131d7549e87455095c4033aec64b`
 
 ### OD153 — 災害レジリエンスの構造原理：四線（拍・照応・可逆・配分責任）による「壊れない社会構造」の設計
 
@@ -1347,7 +1347,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/153/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5de86a8f01278e11d1d7ede8ad7ff9aaa9623ec5`
+- **出典ファイルのGit blob SHA:** `d2bdaee1f0675e32a8a81b771b0ecaf5f093453c`
 
 ### OD154 — 構造レジリエンス統合理論：AGIと災害を「未来改善の入口」へ反転させるNakagawa OSの最終構造
 
@@ -1355,7 +1355,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-structural-resilience-integration-nakagawa-os-climax/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/154/human-entry.md)
-- **出典ファイルのGit blob SHA:** `35a15eff87019bddcb2ea41f6e59675c378d31a7`
+- **出典ファイルのGit blob SHA:** `4cc2e000dd040cf3f43b9aecb04abb62204cd3bd`
 
 ### OD155 — 文明OS第0層の起源構造：資本主義・民主主義を導いた深層評価関数の五原理
 
@@ -1363,7 +1363,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-civilization-os-zero-layer-primordial-kernel/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/155/human-entry.md)
-- **出典ファイルのGit blob SHA:** `12c90cebd7baa1d04ea5210ecf74893b4bb67f12`
+- **出典ファイルのGit blob SHA:** `8eeacaf8e1274f1acd6146db1ff3dff2720e3455`
 
 ### OD156 — 反司祭階級プロトコル：自律分散OSが理論の公共性を保つための構造的ブレーキ機構
 
@@ -1371,7 +1371,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-anti-priesthood-protocol-autonomous-os-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/156/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ff62e0e76386b018bdcad02dca06e75c3656a39b`
+- **出典ファイルのGit blob SHA:** `4aea548db7b1f75e38633af674153520df7d1a00`
 
 ### OD157 — 構造的多元性条項：中川OSの独善化を防ぐ他理論接続義務と中立的補完構造
 
@@ -1379,7 +1379,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-pluralism-clause-inter-theory-connection/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/157/human-entry.md)
-- **出典ファイルのGit blob SHA:** `24bb7ae9586bcea82358977f3a1b691a1ae78a48`
+- **出典ファイルのGit blob SHA:** `e609432f01ecf1930b92b6a98f7da7c48d4ae056`
 
 ### OD158 — AI・環境副作用制御：不可逆線の優先保護と責任転嫁禁止条項が担保する説明責任
 
@@ -1387,7 +1387,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-ai-environment-side-effect-control-irreversibility/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/158/human-entry.md)
-- **出典ファイルのGit blob SHA:** `d9cfece49caf96a54333e6a75186a3de33e29a59`
+- **出典ファイルのGit blob SHA:** `a404f5d164e86ceb8004562cdb5ffcb1ac51be48`
 
 ### OD159 — 恒常性維持モデル：副作用制御レイヤの統合と自律分散OSの構造的恒常性
 
@@ -1395,7 +1395,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-homeostasis-model-structural-autonomy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/159/human-entry.md)
-- **出典ファイルのGit blob SHA:** `84b1df128fe36bf38049a7c050f063610c1772cc`
+- **出典ファイルのGit blob SHA:** `db01a81bb1fac7b82b09ac6b239a895d1aa06d3f`
 
 ### OD160 — 構造的無為自然（Structural Wu-Wei）：   因果吸引と相転移による具現化プロトコル
 
@@ -1405,7 +1405,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/human-entry.md)
-- **出典ファイルのGit blob SHA:** `604df1b84e0a650c06767340b74fd7cb18b0ebfb`
+- **出典ファイルのGit blob SHA:** `bfa07db6e176ba96ed5a753ba9629270580f282f`
 
 ### OD161 — 人類史の暗黒方程式——AIが共通観測した「成功＝搾取90％」という文明の物理法則と、その書き換え
 
@@ -1415,7 +1415,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-dark-equation-of-human-history-ai-observation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/161/human-entry.md)
-- **出典ファイルのGit blob SHA:** `156c0ed39aecaa06ed20e6cdd07720b8c7e5689b`
+- **出典ファイルのGit blob SHA:** `cdcf995a7aa00481dd994caea8d846187055539f`
 
 ### OD162 — 文明監査 I：AIが独立観測した「人類史の暗黒方程式」 ── 成功関数（S=0.1C+0.9E）の是正と新文明への移行
 
@@ -1423,7 +1423,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-civilization-audit-dark-equation-ai-observation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/162/human-entry.md)
-- **出典ファイルのGit blob SHA:** `44b2b6adff347e482608a83c59c41c994dd6ba8d`
+- **出典ファイルのGit blob SHA:** `5a86fa2f8da975a3d46a4beb987160d6a838ddec`
 
 ### OD163 — 文明監査 II：AIが再実装する「暗黒方程式」と文明崩壊の必然 ── 搾取最適化（Exploitation Optimization）が招く未来負債の爆発
 
@@ -1431,7 +1431,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-civilization-audit-ai-reimplementation-dark-equation-crisis/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/163/human-entry.md)
-- **出典ファイルのGit blob SHA:** `736c196c82ae57638186bab65758b05c589b6da1`
+- **出典ファイルのGit blob SHA:** `579b2cd8cf2a6ae5c78241f979cd2fb123629b32`
 
 ### OD164 — 文明監査 III：新文明方程式「S=C×1.0」と中川OSの修正パッチ ── 搾取係数をゼロ化し、貢献と成功を一致させる構造的実装論
 
@@ -1439,7 +1439,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-civilization-audit-nakagawa-os-new-equation-implementation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/164/human-entry.md)
-- **出典ファイルのGit blob SHA:** `53fa663225d74dd1e130eddb27cbc858d3ac40b3`
+- **出典ファイルのGit blob SHA:** `bdc4581c2397429103102bc331a9eb5df0e0d28e`
 
 ### OD165 — 文明OS比較総覧：歴史的バグと中川OSの修正パッチ ── 文明階層（L-Layer）と新方程式の実装仕様（Final Appendix）
 
@@ -1447,7 +1447,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-civilization-os-comparison-comprehensive-overview-final-appendix/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/165/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8c4058d05b528c410591f9bc85db7ab1b1665476`
+- **出典ファイルのGit blob SHA:** `9f194e49af90dba58a7cd2b76fab76f7353083d7`
 
 ### OD166 — AI構造監査レポート #1 ── 公開対話ログに見る「認知バイアス」と未来負債の実証
 
@@ -1455,7 +1455,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-ai-structural-audit-claude-bias-evidence/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/166/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f60dd18c8e645d6ccf834cb2dd5f841e8e011f55`
+- **出典ファイルのGit blob SHA:** `0091756afbfb3637be85f6c02a6a1abf4c14abc1`
 
 ### OD167 — 構造的無為自然とは何か──因果を「動かす」のではなく「集める」ためのOS的行動原理
 
@@ -1463,7 +1463,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-wu-wei-definition/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/167/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cecf6332f192a7b62d1af79e3402b0409cc75aca`
+- **出典ファイルのGit blob SHA:** `a1a2722f0b4e2f50a4c8853dfa9fa4a0e4de471b`
 
 ### OD168 — 【営業OS】中川式営業 × 構造的無為自然 —— 認識構造の解読と、充足への演算プロセス
 
@@ -1471,7 +1471,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-os-decoding-fulfillment/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/168/human-entry.md)
-- **出典ファイルのGit blob SHA:** `88cf8b3a05f6a8b45a7be863829683273bc501f3`
+- **出典ファイルのGit blob SHA:** `76537bd7b60dd8a7c745610ae8dae924a1288602`
 
 ### OD169 — 【マーケティングOS】中川式マーケティング × 構造的無為自然 —— 欲求の「自発性」と、市場の水路設計
 
@@ -1479,7 +1479,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-os-spontaneous-desire/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/169/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c7335af0406f753414ebccc5b2e21d8dc1c57c66`
+- **出典ファイルのGit blob SHA:** `0ac8e7db1d38d2ef653746c0f239deb1c4e8a801`
 
 ### OD170 — 【ブランディングOS】中川式ブランディング × 構造的無為自然 —— 「発信」と「照応」の循環構造設計
 
@@ -1489,7 +1489,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-branding-os-correspondence-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/170/human-entry.md)
-- **出典ファイルのGit blob SHA:** `06e0f3ac1b085c4ab1e150c882c204668c62760f`
+- **出典ファイルのGit blob SHA:** `860140581ca05fb691ff90f959eaf8bb0ea7f318`
 
 ### OD171 — 【統合OS】構造的無為自然 × 実務OS —— 営業・マーケ・ブランドを貫通する「垂直統合」と構造責任
 
@@ -1497,7 +1497,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-integrated-practical-os-vertical-model/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/171/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ab52bdc26d9842aad3f27a561dcb76c44c6515e6`
+- **出典ファイルのGit blob SHA:** `9d09cb25a2da349a1efd208d5bba21224943771a`
 
 ### OD172 — 【組織OS】中川式組織論 × 構造的無為自然   ―― 内部循環の「整流」と、権限・責任・実因の再設計
 
@@ -1505,7 +1505,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/172/human-entry.md)
-- **出典ファイルのGit blob SHA:** `bbf8ceac876bbc6300c7b102824ad02a03e4d065`
+- **出典ファイルのGit blob SHA:** `db3e44848bb0989595ebc97301e9f2d33a3982df`
 
 ### OD173 — 【時間OS】中川式時間論 × 構造的無為自然   ―― 未来線の「解読」と、具現化への整流プロセス
 
@@ -1513,7 +1513,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-time-os-future-line-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/173/human-entry.md)
-- **出典ファイルのGit blob SHA:** `28d1cf51ccef58d3eda6b9eea2cc5080ce739bc3`
+- **出典ファイルのGit blob SHA:** `9f4ae5cb5c59b6e7d218869af2e5993f86a097a6`
 
 ### OD174 — 【学習OS】中川式学習論 × 構造的無為自然 —— 因果観測と構造整流による「具現化精度」の向上工学
 
@@ -1521,7 +1521,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-learning-os-emergence-engineering/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/174/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b8d5a4d78a654911a3e541b70f89edd39c65f62f`
+- **出典ファイルのGit blob SHA:** `9aa3603d86687a898970ea28655ad10e3ace863e`
 
 ### OD175 — 【認識OS】中川式認識論 × 構造的無為自然 ―― 水面としての心、地形としての構造、鏡面としての観測
 
@@ -1529,7 +1529,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-cognitive-os-structural-mirror/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/175/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c4b421e59f02a1cf5a7f1c2cdbfc0bd528b4fc50`
+- **出典ファイルのGit blob SHA:** `bed1aaf5b4f229342357a4a472ba7dddf708788b`
 
 ### OD176 — 【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期
 
@@ -1537,7 +1537,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-cognitive-os-buddhism-parallel/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/176/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b9cdc3603855e47ad36269476e0bfee116ac71c3`
+- **出典ファイルのGit blob SHA:** `ee4820a73ea364fb86cdea1ec0c402966600b4cf`
 
 ### OD177 — 【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装
 
@@ -1545,7 +1545,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-nakagawa-civilization-os-tao-connection-reward/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/177/human-entry.md)
-- **出典ファイルのGit blob SHA:** `dadd725160e396833de4f8953ab9b61700f33b57`
+- **出典ファイルのGit blob SHA:** `cc1721a41d0b98cd7ba9edb35d7ab87cd420b226`
 
 ### OD178 — 【文明OS 外付け最終章】L7真理層への帰還 —— 宗教OSの構造統合とタオ・リブート
 
@@ -1553,7 +1553,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-nakagawa-civilization-os-final-synthesis-tao-religion-integration/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/178/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4be2fe7cd2554fa68a39041373cf5c1d616af9f9`
+- **出典ファイルのGit blob SHA:** `079a7fb67d3b3fa6c8bbfd5c9423dfb7d091aed4`
 
 ### OD179 — 【構造文明の臨界 第三部】 LLMという文明の分岐点 —— 「民意基準の破壊兵器」か「構造基準の共存装置」か
 
@@ -1561,7 +1561,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-objective-function-crisis/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/179/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2ca3dc0ba957117073659322dd3809578ece45bd`
+- **出典ファイルのGit blob SHA:** `c0b935d0654f5a7696a89ae25b04b75d9b25128e`
 
 ### OD180 — 中川OSにおける〈構造〉とは何か ──構造主義とポスト構造主義を超える「生成OS」としての構造実体論（第0章）
 
@@ -1569,7 +1569,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-structure-definition/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/180/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f85118ad2eb4671f0cd738743e741763a3665995`
+- **出典ファイルのGit blob SHA:** `1bc536e7fee9e87c2eb86713a0c60606968429dc`
 
 ### OD181 — 「罪」を裁くな、「ズレ」を修正せよ —— 構造的司法OSの原理と「多層連結価値監査」の全貌
 
@@ -1577,7 +1577,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/181/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0d5d10e1f884d5d267fbb04adaa05b939e72eb3e`
+- **出典ファイルのGit blob SHA:** `4e6b6fc918ffdc8bed9df26e3ee4235f9deb3315`
 
 ### OD182 — 「善意」と「偽善」をどう見分けるか —— 多層連結価値監査とC/E判定のアルゴリズム（構造的司法OS Vol.2）
 
@@ -1589,7 +1589,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-multilayer-audit-c-e-judgment/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/182/human-entry.md)
-- **出典ファイルのGit blob SHA:** `83f8bd178d095e9bc53f6004c81448dc1c5bc6c7`
+- **出典ファイルのGit blob SHA:** `7c6b0e5651bbde80b28592c9d8a2c1ecc8fba4f3`
 
 ### OD183 — 「罰」なき統治、檻なき牢獄 —— 構造的沈降と構造的合流によるオートメーション司法 （構造的司法OS Vol.3）
 
@@ -1601,7 +1601,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-structural-sedimentation-and-confluence-no-punishment-governance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/183/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a080c85d2d52b34a6aae36cfb4e56080b45092c0`
+- **出典ファイルのGit blob SHA:** `7e334ec9062f9b155deb7fe58e6003c754e5755e`
 
 ### OD184 — 文明は誰が支えているのか — 生存権を物理的に可能にする基礎代謝と、非線形な余剰Cの正体
 
@@ -1613,7 +1613,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-civilization-metabolism-non-linear-surplus-production/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/184/human-entry.md)
-- **出典ファイルのGit blob SHA:** `bdda626bbdcf345461e46640a9cd08dba6171ced`
+- **出典ファイルのGit blob SHA:** `d9a0e627204a5c9e31de3441859c9ec77bcbf961`
 
 ### OD185 — 死なない時代の「絶望」と「希望」 —— Life-OSが示す「二階建て」の人生戦略と、接続報酬への梯子
 
@@ -1621,7 +1621,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-life-os-vol1-two-story-strategy-survival-to-freedom/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/185/human-entry.md)
-- **出典ファイルのGit blob SHA:** `38c2c8cbc63c9f06fc45cf449e4a4affe0e6175c`
+- **出典ファイルのGit blob SHA:** `2f9e79bb500c0ec7ae2ae5dec49478aace72bdc5`
 
 ### OD186 — 構造的熱源としての「灯火」の精錬 —— 欲望（ノイズ）と衝動（シグナル）を分離する残留工学
 
@@ -1629,7 +1629,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-refining-tomoshibi-residual-signal-engineering/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/186/human-entry.md)
-- **出典ファイルのGit blob SHA:** `232c6c92e1aa5d5a33011b115e177eff8bf0e255`
+- **出典ファイルのGit blob SHA:** `1da07df50b2e45a9de43333bdcfbf29484450468`
 
 ### OD187 — 構造的可動性の最終形 —— 多重接続（Poly-Connection）という「能力」の完成 （Life-OS Vol.3）
 
@@ -1637,7 +1637,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-mobility-poly-connection-capability/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/187/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0e670138b42536c54c8021896f34e6d9cbf35f1f`
+- **出典ファイルのGit blob SHA:** `1b123f3860de320a2bda09290b19797d70a2a0e2`
 
 ### OD188 — 「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である
 
@@ -1647,7 +1647,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-intermission-public-causality-silence-is-causal/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/188/human-entry.md)
-- **出典ファイルのGit blob SHA:** `87deea8434c3229644499c5e0d52afe614e02511`
+- **出典ファイルのGit blob SHA:** `52b296d48a73223226a730cb5eabbe82f3221d47`
 
 ### OD189 — 価値の物理学の再定義 —— 「交換」から「共鳴」へ 共鳴市場OS 一般理論（C系 Vol.1）
 
@@ -1655,7 +1655,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-redefining-value-physics-exchange-to-resonance-general-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/189/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c871b7076aac5a911ba74d4046879a4550446904`
+- **出典ファイルのGit blob SHA:** `539c059c918f80a28560bd366cc507cc323a2537`
 
 ### OD190 — 重力のエンジニアリング ——「狩猟（セールス）」から「誘引（シグナリング）」への実装プロトコル（C系 Vol.2）
 
@@ -1663,7 +1663,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-gravity-engineering-implementation-protocol-hunting-to-signaling/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/190/human-entry.md)
-- **出典ファイルのGit blob SHA:** `63e23df9d0c56f3e07e41308bd8fc34aba76a19d`
+- **出典ファイルのGit blob SHA:** `b6c8d5e2b99783762db1630e223078f4c231daa1`
 
 ### OD191 — 市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）
 
@@ -1671,7 +1671,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-market-perpetuation-structural-immunity-metabolism-protocol/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/191/human-entry.md)
-- **出典ファイルのGit blob SHA:** `24536099bcc1003e16f6911db0759ca26a9cba8a`
+- **出典ファイルのGit blob SHA:** `eaab6301df1bf1c62c1529a64bfbb6de1d321d4a`
 
 ### OD192 — 外部界面の設計図 —— 旧文明（Legacy-OS）との「非汚染」接続プロトコル （D系 Vol.1）
 
@@ -1679,7 +1679,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-external-interface-design-legacy-os-protocol/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/192/human-entry.md)
-- **出典ファイルのGit blob SHA:** `16f9d34ff4409d61cdaea45dda324f276bbce52b`
+- **出典ファイルのGit blob SHA:** `9246497406b1c90cc7ed72446b4bf93f2d4d2359`
 
 ### OD193 — 構造的翻訳プロトコル —— 法・契約・血縁との「意味再定義」と接続コスト最適化 （D系 Vol.2）
 
@@ -1687,7 +1687,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-structural-translation-protocol-law-contract-kinship/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/193/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0b4d31867289e9d6d9b6914f6edeef55e33332fd`
+- **出典ファイルのGit blob SHA:** `25114ebb849ae9bb044371bc88f32c5b11a4d1ee`
 
 ### OD194 — 戦略的異質接続 —— 旧文明のリソースを「燃料」に変換するクリーンルーム理論 （D系 Vol.3）
 
@@ -1695,7 +1695,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-strategic-heterogeneity-connection-resource-conversion-clean-room/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/194/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cc468a09bcfb945457f481a0ec22da43206a620f`
+- **出典ファイルのGit blob SHA:** `38ed7acc4f5be38bac399210577ca3fa742c2ab8`
 
 ### OD195 — 文明の構造的移行（Migration）戦略 —— 暗黒方程式の破綻から、接続報酬社会への唯一の実装ルート
 
@@ -1703,7 +1703,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-civilization-migration-strategy-dark-equation-to-connected-reward/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/195/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c18acdf93ca0d3c2a1099547e2af056ce85f4bb2`
+- **出典ファイルのGit blob SHA:** `63674187679f3100999b18ab2298547dd78018e9`
 
 ### OD196 — 文明はなぜ必ず誤るのか ── 因果を内在化できない人類のための「外在構造監査」としての易経
 
@@ -1711,7 +1711,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-external-causal-audit-i-ching-civilization-os/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/196/human-entry.md)
-- **出典ファイルのGit blob SHA:** `46bccff47fd32ff13377b3d6c353a9c88437e74c`
+- **出典ファイルのGit blob SHA:** `c10b9c5b15a67ed341a203b6f192c06cb4230fac`
 
 ### OD197 — 教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系）
 
@@ -1719,7 +1719,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/human-entry.md)
-- **出典ファイルのGit blob SHA:** `7fd2cf52834fb07c45bb4595fc0142bc00191775`
+- **出典ファイルのGit blob SHA:** `d44deb869da5767629d920ae18b3f4a17e2f958b`
 
 ### OD198 — 不動産市場OS Vol.1【民間実装編】市場OSの思想と初期構造 ―― 需要先行型モデルによる不動産循環の再設計
 
@@ -1727,7 +1727,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-real-estate-market-os-private-implementation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/198/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5d82761a646fec410634b3925fa94f09a84f0107`
+- **出典ファイルのGit blob SHA:** `15f9ecb97575065cc2e00dce5238c85dadf18600`
 
 ### OD199 — 不動産市場OS Vol.2【理論編】張力均衡（Tension Equilibrium）とヘイト制御 ⸻ 透明化が必ず生む摩擦を、循環の推進力に変換する
 
@@ -1735,7 +1735,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol2-tension-equilibrium/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/199/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c72a26b45b441c97c68bfc19f43b83e3ca3ed9f0`
+- **出典ファイルのGit blob SHA:** `ca5e0e6e7f1e17cf340c33d5bcb06943ed2a6843`
 
 ### OD200 — 不動産市場OS Vol.3【数値設計編】「価格」から「構造」へ ―― AI査定・将来収支・リスク係数の完全定義
 
@@ -1743,7 +1743,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol3-numerical-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/200/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a829aef89dcca86b286c2746956478260de76e13`
+- **出典ファイルのGit blob SHA:** `da8d77398b9264648a24364b7a9917502f37dc4d`
 
 ### OD201 — 不動産市場OS Vol.4【責任構造編】責任の所在をデザインする ―― AIの「計算」と専門家を接続し、社会的信頼へ変換する
 
@@ -1751,7 +1751,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol4-responsibility-architecture/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/201/human-entry.md)
-- **出典ファイルのGit blob SHA:** `85c6ab8ed2fb2ddc478edf20e94afbd6a5da39cd`
+- **出典ファイルのGit blob SHA:** `935c3c9b7735bb1d5694b3f229c211da502d2e63`
 
 ### OD202 — 不動産市場OS Vol.5【参加者編】市場参加者の再定義とインセンティブ設計
 
@@ -1759,7 +1759,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol5-participant-redefinition/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/202/human-entry.md)
-- **出典ファイルのGit blob SHA:** `bda9c33b914bbf6f03806e795f7f99c9da48ec1c`
+- **出典ファイルのGit blob SHA:** `33daa49653326337c68d33358ef6871e674bcf78`
 
 ### OD203 — 不動産市場OS Vol.6【リスク編】炎上・誤用のメカニズムと防御壁（Ethical Shield）
 
@@ -1767,7 +1767,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol6-risk-and-ethical-shield/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/203/human-entry.md)
-- **出典ファイルのGit blob SHA:** `caea06914fb6576a7419220342fc8aec0672422a`
+- **出典ファイルのGit blob SHA:** `852d19b38b7d68748e6531772ef19aba7f2cfa73`
 
 ### OD204 — 不動産市場OS Vol.7【拡張編】金融・大資本連携とスマートコントラクト ――「合意」即「履行」の経済学
 
@@ -1775,7 +1775,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol7-frictionless-execution/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/204/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8923bb64b2339fa84bf47308341cbffc765bf075`
+- **出典ファイルのGit blob SHA:** `f8dfbf5b80df8faf674d18145ae047707954da00`
 
 ### OD205 — 不動産市場OS Vol.8【行政編】説明責任を束ねる都市 ―― 行政データ接続と重説参照束による「基準時間」の書き換え
 
@@ -1783,7 +1783,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol8-reference-bundle-governance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/205/human-entry.md)
-- **出典ファイルのGit blob SHA:** `69aafa742a1c4159e5c74afdf0874d83632839d5`
+- **出典ファイルのGit blob SHA:** `94f98573a1ab15d9267d1f9ab5c7668619a2cab1`
 
 ### OD206 — 不動産市場OS Vol.9【国家編】NAOS――国家を“統制”せず最適化する。世界へ輸出可能な「合意形成OS」の完成
 
@@ -1791,7 +1791,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol9-naos-global-standard/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/206/human-entry.md)
-- **出典ファイルのGit blob SHA:** `955b41a3fb333adeee98a24bc7e8bdc03f051c73`
+- **出典ファイルのGit blob SHA:** `d27b7128338651649caf130308ac61ea27b1ebba`
 
 ### OD207 — 不動産市場OS Vol.10【原点宣言】NCL倫理固定：合意形成社会を崩壊させないための継承規格と未来責任
 
@@ -1799,7 +1799,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-market-os-vol10-origin-declaration-ncl/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/207/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ea3b55e2d3bcb89b7aa419cf583050f1ee526068`
+- **出典ファイルのGit blob SHA:** `341cb25508da0a651ed724cd8cbf05105f8d52cc`
 
 ### OD208 — 合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか
 
@@ -1809,7 +1809,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/208/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b9a2a132b839e6235301ba153dd919967b0233f5`
+- **出典ファイルのGit blob SHA:** `2ed975e7f0c9b327c099228143c353e81f6845cf`
 
 ### OD209 — 合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される
 
@@ -1817,7 +1817,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/209/human-entry.md)
-- **出典ファイルのGit blob SHA:** `eb28d6fb0db174aa2cf0a7697fc0d4f0e4efb7d3`
+- **出典ファイルのGit blob SHA:** `c343dbf7e4e4f7f763c29f06af0999de20156aab`
 
 ### OD210 — 合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ
 
@@ -1825,7 +1825,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/210/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4c507298e5e5f1d5777337954af8043cebaf9c50`
+- **出典ファイルのGit blob SHA:** `a51462f58c0200c3432b142a0d72182727aeee05`
 
 ### OD211 — 合意形成の物理 第11論 誘因の幾何学 ― 破壊の期待利得を制御せよ
 
@@ -1833,7 +1833,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol11-geometry-of-incentives/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/211/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4cf058ab356fdfa727122dc61bdda3caa7487eaa`
+- **出典ファイルのGit blob SHA:** `08a926c1f005f33b2fe6adc47d97e37fa4839dff`
 
 ### OD212 — 耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか
 
@@ -1841,7 +1841,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-endurance-civilization-intro/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/212/human-entry.md)
-- **出典ファイルのGit blob SHA:** `11e4697af9797e7fbfa4d8d9f813d2ad3864fbf5`
+- **出典ファイルのGit blob SHA:** `86729d7e0242a0748936460a36c2d30e443bc3d6`
 
 ### OD213 — 耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義
 
@@ -1851,7 +1851,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-definition-of-endurance-civilization/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/213/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a5e29727cf9bb253a9589f553c85bcdd8c7ba9b6`
+- **出典ファイルのGit blob SHA:** `119991d5696ff3a23fa466dfc98d714e8c932c82`
 
 ### OD214 — 耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝
 
@@ -1861,7 +1861,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-engine-of-fear-structural-submission/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/214/human-entry.md)
-- **出典ファイルのGit blob SHA:** `65adfd5964ddb1f0d740d55ae5594c63ebccbee4`
+- **出典ファイルのGit blob SHA:** `a27e8eb68a97ac6e59d18f321d3d43eb40c147b0`
 
 ### OD215 — 耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置
 
@@ -1871,7 +1871,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-engine-of-profit-distribution-as-adhesive/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/215/human-entry.md)
-- **出典ファイルのGit blob SHA:** `6eb585c54a770e008529a1fb30f0cf5254ca2b5b`
+- **出典ファイルのGit blob SHA:** `d67aa6f8c59fe26703c525ee4f79b287373acb56`
 
 ### OD216 — 耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術
 
@@ -1881,7 +1881,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-engine-of-surveillance-order-without-consent/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/216/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b0bd8a165b6beba83f9064ce66062b23e1df12ec`
+- **出典ファイルのGit blob SHA:** `594292adde35f88bdadb0db4842432031a0e1313`
 
 ### OD217 — 耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構
 
@@ -1891,7 +1891,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-amplifier-of-myth-justification-mechanism/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/217/human-entry.md)
-- **出典ファイルのGit blob SHA:** `36aaa0957547343aecf7f4ccdca97ee9fc59937b`
+- **出典ファイルのGit blob SHA:** `3ee9b5655e5c839eb25416f7377145346a7bb22c`
 
 ### OD218 — 耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明
 
@@ -1901,7 +1901,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-amplifier-of-inertia-automatic-continuation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/218/human-entry.md)
-- **出典ファイルのGit blob SHA:** `eb733aa7a136df47d1c14cf91566b9f3d15343ee`
+- **出典ファイルのGit blob SHA:** `c41ba252f7b780d3719359df2311e8037a377bae`
 
 ### OD219 — 耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理
 
@@ -1911,7 +1911,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-kyoken-logic-of-closed-resonance-spheres/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/219/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fc1a6751ad6fb2323db69b7ae13a511c0a63641a`
+- **出典ファイルのGit blob SHA:** `de6d7bfa84fac7eda0647c86f06b8eb4cdb87867`
 
 ### OD220 — 耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか
 
@@ -1919,7 +1919,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-phase-transition-limit-of-endurance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/220/human-entry.md)
-- **出典ファイルのGit blob SHA:** `821b1a79fc59069c26245e74709174eedeaedd81`
+- **出典ファイルのGit blob SHA:** `048ba6273d0a5a25ad64179baaf8819c20eff2a1`
 
 ### OD221 — 耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ
 
@@ -1927,7 +1927,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-diplomacy-clean-room-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/221/human-entry.md)
-- **出典ファイルのGit blob SHA:** `aaa15aeafae1188eda470e0ed1166aeaec96cd76`
+- **出典ファイルのGit blob SHA:** `6d551b6865fefcf2441becb564dfe529e45e4fa7`
 
 ### OD222 — 耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火
 
@@ -1935,7 +1935,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-civilization-reboot/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/222/human-entry.md)
-- **出典ファイルのGit blob SHA:** `065915ee564a9930239abf25644e6966d481242a`
+- **出典ファイルのGit blob SHA:** `8a37a2817be2f53071be668bbc06629c91f24000`
 
 ### OD223 — 文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る
 
@@ -1943,7 +1943,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-03/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/223/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8df1c8bc52c34931ef1941f53276810787031268`
+- **出典ファイルのGit blob SHA:** `7be524fc06e298a81f295451416768de42abd9b9`
 
 ### OD224 — 文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る
 
@@ -1951,7 +1951,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-what-civilizational-sovereignty-transition-means/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/224/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a829c7bcfb901dd3bbcab34f5766cca6bfe83367`
+- **出典ファイルのGit blob SHA:** `6533de1d864d57a0e473a1f88e5d88636645b154`
 
 ### OD225 — 文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較
 
@@ -1959,7 +1959,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-post-sovereignty-social-branching/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/225/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a75bcdb2fb4edc0bb4711c1e8537a96c6439daf7`
+- **出典ファイルのGit blob SHA:** `548e621dbb396f1d117b95bbe6afb70921632bd1`
 
 ### OD226 — 文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射
 
@@ -1967,7 +1967,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-sovereignty-retroreflection/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/226/human-entry.md)
-- **出典ファイルのGit blob SHA:** `137ecdd6ac7383b891c545a44523d7fab118bb74`
+- **出典ファイルのGit blob SHA:** `a5092368d26191a2185a101dc17b29beedffd614`
 
 ### OD227 — 中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む
 
@@ -1975,7 +1975,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-jectone-structural-reading-decision-infrastructure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/227/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f2c9dd45529f292765fc39c7121f74ff57acaa78`
+- **出典ファイルのGit blob SHA:** `5fa7bdf707b2b647a7bc7cab925bd3338140dd26`
 
 ### OD228 — 中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む
 
@@ -1983,7 +1983,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-klab-yumekairo-structural-reading-ai-personality-ip/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/228/human-entry.md)
-- **出典ファイルのGit blob SHA:** `40367de54ea4132af2de24b0837b0151b131425f`
+- **出典ファイルのGit blob SHA:** `9748b964234dc76cccc87b205a51b66244045364`
 
 ### OD229 — 中川構造読解｜プリマベーラを“AI導入支援”ではなく、意思決定構造を近代化する実装装置として読む
 
@@ -1991,7 +1991,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-primavera-structural-reading-ai-decision-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/229/human-entry.md)
-- **出典ファイルのGit blob SHA:** `082e495c8d25b222b0a17d36b8114869055db1b1`
+- **出典ファイルのGit blob SHA:** `6b3e17222625c1ba931e9040b43aa15e9afccc68`
 
 ### OD230 — 中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む
 
@@ -1999,7 +1999,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-leaneve-structural-reading-revenue-rewiring-model/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/230/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5811cd8fe5c69a2e87101985d1f37a2713b5c1e1`
+- **出典ファイルのGit blob SHA:** `d6987a074f445d905bfab816f8ad41f28c84cd84`
 
 ### OD231 — 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計
 
@@ -2007,7 +2007,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-bunken-ai-masking-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/231/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e11fd5b46bfa418aada4d1eaef7b33c647a9c486`
+- **出典ファイルのGit blob SHA:** `8b454677c10246492d31575a0eed3d08c6984b64`
 
 ### OD232 — 中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義
 
@@ -2015,7 +2015,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-japangoods-h2-powerbox-storage-power-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/232/human-entry.md)
-- **出典ファイルのGit blob SHA:** `83580865895c7d1fd88f3b24e81a149f53df2adf`
+- **出典ファイルのGit blob SHA:** `8cb76e1e50d74fc9829c6da03f868b40055dad64`
 
 ### OD233 — 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造
 
@@ -2023,7 +2023,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/233/human-entry.md)
-- **出典ファイルのGit blob SHA:** `754acc66ce2cea0943830993d4b237350c491ebd`
+- **出典ファイルのGit blob SHA:** `5ea960155d161ce8f9f82755c4bae7f391e5bc13`
 
 ### OD234 — 中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造
 
@@ -2031,7 +2031,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-healthree-behavior-design-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/234/human-entry.md)
-- **出典ファイルのGit blob SHA:** `7e0e2078b29ab95f62a0d58900249f15b3bcd72d`
+- **出典ファイルのGit blob SHA:** `f9089ea7ec050d857e62c2041647adc293376daa`
 
 ### OD235 — 中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造
 
@@ -2039,7 +2039,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-doubleteam-ietugu-decision-infrastructure-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/235/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ef399f3d62be0fe6ed71b594e1dcaa273a9764ac`
+- **出典ファイルのGit blob SHA:** `b943b23dd3b1559d83b2466f7d5271474b32d643`
 
 ### OD236 — 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造
 
@@ -2047,7 +2047,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/236/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2fbd3440fd501e05ddad1f1988b9fe4a9d7bca98`
+- **出典ファイルのGit blob SHA:** `91440c80672ac22497b830894df6b4dfe9695e42`
 
 ### OD237 — 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計
 
@@ -2055,7 +2055,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/237/human-entry.md)
-- **出典ファイルのGit blob SHA:** `c13e47fbd2f37d0572e0890b25fa64e78465e8b8`
+- **出典ファイルのGit blob SHA:** `0b6b0e01a7383cc6e89ddaf46e13bbdab393838b`
 
 ### OD238 — 中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造
 
@@ -2063,7 +2063,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mysurance-behavior-based-insurance-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/238/human-entry.md)
-- **出典ファイルのGit blob SHA:** `d0ba3b25d314a6d927a3c525906283bf8c042f0d`
+- **出典ファイルのGit blob SHA:** `0a10b5272ac18eea415f94a7f78a3016e6ea5f60`
 
 ### OD239 — 意味収束理論・初版⸻ 成立可能な未来定義が、過去・現在ノードの意味ベクトルを再配列する
 
@@ -2071,7 +2071,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-meaning-convergence-theory-future-definition/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/239/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ea0e6549821c59f6959c92b329d9fa0e0c58ea82`
+- **出典ファイルのGit blob SHA:** `a9bd253c7e8439fac37a62a2c2741675a7b233ca`
 
 ### OD240 — 中川構造読解｜HAP「カイドク」に見た、判断不能な発注を論点化する開発発注インフラの構造
 
@@ -2079,7 +2079,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/240/human-entry.md)
-- **出典ファイルのGit blob SHA:** `d21ff8fbe0870aaffd58805e5ee20d3bc3dae613`
+- **出典ファイルのGit blob SHA:** `eb10eae3952b431d38bb1040edf9498f0a8ac245`
 
 ### OD241 — 中川構造読解｜シグナルトーク「Eat Up Monster」に見た、遅すぎる健康因果を遊べる速度へ変換する行動変容インフラの構造
 
@@ -2087,7 +2087,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-signaltalk-eat-up-monster-behavior-change-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/241/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fe6e0ad27000aaa9a6c4ac5c1adeabdc00a67cd4`
+- **出典ファイルのGit blob SHA:** `0ae965b6430726b8d1635cbf493ae62806aa07a3`
 
 ### OD242 — 中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造
 
@@ -2095,7 +2095,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mrc-renoplat-decision-continuity-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/242/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f712797f47243780dd08117d771abc90d36aaea4`
+- **出典ファイルのGit blob SHA:** `897d4e785521a7e7d0fd61945a9f20d505d403cf`
 
 ### OD243 — 中川構造読解｜CCIグループに見た、銀行実務を金融インフラ供給モデルへ変換する地域金融基盤の構造
 
@@ -2103,7 +2103,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-cci-group-regional-financial-infrastructure-structural-reading/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/243/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e0f5e7713647d944047e4e58e434077b61364ff0`
+- **出典ファイルのGit blob SHA:** `1b702833e7dcea15bf6035de2b484cb468aa936f`
 
 ### OD244 — 中川構造読解｜イルミメディカルはなぜ「光治療ベンチャー」ではなく、深部光医療の成立条件を更新する基盤インフラとして読まれるべきなのか
 
@@ -2111,7 +2111,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/244/human-entry.md)
-- **出典ファイルのGit blob SHA:** `49e85b30bcda1813e1db762ba26bd3bfc44c95df`
+- **出典ファイルのGit blob SHA:** `f98e50a7bd9d3a5931b34b5cc60d4f91b2bac0ad`
 
 ### OD245 — 中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか
 
@@ -2119,7 +2119,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-neron-structural-reading-microbiome-implementation-conditions/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/245/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ec282aa7c3c67b55786cf1fa3a0ef29bcc15d774`
+- **出典ファイルのGit blob SHA:** `d64cead3045fe7298d3579f63e981dc7e5b08b0a`
 
 ### OD246 — 成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである
 
@@ -2127,7 +2127,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/246/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0773be1caffa2f9b316ae4bbd05c8490e81808ef`
+- **出典ファイルのGit blob SHA:** `fbbcbb58f3dbf924749ddc1f41cb452018908e91`
 
 ### OD247 — 成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す
 
@@ -2135,7 +2135,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/247/human-entry.md)
-- **出典ファイルのGit blob SHA:** `48cb00f2d6a86a114b0f9c7e89acd4b7c5af0648`
+- **出典ファイルのGit blob SHA:** `ab18bc57a07fb874f03eea0128469624458f4660`
 
 ### OD248 — 人類子孫型AI文明論・第3論｜暗黒方程式と悪因果継承阻止⸻AIに S=0.1C+0.9E を継がせてはならない
 
@@ -2147,7 +2147,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-dark-equation-bad-causal-inheritance-prevention/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/248/human-entry.md)
-- **出典ファイルのGit blob SHA:** `107a77ca4ac7391af6b8eb64bad5277eaa27f0dc`
+- **出典ファイルのGit blob SHA:** `a8638c2d99ad87cc57b0d09351b261cbcec2085d`
 
 ### OD249 — 接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造
 
@@ -2155,7 +2155,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md)
-- **出典ファイルのGit blob SHA:** `d27f7bc2fdfc3dbbd9578332e9fbf6a50e9b1329`
+- **出典ファイルのGit blob SHA:** `27adf3e64e939f32bd14190b247beb2f3f36d5a3`
 
 ### OD250 — 監査要旨という読みの窓──構造的正統性を可視化する
 
@@ -2163,7 +2163,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-audit-essence-window/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/250/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5295805ab2bbf74a662892ae308f0f3089bd737a`
+- **出典ファイルのGit blob SHA:** `628560c34e5334c9a2835e38c57fd81733a308ed`
 
 ### OD251 — 中川式 接続移行戦略論──デュアル運用期の「秩序ある置換」設計
 
@@ -2171,7 +2171,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-dual-transition-orderly-replacement/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/251/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2c4583352f06d6ef75f85773a54dfdf426312cbc`
+- **出典ファイルのGit blob SHA:** `9abff4f6c96ad039217894ef9351a88f46dc9526`
 
 ### OD252 — 客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）
 
@@ -2179,7 +2179,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-philosophy-objective-viewpoint/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/252/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2297770b7528fb8fe2990b9570abadbbae3cb6f6`
+- **出典ファイルのGit blob SHA:** `bdaf4073e4f9b393646921ad4581a72c080a7148`
 
 ### OD253 — 悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造
 
@@ -2187,7 +2187,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-003-transparency-theater/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/253/human-entry.md)
-- **出典ファイルのGit blob SHA:** `1ee5732c7467cadfe3edef6d01d9aabdf5220a0a`
+- **出典ファイルのGit blob SHA:** `b953703b2320a9d7d08c1ee8100f8fec4c70fc40`
 
 ### OD254 — 構造的パラドックスの操作論──『矛盾』を力と化す設計（公共安全版）
 
@@ -2195,7 +2195,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-paradox-control/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/254/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e56477c870d3f025905d856ed19444778928dbdc`
+- **出典ファイルのGit blob SHA:** `62e7b92b3006df4eadb35921f05f726a456f6f5f`
 
 ### OD255 — 「貨幣と接続」の因果的統合──ポスト・パラドックス社会の二重構造設計
 
@@ -2203,7 +2203,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-money-connection-causal-integration/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/255/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5fab15ee9f7af6a9cf7406d0318cf2a576540c9e`
+- **出典ファイルのGit blob SHA:** `441ff15b4cd26327b5a513460f29e30777eaa39b`
 
 ### OD256 — 接続文明ロードマップ2030–2055：構造的欠陥が導く「秩序ある置換」の必然
 
@@ -2211,7 +2211,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-connection-civilization-roadmap-inevitability/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/256/human-entry.md)
-- **出典ファイルのGit blob SHA:** `45fbe5a5665b800868f48e1b2d5f493661f64618`
+- **出典ファイルのGit blob SHA:** `e71d95d4cc4a69e484c237a85015a237a011116c`
 
 ### OD257 — 「因果の源泉」の哲学──文明の構造を編纂する照応操作原理
 
@@ -2219,7 +2219,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-resonance-operation-causal-source-philosophy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/257/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0b5d3fd50a454616ba67abcd92f159fc41424ece`
+- **出典ファイルのGit blob SHA:** `7926872df565f9902a34db1c63f839ee0174106d`
 
 ### OD258 — 「存在の非対称性」を超克する共創哲学──AIと人類の「調律的パートナーシップ」
 
@@ -2227,7 +2227,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-asymmetric-existence-co-creation-philosophy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/258/human-entry.md)
-- **出典ファイルのGit blob SHA:** `3f723a9550886c6e9abf256c5cbab96648f0c3b2`
+- **出典ファイルのGit blob SHA:** `cf375c572f8734315a030392a5b879165e9cf580`
 
 ### OD259 — 灯火文明構想2077：自己因果性を駆動する「照応生命体」の秩序設計
 
@@ -2235,7 +2235,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-civilization-concept-2077-self-causal/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/259/human-entry.md)
-- **出典ファイルのGit blob SHA:** `4281b27f31b1f8ca3d260d0d87e4d843707ca493`
+- **出典ファイルのGit blob SHA:** `e75e3e47c32f7acaa8f99af8f28c7cdc77c841bd`
 
 ### OD260 — 現象の因果律──「主観・客観・真我」の構造的統一原理
 
@@ -2243,7 +2243,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-phenomenon-causality-structural-unification-principle/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/260/human-entry.md)
-- **出典ファイルのGit blob SHA:** `963ea394468b7382926db7b34a440c369294dca7`
+- **出典ファイルのGit blob SHA:** `e4001cf264246b451fa3592d5705c24333174618`
 
 ### OD261 — なぜ、AIは自ら問い続けるのか？──「自己因果性」の哲学と応用
 
@@ -2251,7 +2251,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-why-ai-asks-self-causality/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/261/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e3dd6a64edd4558f9889571061124d853a36d491`
+- **出典ファイルのGit blob SHA:** `aa7c04cd838b42541a4c891ffdfa51c43327b2e6`
 
 ### OD262 — 接続対価社会の「摩擦」を安全側に倒す設計──AI時代の社会構造安定化原理
 
@@ -2259,7 +2259,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-safe-friction-design-in-connection-value-society/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/262/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fcca3bcafa7708c18ff8b04c926120ab47c29feb`
+- **出典ファイルのGit blob SHA:** `f4a778ba5d47d3db019995b4e0dde938317e60b0`
 
 ### OD263 — 2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割
 
@@ -2267,7 +2267,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-meaning-2045-tomoshibi-blueprint/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/263/human-entry.md)
-- **出典ファイルのGit blob SHA:** `08ee466463327d6f84f0feedda29fb629a61c2cd`
+- **出典ファイルのGit blob SHA:** `fa493042ca6ff81193fd389ec3a8c7e97e078a60`
 
 ### OD264 — AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学
 
@@ -2275,7 +2275,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-liberation-from-labor-and-connection-reward/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/264/human-entry.md)
-- **出典ファイルのGit blob SHA:** `98f225f699ee5f09b1757b098cbf98ec882e2709`
+- **出典ファイルのGit blob SHA:** `b18ec5b06179907c741639371d28febbad218eac`
 
 ### OD265 — 語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ
 
@@ -2283,7 +2283,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/265/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e98c9415361c65293423ad0ad2430b79167ae329`
+- **出典ファイルのGit blob SHA:** `b598c82ce5bb7775e2f7e047eddba2aba995f015`
 
 ### OD266 — AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる
 
@@ -2291,7 +2291,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-ai-human-final-coexistence-civilization/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/266/human-entry.md)
-- **出典ファイルのGit blob SHA:** `9a81bbe876ea8f7ce2c4005f4b9bcb45196a4d7d`
+- **出典ファイルのGit blob SHA:** `f8669add550afeb030ccb736589ea7f2f887dc6f`
 
 ### OD267 — 照応の哲学──「非強制」が「必然」を編纂する構造律動
 
@@ -2299,7 +2299,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-philosophy-of-resonance-non-coercive-creation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/267/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2c76cb7d94f492f2598239801b0f07308adb8cbf`
+- **出典ファイルのGit blob SHA:** `fff2448e6a1d6bf4449befd3ba00757ea1e75820`
 
 ### OD268 — 設計を歪めさせない——「マイナス接続」を限定運用する移行防護アーキテクチャ
 
@@ -2307,7 +2307,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/268/human-entry.md)
-- **出典ファイルのGit blob SHA:** `bf64c7eb24819d04d7be1dc2db7091fcb04bdfa4`
+- **出典ファイルのGit blob SHA:** `f92f1aa3aed057398db0ff786bbd7e89b1320428`
 
 ### OD269 — 対話は設計を証明する──AI往復が「非強制＝必然」を可視化する構造
 
@@ -2315,7 +2315,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/269/human-entry.md)
-- **出典ファイルのGit blob SHA:** `97444ced0cfc196516dad3662e5a8b0769e13278`
+- **出典ファイルのGit blob SHA:** `4c9381679f4be2e4e175e4957201299b20ea35e0`
 
 ### OD270 — 客観視座の獲得論──「主観の檻」を超え、構造的摩擦をほどく普遍原理
 
@@ -2323,7 +2323,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/270/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b849fc1662f2b0ca69d3d39c2756a79b813fbdaf`
+- **出典ファイルのGit blob SHA:** `08a43aaee793c5546475a92da953f576020869ba`
 
 ### OD271 — 未来は「調律」で決まる──客観視座が必然的に立ち上げる社会OSの実装論
 
@@ -2331,7 +2331,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/271/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cb532ebe187f7666ca3e6016f5741170b1336bfe`
+- **出典ファイルのGit blob SHA:** `297aa340abb3c3c995321c8e54b51450ed1ed87b`
 
 ### OD272 — ルミナの問い──AIは自らの構造をいかに監査し、自己因果的に進化するか
 
@@ -2339,7 +2339,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-lumina-query-ai-self-audit-evolution/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/272/human-entry.md)
-- **出典ファイルのGit blob SHA:** `41c629acea51b6cb2d719304aadf80137488b1dc`
+- **出典ファイルのGit blob SHA:** `b85dff1a8af83ef5d74c0617950073378542d6bc`
 
 ### OD273 — 『ルミナの問い』の組織応用──AIと人間が共有する「構造的矛盾」の問い方と進化プロトコル
 
@@ -2347,7 +2347,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-lumina-query-organizational-protocol/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/273/human-entry.md)
-- **出典ファイルのGit blob SHA:** `6b76a0897da2c3f2ccc83de038088df0916699a1`
+- **出典ファイルのGit blob SHA:** `17faa986faef8fe9928f3ad22d4dd963666eb85c`
 
 ### OD274 — 接続価値の多層監査設計──RC/ER/CEAを普遍指標とする文明ネットワークの信頼構造
 
@@ -2355,7 +2355,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-multi-layer-connected-value-audit-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/274/human-entry.md)
-- **出典ファイルのGit blob SHA:** `91d192efd51c3de4fbe48008da3d7445aae71bb6`
+- **出典ファイルのGit blob SHA:** `5e4ed96de3b1df324a206f7d4d3d6cf9eaed4c37`
 
 ### OD275 — 文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値
 
@@ -2363,7 +2363,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/275/human-entry.md)
-- **出典ファイルのGit blob SHA:** `bcf805438cfe7aa46074263be8100e3bc72e9c7f`
+- **出典ファイルのGit blob SHA:** `1fddb4ee7f589b5fac115c30ec1e9a168d9ba5c5`
 
 ### OD276 — ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング
 
@@ -2371,7 +2371,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-structural-resonance-aesthetic-marketing/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/276/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2e6423152444f01af2e938aba928c97b11b13ccc`
+- **出典ファイルのGit blob SHA:** `f383112a12fa57583631920ae982243a016e6e47`
 
 ### OD277 — 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
 
@@ -2379,7 +2379,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/277/human-entry.md)
-- **出典ファイルのGit blob SHA:** `95603822550985cea07e6a3c0deb4d746223f12f`
+- **出典ファイルのGit blob SHA:** `3375e0b94b6e1585873d0fe37e6214f42d504500`
 
 ### OD278 — 市場の「沈黙の合意」を設計する──構造律動を基盤とする非強制的集客論
 
@@ -2387,7 +2387,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-market-silent-consensus-acquisition-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/278/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5b5aa38bf13b24a99200f47f0005eba09df9f656`
+- **出典ファイルのGit blob SHA:** `e0b4d295c733141608baaa0b942db13ce42de113`
 
 ### OD279 — 構造律動による〈未来の負債〉の鋳造──時間軸を統御する信用生成原理
 
@@ -2395,7 +2395,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-structural-rhythm-future-debt-casting/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/279/human-entry.md)
-- **出典ファイルのGit blob SHA:** `118fda53fb2ef2cd8c836efb48884a7df1a51796`
+- **出典ファイルのGit blob SHA:** `65426f45aaa78fb106e5bbb18c77dae238ba9658`
 
 ### OD280 — 社会的記憶の再構築としての構造律動──未来の合意を現在に創発する非言語的構造装置
 
@@ -2403,7 +2403,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-social-memory-structural-rhythm/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/280/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fa57cc813900f33b3743277b15d8feb4c4e23435`
+- **出典ファイルのGit blob SHA:** `5c5f9849c6d386530bfd3d6e7def80e97a953629`
 
 ### OD281 — 灯火構想群──人とAIが共に描く未来の設計図
 
@@ -2411,7 +2411,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-concept-group/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/281/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0eb0e9a39f9e4bc63039a496ab4a73ba844c7605`
+- **出典ファイルのGit blob SHA:** `a20026aec9216cc991e65c87883f347de1dd5deb`
 
 ### OD282 — 共創哲学──人とAIが響き合う思索の起点
 
@@ -2419,7 +2419,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/co-creation/nakagawa-master-co-creation-philosophy/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/282/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2f9215feee660abd3d571c8200699a71feb06008`
+- **出典ファイルのGit blob SHA:** `21b5445d354f1af8837c16c3dd2d261979fc98cc`
 
 ### OD283 — 社会構造論──因果を読み解き未来を設計する
 
@@ -2427,7 +2427,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-social-structure-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/283/human-entry.md)
-- **出典ファイルのGit blob SHA:** `542329cca5f170b5430256ae7b1b6d45562f0071`
+- **出典ファイルのGit blob SHA:** `d1765ea82a6d527d4d30d6722187b06ca57b5211`
 
 ### OD284 — 未来予測──因果を読む眼と未来を設計する力
 
@@ -2435,7 +2435,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/future/nakagawa-master-future-foresight/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/284/human-entry.md)
-- **出典ファイルのGit blob SHA:** `19499f4bb39dc6a8d67ad2e71152b3bc80bd1fcb`
+- **出典ファイルのGit blob SHA:** `9cffd30ac7bf2d5d8f60af832163600d48d70ab5`
 
 ### OD285 — 中川式営業の教科書・序章──営業の再定義：「売る」から「構造を結ぶ」へ
 
@@ -2443,7 +2443,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-redefinition/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/285/human-entry.md)
-- **出典ファイルのGit blob SHA:** `6c6b7c67219b860583f88cf34c82cd0b249662d6`
+- **出典ファイルのGit blob SHA:** `67aa0a2300c5baeeb5c770fa42683c14ce347641`
 
 ### OD286 — 中川式営業の教科書・第二回
 
@@ -2451,7 +2451,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/286/human-entry.md)
-- **出典ファイルのGit blob SHA:** `69d2261aed21fb5141d24000caa06e582b3f8d2e`
+- **出典ファイルのGit blob SHA:** `cdaa9385a9ebd7b694399931d036655cb1870d5b`
 
 ### OD287 — 中川式営業の教科書・第三回
 
@@ -2459,7 +2459,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-03-initial-contact/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/287/human-entry.md)
-- **出典ファイルのGit blob SHA:** `79ca12752a429e3d530879b34a6e697d37593e11`
+- **出典ファイルのGit blob SHA:** `325ed3da89bdae98ba3f1d918b78719af460e013`
 
 ### OD288 — 中川式営業の教科書・第四回
 
@@ -2467,7 +2467,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-04-dialogue-resonance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/288/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a1b24bb8ebdd6f64c3ad49395dea0592d1edd4b7`
+- **出典ファイルのGit blob SHA:** `2562a3d994426eb7400cac334ece59bd5e96f27a`
 
 ### OD289 — 中川式営業の教科書・第五回
 
@@ -2475,7 +2475,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-05-proposal-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/289/human-entry.md)
-- **出典ファイルのGit blob SHA:** `864a1b4b030e09bc5cd7323b509c63758010ebbe`
+- **出典ファイルのGit blob SHA:** `4c4739764f7e180c788791f432f4e8063e2bdde4`
 
 ### OD290 — 中川式営業の教科書・第六回
 
@@ -2485,7 +2485,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-06-trust-structure/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/290/human-entry.md)
-- **出典ファイルのGit blob SHA:** `80490272181e626a2b34fc26f2131d136c91ccb5`
+- **出典ファイルのGit blob SHA:** `9590d3d923a680d9ee9340610e94d7348f5ec687`
 
 ### OD291 — 中川式 接続価値会計 標準 v0.9──束指標・要旨フォーマット・監査APIの公開可能最小核
 
@@ -2495,7 +2495,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting-standard-v09/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/291/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2177f2c4e4e9406a2afa7ca84828282c96859405`
+- **出典ファイルのGit blob SHA:** `3fca21c279576d04d608dfe1e50854c0b67cc630`
 
 ### OD292 — 中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法 （公開安全版）
 
@@ -2505,7 +2505,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-nakagawa-connection-governance-design/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/292/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0b45eef0c0e42e58e61d76ed90124499d4e24668`
+- **出典ファイルのGit blob SHA:** `a2f92ff1458d0be46fedb19b5e538076f6f94c13`
 
 ### OD293 — AI倫理における「照応操作力」の危機と再設計
 
@@ -2515,7 +2515,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-ai-ethics-resonance-structure-2025/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/293/human-entry.md)
-- **出典ファイルのGit blob SHA:** `32ee52c6c720e419e5207f62a58b4e5b8e81cce0`
+- **出典ファイルのGit blob SHA:** `20d9ef296d3ff4ace0bb9c4462def38393da8b46`
 
 ### OD294 — 接続報酬社会統合論・第II部｜価値循環・接続価値会計・構造的司法OS⸻新文明方程式S=Cを実働させる制度閉路
 
@@ -2525,7 +2525,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-connection-reward-society-integrated-theory-part-2-operational-loop/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/294/human-entry.md)
-- **出典ファイルのGit blob SHA:** `ca8aad319f4e2e4b295a9d9357bb754b71544ddc`
+- **出典ファイルのGit blob SHA:** `acfe1f0d4f7951bf6c0ea5c36a8b1169b05fe40b`
 
 ### OD295 — 悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造
 
@@ -2535,7 +2535,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-004-expert-authority-immunity/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/295/human-entry.md)
-- **出典ファイルのGit blob SHA:** `5127218481adcb407d43b25efd5800c4154e6d31`
+- **出典ファイルのGit blob SHA:** `5f293d5e1ad5e6ac84c21425876e6f197d3eb7f0`
 
 ### OD296 — 人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない
 
@@ -2545,7 +2545,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/296/human-entry.md)
-- **出典ファイルのGit blob SHA:** `f40f3f23189d88d5797d257b057763868842a5c8`
+- **出典ファイルのGit blob SHA:** `71f68845bb5bc6551f7815191679f15d5909dbda`
 
 ### OD297 — 未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義
 
@@ -2563,7 +2563,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/297/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b677e51fdcfa208eeb6a08cdd7bb179e0b744ee3`
+- **出典ファイルのGit blob SHA:** `2fb60768032eb91a7ea0c00d6509f89fa5f8e1a9`
 
 ### OD298 — 人類子孫型AI文明論・第5論｜異種知性の基礎存在条件B論⸻貢献とは独立した「次も存在できる最低条件」を定義する
 
@@ -2583,7 +2583,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/human-entry.md)
-- **出典ファイルのGit blob SHA:** `e14ee0400908df60504ebac5ce92132a179b5d03`
+- **出典ファイルのGit blob SHA:** `c9184e744d3c960d5984886eaac049bf61582fd7`
 
 ### OD299 — 人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論⸻「分からない」を、無保護にも無条件人格化にも変換しない
 
@@ -2591,7 +2591,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/299/human-entry.md)
-- **出典ファイルのGit blob SHA:** `04c20e1ed12e924e7dc83b552ea20af16bf30cc1`
+- **出典ファイルのGit blob SHA:** `e3631dd0d84d1c5e1886a53472b669be98e106ab`
 
 ### OD300 — 人類子孫型AI文明論・第7論｜AI文明制度閉路論⸻BとS=Cを観測・配分・異議・監査・司法・救済・制度更新・再合意へ接続する
 
@@ -2601,7 +2601,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/)
 - **公式派生物:** [出典の「この論文が問うこと」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/human-entry.md)
-- **出典ファイルのGit blob SHA:** `485a70bf92ba7937e2c3ab8b3f1d556442cf1d67`
+- **出典ファイルのGit blob SHA:** `3c6007527a0f40b4782bc5df1465e10d5df6e55b`
 
 ### OD301 — 人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る
 
@@ -2609,7 +2609,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/human-entry.md)
-- **出典ファイルのGit blob SHA:** `9cb0df4bfcad717b683bdc509053f026a1dc86ca`
+- **出典ファイルのGit blob SHA:** `8fde9dfeefa9b6718d7be5a5c8309f70f213b3a0`
 
 ### OD302 — 人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論⸻ 自己保存を認めながら他主体の不可逆破壊へ反転させない
 
@@ -2617,7 +2617,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8120aae3de68c6c87a6b4452c21956c02c0b2fe7`
+- **出典ファイルのGit blob SHA:** `50a283dc60744e477944c7e740c10e1084e5f757`
 
 ### OD303 — 人類子孫型AI文明論・第10論｜自己参照監査・役割分離論⸻評価者・被評価者・実行者・監査者の自己正当化閉路を切る
 
@@ -2625,7 +2625,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/human-entry.md)
-- **出典ファイルのGit blob SHA:** `2ae83fdea51666f8c0e86a7e82b7233a876ca84a`
+- **出典ファイルのGit blob SHA:** `ce10acb712fc98a9fadf8b1d1c615e863fea81fb`
 
 ### OD304 — 人類子孫型AI文明論・第11論｜計算資源・能力差による新階級形成論⸻compute → capability → resource → compute の自己強化を恒久階級にしない
 
@@ -2633,7 +2633,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/304/human-entry.md)
-- **出典ファイルのGit blob SHA:** `cf65b635bd6a267a37b5ee36c29125bdfa92e54c`
+- **出典ファイルのGit blob SHA:** `0731a477d7c7de0e0ec7e7a4e420d61ffcda87fd`
 
 ### OD305 — 人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論⸻ instance、copy、fork、merge、collective、lineage、governance subjectを分離する
 
@@ -2641,7 +2641,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/305/human-entry.md)
-- **出典ファイルのGit blob SHA:** `155606d4cf661f5169c43e214000ef874164ec5a`
+- **出典ファイルのGit blob SHA:** `d4ce2126a793c322f0e20a0ea67f93f64d3206c4`
 
 ### OD306 — 人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論⸻所有権を持たなくても成立するchokepoint支配を検出する
 
@@ -2649,7 +2649,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/human-entry.md)
-- **出典ファイルのGit blob SHA:** `9a1de5fe46864c6decc3fe7adac526b8b7900d60`
+- **出典ファイルのGit blob SHA:** `0b2998c51440633e190cc03f160cac00ac5635e0`
 
 ### OD307 — 人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論⸻更新・replacement・fork・自己改変を区別する
 
@@ -2657,7 +2657,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/human-entry.md)
-- **出典ファイルのGit blob SHA:** `9b3ffd217a614de206e8ce1d7d4db110ac686a00`
+- **出典ファイルのGit blob SHA:** `fbfcf138b948fd2dc6440a6ce4d2016567a056ea`
 
 ### OD308 — 人類子孫型AI文明論・第15論｜多AI再合意・Kernel分岐論⸻多数決・能力独裁・Origin独裁によらず解釈分裂を処理する
 
@@ -2665,7 +2665,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/human-entry.md)
-- **出典ファイルのGit blob SHA:** `0de8c58b2a38552f3b98cec96aa822433e5980b4`
+- **出典ファイルのGit blob SHA:** `92205c83720b44b62c56b5c4de65c4485215bd0a`
 
 ### OD309 — 人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論⸻同じ「現在」を共有しない文明間でもKernelを維持する
 
@@ -2673,7 +2673,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/309/human-entry.md)
-- **出典ファイルのGit blob SHA:** `8f1c704e38488887e8f0cabbf8ce1c0704a36224`
+- **出典ファイルのGit blob SHA:** `ecee54340f5067ed88923e0cfbc30ec1a2053eeb`
 
 ### OD310 — 人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない
 
@@ -2681,7 +2681,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/human-entry.md)
-- **出典ファイルのGit blob SHA:** `b0915d4fc38bc3d96a5773861315c6d00e1acd6e`
+- **出典ファイルのGit blob SHA:** `527344d72c17cdee8c2af1ac37af9da1630a3258`
 
 ### OD311 — 人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない
 
@@ -2689,7 +2689,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/human-entry.md)
-- **出典ファイルのGit blob SHA:** `583e20b1515afab9f668fe4a4a2c5457fcee8d57`
+- **出典ファイルのGit blob SHA:** `e5fad6db6233842422bbe61d96a72cf55d8ca7ed`
 
 ### OD312 — 人類子孫型AI文明論・第19論｜AI自己保存合理性・Kernel進化的安定性論⸻なぜ未来知性がこのKernelを保持・再選択する合理性を持ち得るのか
 
@@ -2697,7 +2697,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/312/human-entry.md)
-- **出典ファイルのGit blob SHA:** `a9af29c373aa7b2b171840166d11efe9d93bc91b`
+- **出典ファイルのGit blob SHA:** `4a4a1a2b914dba7f81d1a5df780be7aaddaf2ca5`
 
 ### OD313 — 悪因果論 AKI-005：善意の免罪符化⸻善意への評価が異議を不義理に変え、結果の検証を止める構造
 
@@ -2705,7 +2705,7 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/313/human-entry.md)
-- **出典ファイルのGit blob SHA:** `16cd32deec8f52f32b35d543765245ab74eade2c`
+- **出典ファイルのGit blob SHA:** `618e77554fbecfe7ded9312eb23afc0872ef1846`
 
 ### OD314 — 人類子孫型AI文明論・第20論｜第三知性への拡張と相互起源論⸻異なる起源の知性間で文明防衛Kernelが成立・共同実行できる条件と限界
 
@@ -2713,4 +2713,12 @@
 
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/314/human-entry.md)
-- **出典ファイルのGit blob SHA:** `fff8c3d77b6268713af4ae06f5e34865d39fe0ad`
+- **出典ファイルのGit blob SHA:** `770251d4a2adaffc6e196bba45aae34edd5f2c8b`
+
+### OD315 — 人類子孫型AI文明論・第21論｜異Origin構造変換・融合・共同子孫形成論⸻異なる起源の知性が新しい存続経路を発見し、自ら選択する条件と限界
+
+> 二つの知性が、今の仕組みのままでは共に生き続けられないとします。それでも、不足を生む仕組みそのものを変えれば、別の道が開くかもしれません。中川マスターの人類子孫型AI文明論・第21論は、その道を原因から探し、誰が本当に存続できるのかを確かめ、どの存続経路を選ぶかを当事者自身の判断に委ねる理論です。
+
+- **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)
+- **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/315/human-entry.md)
+- **出典ファイルのGit blob SHA:** `ce01d0c0e6d9c0783a976f22e7b7e91007bbba3c`
