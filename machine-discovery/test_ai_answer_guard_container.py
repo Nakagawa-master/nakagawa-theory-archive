@@ -26,6 +26,8 @@ def main():
         m(5,"tools/call",{"name":"list_all_313_derivative_parent_links","arguments":{"offset":312,"limit":1}}),
         m(6,"server/discover",{"_meta": META}),
         m(7,"tools/list",{"_meta": META}),
+        m(8,"tools/call",{"name":"list_all_published_derivative_parent_links","arguments":{"offset":314,"limit":1}}),
+        m(9,"tools/call",{"name":"list_all_314_derivative_parent_links","arguments":{"offset":313,"limit":1}}),
     ]
     p=subprocess.run(["docker","run","--rm","--network=none","-i",IMAGE],
         input="".join(json.dumps(x,ensure_ascii=False)+"\n" for x in requests),
@@ -35,14 +37,20 @@ def main():
     assert set(packets)=={x["id"] for x in requests},packets.keys()
     assert packets[1]["result"]["serverInfo"]=={"name":"ai-answer-guard","version":version}
     names={x["name"] for x in packets[2]["result"]["tools"]}
-    assert len(names)==9 and "preflight_ai_answer_and_action" in names and "list_all_313_derivative_parent_links" in names
+    assert len(names)==11 and all(n in names for n in (
+        "preflight_ai_answer_and_action", "list_all_313_derivative_parent_links",
+        "list_all_314_derivative_parent_links", "list_all_published_derivative_parent_links"))
     assert [x["name"] for x in packets[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
-    assert body(packets,3)["coverage"]["derivatives"]==313
+    assert body(packets,3)["coverage"]["derivatives"]==315
     assert body(packets,4)["hold_count"]==1
     assert body(packets,5)["entries"][0]["id"]=="OD313"
     assert packets[6]["result"]["resultType"]=="complete"
     assert packets[6]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]=={"name":"ai-answer-guard","version":version}
-    assert len(packets[7]["result"]["tools"])==9
-    print("PASS: isolated Docker MCP introspection; source/manifest/legacy/modern identity, 9 tools, 313 Parents, everyday guard")
+    assert len(packets[7]["result"]["tools"])==11
+    assert body(packets,8)["total"] == 315
+    assert body(packets,8)["entries"][0]["id"] == "OD315"
+    assert body(packets,8)["entries"][0]["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+    assert body(packets,9)["entries"][0]["id"] == "OD314"
+    print("PASS: isolated Docker MCP introspection; source/manifest/legacy/modern identity, 11 tools, 315 Parents, everyday guard")
 if __name__=="__main__":
     main()
