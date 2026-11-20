@@ -19,6 +19,8 @@
 
 如果关心**过去的授权是否在今天仍然有效**，可直接从[《合意的记忆》OD075中文解说](derivatives/075/zh-human-entry.md)开始；如果关心**AI如何保留证据、修订记忆与纠正判断**，可读[人类子孙型AI文明论第8论OD301中文解说](derivatives/301/zh-human-entry.md)。[机器索引](machine-discovery/official-derivatives-index-v1.json)也为全部315项列出了英文与中文的人类可读页面路径。
 
+**最新独立原典·第21论（OD315）：** 如果现有结构下最强的共同、界面或非干涉方案仍不能守住必要条件，能否通过改变实际因果结构找到新路径，同时不把共同后继当作原主体的存续、也不推定同意？阅读[中文人类摘要](derivatives/315/zh-human-entry.md)（[日文原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)）。文中的有限模型是有条件的检验，不是现实融合技术的实现报告。
+
 ## 最初10秒
 
 **先从现实问题进入，而不是先背理论名称。**
