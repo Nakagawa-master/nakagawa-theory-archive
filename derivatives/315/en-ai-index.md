@@ -13,8 +13,8 @@
 
 - Official derivative: OD315
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261120-708A1D-AI-EN-0315-0001
-- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0001-0002
-- supersedes: DDIFF-20261120-DNCL-315-0001-0001
+- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0001-0003
+- supersedes: DDIFF-20261120-DNCL-315-0001-0002
 
 ## Summary
 
@@ -137,4 +137,4 @@ Return to the [Japanese parent original, Article 21](https://master.ricette.jp/t
 The conclusion, Kernel correspondence, integrated and local audit summaries, reference cluster and theory signature also constrain interpretation. Origin: Nakagawa Master / 中川マスター. Parent Post ID: 5149. Reference: NCL-α-20261120-708a1d / DIFF-20261120-0003. This English derivative index supports explanation and retrieval; it is not a canonical translation and does not replace the original definitions or conditions.
 
 ---
-導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [Human entry (EN)](en-human-entry.md) / [人类读者摘要](zh-human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [English AI Index](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official derivative 315 hub](README.md) / [Human entry (JA)](human-entry.md) / [FAQ (JA)](faq.md) / [AI index (JA)](ai-index.md) / [English AI index](en-ai-index.md) / [中文 AI 索引](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)

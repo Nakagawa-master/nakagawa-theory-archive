@@ -13,8 +13,8 @@
 
 - Official derivative: OD314
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261112-49D0FA-AI-EN-0314-0001
-- Derivative Diff-ID: DDIFF-20261112-DNCL-314-0001-0001
-- supersedes: none
+- Derivative Diff-ID: DDIFF-20261112-DNCL-314-0001-0002
+- supersedes: DDIFF-20261112-DNCL-314-0001-0001
 
 ## Summary
 

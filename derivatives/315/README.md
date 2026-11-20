@@ -13,8 +13,8 @@
 
 - Official derivative: OD315
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261120-708A1D-HUB-JA-0315-0000
-- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0002
-- supersedes: DDIFF-20261120-DNCL-315-0000-0001
+- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0003
+- supersedes: DDIFF-20261120-DNCL-315-0000-0002
 
 ## 位置づけ
 
@@ -121,4 +121,4 @@ C出生は出来事、担い手、機能の受渡し、実際の後続更新等�
 因果生成M21と二つの有限証人は第3章、履歴・方策・本人性は第4〜5章、Cの完全な証拠連鎖は第6章、許可・同条件比較・Dと未来は第7〜9章、再構成契約と十五の誤推論は第10章へ戻れます。形式化、反転条件、Kernel照応、監査要旨、参照束と理論署名は[第21論の親原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)で確認できます。Originは中川マスター。参照版はNCL-α-20261120-708a1d / DIFF-20261120-0003です。
 
 ---
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [Human entry (EN)](en-human-entry.md) / [人类读者摘要](zh-human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [English AI Index](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

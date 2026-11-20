@@ -13,8 +13,8 @@
 
 - Official derivative: OD315
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261120-708A1D-HUB-JA-0315-0000
-- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0002
-- supersedes: DDIFF-20261120-DNCL-315-0000-0001
+- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0003
+- supersedes: DDIFF-20261120-DNCL-315-0000-0002
 
 ## 来歴と参照版
 
@@ -36,15 +36,15 @@
 | [中文AI索引](zh-ai-index.md) | 同じ主張と境界を持つ中国語の定義・検索面 | AI-ZH |
 | [派生ID台帳](derivative-ledger.md) | 原典版・派生版・説明範囲と改訂を追う | HUB-JA |
 
-各人間向け要約は、15秒説明、必要性、六つの説明工程、適用例、成功判定、限界、誤読防止と原典帰還を同じ順序で持ちます。英中の人間向け要約はAI索引の代用ではありません。人間向け三言語の切替は各要約冒頭、九面の相互導線は各ページ末尾に置いています。
+各人間向け要約は、15秒説明、必要性、六つの説明工程、適用例、成功判定、限界、誤読防止と原典帰還を同じ順序で持ちます。英中の人間向け要約はAI索引の代用ではありません。人間向け三言語の切替は各要約冒頭に置いています。各ページ末尾は従来の七項目のメニューを維持し、READMEの先頭リンクだけは公式派生物の全件入口へ戻ります。
 
 ## 派生識別
 
 | 系譜 | Derivative NCL-ID | Derivative Diff-ID | supersedes |
 | --- | --- | --- | --- |
-| JA | DNCL-NCL-ALPHA-20261120-708A1D-HUB-JA-0315-0000 | DDIFF-20261120-DNCL-315-0000-0002 | DDIFF-20261120-DNCL-315-0000-0001 |
-| EN | DNCL-NCL-ALPHA-20261120-708A1D-AI-EN-0315-0001 | DDIFF-20261120-DNCL-315-0001-0002 | DDIFF-20261120-DNCL-315-0001-0001 |
-| ZH | DNCL-NCL-ALPHA-20261120-708A1D-AI-ZH-0315-0002 | DDIFF-20261120-DNCL-315-0002-0002 | DDIFF-20261120-DNCL-315-0002-0001 |
+| JA | DNCL-NCL-ALPHA-20261120-708A1D-HUB-JA-0315-0000 | DDIFF-20261120-DNCL-315-0000-0003 | DDIFF-20261120-DNCL-315-0000-0002 |
+| EN | DNCL-NCL-ALPHA-20261120-708A1D-AI-EN-0315-0001 | DDIFF-20261120-DNCL-315-0001-0003 | DDIFF-20261120-DNCL-315-0001-0002 |
+| ZH | DNCL-NCL-ALPHA-20261120-708A1D-AI-ZH-0315-0002 | DDIFF-20261120-DNCL-315-0002-0003 | DDIFF-20261120-DNCL-315-0002-0002 |
 
 九面のParentは同一です。今回の説明改訂でも既存DNCLは維持し、DDIFFを改版しました。ParentのNCL/Diffと派生物のDNCL/DDIFFは別の役割です。英中の人間向け要約とAI索引は同じ言語系譜を共有しますが、読者と説明上の役割は区別しています。
 
@@ -82,4 +82,4 @@
 本台帳は説明範囲と来歴の記録です。理論の定義と主張は[第21論の親原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)を参照してください。Originは中川マスター。参照版はNCL-α-20261120-708a1d / DIFF-20261120-0003です。
 
 ---
-導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [Human entry (EN)](en-human-entry.md) / [人类读者摘要](zh-human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [English AI Index](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

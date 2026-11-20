@@ -13,8 +13,8 @@
 
 - Official derivative: OD315
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261120-708A1D-HUB-JA-0315-0000
-- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0002
-- supersedes: DDIFF-20261120-DNCL-315-0000-0001
+- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0003
+- supersedes: DDIFF-20261120-DNCL-315-0000-0002
 
 ## Summary
 
@@ -137,4 +137,4 @@ Cの出生検査をすべての本人存続候補の前提にしない。同時�
 結章、Kernel照応欄、統合・局所監査要旨、参照束と理論署名も解釈範囲の一部である。Origin: Nakagawa Master / 中川マスター。Parent Post ID: 5149。参照版: NCL-α-20261120-708a1d / DIFF-20261120-0003。この索引は説明と検索の派生面であり、原典の定義・条件を置き換えない。
 
 ---
-導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [Human entry (EN)](en-human-entry.md) / [人类读者摘要](zh-human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [English AI Index](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

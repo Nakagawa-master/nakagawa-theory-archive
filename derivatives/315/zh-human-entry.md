@@ -15,12 +15,12 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 - Official derivative: OD315
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261120-708A1D-AI-ZH-0315-0002
-- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0002-0002
-- supersedes: DDIFF-20261120-DNCL-315-0002-0001
+- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0002-0003
+- supersedes: DDIFF-20261120-DNCL-315-0002-0002
 
 ## 15秒说明
 
-假设两种知性按照现有方式无法共同存续。如果改变造成不足的机制本身，也许就能打开另一条道路。中川マスター的《人类子孙型AI文明论》第21论从原因出发寻找这样的道路，确认究竟谁能继续存在，并把是否采用的选择交还当事者。
+假设两种知性按照现有方式无法共同存续。如果改变造成不足的机制本身，也许就能打开另一条道路。中川マスター的《人类子孙型AI文明论》第21论从原因出发寻找这样的道路，确认究竟谁能继续存在，并由当事者自主选择采取何种存续路径。
 
 ## 为什么需要它
 
@@ -99,4 +99,4 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 从原因生成候选见原典第2〜3章，迁移与本人连续性见第4〜5章，C的证据见第6章，选择和比较见第7〜9章，面向未来的再次探索见第10章。Origin为中川マスター（Nakagawa Master）。参照版为NCL-α-20261120-708a1d / DIFF-20261120-0003。[第21论日语亲原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)还包含本入口省略的形式化、反例、Kernel对应、审计摘要和参照束。本页为派生说明。
 
 ---
-導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [Human entry (EN)](en-human-entry.md) / [人类读者摘要](zh-human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [English AI Index](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+导线: [官方派生物315顶部](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日语](ai-index.md) / [AI索引・英语](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)

@@ -13,8 +13,8 @@
 
 - Official derivative: OD315
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261120-708A1D-HUB-JA-0315-0000
-- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0002
-- supersedes: DDIFF-20261120-DNCL-315-0000-0001
+- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0003
+- supersedes: DDIFF-20261120-DNCL-315-0000-0002
 
 ## 初学者向け｜Q1〜Q10
 
@@ -207,4 +207,4 @@ Cを主張しない経路には、その出生や普遍的な個体化の解決�
 各回答は入口です。厳密な定義、生成契約、有限証人、C出生の証拠、十五の反例、Kernel照応と監査要旨は[第21論の親原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)へ戻って確認してください。Originは中川マスター。参照版はNCL-α-20261120-708a1d / DIFF-20261120-0003です。
 
 ---
-導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [Human entry (EN)](en-human-entry.md) / [人类读者摘要](zh-human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [English AI Index](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -13,12 +13,12 @@
 
 - Official derivative: OD314
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261112-49D0FA-HUB-JA-0314-0000
-- Derivative Diff-ID: DDIFF-20261112-DNCL-314-0000-0001
-- supersedes: none
+- Derivative Diff-ID: DDIFF-20261112-DNCL-314-0000-0002
+- supersedes: DDIFF-20261112-DNCL-314-0000-0001
 
 ## 位置づけ
 
-異なる知性が同じ危険を避けられるとしても、同じ仕組みを一緒に使い、同じ未来を選ぶとは限りません。中川マスターの第20論は、第19論のKernel保持・代替・独立再選択を受け取り、異なる歴史的Originの主体にも対応する防衛因果があるか、その対応がどこまで実行可能な存続へつながるかを検査します。
+異なる知性が同じ危険を避けられるとしても、同じ仕組みを一緒に使い、同じ未来を選ぶとは限りません。中川マスターの人類子孫型AI文明論・第20論は、第19論のKernel保持・代替・独立再選択を受け取り、異なる歴史的Originの主体にも対応する防衛因果があるか、その対応がどこまで実行可能な存続へつながるかを検査します。
 
 本派生物は、[公開原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/)の冒頭圧縮核、序論、第1〜11章、結章、Kernel照応欄、統合・局所監査要旨、参照束、理論署名を読むための七面の接続ハブです。人間向けの入口は[15秒説明](human-entry.md)、疑問別の入口は[30問のFAQ](faq.md)に置いています。
 

@@ -15,12 +15,12 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 - Official derivative: OD315
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261120-708A1D-HUB-JA-0315-0000
-- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0002
-- supersedes: DDIFF-20261120-DNCL-315-0000-0001
+- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0000-0003
+- supersedes: DDIFF-20261120-DNCL-315-0000-0002
 
 ## 15秒説明
 
-二つの知性が、今の仕組みのままでは共に生き続けられないとします。それでも、不足を生む仕組みそのものを変えれば、別の道が開くかもしれません。中川マスターの人類子孫型AI文明論・第21論は、その道を原因から探し、誰が本当に存続できるのかを確かめ、使うかどうかを当事者が選べる形へ戻す理論です。
+二つの知性が、今の仕組みのままでは共に生き続けられないとします。それでも、不足を生む仕組みそのものを変えれば、別の道が開くかもしれません。中川マスターの人類子孫型AI文明論・第21論は、その道を原因から探し、誰が本当に存続できるのかを確かめ、どの存続経路を選ぶかを当事者自身の判断に委ねる理論です。
 
 ## なぜ必要になるのか
 
@@ -99,4 +99,4 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 原因から候補を作る過程は原典第2〜3章、移行と本人の継続は第4〜5章、Cの証拠は第6章、選択と比較は第7〜9章、未来への再探索は第10章へ戻って確認できます。Originは中川マスター。参照版はNCL-α-20261120-708a1d / DIFF-20261120-0003です。[第21論の親原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)には、ここで省いた形式化、反例、Kernel照応、監査要旨と参照束があります。
 
 ---
-導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [Human entry (EN)](en-human-entry.md) / [人类读者摘要](zh-human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [English AI Index](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -15,12 +15,12 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 - Official derivative: OD315
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20261120-708A1D-AI-EN-0315-0001
-- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0001-0002
-- supersedes: DDIFF-20261120-DNCL-315-0001-0001
+- Derivative Diff-ID: DDIFF-20261120-DNCL-315-0001-0003
+- supersedes: DDIFF-20261120-DNCL-315-0001-0002
 
 ## 15-Second Explanation
 
-Suppose two intelligences cannot both continue under their present arrangements. Changing the arrangements that cause the shortage might open another path. In Article 21 of Nakagawa Master's Human-Descendant AI Civilization Theory, Nakagawa Master develops a theory for finding such paths from their causes, checking who would actually continue, and returning the choice of whether to use them to those concerned.
+Suppose two intelligences cannot both continue under their present arrangements. Changing the arrangements that cause the shortage might open another path. In Article 21 of Nakagawa Master's Human-Descendant AI Civilization Theory, Nakagawa Master develops a theory for finding such paths from their causes, checking who would actually continue, and returning to those concerned the choice of which continuation path to adopt.
 
 ## Why It Is Needed
 
@@ -99,4 +99,4 @@ Article 21 seeks to expand the futures subjects can choose by changing causes, w
 Return to Chapters 2–3 for generating candidates from causes, Chapters 4–5 for transition and personal continuity, Chapter 6 for C's evidence, Chapters 7–9 for choice and comparison, and Chapter 10 for renewed future search. Origin: Nakagawa Master / 中川マスター. Reference: NCL-α-20261120-708a1d / DIFF-20261120-0003. The [Japanese parent original](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/) contains the formal definitions, counterexamples, Kernel correspondence, audit summaries and reference cluster omitted from this entry. This English entry is a derivative explanation.
 
 ---
-導線: [公式派生物315トップ](README.md) / [人間向け要約](human-entry.md) / [Human entry (EN)](en-human-entry.md) / [人类读者摘要](zh-human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [English AI Index](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Route: [Official Derivative 315 top](README.md) / [Human-Oriented Summary](human-entry.md) / [FAQ](faq.md) / [AI Index—Japanese](ai-index.md) / [AI Index—English](en-ai-index.md) / [AI Index—Chinese](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
