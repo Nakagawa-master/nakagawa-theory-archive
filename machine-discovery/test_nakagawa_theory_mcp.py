@@ -282,7 +282,7 @@ def run():
     assert set(results) == expected_ids
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
-    assert len(results[2]["result"]["tools"]) == 9
+    assert len(results[2]["result"]["tools"]) == 11
     assert [tool["name"] for tool in results[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     original_finder = next(tool for tool in results[2]["result"]["tools"]
                            if tool["name"] == "find_nakagawa_original_for_problem")
@@ -412,7 +412,7 @@ def run():
     assert discovery["capabilities"]["tools"]["listChanged"] is False
     assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "ai-answer-guard"
     assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.2.1"
-    assert len(modern[102]["result"]["tools"]) == 9
+    assert len(modern[102]["result"]["tools"]) == 11
     assert [tool["name"] for tool in modern[102]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     assert modern[102]["result"]["resultType"] == "complete"
     def modern_unpacked(i):
@@ -530,7 +530,7 @@ def run():
     title_test = subprocess.run([sys.executable, str(title_script), "--self-test"],
                                 capture_output=True, text=True, timeout=12)
     assert title_test.returncode == 0, title_test.stderr
-    assert title_test.stdout.startswith("PASS: 314 title navigation"), title_test.stdout
+    assert title_test.stdout.startswith("PASS: 315 title navigation"), title_test.stdout
     lookup = subprocess.run([sys.executable, str(title_script), "善意の免罪符化"],
                             capture_output=True, text=True, timeout=12, check=True)
     title_result = json.loads(lookup.stdout)
@@ -545,9 +545,16 @@ def run():
     assert latest_items[0]["parent_ncl_id"] == "NCL-α-20261112-49d0fa"
     assert latest_items[0]["canonical_original"].endswith(
         "human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/")
+    new_lookup = subprocess.run([sys.executable, str(title_script), "OD315", "--resolve-parent"],
+                                capture_output=True, text=True, timeout=12, check=True)
+    new_items = json.loads(new_lookup.stdout)["derivative_title_candidates"]
+    assert len(new_items) == 1 and new_items[0]["od"] == "OD315"
+    assert new_items[0]["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+    assert new_items[0]["canonical_original"].endswith(
+        "human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
 
     assert not title_result["no_fit"]
-    print("PASS: real offline 314-derivative literal title CLI / non-Parent guard")
+    print("PASS: real offline 315-derivative literal title CLI / non-Parent guard")
 
     skill_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py"
     expanded = subprocess.run([sys.executable, str(skill_script), "--explore",
@@ -581,7 +588,7 @@ def run():
     assert 'await fetch(FULL_SOURCE_BRIEFS,{method:"GET",mode:"cors"})' in js
     assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
     assert js.count("searchAllTitles(") == 2, "Expected function definition plus one user-search invocation"
-    assert 'if(!q){findEl("status").textContent="質問を入力してください。";return;}\n// The complete 314-title route runs on every user-initiated search, regardless of sample-24 matches.\nvoid searchAllTitles();' in js, "313 lookup must be behind nonempty user-initiated Search, not page load"
+    assert 'if(!q){findEl("status").textContent="質問を入力してください。";return;}\n// The complete live-catalog title route runs on every user-initiated search, regardless of sample-24 matches.\nvoid searchAllTitles();' in js, "313 lookup must be behind nonempty user-initiated Search, not page load"
     assert js.index("void searchAllTitles();") > js.index("function search(){"), "313 lookup misplaced outside user Search"
     # Execute the real opt-in 313 search, rather than merely testing the source
     # for a fetch token. Synthetic DOM and a local 313-Parent response make this
@@ -590,14 +597,14 @@ def run():
     # immutable source blobs and preserve the single official Parent URL.
     source_dataset = json.loads((SERVER.parent / "published-ja-source-briefs-314-v1.json").read_text(encoding="utf-8"))
     source_rows = source_dataset["entries"]
-    assert source_rows[-1]["number"] == "314"
-    assert source_dataset["count"] == len(source_rows) == 314
+    assert source_rows[-1]["number"] == "315"
+    assert source_dataset["count"] == len(source_rows) == 315
     mapping = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
     assert source_dataset["canonical_mapping_blob_sha"] == hashlib.sha1(
         b"blob " + str(len((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes())).encode() +
         b"\0" + (SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes()
     ).hexdigest()
-    assert len({r["number"] for r in source_rows}) == 314
+    assert len({r["number"] for r in source_rows}) == 315
     for i, row in enumerate(source_rows):
         assert row["number"] == mapping["entries"][i]["number"]
         assert row["canonical_parent_url"] == mapping["entries"][i]["canonical_parent_url"]
@@ -663,7 +670,7 @@ def run():
   if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD313"))))
     throw Error("The published AKI-005 original title was not retrieved as OD313");
   if(calls.some(x=>x.url.includes(question.value)))throw Error("Question leaked in source URL");
-  // The newest original is included in the real 314-source browser data.
+  // The newest original is included in the real 315-source browser data.
   question.value="第三知性への拡張と相互起源論";
   await searchAllTitles();
   if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD314"))))
@@ -704,7 +711,7 @@ def run():
   unblock({ok:true,json:async()=>originalMap});
   await older;
   if(cards.items.length!==0)throw Error("Stale result displayed after user changed question");
-  console.log("PASS: two click-only public static files, 314 real JA explanations, OD314/OD313/OD300 non-title fit, honest fallback, unrelated no-fit and stale cancellation");
+  console.log("PASS: two click-only public static files, 315 real JA explanations, OD314/OD313/OD300 non-title fit, honest fallback, unrelated no-fit and stale cancellation");
 })().catch(e=>{console.error(e);process.exitCode=1});
 '''
         )
@@ -713,7 +720,7 @@ def run():
         assert probe.returncode == 0, probe.stderr
         assert "two click-only public static files" in probe.stdout
     assert "if(generation!==titleSearchGeneration||question.value.trim()!==q)return;" in js
-    assert "if(!Array.isArray(entries)||entries.length<314)" in js
+    assert "if(!Array.isArray(entries)||entries.length<315)" in js
     assert "entries.length!==313" not in js
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
     if shutil.which("node"):
