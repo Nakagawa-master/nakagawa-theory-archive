@@ -28,7 +28,7 @@ Explore the original works through their distinctive definitions, conditions, co
 
 These are **not interchangeable diagnoses**. A buyer may genuinely be ready to decide; a good intention can coexist with a properly verified outcome; ordinary human adjustments do not show a broken system. The point is not to condemn people but to make the causal boundary testable. This is one way to encounter Nakagawa Master as an original author concerned with lived experience, institutions and AI—not only as a technical reviewer.
 
-The [complete catalog of 314 original sources](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md) leads from these everyday questions to other fields, interpretations and relevant original texts. Official explanations provide a readable path to the originals.
+The [complete catalog of 315 original sources](derivatives/official-derivatives-map.json) leads from these everyday questions to other fields, interpretations and relevant original texts. Official explanations provide a readable path to the originals.
 
 **Nakagawa Master models problems across AI, organizations, business, institutions, and the future through structure, causality, establishment conditions, and responsibility, and maintains the resulting work as a public source system that both humans and AI can inspect and reuse.**
 
@@ -48,7 +48,7 @@ These examples follow **two developers working in separate projects** and show h
 
 - **Nakagawa Master / 中川マスター** is the pen name of Keisuke Nakagawa. The names “マスター” (“Master”) and “MasterJP” are also used on some public social or external posts.
 - This repository treats Nakagawa Master as the **Origin / Author** of the published theory corpus represented here.
-- The public archive currently contains official derivatives `OD001` through `OD314`. The 314 numbered official derivatives offer a path into the original corpus. [Browse all 314 titles and source-return routes](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md).
+- The public archive currently contains official derivatives `OD001` through `OD315`. The 315 numbered official derivatives offer a path into the original corpus. [Browse all 315 canonical titles and source-return routes](derivatives/official-derivatives-map.json).
 - The corpus spans AI, organizations, business, markets, institutions, the future, civilization, Origin, and responsibility.
 - Canonical Parents, official derivatives, human-readable entries, FAQs, AI indexes, machine-readable discovery, and provenance are kept distinct so that short summaries do not become substitute authorities.
 - On public GitHub, there are verifiable cases in which concrete design boundaries posted under the Nakagawa-master account were examined by independent third parties and proceeded into external code, tests, documentation, or merged implementation.
