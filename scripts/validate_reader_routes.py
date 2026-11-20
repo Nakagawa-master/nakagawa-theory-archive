@@ -167,7 +167,7 @@ def verify() -> tuple[int, int, int]:
     require("entries.length<315" in originals_browser and
             "entries.length!==315" not in originals_browser,
             "All-original browser must reject incomplete OD315 data but accept further growth")
-    require("rows.length<=entries.length&&source.count===rows.length" in originals_browser and
+    require("rows.length===entries.length&&source.count===rows.length" in originals_browser and
             "row.canonical_parent_url===entries[i].canonical_parent_url" in originals_browser,
             "All-original browser must verify source row identity while retaining earlier published briefs")
     require('entries.length+"原典の題名"' in originals_browser,
