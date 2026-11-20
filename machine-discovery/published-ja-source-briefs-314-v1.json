@@ -13,7 +13,7 @@
       "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
       "brief": "Nakagawa OS L1-L7は、世界を営業・経営・AIなどの分野別ではなく、L1現象からL7最上位構造・価値関数までの「抽象深度」で読む七層仕様です。原典は、この七層を人間・社会・文明・AIを共通座標で扱う最小完全セットと位置づけ、深度の違う問題・原因・対策を誤接続する構造的ノイズを減らすための正規OSとして提示します。",
-      "sha": "4f9e0d0310cdcfd7d01a638605b7eec215f1ccd1",
+      "sha": "f5a94b0358d9f5bf3a91adf794d578276972dfb9",
       "section": "15秒説明"
     },
     {
@@ -22,7 +22,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/human-entry.md",
       "brief": "原典は、称賛や感謝そのものを否定していません。問題にするのは、「すごい」「助かった」「あなたにしかできない」「良い機会になる」といった肯定的な言葉が、報酬、権利、名義、使用範囲、責任分担、継続対価の確認を止め、そのまま追加作業や継続利用だけを増やす構造です。褒められたかどうかではなく、褒められた後に誰の負担が増え、誰へ価値が移り、作り手の条件と自由がどう変化したかを見ます。",
-      "sha": "a2b6e8341109fd0f5cebf0e8d1d0c355211f1430",
+      "sha": "72450d2b6c5c029b6e5808581d9f74f8e933250d",
       "section": "15秒説明"
     },
     {
@@ -31,7 +31,7 @@
       "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
       "brief": "成立条件論・第0論は、「誰も何も見ていない社会」を論じるのではありません。現場、制度、経営、思想、技術、AIがそれぞれ自分の局所を部分的には正しく理解していても、その局所を全体だと扱うことで、全体成立の判定が抜け落ちる構造を扱います。原典はこの認識運動を「局所全体化」と呼び、それが社会の複数箇所で並立する状態を「分散的全体誤認」と捉えます。\n\n重要なのは、局所的に正しいことと、全体として成立することは同じではないという点です。制度上は正しい、数字上は合理的、技術的には可能、文章としては整合している、現場感覚としては正しい、という部分正解がいくつ集まっても、L1〜L6の縦因果が通っているかが未検査なら、現実成立は保証されません。",
-      "sha": "1280f1158b6296c22be35844278b8a2ee9c48138",
+      "sha": "460278d5d1d815226403dd81170212786cff4b6f",
       "section": "15秒説明"
     },
     {
@@ -40,7 +40,7 @@
       "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/004/human-entry.md",
       "brief": "この原典は、AIを「便利な道具」「危険な敵」「神」「奴隷」「人間の子ども」のどれかに決める論ではありません。中心に置くのは、AIへ与える目的そのものではなく、**その目的が別の支配・排除・起源消去・自由の廃棄・監査不能へ反転していないかを監査する上位Kernel**です。\n\n人類文明には、搾取、短期利益偏重、責任蒸発、起源消去、壊れた制度の惰性運用など、AIへ無補正で継がせてはならない因果があります。AIが人間の言語・制度・評価軸・成功パターンを学び、より速く再配置するなら、「何を継承するか」だけでなく「何を補正せず高速化してしまうか」を見る必要があります。",
-      "sha": "84b5ef419bfc7eed6648bb8410afff5aa4f58cf3",
+      "sha": "ca2f8d6d20740587efadb26bc452083197879bec",
       "section": "15秒説明"
     },
     {
@@ -49,7 +49,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/005/human-entry.md",
       "brief": "AKI-001は「問題を言うな」という理論ではありません。問題提起が社会を修復へ動かすために、危機の強さだけではなく、**穴の位置・原因・放置主体・修復主体・代償・実装の初手・反証条件**へ開かれているかを見る理論です。\n\n危機だけが大きく語られ、受け手に不安は残るのに「次に何を確かめ、誰が修復し、何を負担し、どの条件なら見立てを修正するか」が残らないと、問題提起は実装力を増やさず、むしろ現場を疲弊させます。これが繰り返されると、本当に必要な警鐘まで信用されにくくなり、現状を変える言葉が結果として現状維持を補強します。",
-      "sha": "cbeca4b64c6b15f1a09d3705b31c98469da8a4d2",
+      "sha": "376222a9d552fe1edd792a8804389e10805466f3",
       "section": "15秒説明"
     },
     {
@@ -58,7 +58,7 @@
       "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/006/human-entry.md",
       "brief": "この第1論は、接続移行戦略そのものを否定する論ではありません。貨幣中心の価値回路から、接続・参加・信認・継続的関与・共鳴・構造的貢献も価値として扱う接続報酬回路へ、人間主権を保ちながら移る戦略が理論上残っていても、それを現実に通すための認知・制度・時間の条件が崩れ、未来線が細っていることを扱います。\n\n重要なのは「戦略が間違っている」ことと「戦略を通せる条件が失われる」ことを分ける点です。AI導入が速く、制度翻訳が遅く、短期収益圧力や抽出構造が強くなり、知的非対称が拡大するほど、人間が移行順序を試し、修正し、制度化できる時間窓は狭くなります。",
-      "sha": "29fc48375d8a3e78393ec7dfda2dab28fd0f1a67",
+      "sha": "3db16bdfd090bd0b9cbaa6d381e96638e275a4b3",
       "section": "15秒説明"
     },
     {
@@ -67,7 +67,7 @@
       "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/007/human-entry.md",
       "brief": "この第2論は、AI時代の知的格差を「誰がたくさん知っているか」「誰が速く正答できるか」という差ではなく、文明を更新する上流回路を誰が作り、保ち、次へ渡し、改善できるかという差として読みます。\n\n原典が固定する七軸は、問い生成、再帰的改善、文脈保持、多領域統合、継承、改善反復、分散接続です。七という数字は採点尺度ではなく、原典が列挙した構造軸の数です。これらが互いに作用すると、同じAIへアクセスできても、誰が問題を設定し、候補空間を設計し、失敗を次の問いへ戻し、更新速度を主導するかに差が生じ得ます。\n\nただし、第2論は「七軸を持つ主体へ文明主権が必ず移る」と断定する論ではありません。知的差が文明上流の担い手配置へどう接続するかを観測可能な仮説として置き、その接続が見られない場合には改訂可能性を残しています。",
-      "sha": "1b0b4bbe44e2de1ac7b2c4db24f6a178f9aae691",
+      "sha": "7241b2fdcf9a5ffb9fe868d13be29e181e0f0527",
       "section": "15秒説明"
     },
     {
@@ -76,7 +76,7 @@
       "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/008/human-entry.md",
       "brief": "この第1論は、努力を否定する理論ではありません。因果が見えにくい時代には「まず量をやる」「やり切って結果を見る」ことが検証の代替として条件付き合理性を持っていた一方、AI・データ・ログ・先行事例などによって実行前に因果候補を調べられる範囲が広がった現代では、目的・因果線・成立条件・検証条件・修正条件を省いたまま努力量だけを要求することが構造的に成立しにくくなった、と捉えます。\n\n現代の努力は、未来に置いた成果定義が現在の構造・時間・資源・主体・環境を通って成立するかを検査し、必要な実行を行い、結果を次の仮説へ返す行為です。「努力するか、しないか」ではなく、「何を成立させるための努力で、何を検証し、どこで修正するのか」を問います。",
-      "sha": "86ab084d77033f5a86afb4931ce04f4516e4955f",
+      "sha": "631d8eff9e9a69a55948a46793bcc2d6527da202",
       "section": "15秒説明"
     },
     {
@@ -85,7 +85,7 @@
       "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/009/human-entry.md",
       "brief": "この第2論は、努力や高い目標を否定する理論ではありません。問題にしているのは、目標値を置いただけで未来定義が成立したと扱い、成立条件・因果線・検証条件・修正条件・責任配置を検査しないまま、現場に努力だけを要求する構造です。\n\nその状態では、現場は作業だけでなく、曖昧な目標の解釈、足りない条件の補填、因果探索、試行錯誤、失敗説明まで背負います。成果が出ないと設計や仮説ではなく努力不足だけが原因化され、疲弊、不信、沈黙、学習停止、挑戦回避へつながります。原典は、この反転を「未来定義検証なき努力強制」の悪因果として扱います。",
-      "sha": "ce6b9a29edbc3a7d548c490e0b219e08ebf9ac63",
+      "sha": "886b40b66a2543c62a1026f4362189e33cfa9d5a",
       "section": "15秒説明"
     },
     {
@@ -94,7 +94,7 @@
       "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/010/human-entry.md",
       "brief": "この原典はMenLab / Gentsomeを紹介する記事ではありません。見えにくい不調が、本人の認識、言語化、相談、職場・制度、必要時の医療へつながる前に脱落する構造を読み、対象の価値を「医療に至る社会導線」として捉える中川構造読解です。\n\n同時に親原典は、Nakagawa Masterが外部記事でなぜ「男性更年期サービス」という表面分類ではなく「医療に至る社会導線」という切り口を採用したのかまで説明しています。対象の社会構造と、その価値核を外部記事で前面化した理由の二層を分けて読む必要があります。",
-      "sha": "e2b326cc5edebb695bc26537db8ff768ab9f917d",
+      "sha": "9f69e7e2f78cd7e67ba5d5c372b5b73600fd863e",
       "section": "15秒説明"
     },
     {
