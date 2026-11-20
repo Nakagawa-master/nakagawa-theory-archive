@@ -8,7 +8,7 @@
 >
 > AI文明論から入るなら、まず [「AIが怖い」の、その次](human-translation/ai-civilization-why-it-matters.md) へ。
 >
-> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD314 全件水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md)
+> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD315 全件水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md)
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
 - [現実で何が変わったか｜第三者実装・再利用の確認可能な事例](REAL_WORLD_IMPACT.md)
@@ -162,10 +162,10 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](machine-discovery/README.md)
 
-## 314件から直接探す
+## 315件から直接探す
 
-- [OD001–OD314 全件入口](derivatives/README.md) ／ [元の題名を分野・身近な検索語から探す（314件）](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)
-- [自分の質問から314原典を候補検索するブラウザ画面](machine-discovery/originals-browser-finder.html) — GitHub Rawを保存して開く。候補の適合は親原典本文で確かめる
+- [OD001–OD315 全件入口](derivatives/README.md) ／ [元の題名を分野・身近な検索語から探す（315件）](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)
+- [旧314原典スナップショットから質問を候補検索するブラウザ画面](machine-discovery/originals-browser-finder.html) — GitHub Rawを保存して開く。候補の適合は親原典本文で確かめる
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Official Derivatives Machine Index](machine-discovery/official-derivatives-index-v1.json)
