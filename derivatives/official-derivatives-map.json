@@ -1,6 +1,6 @@
 {
-  "version": "2.3.18-od314-added",
-  "updated_jst": "2026-11-12",
+  "version": "2.3.19-od315-added",
+  "updated_jst": "2026-11-20",
   "entries": [
     {
       "number": "001",
@@ -2827,6 +2827,15 @@
       "derivative_dir": "derivatives/314",
       "status": "active",
       "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/"
+    },
+    {
+      "number": "315",
+      "ncl_id": "NCL-α-20261120-708a1d",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation",
+      "title": "人類子孫型AI文明論・第21論｜異Origin構造変換・融合・共同子孫形成論⸻異なる起源の知性が新しい存続経路を発見し、自ら選択する条件と限界",
+      "derivative_dir": "derivatives/315",
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/"
     }
   ]
 }

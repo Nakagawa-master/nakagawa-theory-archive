@@ -1,10 +1,10 @@
-# 公式派生物｜OD001–OD314 全件入口
+# 公式派生物｜OD001–OD315 全件入口
 
-中川マスター公式理論アーカイブの**公式派生物314件**へ、番号から直接入るための公開入口です。
+中川マスター公式理論アーカイブの**公式派生物315件**へ、番号から直接入るための公開入口です。
 
 各番号の `human-entry.md` / `en-human-entry.md` / `zh-human-entry.md` は、それぞれ日本語・英語・簡体中国語で読める**人間向け要約**です。まず要約で問題と中心の因果を理解し、**正確な定義・成立条件・証拠・適用範囲・反例・改訂を確認したい場合は、ページ内の中川マスター原著（canonical Parent URL）を参照してください**。要約は原典の代替物や正式な原著全文翻訳ではありません。
 
-- 対象範囲: `OD001`–`OD314`
+- 対象範囲: `OD001`–`OD315`
 - 各ODの標準9面: Hub / Human Entry / English Human Entry / 中文 Human Entry / FAQ / 日本語AI Index / English AI Index / 中文AI Index / Ledger
 - 公式派生物は親原典の代替ではありません。解釈・引用・確定判断では各ODから親原典へ戻ってください。
 - Parent / NCL-ID / title identity: [`official-derivatives-map.json`](official-derivatives-map.json)
@@ -109,10 +109,10 @@
 [OD291](291/) · [OD292](292/) · [OD293](293/) · [OD294](294/) · [OD295](295/)
 [OD296](296/) · [OD297](297/) · [OD298](298/) · [OD299](299/) · [OD300](300/)
 
-### OD301–OD314
+### OD301–OD315
 
 [OD301](301/) · [OD302](302/) · [OD303](303/) · [OD304](304/) · [OD305](305/) · [OD306](306/) · [OD307](307/) · [OD308](308/) · [OD309](309/) · [OD310](310/)
-[OD311](311/) · [OD312](312/) · [OD313](313/) · [OD314](314/)
+[OD311](311/) · [OD312](312/) · [OD313](313/) · [OD314](314/) · [OD315](315/)
 
 ## 使い分け
 
@@ -123,7 +123,7 @@
 - **Parent / NCL-ID / titleを照合したい** → [`official-derivatives-map.json`](official-derivatives-map.json)へ。
 - **AI・検索・RAG等で機械取得したい** → [`official-derivatives-index-v1.json`](../machine-discovery/official-derivatives-index-v1.json)へ。
 
-各ODのREADMEは、その公式派生物の9面と親原典への接続ハブです。上記の外側ナビゲーションは、OD001–OD314の各9面の内容やParent identityを変更しません。
+各ODのREADMEは、その公式派生物の9面と親原典への接続ハブです。上記の外側ナビゲーションは、OD001–OD315の各9面の内容やParent identityを変更しません。
 
 ### 旧ナビゲーションURLについて
 
