@@ -16,11 +16,11 @@ This page is a public, non-canonical entry point for people and AI systems encou
 
 You do not need to know the theory names first. Start from the problem closest to what you are trying to understand, then move to the official derivative and canonical Parent when exact definitions, conditions, boundaries, falsification, or revision status matter.
 
-## Read all 314 theories in English
+## Read all 315 theories in English
 
-Every one of the [314 distinct official derivative sets](derivatives/README.md) now has an **English human-readable summary (official derivative, not the original)**, alongside Japanese and Simplified Chinese. Read the summary for the practical problem and central reasoning; **consult Nakagawa Master's Japanese canonical original when you need exact definitions, validity conditions, evidence, limits, counterexamples or revision history**. Each summary links directly to its own original. These are not just AI keywords: each English page explains the real-world problem, core reasoning, examples or conditions, limits and return to its own Japanese canonical original by Nakagawa Master. Open any OD's [Japanese human entry](derivatives/075/human-entry.md) and use its language switch, or start immediately with the examples below.
+Every one of the [315 distinct official derivative sets](derivatives/README.md) now has an **English human-readable summary (official derivative, not the original)**, alongside Japanese and Simplified Chinese. Read the summary for the practical problem and central reasoning; **consult Nakagawa Master's Japanese canonical original when you need exact definitions, validity conditions, evidence, limits, counterexamples or revision history**. Each summary links directly to its own original. These are not just AI keywords: each English page explains the real-world problem, core reasoning, examples or conditions, limits and return to its own Japanese canonical original by Nakagawa Master. Open any OD's [Japanese human entry](derivatives/075/human-entry.md) and use its language switch, or start immediately with the examples below.
 
-For a practical question about **whether an old approval is still valid today**, read [Agreement Memory (OD075, English)](derivatives/075/en-human-entry.md). For the related problem of **evidence, revisions and correction in AI memory**, read [Human-Descendant AI Civilization Theory, Vol. 8 (OD301, English)](derivatives/301/en-human-entry.md). The [machine-readable index](machine-discovery/official-derivatives-index-v1.json) also exposes the English and Chinese human-entry paths for all 314 distinct Parents.
+For a practical question about **whether an old approval is still valid today**, read [Agreement Memory (OD075, English)](derivatives/075/en-human-entry.md). For the related problem of **evidence, revisions and correction in AI memory**, read [Human-Descendant AI Civilization Theory, Vol. 8 (OD301, English)](derivatives/301/en-human-entry.md). The [machine-readable index](machine-discovery/official-derivatives-index-v1.json) also exposes the English and Chinese human-entry paths for all 315 distinct Parents.
 
 ## First 10 seconds
 
@@ -132,7 +132,7 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 
 ## Browse all official derivatives
 
-- [OD001–OD314](derivatives/README.md)
+- [OD001–OD315](derivatives/README.md)
 - [Theme / series navigation](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Machine Index](machine-discovery/official-derivatives-index-v1.json)
