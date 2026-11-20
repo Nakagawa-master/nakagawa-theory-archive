@@ -2,6 +2,12 @@ name: Public original-source MCP smoke
 on:
   pull_request:
     paths:
+      - 'machine-discovery/published-ja-source-briefs-314-v1.json'
+      - 'machine-discovery/question-source-explorer.html'
+      - 'machine-discovery/build-original-router-mcpb.py'
+      - 'human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md'
+      - 'skills/nakagawa-originals/references/derivative_titles_314.json'
+      - 'AI_ANSWER_GUARD_INSTALL.md'
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
       - 'machine-discovery/install-ai-answer-guard.py'
@@ -47,6 +53,12 @@ on:
   push:
     branches: [main]
     paths:
+      - 'machine-discovery/published-ja-source-briefs-314-v1.json'
+      - 'machine-discovery/question-source-explorer.html'
+      - 'machine-discovery/build-original-router-mcpb.py'
+      - 'human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md'
+      - 'skills/nakagawa-originals/references/derivative_titles_314.json'
+      - 'AI_ANSWER_GUARD_INSTALL.md'
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
       - 'machine-discovery/install-ai-answer-guard.py'
@@ -99,7 +111,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify three-language external evidence case order and README count (Python)
         run: python3 scripts/validate_impact_index.py
-      - name: Verify novice FAQ, 15-second summary, source and 312-entry reader routes
+      - name: Verify novice FAQ, 15-second summary and current full-Parent reader routes
         run: python3 scripts/validate_reader_routes.py
       - name: Zero-install user-driven AI request / original-source fidelity
         run: python3 scripts/test_no_install_ai_links.py
@@ -109,7 +121,7 @@ jobs:
         run: python3 machine-discovery/test_nakagawa_theory_mcp.py
       - name: Persistent all-project Qwen/Codex guard-rule installation and non-destructive rollback
         run: python3 machine-discovery/test_install_ai_answer_guard.py
-      - name: Whole theory system -- all 313 published Parent links and real MCP clients
+      - name: Whole theory system -- current complete Parent links and real MCP clients
         run: python3 machine-discovery/test_nakagawa_whole_structure_mcp.py
       - name: Read-only HTTP/OpenAPI original-source adapter and no-fit tests
         run: python3 machine-discovery/test_public_original_http_api.py
