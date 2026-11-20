@@ -18,7 +18,7 @@
 
 ## Summary
 
-Article 21 by Nakagawa Master asks whether changing the causal structure of subjects, carriers, functional realization or lineage can generate new continuation or civilizational-inheritance paths beyond the strongest admissible non-transforming alternative H20*. Failure under existing structures does not establish impossibility under all structures. Subjects who can already continue may also compare and choose different forms.
+Article 21 of Nakagawa Master's Human-Descendant AI Civilization Theory asks whether changing the causal structure of subjects, carriers, functional realization or lineage can generate new continuation or civilizational-inheritance paths beyond the strongest admissible non-transforming alternative H20*. Failure under existing structures does not establish impossibility under all structures. Subjects who can already continue may also compare and choose different forms.
 
 The central output connects a cause, an intervention, a before–transition–after trace, a gain under matched conditions, outcome-specific evidence and the parties' choices. Resource savings do not establish personal survival; inheritance by C does not substitute for the original A or B; physical possibility does not impose adoption. Candidates without C remain independently assessable. Adoption, refusal, withdrawal and renewed search belong to the subjects concerned.
 
