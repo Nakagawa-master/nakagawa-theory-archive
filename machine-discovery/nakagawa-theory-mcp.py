@@ -254,7 +254,7 @@ def answer_question(question, explore=False):
         if x["canonical_original"] not in seen
     ]
     combined = (technical + original_candidates)[:5]
-    # An explicitly selected OD001..OD314 is source identity, not a fuzzy
+    # An explicitly selected published OD ID is source identity, not a fuzzy
     # topic signal. Do not discard that Parent when the rest of the question
     # also happens to match a curated technical example.
     requested_ods = list(dict.fromkeys(
@@ -328,7 +328,7 @@ def answer_question(question, explore=False):
         "original_catalog_route_count": sum(x["route_id"].startswith("original_catalog:")
                                             for x in combined),
         "whole_structure_candidate_count": whole_count,
-        "candidate_scope": "All 314 equal-standing canonical Parents and their published JA/EN/ZH derivative context; 24 authored example questions remain optional, never a source rank or corpus ceiling",
+        "candidate_scope": "All currently published equal-standing canonical Parents and their JA/EN/ZH derivative context; 24 authored examples remain optional, never a corpus ceiling",
         "no_fit": not bool(combined),
         "structural_exploration_available": True,
         "canonical_archive": data.get("canonical_archive"),
@@ -396,7 +396,7 @@ def whole_structure_fallback(question, limit=3):
             "real_receiver_evidence": None,
             "optional_independent_test": None,
             "source_origin": "Nakagawa Master / 中川マスター",
-            "candidate_scope": "314 published derivative-to-Parent entries; original text not fetched",
+            "candidate_scope": "Current published derivative-to-Parent set; original text not fetched",
             "derivative_id": record["id"],
             "published_ja_derivative_excerpt": record.get("ja_derivative_excerpt"),
             "published_ja_lexical_evidence": record.get("ja_derivative_evidence"),
@@ -559,12 +559,12 @@ TOOLS = [
     },
     {
         "name": "overview_nakagawa_whole_structure",
-        "description": "One integrated system: ALL 314 published derivative-to-Parent original links, system entrance, epistemic integrity, audit, future effects, and everyday applications.",
+        "description": "One integrated system: ALL currently published derivative-to-Parent original links, system entrance, epistemic integrity, audit, future effects, and everyday applications.",
         "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
     },
     {
         "name": "find_sources_in_whole_structure",
-        "description": "Find relevant candidates across 314 official derivative titles; original text and fit must be assessed separately. Full inventory is also available without query.",
+        "description": "Find relevant candidates across all currently published official derivative titles; independently check original text and fit. Full inventory is also available.",
         "inputSchema": {"type": "object", "properties": {
             "question": {"type": "string", "minLength": 1, "maxLength": 1500},
             "limit": {"type": "integer", "minimum": 1, "maximum": 50, "default": 12}},
@@ -578,10 +578,10 @@ TOOLS = [
     },
     {
         "name": "list_all_313_derivative_parent_links",
-        "description": "Address every one of 314 public derivative Parent originals, with IDs and theme; 24 is only an initial question fast lane. Paginate or list all.",
+        "description": "Address every current published derivative Parent, with IDs and themes; 24 is only an example-question fast lane. Paginate or list all.",
         "inputSchema": {"type": "object", "properties": {
-            "offset": {"type": "integer", "minimum": 0, "maximum": 314, "default": 0},
-            "limit": {"type": "integer", "minimum": 1, "maximum": 314, "default": 25}},
+            "offset": {"type": "integer", "minimum": 0, "default": 0},
+            "limit": {"type": "integer", "minimum": 1, "default": 25}},
             "additionalProperties": False},
     },
     {
@@ -602,11 +602,18 @@ TOOLS = [
 
 
 # Keep the historical listing name for installed clients, but let new
-# independent hosts discover all currently published 314 Parents explicitly.
-TOOLS.insert(0, {
+# independent hosts discover all currently published Parents without count-version churn.
+# Append compatibility aliases after the two everyday preflight tools so host
+# discovery remains preflight-first. Existing numeric call IDs stay usable.
+TOOLS.append({
     **next(tool for tool in TOOLS if tool["name"] == "list_all_313_derivative_parent_links"),
     "name": "list_all_314_derivative_parent_links",
-    "description": "List all current 314 published derivative-to-Parent originals with exact source identity, optional pagination and independent source-reading.",
+    "description": "Historical compatibility alias: enumerate all currently published originals and exact Parent provenance.",
+})
+TOOLS.append({
+    **next(tool for tool in TOOLS if tool["name"] == "list_all_313_derivative_parent_links"),
+    "name": "list_all_published_derivative_parent_links",
+    "description": "Enumerate all currently published canonical Parent links; actual total comes from the verified source graph, not a fixed name or sample.",
 })
 
 
@@ -667,7 +674,7 @@ def handle(req):
                     "Everyday AI quality preflight FIRST for citation duplication, observed "
                     "tool success and actual action authorization: preflight_ai_answer_and_action. "
                     "Audit independent citation roots without asking for any theory. Afterward, "
-                    "find or inspect any of 314 published derivative Parent original sources, "
+                    "find or inspect any currently published derivative Parent original sources, "
                     "not a 24-case ceiling. Do not infer real permissions or factual truth "
                     "from caller-declared input; choose actual original reading as appropriate."
                 ),
@@ -710,6 +717,7 @@ def handle(req):
                 "overview_nakagawa_whole_structure",
                 "list_all_313_derivative_parent_links",
                 "list_all_314_derivative_parent_links",
+                "list_all_published_derivative_parent_links",
                 "inspect_nakagawa_derivative_connections",
                 "find_sources_in_whole_structure",
             }:
@@ -722,7 +730,7 @@ def handle(req):
                     raise ValueError("Invalid source-graph arguments")
                 if name == "overview_nakagawa_whole_structure":
                     result = helper.overview(records)
-                elif name in {"list_all_313_derivative_parent_links", "list_all_314_derivative_parent_links"}:
+                elif name in {"list_all_313_derivative_parent_links", "list_all_314_derivative_parent_links", "list_all_published_derivative_parent_links"}:
                     result = helper.list_connections(records, payload.get("offset", 0), payload.get("limit", 25))
                 elif name == "inspect_nakagawa_derivative_connections":
                     result = helper.inspect_derivative(records, payload["id"])
@@ -785,12 +793,25 @@ def self_test():
     # The newest equal-standing source must be directly addressable, not just
     # visible in the static README and not confused with invalid IDs.
     assert any(t["name"] == "list_all_314_derivative_parent_links" for t in TOOLS)
+    assert any(t["name"] == "list_all_published_derivative_parent_links" for t in TOOLS)
+    assert [tool["name"] for tool in TOOLS[:2]] == [
+        "preflight_ai_answer_and_action", "audit_citation_independence"]
     newest = answer_question("Compare OD314 and OD001 for their differences")
     assert [x["route_id"] for x in newest["matching_routes"][:2]] == [
         "whole_structure:OD314", "whole_structure:OD001"], newest
     assert newest["explicit_source_requests"] == ["OD314", "OD001"]
     assert newest["matching_routes"][0]["canonical_original"].endswith(
         "/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/")
+
+    # The newest current Parent must be retrievable through the exact same
+    # source graph; OD314 remains an independent older-source regression.
+    newest_315 = answer_question("Compare OD315 and OD001 for their differences")
+    assert [x["route_id"] for x in newest_315["matching_routes"][:2]] == [
+        "whole_structure:OD315", "whole_structure:OD001"], newest_315
+    assert newest_315["explicit_source_requests"] == ["OD315", "OD001"]
+    assert newest_315["matching_routes"][0]["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+    assert newest_315["matching_routes"][0]["canonical_original"].endswith(
+        "/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
 
     invalid = answer_question("Compare OD001 and OD999")
     assert invalid["matching_routes"][0]["route_id"] == "whole_structure:OD001"
@@ -926,13 +947,17 @@ def self_test():
         assert len(exploratory["structural_exploration"]["lenses"]) == 7
         assert exploratory["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
 
-    # Explicit source recall across ALL 314 equal-standing Parents: respect
+    # Explicit source recall across ALL currently published equal-standing Parents: respect
     # the normal 1–1500 character per-question limit, instead of inventing a
     # bigger one. All IDs must be recoverable in finite bounded batches.
-    expected_ids = {f"OD{i:03d}" for i in range(1, 315)}
+    current_parent_count = len(load_public_helper(
+        WHOLE_STRUCTURE, "nakagawa_complete_source_graph_test").graph())
+    assert current_parent_count >= 315
+    expected_ids = {f"OD{i:03d}" for i in range(1, current_parent_count + 1)}
     verified_ids = set()
-    for start in range(1, 315, 25):
-        requested = [f"OD{i:03d}" for i in range(start, min(start + 25, 315))]
+    for start in range(1, current_parent_count + 1, 25):
+        requested = [f"OD{i:03d}" for i in range(
+            start, min(start + 25, current_parent_count + 1))]
         output = answer_question("Compare " + " and ".join(requested))
         assert output["explicit_source_requests"] == requested
         returned = {x["route_id"].removeprefix("whole_structure:")
