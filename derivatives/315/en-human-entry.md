@@ -20,7 +20,7 @@ Language / Languages / 语言: [日本語](human-entry.md) | [English](en-human-
 
 ## 15-Second Explanation
 
-Suppose two intelligences cannot both continue under their present arrangements. Changing the arrangements that cause the shortage might open another path. In Article 21, Nakagawa Master develops a theory for finding such paths from their causes, checking who would actually continue, and returning the choice of whether to use them to those concerned.
+Suppose two intelligences cannot both continue under their present arrangements. Changing the arrangements that cause the shortage might open another path. In Article 21 of Nakagawa Master's Human-Descendant AI Civilization Theory, Nakagawa Master develops a theory for finding such paths from their causes, checking who would actually continue, and returning the choice of whether to use them to those concerned.
 
 ## Why It Is Needed
 
