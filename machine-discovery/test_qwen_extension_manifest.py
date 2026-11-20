@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression: both CLI extensions relocate to the SAME existing nine-tool MCP."""
+"""Regression: both CLI extensions relocate to the SAME existing preflight-first MCP with all published original Parents."""
 import json
 from pathlib import Path
 import subprocess
@@ -55,9 +55,15 @@ def main():
     replies = {obj["id"]: obj for line in run.stdout.splitlines()
                if (obj := json.loads(line)).get("id") is not None}
     assert replies[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "ai-answer-guard"
-    assert len(replies[2]["result"]["tools"]) == 9
+    assert len(replies[2]["result"]["tools"]) == 11
     assert [tool["name"] for tool in replies[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
-    print("PASS: Antigravity+Qwen+Gemini manifests → SAME AI Answer Guard MCP, 9 tools with preflight first")
+    assert "list_all_published_derivative_parent_links" in {
+        tool["name"] for tool in replies[2]["result"]["tools"]}
+    assert "list_all_313_derivative_parent_links" in {
+        tool["name"] for tool in replies[2]["result"]["tools"]}
+    assert "list_all_314_derivative_parent_links" in {
+        tool["name"] for tool in replies[2]["result"]["tools"]}
+    print("PASS: Antigravity+Qwen+Gemini manifests → SAME AI Answer Guard MCP, 11 tools, current-Parent catalog and preflight first")
 
 if __name__ == "__main__":
     main()
