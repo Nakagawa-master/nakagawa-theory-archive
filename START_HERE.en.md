@@ -22,6 +22,8 @@ Every one of the [315 distinct official derivative sets](derivatives/README.md) 
 
 For a practical question about **whether an old approval is still valid today**, read [Agreement Memory (OD075, English)](derivatives/075/en-human-entry.md). For the related problem of **evidence, revisions and correction in AI memory**, read [Human-Descendant AI Civilization Theory, Vol. 8 (OD301, English)](derivatives/301/en-human-entry.md). The [machine-readable index](machine-discovery/official-derivatives-index-v1.json) also exposes the English and Chinese human-entry paths for all 315 distinct Parents.
 
+**New in the original corpus — Vol. 21 (OD315):** If even the strongest existing-structure solution fails, ask whether changing the causal arrangement could open a new path without silently substituting a successor for the original subject or assuming anyone's consent. Read [Cross-Origin Structural Transformation — English human explanation](derivatives/315/en-human-entry.md) ([Japanese canonical original](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)); the bounded models test that question rather than claiming future fusion has been realized.
+
 ## First 10 seconds
 
 **Start from a real problem, not from a theory name.**
