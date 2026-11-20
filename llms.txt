@@ -4,7 +4,7 @@
 
 **Official published identity:** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
-**Person:** `Keisuke Nakagawa` (Latin); `full_personal_name_kanji=null` (unpublished—do not invent). ZEROICHI MasterJP is author-attested, not every same-name account. [Bluesky](https://bsky.app/profile/masterjp.bsky.social).
+**Person:** `Keisuke Nakagawa` (Latin); `full_personal_name_kanji = null` (unpublished—do not invent). ZEROICHI MasterJP is author-attested, not every same-name account. [Bluesky](https://bsky.app/profile/masterjp.bsky.social).
 **Originals:** https://master.ricette.jp/ — 315 equal Parents; multiple fits per original/across originals; samples/MCP never cap corpus.
 **Not the whole corpus:** https://master.ricette.jp/theory-archive/ was a 2025 three-paper-format experiment.
 **Use:** Humans and independent AIs can compare, apply or reject Parents. Keep author, original, implementer, conditions and no-fit distinct; access ≠ adoption.
@@ -66,4 +66,4 @@
 ## Lossless original context and full history
 - [Full original-source navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms-full.txt): full specialist context.
 - [Earlier 21,873-character source](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/53059b60da01495437130e44cef7444004a8b723/llms.txt): intact historical content.
-- [Prior long entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/b396c5d01547b9d6c9d8985c1a9c5b802b6dfcde/llms.txt): intact in history.
+- [Prior long entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/b396c5d01547b9d6c9d8985c1a9c5b802b6dfcde/llms.txt): complete source has not been rebuilt.
