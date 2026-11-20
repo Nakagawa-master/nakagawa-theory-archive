@@ -141,8 +141,10 @@ def verify() -> tuple[int, int, int]:
     require("originals.entries.length!==314" not in explorer and
             "published.entries.length!==315" not in explorer,
             "Question explorer must not require an exact historical original count")
-    require("files[3].routes.length===0" in explorer,
-            "Question explorer must reject empty/invalid problem-route catalogues, not count growth")
+    require('const cases=secondary[2].status==="fulfilled"' in explorer and
+            'const routes=secondary[1].status==="fulfilled"' in explorer and
+            'optionalUnavailable:secondary.some(' in explorer,
+            "Question explorer must retain optional routes when available and not block primary originals on a missing optional source")
     require("24の実問題" not in explorer and "24-problem" not in explorer,
             "Question explorer has stale 24-item user/AI-facing problem counts")
     # Preserve every displayed answer's canonical Parent(s) in optional AI copy.
