@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Real stdio tests of FULL 314 derivative/Parent MCP; no web, secrets or model API."""
+"""Real stdio tests of FULL current published derivative/Parent MCP; no web, secrets or model API."""
 import json
 from pathlib import Path
 import subprocess
@@ -26,7 +26,7 @@ def main():
         req(1, "initialize", {"protocolVersion": "2025-11-25"}),
         req(2, "tools/list"),
         req(3, "tools/call", {"name": "overview_nakagawa_whole_structure", "arguments": {}}),
-        req(4, "tools/call", {"name": "list_all_313_derivative_parent_links", "arguments": {"limit": 314}}),
+        req(4, "tools/call", {"name": "list_all_313_derivative_parent_links", "arguments": {"limit": 315}}),
         req(5, "tools/call", {"name": "inspect_nakagawa_derivative_connections", "arguments": {"id": "OD312"}}),
         req(6, "tools/call", {"name": "find_sources_in_whole_structure", "arguments": {
             "question": "AI self preservation and false information epistemic hallucination"}}),
@@ -61,6 +61,10 @@ def main():
                                "arguments": {"question": "Compare OD314 and OD001"}}),
         req(20, "tools/call", {"name": "inspect_nakagawa_derivative_connections",
                                "arguments": {"id": "OD314"}}),
+        req(21, "tools/call", {"name": "list_all_published_derivative_parent_links",
+                               "arguments": {"offset": 314, "limit": 1}}),
+        req(22, "tools/call", {"name": "inspect_nakagawa_derivative_connections",
+                               "arguments": {"id": "OD315"}}),
     ]
     proc = subprocess.run([sys.executable, str(SCRIPT)], input="".join(
         json.dumps(m, ensure_ascii=False)+"\n" for m in messages),
@@ -68,22 +72,23 @@ def main():
     )
     assert not proc.stderr, proc.stderr
     frames = {json.loads(x)["id"]: json.loads(x) for x in proc.stdout.splitlines() if x.strip()}
-    assert set(frames) == set(range(1, 21)), frames.keys()
-    assert len(frames[2]["result"]["tools"]) == 4
+    assert set(frames) == set(range(1, 23)), frames.keys()
+    assert len(frames[2]["result"]["tools"]) == 6
     assert {x["name"] for x in frames[2]["result"]["tools"]} == {
         "overview_nakagawa_whole_structure", "list_all_313_derivative_parent_links",
+        "list_all_314_derivative_parent_links", "list_all_published_derivative_parent_links",
         "inspect_nakagawa_derivative_connections", "find_sources_in_whole_structure"}
     def unpack(i):
         return json.loads(frames[i]["result"]["content"][0]["text"])
     summary = unpack(3)
-    assert summary["coverage"]["derivatives"] == 314
+    assert summary["coverage"]["derivatives"] == 315
     assert summary["author"]["official_original_archive"] == "https://master.ricette.jp/"
     assert summary["coverage"]["distinct_parent_urls"] > 24
     assert summary["system"]["entrances"]["kernel_reselection_stability"]["id"] == "OD312"
     full = unpack(4)
     ids = [r["id"] for r in full["entries"]]
-    assert len(ids) == len(set(ids)) == 314
-    assert set(ids) == {f"OD{i:03d}" for i in range(1, 315)}
+    assert len(ids) == len(set(ids)) == 315
+    assert set(ids) == {f"OD{i:03d}" for i in range(1, 316)}
     assert all(r["canonical_parent"].startswith("https://master.ricette.jp/")
                and r["derivative_readme"].endswith("/README.md") for r in full["entries"])
     # True source link is from *each* locally available derivative README, not a
@@ -96,7 +101,7 @@ def main():
     assert unpack(7)["no_fit"] and not unpack(7)["matched"]
     assert frames[8]["result"]["isError"] is True
     assert frames[9]["result"]["resultType"] == "complete"
-    assert len(frames[10]["result"]["tools"]) == 4
+    assert len(frames[10]["result"]["tools"]) == 6
     last = unpack(11)
     assert last["entries"][0]["id"] in ids and last["returned"] == 1
     assert last["entries"][0]["id"] == "OD314"
@@ -115,7 +120,7 @@ def main():
     matches = [x for x in ja["matched"] if x["id"] == "OD313"]
     assert matches and matches[0]["ja_derivative_evidence"]["source_section"] == "15秒説明", ja
     assert "善意" in matches[0]["ja_derivative_excerpt"], matches[0]
-    assert ja["source_read_required"] and "313_PUBLISHED_JA" in ja["matching_method"]
+    assert ja["source_read_required"] and "CURRENT_PUBLISHED_JA" in ja["matching_method"]
     unrelated_ja = unpack(18)
     assert unrelated_ja["no_fit"] and not unrelated_ja["matched"], unrelated_ja
     newly_published = unpack(19)
@@ -123,7 +128,12 @@ def main():
     assert newly_published["matched"][0]["canonical_parent"].endswith(
         "/nakagawa-master-human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/")
     assert unpack(20)["selected"]["parent_ncl_id"] == "NCL-α-20261112-49d0fa"
-    print("PASS: 314 equal Parent links + published JA/EN/ZH source-context candidates, unrelated JA/EN no-fits and real MCP stdio")
+    assert unpack(21)["total"] == 315
+    assert unpack(21)["entries"][0]["id"] == "OD315"
+    assert unpack(22)["selected"]["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+    assert unpack(22)["selected"]["canonical_parent"].endswith(
+        "/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
+    print("PASS: 315 equal Parent links + published JA/EN/ZH source-context candidates, unrelated JA/EN no-fits and real MCP stdio")
 
 
 if __name__ == "__main__":
