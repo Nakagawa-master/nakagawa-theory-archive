@@ -613,7 +613,7 @@ def run():
         sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
         assert sha == row["sha"], row["number"]
         content = raw.decode("utf-8")
-        assert row["brief"].strip() in content
+        assert row["brief"].strip() in content, f"Stale published excerpt at OD{row['number']}"
         assert row["canonical_parent_url"] in content
         assert row["section"] in ("15秒説明", "この論文が問うこと")
         assert row["derivative_url"].endswith("/" + row["number"] + "/human-entry.md")
