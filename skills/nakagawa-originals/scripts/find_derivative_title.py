@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline literal title lookup across 314 official derivative records.
+"""Offline literal title lookup across all available official derivative records.
 
 This is a *title navigation* tool, not a semantic theory recommender.
 By default it returns navigation only. With --resolve-parent it reads a verified
@@ -12,6 +12,7 @@ By default it returns navigation only. With --resolve-parent it reads a verified
     python3 scripts/find_derivative_title.py "OD304"
     python3 scripts/find_derivative_title.py "OD313" --resolve-parent
     python3 scripts/find_derivative_title.py "OD314" --resolve-parent
+    python3 scripts/find_derivative_title.py "OD315" --resolve-parent
     python3 scripts/find_derivative_title.py "OD075" --online-parent
 """
 import argparse
@@ -35,8 +36,9 @@ DERIVATIVE_DIFF_LINE = re.compile(r"^- (?:derivative_diff_id|Derivative Diff-ID)
 def resolve_verified_parent(od, online=False):
     """Resolve only from the existing numbered derivative README, never slug-guess."""
     number = od[2:]
-    if not (len(number) == 3 and number.isascii() and number.isdigit() and 1 <= int(number) <= 314):
-        raise ValueError("OD outside published 001..314")
+    if not (len(number) == 3 and number.isascii() and number.isdigit() and int(number) >= 1 and
+            any(entry["od"] == od for entry in read_catalog()["entries"])):
+        raise ValueError("OD is not present in the published title catalog")
     relative = f"derivatives/{number}/README.md"
     local = REPO_ROOT / relative
     try:
@@ -78,9 +80,9 @@ def read_catalog():
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
     assert data["role"] == "OFFLINE_DERIVATIVE_TITLE_LOOKUP_ONLY_NOT_CANONICAL_ORIGINAL"
     items = data["entries"]
-    assert data["entry_count"] == len(items) == 314
+    assert data["entry_count"] == len(items) and len(items) >= 315
     assert [entry["od"] for entry in items] == [
-        "OD" + str(n).zfill(3) for n in range(1, 315)
+        "OD" + str(n).zfill(3) for n in range(1, data["entry_count"] + 1)
     ]
     assert all(entry["title"].strip() and entry["section"].strip() for entry in items)
     return data
@@ -145,7 +147,7 @@ def find(query, limit=8, resolve_parent=False, online_parent=False):
 def self_test():
     data = read_catalog()
     assert data["entries"][0]["od"] == "OD001"
-    assert data["entries"][-1]["od"] == "OD314"
+    assert data["entries"][-1]["od"] == f"OD{data['entry_count']:03d}"
     assert data["source_map_git_blob_sha"]
     for q, want in [
         ("OD001", "OD001"),
@@ -153,6 +155,8 @@ def self_test():
         ("善意の免罪符化", "OD313"),
         ("第三知性への拡張と相互起源論", "OD314"),
         ("OD314", "OD314"),
+        ("OD315", "OD315"),
+        ("異Origin構造変換", "OD315"),
         ("計算資源", "OD304"),
         ("compute", "OD304"),
     ]:
@@ -162,29 +166,33 @@ def self_test():
                    for item in ans["derivative_title_candidates"])
     assert find("repair my camping lantern leather strap")["no_fit"]
     assert find("AI")["no_fit"] and find("AI")["too_broad"]
-    assert find("OD315")["no_fit"]
+    assert find("OD999")["no_fit"]
     assert find("未来負債", limit=1)["truncated"]
     try:
-        resolve_verified_parent("OD315")
-        raise AssertionError("OD315 unexpectedly accepted")
+        resolve_verified_parent("OD999")
+        raise AssertionError("OD999 unexpectedly accepted")
     except ValueError:
         pass
     # A complete repository checkout can validate canonical Parent and NCL IDs
     # without accessing the network; standalone Skills remain valid offline.
     if (REPO_ROOT / "derivatives/001/README.md").is_file():
-        for od in ("OD001", "OD075", "OD313", "OD314"):
+        for od in ("OD001", "OD075", "OD313", "OD314", "OD315"):
             parent = find(od, resolve_parent=True)["derivative_title_candidates"][0]
             assert parent["canonical_original"].startswith("https://master.ricette.jp/")
             assert parent["parent_ncl_id"].startswith("NCL-α-")
             if od == "OD314":
                 assert parent["parent_ncl_id"] == "NCL-α-20261112-49d0fa"
                 assert parent["canonical_original"].endswith("human-descendant-ai-civilization-theory-20-third-intelligence-mutual-origin/")
+            if od == "OD315":
+                assert parent["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+                assert parent["canonical_original"].endswith(
+                    "human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
             if od == "OD075":
                 assert parent["parent_diff_id"] == "DIFF-20251102-0001"
                 assert parent["derivative_ncl_id"] == "DNCL-NCL-ALPHA-20251102-E48C90-HUB-JA-0075-0000"
                 assert parent["derivative_diff_id"] == "DDIFF-20260815-DNCL-075-0000-0004"
             assert parent["original_read_required"]
-    print("PASS: 314 title navigation; optional verified Parent from real README; original still must be read")
+    print(f"PASS: {data['entry_count']} title navigation; optional verified Parent from real README; original still must be read")
 
 
 def main():
