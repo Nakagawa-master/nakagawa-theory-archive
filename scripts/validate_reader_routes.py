@@ -72,6 +72,17 @@ def verify() -> tuple[int, int, int]:
     require(len(paired) == current_count, "Original/derivative mapping differs from current coverage")
     require(seen == {f"{x:03d}" for x in range(1, current_count + 1)},
             "The title index must cover every canonical numbered Parent, including OD315")
+    brief = json.loads((ROOT / "machine-discovery/published-ja-source-briefs-314-v1.json").read_text(encoding="utf-8"))
+    require(brief["count"] == brief["source_equality"] == current_count and
+            len(brief["entries"]) == current_count,
+            "Public JA browser brief catalog must cover every current Parent")
+    require([item["number"] for item in brief["entries"]] ==
+            [item["number"] for item in paired],
+            "Public JA browser source IDs differ from canonical Parent map")
+    require(all(a["canonical_parent_url"] == b["canonical_parent_url"] and
+                a["title"] == b["title"]
+                for a, b in zip(brief["entries"], paired)),
+            "Public JA browser provenance disagrees with canonical Parent map")
     require([x["number"] for x in paired] == [f"{x:03d}" for x in range(1, current_count + 1)],
             "OD mapping numbers incomplete or reordered")
     for field in ("ncl_id", "origin_slug", "canonical_parent_url"):
@@ -123,10 +134,13 @@ def verify() -> tuple[int, int, int]:
             "Question explorer must display current problem-route count dynamically")
     require(not re.search(r"files\[3\]\.routes\.length\s*(?:!={1,2}|={2,3})\s*(?!0\b)\d+", explorer),
             "Question explorer must not reject a changing fixed short-route count")
-    require("files[1].entries.length<313" in explorer,
-            "Question explorer must accept future original Parents without permitting loss of the present 313")
-    require(not re.search(r"files\[1\]\.entries\.length\s*(?:!={1,2}|={2,3})\s*313\b", explorer),
-            "Question explorer must not hard-freeze the count at 313 as new Parents are published")
+    require("published.entries.length<315" in explorer and
+            "published.entries.map((item,i)=>" in explorer and
+            "../derivatives/official-derivatives-map.json" in explorer,
+            "Question explorer must use the current canonical map and include OD315")
+    require("originals.entries.length!==314" not in explorer and
+            "published.entries.length!==315" not in explorer,
+            "Question explorer must not require an exact historical original count")
     require("files[3].routes.length===0" in explorer,
             "Question explorer must reject empty/invalid problem-route catalogues, not count growth")
     require("24の実問題" not in explorer and "24-problem" not in explorer,
@@ -148,9 +162,9 @@ def verify() -> tuple[int, int, int]:
     # A second existing all-original browser must keep working when the
     # official 313-Parent catalogue receives its next valid original.
     originals_browser = (machine / "originals-browser-finder.html").read_text(encoding="utf-8")
-    require("entries.length<313" in originals_browser and
-            "entries.length!==313" not in originals_browser,
-            "All-original browser must reject incomplete data, not valid Parent growth")
+    require("entries.length<315" in originals_browser and
+            "entries.length!==315" not in originals_browser,
+            "All-original browser must reject incomplete OD315 data but accept further growth")
     require("rows.length<=entries.length&&source.count===rows.length" in originals_browser and
             "row.canonical_parent_url===entries[i].canonical_parent_url" in originals_browser,
             "All-original browser must verify source row identity while retaining earlier published briefs")
