@@ -103,7 +103,7 @@
       "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/human-entry.md",
       "brief": "この論は、「何かが一度うまくいった」ことと「現実に成立している」ことを分けるための定義論です。成果、数字、制度、計画、AIの整った説明があっても、それだけでは成立とは限りません。L1からL6までの縦因果が必要な粒度で通り、過剰な圧力、属人対応、責任転嫁、恒常的な例外処理で欠落を埋めなくても意味と機能が保たれるとき、原典はそれを現実成立として扱います。",
-      "sha": "d0d4c5aeb24e17e97c40a51e64d3a92e5c9b20b3",
+      "sha": "57ca7d36a17e58f06fc3f3511021ea8bd95c7c53",
       "section": "15秒説明"
     },
     {
@@ -112,7 +112,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/012/human-entry.md",
       "brief": "この原典は、わかりやすい説明そのものを批判していません。問題にするのは、対象を扱えるほど理解していないのに、比喩・断言・流行語・短い要約などで「もう分かった」という完了感だけが先に成立し、本来必要な問いと検証が止まることです。その浅い理解が共通語彙になると、認識、判断、実装、修正可能性、信頼まで劣化していきます。",
-      "sha": "5d5d701d8661f2ae9597c8f43211ecaf6eccf4b8",
+      "sha": "a77bca4c02d76364aa28d376b025bcb84201d2b4",
       "section": "15秒説明"
     },
     {
@@ -121,7 +121,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/013/human-entry.md",
       "brief": "この原典は「営業は押し売りしない方がよい」という一般論ではありません。接点、興味、課題認識、検討意思、購買意思、判断条件、合意成熟、成約要求を別の段階として扱い、まだ相手が自分で判断できる状態にないのに成約だけを要求すると、営業接点が相談の入口から防衛対象へ変わり、市場全体の相談可能性まで失われる悪因果を扱います。",
-      "sha": "d7f510e363bc052820dd17aef5a9cf0dddb078d2",
+      "sha": "1a02a32caea97d6fbf1872731963eb17b553427a",
       "section": "15秒説明"
     },
     {
@@ -130,7 +130,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
       "brief": "この原典は、炎上や対立を「誰が悪いか」で説明するのではなく、合意状態のどの成立条件が崩れたかとして観測します。合意は意見一致ではなく、同じ情報から意味を再現でき、誰が何を根拠に決めたか追え、何が変わりなぜ変わったか履歴を追える状態が時間方向に持続することです。\n\n原典はこの三つを U、R、H と置き、合意安定度を `S = U × R × H` で表します。Uは理解可能性／第三者再現性、Rは責任特定・追跡可能性、Hは履歴公開度／差分追跡可能性です。掛け算であるため、一つの成立条件の破断を別の条件の増量で埋め合わせることはできません。",
-      "sha": "e8fd7d263b1b4c7b2c0215b42c3c23e91765df10",
+      "sha": "4cab2105000207712596618c675ed91e1e0a1561",
       "section": "15秒説明"
     },
     {
@@ -139,7 +139,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/015/human-entry.md",
       "brief": "この原典は、事故・炎上・不祥事・組織崩壊を「最後に起きた一件が原因」と見るのではなく、すでに低下していた合意安定度Sが臨界閾値θを下回り、その状態が観測窓δのあいだ継続したことで安定相から崩壊相へ移った、と捉えます。最後の事件は原因の全体ではなく、臨界状態が外から見える形で現れた瞬間です。\n\n第1論から引き継ぐ `S = U × R × H` のUは第三者再現可能性、Rは責任追跡可能性、Hは履歴・差分・判断根拠の追跡可能性です。第4論ではさらにθ、δ、逸脱Dを使い、臨界状態の持続と相転移を観測します。",
-      "sha": "e632d0e053dbbc298868a6fa32dc37040eddb575",
+      "sha": "ab59abf44b9e73dd6586ad964224df9b57d6ee53",
       "section": "15秒説明"
     },
     {
@@ -148,7 +148,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/016/human-entry.md",
       "brief": "この原典は、統治を「人を従わせること」や「情報をできるだけ多く公開すること」とは考えません。社会が壊れたときに、第三者が意味を再現でき、誰が何を根拠に決めたか追え、何が変わったか検証できるよう、観測可能性を人間の認知帯域Kに収まる形で設計することを統治と捉えます。\n\n第1論から続く `S = U × R × H` のUは理解可能性／第三者再現可能性、Rは責任追跡可能性と修復入口、Hは履歴・差分・変更理由の追跡可能性です。第7論は、これらが人間に実際に扱える帯域で提示されなければ、情報量が増えても合意安定度Sは高まらないと見ます。",
-      "sha": "de1173ba71e870e220c468e3ceefe6e9a5ab0a1b",
+      "sha": "7b0dd3951397032170ad4e4fdfba547523a42893",
       "section": "15秒説明"
     },
     {
@@ -157,7 +157,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/017/human-entry.md",
       "brief": "この原典は、統治を「正しさを配ること」ではなく、「異常が起きたときに戻れる経路を仕様化すること」と捉えます。静的なルールやKernelが正しくても、Runtimeで外部摂動や逸脱が起きたときに検知・停止・縮退・回復・監査できなければ、誤状態は拡散します。\n\n原典が置く基本順序は `Detect → Stop → Shrink → Recover → Audit` です。検知し、安全に止め、検証可能な最小単位へ縮退し、Origin・一次ログ・差分履歴から再構成し、停止理由や差分を第三者が検証できる形へ戻します。",
-      "sha": "6b33363c3521eb785163b67f2ea039d6a36ac094",
+      "sha": "6b7ef4f92aaa2f9a4ff430035b6ae78b917345aa",
       "section": "15秒説明"
     },
     {
@@ -166,7 +166,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/018/human-entry.md",
       "brief": "この原典は、社会が揺れる理由を「誰が悪いか」「どの情報が正しいか」ではなく、合意安定度 `S = U × R × H` に外部入力 `P_ext` が作用した結果として読みます。混乱が起きたときに敵、善悪、思想、嘘、扇動、正義、悪意を先に決めるのではなく、その入力がU/R/Hのどこを揺らし、Sの時間変化 `dS/dt` に何が起きたかを先に観測します。\n\n第8論は `dS/dt = F(U,R,H)+P_ext` を構造座標として、内部状態の変化と外部摂動を分けます。fake-U、R diffusion、H short-circuitは、外部入力後に観測可能性・責任・履歴がどのように変形したかを見るセンサーとして扱います。",
-      "sha": "230f38121e1f8a0979c99a8eb5eaf4edf763b92f",
+      "sha": "fea9c589a86eefecec789469a625427892803edb",
       "section": "15秒説明"
     },
     {
@@ -175,7 +175,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/019/human-entry.md",
       "brief": "この原典は、「分かった気がする」こと自体が、合意形成を壊す危険相になり得ることを定義した論です。嘘かどうか以前に、検証経路Hが切れたまま納得感Uだけが上がり、誰が検証責任Rを持つかも曖昧になる状態をH-Disconnectとして扱います。\n\nその防御は反論合戦ではなく、Detect → Stop → Shrink → Recover → Auditです。まず異常を検知し、接続を止め、Originへ近い検証可能な最小単位へ縮退し、HとRを回復し、差分を監査して再起動します。",
-      "sha": "ae2f0dfebcfbddd061261c481def10b40daff42a",
+      "sha": "dcbc0489753528143e0268ec12203363eed3c4eb",
       "section": "15秒説明"
     },
     {
@@ -184,7 +184,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/020/human-entry.md",
       "brief": "この親原典は、プロパガンダや扇動を「嘘か本当か」「善か悪か」だけで判定する論ではありません。集団が同時に保持できる認知帯域Kが、一つの話題、一つの感情、一つの敵、一つの物語、一つの反応速度によって占有され、検証・責任・履歴への参照が働かなくなる共振現象として扱います。\n\nKの占有状態をOcc(K)、共振状態をResとして捉え、V（論点多様性）、P（極性集中度）、A（反証受付）を観測束として見ます。多数が同じ結論へ到達したこと自体を異常とせず、反例・履歴・責任・一次ソースへ戻れる余白が残っているかを確認します。",
-      "sha": "4178ad1417b06b997d8d4f6dee4931578c989e2d",
+      "sha": "20e0a9a7f995cf8bf17b16c3245a041fbe061034",
       "section": "15秒説明"
     },
     {
@@ -193,7 +193,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/021/human-entry.md",
       "brief": "この原典は、「問題を起こさない組織」より「問題が見えたときに速く直せる組織」を免疫のある系として読みます。逸脱をゼロにすることではなく、逸脱Dが差分として見え、責任Rと履歴Hが修復入口へ接続し、S = U × R × H を早く回復できることが中心です。\n\n罰中心の運用は、短期的には違反を減らしたように見えても、報告を抑制し、逸脱を潜伏させ、RとHを弱め、結果としてDを増幅し得ます。差分公開は公開量そのものを善とせず、修復主体・履歴・回復経路へ接続する場合に免疫として機能します。",
-      "sha": "b0bbade330dbde7d17e5a2abca38a7293bbca0e8",
+      "sha": "ad24803f59d45e38a260497f7b40889514a5e979",
       "section": "15秒説明"
     },
     {
@@ -202,7 +202,7 @@
       "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/022/human-entry.md",
       "brief": "AIを導入し、資料・FAQ・戦略文書・ナレッジが増え、各部門の専門作業が高速化しても、事業価値、顧客判断、営業、マーケ、広報、プロダクト、経営、情報資産、AI参照系を同じ成立条件へ接続する「連結責任」が空白なら、局所的に正しい成果物がズレたまま正規知識化される。AKI-014は、そのズレを人間とAIが再参照し、事業OSが自ら汚染を再生産して、最後には企業が自分の事業を説明できなくなる悪因果を扱う。",
-      "sha": "72bae8a1a20e43594eb4d6da8c7e18bdb2d6e40a",
+      "sha": "b4c7ddf8da72f939af3e399a150c780848fcf453",
       "section": "15秒説明"
     },
     {
@@ -211,7 +211,7 @@
       "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-funds-structural-reading-community-fund-defense/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/023/human-entry.md",
       "brief": "この原典はFundsの商品紹介ではない。修繕積立金を、個人が収益最大化を目指す投資資金ではなく、共同住宅の将来修繕能力・生活基盤・住民合意・説明可能性を守る目的拘束された共同体資金として読む中川構造読解である。\n\n同時に親原典は、Nakagawa Masterが外部記事でなぜこの対象を「投資商品」ではなく「共同体資金防衛」という価値核で編集したのかを公開解体している。第三者が理解すべきなのは、Fundsの機能だけでなく、対象の社会構造と、その構造を外部記事の切り口にした理由の二層である。",
-      "sha": "8f58777b62c8fe9893858bf053303f80f8a2804f",
+      "sha": "5302f30a45931cbc1150104b64ff5a0464b4d0e3",
       "section": "15秒説明"
     },
     {
@@ -220,7 +220,7 @@
       "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/024/human-entry.md",
       "brief": "この原典は、バリュートープを「無人で借りられるレンタカー」として紹介する記事ではない。カーシェアの24時間非対面性と、従来レンタカーの長時間利用時の料金合理性の間に残る供給ギャップを、非対面運用・料金・立地・問い合わせ導線によって接続し、利用者の「時間自由度」を再実装する移動供給OSとして読む構造読解である。\n\nさらに親原典は、この対象構造だけを説明する記事ではない。中川マスターが外部記事でなぜ「無人レンタカー」ではなく「時間自由度の再実装」という切り口を採用したのかを公開解体している。第三者は、対象の供給構造と、その価値核を外部記事で前面化した理由の二層を分けて確認する。",
-      "sha": "e30ce985634215a7fdc6686fb78b983e4ee0eff9",
+      "sha": "6c3bd9dc73042e932839f386933fd93c430155bb",
       "section": "15秒説明"
     },
     {
@@ -229,7 +229,7 @@
       "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/",
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/025/human-entry.md",
       "brief": "この原典は、Millyを「営業文面を作るAI」や「企業を探すマッチングサービス」として紹介する記事ではない。製造業が持つ技術能力を市場側の課題語・比較軸へ翻訳し、探索され、比較対象に入り、選定され、信用を補完され、取引可能性へ接続するための市場接続機構として読む構造読解である。\n\n同時に親原典は、Nakagawa Masterが外部記事でなぜこの対象を「営業AI」ではなく「市場接続機構」という価値核で編集したのかを公開解体している。第三者は、Millyの機能だけでなく、対象の市場構造と、その価値核を外部記事の切り口にした理由の二層を確認する。",
-      "sha": "df4f21ec74ee044face6b9e974519c482a8de24b",
+      "sha": "4109d56f5ed4c68c5734cb7c7c3b3eadd363c6ab",
       "section": "15秒説明"
     },
     {
