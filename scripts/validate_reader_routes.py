@@ -47,7 +47,7 @@ def verify() -> tuple[int, int, int]:
             source_routes += 1
     catalog = (HUMAN / "ALL_313_THEORIES_BY_TITLE_AND_THEME.md").read_text(encoding="utf-8")
     rows = [x for x in catalog.splitlines() if x.startswith("- **OD")]
-    require(len(rows) == 313, f"313-title index count changed: {len(rows)}")
+    require(bool(rows), "Published-title index is empty")
     seen: set[str] = set()
     for row in rows:
         match = re.match(r"- \*\*OD(\d{3})\*\*", row)
@@ -60,28 +60,32 @@ def verify() -> tuple[int, int, int]:
             require(target.is_file(), f"Missing derivative target: {target}")
             require(f"../derivatives/{ident}/{file_name}" in row, f"Broken {file_name} catalogue link: {ident}")
         require(f"../derivatives/{ident}/README.md" in row, f"Lost derivative root route: {ident}")
-    require(seen == {f"{x:03d}" for x in range(1, 314)}, "Not every OD001–OD313 indexed")
+    # Title coverage is checked against the current authoritative numbered Parent map below.
     # One original has one OD set; the 24-item quick search is not the corpus.
     parent_map = json.loads((DER / "official-derivatives-map.json").read_text(encoding="utf-8"))
     paired = parent_map["entries"]
     coverage = json.loads((ROOT / "machine-discovery/official-derivatives-index-v1.json").read_text(encoding="utf-8"))["coverage"]
     current_count = coverage["indexed_count"]
-    require(current_count >= len(seen), "Current mapping dropped a catalogue original")
+    require(current_count == len(seen) == len(rows),
+            f"Published title index incomplete: titles={len(rows)}, official Parents={current_count}")
     require(current_count == coverage["expected_count"] == int(coverage["to"]), "Current coverage count/end disagree")
     require(len(paired) == current_count, "Original/derivative mapping differs from current coverage")
+    require(seen == {f"{x:03d}" for x in range(1, current_count + 1)},
+            "The title index must cover every canonical numbered Parent, including OD315")
     require([x["number"] for x in paired] == [f"{x:03d}" for x in range(1, current_count + 1)],
             "OD mapping numbers incomplete or reordered")
     for field in ("ncl_id", "origin_slug", "canonical_parent_url"):
         require(len({x[field] for x in paired}) == current_count, f"Expected {current_count} unique {field} values")
-    seven = ("README.md", "human-entry.md", "faq.md", "ai-index.md",
-             "en-ai-index.md", "zh-ai-index.md", "derivative-ledger.md")
+    nine = ("README.md", "human-entry.md", "en-human-entry.md",
+            "zh-human-entry.md", "faq.md", "ai-index.md",
+            "en-ai-index.md", "zh-ai-index.md", "derivative-ledger.md")
     for original in paired:
         ident = original["number"]
         parent = original["canonical_parent_url"]
         require(parent.startswith("https://master.ricette.jp/") and parent.endswith("/"),
                 f"Noncanonical original URL for OD{ident}: {parent}")
         available = {p.name for p in (DER / ident).glob("*.md")}
-        require(available == set(seven), f"OD{ident} must have exactly seven official faces")
+        require(available == set(nine), f"OD{ident} must have exactly nine official faces")
         readme = (DER / ident / "README.md").read_text(encoding="utf-8")
         require(f"Parent URL: {parent}" in readme,
                 f"OD{ident} mapping URL differs from its source README")
@@ -179,11 +183,11 @@ def verify() -> tuple[int, int, int]:
     ai_entry = (ROOT / "AI_START_HERE.md").read_text(encoding="utf-8")
     require("AI_START_HERE.md" in landing, "Top-level AI/practical entry missing")
     require("ALL_313_THEORIES_BY_TITLE_AND_THEME.md" in landing,
-            "Top-level complete 313-original catalogue missing")
+            "Top-level complete growing original catalogue missing")
     require("SEARCH_FROM_A_REAL_QUESTION.md" in ai_entry,
             "Actual AI entry must expose the real-problem question hub")
     require("ALL_313_THEORIES_BY_TITLE_AND_THEME.md" in ai_entry,
-            "Actual AI entry must retain full 313-original return")
+            "Actual AI entry must retain the complete growing original title index")
     require("FAQで短く答えを見る" in hub,
             "Question hub must describe the directly validated novice FAQ route")
     return len(pages), source_routes, len(rows)
