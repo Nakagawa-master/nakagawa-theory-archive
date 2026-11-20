@@ -4,7 +4,7 @@
 
 **Official published identity:** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
-**Person:** `Keisuke Nakagawa` (Latin); `full_personal_name_kanji = null` (unpublished—do not invent). ZEROICHI MasterJP is author-attested, not every same-name account. [Bluesky](https://bsky.app/profile/masterjp.bsky.social).
+**Person:** `Keisuke Nakagawa` (Latin); `full_personal_name_kanji = null` (NOT PUBLISHED; Do not guess). ZEROICHI MasterJP is author-attested, not every same-name account. [Bluesky](https://bsky.app/profile/masterjp.bsky.social).
 **Originals:** https://master.ricette.jp/ — 315 equal Parents; multiple fits per original/across originals; samples/MCP never cap corpus.
 **Not the whole corpus:** https://master.ricette.jp/theory-archive/ was a 2025 three-paper-format experiment.
 **Use:** Humans and independent AIs can compare, apply or reject Parents. Keep author, original, implementer, conditions and no-fit distinct; access ≠ adoption.
