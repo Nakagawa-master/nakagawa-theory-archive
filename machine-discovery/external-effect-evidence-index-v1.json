@@ -5631,12 +5631,14 @@
         "ownership": "A separate reviewer/bot, not Nakagawa Master, showed a deliberate operator Disconnect could still be reversed through a non-abort reconnect/replay path; pooled transport/coalescing issues remain separately reported."
       },
       "source_snapshot": {
-        "checked_on": "2026-11-18",
-        "head": "bfd32862d39b0b3354e7a26362ceebc783b32c24",
+        "checked_on": "2026-11-21",
+        "head": "43abcc327fbcd6e47920c71b685be50656eb74df",
         "status": "OPEN",
         "merged": false,
         "containing_release": "NOT_VERIFIED",
-        "affected_installed_user_recovery": "NOT_VERIFIED"
+        "affected_installed_user_recovery": "NOT_VERIFIED",
+        "source": "https://github.com/QwenLM/qwen-code/pull/16661",
+        "note": "Main-sync head changed after author's implementation; no upstream merge, no containing release, no observed affected-user recovery."
       },
       "reader_routes": {
         "human_case_ja": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md",
@@ -5646,7 +5648,7 @@
         "optional_conceptually_fitting_original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
         "fit_and_nonfit": "A connected transport or an owner-initiated teardown is not equivalent to a recoverable failure; the original's establishment-conditions distinction can be compared conceptually only if this system-specific distinction fits. The external author did not claim to read or use the original theory."
       },
-      "current_stage": "Independent author changed code and tested a generation-state causal distinction after Master's exact counterexample; PR OPEN at head bfd32862, no containing release, installed recovery or independent PERSON relay.",
+      "current_stage": "Open upstream at 2026-11-21 HEAD 43abcc3. Independently authored C2: original implementer @2SinceJuly accepted and implemented Master's earlier cancel-liveness/real-client counterexamples and Nov19 premise that cleanup is not owner authority to veto future recovery (four paths, own red/green tests). Other pool fixes by different bot finding separately attributed. Not upstream merged or formally released; no verified installed recovery, independent PERSON relay, or unconnected AI original preference.",
       "not_claimed": [
         "author or reviewer endorsement of the entire original theory corpus",
         "upstream merged or shipped fix",
@@ -5668,6 +5670,28 @@
         "author_explicit_red_green_acceptance": "https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-6897670051",
         "causal_sequence": "Independent author ran the three-lifetime stopped-g1 / connected-g2,g3 / late-g1-rejection test; observed red on their previous implementation, then changed generation-scoped stop logic and obtained green. The author later fixed a separate silent-drop issue following an independent review bot's Critical, which must NOT be attributed to Master.",
         "state": "Upstream open; merge, containing release and live affected-user recovery not established."
+      },
+      "historical_source_snapshot_2026_11_18": {
+        "checked_on": "2026-11-18",
+        "head": "bfd32862d39b0b3354e7a26362ceebc783b32c24",
+        "status": "OPEN",
+        "merged": false,
+        "containing_release": "NOT_VERIFIED",
+        "affected_installed_user_recovery": "NOT_VERIFIED"
+      },
+      "distinct_master_design_premise_and_author_C2_2026_11_19": {
+        "master_original_premise": "Closing a transport after failed acquire is an effect; owner authority to stop future recovery is a distinct source-scoped decision. A cleanup call should not silently create server-wide owner-stop intent while a sibling connection under the same name is still valid.",
+        "original_proposal": "https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7013965002",
+        "direct_independent_author_acknowledgment": "https://github.com/QwenLM/qwen-code/pull/16661#issuecomment-7018567916",
+        "author_quote": "The premise was right, and it was reachable on HEAD.",
+        "implemented_by": "2SinceJuly",
+        "receiver_commit": "https://github.com/QwenLM/qwen-code/commit/77c7da2ed9436e7f2f1a04906c38263afc257cc8",
+        "implemented_contract": "Four failed-acquire cleanup paths use deliberate:false, preserving DISCONNECTED health events but preventing spurious server-name owner-stop markers; true operator stop paths remain deliberate.",
+        "author_red_green": "Author reports counterexample with live sibling A and failed acquisition B, and positive explicit-owner-stop control, using regressions that go red on reverting the change; local core suites reported, real transport integration was not run by the source reviewer.",
+        "deferred_ideal_contract": "Typed DisconnectCause, with explicit cause/scope, was affirmed as better invariant but deliberately not implemented in this already-large PR; do not claim that larger refactor or Master-authored code.",
+        "later_distinct_source": "https://github.com/QwenLM/qwen-code/pull/16661#discussion_r4635150591",
+        "later_distinct_implementation": "Two additional pool cleanup paths later repaired after a different bot reviewer finding; not independently authored by Master.",
+        "origin_fit_boundary": "One precise applied structural premise compatible with the published establishment-conditions original. Developer did not attest autonomous reading of the complete original theory corpus."
       }
     },
     {
