@@ -4124,33 +4124,46 @@
       },
       "receiver_implementation": {
         "author": "Eric-GoodBoy-Tech",
-        "current_head": "33e286a24aefa59170007e28a8fe7d77e8ff15f3",
+        "current_head": "84d06f62e2b7d122859fdf2a11d90af1dad3b720",
         "source_paths": [
           "packages/channels/base/src/AcpBridge.ts",
           "packages/channels/base/src/AcpBridge.test.ts",
           "packages/channels/base/src/ChannelBase.ts",
           "packages/channels/base/src/ChannelBase.test.ts"
-        ]
+        ],
+        "initial_implementation_head": "33e286a24aefa59170007e28a8fe7d77e8ff15f3"
       },
       "current_source_snapshot": {
-        "date_jst": "2026-11-18",
-        "pr_state": "OPEN",
-        "merged": false,
-        "current_head": "a5ea4cfa6b8dee3de0a2e974c11df50c4aea60bd",
-        "required_review_approvals": 2,
-        "approval_status": "Maintainers still coordinating stale CHANGES_REQUESTED dismissal and two approvals. Human @wenshao explicitly accepted ownership of dismissal and 2 failed CI shard re-runs 2026-11-18; no confirmed successful rerun or merge in this check.",
+        "date_jst": "2026-11-21",
+        "pr_state": "MERGED",
+        "merged": true,
+        "current_head": "84d06f62e2b7d122859fdf2a11d90af1dad3b720",
+        "merge_commit": "511ab6c9ffc10faa3d3dda9e02ac35a59720b36c",
+        "merged_at_utc": "2026-11-19T00:46:17Z",
+        "upstream_release": "v0.28.3",
+        "release_published_at_utc": "2026-11-21T01:45:48Z",
+        "release_contains_pr": true,
+        "merge_commit_ancestor_of_release_tag": true,
+        "release_tag_ahead_by": 119,
+        "release_tag_behind_by": 0,
+        "independent_implementer": "Eric-GoodBoy-Tech",
+        "review_approvals": "Human maintainers wenshao and qqqys approved the final PR head before merge; earlier change request was dismissed; this is source/test/merge/release evidence, not observed affected-user installation or personal endorsement.",
         "evidence": [
-          "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6968509522",
-          "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6887385765"
+          "https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423074659",
+          "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6887385765",
+          "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6888506334",
+          "https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5966678327",
+          "https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5966792592",
+          "https://github.com/QwenLM/qwen-code/commit/511ab6c9ffc10faa3d3dda9e02ac35a59720b36c",
+          "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+          "https://github.com/QwenLM/qwen-code/actions/runs/44841519782"
         ],
-        "nonattribution": "Other contributor's ordering fix accepted separately; do not attribute all PR code to Master. No release or verified end-user recovery."
+        "nonattribution": "The original privacy and later ordering counterexamples came from Nakagawa Master; implementation and regression tests were authored by Eric-GoodBoy-Tech; independent reproduction was performed by wenshao. Other PR work is not automatically attributed to Master. The stable release is verified, not actual installed-user recovery or an independent decision to endorse the author as a person. No real private-data leak is asserted."
       },
-      "current_stage": "independent_receiver_source_and_tests_OPEN_PR",
+      "current_stage": "release_deployment_or_verified_use",
       "human_case": "REAL_WORLD_IMPACT.md#55",
       "not_claimed": [
         "observed live data leakage",
-        "maintainer merge",
-        "stable release",
         "end-user realized benefit",
         "receiving author read the canonical original theory texts"
       ],
@@ -4174,6 +4187,19 @@
           "native_merge": "NO",
           "containing_release_or_installed_user": "UNKNOWN"
         }
+      },
+      "historical_source_snapshot_2026_11_18": {
+        "date_jst": "2026-11-18",
+        "pr_state": "OPEN",
+        "merged": false,
+        "current_head": "a5ea4cfa6b8dee3de0a2e974c11df50c4aea60bd",
+        "required_review_approvals": 2,
+        "approval_status": "Maintainers still coordinating stale CHANGES_REQUESTED dismissal and two approvals. Human @wenshao explicitly accepted ownership of dismissal and 2 failed CI shard re-runs 2026-11-18; no confirmed successful rerun or merge in this check.",
+        "evidence": [
+          "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6968509522",
+          "https://github.com/QwenLM/qwen-code/pull/15634#issuecomment-6887385765"
+        ],
+        "nonattribution": "Other contributor's ordering fix accepted separately; do not attribute all PR code to Master. No release or verified end-user recovery."
       }
     },
     {
