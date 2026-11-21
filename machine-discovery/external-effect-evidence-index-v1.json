@@ -5798,11 +5798,10 @@
         "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"
       ],
       "person_aware_public_reading": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md",
-      "current_stage": "Separate human developer adopted design, authored and merged source/tests upstream; exact merge included in Qwen Code v0.28.1-preview.0 pre-release; stable containing version and real installed-user result not established. Later witness-target refinement independently acknowledged but not implemented.",
+      "current_stage": "Human developer @wenshao explicitly accepted Master's original admission-vs-outcome conceptual distinction, independently authored foundational chat intent contract and tests; #17520 merged Nov17, was included in preview v0.28.1-preview.0, and is now verifiably contained in formally published stable v0.28.3 Nov21. Distinct later attempt/witness-binding C2 is tracked in #17709, and this #17520 merge alone does not implement it or establish an actual installed user result or autonomous original-theory choice.",
       "not_claimed": [
         "developer read entire original theory text or endorsed the original corpus",
         "later witness-target binding is already implemented",
-        "a stable containing package release has been verified",
         "affected user installed this change or independently observed recovery",
         "a separate unaffiliated human voluntarily credited Nakagawa Master as a person",
         "unconnected AI independently chose the original corpus"
@@ -5819,7 +5818,18 @@
         "source": "https://github.com/QwenLM/qwen-code/pull/17709#issuecomment-6977092276",
         "relation": "A later second independent code change from a separate Master-origin witness/attempt-identity proposal, tracked separately as qwen-17709-specific-attempt-witness-ownership-author-red-green; does not retroactively alter the merged #17520 code or its preview release.",
         "separate_case_id": "qwen-17709-specific-attempt-witness-ownership-author-red-green",
-        "stage": "C2 author code+tests, PR OPEN as of Nov18, no merge/release"
+        "stage": "As of Nov18, author C2 code/tests, open PR; independently source-verified #17709 subsequently merged Nov19 and was contained in v0.28.3 Nov21. Separate case_id holds exact evidence and attribution."
+      },
+      "stage_prior_to_verified_stable_release": "Separate human developer adopted design, authored and merged source/tests upstream; exact merge included in Qwen Code v0.28.1-preview.0 pre-release; stable containing version and real installed-user result not established. Later witness-target refinement independently acknowledged but not implemented.",
+      "verified_stable_release": {
+        "tag": "v0.28.3",
+        "published_at_utc": "2026-11-21T01:45:48Z",
+        "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+        "release_job_url": "https://github.com/QwenLM/qwen-code/actions/runs/44841519782",
+        "verification": "GitHub native PR merged status and exact merge-sha ancestry to v0.28.3; behind_by=0 for each. Release notes explicitly list each PR. No observed affected-user install or independent original-theory uptake.",
+        "upstream_merge_sha": "ac8588da2a9f213993f7fc61adf929de216967f8",
+        "tag_ancestry_ahead": 176,
+        "tag_ancestry_behind": 0
       }
     },
     {
@@ -5886,17 +5896,26 @@
         "authorship_boundary": "Later 2026-11-18 Hook-continuation flag propagation was a distinct review-bot-found gap and author-implemented fix; do not falsely credit that new finding to Master."
       },
       "last_native_snapshot": {
-        "utc_date": "2026-11-18",
+        "utc_date": "2026-11-21",
         "head": "dab63c4d96482b12d2a492fd0853d83b5085bf79",
         "pr_state": "MERGED",
         "merged": true,
-        "containing_release": "NOT_VERIFIED",
-        "CI": "Five native head workflow runs reported success. Maintainer verification 42/42 scripted assertions and 734/734 targeted suites; not a full platform integration test.",
-        "review_state": "Human reviewers @yiliang114 and @qqqys approved head dab63c4d before upstream merge; earlier bot change-request rounds are historical. Owner's broader model-admission/authority-epoch proposal remains unimplemented.",
-        "merge_commit": "1c9d3c0a4b42ad15c28671ebed80196b01c669a2",
-        "merged_utc": "2026-11-18T12:41:52Z"
+        "upstream_merge": "1c9d3c0a4b42ad15c28671ebed80196b01c669a2",
+        "merged_utc": "2026-11-18T12:41:52Z",
+        "verified_stable_release": {
+          "tag": "v0.28.3",
+          "published_at_utc": "2026-11-21T01:45:48Z",
+          "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+          "release_job_url": "https://github.com/QwenLM/qwen-code/actions/runs/44841519782",
+          "verification": "GitHub native PR merged status and exact merge-sha ancestry to v0.28.3; behind_by=0 for each. Release notes explicitly list each PR. No observed affected-user install or independent original-theory uptake."
+        },
+        "tag_ancestry_ahead": 141,
+        "tag_ancestry_behind": 0,
+        "installed_user_real_result": "UNKNOWN",
+        "independent_person_or_unconnected_ai_original_uptake": "UNKNOWN",
+        "attribution": "Specific author-acknowledged /btw ownership correction after Master's source review; unrelated later bug findings remain credited to their respective author/reviewer."
       },
-      "current_stage": "Independent author @wenshao implemented the Master-identified /btw ownership correction and received two independent human review approvals; PR #17477 MERGED upstream Nov18 12:41:52 UTC (commit 1c9d3c0a). No later containing release or installed-user behavior verified; broader model-admission/authority-epoch architecture remains a separate unimplemented proposal.",
+      "current_stage": "Independent developer @wenshao accepted the Master's precise /btw side-query ownership counterexample, implemented real source/tests; distinct later review-bot fixes separately credited. PR #17477 merged Nov18 and is verified included in formally published Qwen Code v0.28.3 (Nov21). No observed affected installed-user result or independent human/AI original adoption.",
       "additional_author_verification": {
         "source": "https://github.com/QwenLM/qwen-code/pull/17477#issuecomment-6976758380",
         "date_utc": "2026-11-18T11:07:52Z",
@@ -5912,10 +5931,22 @@
           "https://github.com/QwenLM/qwen-code/pull/17477#pullrequestreview-5956675566",
           "https://github.com/QwenLM/qwen-code/pull/17477#pullrequestreview-5956706010"
         ],
-        "containing_release": "NONE_VERIFIED_AFTER_MERGE",
+        "containing_release": "v0.28.3 (stable; published 2026-11-21T01:45:48Z; PR merge ancestor of tag, 141 ahead/0 behind)",
         "affected_user_installation": "UNKNOWN",
         "different_person_relay": "UNKNOWN",
-        "credit_boundary": "The author independently wrote implementation and tests. Master's specific adopted /btw continuation ownership correction is one part; later Stop-hook repair came from a different review finding."
+        "credit_boundary": "The author independently wrote implementation and tests. Master's specific adopted /btw continuation ownership correction is one part; later Stop-hook repair came from a different review finding.",
+        "containing_release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3"
+      },
+      "historical_native_snapshot_2026_11_18": {
+        "utc_date": "2026-11-18",
+        "head": "dab63c4d96482b12d2a492fd0853d83b5085bf79",
+        "pr_state": "MERGED",
+        "merged": true,
+        "containing_release": "NOT_VERIFIED",
+        "CI": "Five native head workflow runs reported success. Maintainer verification 42/42 scripted assertions and 734/734 targeted suites; not a full platform integration test.",
+        "review_state": "Human reviewers @yiliang114 and @qqqys approved head dab63c4d before upstream merge; earlier bot change-request rounds are historical. Owner's broader model-admission/authority-epoch proposal remains unimplemented.",
+        "merge_commit": "1c9d3c0a4b42ad15c28671ebed80196b01c669a2",
+        "merged_utc": "2026-11-18T12:41:52Z"
       }
     },
     {
@@ -5996,6 +6027,28 @@
         "alt_causation": "Independent author wrote code and ran tests; the original slice's core architecture already existed. Later review/CI outcomes may arise independently. Attribution is to bounded new premise and counterexample, not total PR authorship."
       },
       "status": {
+        "date_utc": "2026-11-21",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/17709",
+        "head": "b5674ad3928e0e3adc5313180e3770f9f62f2063",
+        "upstream": "MERGED_2026_11_19",
+        "merge_commit": "8082196f798825d00934ea21540413e762f1c8e0",
+        "merged_at_utc": "2026-11-19T02:38:14Z",
+        "verified_stable_release": {
+          "tag": "v0.28.3",
+          "published_at_utc": "2026-11-21T01:45:48Z",
+          "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+          "release_job_url": "https://github.com/QwenLM/qwen-code/actions/runs/44841519782",
+          "verification": "GitHub native PR merged status and exact merge-sha ancestry to v0.28.3; behind_by=0 for each. Release notes explicitly list each PR. No observed affected-user install or independent original-theory uptake."
+        },
+        "tag_ancestry_ahead": 111,
+        "tag_ancestry_behind": 0,
+        "installed_user": "NOT_VERIFIED",
+        "persona_relay": "NOT_VERIFIED",
+        "independent_unconnected_ai_original_selection": "NOT_VERIFIED",
+        "downstream": "Subsequent independently implemented #17794 and #17895 also merged and included in v0.28.3; their authorship and exact separate Master-origin causal claims are not automatically the same as this case."
+      },
+      "current_stage": "Specific Master proposal: a retry/attempt's outcome cannot be established by an unbound late witness to another operation. Developer @wenshao explicitly reproduced counterexamples red, changed the actual operationId-based settlement source/tests and design, then #17709 merged into upstream Nov19; its exact merge is an ancestor of official stable v0.28.3 released Nov21. End-user installed behavior, independently repeated PERSON credit and autonomous original-theory preference remain unverified.",
+      "historical_status_2026_11_18": {
         "date_utc": "2026-11-18",
         "pr": "https://github.com/QwenLM/qwen-code/pull/17709",
         "head": "a2578ccbf13a7a5076ae51640b2e66edf47b84f9",
@@ -6004,8 +6057,7 @@
         "installed_user": "NOT_VERIFIED",
         "persona_relay": "NOT_VERIFIED",
         "independent_unconnected_ai_original_selection": "NOT_VERIFIED"
-      },
-      "current_stage": "Actual outside developer explicitly confirmed counterexample red on their own first implementation, revised code/tests and docs, pushed one new commit after Master's source-specific review; C2 independent design adoption/implementation, not merge/release/installed use or new-person uptake."
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
