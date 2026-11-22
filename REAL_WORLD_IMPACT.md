@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は83件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は84件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**83の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**84の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1934,6 +1934,18 @@ AIに長時間作業を任せたのに、完成した答えだけがスマート
 独立した報告者・開発者 **@nathanschram は[マスター本人に有用な指摘だと直接返信](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514896543)**し、調査で原因を確認したうえで、三状態の区別と再起動後も残る最終回答の保持を実装方針に採用しました。実際に開発側が[通信障害・復旧・分割送信・再起動の受入試験結果を報告](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6972073133)。対象の改修を含む[開発PR #1246は2026年11月18日に開発ブランチへマージ](https://github.com/littlebearapps/untether/pull/1246)されました。修正コードとテストは受け手側の著作です。
 
 このマージは製品の安定版への収録を意味しません。確認時点の[公開済み安定版はv0.36.1](https://github.com/littlebearapps/untether/releases/tag/v0.36.1)で、v0.36.2への正式収録と、問題を体験した利用者本人の復旧は次の確認対象です。原著者が区別した「局所的な送信成功」と「相手への実際の到達」の違いは、[成立条件論・第0論](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）や[合意の記憶](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）からも考えられます。開発者がこれら原著を読んだと断定するものではありません。
+
+## 84. Qwen Code｜AIが勧めた操作を、本人が実行を決めた操作と混同しない──開発者がコードとテストを変更
+
+スマートフォンでAI開発ツールを使っているとき、AIが次の入力として `/clear` を提案してきたとします。画面の「送信」を一度押しただけで、その提案が**会話を初期化するコマンドとして実行**されるべきでしょうか。
+
+[Qwen CodeのPR #17918](https://github.com/QwenLM/qwen-code/pull/17918)は、スマートフォンなどのタッチ画面でAIの次の入力候補を扱う機能です。中川マスターは[実装コードを確認し、AIからの提案を受け取ることと、人間が実行を承認したことは別だと指摘](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7065383063)しました。提案の `/clear` が空欄や `/cl` の入力補完を通じて、一度の送信で実行される条件を示したものです。
+
+**独立開発者 @wenshao は[この権限上の区別を明示的に認め](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7066560096)、[自身のコードとテストを変更](https://github.com/QwenLM/qwen-code/commit/7c56a7eb955f1d3b209d9e8987a1061dc52d8449)しました。** AIが補完したコマンドは最初の送信では編集できる入力欄へ入るだけで、次の明示的な送信で初めて実行されます。一方、普通の文章の提案や人間が自分で完全に入力したコマンドは、従来の操作のままです。
+
+作者はさらに[実際のデーモン・モデル・ブラウザを使い、AIの提案した `/help` が初回送信では実行されず、二度目に実行されることを検証し、マスター本人へ報告](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7071172591)しました。検証はPixel 7相当のChromium模擬環境であり、実際のiPhoneでの検証ではありません。**2026年11月22日確認時点でPRは未マージ**です。利用者が正式版で改善を受けた事実や、新しい第三者がマスター本人を紹介した事実も未確認です。実コードとテストは独立開発者の著作です。
+
+この区別を広い構造から考える入口は、中川マスター自身の[中川式 接続プロトコル標準論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)と[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)です。これらは原著の参照先であり、開発者が原典を直接読んだと断定するものではありません。
 
 ## 公開された成果と、原典へ戻る道筋
 
