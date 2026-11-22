@@ -59,7 +59,7 @@ jobs:
 
   publish:
     needs: verify
-    if: ${{ github.repository == 'Nakagawa-master/nakagawa-theory-archive' && ((github.event_name == 'push' && github.event.head_commit.message == 'release: owner-authorized AI Answer Guard v1.2.1') || (github.event_name == 'workflow_dispatch' && inputs.publish_release == true)) }}
+    if: "${{ github.repository == 'Nakagawa-master/nakagawa-theory-archive' && ((github.event_name == 'push' && github.event.head_commit.message == 'release: owner-authorized AI Answer Guard v1.2.1') || (github.event_name == 'workflow_dispatch' && inputs.publish_release == true)) }}"
     environment: mcpb-release
     runs-on: ubuntu-latest
     timeout-minutes: 10
