@@ -1629,6 +1629,8 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **独立工程师 @AN-BC 向 `@Nakagawa-master` 致谢，并[自行实现基于SQL词法分析的安全重命名与回归测试](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 开发者还主动表示注意到中川マスター对多项MemberJunction工作的具体分析，并询问该账号背后的本人。中川マスター已[以公开姓名与原典网站作答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)。[PR #6339已于2026年11月6日正式合并](https://github.com/MemberJunction/MJ/pull/6339)。包含该修复的正式版本与真实用户的使用结果仍需分别核实。该例同时保留独立代码修复与直接的人物关注的原始证据。
 
+**另一项问题中再次出现独立采用（2026年11月22日核实）：** 同一名工程师 @AN-BC 在另一项关于共享会话“停止全部运行”的 [MemberJunction PR #5609](https://github.com/MemberJunction/MJ/pull/5609)中，[明确引用并继续分析中川マスター先前的审查](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7070452691)。原审查区分“谁真正发起了停止”和客户端可填写的 `CancellationReason='System'/'Timeout'`；后者不能自动证明操作来自可信服务器。@AN-BC 随后在[本人提交 `6cc587eb`](https://github.com/MemberJunction/MJ/commit/6cc587eb4a039cec5ce8026b27fbdbb687e9f77e)中独立实现了外部不能伪造的内部停止标记、持久化状态及所有权核验，以及针对原因字段伪造等条件的负例测试。这是另一项独立开发中有明确来源关联、真实代码变化的记录。**PR #5609仍未合并；正式发布、受影响用户的实际结果，以及另一个人的自发人物传播均尚未证实。**
+
 ## 69. Qwen Code｜AI记忆反复执行却无法保存：独立开发者加入执行前拦截
 
 **记忆任务一再运行、消耗时间和计算量，但写入全部被拒，最终没有留下任何记忆。** 在[Qwen Code issue #15597](https://github.com/QwenLM/qwen-code/issues/15597)中，受影响的用户 @Suaroman 报告了非交互 `-p` 模式下的这一问题。报告者随后在v0.26.9上重新测试：启用托管记忆时平均55.6秒、19次写入全部被拒且保存为零；关闭托管记忆时平均6.3秒（每种条件各3次）。

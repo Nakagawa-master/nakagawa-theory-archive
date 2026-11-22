@@ -1769,6 +1769,8 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 **実装者 @AN-BC はマスターを名指しで感謝し、[独立してパラメータの名前変更とSQL構文を理解する安全な置換処理・回帰テストを実装](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 開発チームがほかのPRでも中川マスターのレビューを見ていたことを伝え、公開アカウントの人物について自発的に質問しました。マスター自身は[実名の公開範囲と原典への入口を簡潔に回答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)しています。[PRは2026年11月6日に正式マージ](https://github.com/MemberJunction/MJ/pull/6339)。この変更を含む公式配布と利用者の実使用結果は別に確認します。技術的な採用と、実装者による人物への関心の双方を直接確認できる事例です。
 
+**別の実務課題でも続いた独立した受領（2026年11月22日確認）：** 同じ実装者 @AN-BC は、共有会話の「すべて停止」機能を扱う[別PR #5609](https://github.com/MemberJunction/MJ/pull/5609)で、[中川マスターの先行レビュー](https://github.com/MemberJunction/MJ/pull/5609#pullrequestreview-5511205450)を[明示的に参照](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7070452691)しました。問題は、クライアントが指定できる `CancellationReason='System'/'Timeout'` を「サーバーが停止した証拠」と誤認すると、他人の実行停止を許してしまうことです。@AN-BC は[自身の後続コミット `6cc587eb`](https://github.com/MemberJunction/MJ/commit/6cc587eb4a039cec5ce8026b27fbdbb687e9f77e)で、偽装できない内部停止マーカー、DBに保存された状態と所有者の再確認、悪用条件を区別するテストを実装しました。**別案件においても、マスターのレビューが開発側の明示的な評価と具体的なコード変更に接続した記録**です。一方、#5609はまだ未マージで、正式配布・利用者の実効、新しい別人による人物紹介までは確認されていません。
+
 ## 69. Qwen Code｜保存できないAI記憶に時間だけ消費する問題：独立開発者が事前停止を実装
 
 **「この設定を覚えて」と頼んでも、裏で記憶処理が何度も動き、書き込みはすべて拒否されて一件も残らない。** [Qwen Codeの実利用者 @Suaroman は、非対話の `-p` モードでこの障害を報告](https://github.com/QwenLM/qwen-code/issues/15597)し、v0.26.9の再確認でも、メモリON時は平均55.6秒・書き込み19回すべて拒否・保存ゼロ、OFF時は平均6.3秒だったと記録しました（各3回の報告者計測）。
