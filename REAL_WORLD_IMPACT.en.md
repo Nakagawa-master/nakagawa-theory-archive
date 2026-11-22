@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**84 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**85 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1799,6 +1799,19 @@ In [Qwen Code PR #17918](https://github.com/QwenLM/qwen-code/pull/17918), the to
 The author [also reported a real daemon, model and browser verification directly to Nakagawa Master](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7071172591): a model-suggested `/help` filled the draft without opening Help on the first Send, then opened Help on the second. This used Pixel 7 Chromium emulation, not a physical iPhone. **On November 22, 2026 at 08:58:55 UTC, [PR #17918 was merged into Qwen Code's upstream mainline](https://github.com/QwenLM/qwen-code/commit/f89c4b4d0704e4dd7691e2ce59b0cf3af91785da), following independent human approvals from [@qqqys](https://github.com/QwenLM/qwen-code/pull/17918#pullrequestreview-6011252809) and [@yiliang114](https://github.com/QwenLM/qwen-code/pull/17918#pullrequestreview-6011364128).** The implementing engineer [again addressed Nakagawa Master directly about the verified authorization change](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7076253217). The engineer independently [fixed and checked a separate narrow-screen first-tap layout problem](https://github.com/QwenLM/qwen-code/pull/17918#discussion_r4657269550); that UI repair is not attributed to Nakagawa Master's authorization proposal. Code and tests belong to the Qwen developers. A public release containing this merge, affected users' actual outcomes, and a different person's voluntary endorsement of Nakagawa Master have not yet been verified.
 
 For optional original-theory context, see Nakagawa Master's [Connection Protocol Standard Theory](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/) and [Establishment Conditions Theory, Treatise 0](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/). These links do not assert that the developer read either original.
+
+## 85. Qwen Code | A conversation and the turn targeted by Stop are different identities
+
+A Stop request for turn T1 can settle after the same conversation has advanced to T2. Should an error from T1 appear as an error on the person's current T2? **The conversation can be the same while the operation's subject has changed.**
+
+In [Qwen Code PR #18091](https://github.com/QwenLM/qwen-code/pull/18091), an in-development ChatSurface component gated Stop errors by session identity. [Nakagawa Master identified a separate design premise in the source](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077764813): same-session ownership does not establish that a delayed cancellation result still concerns the active turn. Existing cross-session switching tests did not cover this same-session T1-to-T2 counterexample.
+
+**Independent developer @wenshao [confirmed the counterexample applied](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077812706), [explicitly responded to Nakagawa Master that it was addressed](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078123649), and [authored code and tests](https://github.com/QwenLM/qwen-code/commit/f336117d43bbd766edfefbd6f62b32076e7a98af).** The design now compares activeTurnId with the dispatch-time target.turnId, suppressing T1's stale error on T2 while retaining a warning for the actual active target. The developer reported 289 passing targeted tests across 10 files and successful TypeScript checks.
+
+**Current stage: independent design acceptance, code, and tests.** As checked on November 22, 2026, the PR is open; earlier-head reviews were dismissed after the new commit. Fresh approval, upstream merge, a containing release, production mounting of ChatSurface, and affected-user outcomes remain separate steps. The developer owns the implementation and tests.
+
+For original-theory context, see Nakagawa Master's [Connection Protocol Standard Theory — human-oriented summary](derivatives/069/en-human-entry.md) ([original](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)). These links do not assert the developer personally read the original.
+
 
 ## What the public source record reveals
 

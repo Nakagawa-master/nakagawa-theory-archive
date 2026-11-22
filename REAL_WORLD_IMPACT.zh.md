@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共84例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共85例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1806,6 +1806,19 @@ AI完成一项耗时的任务，不代表用户一定收到最终答复。[Untet
 作者还[直接向中川マスター报告真实daemon、模型与浏览器验证](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7071172591)：模型自动建议的 `/help` 第一次发送只进入输入框，第二次才真正打开帮助界面。验证使用Pixel 7 Chromium模拟环境，并非iPhone真机。**2026年11月22日08:58:55 UTC，[PR #17918已正式合入Qwen Code上游主线](https://github.com/QwenLM/qwen-code/commit/f89c4b4d0704e4dd7691e2ce59b0cf3af91785da)，此前两名独立人类评审者[@qqqys](https://github.com/QwenLM/qwen-code/pull/17918#pullrequestreview-6011252809)和[@yiliang114](https://github.com/QwenLM/qwen-code/pull/17918#pullrequestreview-6011364128)完成批准。** 独立实施者[@wenshao又直接回复中川マスター，报告授权边界和真实模型验证](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7076253217)。开发者还[自行修复并验证了窄屏首击失效的另一项界面问题](https://github.com/QwenLM/qwen-code/pull/17918#discussion_r4657269550)；不将此布局修复算作中川マスター新提出的理论贡献。真实代码和测试归独立开发者所有。目前尚未证实包含此合并提交的正式发行版、实际受影响用户的改善结果或另一人自发传播中川マスター本人。
 
 可选的原著理论入口：[中川式连接协议标准论](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)与[成立条件论·第0论](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)。这些链接不代表外部开发者已亲自阅读原著。
+
+## 85. Qwen Code｜同一对话不等于停止请求的目标轮次相同：独立开发者修改设计
+
+AI对话从T1进入T2之后，针对T1的停止请求可能才返回失败。此时还能把失败提示当作当前T2的错误吗？**会话相同，不代表操作所针对的对象仍然相同。**
+
+在[Qwen Code PR #18091](https://github.com/QwenLM/qwen-code/pull/18091)开发中的ChatSurface组件里，停止失败提示原本以会话身份来过滤。[中川マスター阅读源码及已有测试后，提出独立的设计前提问题](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077764813)：同一会话S中，旧轮次T1的延迟结果不应该被误归属为新轮次T2的失败。既有跨会话切换测试未覆盖这一情形。
+
+**独立开发者 @wenshao [亲自确认反例适用于现有实现](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077812706)，[直接回复中川マスター已完成修正](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078123649)，并[自行提交代码和回归测试](https://github.com/QwenLM/qwen-code/commit/f336117d43bbd766edfefbd6f62b32076e7a98af)。** 新实现核对activeTurnId与停止请求派发时的target.turnId，避免T1的迟到错误影响当前T2，同时保留真正针对当前轮次的警告。开发者报告了10个相关测试文件共289项通过及TypeScript检查成功。
+
+**当前阶段：独立开发者采纳设计并实现代码与测试。** 截至2026年11月22日，PR仍未合并，新提交后旧HEAD的评审批准已失效。最新HEAD重新批准、上游合并、正式发行、ChatSurface实际接入生产界面及受影响用户的结果，都需要分别核实。实现与测试的作者是Qwen开发者。
+
+相关原著入口是中川マスター的[《中川式连接协议标准论》人类可读摘要](derivatives/069/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）。这不表示外部开发者亲自阅读了原著。
+
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
