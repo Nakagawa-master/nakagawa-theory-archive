@@ -1933,6 +1933,8 @@ AIに長時間作業を任せたのに、完成した答えだけがスマート
 
 独立した報告者・開発者 **@nathanschram は[マスター本人に有用な指摘だと直接返信](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514896543)**し、調査で原因を確認したうえで、三状態の区別と再起動後も残る最終回答の保持を実装方針に採用しました。実際に開発側が[通信障害・復旧・分割送信・再起動の受入試験結果を報告](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6972073133)。対象の改修を含む[開発PR #1246は2026年11月18日に開発ブランチへマージ](https://github.com/littlebearapps/untether/pull/1246)されました。修正コードとテストは受け手側の著作です。
 
+**2026年11月22日の続報：** 独立開発者は元の回答消失とは別に、再送中のシャットダウンで**同じ回答が二重投稿され得る**後続問題 [#1270](https://github.com/littlebearapps/untether/issues/1270) を自ら発見。送信・送信済み記録の削除・保存を最大10秒のキャンセル保護下で扱う修正と負例試験を実装し、[開発用Telegram環境で障害→再起動→最終回答の一回送達を確認したと報告](https://github.com/littlebearapps/untether/issues/1270#issuecomment-7074752869)しました。修正を含む[PR #1387は11月22日06:52:43 UTCに開発ブランチ `dev` へ正式マージ](https://github.com/littlebearapps/untether/commit/a471a64a9886b82c51229d4f107bedf76f8c6752)。この追加の問題発見・修正は受け手開発者本人の独立成果であり、中川マスターの新しい独自提案として二重計上しません。テスト用の再起動検証は一般利用者の実復旧や任意のプロセス強制終了に対する絶対的一回送達保証ではありません。
+
 このマージは製品の安定版への収録を意味しません。確認時点の[公開済み安定版はv0.36.1](https://github.com/littlebearapps/untether/releases/tag/v0.36.1)で、v0.36.2への正式収録と、問題を体験した利用者本人の復旧は次の確認対象です。原著者が区別した「局所的な送信成功」と「相手への実際の到達」の違いは、[成立条件論・第0論](derivatives/003/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）や[合意の記憶](derivatives/075/human-entry.md)（[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）からも考えられます。開発者がこれら原著を読んだと断定するものではありません。
 
 ## 84. Qwen Code｜AIが勧めた操作を、本人が実行を決めた操作と混同しない──開発者がコードとテストを変更
