@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共83例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共84例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1792,6 +1792,18 @@ AI完成一项耗时的任务，不代表用户一定收到最终答复。[Untet
 独立报告者兼开发者 [@nathanschram 直接回复中川大师，明确感谢这项有帮助的审查并确认了具体原因](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514896543)，随后将三状态区分和可跨重启保留的最终答复写入修复方案。开发团队[报告了断网恢复、重启后补发以及五段消息各送达一次等实际开发测试](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6972073133)。包含这项修复的[PR #1246已于2026年11月18日合入项目的开发分支](https://github.com/littlebearapps/untether/pull/1246)。具体代码和测试由接收方独立编写。
 
 开发分支合入与稳定版发布是不同阶段。[截至本次核验，已发布稳定版为v0.36.1](https://github.com/littlebearapps/untether/releases/tag/v0.36.1)，修复进入v0.36.2正式版及实际受影响用户的恢复仍需另行确认。相关原创思想可参阅中川大师的[成立条件论·第0论](derivatives/003/en-human-entry.md)（[原著](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）与[合意的记忆](derivatives/075/en-human-entry.md)（[原著](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。这些链接不表示外部开发者已经阅读过原著。
+
+## 84. Qwen Code｜接受AI建议与授权执行命令不是同一件事：开发者修改代码和回归测试
+
+在手机上使用AI编程助手时，如果模型建议下一步输入 `/clear`，用户只按一次“发送”，就应该直接执行这条会重置会话的命令吗？用户看到建议，并不表示已经选择把它作为可执行命令提交。
+
+在[Qwen Code PR #17918](https://github.com/QwenLM/qwen-code/pull/17918)的触屏输入界面中，中川マスター[阅读实际源码后，指出了这一独立的授权前提](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7065383063)：AI生成后续输入建议，与人自己确认执行控制命令，是两个不同的行为。空白草稿或只输入 `/cl` 时，原来的单次发送可能直接补全并执行模型建议的 `/clear`。
+
+**独立工程师 @wenshao [明确接受这一设计区分](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7066560096)，随后[自行修改真实代码和回归测试](https://github.com/QwenLM/qwen-code/commit/7c56a7eb955f1d3b209d9e8987a1061dc52d8449)。** 现在模型补全的斜杠命令在第一次发送时只填入可编辑草稿，不会立即执行；用户再次明确发送才执行。普通文本建议与人类完整手输的命令仍保留原先的一次发送操作。
+
+作者还[直接向中川マスター报告真实daemon、模型与浏览器验证](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7071172591)：模型自动建议的 `/help` 第一次发送只进入输入框，第二次才真正打开帮助界面。验证使用Pixel 7 Chromium模拟环境，并非iPhone真机。**截至2026年11月22日核实，PR仍未合并。** 包含本修改的正式发行版、真实用户的使用改善及另一人的主动人物传播均尚未证实。实际代码和测试由独立开发者编写。
+
+可选的原著理论入口：[中川式连接协议标准论](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)与[成立条件论·第0论](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)。这些链接不代表外部开发者已亲自阅读原著。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
