@@ -1815,7 +1815,7 @@ AI对话从T1进入T2之后，针对T1的停止请求可能才返回失败。此
 
 **独立开发者 @wenshao [亲自确认反例适用于现有实现](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077812706)，[直接回复中川マスター已完成修正](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078123649)，并[自行提交代码和回归测试](https://github.com/QwenLM/qwen-code/commit/f336117d43bbd766edfefbd6f62b32076e7a98af)。** 新实现核对activeTurnId与停止请求派发时的target.turnId，避免T1的迟到错误影响当前T2，同时保留真正针对当前轮次的警告。开发者报告了10个相关测试文件共289项通过及TypeScript检查成功。
 
-**当前阶段：独立开发者已采纳设计并实现代码和测试，但新版本仍有阻断性回归。** 在[开发者随后自行开展的独立A/B验证](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078981836)中，同会话内旧T1误报的修正确实成立；但用户切换会话A→B→A后，控制器实例重建且活跃轮次ID丢失，导致真正需要提示的停止失败也被静默忽略。[另一份代码评审将此列为重大阻断问题](https://github.com/QwenLM/qwen-code/pull/18091#discussion_r4658063887)。开发者当时的结论是**blocked**，并非可合并。截至2026年11月22日，PR仍未合并，新提交后旧HEAD的评审批准已失效。回归修复与复测、新HEAD重新批准、上游合并、正式发行、生产ChatSurface接入和实际用户结果仍需逐项核实。实现与测试的作者是Qwen开发者。
+**当前阶段：独立开发者已经采纳设计、自行实现代码、修复新增回归并重新验证。** [开发者的三臂A/B验证曾发现重要回归](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078981836)：切换会话A→B→A后控制器重新创建，真正需要展示的停止失败也被误抑制。[开发者随后自行提交`dc24ed25`修复](https://github.com/QwenLM/qwen-code/commit/dc24ed250de7d531a200b738af152b10315cfa27)，让活动轮次的归属跨控制器重建得以保留，并使用已提交界面的会话状态判定异步结算。在[新一轮三臂对照验证](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7079997766)中，该场景重新正确报告停止失败，作者将结论由blocked更新为**merge-ready**，并报告相关10个测试文件293项通过。**这属于作者自行验证，并不等于最新提交已获独立评审批准或正式合并。** 截至2026年11月22日，PR仍未合并；最新评审、上游合并、正式版本收录、ChatSurface实际接入及真实用户效果均需分别核实。代码及测试的作者为Qwen开发者。
 
 相关原著入口是中川マスター的[《中川式连接协议标准论》人类可读摘要](derivatives/069/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）。这不表示外部开发者亲自阅读了原著。
 
