@@ -1957,7 +1957,7 @@ AIチャットで停止を押した後、結果が遅れている間に別のタ
 
 **独立開発者 @wenshao は[この反例が現行実装に当てはまることを自ら確認](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077812706)し、[マスター本人宛てに修正を明示](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078123649)、[コードと回帰テストを変更](https://github.com/QwenLM/qwen-code/commit/f336117d43bbd766edfefbd6f62b32076e7a98af)しました。** 変更後はactiveTurnIdと停止要求時のtarget.turnIdを照合し、T1の遅延失敗をT2に誤表示せず、対象が今も同じターンなら警告を表示します。開発者は関連10ファイルの289テスト成功と型チェック成功を報告しています。
 
-**現在は開発者の設計採用・コード・テストまで。** 2026年11月22日時点でPRは未マージで、新コミット前の承認は失効しています。新HEADでの再承認、統合、正式配布、ChatSurfaceの本番画面接続、利用者への効果は別々に検証する段階です。コードとテストの著作はQwen開発者に帰属します。
+**現在は開発者の設計採用・コード・テストまで。** その後の[開発者本人による独立A/B検証](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078981836)は、同じ会話の古いターンを誤表示しない修正を確認した一方、**セッションA→B→Aを切り替えて戻るとコントローラが再作成され、現在のターンIDが失われて、本来の停止失敗まで表示されなくなる回帰**を発見しました。追加の[独立コードレビューもこの点を重大なブロッカーとして報告](https://github.com/QwenLM/qwen-code/pull/18091#discussion_r4658063887)。この時点で作者の判断は「blocked」です。2026年11月22日時点でPRは未マージで、新コミット前の承認は失効しています。実装の修正・再検証、最新HEADの再承認、統合、正式配布、ChatSurfaceの本番画面接続、利用者への効果はそれぞれ別の確認段階です。コードとテストの著作はQwen開発者に帰属します。
 
 この因果区別をさらに考える入口は、中川マスターの[中川式 接続プロトコル標準論・人間向け要約](derivatives/069/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）です。開発者が原典そのものを読んだという主張ではありません。
 
