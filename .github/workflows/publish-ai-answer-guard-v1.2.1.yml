@@ -1,0 +1,102 @@
+# AI Answer Guard v1.2.1: reproducible checked immutable distribution.
+# The release job requires the designated commit and refuses existing tags.
+name: Verify immutable AI Answer Guard MCPB v1.2.1
+
+on:
+  # One-shot publication can be initiated by the single owner-authorized
+  # creation of this exact workflow path on main. Other commits only verify.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-ai-answer-guard-v1.2.1.yml'
+  workflow_dispatch:
+    inputs:
+      publish_release:
+        description: "Publish new v1.2.1 ONLY after specific owner approval"
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Build AND run unpacked current 315-original bundle smoke
+        run: |
+          python3 machine-discovery/build-original-router-mcpb.py
+          test -s dist/ai-answer-guard-1.2.1.mcpb
+      - name: Independent build must produce identical bytes
+        run: |
+          python3 machine-discovery/build-original-router-mcpb.py --output dist/second-build.mcpb
+          sha256sum dist/ai-answer-guard-1.2.1.mcpb dist/second-build.mcpb
+          cmp dist/ai-answer-guard-1.2.1.mcpb dist/second-build.mcpb
+      - name: Recheck complete 315 Parent set and manifest inside actual ZIP
+        run: |
+          python3 - <<'PY'
+          import json
+          from zipfile import ZipFile
+          with ZipFile("dist/ai-answer-guard-1.2.1.mcpb") as z:
+              manifest = json.loads(z.read("manifest.json"))
+              entries = json.loads(z.read("derivatives/official-derivatives-map.json"))["entries"]
+              assert manifest["version"] == "1.2.1"
+              assert len(entries) == 315
+              assert [int(x["number"]) for x in entries] == list(range(1, 316))
+              assert all(x["canonical_parent_url"].startswith("https://master.ricette.jp/") for x in entries)
+              members = set(z.namelist())
+              for i in range(1, 316):
+                  for name in ("README.md", "ai-index.md", "en-ai-index.md", "zh-ai-index.md", "human-entry.md"):
+                      assert f"derivatives/{i:03d}/{name}" in members
+          print("PASS: candidate bundle contains all 315 official original routes")
+          PY
+
+  publish:
+    needs: verify
+    if: ${{ github.repository == 'Nakagawa-master/nakagawa-theory-archive' && ((github.event_name == 'push' && github.event.head_commit.message == 'release: owner-authorized AI Answer Guard v1.2.1') || (github.event_name == 'workflow_dispatch' && inputs.publish_release == true)) }}
+    environment: mcpb-release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - name: Rebuild exactly verified source before publishing
+        run: |
+          python3 machine-discovery/build-original-router-mcpb.py
+          test -s dist/ai-answer-guard-1.2.1.mcpb
+      - name: Refuse a pre-existing tag even when it has no GitHub Release
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --tags origin refs/tags/mcp-router-v1.2.1 >/dev/null; then
+            echo "Tag mcp-router-v1.2.1 already exists: never rebind an existing tag to a different source" >&2
+            exit 1
+          else
+            status=$?
+            if [ "$status" -ne 2 ]; then
+              echo "Cannot verify remote tag absence (status $status); fail closed" >&2
+              exit "$status"
+            fi
+          fi
+      - name: Publish versioned bundle with independently checkable SHA-256
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          (cd dist && sha256sum ai-answer-guard-1.2.1.mcpb > ai-answer-guard-1.2.1.mcpb.sha256)
+          gh release create mcp-router-v1.2.1 \
+            dist/ai-answer-guard-1.2.1.mcpb \
+            dist/ai-answer-guard-1.2.1.mcpb.sha256 \
+            --target "$GITHUB_SHA" \
+            --title "AI Answer Guard v1.2.1 - 315 original sources" \
+            --notes "Check AI answers, citations, tool outcomes and action permissions locally before relying on them. Includes all 315 published original-source links and offline checks; download the MCPB and its SHA-256 checksum together. Author: Nakagawa Master. Original corpus: https://master.ricette.jp/. See included LICENSE."
+      # Official MCP registry update: DISTINCT operation, NOT authorized here.
+      # Requires verified fileSha256 and specific owner approval.
