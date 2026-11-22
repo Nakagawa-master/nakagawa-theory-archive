@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**83 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**84 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1785,6 +1785,18 @@ An AI agent can finish a long job while its user never receives the answer. [A r
 The independent reporter and implementer [@nathanschram replied directly to Nakagawa Master, calling the review useful and confirming the causal analysis](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514896543). The implementer adopted the three-way state split in the fix plan, and subsequently [reported actual development-bot tests](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6972073133) for outage recovery, restart persistence, a five-part final delivered once per part, and no stray pending final in a healthy run. The independently authored [implementation was merged to the project's development branch in PR #1246 on November 18, 2026](https://github.com/littlebearapps/untether/pull/1246).
 
 This is a development-branch integration, not yet a containing stable release. [The latest verified published stable release was v0.36.1](https://github.com/littlebearapps/untether/releases/tag/v0.36.1); an actual affected-user recovery remains a separate step. For optional original-theory context, explore Nakagawa Master's [Establishment Conditions Theory](derivatives/003/en-human-entry.md) ([original](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)) and [Memory of Consensus](derivatives/075/en-human-entry.md) ([original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)). These are author-source links, not a claim that the Untether developer read the Parent works.
+
+## 84. Qwen Code | Accepting an AI's suggestion is not permission to execute its command
+
+Suppose an AI coding assistant suggests `/clear` on a phone. Should tapping **Send** once execute that model-generated command and reset the conversation, even when the person has not placed the command into an editable draft?
+
+In [Qwen Code PR #17918](https://github.com/QwenLM/qwen-code/pull/17918), the touch composer supported model-generated follow-up suggestions. [Nakagawa Master identified a distinct authorization premise in the actual code](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7065383063): receiving or accepting a suggested next step is not the same human act as authorizing the execution of a control command. With an empty draft or a `/cl` prefix, one Send could previously complete the suggested `/clear` and immediately submit it.
+
+**Independent developer @wenshao [explicitly accepted that distinction](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7066560096) and [implemented it in code and regression tests](https://github.com/QwenLM/qwen-code/commit/7c56a7eb955f1d3b209d9e8987a1061dc52d8449).** The first Send of a model-completed slash command now fills an editable draft without executing it; a subsequent deliberate Send executes. Ordinary-text suggestions and commands typed in full by the person keep their prior one-Send behavior.
+
+The author [also reported a real daemon, model and browser verification directly to Nakagawa Master](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7071172591): a model-suggested `/help` filled the draft without opening Help on the first Send, then opened Help on the second. This used Pixel 7 Chromium emulation, not a physical iPhone. **At the November 22, 2026 check, the PR remained open and unmerged.** An official containing release, affected installed-user outcome and new person-to-person endorsement are not established. The independent developer authored the implementation and tests.
+
+For optional original-theory context, see Nakagawa Master's [Connection Protocol Standard Theory](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/) and [Establishment Conditions Theory, Treatise 0](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/). These links do not assert that the developer read either original.
 
 ## What the public source record reveals
 
