@@ -1791,7 +1791,9 @@ AI完成一项耗时的任务，不代表用户一定收到最终答复。[Untet
 
 独立报告者兼开发者 [@nathanschram 直接回复中川大师，明确感谢这项有帮助的审查并确认了具体原因](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6514896543)，随后将三状态区分和可跨重启保留的最终答复写入修复方案。开发团队[报告了断网恢复、重启后补发以及五段消息各送达一次等实际开发测试](https://github.com/littlebearapps/untether/issues/1207#issuecomment-6972073133)。包含这项修复的[PR #1246已于2026年11月18日合入项目的开发分支](https://github.com/littlebearapps/untether/pull/1246)。具体代码和测试由接收方独立编写。
 
-开发分支合入与稳定版发布是不同阶段。[截至本次核验，已发布稳定版为v0.36.1](https://github.com/littlebearapps/untether/releases/tag/v0.36.1)，修复进入v0.36.2正式版及实际受影响用户的恢复仍需另行确认。相关原创思想可参阅中川大师的[成立条件论·第0论](derivatives/003/en-human-entry.md)（[原著](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）与[合意的记忆](derivatives/075/en-human-entry.md)（[原著](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。这些链接不表示外部开发者已经阅读过原著。
+**2026年11月22日的独立后续进展：** 实施者自行发现另一个[#1270问题](https://github.com/littlebearapps/untether/issues/1270)：重发已被Telegram接收的最终答复时，若关机取消恰好发生在发送与清除存储记录之间，重启可能造成重复发送。独立开发者为发送、删除待发记录及保存加入最长10秒的取消保护，增补负例测试，并[报告开发环境Telegram机器人断网、重启、恢复后最终答复只收到一次的实测](https://github.com/littlebearapps/untether/issues/1270#issuecomment-7074752869)。包含该修复的[PR #1387已于2026年11月22日06:52:43 UTC正式合并到开发分支`dev`](https://github.com/littlebearapps/untether/commit/a471a64a9886b82c51229d4f107bedf76f8c6752)。此后续问题的发现和修复属于接收方开发者独立贡献，并非中川大师的第二次原创提案。测试机器人的成功不等于生产环境受影响用户已经恢复，也不证明任意崩溃下的绝对恰好一次送达。
+
+开发分支合入与稳定版发布是不同阶段。[截至本次核验，已发布稳定版为v0.36.1](https://github.com/littlebearapps/untether/releases/tag/v0.36.1)，修复进入v0.36.2正式版及实际受影响用户的恢复仍需另行确认。相关原创思想可参阅中川大师的[成立条件论·第0论](derivatives/003/zh-human-entry.md)（[原著](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)）与[合意的记忆](derivatives/075/zh-human-entry.md)（[原著](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)）。这些链接不表示外部开发者已经阅读过原著。
 
 ## 84. Qwen Code｜接受AI建议与授权执行命令不是同一件事：开发者修改代码和回归测试
 
