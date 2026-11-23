@@ -9,6 +9,15 @@
 **公開された外部作用事例：85件**。[各事例の元の指摘、受け手の応答・実装・現在の段階](REAL_WORLD_IMPACT.md)を、第三者自身の一次資料につないでいます。
 
 
+## 名前を知らずに探す人へ：AIの失敗、証拠、承認を自分で確かめる
+
+- **AIエージェントが「送信済み」「完了」と答えたのに、メールや処理が実際には成功していない？** 返答と外部サービスの確定した操作記録を分ける。[AI Answer Guardの無料・ローカル実行チェック](AI_ANSWER_GUARD_INSTALL.md)では、失敗・保留の結果を成功と言い換えないかを再現できます。
+- **AIの回答が3つの出典を示したが、結局は同じ1件の転載だった？** 出典URLの本数ではなく、独立した一次証拠の根を調べる。[検証用コードと実際の開発案件](machine-discovery/README.md)から始められます。
+- **AIが古い承認、取り消した許可、別の仕事の実行権限を使い続ける？** 承認履歴・今の権限・実際の作用を切り離す。[再現テスト](machine-discovery/guardian-authorization-witness.test.mjs)は別の人の環境を操作しません。
+- **ふつうの仕事・人生・AIの疑問から、著者名や理論名を知らずに原典を探したい？** [問いから探す公開ブラウザー用ソース](machine-discovery/question-source-explorer.html)は公開済み全原典の日本語・英語・中国語の説明と照合します。GitHubでHTMLがそのまま実行されるわけではないため、ローカルブラウザー等の対応環境で利用してください。より簡単な既刊回答は[質問別一覧](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から読めます。
+
+上記は実在する一般的な困りごとからの入口です。答えが役に立つかと、理論がその事例に適合するかは分けて検証できます。具体的な第三者OSSの修正事例・本人の指摘・別の開発者による実装は[一次資料](REAL_WORLD_IMPACT.md)に記載しています。
+
 **中川マスター本人の活動と原典を継続して読む：** [公開GitHubアカウント](https://github.com/Nakagawa-master)から、新しい実例と原典をたどり、必要に応じてフォローできます。実際の検証や反例は[第三者による検証・再利用の公開フォーム](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml)で共有できます。
 
 **別のプロジェクトへの独立した掲載：** AIAnytimeの[Awesome MCP Servers](https://github.com/AIAnytime/Awesome-MCP-Servers/blob/main/servers/nakagawa-original-theory-router.json)では、既存の中川マスター原典参照ツールを「AI Answer Guard」として紹介する更新を、メンテナー @AIAnytime が[2026年11月18日にPR #354から本線へマージ](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/354)しました。原典への任意の導線を含む無料・ローカル実行の読み取り専用MCPとして掲載されています。**第三者による一覧掲載の成立であり、実インストール数や利用成果の確認ではありません。**
