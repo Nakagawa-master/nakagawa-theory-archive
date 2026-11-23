@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>問いから回答と公開中の全原典を探す | Nakagawa Master</title>
+<title>AIが完了と言ったのに届かない？承認・出典・送信結果を確認する無料の原典検索</title>
+<meta name="description" content="AIが送信済みと答えても届かない。古い承認が実行に使われた。3本のニュースは同じ出典の転載か。名前を知らずに一般的な問題から日英中315件以上の公開原典と実装証拠を調べる。">
 <style>
 :root{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:#f4f8fc;color:#1b2e42;line-height:1.65}
 *{box-sizing:border-box}body{max-width:920px;padding:24px 15px 80px;margin:auto}
@@ -27,6 +28,13 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 <p>今の疑問をそのまま書いてください。<strong>公開済みの41件以上の具体的な回答</strong>と<strong>公開中の対等な全原典</strong>を、公開出典から探します。アカウント・MCP・APIキーは不要です。</p>
 </header>
 <main>
+<section class="card" aria-labelledby="ordinary-problems">
+<h2 id="ordinary-problems">著者名・理論名を知らなくても、実際の問題から</h2>
+<p><strong>AIが「送信済み」と言ったのに相手へ届かない？</strong> AIの説明と送信サービスの操作記録は別です。受付ID・配達状態を確認し、不明な操作を根拠なしに再実行しないでください。<a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_ANSWER_GUARD_INSTALL.md">送信結果とツール証拠の無料チェック</a>へ。</p>
+<p><strong>AIが示した3件のニュースは、本当に独立した3つの情報源？</strong> 同じ発表の転載を独立根拠3件に数えず、一次発表・転載・別個の観測を分けます。<a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md">検証例と実装方法</a>へ。</p>
+<p><strong>古い許可をAIがいま実行に使おうとしている？</strong> 過去の承認と現在有効な実行権限を区別し、実際の効果と追加承認の要否を確かめます。<a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/guardian-authorization-witness.test.mjs">再現可能な境界テスト</a>へ。</p>
+<p class="muted">これらの問題には本人名を知らずに取り組めます。原典との適合は原文の成立条件・反例で確認してください。<a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md">第三者OSSでの実際の判断・修正と著者の指摘</a>を個別に確認できます。</p>
+</section>
 <form id="form">
 <label for="query"><strong>知りたいこと・困っていること / Your question</strong></label>
 <textarea id="query" maxlength="3000" required placeholder="例：AIが「完了」と言ったのに結果が届かない。 / Example: My AI said it finished, but nothing was delivered."></textarea>
@@ -58,7 +66,7 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 const ROOT="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/";
 const $=id=>document.getElementById(id);
 const stops=new Set(["am","an","as","at","be","by","do","he","if","in","is","it","me","my","no","of","on","or","so","to","up","us","we","the","and","that","this","with","from","have","what","when","which","would","could","should","there","your","into","where","for","why","how","who","does","did","was","were","are","can","may","might","they","their","about","after","before","happen","happens","happened","all","any","some","もの","こと","する","して","した","ない","いる","ある","から","ので","ため","この","その","です","ます"]);
-let db=null,listed=[],cursor=0,topAnswer=null,shownAnswers=[],lastSearchedQuery="",lastSearchedLang="",routeHits=[],receiverHits=[];
+let db=null,listed=[],cursor=0,topAnswer=null,shownAnswers=[],lastSearchedQuery="",lastSearchedLang="",originalLang="ja",routeHits=[],receiverHits=[];
 function terms(input){
 const txt=String(input||"").normalize("NFKC").toLowerCase().replace(/([a-z0-9])[-_]+(?=[a-z0-9])/g,"$1 "),all=new Set();
 for(const w of txt.match(/[a-z][a-z0-9_-]{1,}/g)||[]){if(stops.has(w))continue;all.add(w);if(w.length>4&&w.endsWith("ies"))all.add(w.slice(0,-3)+"y");else if(w.length>4&&w.endsWith("s")&&!w.endsWith("ss"))all.add(w.slice(0,-1));}
@@ -85,8 +93,8 @@ if(db)return db;
 // a historical 313/314-name summary cache. Missing optional briefs cannot
 // silently hide a newly published canonical original.
 const required=["human-question-answers-v1.json","../derivatives/official-derivatives-map.json"];
-const optional=["published-ja-source-briefs-314-v1.json","problem-to-theory-origin-index-v1.json","quick-route-index-v1.json"];
-const get=async p=>{const r=await fetch(ROOT+p);if(!r.ok)throw Error("HTTP "+r.status+" "+p);return r.json();};
+const optional=["published-ja-source-briefs-314-v1.json","problem-to-theory-origin-index-v1.json","quick-route-index-v1.json","published-original-contexts-v1.jsonl"];
+const get=async p=>{const r=await fetch(ROOT+p);if(!r.ok)throw Error("HTTP "+r.status+" "+p);if(p.endsWith(".jsonl"))return (await r.text()).split(/\r?\n/).filter(Boolean).map(v=>JSON.parse(v));return r.json();};
 const [primary,secondary]=await Promise.all([
   Promise.all(required.map(get)),
   Promise.allSettled(optional.map(get))
@@ -95,18 +103,30 @@ const [answers,published]=primary;
 if(!Array.isArray(answers.answer_cases)||!Array.isArray(published.entries)||published.entries.length<315)throw Error("Required canonical Parent map missing");
 const summaries=secondary[0].status==="fulfilled"&&Array.isArray(secondary[0].value.entries)?secondary[0].value.entries:[];
 const byId=new Map(summaries.map(item=>[item.number,item]));
+// This optional trilingual feed is a published derivative-context index, not canonical text.
+// Missing new-Parent contexts never remove entries from the live canonical map.
+const contextRows=secondary[3].status==="fulfilled"&&Array.isArray(secondary[3].value)?secondary[3].value:[];
+const byContext=new Map();
+for(const item of contextRows){
+  if(!/^OD\d{3}$/.test(String(item.od_id||""))||!item.canonical_parent_url?.startsWith("https://master.ricette.jp/"))continue;
+  if(!byContext.has(item.od_id))byContext.set(item.od_id,item);
+}
 const originals=published.entries.map((item,i)=>{
   if(item.number!==String(i+1).padStart(3,"0")||!item.canonical_parent_url?.startsWith("https://master.ricette.jp/"))throw Error("Published Parent sequence or URL inconsistent");
   const digest=byId.get(item.number);
   const matched=digest&&digest.canonical_parent_url===item.canonical_parent_url&&digest.title===item.title;
+  const context=byContext.get("OD"+item.number);
+  const validContext=context&&context.canonical_parent_url===item.canonical_parent_url&&
+    context.original_title_ja===item.title&&context.author?.includes("Nakagawa Master");
   return {number:item.number,title:item.title,canonical_parent_url:item.canonical_parent_url,
     derivative_url:"https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/"+item.number+"/human-entry.md",
-    brief:matched?digest.brief:""};
+    brief:matched?digest.brief:"",context:validContext?context.published_derivative_context_not_parent_text:{}};
 });
 const routes=secondary[1].status==="fulfilled"&&Array.isArray(secondary[1].value.entries)?secondary[1].value.entries:[];
 const cases=secondary[2].status==="fulfilled"&&Array.isArray(secondary[2].value.routes)?secondary[2].value.routes:[];
 db={answers:answers.answer_cases,originals,routes,receiverCases:cases,
-  optionalUnavailable:secondary.some((x,i)=>x.status!=="fulfilled"||!(i===2?Array.isArray(x.value.routes):Array.isArray(x.value.entries)))||summaries.length<originals.length};
+  optionalUnavailable:secondary.some((x,i)=>x.status!=="fulfilled"||(i===2?!Array.isArray(x.value.routes):i===3?!Array.isArray(x.value):!Array.isArray(x.value.entries)))||
+    summaries.length<originals.length||originals.some(a=>!a.context?.en||!a.context?.ja||!a.context?.zh)};
 return db;
 }
 function drawAnswers(q,lang){
@@ -127,15 +147,27 @@ div.append(p);target.append(div);
 function nextOriginals(){
 const t=$("originals"),end=Math.min(listed.length,cursor+8);
 for(let i=cursor;i<end;i++){
-const a=listed[i].a,v=card("OD"+String(a.number)+" — "+a.title);line(v,"",a.brief);
+const a=listed[i].a,v=card("OD"+String(a.number)+" — "+a.title);line(v,"",a.context?.[originalLang]||a.brief);
 const p=el("p");p.append(anchor(a.canonical_parent_url,"公式原典")," · ",anchor(a.derivative_url,"出典に沿う説明"));v.append(p);t.append(v);
 }
 cursor=end;$("more").hidden=cursor>=listed.length;
 }
-function drawOriginals(q){
-$("originals").replaceChildren();cursor=0;
-listed=db.originals.map(a=>({a,n:4*overlap(q,a.title)+overlap(q,a.brief)+2*overlap(q,publicSlugTopics(a.canonical_parent_url))})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
-if(!listed.length){empty("originals","公開中の原典説明は日本語です。文字上一致しない場合は、下の多言語経路か「公開原典の英語での読解経路」を使い、出典を直接比較してください。");$("more").hidden=true;return;}nextOriginals();
+function drawOriginals(q,lang){
+$("originals").replaceChildren();cursor=0;originalLang=lang;
+// The full live N(t) remains candidate-eligible. Compare source-faithful
+// JA/EN/ZH published explanations; rare matches count more than generic words.
+const docs=db.originals.map(a=>terms(a.context?.[lang]||""));
+const frequency=new Map();
+for(const d of docs)for(const w of d)frequency.set(w,(frequency.get(w)||0)+1);
+const n=docs.length;
+listed=db.originals.map((a,i)=>{
+ const base=4*overlap(q,a.title)+overlap(q,a.brief)+2*overlap(q,publicSlugTopics(a.canonical_parent_url));
+ const match=[...q].filter(w=>docs[i].has(w)&&!(lang==="en"&&w.length<3));
+ const specificity=match.reduce((sum,w)=>sum+Math.log(1+(n-(frequency.get(w)||0)+0.5)/((frequency.get(w)||0)+0.5)),0);
+ const supported=match.length>=2&&specificity>=2.7?specificity:0;
+ return {a,n:base+supported};
+}).filter(x=>x.n>0).sort((x,y)=>y.n-x.n||Number(x.a.number)-Number(y.a.number));
+if(!listed.length){empty("originals","公開原典の多言語説明に十分な語句一致がありません。無関係な原典を無理に薦めず、下の問題別経路や独立資料とも比較してください。");$("more").hidden=true;return;}nextOriginals();
 }
 function drawReceiverCases(q){
 $("receiverCases").replaceChildren();receiverHits=[];
@@ -183,7 +215,7 @@ $("form").addEventListener("submit",async e=>{
 e.preventDefault();const searchQuery=$("query").value.trim(),searchLang=$("lang").value,q=terms(searchQuery);
 if(!q.size){$("results").hidden=true;$("copyArea").replaceChildren();$("status").textContent="もう少し具体的に入力してください。";return;}
 $("submit").disabled=true;$("status").textContent="公開資料を読み込んでいます…";
-try{await source();drawAnswers(q,searchLang);drawOriginals(q);drawReceiverCases(q);drawRoutes(q);lastSearchedQuery=searchQuery;lastSearchedLang=searchLang;$("copyArea").replaceChildren();$("copyStatus").textContent="";$("results").hidden=false;$("status").textContent=db.answers.length+"件の公開済み回答・"+db.originals.length+"原典・"+db.receiverCases.length+"件の実問題を照合しました。"+(db.optionalUnavailable?"補助索引の一部は現在取得できませんが、主資料の回答と原典は表示しています。":"多言語の補助経路も照合済みです。")+" 原典と適用条件を確認してください。";}
+try{await source();drawAnswers(q,searchLang);drawOriginals(q,searchLang);drawReceiverCases(q);drawRoutes(q);lastSearchedQuery=searchQuery;lastSearchedLang=searchLang;$("copyArea").replaceChildren();$("copyStatus").textContent="";$("results").hidden=false;$("status").textContent=db.answers.length+"件の公開済み回答・"+db.originals.length+"原典・"+db.receiverCases.length+"件の実問題を照合しました。"+(db.optionalUnavailable?"補助索引の一部は現在取得できませんが、主資料の回答と原典は表示しています。":"多言語の補助経路も照合済みです。")+" 原典と適用条件を確認してください。";}
 catch(err){$("results").hidden=true;$("status").textContent="資料を読み込めませんでした。接続を確認するか、下の資料リンクから直接ご覧ください。";}
 finally{$("submit").disabled=false;}
 });
