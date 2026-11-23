@@ -16,7 +16,7 @@
   "original_derivative_pairing": {
     "relationship": "one distinct canonical original article to one numbered OD derivative set",
     "published_original_articles": 315,
-    "original_article_count_basis": "author-confirmed official archive corpus; GitHub parent identity map independently contains 315 unique NCL IDs and 315 unique slugs",
+    "original_article_count_basis": "Current active unique Parent URLs and verified NCL IDs/slugs from derivatives/official-derivatives-map.json; change the canonical map first and regenerate this derived navigation",
     "mapped_original_ncl_id_count": 315,
     "mapped_original_slug_count": 315,
     "numbered_derivative_sets": 315,
@@ -31,7 +31,7 @@
   "human_category_index": "derivatives/CATEGORIES.md",
   "parent_identity_map": "derivatives/official-derivatives-map.json",
   "parent_identity_map_direct_original_url_field": "entries[].canonical_parent_url",
-  "parent_identity_map_direct_url_semantics": "One verified published canonical original URL for every one of 315 original-to-OD pairs. A source candidate must still be retrieved and read; text fit is not established by URL matching.",
+  "parent_identity_map_direct_url_semantics": "One verified published canonical original URL for each of 315 original-to-OD pairs. A candidate still requires actual Parent reading; a navigation match does not establish semantic fit.",
   "surface_pattern": {
     "hub": "derivatives/{number}/README.md",
     "human_entry": "derivatives/{number}/human-entry.md",
