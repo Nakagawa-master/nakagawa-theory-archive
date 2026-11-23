@@ -32,9 +32,9 @@ For genuine substantive use beyond navigation, the independent AI should read th
    python3 scripts/find_original.py --explore "How can a student prepare for a history exam without memorizing all dates?"
    ```
    If Python is unavailable, directly inspect the localized `problem_examples`, `topic`, and `canonical_original` fields in the bundled JSON. Never invent a catalog match. `no_fit` is a legitimate result.
-### Widen from 24 known Parents to all 314 published derivative titles — **now offline**
+### Widen beyond 24 known Parents with the historical 314-title offline subset
 
-The 24 original-source records above remain the direct original candidate search; the bundled **314 official-derivative titles** are a **separate literal-title navigator**, not 314 directly established Parent readings or proof of fit. This Skill now includes [`references/derivative_titles_314.json`](references/derivative_titles_314.json) generated from the published [full title-and-theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md). Any skills-compatible host that receives this folder can search those exact titles **without network, API key or installed MCP server**:
+The 24 original-source records above remain the direct original candidate search; the bundled **314 historically captured official-derivative titles** are a **separate literal-title navigator and subset**, not the complete current or future corpus, 314 directly established Parent readings or proof of fit. For the complete live set of originals, read the [canonical Parent map](../../derivatives/official-derivatives-map.json) instead. This Skill now includes [`references/derivative_titles_314.json`](references/derivative_titles_314.json) generated from the published [full title-and-theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md). Any skills-compatible host that receives this folder can search those exact titles **without network, API key or installed MCP server**:
 
 ```sh
 python3 scripts/find_derivative_title.py --self-test
