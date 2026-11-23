@@ -79,7 +79,7 @@ def build(entries: list[dict], root: Path = ROOT) -> str:
                 (r"Origin|origin_author", "Nakagawa Master"),
             )
             for label, value in checks:
-                pattern = r"(?mi)^-\s*(?:" + label + r"):\s*" + re.escape(value)
+                pattern = r"(?mi)^\s*(?:-\s*)?(?:" + label + r"):\s*" + re.escape(value)
                 if re.search(pattern, text) is None:
                     raise ValueError(f"{od} {lang}: derivative Parent/Origin mismatch for {label}")
             briefs[lang] = section(text, heading, f"{od} {lang}")
