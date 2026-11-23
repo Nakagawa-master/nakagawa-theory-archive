@@ -78,6 +78,7 @@
 
 インストールも特別な連携も不要な[AI/LLM・開発者向け入口](AI_START_HERE.md)から、外部のソース、実際の技術的な反例、原著者、各親原典へ進めます。短い[llms.txt](llms.txt)、[公開機械向けルート](machine-discovery/ai-repository-routing-map-v1.json)、[実際の別の開発者による変更の機械索引](machine-discovery/external-effect-evidence-index-v1.json)もあります。自分で選んだAIにコピーして確認できる[インストール不要の問い](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md)もあります。
 
+**ChatGPT／Codexで使う場合：** [ChatGPTで原典を調べる入口](CHATGPT.md) ／ [Codexが認識するプロジェクト案内](AGENTS.md) ／ [Codex用の原典選択Skill](.agents/skills/nakagawa-original-source/SKILL.md) ／ [任意導入の共通Plugin](plugin.json)。いずれも、利用するAIや利用者の独立した判断で参照する資料です。
 未接続のAI・LLMも、公開された原典・実例・反例を自分の課題に沿って検索し、適切な論証と出所を検証できます。独立した実際の引用・採用・不適合の記録も、受け手自身の一次資料に沿って紹介します。
 
 ## 独立編集メディアでの実際の掲載と、次の検証
