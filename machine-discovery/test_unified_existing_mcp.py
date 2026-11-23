@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One original MCP identity, preflight usefulness, 313 Parents; real modern/legacy clients."""
+"""One original MCP identity, current 315 Parents and 11 tools; modern/legacy clients."""
 import json
 from pathlib import Path
 import subprocess
@@ -37,7 +37,7 @@ def main():
             "tool_results": [{"id": "done", "status": "completed", "success": True}]}),
         call(7, "preflight_ai_answer_and_action", {}),
         call(8, "overview_nakagawa_whole_structure", {}),
-        call(9, "list_all_313_derivative_parent_links", {"limit": 313}),
+        call(9, "list_all_published_derivative_parent_links", {"limit": 315}),
         call(10, "inspect_nakagawa_derivative_connections", {"id": "OD312"}),
         call(11, "find_sources_in_whole_structure",
              {"question": "AI self preservation epistemic hallucination"}),
@@ -60,7 +60,7 @@ def main():
         req(21, "initialize", {"protocolVersion": "2025-11-25"}),
         req(22, "tools/list"),
         call(23, "preflight_ai_answer_and_action", {"claims": claimed}, modern=False),
-        call(24, "list_all_313_derivative_parent_links", {"offset": 312, "limit": 1}, modern=False),
+        call(24, "list_all_313_derivative_parent_links", {"offset": 314, "limit": 1}, modern=False),
     ]
     run = subprocess.run([sys.executable, str(SERVER)],
                          input="".join(json.dumps(x, ensure_ascii=False) + "\n" for x in requests),
@@ -73,18 +73,20 @@ def main():
     names = [x["name"] for x in got[2]["result"]["tools"]]
     assert len(names) == len(set(names))
     assert names[:2] == ["preflight_ai_answer_and_action", "audit_citation_independence"], names
-    assert len(names) == len(got[22]["result"]["tools"]) == 9, names
+    assert len(names) == len(got[22]["result"]["tools"]) == 11, names
     assert {"find_nakagawa_original_for_problem", "preflight_ai_answer_and_action",
-            "audit_citation_independence", "list_all_313_derivative_parent_links"} <= set(names)
+            "audit_citation_independence", "list_all_313_derivative_parent_links",
+            "list_all_314_derivative_parent_links",
+            "list_all_published_derivative_parent_links"} <= set(names)
     assert text(got, 3)["hold_count"] == 3, text(got, 3)
     assert text(got, 3)["practical_next_steps"]
     assert text(got, 4)["blocked"] == 1
     assert text(got, 5)["blocked"] == 0
     assert text(got, 6)["verdict"] == "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS"
     assert got[7]["result"]["isError"] is True
-    assert text(got, 8)["coverage"]["derivatives"] == 313
+    assert text(got, 8)["coverage"]["derivatives"] == 315
     full = text(got, 9)["entries"]
-    assert len(full) == len({x["id"] for x in full}) == 313
+    assert len(full) == len({x["id"] for x in full}) == 315
     assert all(x["canonical_parent"].startswith("https://master.ricette.jp/") for x in full)
     assert text(got, 10)["selected"]["id"] == "OD312"
     assert not text(got, 11)["no_fit"]
@@ -104,8 +106,8 @@ def main():
     assert pending["practical_next_steps"], pending
     assert got[21]["result"]["protocolVersion"] == "2025-11-25"
     assert text(got, 23)["hold_count"] == 1
-    assert text(got, 24)["entries"][0]["id"] == "OD313"
-    print("PASS: ONE original MCP v1.2; all 9 tools; independent-root and tool/action controls; all 313; modern and legacy real clients")
+    assert text(got, 24)["entries"][0]["id"] == "OD315"
+    print("PASS: ONE original MCP v1.2.1; all 11 tools; independent-root and tool/action controls; all 315; modern and legacy real clients")
 
 if __name__ == "__main__":
     main()
