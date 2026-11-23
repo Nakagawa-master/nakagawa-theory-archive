@@ -36,7 +36,7 @@ def main():
     command = ROOT / "commands" / "answer-check.md"
     assert command.is_file()
     command_text = command.read_text(encoding="utf-8")
-    assert command_text.startswith("---\\n") and "\\n---\\n" in command_text[4:]
+    assert command_text.startswith("---\n") and "\n---\n" in command_text[4:]
     assert command_text.count("{{args}}") == 1
     assert "preflight_ai_answer_and_action" in command_text
     assert "Do not execute the planned external operation" in command_text
