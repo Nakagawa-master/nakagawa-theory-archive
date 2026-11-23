@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は84件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は85件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -20,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**84の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**85の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1945,9 +1945,22 @@ AIに長時間作業を任せたのに、完成した答えだけがスマート
 
 **独立開発者 @wenshao は[この権限上の区別を明示的に認め](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7066560096)、[自身のコードとテストを変更](https://github.com/QwenLM/qwen-code/commit/7c56a7eb955f1d3b209d9e8987a1061dc52d8449)しました。** AIが補完したコマンドは最初の送信では編集できる入力欄へ入るだけで、次の明示的な送信で初めて実行されます。一方、普通の文章の提案や人間が自分で完全に入力したコマンドは、従来の操作のままです。
 
-作者はさらに[実際のデーモン・モデル・ブラウザを使い、AIの提案した `/help` が初回送信では実行されず、二度目に実行されることを検証し、マスター本人へ報告](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7071172591)しました。検証はPixel 7相当のChromium模擬環境であり、実際のiPhoneでの検証ではありません。**2026年11月22日、別の人間レビュアー[@qqqys](https://github.com/QwenLM/qwen-code/pull/17918#pullrequestreview-6011252809)と[@yiliang114](https://github.com/QwenLM/qwen-code/pull/17918#pullrequestreview-6011364128)による承認を経て、[PR #17918は上流本線へ正式にマージ](https://github.com/QwenLM/qwen-code/commit/f89c4b4d0704e4dd7691e2ce59b0cf3af91785da)されました（08:58:55 UTC）。[@wenshaoは直前にもマスター本人宛てに権限境界の実装・実モデル検証を報告](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7076253217)しています。狭幅画面で初回タップが失われる別の問題も[作者が独立に修正・検証](https://github.com/QwenLM/qwen-code/pull/17918#discussion_r4657269550)しました。後者のレイアウト修正をマスターの新たな理論提案の成果とは扱いません。実装とテストの著作はQwen開発者のものです。マージ後の正式配布版への収録、実利用者が改善を受けた事実、別の人間によるマスター本人の自発的な紹介は未確認です。
+作者はさらに[実際のデーモン・モデル・ブラウザを使い、AIの提案した `/help` が初回送信では実行されず、二度目に実行されることを検証し、マスター本人へ報告](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7071172591)しました。検証はPixel 7相当のChromium模擬環境であり、実際のiPhoneでの検証ではありません。**2026年11月22日、別の人間レビュアー[@qqqys](https://github.com/QwenLM/qwen-code/pull/17918#pullrequestreview-6011252809)と[@yiliang114](https://github.com/QwenLM/qwen-code/pull/17918#pullrequestreview-6011364128)による承認を経て、[PR #17918は上流本線へ正式にマージ](https://github.com/QwenLM/qwen-code/commit/f89c4b4d0704e4dd7691e2ce59b0cf3af91785da)されました（08:58:55 UTC）。[@wenshaoは直前にもマスター本人宛てに権限境界の実装・実モデル検証を報告](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7076253217)しています。狭幅画面で初回タップが失われる別の問題も[作者が独立に修正・検証](https://github.com/QwenLM/qwen-code/pull/17918#discussion_r4657269550)しました。後者のレイアウト修正をマスターの新たな理論提案の成果とは扱いません。実装とテストの著作はQwen開発者のものです。2026年11月22日公開の[Qwen Code公式リリースv0.28.4](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4)にはこのPRが変更一覧へ掲載され、リリースタグも上記マージコミットを含むことを照合しました。修正は正式配布版への収録まで進みました。実利用者の改善結果や別の人によるマスター本人への自発的な紹介は、まだ確認されていません。
 
 この区別を広い構造から考える入口は、中川マスター自身の[中川式 接続プロトコル標準論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)と[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)です。これらは原著の参照先であり、開発者が原典を直接読んだと断定するものではありません。
+
+## 85. Qwen Code｜同じ会話でも前の処理の失敗を今の処理へ誤帰属させない設計へ
+
+AIチャットで停止を押した後、結果が遅れている間に別のターンが始まったらどうなるでしょうか。古いターンの停止失敗を、今動いているターンの失敗として表示してよいのでしょうか。**同じ会話であることと、操作対象が同じであることは違います。**
+
+[Qwen Code PR #18091](https://github.com/QwenLM/qwen-code/pull/18091)の開発中のChatSurfaceは、停止結果の警告をセッション単位で判断していました。[中川マスターは現行コードと既存テストを読み、同一セッションでも古いターンT1の遅延結果と新しいターンT2は別の作用対象だと提案](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077764813)。これは既存の別セッション間の切替テストでは扱われていない、独立した設計前提の問題です。
+
+**独立開発者 @wenshao は[この反例が現行実装に当てはまることを自ら確認](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077812706)し、[マスター本人宛てに修正を明示](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078123649)、[コードと回帰テストを変更](https://github.com/QwenLM/qwen-code/commit/f336117d43bbd766edfefbd6f62b32076e7a98af)しました。** 変更後はactiveTurnIdと停止要求時のtarget.turnIdを照合し、T1の遅延失敗をT2に誤表示せず、対象が今も同じターンなら警告を表示します。開発者は関連10ファイルの289テスト成功と型チェック成功を報告しています。
+
+**現在は独立開発者による設計採用・実装から、Qwen Code本線への正式マージまで到達しました。** 開発者自身のA→B→A再接続検証で、一度は真正な停止エラーが消える回帰が見つかりましたが、[独立開発者 @wenshao が`dc24ed25`で修正](https://github.com/QwenLM/qwen-code/commit/dc24ed250de7d531a200b738af152b10315cfa27)し、[三条件の再検証を報告](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7079997766)。関連10ファイル293テスト成功は開発者の報告です。[PR #18091は2026年11月22日14:12:46 UTCに本線へマージ](https://github.com/QwenLM/qwen-code/pull/18091)され、[統合コミット`65308c97`](https://github.com/QwenLM/qwen-code/commit/65308c972fcfa95a3078adde578af996609fac63)で確認できます。**本線マージと、当該変更を含む正式リリース・実際のChatSurfaceへの接続・利用者本人の効果は別の段階です。** 2026年11月22日現在、後三者は未確認です。コードとテストの著作はQwen開発者に帰属します.
+
+この因果区別をさらに考える入口は、中川マスターの[中川式 接続プロトコル標準論・人間向け要約](derivatives/069/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）です。開発者が原典そのものを読んだという主張ではありません。
+
 
 ## 公開された成果と、原典へ戻る道筋
 
