@@ -18,6 +18,8 @@ def main():
     index = counts.MACHINE_INDEX.read_text(encoding="utf-8")
     assert counts.sync_navigation(nav, n, last) == nav
     assert counts.sync_machine_index(index, entries) == index
+    categories = counts.CATEGORIES.read_text(encoding="utf-8")
+    assert counts.sync_categories(categories, entries) == categories
 
     # In memory only: no new "official" post, derivative or Git commit invented.
     candidate = copy.deepcopy(entries[-1])
@@ -37,6 +39,12 @@ def main():
     assert f"OD001–{new_id}の各9面" in follow_nav
     assert f"公式派生物{n + 1}件" in follow_nav
 
+    follow_categories = counts.sync_categories(categories, simulated)
+    assert f"OD001–{new_id}を" in follow_categories
+    assert f"- 割当: {n + 1}件" in follow_categories
+    assert f"[{new_id}]({last + 1:03d}/)" in follow_categories
+    assert f"**{n + 1}件へ迷わず到達" in follow_categories
+    assert "すべての公開原典はこのページと" in follow_categories
     follow_index = json.loads(counts.sync_machine_index(index, simulated))
     assert follow_index["coverage"]["expected_count"] == n + 1
     assert follow_index["coverage"]["indexed_count"] == n + 1
@@ -67,7 +75,7 @@ def main():
     else:
         raise AssertionError("Missing navigation section went unnoticed")
 
-    print(f"PASS: one verified source: {n} published Parents; synthetic {n+1} propagates to navigation, all machine counts and category coverage, with zero file writes")
+    print(f"PASS: one verified source: {n} published Parents; synthetic {n+1} propagates to full and thematic navigation, all machine counts and category coverage, with zero file writes")
 
 
 if __name__ == "__main__":
