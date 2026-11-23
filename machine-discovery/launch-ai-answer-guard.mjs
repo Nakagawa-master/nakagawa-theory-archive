@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Minimal, dependency-free Qwen Code extension launcher for the SAME local
  * read-only Python MCP. Qwen itself requires Node; Python 3 may be registered
