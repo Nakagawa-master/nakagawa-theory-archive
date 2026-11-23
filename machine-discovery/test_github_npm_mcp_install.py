@@ -123,7 +123,7 @@ def main():
         unrelated = item(responses, 4)
         assert unrelated["no_fit"] and not unrelated["matching_routes"]
         latest = item(responses, 5)
-        assert latest["coverage"]["derivatives"] == count if "coverage" in latest else True
+        assert latest["total"] == count
         assert len(latest["entries"]) == 1
         assert latest["entries"][0]["id"] == f"OD{int(last['number']):03d}"
         assert latest["entries"][0]["canonical_parent"] == last["canonical_parent_url"]
