@@ -5,6 +5,7 @@ on:
     paths:
       - derivatives/official-derivatives-map.json
       - derivatives/README.md
+      - derivatives/CATEGORIES.md
       - machine-discovery/official-derivatives-index-v1.json
       - README.md
       - human-translation/who-is-nakagawa-master.md
@@ -17,6 +18,7 @@ on:
     paths:
       - derivatives/official-derivatives-map.json
       - derivatives/README.md
+      - derivatives/CATEGORIES.md
       - machine-discovery/official-derivatives-index-v1.json
       - scripts/test_sync_public_original_count.py
       - REAL_WORLD_IMPACT.md
@@ -68,10 +70,10 @@ jobs:
         run: python scripts/validate_impact_index.py --sync
       - name: Publish only numeric count changes to reader pages
         run: |
-          if ! git diff --quiet -- README.md derivatives/README.md machine-discovery/official-derivatives-index-v1.json human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt; then
+          if ! git diff --quiet -- README.md derivatives/README.md derivatives/CATEGORIES.md machine-discovery/official-derivatives-index-v1.json human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md derivatives/README.md machine-discovery/official-derivatives-index-v1.json human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt
+            git add README.md derivatives/README.md derivatives/CATEGORIES.md machine-discovery/official-derivatives-index-v1.json human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt
             git commit -m "docs: sync source-derived original and public-impact counts"
             git push origin HEAD:main
           fi
