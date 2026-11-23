@@ -30,6 +30,8 @@ def summary_heading(name: str, lang: str) -> str:
     # The early sources' substantive first section is sometimes named
     # "Core meaning"/"核心含义", rather than "Summary".
     aliases = [name]
+    if name == "15秒説明" and lang == "ja":
+        aliases.append("この論文が問うこと")
     if name == "Summary" and lang == "en":
         aliases.append("Core meaning")
     elif name == "Summary" and lang == "zh":
