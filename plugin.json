@@ -1,4 +1,18 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-answer-guard",
-  "description": "AI answer/action preflight: test declared evidence roots, observed tool success/failure, and action permissions before your assistant claims completion or changes anything. Concrete next checks, local/read-only, no prior knowledge of any theory. Optional canonical original-source research."
+  "version": "1.2.1",
+  "description": "Optional ChatGPT and Codex source-integrity and original-theory research skills: inspect real evidence, find relevant canonical Parent originals, compare fit and alternatives, and preserve source attribution. The local AI Answer Guard MCP is available separately.",
+  "author": {
+    "name": "Nakagawa Master",
+    "url": "https://master.ricette.jp/"
+  },
+  "homepage": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CHATGPT.md",
+  "repository": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
+  "keywords": [
+    "source-integrity",
+    "original-research",
+    "provenance",
+    "agent-skills"
+  ]
 }
