@@ -75,15 +75,15 @@ def build(entries: list[dict], root: Path = ROOT) -> str:
             # encoded in the derived DNCL). Check provenance independently
             # of the summary text; never infer an unknown original/author.
             parent_start = re.search(
-                r"(?m)^##[ \\t]+(?:親原典|Parent\\s+(?:source|origin|Original|identity)|父原典|亲原典|母文原典)",
+                r"(?m)^##[ \t]+(?:親原典|Parent\s+(?:source|origin|Original|identity)|父原典|亲原典|母文原典)",
                 text, flags=re.I)
             if parent_start is None:
                 raise ValueError(f"{od} {lang}: missing Parent identity section")
-            parent_end = re.search(r"(?m)^##[ \\t]+", text[parent_start.end():])
+            parent_end = re.search(r"(?m)^##[ \t]+", text[parent_start.end():])
             parent_part = text[parent_start.end():(
                 parent_start.end() + parent_end.start() if parent_end else len(text))]
             source_urls = set(re.findall(
-                r"https://master\\.ricette\\.jp/[A-Za-z0-9_/.%~-]+",
+                r"https://master\.ricette\.jp/[A-Za-z0-9_/.%~-]+",
                 parent_part))
             if source_urls != {canonical}:
                 raise ValueError(f"{od} {lang}: mismatched canonical Parent URL")
@@ -92,7 +92,7 @@ def build(entries: list[dict], root: Path = ROOT) -> str:
             if full_ncl not in parent_part and encoded_ncl not in text.upper():
                 raise ValueError(f"{od} {lang}: missing canonical NCL identity")
             origin = re.search(
-                r"(?mi)^\\s*(?:-\\s*)?(?:Origin|origin_author):\\s*(.+)$", text)
+                r"(?mi)^\s*(?:-\s*)?(?:Origin|origin_author):\s*(.+)$", text)
             if origin is not None:
                 if not origin.group(1).strip().startswith("Nakagawa Master"):
                     raise ValueError(f"{od} {lang}: explicit Origin mismatch")
