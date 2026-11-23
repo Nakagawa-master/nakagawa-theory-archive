@@ -135,7 +135,7 @@ def sync_navigation(body: str, count: int, last: int) -> str:
     )
     body = replace_one(
         r"^(中川マスター公式理論アーカイブの\*\*公式派生物)\d+(件\*\*へ)",
-        rf"\g<1>{count}\g<2>", body, "navigation introduction",
+        f"中川マスター公式理論アーカイブの**公式派生物{count}件**へ", body, "navigation introduction",
     )
     body = replace_one(
         r"^- 対象範囲: " + r"\x60OD001\x60–\x60OD\d+\x60$",
