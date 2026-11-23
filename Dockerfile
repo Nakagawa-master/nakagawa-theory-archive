@@ -1,5 +1,5 @@
 # Source-run image for third-party MCP introspection of current checked-out source.
-# Source v1.2.1 differs from the immutable last published v1.2.0 package; never conflate them.
+# This source-built image is distinct from the versioned release MCPB; verify each separately.
 # No remote model calls, downloaded theories, credentials, or separate MCP service.
 FROM python:3.12-slim
 
