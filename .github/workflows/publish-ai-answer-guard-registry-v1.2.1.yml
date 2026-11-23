@@ -1,0 +1,96 @@
+# One-shot version-pinned MCP Registry publication.
+# This runs only on a main-branch change to this workflow file.
+# Remove this workflow after verifying the publication result.
+name: Publish AI Answer Guard v1.2.1 to MCP Registry
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-ai-answer-guard-registry-v1.2.1.yml
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    if: github.repository == 'Nakagawa-master/nakagawa-theory-archive' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      MCP_PUBLISHER_VERSION: v1.8.1
+
+    steps:
+      - name: Checkout canonical public source
+        uses: actions/checkout@v5
+
+      - name: Verify pinned registry identity and immutable asset declaration
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          record = json.loads(Path('server.json').read_text(encoding='utf-8'))
+          expected_name = 'io.github.Nakagawa-master/ai-answer-guard'
+          expected_url = ('https://github.com/Nakagawa-master/nakagawa-theory-archive/'
+                          'releases/download/mcp-router-v1.2.1/ai-answer-guard-1.2.1.mcpb')
+          expected_sha = '572fda06bf6fca39c391a4facfa549d2c74937cb1e9b04dfb1d3b1e05d27e073'
+          assert record['name'] == expected_name, 'Registry identity changed; abort'
+          assert record['version'] == '1.2.1', 'Version changed; abort'
+          assert record['repository']['url'] == 'https://github.com/Nakagawa-master/nakagawa-theory-archive'
+          assert len(record['description']) <= 100
+          assert len(record.get('packages', [])) == 1, 'Package count changed; abort'
+          package = record['packages'][0]
+          assert package['registryType'] == 'mcpb'
+          assert package['transport']['type'] == 'stdio'
+          assert package['identifier'] == expected_url
+          assert package['fileSha256'] == expected_sha
+          print('Pinned publisher metadata validated: one GitHub MCPB, v1.2.1')
+          PY
+
+      - name: Verify exact already released bundle bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 3 \
+            --output /tmp/ai-answer-guard-1.2.1.mcpb \
+            https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.1/ai-answer-guard-1.2.1.mcpb
+          printf '%s  %s\n' \
+            572fda06bf6fca39c391a4facfa549d2c74937cb1e9b04dfb1d3b1e05d27e073 \
+            /tmp/ai-answer-guard-1.2.1.mcpb | sha256sum --check --status
+
+      - name: Install Cosign for publisher-signature verification
+        uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6
+
+      - name: Download and verify pinned official publisher
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="https://github.com/modelcontextprotocol/registry/releases/download/${MCP_PUBLISHER_VERSION}"
+          archive="mcp-publisher_linux_amd64.tar.gz"
+          curl --fail --location --silent --show-error --output "$archive" "$base/$archive"
+          curl --fail --location --silent --show-error --output "$archive.sigstore.json" "$base/$archive.sigstore.json"
+          cosign verify-blob \
+            --bundle "$archive.sigstore.json" \
+            --certificate-identity "https://github.com/modelcontextprotocol/registry/.github/workflows/release.yml@refs/tags/${MCP_PUBLISHER_VERSION}" \
+            --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
+            "$archive"
+          tar xzf "$archive" mcp-publisher
+          chmod +x ./mcp-publisher
+          rm -f "$archive" "$archive.sigstore.json"
+
+      - name: Authenticate with scoped GitHub OIDC (no PAT or persistent secret)
+        shell: bash
+        run: ./mcp-publisher login github-oidc
+
+      - name: Validate existing canonical server.json
+        shell: bash
+        run: ./mcp-publisher validate
+
+      - name: Publish only the pinned v1.2.1 registry metadata
+        shell: bash
+        run: ./mcp-publisher publish
