@@ -145,6 +145,34 @@ def verify() -> tuple[int, int, int]:
             'const routes=secondary[1].status==="fulfilled"' in explorer and
             'optionalUnavailable:secondary.some(' in explorer,
             "Question explorer must retain optional routes when available and not block primary originals on a missing optional source")
+    # Anonymous problem-first JA/EN/ZH discovery covers the LIVE entire Parent set,
+    # instead of requiring prior knowledge of the author or 24/26 curated titles.
+    require("published-original-contexts-v1.jsonl" in explorer and
+            'const contextRows=secondary[3].status==="fulfilled"' in explorer and
+            'const validContext=context&&context.canonical_parent_url===item.canonical_parent_url' in explorer and
+            "drawOriginals(q,searchLang)" in explorer and
+            "specificity>=2.7" in explorer,
+            "Full-corpus multilingual/no-name retrieval or source-fidelity gate missing")
+    contexts_path = machine / "published-original-contexts-v1.jsonl"
+    require(contexts_path.is_file(), "Published original-context feed missing")
+    context_rows = [json.loads(line) for line in contexts_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    by_od = {item["od_id"]: item for item in context_rows}
+    require(len(context_rows) == len(by_od) == len(paired),
+            "Trilingual published source contexts must match LIVE registered canonical Parents one-to-one")
+    for parent_row in paired:
+        od = parent_row["number"]
+        item = by_od.get("OD" + od)
+        require(item is not None and
+                item.get("canonical_parent_url") == parent_row["canonical_parent_url"] and
+                item.get("original_title_ja") == parent_row["title"],
+                f"Trilingual public source context missing or misbound: OD{od}")
+        require(item.get("author", "").startswith("Nakagawa Master"),
+                f"Missing real author source attribution for OD{od}")
+        ctx = item.get("published_derivative_context_not_parent_text", {})
+        require(all(isinstance(ctx.get(lang), str) and ctx[lang].strip() for lang in ("ja", "en", "zh")),
+                f"Incomplete JA/EN/ZH published derivative source contexts: OD{od}")
+    require("## 名前を知らずに探す人へ" in (ROOT / "README.md").read_text(encoding="utf-8"),
+            "Top repository must expose actual ordinary no-author-name problem queries")
     require("24の実問題" not in explorer and "24-problem" not in explorer,
             "Question explorer has stale 24-item user/AI-facing problem counts")
     # Preserve every displayed answer's canonical Parent(s) in optional AI copy.
