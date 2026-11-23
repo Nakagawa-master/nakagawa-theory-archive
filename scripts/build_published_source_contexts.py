@@ -128,7 +128,7 @@ def check_synthetic_next() -> None:
             folder.mkdir(parents=True)
             for lang, (filename, heading) in PUBLISHED_FACES.items():
                 content = (
-                    f"# Test source context\n- Parent URL: {parent}\n"
+                    f"# Test source context\n## Parent source\n- Parent URL: {parent}\n"
                     f"- Parent NCL-ID: {ncl}\n- Origin: Nakagawa Master\n"
                     f"## {heading}\n\n"
                     f"Source-backed {lang} fixture paragraph with explicit condition for "
