@@ -70,34 +70,36 @@ def build(entries: list[dict], root: Path = ROOT) -> str:
         for lang, (name, heading) in PUBLISHED_FACES.items():
             rel = f"{folder}/{name}"
             text = (root / rel).read_text(encoding="utf-8")
-            # Published older faces range from labelled keys to a bare
-            # Parent-source block with its exact URL and NCL-ID (sometimes
-            # encoded in the derived DNCL). Check provenance independently
-            # of the summary text; never infer an unknown original/author.
-            parent_start = re.search(
-                r"(?m)^##[ \t]+(?:親原典|Parent\s+(?:source|origin|Original|identity|原典)|父原典|亲原典|母文原典)",
-                text, flags=re.I)
-            if parent_start is None:
-                raise ValueError(f"{od} {lang}: missing Parent identity section")
-            parent_end = re.search(r"(?m)^##[ \t]+", text[parent_start.end():])
-            parent_part = text[parent_start.end():(
-                parent_start.end() + parent_end.start() if parent_end else len(text))]
+            # Earlier published derivatives use various Parent section
+            # headings (or no heading at all). Validate ONLY the identity
+            # header before the first published summary, never a later
+            # reference list, or a URL echoed in generated output.
+            start_summary = re.search(
+                r"(?m)^##[ \t]+(?:[0-9]+\.[ \t]+)?" +
+                re.escape(heading) + r"(?:[ \t]*$|[ \t]*[｜|].*$)", text)
+            if start_summary is None:
+                raise ValueError(f"{od} {lang}: missing source summary")
+            identity_text = text[:start_summary.start()]
             source_urls = set(re.findall(
                 r"https://master\.ricette\.jp/[A-Za-z0-9_/.%~-]+",
-                parent_part))
+                identity_text))
             if source_urls != {canonical}:
                 raise ValueError(f"{od} {lang}: mismatched canonical Parent URL")
             full_ncl = row["ncl_id"]
             encoded_ncl = full_ncl.replace("NCL-α-", "NCL-ALPHA-").upper()
-            if full_ncl not in parent_part and encoded_ncl not in text.upper():
-                raise ValueError(f"{od} {lang}: missing canonical NCL identity")
+            if full_ncl not in identity_text and encoded_ncl not in identity_text.upper():
+                raise ValueError(f"{od} {lang}: missing original NCL identity")
+            # Prefer the explicit author identity when present. The oldest
+            # source records can omit the author field but identify it in their
+            # actual published description; never invent an author mention.
             origin = re.search(
-                r"(?mi)^\s*(?:-\s*)?(?:Origin|origin_author):\s*(.+)$", text)
+                r"(?mi)^\s*(?:-\s*)?(?:Origin|origin_author):\s*(.+)$",
+                identity_text)
             if origin is not None:
                 if not origin.group(1).strip().startswith("Nakagawa Master"):
                     raise ValueError(f"{od} {lang}: explicit Origin mismatch")
-            elif "Nakagawa Master" not in text:
-                raise ValueError(f"{od} {lang}: absent source-authored person Origin")
+            elif "Nakagawa Master" not in text and "中川マスター" not in text:
+                raise ValueError(f"{od} {lang}: source does not name original author")
             briefs[lang] = section(text, heading, f"{od} {lang}")
             links[lang] = GITHUB_BASE + rel
         record = {
