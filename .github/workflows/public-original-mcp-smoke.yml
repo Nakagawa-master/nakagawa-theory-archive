@@ -13,6 +13,7 @@ on:
       - 'machine-discovery/test_unified_existing_mcp.py'
       - 'machine-discovery/test_qwen_extension_manifest.py'
       - 'machine-discovery/test_github_npm_mcp_install.py'
+      - 'machine-discovery/test_live_github_vcs_install.py'
       - 'package.json'
       - 'machine-discovery/launch-ai-answer-guard.mjs'
       - 'qwen-extension.json'
@@ -70,6 +71,7 @@ on:
       - 'machine-discovery/test_unified_existing_mcp.py'
       - 'machine-discovery/test_qwen_extension_manifest.py'
       - 'machine-discovery/test_github_npm_mcp_install.py'
+      - 'machine-discovery/test_live_github_vcs_install.py'
       - 'package.json'
       - 'machine-discovery/launch-ai-answer-guard.mjs'
       - 'qwen-extension.json'
@@ -137,6 +139,11 @@ jobs:
         run: python3 machine-discovery/test_qwen_extension_manifest.py
       - name: Real offline GitHub-VCS npm install and MCP tool calls (no model/API)
         run: python3 machine-discovery/test_github_npm_mcp_install.py
+      - name: Fetch public GitHub VCS package with npm and call real MCP tools
+        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          PUBLIC_GITHUB_SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python3 machine-discovery/test_live_github_vcs_install.py
       - name: Persistent all-project Qwen/Codex guard-rule installation and non-destructive rollback
         run: python3 machine-discovery/test_install_ai_answer_guard.py
       - name: Whole theory system -- current complete Parent links and real MCP clients
