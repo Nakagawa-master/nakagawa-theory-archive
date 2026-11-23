@@ -1,0 +1,36 @@
+{
+  "name": "@nakagawa-master/ai-answer-guard",
+  "version": "1.2.1",
+  "private": true,
+  "description": "Locally runnable, read-only AI Answer Guard MCP from its GitHub source; complete growing original-source pointers",
+  "type": "module",
+  "bin": {
+    "ai-answer-guard": "machine-discovery/launch-ai-answer-guard.mjs"
+  },
+  "files": [
+    "machine-discovery/nakagawa-theory-mcp.py",
+    "machine-discovery/nakagawa-whole-structure-mcp.py",
+    "machine-discovery/evidence-integrity-mcp.py",
+    "machine-discovery/evidence-root-check.py",
+    "machine-discovery/launch-ai-answer-guard.mjs",
+    "machine-discovery/quick-route-index-v1.json",
+    "machine-discovery/problem-to-theory-origin-index-v1.json",
+    "derivatives/official-derivatives-map.json",
+    "derivatives/*/README.md",
+    "derivatives/*/human-entry.md",
+    "derivatives/*/ai-index.md",
+    "derivatives/*/en-ai-index.md",
+    "derivatives/*/zh-ai-index.md",
+    "human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md",
+    "skills/nakagawa-originals/references/structural_bridges.json",
+    "metadata/person-name-policy-v1.json",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test:mcp": "python3 machine-discovery/test_github_npm_mcp_install.py"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}
