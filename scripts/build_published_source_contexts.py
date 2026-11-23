@@ -41,7 +41,7 @@ def section(text: str, name: str, identity: str) -> str:
     paragraphs = [re.sub(r"\s+", " ", s).strip()
                   for s in chunks if s.strip() and not s.lstrip().startswith("<!--")]
     excerpt = " ".join(paragraphs[:2])
-    if not (32 <= len(excerpt) <= 2400):
+    if not (32 <= len(excerpt) <= 16000):
         raise ValueError(f"{identity}: unsafe or missing published short summary")
     return excerpt
 
