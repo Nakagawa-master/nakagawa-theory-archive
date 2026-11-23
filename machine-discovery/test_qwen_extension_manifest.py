@@ -29,6 +29,19 @@ def main():
     assert qwen_cfg["args"] == ["${extensionPath}${/}machine-discovery${/}launch-ai-answer-guard.mjs"]
     qwen_path = qwen_cfg["args"][0].replace("${extensionPath}", str(ROOT)).replace("${/}", "/")
     assert Path(qwen_path).resolve() == launcher.resolve()
+    # A native Qwen extension auto-discovers Markdown commands/ by default.
+    # This opt-in first-use route calls the SAME existing read-only MCP; it must
+    # not treat missing receipts, unverified permissions or absent tools as success.
+    assert qwen.get("commands", "commands") == "commands"
+    command = ROOT / "commands" / "answer-check.md"
+    assert command.is_file()
+    command_text = command.read_text(encoding="utf-8")
+    assert command_text.startswith("---\\n") and "\\n---\\n" in command_text[4:]
+    assert command_text.count("{{args}}") == 1
+    assert "preflight_ai_answer_and_action" in command_text
+    assert "Do not execute the planned external operation" in command_text
+    assert "no concrete observation" in command_text
+    assert "!{" not in command_text, "No shell injection/execution in first-use command"
     gemini_cfg = gemini["mcpServers"]["ai-answer-guard"]
     assert gemini_cfg["command"] == "python3"
     assert gemini_cfg["cwd"] == "${extensionPath}"
@@ -55,6 +68,22 @@ def main():
          "params": {"_meta": {
              "io.modelcontextprotocol/protocolVersion": "2026-07-28",
              "io.modelcontextprotocol/clientCapabilities": {}}}},
+        # Two real read-only MCP calls, matching the custom command's everyday
+        # first-use scenario; not a simulated Qwen model or human installation.
+        {"jsonrpc": "2.0", "id": 3, "method": "tools/call",
+         "params": {"_meta": {
+             "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+             "io.modelcontextprotocol/clientCapabilities": {}},
+             "name": "preflight_ai_answer_and_action",
+             "arguments": {"tool_results": [
+                 {"id": "send-failed", "status": "failed", "success": False}]}}},
+        {"jsonrpc": "2.0", "id": 4, "method": "tools/call",
+         "params": {"_meta": {
+             "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+             "io.modelcontextprotocol/clientCapabilities": {}},
+             "name": "preflight_ai_answer_and_action",
+             "arguments": {"tool_results": [
+                 {"id": "send-complete", "status": "completed", "success": True}]}}},
     ]
     node = shutil.which("node")
     assert node, "Qwen extension launcher needs the Node runtime required by Qwen Code"
@@ -95,6 +124,11 @@ def main():
                if (obj := json.loads(line)).get("id") is not None}
     assert replies[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "ai-answer-guard"
     assert len(replies[2]["result"]["tools"]) == 11
+    failed = json.loads(replies[3]["result"]["content"][0]["text"])
+    completed = json.loads(replies[4]["result"]["content"][0]["text"])
+    assert failed["verdict"] == "RECHECK_BEFORE_USE" and failed["hold_count"] == 1, failed
+    assert completed["verdict"] == "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS"
+    assert completed["hold_count"] == 0, completed
     assert [tool["name"] for tool in replies[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     assert "list_all_published_derivative_parent_links" in {
         tool["name"] for tool in replies[2]["result"]["tools"]}
@@ -102,7 +136,7 @@ def main():
         tool["name"] for tool in replies[2]["result"]["tools"]}
     assert "list_all_314_derivative_parent_links" in {
         tool["name"] for tool in replies[2]["result"]["tools"]}
-    print("PASS: real Qwen Node launcher and Python fallback, no stray stdout; Gemini/Antigravity same 11 tools and full 315 originals")
+    print("PASS: Qwen first-use command and real failed/completed MCP receipt calls; Node/Python fallback, no stray stdout; same 11 tools and 315 originals")
 
 if __name__ == "__main__":
     main()
