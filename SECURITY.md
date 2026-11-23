@@ -7,7 +7,7 @@ This repository publishes optional, **locally run** Nakagawa Master original-sou
 | Code / bundle | Security-reporting status |
 | --- | --- |
 | Current `main` source for the original-source MCP and answer-integrity tools | Accepting reproducible security reports |
-| Current published `mcp-router-v1.2.0` bundle | Accepting reproducible security reports |
+| Current published [`mcp-router-v1.2.1`](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.2.1) bundle | Accepting reproducible security reports |
 | Earlier release bundles | Historical; reproduce against current source when possible. No maintenance promise for superseded bundles |
 
 The current release tag is immutable; fixes to source `main` do **not** automatically update a previously downloaded bundle.
