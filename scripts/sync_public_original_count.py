@@ -40,7 +40,8 @@ INLINE_FIELDS = {
 }
 
 
-def get_count_and_last() -> tuple[int, int]:
+def get_entries() -> list[dict]:
+    """Load one verified live set; never infer published originals from cache filenames."""
     entries = json.loads(MAP.read_text(encoding="utf-8"))["entries"]
     numbers = sorted(int(row["number"]) for row in entries)
     if not numbers or numbers != list(range(1, len(entries) + 1)):
@@ -48,10 +49,16 @@ def get_count_and_last() -> tuple[int, int]:
     for entry in entries:
         if entry.get("status") != "active" or not entry.get("canonical_parent_url"):
             raise ValueError("Map includes inactive original or lacks a canonical Parent URL")
-    parent_urls = [row["canonical_parent_url"] for row in entries]
-    if len(parent_urls) != len(set(parent_urls)):
-        raise ValueError("Official Parent map contains duplicate canonical URLs")
-    return len(entries), numbers[-1]
+    for key in ("canonical_parent_url", "ncl_id", "origin_slug"):
+        values = [row.get(key) for row in entries]
+        if not all(values) or len(values) != len(set(values)):
+            raise ValueError(f"Official Parent map contains missing or duplicate {key}")
+    return sorted(entries, key=lambda row: int(row["number"]))
+
+
+def get_count_and_last() -> tuple[int, int]:
+    entries = get_entries()
+    return len(entries), int(entries[-1]["number"])
 
 
 def generated(count: int, last: int, derivative_link: str) -> str:
@@ -90,19 +97,146 @@ def update_inline_numbers(body: str, path: Path, count: int) -> str:
     return body
 
 
+NAVIGATION = ROOT / "derivatives" / "README.md"
+MACHINE_INDEX = ROOT / "machine-discovery" / "official-derivatives-index-v1.json"
+FACES = (
+    "README.md", "human-entry.md", "en-human-entry.md",
+    "zh-human-entry.md", "faq.md", "ai-index.md",
+    "en-ai-index.md", "zh-ai-index.md", "derivative-ledger.md",
+)
+
+
+def replace_one(pattern: str, replacement: str, body: str, label: str) -> str:
+    after, hits = re.subn(pattern, lambda _: replacement, body, count=1, flags=re.MULTILINE)
+    if hits != 1:
+        raise ValueError(f"Missing unique approved navigation field: {label}")
+    return after
+
+
+def navigation_groups(count: int) -> str:
+    """Generate only directory navigation; real Parent contents remain untouched."""
+    groups = []
+    for start in range(1, count + 1, 25):
+        stop = min(start + 24, count)
+        rows = []
+        for i in range(start, stop + 1, 5):
+            rows.append(" · ".join(
+                f"[OD{x:03d}]({x:03d}/)" for x in range(i, min(i + 4, stop) + 1)
+            ))
+        groups.append(f"### OD{start:03d}–OD{stop:03d}\n\n" + "\n".join(rows))
+    return "\n\n".join(groups)
+
+
+def sync_navigation(body: str, count: int, last: int) -> str:
+    body = replace_one(
+        r"^# 公式派生物｜OD001–OD\d+ 全件入口$",
+        f"# 公式派生物｜OD001–OD{last:03d} 全件入口",
+        body, "navigation heading",
+    )
+    body = replace_one(
+        r"^(中川マスター公式理論アーカイブの\*\*公式派生物)\d+(件\*\*へ)",
+        rf"\g<1>{count}\g<2>", body, "navigation introduction",
+    )
+    body = replace_one(
+        r"^- 対象範囲: " + r"\x60OD001\x60–\x60OD\d+\x60$",
+        f"- 対象範囲: " + "\x60" + f"OD001{chr(96)}–{chr(96)}OD{last:03d}{chr(96)}",
+        body, "navigation coverage",
+    )
+    body = replace_one(
+        r"(?s)^## 全件番号順\n\n.*?(?=\n\n## 使い分け)",
+        "## 全件番号順\n\n" + navigation_groups(count),
+        body, "numbered OD directory links",
+    )
+    body = replace_one(
+        r"^各ODのREADMEは、.*$",
+        f"各ODのREADMEは、その公式派生物の9面と親原典への接続ハブです。上記の外側ナビゲーションは、OD001–OD{last:03d}の各9面の内容やParent identityを変更しません。",
+        body, "navigation footer",
+    )
+    return body
+
+
+def sync_machine_index(body: str, entries: list[dict]) -> str:
+    """Recompute only derived metadata; keep explicit authored category assignments."""
+    data = json.loads(body)
+    count = len(entries)
+    last = int(entries[-1]["number"])
+    ids = {f"{int(row['number']):03d}" for row in entries}
+    categories = data["categories"]
+    existing = [member for cat in categories for member in cat["members"]]
+    if len(set(existing)) != len(existing) or set(existing) - ids:
+        raise ValueError("Machine navigation has duplicate/stale OD category assignments")
+    missing = sorted(ids - set(existing), key=int)
+    if missing:
+        other = [cat for cat in categories if cat["id"] == "cross_domain"]
+        if len(other) != 1:
+            raise ValueError("Missing unique cross-domain discovery fallback")
+        # Only a NAVIGATION fallback for as-yet-uncategorized new originals.
+        # A human-defined specialist category can later replace it explicitly.
+        other[0]["members"].extend(missing)
+        other[0]["members"].sort(key=int)
+    for cat in categories:
+        cat["count"] = len(cat["members"])
+    if sum(cat["count"] for cat in categories) != count:
+        raise ValueError("Not every canonical Parent is discoverable in one category")
+
+    faces = len(data["surface_pattern"])
+    if faces != len(FACES):
+        raise ValueError("Unexpected derivative face count")
+    data["status"] = f"public_navigation_complete_od001_od{last:03d}"
+    data["coverage"].update(
+        {"to": f"{last:03d}", "expected_count": count,
+         "indexed_count": count, "duplicate_assignments": 0, "unassigned": 0}
+    )
+    pairing = data["original_derivative_pairing"]
+    pairing.update({
+        "published_original_articles": count,
+        "original_article_count_basis": (
+            "Current active unique Parent URLs and verified NCL IDs/slugs from "
+            "derivatives/official-derivatives-map.json; change the canonical map "
+            "first and regenerate this derived navigation"
+        ),
+        "mapped_original_ncl_id_count": count,
+        "mapped_original_slug_count": count,
+        "numbered_derivative_sets": count,
+        "total_derivative_markdown_pages": count * faces,
+    })
+    data["parent_identity_map_direct_url_semantics"] = (
+        f"One verified published canonical original URL for each of {count} "
+        "original-to-OD pairs. A candidate still requires actual Parent reading; "
+        "a navigation match does not establish semantic fit."
+    )
+    return json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+
+
+def assert_all_derivative_faces(entries: list[dict]) -> None:
+    for row in entries:
+        directory = ROOT / row["derivative_dir"]
+        if row["derivative_dir"] != f"derivatives/{int(row['number']):03d}":
+            raise ValueError(f"Unexpected derivative directory for OD{row['number']}")
+        for name in FACES:
+            if not (directory / name).is_file():
+                raise ValueError(f"Missing published derivative face: {directory / name}")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="Fail if generated counts are stale")
     args = parser.parse_args()
-    count, last = get_count_and_last()
+    entries = get_entries()
+    count, last = len(entries), int(entries[-1]["number"])
+    assert_all_derivative_faces(entries)
     pending = []
-    for path in sorted(set(PAGES) | set(INLINE_FIELDS)):
+    for path in sorted(set(PAGES) | set(INLINE_FIELDS) | {NAVIGATION, MACHINE_INDEX}):
         before = path.read_text(encoding="utf-8")
         after = before
         if path in PAGES:
             after = update_content(after, generated(count, last, PAGES[path]))
         if path in INLINE_FIELDS:
             after = update_inline_numbers(after, path, count)
+        if path == NAVIGATION:
+            after = sync_navigation(after, count, last)
+        if path == MACHINE_INDEX:
+            after = sync_machine_index(after, entries)
         if before != after:
             pending.append(path)
             if not args.check:
