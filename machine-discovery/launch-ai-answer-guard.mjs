@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Minimal, dependency-free Qwen Code extension launcher for the SAME local
  * read-only Python MCP. Qwen itself requires Node; Python 3 may be registered
@@ -8,6 +9,7 @@
  * Never log to stdout: that channel belongs exclusively to MCP JSON-RPC.
  */
 import { spawn, spawnSync } from 'node:child_process';
+import { realpathSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -71,6 +73,7 @@ function main() {
   }
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+// npm creates a node_modules/.bin symlink; compare the real target, not the shim path.
+if (process.argv[1] && realpathSync(resolve(process.argv[1])) === fileURLToPath(import.meta.url)) {
   main();
 }

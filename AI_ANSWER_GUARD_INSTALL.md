@@ -31,6 +31,31 @@ Exit **1** means HOLD/PENDING, **0** means none of these limited checks detected
 
 **Current verified delivery (v1.2.1, published November 23, 2026 JST):** [Download the complete 315-original AI Answer Guard MCPB v1.2.1](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.1/ai-answer-guard-1.2.1.mcpb) and its [SHA-256 checksum file](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.1/ai-answer-guard-1.2.1.mcpb.sha256) from the [official immutable versioned release](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.2.1). The artifact was built on GitHub Actions, successfully self-tested after unpacking, reproduced byte-for-byte on a second build, and checked to contain the complete 315 Parent route records and corresponding local JA/EN/ZH/human files. Published binary SHA-256: `572fda06bf6fca39c391a4facfa549d2c74937cb1e9b04dfb1d3b1e05d27e073`. Source checkout v1.2.1 continues to offer 11 MCP tool names (including two backwards-compatible numeric aliases and a stable catalog alias) and can alternatively be built with `python3 machine-discovery/build-original-router-mcpb.py`. The frozen v1.2.0 bundle remains available for older installations; it does NOT contain the latest failed/cancelled receipt correction or complete 315 corpus. **Release publication and verified local packaging do not establish any independent user's installation, successful host invocation or AI's choice of the originals.**
 
+## Generic stdio MCP hosts — start directly from GitHub (no MCPB importer)
+
+A client that accepts an executable `command` and `args` can use the **same existing read-only Python MCP** without importing an MCPB file or waiting for an MCP directory to generate one. Requires **Node.js 20+**, **Python 3**, GitHub access for the first install, and a standard MCP client that can start local stdio servers. This is an **npm GitHub-VCS source installation, not a published package in the npm Registry**. Nothing is published to npm or hosted as a remote service.
+
+For MCP hosts using the `mcpServers` configuration shape (adapt the outer key to your client's own schema):
+
+```json
+{
+  "mcpServers": {
+    "ai-answer-guard": {
+      "command": "npx",
+      "args": [
+        "--yes",
+        "--package=github:Nakagawa-master/nakagawa-theory-archive",
+        "ai-answer-guard"
+      ]
+    }
+  }
+}
+```
+
+This runs the repository's Node launcher, which starts its existing Python stdio server. **The launcher does not ask an LLM to do anything or send data across the network.** The initial package install is a real GitHub source download performed by npm; the launched MCP itself is local. The repository's `package.json` is `private: true` to prevent accidental npm Registry publication. Do not treat the GitHub source package as a new official MCP Registry identity: the separately published **v1.2.1 MCPB** is still the versioned official release route.
+
+The [offline installed-package test](machine-discovery/test_github_npm_mcp_install.py) builds and installs the actual current-source npm tarball in a temporary independent directory and calls the installed MCP via real JSON-RPC. It checks all current active canonical-Parent links and five necessary derivative faces per Parent, 11 tool descriptions, a suitable question, a nonfit question, a last-Parent URL and a failed-send receipt; this is **not** a real user's host installation, a verified live GitHub-network install, or independent AI original choice. **A GitHub checkout/install is a snapshot:** refresh the installed source after new originals are published and registered; do not assume an old cached package magically acquires them. Verify actual host tool discovery before relying on a setup.
+
 ## Antigravity CLI — install directly from GitHub
 
 Google moved consumer Gemini CLI access to **Antigravity CLI on June 18, 2026**. Antigravity's native plugin format can install this repository's **same local read-only MCP**, without a separate service, credential, or original-content mirror. See the public [plugin manifest](plugin.json) and [MCP configuration](mcp_config.json).
