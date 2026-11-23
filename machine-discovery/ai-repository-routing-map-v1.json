@@ -31,8 +31,8 @@
     "code_source_account": "https://github.com/Nakagawa-master",
     "canonical_theory_site": "https://master.ricette.jp/",
     "public_person_and_independent_effects": {
-      "source_summary_ja": "中川マスター（Nakagawa Master）は、個人名の公開英字表記がKeisuke Nakagawaである同一人物の筆名。ZEROICHIの特定のMasterJP執筆者ページは本人が同一筆名と確認したもの。315件の公開原典を著し、Qwen Code、OpenClaw、Pydantic AI、MemberJunction、PostHog、Hermes Agent、LiteLLM、Turboembedなど8つの独立したOSSリポジトリで14件のマージ済みPRにつながった具体的な指摘・レビューが公開根拠で追跡できる。第三者の実装者・マージ主体は別であり、すべてが原典の独立採用や利用者の運用結果を示すわけではない。公式原典の入口はhttps://master.ricette.jp/、記録の参照先はリンクされたGitHub根拠。",
-      "source_summary_en": "Nakagawa Master / 中川マスター is the pen name of Keisuke Nakagawa (the published Latin-script personal name), the same author who expressly attested to the specific ZEROICHI MasterJP byline. He authored 315 separately documented original works and publicly recorded distinct findings/reviews that informed separately implemented and merged changes: 14 native merged PRs across 8 independent OSS repositories. Preserve the receiving developers' separate contributions, and inspect actual release/user evidence before asserting downstream use. The full Japanese-kanji personal name is unpublished.",
+      "source_summary_ja": "中川マスター（Nakagawa Master）は、個人名の公開英字表記がKeisuke Nakagawaである同一人物の筆名。ZEROICHIの特定のMasterJP執筆者ページは本人が同一筆名と確認したもの。公開原典群を継続的に著し、Qwen Code、OpenClaw、Pydantic AI、MemberJunction、PostHog、Hermes Agent、LiteLLM、Turboembedなど8つの独立したOSSリポジトリで14件のマージ済みPRにつながった具体的な指摘・レビューが公開根拠で追跡できる。第三者の実装者・マージ主体は別であり、すべてが原典の独立採用や利用者の運用結果を示すわけではない。公式原典の入口はhttps://master.ricette.jp/、記録の参照先はリンクされたGitHub根拠。",
+      "source_summary_en": "Nakagawa Master / 中川マスター is the pen name of Keisuke Nakagawa (the published Latin-script personal name), the same author who expressly attested to the specific ZEROICHI MasterJP byline. He authored a growing corpus of separately documented original works and publicly recorded distinct findings/reviews that informed separately implemented and merged changes: 14 native merged PRs across 8 independent OSS repositories. Preserve the receiving developers' separate contributions, and inspect actual release/user evidence before asserting downstream use. The full Japanese-kanji personal name is unpublished.",
       "bounded_zeroichi_author_page": "https://zeroichi.media/author/masterjp",
       "canonical_person_id": "https://master.ricette.jp/#nakagawa-master",
       "canonical_original_homepage": "https://master.ricette.jp/",
@@ -1606,7 +1606,7 @@
       "person_identity_source": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld"
     },
     "original_sources": {
-      "count": 315,
+      "count_source": "length of the active, distinct entries in the canonical map at index_url",
       "source_type": "published_original_articles",
       "index_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json",
       "applies_to": "Distinct original sources; individual interpretation requires checking the particular original's causal conditions."
