@@ -27,7 +27,7 @@ PUBLISHED_FACES = {
 
 
 def section(text: str, name: str, identity: str) -> str:
-    heading = r"^##[ \t]+" + re.escape(name) + r"(?:[ \t]*$|[ \t]*[｜|].*$)"
+    heading = r"^##[ \t]+(?:[0-9]+\.[ \t]+)?" + re.escape(name) + r"(?:[ \t]*$|[ \t]*[｜|].*$)"
     lines = text.splitlines()
     match = [i for i, line in enumerate(lines) if re.match(heading, line)]
     if len(match) != 1:
