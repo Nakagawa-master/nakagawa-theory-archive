@@ -70,10 +70,18 @@ def build(entries: list[dict], root: Path = ROOT) -> str:
         for lang, (name, heading) in PUBLISHED_FACES.items():
             rel = f"{folder}/{name}"
             text = (root / rel).read_text(encoding="utf-8")
-            if (f"- Parent URL: {canonical}" not in text or
-                    f"- Parent NCL-ID: {row['ncl_id']}" not in text or
-                    "- Origin: Nakagawa Master" not in text):
-                raise ValueError(f"{od} {lang}: derivative Parent/Origin mismatch")
+            # The existing published corpus uses both human labels and
+            # older snake_case AI-index field names. Both must agree with the
+            # canonical map; never silently skip a valid earlier source.
+            checks = (
+                (r"Parent URL|parent_url", canonical),
+                (r"Parent NCL-ID|parent_ncl_id", row["ncl_id"]),
+                (r"Origin|origin_author", "Nakagawa Master"),
+            )
+            for label, value in checks:
+                pattern = r"(?mi)^-[ \\t]*(?:" + label + r"):[ \\t]*" + re.escape(value)
+                if re.search(pattern, text) is None:
+                    raise ValueError(f"{od} {lang}: derivative Parent/Origin mismatch for {label}")
             briefs[lang] = section(text, heading, f"{od} {lang}")
             links[lang] = GITHUB_BASE + rel
         record = {
