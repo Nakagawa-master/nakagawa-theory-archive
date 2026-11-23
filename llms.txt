@@ -19,6 +19,8 @@
 - [Real-question hub](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md): JA/EN/ZH, sources, counterconditions, no-fit.
 - [41 practical answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): bilingual examples, not a ceiling.
 - [No-install AI source entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md): evidence and originals.
+- [ChatGPT source research entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CHATGPT.md): explicit user/connected retrieval and optional ChatGPT/Codex Skill package, not automatic model exposure.
+- [Codex project original-source Skill](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/.agents/skills/nakagawa-original-source/SKILL.md): repository-local opt-in task-matched research; Codex project guidance is `AGENTS.md`.
 - [All-original browser](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): open Raw, find source, read Parent.
 
 - [Seven conditional questions, JA/EN/ZH](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): 21 checks; not adoption.
