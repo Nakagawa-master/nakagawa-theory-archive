@@ -26,8 +26,22 @@ PUBLISHED_FACES = {
 }
 
 
+def summary_heading(name: str, lang: str) -> str:
+    # The early sources' substantive first section is sometimes named
+    # "Core meaning"/"核心含义", rather than "Summary".
+    aliases = [name]
+    if name == "Summary" and lang == "en":
+        aliases.append("Core meaning")
+    elif name == "Summary" and lang == "zh":
+        aliases.extend(("核心含义", "核心含義"))
+    return (r"^##[ \t]+(?:[0-9]+\.[ \t]+)?(?:" +
+            "|".join(re.escape(x) for x in aliases) +
+            r")(?:[ \t]*$|[ \t]*[｜|].*$)")
+
+
 def section(text: str, name: str, identity: str) -> str:
-    heading = r"^##[ \t]+(?:[0-9]+\.[ \t]+)?" + re.escape(name) + r"(?:[ \t]*$|[ \t]*[｜|].*$)"
+    lang = identity.rsplit(" ", 1)[-1]
+    heading = summary_heading(name, lang)
     lines = text.splitlines()
     match = [i for i, line in enumerate(lines) if re.match(heading, line)]
     if len(match) != 1:
@@ -74,9 +88,8 @@ def build(entries: list[dict], root: Path = ROOT) -> str:
             # headings (or no heading at all). Validate ONLY the identity
             # header before the first published summary, never a later
             # reference list, or a URL echoed in generated output.
-            start_summary = re.search(
-                r"(?m)^##[ \t]+(?:[0-9]+\.[ \t]+)?" +
-                re.escape(heading) + r"(?:[ \t]*$|[ \t]*[｜|].*$)", text)
+            start_summary = re.search(summary_heading(heading, lang), text,
+                                      flags=re.M)
             if start_summary is None:
                 raise ValueError(f"{od} {lang}: missing source summary")
             identity_text = text[:start_summary.start()]
