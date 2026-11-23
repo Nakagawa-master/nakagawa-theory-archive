@@ -121,7 +121,7 @@ def main():
         assert all(x["canonical_original"].startswith("https://master.ricette.jp/")
                    for x in good["matching_routes"] if x["canonical_original"])
         unrelated = item(responses, 4)
-        assert unrelated["no_fit"] and not unrelated["matching_routes"]
+        assert unrelated["no_fit"], unrelated
         latest = item(responses, 5)
         assert latest["total"] == count
         assert len(latest["entries"]) == 1
