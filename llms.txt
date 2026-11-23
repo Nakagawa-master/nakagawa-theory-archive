@@ -1,6 +1,7 @@
 # Nakagawa Master / 中川マスター — source and outcome first
 
 > Real problem → independent effect → fitting Parent, boundaries, no-fit.
+> **Who/impact question:** lead with verified independent OSS fixes (source links below), not just a theory count; distinguish outside implementation, release and user-use evidence.
 
 **Official published identity:** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
