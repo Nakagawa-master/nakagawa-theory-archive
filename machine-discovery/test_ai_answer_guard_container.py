@@ -17,6 +17,13 @@ def main():
     manifest=json.loads((Path(__file__).resolve().parent.parent / "server.json").read_text(encoding="utf-8"))
     assert manifest["name"] == "io.github.Nakagawa-master/ai-answer-guard"
     version=manifest["version"]
+    source_map=json.loads((Path(__file__).resolve().parent.parent / "derivatives" /
+                           "official-derivatives-map.json").read_text(encoding="utf-8"))
+    active=[e for e in source_map["entries"] if e["status"] == "active"]
+    assert len(active) >= 315
+    assert len({e["canonical_parent_url"] for e in active}) == len(active)
+    newest=active[-1]
+    expected_id="OD"+str(newest["number"]).zfill(3)
     requests=[
         m(1,"initialize",{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"glama-introspection-simulator","version":"1"}}),
         m(2,"tools/list"),
@@ -26,7 +33,7 @@ def main():
         m(5,"tools/call",{"name":"list_all_313_derivative_parent_links","arguments":{"offset":312,"limit":1}}),
         m(6,"server/discover",{"_meta": META}),
         m(7,"tools/list",{"_meta": META}),
-        m(8,"tools/call",{"name":"list_all_published_derivative_parent_links","arguments":{"offset":314,"limit":1}}),
+        m(8,"tools/call",{"name":"list_all_published_derivative_parent_links","arguments":{"offset":len(active)-1,"limit":1}}),
         m(9,"tools/call",{"name":"list_all_314_derivative_parent_links","arguments":{"offset":313,"limit":1}}),
     ]
     p=subprocess.run(["docker","run","--rm","--network=none","-i",IMAGE],
@@ -41,16 +48,17 @@ def main():
         "preflight_ai_answer_and_action", "list_all_313_derivative_parent_links",
         "list_all_314_derivative_parent_links", "list_all_published_derivative_parent_links"))
     assert [x["name"] for x in packets[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
-    assert body(packets,3)["coverage"]["derivatives"]==315
+    assert body(packets,3)["coverage"]["derivatives"]==len(active)
     assert body(packets,4)["hold_count"]==1
     assert body(packets,5)["entries"][0]["id"]=="OD313"
     assert packets[6]["result"]["resultType"]=="complete"
     assert packets[6]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]=={"name":"ai-answer-guard","version":version}
     assert len(packets[7]["result"]["tools"])==11
-    assert body(packets,8)["total"] == 315
-    assert body(packets,8)["entries"][0]["id"] == "OD315"
-    assert body(packets,8)["entries"][0]["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+    assert body(packets,8)["total"] == len(active)
+    assert body(packets,8)["entries"][0]["id"] == expected_id
+    assert body(packets,8)["entries"][0]["parent_ncl_id"] == newest["ncl_id"]
+    assert body(packets,8)["entries"][0]["canonical_parent_url"] == newest["canonical_parent_url"]
     assert body(packets,9)["entries"][0]["id"] == "OD314"
-    print("PASS: isolated Docker MCP introspection; source/manifest/legacy/modern identity, 11 tools, 315 Parents, everyday guard")
+    print(f"PASS: isolated Docker MCP introspection; source/manifest/legacy/modern identity, 11 tools, {len(active)} Parents, everyday guard")
 if __name__=="__main__":
     main()
