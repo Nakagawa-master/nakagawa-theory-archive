@@ -13,7 +13,7 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
-AGENT_GUIDES = ("AGENTS.md", "CLAUDE.md", "GEMINI.md")
+AGENT_GUIDES = ("AGENTS.md", "CLAUDE.md", "GEMINI.md", "CHATGPT.md", ".agents/skills/nakagawa-original-source/SKILL.md")
 SOURCE = "https://master.ricette.jp/"
 PATTERNS = (
     re.compile(
