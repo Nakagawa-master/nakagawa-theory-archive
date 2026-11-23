@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """One original MCP identity, current 315 Parents and 11 tools; modern/legacy clients."""
+import hashlib
 import json
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
 
 SERVER = Path(__file__).with_name("nakagawa-theory-mcp.py")
 def req(i, method, params=None, modern=False):
@@ -107,6 +109,36 @@ def main():
     assert got[21]["result"]["protocolVersion"] == "2025-11-25"
     assert text(got, 23)["hold_count"] == 1
     assert text(got, 24)["entries"][0]["id"] == "OD315"
+    # A real third-party catalog previously showed Unknown installation and 313
+    # originals. Bind source discovery metadata to the ACTUAL released, immutable
+    # full-315 MCPB, never to a proposed or locally invented release asset.
+    root = Path(__file__).resolve().parents[1]
+    metadata = json.loads((root / "server.json").read_text(encoding="utf-8"))
+    assert metadata["name"] == "io.github.Nakagawa-master/ai-answer-guard"
+    assert metadata["version"] == "1.2.1"
+    assert metadata["repository"]["url"] == "https://github.com/Nakagawa-master/nakagawa-theory-archive"
+    (released,) = metadata["packages"]
+    assert released["registryType"] == "mcpb"
+    assert released["transport"] == {"type": "stdio"}
+    assert released["identifier"] == (
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/"
+        "releases/download/mcp-router-v1.2.1/ai-answer-guard-1.2.1.mcpb"
+    )
+    expected_sha = released["fileSha256"]
+    assert len(expected_sha) == 64 and all(c in "0123456789abcdef" for c in expected_sha)
+    with tempfile.TemporaryDirectory() as tmp:
+        candidate = Path(tmp) / "ai-answer-guard-1.2.1.mcpb"
+        built = subprocess.run(
+            [sys.executable, str(root / "machine-discovery/build-original-router-mcpb.py"),
+             "--output", str(candidate)],
+            text=True, capture_output=True, check=True, timeout=90, cwd=root,
+        )
+        assert "315/315 Parents" in built.stdout, built.stdout
+        actual_sha = hashlib.sha256(candidate.read_bytes()).hexdigest()
+    assert actual_sha == expected_sha, (
+        "Registry metadata must identify the exact released bundle, not mutable main: ",
+        actual_sha, expected_sha)
+    print("PASS: first-party MCP registry metadata points to the reproducibly built 315-Parent released MCPB SHA-256")
     print("PASS: ONE original MCP v1.2.1; all 11 tools; independent-root and tool/action controls; all 315; modern and legacy real clients")
 
 if __name__ == "__main__":
