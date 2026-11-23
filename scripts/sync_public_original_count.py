@@ -218,11 +218,14 @@ def sync_categories(body: str, entries: list[dict]) -> str:
         f"OD001–OD{last:03d}を、人間がテーマから発見しやすくするための**公開ナビゲーション分類**です。",
         body, "category introduction",
     )
-    body = replace_one(
-        r"OD\d+を含む全件はこのページと",
-        "すべての公開原典はこのページと",
-        body, "growing category first-contact route",
-    )
+    if "すべての公開原典はこのページと" not in body:
+        body = replace_one(
+            r"OD\d+を含む全件はこのページと",
+            "すべての公開原典はこのページと",
+            body, "growing category first-contact route",
+        )
+    elif body.count("すべての公開原典はこのページと") != 1:
+        raise ValueError("Duplicate category first-contact route")
     body = replace_one(
         r"^- 対象: " + r"\x60OD001\x60–\x60OD\d+\x60$",
         f"- 対象: " + "\x60" + f"OD001{chr(96)}–{chr(96)}OD{last:03d}{chr(96)}",
