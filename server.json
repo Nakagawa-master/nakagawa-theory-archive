@@ -8,5 +8,15 @@
   "repository": {
     "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
     "source": "github"
-  }
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.1/ai-answer-guard-1.2.1.mcpb",
+      "fileSha256": "572fda06bf6fca39c391a4facfa549d2c74937cb1e9b04dfb1d3b1e05d27e073",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
 }
