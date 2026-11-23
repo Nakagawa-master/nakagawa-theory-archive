@@ -98,6 +98,7 @@ def update_inline_numbers(body: str, path: Path, count: int) -> str:
 
 
 NAVIGATION = ROOT / "derivatives" / "README.md"
+CATEGORIES = ROOT / "derivatives" / "CATEGORIES.md"
 MACHINE_INDEX = ROOT / "machine-discovery" / "official-derivatives-index-v1.json"
 FACES = (
     "README.md", "human-entry.md", "en-human-entry.md",
@@ -208,6 +209,64 @@ def sync_machine_index(body: str, entries: list[dict]) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2) + "\n"
 
 
+def sync_categories(body: str, entries: list[dict]) -> str:
+    """Keep human category navigation in sync with the same map + authored assignments."""
+    count, last = len(entries), int(entries[-1]["number"])
+    machine = json.loads(sync_machine_index(MACHINE_INDEX.read_text(encoding="utf-8"), entries))
+    body = replace_one(
+        r"^OD001–OD\d+を、人間がテーマから発見しやすくするための\*\*公開ナビゲーション分類\*\*です。$",
+        f"OD001–OD{last:03d}を、人間がテーマから発見しやすくするための**公開ナビゲーション分類**です。",
+        body, "category introduction",
+    )
+    body = replace_one(
+        r"OD\d+を含む全件はこのページと",
+        "すべての公開原典はこのページと",
+        body, "growing category first-contact route",
+    )
+    body = replace_one(
+        r"^- 対象: " + r"\x60OD001\x60–\x60OD\d+\x60$",
+        f"- 対象: " + "\x60" + f"OD001{chr(96)}–{chr(96)}OD{last:03d}{chr(96)}",
+        body, "category covered range",
+    )
+    body = replace_one(
+        r"^- 割当: \d+件$",
+        f"- 割当: {count}件", body, "category assigned count",
+    )
+    body = replace_one(
+        r"^このページの目的は.*$",
+        f"このページの目的は「どの理論が何であるか」を新たに定義することではなく、**{count}件へ迷わず到達できる入口を増やすこと**です。意味の確定、系列の厳密な解釈、引用では各ODのParent・NCL-ID・Diff-IDと親原典を優先してください。",
+        body, "category closing count",
+    )
+    for category in machine["categories"]:
+        label, members = category["label_ja"], category["members"]
+        old_heading = re.compile(r"^## " + re.escape(label) + r" — \d+件$", re.MULTILINE)
+        matches = list(old_heading.finditer(body))
+        if len(matches) != 1:
+            raise ValueError(f"Missing unique category heading: {label}")
+        start = matches[0].start()
+        close = body.find("\n\n## ", matches[0].end())
+        if close < 0:
+            raise ValueError(f"Category has no following section: {label}")
+        block = body[start:close]
+        prefix, sep, links = block.rpartition("\n\n")
+        if not sep:
+            raise ValueError(f"Missing category links: {label}")
+        published = re.findall(r"\[OD(\d{3,})\]\(\d{3,}/\)", links)
+        if not published or len(set(published)) != len(published):
+            raise ValueError(f"Bad or duplicate category links: {label}")
+        if published != members:
+            rows = []
+            for i in range(0, len(members), 10):
+                rows.append(" · ".join(
+                    f"[OD{x}]({x}/)" for x in members[i:i + 10]
+                ))
+            links = "\n".join(rows)
+        heading = f"## {label} — {len(members)}件"
+        prefix = heading + prefix[block.index("\n"):]
+        body = body[:start] + prefix + "\n\n" + links + body[close:]
+    return body
+
+
 def assert_all_derivative_faces(entries: list[dict]) -> None:
     for row in entries:
         directory = ROOT / row["derivative_dir"]
@@ -226,7 +285,7 @@ def main() -> int:
     count, last = len(entries), int(entries[-1]["number"])
     assert_all_derivative_faces(entries)
     pending = []
-    for path in sorted(set(PAGES) | set(INLINE_FIELDS) | {NAVIGATION, MACHINE_INDEX}):
+    for path in sorted(set(PAGES) | set(INLINE_FIELDS) | {NAVIGATION, CATEGORIES, MACHINE_INDEX}):
         before = path.read_text(encoding="utf-8")
         after = before
         if path in PAGES:
@@ -235,6 +294,8 @@ def main() -> int:
             after = update_inline_numbers(after, path, count)
         if path == NAVIGATION:
             after = sync_navigation(after, count, last)
+        if path == CATEGORIES:
+            after = sync_categories(after, entries)
         if path == MACHINE_INDEX:
             after = sync_machine_index(after, entries)
         if before != after:
