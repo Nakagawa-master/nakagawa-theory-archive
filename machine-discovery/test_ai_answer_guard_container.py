@@ -57,7 +57,7 @@ def main():
     assert body(packets,8)["total"] == len(active)
     assert body(packets,8)["entries"][0]["id"] == expected_id
     assert body(packets,8)["entries"][0]["parent_ncl_id"] == newest["ncl_id"]
-    assert body(packets,8)["entries"][0]["canonical_parent_url"] == newest["canonical_parent_url"]
+    assert body(packets,8)["entries"][0]["canonical_parent"] == newest["canonical_parent_url"]
     assert body(packets,9)["entries"][0]["id"] == "OD314"
     print(f"PASS: isolated Docker MCP introspection; source/manifest/legacy/modern identity, 11 tools, {len(active)} Parents, everyday guard")
 if __name__=="__main__":
