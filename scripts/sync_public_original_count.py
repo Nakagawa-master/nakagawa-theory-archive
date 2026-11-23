@@ -78,7 +78,7 @@ def update_inline_numbers(body: str, path: Path, count: int) -> str:
     # occur exactly once; a layout change becomes an explicit review failure.
     for prefix, suffix in INLINE_FIELDS[path]:
         pattern = re.compile(
-            "(" + re.escape(prefix) + r")(\\d+)(" + re.escape(suffix) + ")"
+            "(" + re.escape(prefix) + r")(\d+)(" + re.escape(suffix) + ")"
         )
         matches = list(pattern.finditer(body))
         if len(matches) != 1:
