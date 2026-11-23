@@ -140,6 +140,7 @@ jobs:
       - name: Real offline GitHub-VCS npm install and MCP tool calls (no model/API)
         run: python3 machine-discovery/test_github_npm_mcp_install.py
       - name: Fetch public GitHub VCS package with npm and call real MCP tools
+        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
         env:
           PUBLIC_GITHUB_SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: python3 machine-discovery/test_live_github_vcs_install.py
