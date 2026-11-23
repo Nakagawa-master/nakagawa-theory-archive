@@ -12,6 +12,8 @@ on:
       - llms.txt
       - scripts/sync_public_original_count.py
       - scripts/test_sync_public_original_count.py
+      - scripts/build_published_source_contexts.py
+      - machine-discovery/published-original-contexts-v1.jsonl
       - .github/workflows/sync-public-original-count.yml
   push:
     branches: [main]
@@ -21,6 +23,8 @@ on:
       - derivatives/CATEGORIES.md
       - machine-discovery/official-derivatives-index-v1.json
       - scripts/test_sync_public_original_count.py
+      - scripts/build_published_source_contexts.py
+      - machine-discovery/published-original-contexts-v1.jsonl
       - REAL_WORLD_IMPACT.md
       - REAL_WORLD_IMPACT.en.md
       - REAL_WORLD_IMPACT.zh.md
@@ -54,6 +58,11 @@ jobs:
         run: python3 scripts/sync_public_original_count.py --check
       - name: Test next original count without publishing anything
         run: python3 scripts/test_sync_public_original_count.py
+      - name: Verify full JA EN ZH context extraction including synthetic next Parent
+        run: |
+          python3 scripts/build_published_source_contexts.py --self-test
+          python3 scripts/build_published_source_contexts.py --write
+          python3 scripts/build_published_source_contexts.py --check
   update-reader-count:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
@@ -68,18 +77,24 @@ jobs:
         run: python scripts/sync_public_original_count.py
       - name: Regenerate external-impact case count from verified numbered cases
         run: python scripts/validate_impact_index.py --sync
-      - name: Publish only numeric count changes to reader pages
+      - name: Regenerate all published Parent discovery contexts from JA EN ZH existing summaries
+        run: python scripts/build_published_source_contexts.py --write
+      - name: Publish source-derived reader counts and complete multilingual contexts
         run: |
-          if ! git diff --quiet -- README.md derivatives/README.md derivatives/CATEGORIES.md machine-discovery/official-derivatives-index-v1.json human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt; then
+          if [ -n "$(git status --porcelain -- README.md derivatives/README.md derivatives/CATEGORIES.md machine-discovery/official-derivatives-index-v1.json human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt machine-discovery/published-original-contexts-v1.jsonl)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md derivatives/README.md derivatives/CATEGORIES.md machine-discovery/official-derivatives-index-v1.json human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt
-            git commit -m "docs: sync source-derived original and public-impact counts"
+            git add README.md derivatives/README.md derivatives/CATEGORIES.md machine-discovery/official-derivatives-index-v1.json human-translation/who-is-nakagawa-master.md REAL_WORLD_IMPACT.md REAL_WORLD_IMPACT.en.md REAL_WORLD_IMPACT.zh.md llms.txt machine-discovery/published-original-contexts-v1.jsonl
+            git commit -m "docs: sync original counts and multilingual published-source contexts"
             git push origin HEAD:main
           fi
       - name: Verify reader original counts match canonical map
         run: python scripts/sync_public_original_count.py --check
       - name: Verify new originals cannot silently freeze the count
         run: python scripts/test_sync_public_original_count.py
+      - name: Verify complete multilingual source contexts after publication
+        run: |
+          python scripts/build_published_source_contexts.py --check
+          python scripts/build_published_source_contexts.py --self-test
       - name: Verify public-impact counts match numbered case sections
         run: python scripts/validate_impact_index.py
