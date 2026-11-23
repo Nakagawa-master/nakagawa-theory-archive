@@ -159,6 +159,7 @@ def sync_navigation(body: str, count: int, last: int) -> str:
 def sync_machine_index(body: str, entries: list[dict]) -> str:
     """Recompute only derived metadata; keep explicit authored category assignments."""
     data = json.loads(body)
+    data["updated_jst"] = json.loads(MAP.read_text(encoding="utf-8"))["updated_jst"]
     count = len(entries)
     last = int(entries[-1]["number"])
     ids = {f"{int(row['number']):03d}" for row in entries}
