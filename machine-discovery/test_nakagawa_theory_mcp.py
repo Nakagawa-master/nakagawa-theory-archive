@@ -129,6 +129,48 @@ def run():
     assert len(parent_urls) == 1 and good_receipt["origin"]["self_audit"] == parent_urls[0]
     print("PASS: real MCP failure/cancel/pending receipts never silently masquerade as success")
 
+    # Coverage is independent of the number of retained records. Test real
+    # stdio preflight on the new optional field without another hold masking it.
+    def absence_item(**overrides):
+        return {"id": "event-a", "scope": "workspace A, 10:00–11:00",
+                "matching_records": 0, "coverage": "unknown",
+                "claims_nonoccurrence": True, **overrides}
+    coverage_cases = [
+        ([absence_item()], "RECHECK_BEFORE_USE", 1),
+        ([absence_item(coverage="partial")], "RECHECK_BEFORE_USE", 1),
+        ([absence_item(coverage="complete_for_scope")], "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS", 0),
+        ([absence_item(coverage="complete_for_scope", matching_records=1)], "RECHECK_BEFORE_USE", 1),
+        ([absence_item(claims_nonoccurrence=False)], "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS", 0),
+        ([absence_item(matching_records=True)], None, None),
+        ([absence_item(coverage="complete")], None, None),
+        ([absence_item(scope=" ")], None, None),
+        ([absence_item()] * 13, None, None),
+    ]
+    coverage_requests = [req(160, "initialize", {"protocolVersion": "2025-11-25"})]
+    for i, (items, _, _) in enumerate(coverage_cases, 161):
+        coverage_requests.append(req(i, "tools/call", {
+            "name": "preflight_ai_answer_and_action",
+            "arguments": {"absence_claims": items},
+        }))
+    coverage_run = subprocess.run(
+        [sys.executable, str(SERVER)],
+        input="".join(json.dumps(item) + "\n" for item in coverage_requests),
+        capture_output=True, text=True, check=True, timeout=12,
+    )
+    assert not coverage_run.stderr, coverage_run.stderr
+    coverage_packets = {item["id"]: item for item in map(json.loads, coverage_run.stdout.splitlines())}
+    for i, (_, verdict, count) in enumerate(coverage_cases, 161):
+        result = coverage_packets[i]["result"]
+        if verdict is None:
+            assert result["isError"], result
+        else:
+            decoded = json.loads(result["content"][0]["text"])
+            assert decoded["verdict"] == verdict and decoded["hold_count"] == count, decoded
+            if count:
+                assert decoded["findings"][0]["gate"] == "observation_coverage", decoded
+                assert decoded["practical_next_steps"], decoded
+    print("PASS: absence claims distinguish zero retained records from nonoccurrence; coverage and invalid controls")
+
     # Han-only Japanese can be misread as Chinese by naive character detection.
     # Test a real source-specific question against BOTH independent entry paths.
     han_question = "組織摩擦役割情報"

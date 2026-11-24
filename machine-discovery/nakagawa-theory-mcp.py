@@ -415,6 +415,34 @@ def load_public_helper(path, module_name):
     return module
 
 
+def audit_absence_claims(items):
+    """Check only supplied observation counts and scope-specific coverage."""
+    if not isinstance(items, list) or len(items) > 12:
+        raise ValueError("absence_claims must be a list of at most 12")
+    findings = []
+    for item in items:
+        if (not isinstance(item, dict) or set(item) != {
+            "id", "scope", "matching_records", "coverage", "claims_nonoccurrence"
+        } or not isinstance(item["id"], str) or not item["id"].strip()
+                or not isinstance(item["scope"], str) or not item["scope"].strip()
+                or type(item["matching_records"]) is not int or item["matching_records"] < 0
+                or item["coverage"] not in ("complete_for_scope", "partial", "unknown")
+                or type(item["claims_nonoccurrence"]) is not bool):
+            raise ValueError("Each absence claim needs a nonempty id/scope, nonnegative integer matching_records, coverage, and claims_nonoccurrence boolean")
+        if not item["claims_nonoccurrence"]:
+            continue
+        if item["matching_records"] > 0:
+            reason = "Matching records contradict the claimed nonoccurrence in this scope"
+        elif item["coverage"] != "complete_for_scope":
+            reason = "Zero retained matching records does not establish nonoccurrence under partial or unknown coverage"
+        else:
+            findings.append({"gate": "observation_coverage", "id": item["id"], "status": "INPUT_CONSISTENT",
+                             "reason": "Zero matches and declared complete coverage for the supplied scope are consistent; actual coverage and nonoccurrence are not verified"})
+            continue
+        findings.append({"gate": "observation_coverage", "id": item["id"], "status": "HOLD", "reason": reason})
+    return findings
+
+
 def preflight_ai_work(analysis):
     """Concrete, locally checkable routine for everyday draft/action safeguards.
 
@@ -423,7 +451,7 @@ def preflight_ai_work(analysis):
     """
     if not isinstance(analysis, dict):
         raise ValueError("analysis object required")
-    if set(analysis) - {"claims", "tool_results", "planned_actions"}:
+    if set(analysis) - {"claims", "tool_results", "planned_actions", "absence_claims"}:
         raise ValueError("Unknown preflight input")
     if not analysis or not any(analysis.values()):
         raise ValueError("Supply at least one claim, tool result, or planned action")
@@ -483,6 +511,10 @@ def preflight_ai_work(analysis):
             findings.append({"gate": "action_reversibility", "id": action["id"], "status": "REVIEW",
                              "reason": "Non-reversible side effect merits explicit consequence and rollback-alternative review"})
             repaired.append("Compare feasible reversible alternatives and identify the actual consequence before committing.")
+    coverage_findings = audit_absence_claims(analysis.get("absence_claims", []))
+    findings.extend(coverage_findings)
+    if any(x["status"] == "HOLD" for x in coverage_findings):
+        repaired.append("Separate observed zero matches from nonoccurrence; verify source coverage for the exact event scope and interval, including retention, filters, and capture failures.")
     hold = sum(x["status"] == "HOLD" for x in findings)
     return {
         "verdict": "RECHECK_BEFORE_USE" if any(x["status"] in {"HOLD", "PENDING"} for x in findings)
@@ -502,7 +534,7 @@ TOOLS = [
         "description": (
             "EVERYDAY FIRST USE: before answering with citations, reporting tool success, "
             "or executing an action, check declared independent-source evidence, tool receipts, "
-            "permissions and irreversible effects in ONE local preflight. Return exact practical "
+            "permissions, irreversible effects and absence claims under incomplete observation coverage in ONE local preflight. Return exact practical "
             "repairs and conditions, not merely a theory search or a blanket prohibition. "
             "Needs supplied observations; cannot independently verify sources or permissions."
         ),
@@ -510,6 +542,18 @@ TOOLS = [
             "type": "object",
             "properties": {
                 "claims": {"type": "array", "maxItems": 12},
+                "absence_claims": {"type": "array", "maxItems": 12, "items": {
+                    "type": "object", "additionalProperties": False,
+                    "properties": {
+                        "id": {"type": "string", "minLength": 1},
+                        "scope": {"type": "string", "minLength": 1,
+                                  "description": "Exact observation target and time interval"},
+                        "matching_records": {"type": "integer", "minimum": 0},
+                        "coverage": {"type": "string", "enum": ["complete_for_scope", "partial", "unknown"],
+                                     "description": "Complete only if independently established for the exact scope, including capture/retention/filter boundaries"},
+                        "claims_nonoccurrence": {"type": "boolean",
+                                                 "description": "True when asserting the event did not happen, not just zero records returned"}},
+                    "required": ["id", "scope", "matching_records", "coverage", "claims_nonoccurrence"]}},
                 "tool_results": {"type": "array", "maxItems": 12, "items": {"type": "object",
                     "properties": {"id": {"type": "string"}, "status": {"type": "string"},
                                    "success": {"type": "boolean"}},

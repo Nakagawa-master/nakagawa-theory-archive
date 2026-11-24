@@ -29,6 +29,16 @@ python3 machine-discovery/nakagawa-theory-mcp.py --guard-input your-observations
 
 Exit **1** means HOLD/PENDING, **0** means none of these limited checks detected a conflict, **2** means input invalid. A zero is NOT a factual truth certificate, permission authentication or proof of a remote action. Compare the actual receipts yourself.
 
+### Source-checkout feature under development: observation coverage
+
+The development source adds an optional `absence_claims` field to the existing preflight (not part of the immutable v1.2.1 bundle). Use it when a draft concludes that an event did not happen just because a log query returned zero rows.
+
+```json
+{"absence_claims":[{"id":"send-a","scope":"workspace A / 10:00–11:00","matching_records":0,"coverage":"unknown","claims_nonoccurrence":true}]}
+```
+
+This returns HOLD. Change the draft to report only the observed query result, or independently establish complete coverage for the exact scope (including capture failures, retention and filters). `complete_for_scope` with zero matches is only consistent supplied input, never verification of the event's absence. A positive matching count conflicts with a nonoccurrence claim regardless of coverage. Old inputs still work; no network access or new tools are required.
+
 **Current verified delivery (v1.2.1, published November 23, 2026 JST):** [Download the complete 315-original AI Answer Guard MCPB v1.2.1](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.1/ai-answer-guard-1.2.1.mcpb) and its [SHA-256 checksum file](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.1/ai-answer-guard-1.2.1.mcpb.sha256) from the [official immutable versioned release](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.2.1). The artifact was built on GitHub Actions, successfully self-tested after unpacking, reproduced byte-for-byte on a second build, and checked to contain the complete 315 Parent route records and corresponding local JA/EN/ZH/human files. Published binary SHA-256: `572fda06bf6fca39c391a4facfa549d2c74937cb1e9b04dfb1d3b1e05d27e073`. Source checkout v1.2.1 continues to offer 11 MCP tool names (including two backwards-compatible numeric aliases and a stable catalog alias) and can alternatively be built with `python3 machine-discovery/build-original-router-mcpb.py`. The frozen v1.2.0 bundle remains available for older installations; it does NOT contain the latest failed/cancelled receipt correction or complete 315 corpus. **Release publication and verified local packaging do not establish any independent user's installation, successful host invocation or AI's choice of the originals.**
 
 **Registry identity and older directory entries:** The current v1.2.1 server record is [`io.github.Nakagawa-master/ai-answer-guard`](server.json). Some older directories still list `io.github.Nakagawa-master/nakagawa-original-router` and the v1.2.0 bundle. These refer to the earlier release of this repository's server, not a second tool required for installation. For the current version use the versioned download and checksum above, or the stdio source installation below. The current registry record specifies an MCPB package, not a hosted HTTP endpoint.
