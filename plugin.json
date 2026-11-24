@@ -2,12 +2,12 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-answer-guard",
   "version": "1.2.1",
-  "description": "Optional ChatGPT and Codex source-integrity and original-theory research skills: inspect real evidence, find relevant canonical Parent originals, compare fit and alternatives, and preserve source attribution. The local AI Answer Guard MCP is available separately.",
+  "description": "Local read-only AI Answer Guard MCP for Google Antigravity and compatible plugin hosts: check supplied citation evidence, failed or pending tool outcomes, and action authority before reporting success. Optionally find fitting Nakagawa Master canonical originals with source links and an explicit no-fit result; no service account or API key.",
   "author": {
     "name": "Nakagawa Master",
     "url": "https://master.ricette.jp/"
   },
-  "homepage": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CHATGPT.md",
+  "homepage": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_ANSWER_GUARD_INSTALL.md",
   "repository": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "keywords": [
     "source-integrity",
