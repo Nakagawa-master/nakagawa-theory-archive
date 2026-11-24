@@ -530,7 +530,10 @@ def run():
     title_test = subprocess.run([sys.executable, str(title_script), "--self-test"],
                                 capture_output=True, text=True, timeout=12)
     assert title_test.returncode == 0, title_test.stderr
-    assert title_test.stdout.startswith("PASS: 315 title navigation"), title_test.stdout
+    current_map = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
+    current_count = len(current_map["entries"])
+    current_last_id = f'OD{int(current_map["entries"][-1]["number"]):03d}'
+    assert title_test.stdout.startswith(f"PASS: {current_count} title navigation"), title_test.stdout
     lookup = subprocess.run([sys.executable, str(title_script), "善意の免罪符化"],
                             capture_output=True, text=True, timeout=12, check=True)
     title_result = json.loads(lookup.stdout)
@@ -554,7 +557,13 @@ def run():
         "human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
 
     assert not title_result["no_fit"]
-    print("PASS: real offline 315-derivative literal title CLI / non-Parent guard")
+    current_lookup = subprocess.run([sys.executable, str(title_script), current_last_id, "--resolve-parent"],
+                                    capture_output=True, text=True, timeout=12, check=True)
+    current_item = json.loads(current_lookup.stdout)["derivative_title_candidates"]
+    assert len(current_item) == 1 and current_item[0]["od"] == current_last_id
+    assert current_item[0]["canonical_original"] == current_map["entries"][-1]["canonical_parent_url"]
+    assert current_item[0]["parent_ncl_id"] == current_map["entries"][-1]["ncl_id"]
+    print(f"PASS: real offline {current_count}-derivative literal title CLI / non-Parent guard")
 
     skill_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py"
     expanded = subprocess.run([sys.executable, str(skill_script), "--explore",
@@ -597,14 +606,15 @@ def run():
     # immutable source blobs and preserve the single official Parent URL.
     source_dataset = json.loads((SERVER.parent / "published-ja-source-briefs-314-v1.json").read_text(encoding="utf-8"))
     source_rows = source_dataset["entries"]
-    assert source_rows[-1]["number"] == "315"
-    assert source_dataset["count"] == len(source_rows) == 315
     mapping = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
+    expected_count = len(mapping["entries"])
+    assert source_rows[-1]["number"] == mapping["entries"][-1]["number"]
+    assert source_dataset["count"] == source_dataset["source_equality"] == len(source_rows) == expected_count
     assert source_dataset["canonical_mapping_blob_sha"] == hashlib.sha1(
         b"blob " + str(len((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes())).encode() +
         b"\0" + (SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes()
     ).hexdigest()
-    assert len({r["number"] for r in source_rows}) == 315
+    assert len({r["number"] for r in source_rows}) == expected_count
     for i, row in enumerate(source_rows):
         assert row["number"] == mapping["entries"][i]["number"]
         assert row["canonical_parent_url"] == mapping["entries"][i]["canonical_parent_url"]
@@ -623,7 +633,7 @@ def run():
     plain = (SERVER.parent.parent / "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md").read_text(encoding="utf-8")
     headings = re.findall(r"(?m)^### OD(\d{3}) — ", plain)
     assert headings == [r["number"] for r in source_rows], "Plain-language source page dropped or reordered a Parent"
-    assert len(headings) == len(set(headings)) == 315
+    assert len(headings) == len(set(headings)) == expected_count
     for row in source_rows:
         section = plain.split("### OD" + row["number"] + " — ", 1)[1].split("\n### OD", 1)[0]
         assert section.startswith(row["title"] + "\n"), row["number"]
@@ -632,7 +642,7 @@ def run():
         assert ("Git blob SHA:** `" + row["sha"] + "`") in section, row["number"]
         quoted = "\n".join("> " + v for v in row["brief"].strip().splitlines())
         assert quoted in section, row["number"]
-    assert "原典315本が同等" in plain and "適合なし" in plain
+    assert f"原典{expected_count}本が同等" in plain and "適合なし" in plain
     # The owner-approved top README routes readers to AI_START_HERE. Requiring
     # the full 313-context filename directly in the top presentation is an
     # obsolete layout check, not a genuine source-retrieval requirement.
