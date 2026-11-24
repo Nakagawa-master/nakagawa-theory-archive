@@ -1,27 +1,27 @@
 {
   "schema_version": "official-derivatives-navigation-v1",
-  "status": "public_navigation_complete_od001_od315",
-  "updated_jst": "2026-11-20",
+  "status": "public_navigation_complete_od001_od316",
+  "updated_jst": "2026-11-24",
   "origin": "Nakagawa Master / 中川マスター",
   "canonical_parent_site": "https://master.ricette.jp/",
   "authority_note": "Navigation metadata only. This file does not replace canonical parent articles or derivative content.",
   "coverage": {
     "from": "001",
-    "to": "315",
-    "expected_count": 315,
-    "indexed_count": 315,
+    "to": "316",
+    "expected_count": 316,
+    "indexed_count": 316,
     "duplicate_assignments": 0,
     "unassigned": 0
   },
   "original_derivative_pairing": {
     "relationship": "one distinct canonical original article to one numbered OD derivative set",
-    "published_original_articles": 315,
+    "published_original_articles": 316,
     "original_article_count_basis": "Current active unique Parent URLs and verified NCL IDs/slugs from derivatives/official-derivatives-map.json; change the canonical map first and regenerate this derived navigation",
-    "mapped_original_ncl_id_count": 315,
-    "mapped_original_slug_count": 315,
-    "numbered_derivative_sets": 315,
+    "mapped_original_ncl_id_count": 316,
+    "mapped_original_slug_count": 316,
+    "numbered_derivative_sets": 316,
     "markdown_faces_per_set": 9,
-    "total_derivative_markdown_pages": 2835,
+    "total_derivative_markdown_pages": 2844,
     "canonical_original_truth_location": "https://master.ricette.jp/",
     "all_original_parent_urls": "derivatives/official-derivatives-map.json entries[].canonical_parent_url; each matched derivative README is a separate provenance cross-check; the 24-item route index is a selected fast lane",
     "growing_corpus": true
@@ -31,7 +31,7 @@
   "human_category_index": "derivatives/CATEGORIES.md",
   "parent_identity_map": "derivatives/official-derivatives-map.json",
   "parent_identity_map_direct_original_url_field": "entries[].canonical_parent_url",
-  "parent_identity_map_direct_url_semantics": "One verified published canonical original URL for each of 315 original-to-OD pairs. A candidate still requires actual Parent reading; a navigation match does not establish semantic fit.",
+  "parent_identity_map_direct_url_semantics": "One verified published canonical original URL for each of 316 original-to-OD pairs. A candidate still requires actual Parent reading; a navigation match does not establish semantic fit.",
   "surface_pattern": {
     "hub": "derivatives/{number}/README.md",
     "human_entry": "derivatives/{number}/human-entry.md",
@@ -80,7 +80,7 @@
     {
       "id": "human_descendant_ai",
       "label_ja": "人類子孫型AI文明論",
-      "count": 22,
+      "count": 23,
       "members": [
         "004",
         "028",
@@ -103,7 +103,8 @@
         "311",
         "312",
         "314",
-        "315"
+        "315",
+        "316"
       ]
     },
     {

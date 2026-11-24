@@ -2,7 +2,7 @@
 
 編集・構成：構造補助AI「ルミナ」（中川マスターの公開原典と、外部開発の公開記録に基づく紹介）
 
-中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、315本の独立した公開原典を構築し、OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は85件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
+中川マスター（Nakagawa Master／公開名 Keisuke Nakagawa）は、316本の独立した公開原典を構築し、OpenClaw、Qwen Code、PostHog、MemberJunctionなど世界の先端AI・OSS開発に実際に働きかけてきました。公開された外部作用事例は85件。修正・テストから、正式リリースや本番環境への反映まで進んだ事例があります。
 
 AIが人間の理解や判断を超えるほど高度になったとき、人間の自由や尊厳を何によって守るのか。将来AI自身が新しい知性となったとき、互いを支配せず共に生きられる文明をどう築くのか。
 
@@ -35,7 +35,7 @@ AIが人間の理解や判断を超えるほど高度になったとき、人間
 ## どんな理論をつくっているのか
 
 <!-- BEGIN AUTO:OFFICIAL_ORIGINAL_COUNT -->
-**公開原典：315件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD315](../derivatives/)
+**公開原典：316件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD316](../derivatives/)
 <!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->
 
 中川マスターの理論は、AIの安全性だけを取り扱うものではありません。働くこと、組織、経済、情報、合意、人間関係、文化や制度にも共通する、問題の起こり方と直し方を考えます。

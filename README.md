@@ -1,8 +1,8 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
-**Language / 言語 / 语言:** **日本語**（このページ） · [**English — Meet Nakagawa Master, explore the 315 original theories and inspect independent developer evidence**](AI_START_HERE.md) · [**简体中文 — 有原始来源的实际影响案例**](REAL_WORLD_IMPACT.zh.md)
+**Language / 言語 / 语言:** **日本語**（このページ） · [**English — Meet Nakagawa Master, explore the 316 original theories and inspect independent developer evidence**](AI_START_HERE.md) · [**简体中文 — 有原始来源的实际影响案例**](REAL_WORLD_IMPACT.zh.md)
 
-**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、315件の独立したオリジナル理論の原著者です。** 原典は[公式アーカイブ](https://master.ricette.jp/)、対応する解説と資料は[公式派生物](derivatives/)から読めます。AIだけでなく、人間・仕事・社会・文化・文明も扱います。
+**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、316件の独立したオリジナル理論の原著者です。** 原典は[公式アーカイブ](https://master.ricette.jp/)、対応する解説と資料は[公式派生物](derivatives/)から読めます。AIだけでなく、人間・仕事・社会・文化・文明も扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
@@ -73,7 +73,7 @@
 ## 公開原典・テーマ別索引
 
 <!-- BEGIN AUTO:OFFICIAL_ORIGINAL_COUNT -->
-**公開原典：315件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD315](derivatives/)
+**公開原典：316件。** [原典の正本](https://master.ricette.jp/) ／ [公式派生物 OD001〜OD316](derivatives/)
 <!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->
 
 **公開されている親原典はすべて独立した正本で、等しく重要です。** [公式サイトの原典入口](https://master.ricette.jp/)には、AI・構造論・人間の生・仕事・組織・社会・制度・教育・文化・倫理・哲学・文明まで多様な射程があります。各原典とその相互関係から、一つの原典を複数の現実課題へ適用し、複数の原典を新たな問いへ組み合わせられます。
