@@ -140,12 +140,20 @@ def main():
              "--output", str(candidate)],
             text=True, capture_output=True, check=True, timeout=90, cwd=root,
         )
-        assert "315/315 Parents" in built.stdout, built.stdout
+        assert f"{count}/{count} Parents" in built.stdout, built.stdout
         actual_sha = hashlib.sha256(candidate.read_bytes()).hexdigest()
-    assert actual_sha == expected_sha, (
-        "Registry metadata must identify the exact released bundle, not mutable main: ",
-        actual_sha, expected_sha)
-    print("PASS: first-party MCP registry metadata points to the reproducibly built 315-Parent released MCPB SHA-256")
+    # The GitHub release named by server.json is immutable and contains 315
+    # originals; the current source bundle is a NEW UNPUBLISHED candidate for
+    # live N(t). Never equate or silently overwrite their release identities.
+    if count == 315:
+        assert actual_sha == expected_sha, (
+            "Unchanged official 315-Parent source should reproduce the release: ",
+            actual_sha, expected_sha)
+    else:
+        assert count > 315 and actual_sha != expected_sha, (
+            "A grown source-corpus candidate cannot claim to be the published 315-Parent release: ",
+            count, actual_sha, expected_sha)
+    print(f"PASS: registry retains immutable 315-Parent SHA; source-built {count}-Parent candidate verified separately (not released)")
     print(f"PASS: ONE original MCP v1.2.1; all 11 tools; independent-root and tool/action controls; source {count}, immutable release 315; modern and legacy real clients")
 
 if __name__ == "__main__":
