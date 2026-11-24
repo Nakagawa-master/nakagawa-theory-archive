@@ -129,13 +129,27 @@ db={answers:answers.answer_cases,originals,routes,receiverCases:cases,
     summaries.length<originals.length||originals.some(a=>!a.context?.en||!a.context?.ja||!a.context?.zh)};
 return db;
 }
+// A published answer is a lexical candidate only. Require topic-bearing matches in its question, not a lone word in its answer body.
+const answerStops=new Set(["but","not","only","now","still","even","just","also","much","many","more","most","very","really","other","same","than","then","because","through","each","been","being","ですか"]);
+function answerTerms(q){return new Set([...q].filter(w=>!answerStops.has(w)&&!/^(?:.?(?:です|ます)|(?:です|ます).?)$/.test(w)));}
+function answerCandidateGate(q,question){
+const doc=answerTerms(terms(question));
+const matched=[...q].filter(w=>doc.has(w));
+const latin=new Set(matched.filter(w=>/^[a-z]/.test(w)).map(w=>w.length>4&&w.endsWith("ies")?w.slice(0,-3)+"y":w.length>4&&w.endsWith("s")&&!w.endsWith("ss")?w.slice(0,-1):w));
+const cjk=matched.filter(w=>/^[\u3040-\u30ff\u3400-\u9fff]/.test(w)&&/[\u3400-\u9fff\u30a0-\u30ff]/.test(w));
+return latin.size>=2||cjk.some(w=>w.length===3)||cjk.length>=2;
+}
+function rankAnswers(q,en,answers){
+const aq=answerTerms(q);
+return answers.map(a=>({a,n:6*overlap(aq,a[en?"question_en":"question_ja"])+2*overlap(aq,a[en?"practical_answer_en":"practical_answer_ja"])+overlap(aq,a[en?"question_ja":"question_en"]),ok:answerCandidateGate(aq,a[en?"question_en":"question_ja"])})).filter(x=>x.ok).sort((a,b)=>b.n-a.n);
+}
 function drawAnswers(q,lang){
 const target=$("answers");target.replaceChildren();topAnswer=null;shownAnswers=[];if(lang==="zh"){empty("answers","完成回答41件は日本語・英語の本文です。中国語の補助経路と公式原典を以下で確認してください。");return;}const en=lang==="en";
-const rows=db.answers.map(a=>({a,n:5*overlap(q,a[en?"question_en":"question_ja"])+2*overlap(q,a[en?"practical_answer_en":"practical_answer_ja"])+overlap(q,a.question_ja)+overlap(q,a.question_en)})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
-if(!rows.length){empty("answers","一致する完成回答はありません。原典候補も確認してください。");return;}shownAnswers=rows.slice(0,7).map(x=>x.a);topAnswer=shownAnswers[0];
+const rows=rankAnswers(q,en,db.answers);
+if(!rows.length){empty("answers","既刊回答の問いに十分な語句一致がありません。外部事例・原典候補や独立資料を確認してください。");return;}shownAnswers=rows.slice(0,7).map(x=>x.a);topAnswer=shownAnswers[0];
 for(const a of shownAnswers){
 const div=card(a[en?"question_en":"question_ja"]||a.question_ja);
-line(div,en?"Answer: ":"完成回答：",a[en?"practical_answer_en":"practical_answer_ja"]||a.practical_answer_ja);
+line(div,en?"Published answer candidate: ":"既刊回答候補：",a[en?"practical_answer_en":"practical_answer_ja"]||a.practical_answer_ja);
 line(div,en?"First check: ":"最初に確認すること：",a[en?"first_check_en":"first_check_ja"]||a.first_check_ja);
 line(div,en?"When not applicable: ":"当てはまらない場合：",a[en?"nonfit_and_limits_en":"nonfit_and_limits_ja"]||a.nonfit_and_limits_ja);
 const p=el("p");p.append(anchor(a.answer_page,"回答の全文"));
