@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One original MCP identity, current 315 Parents and 11 tools; modern/legacy clients."""
+"""One MCP identity, growing source corpus, immutable v1.2.1 bundle; modern/legacy clients."""
 import hashlib
 import json
 from pathlib import Path
@@ -19,6 +19,10 @@ def call(i, name, arguments, modern=True):
 def text(out, i):
     return json.loads(out[i]["result"]["content"][0]["text"])
 def main():
+    root = Path(__file__).resolve().parents[1]
+    current_map = json.loads((root / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
+    count = len(current_map["entries"])
+    newest = current_map["entries"][-1]
     vendor = {"url": "https://example.org/origin", "root_id": "A", "relation": "primary", "stance": "supports"}
     copied = {"url": "https://example.org/copy", "root_id": "A", "relation": "derived", "stance": "supports"}
     lab = {"url": "https://example.org/lab", "root_id": "B", "relation": "independent_observation", "stance": "supports"}
@@ -39,7 +43,7 @@ def main():
             "tool_results": [{"id": "done", "status": "completed", "success": True}]}),
         call(7, "preflight_ai_answer_and_action", {}),
         call(8, "overview_nakagawa_whole_structure", {}),
-        call(9, "list_all_published_derivative_parent_links", {"limit": 315}),
+        call(9, "list_all_published_derivative_parent_links", {"limit": count}),
         call(10, "inspect_nakagawa_derivative_connections", {"id": "OD312"}),
         call(11, "find_sources_in_whole_structure",
              {"question": "AI self preservation epistemic hallucination"}),
@@ -86,9 +90,12 @@ def main():
     assert text(got, 5)["blocked"] == 0
     assert text(got, 6)["verdict"] == "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS"
     assert got[7]["result"]["isError"] is True
-    assert text(got, 8)["coverage"]["derivatives"] == 315
+    assert text(got, 8)["coverage"]["derivatives"] == count
     full = text(got, 9)["entries"]
-    assert len(full) == len({x["id"] for x in full}) == 315
+    assert len(full) == len({x["id"] for x in full}) == count
+    assert full[-1]["id"] == "OD" + newest["number"]
+    assert full[-1]["canonical_parent"] == newest["canonical_parent_url"]
+    assert full[-1]["parent_ncl_id"] == newest["ncl_id"]
     assert all(x["canonical_parent"].startswith("https://master.ricette.jp/") for x in full)
     assert text(got, 10)["selected"]["id"] == "OD312"
     assert not text(got, 11)["no_fit"]
@@ -139,7 +146,7 @@ def main():
         "Registry metadata must identify the exact released bundle, not mutable main: ",
         actual_sha, expected_sha)
     print("PASS: first-party MCP registry metadata points to the reproducibly built 315-Parent released MCPB SHA-256")
-    print("PASS: ONE original MCP v1.2.1; all 11 tools; independent-root and tool/action controls; all 315; modern and legacy real clients")
+    print(f"PASS: ONE original MCP v1.2.1; all 11 tools; independent-root and tool/action controls; source {count}, immutable release 315; modern and legacy real clients")
 
 if __name__ == "__main__":
     main()
