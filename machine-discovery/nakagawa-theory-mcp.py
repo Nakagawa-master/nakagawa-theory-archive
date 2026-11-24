@@ -258,7 +258,7 @@ def answer_question(question, explore=False):
     # topic signal. Do not discard that Parent when the rest of the question
     # also happens to match a curated technical example.
     requested_ods = list(dict.fromkeys(
-        f"OD{int(m[1]):03d}" for m in re.finditer(r"\bod\s*0*(\d{1,3})\b", question, re.I)
+        f"OD{int(m[1]):03d}" for m in re.finditer(r"(?:\b|(?<=[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\U00020000-\U0002FA1F]))od\s*0*(\d{1,3})(?:\b|(?=[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\U00020000-\U0002FA1F]))", question, re.I)
     ))
     if requested_ods:
         # Exact source identity outranks fuzzy examples. An omitted result
@@ -809,6 +809,19 @@ def self_test():
     assert [x["route_id"] for x in newest_315["matching_routes"][:2]] == [
         "whole_structure:OD315", "whole_structure:OD001"], newest_315
     assert newest_315["explicit_source_requests"] == ["OD315", "OD001"]
+    # CJK prose need not contain spaces adjacent to explicit source IDs.
+    for question, expected in (
+        ("原典OD315とOD001を比較", ["OD315", "OD001"]),
+        ("比较OD315与OD001的原文", ["OD315", "OD001"]),
+        ("OD315についてOD315を読む", ["OD315"]),
+        ("原典OD315とOD999を比較", ["OD315", "OD999"]),
+    ):
+        local = answer_question(question)
+        assert local["explicit_source_requests"] == expected, local
+        assert local["matching_routes"][0]["route_id"] == "whole_structure:OD315", local
+        assert local["unreturned_explicit_source_requests"] == [x for x in expected if x == "OD999"], local
+    for question in ("xOD315", "OD315x", "OD3150", "OD315_abc", "OD315é"):
+        assert "explicit_source_requests" not in answer_question(question), question
     assert newest_315["matching_routes"][0]["parent_ncl_id"] == "NCL-α-20261120-708a1d"
     assert newest_315["matching_routes"][0]["canonical_original"].endswith(
         "/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")

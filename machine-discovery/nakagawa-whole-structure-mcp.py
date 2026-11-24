@@ -301,7 +301,7 @@ def search(records, question, limit=12):
     # Honor every explicitly named source, in order. Never silently drop a
     # second OD ID or treat a response-size limit as a corpus boundary.
     requested_ids = list(dict.fromkeys(
-        f"OD{int(m[1]):03d}" for m in re.finditer(r"\bod\s*0*(\d{1,3})\b", q, re.I)
+        f"OD{int(m[1]):03d}" for m in re.finditer(r"(?:\b|(?<=[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\U00020000-\U0002FA1F]))od\s*0*(\d{1,3})(?:\b|(?=[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\U00020000-\U0002FA1F]))", q, re.I)
     ))
     if requested_ids:
         by_id = {item["id"]: item for item in records}
@@ -522,6 +522,22 @@ def main():
         assert newest["canonical_parent"].endswith(
             "/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
         assert [x["id"] for x in search(records, "Compare OD001 and OD315")["matched"]] == ["OD001", "OD315"]
+        # JA/ZH prose is a valid ID boundary; embedded Latin identifiers
+        # and longer numbers must remain nonmatches.
+        for question, expected in (
+            ("原典OD315とOD001を比較", ["OD315", "OD001"]),
+            ("比较OD315与OD001的原文", ["OD315", "OD001"]),
+            ("OD315についてOD315を読む", ["OD315"]),
+            ("OD315𠀀", ["OD315"]),
+            ("OD００１", ["OD001"]),
+        ):
+            local = search(records, question)
+            assert local["requested_explicit_ids"] == expected, local
+            assert [x["id"] for x in local["matched"]] == expected, local
+        local_invalid = search(records, "原典OD315とOD999を比較")
+        assert local_invalid["unknown_explicit_ids"] == ["OD999"], local_invalid
+        for question in ("xOD315", "OD315x", "OD3150", "OD315_abc", "OD315é"):
+            assert "requested_explicit_ids" not in search(records, question), question
         assert list_connections(records, offset=expected_count - 1, limit=1)["entries"][0]["id"] == "OD315"
         assert list_connections(records, offset=0, limit=expected_count)["total"] == expected_count
         assert all(x["canonical_parent"].startswith(OFFICIAL) for x in records)
