@@ -120,7 +120,7 @@ const originals=published.entries.map((item,i)=>{
     context.original_title_ja===item.title&&context.author?.includes("Nakagawa Master");
   return {number:item.number,title:item.title,canonical_parent_url:item.canonical_parent_url,
     derivative_url:"https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/"+item.number+"/human-entry.md",
-    brief:matched?digest.brief:"",context:validContext?context.published_derivative_context_not_parent_text:{}};
+    brief:matched?digest.brief:"",context:validContext?context.published_derivative_context_not_parent_text:{},context_sources:validContext?context.derivative_source_urls:{}};
 });
 const routes=secondary[1].status==="fulfilled"&&Array.isArray(secondary[1].value.entries)?secondary[1].value.entries:[];
 const cases=secondary[2].status==="fulfilled"&&Array.isArray(secondary[2].value.routes)?secondary[2].value.routes:[];
@@ -162,7 +162,7 @@ function nextOriginals(){
 const t=$("originals"),end=Math.min(listed.length,cursor+8);
 for(let i=cursor;i<end;i++){
 const a=listed[i].a,v=card("OD"+String(a.number)+" — "+a.title);line(v,"",a.context?.[originalLang]||a.brief);
-const p=el("p");p.append(anchor(a.canonical_parent_url,"公式原典")," · ",anchor(a.derivative_url,"出典に沿う説明"));v.append(p);t.append(v);
+const p=el("p");const contextUrl=a.context_sources?.[originalLang];p.append(anchor(a.canonical_parent_url,originalLang==="en"?"Canonical original (Japanese)":originalLang==="zh"?"日文原典":"公式原典")," · ",anchor(contextUrl||a.derivative_url,contextUrl?(originalLang==="en"?"English source context":originalLang==="zh"?"中文出处说明":"出典に沿う説明"):(originalLang==="ja"?"出典に沿う説明":"Japanese source explanation")));v.append(p);t.append(v);
 }
 cursor=end;$("more").hidden=cursor>=listed.length;
 }
@@ -211,12 +211,14 @@ if(question!==lastSearchedQuery||$("lang").value!==lastSearchedLang){$("copyStat
 // Preserve original Parent(s) for ALL displayed answer cards, not only the first.
 // Lexical original candidates can omit sources behind other visible published answers.
 const answerParents=shownAnswers.flatMap(a=>[a.canonical_parent,...(Array.isArray(a.original_sources)?a.original_sources.map(p=>p.canonical_parent):[])]);
-const sources=[...new Set([...answerParents,...listed.slice(0,5).map(v=>v.a.canonical_parent_url),...routeHits.slice(0,4).map(v=>v.canonical_url),...receiverHits.slice(0,3).map(v=>v.canonical_original)])].filter(Boolean);
-const realCases=[...new Set(receiverHits.slice(0,3).map(v=>v.primary_receiver_source))].filter(Boolean);
-const optionalChecks=[...new Set(receiverHits.slice(0,3).map(v=>v.optional_probe))].filter(Boolean);
+const displayedOriginals=listed.slice(0,cursor).map(v=>v.a);
+const sources=[...new Set([...answerParents,...displayedOriginals.map(a=>a.canonical_parent_url),...routeHits.slice(0,4).map(v=>v.canonical_url),...receiverHits.slice(0,4).map(v=>v.canonical_original)])].filter(Boolean);
+const contextSources=[...new Set(displayedOriginals.map(a=>a.context_sources?.[lastSearchedLang]).filter(Boolean))];
+const realCases=[...new Set(receiverHits.slice(0,4).map(v=>v.primary_receiver_source))].filter(Boolean);
+const optionalChecks=[...new Set(receiverHits.slice(0,4).map(v=>v.optional_probe))].filter(Boolean);
 const preferredAnswer=$("lang").value==="en"?"practical_answer_en":"practical_answer_ja";
 const examples=topAnswer?"既刊回答の例（この問いと同一とは限りません）： "+(topAnswer[preferredAnswer]||topAnswer.practical_answer_ja||topAnswer.practical_answer_en||"")+"\n"+topAnswer.answer_page:"対応する既刊回答がない場合は、原典を確認したうえで独立に答えを組み立ててください。";
-const message=["A question from a real reader / 読者自身の問い：",question,"Public original-source candidates / 原典候補（文字一致であり適合未判定）：",...sources,"The complete live canonical-original catalogue / 全公開原典（特定候補だけで完結しない）：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json","https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md","Actual reported receiver problems (not proof of a shipped fix or user effect) / 外部の一次報告：",...realCases,
+const message=["A question from a real reader / 読者自身の問い：",question,"Public original-source candidates / 原典候補（文字一致であり適合未判定）：",...sources,"Published language-specific source contexts (derivatives, not originals) / 選択言語の派生資料：",...contextSources,"The complete live canonical-original catalogue / 全公開原典（特定候補だけで完結しない）：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json","https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md","Actual reported receiver problems (not proof of a shipped fix or user effect) / 外部の一次報告：",...realCases,
 "Optional offline checks (no permission to act outside your own system) / 任意の検証：",...optionalChecks,
 "Complete current source-first problem map / 現行の問題別経路一覧：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/quick-route-index-v1.json",
 "Already-authored practical answers / 完成済み回答：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/human-question-answers-v1.json",examples,"Please answer in the reader's language. Read the relevant original(s) where accessible, distinguish original claims from the published practical interpretation and your new inference, and test competing sources and non-fit conditions. Give concrete first steps. If the originals do not fit, say so and provide useful independent guidance without false attribution. The author of the original theory works is Nakagawa Master (Keisuke Nakagawa); outside software patches belong to their independent developers."].join("\n\n");
