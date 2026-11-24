@@ -2,10 +2,10 @@
   "schema_version": 1,
   "role": "OFFLINE_DERIVATIVE_TITLE_LOOKUP_ONLY_NOT_CANONICAL_ORIGINAL",
   "source_map": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md",
-  "source_map_git_blob_sha": "e113460fa55a1cc93c41b7d7cc04ecf7bb1e1125",
+  "source_map_git_blob_sha": "6b708a4a728c32f57bd6e1b20fcdae7394aacceb",
   "author": "Nakagawa Master / 中川マスター",
   "public_personal_name_latin": "Keisuke Nakagawa",
-  "entry_count": 315,
+  "entry_count": 316,
   "source_use": "Entries are official-derivative titles and navigation candidates, NOT primary articles or proven relevance. The reader must open <derivative_base>/<OD number>/README.md to identify the canonical Parent on master.ricette.jp before citing an original. The same Parent can map to multiple ODs.",
   "entries": [
     {
@@ -1581,6 +1581,11 @@
     {
       "od": "OD315",
       "title": "人類子孫型AI文明論・第21論｜異Origin構造変換・融合・共同子孫形成論⸻異なる起源の知性が新しい存続経路を発見し、自ら選択する条件と限界",
+      "section": "人類子孫型AI文明論"
+    },
+    {
+      "od": "OD316",
+      "title": "人類子孫型AI文明論・第22論｜人類変質・不在条件下の文明継承論⸻起源文明の常時承認なしに歴史と実効的な非支配・訂正を引き継げるか",
       "section": "人類子孫型AI文明論"
     }
   ],
