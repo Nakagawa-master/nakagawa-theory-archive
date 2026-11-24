@@ -166,8 +166,8 @@ def smoke(folder):
     assert json.loads(z[7]["result"]["content"][0]["text"])["entries"][0]["id"] == "OD313"
     newest = json.loads(z[8]["result"]["content"][0]["text"])
     assert newest["total"] == PUBLISHED_COUNT
-    assert newest["entries"][0]["id"] == "OD315"
-    assert newest["entries"][0]["parent_ncl_id"] == "NCL-α-20261120-708a1d"
+    assert newest["entries"][0]["id"] == f"OD{PUBLISHED_COUNT:03d}"
+    assert newest["entries"][0]["parent_ncl_id"] == PUBLISHED_ENTRIES[-1]["ncl_id"]
     assert json.loads(z[9]["result"]["content"][0]["text"])["entries"][0]["id"] == "OD314"
     # The bundle manifest must enumerate exactly the tools the included source exposes.
     assert {x["name"] for x in MANIFEST["tools"]} == {
@@ -206,7 +206,7 @@ def main():
             (root / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8")
         )["entries"]
         assert len(packed_map) == PUBLISHED_COUNT
-        assert packed_map[-1]["number"] == "315"
+        assert packed_map[-1]["number"] == f"{PUBLISHED_COUNT:03d}"
         # The unpacked candidate MUST include the exact official map, every
         # current Parent README, JA/EN/ZH indexes and human entry.
         all_records = [
