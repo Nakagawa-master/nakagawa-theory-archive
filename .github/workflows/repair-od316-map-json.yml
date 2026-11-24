@@ -1,0 +1,21 @@
+name: repair-canonical-od316-map-json
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-od316-map-json.yml'
+      - '.github/scripts/repair_od316_map_json.py'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebuild canonical map from last valid OD315 baseline
+        run: python .github/scripts/repair_od316_map_json.py
