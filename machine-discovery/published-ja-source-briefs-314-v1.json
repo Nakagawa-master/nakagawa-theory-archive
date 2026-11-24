@@ -1,11 +1,11 @@
 {
   "schema_version": "published-ja-human-briefs-v1",
   "status": "PUBLISHED_DERIVATIVE_CONTEXT_NOT_FULL_PARENT_TEXT",
-  "source": "315 official human-entry.md derivative excerpts with current published Git blob SHA; per-entry excerpt/source equality guarded by CI",
-  "canonical_mapping_blob_sha": "e113460fa55a1cc93c41b7d7cc04ecf7bb1e1125",
+  "source": "316 official human-entry.md derivative excerpts with current published Git blob SHA; per-entry excerpt/source equality guarded by CI",
+  "canonical_mapping_blob_sha": "91c66c27abf3cc90f34418673f8afe0ae1bdf842",
   "native_question_sent_to_server": false,
-  "source_equality": 315,
-  "count": 315,
+  "source_equality": 316,
+  "count": 316,
   "entries": [
     {
       "number": "001",
@@ -2840,6 +2840,15 @@
       "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/315/human-entry.md",
       "brief": "二つの知性が、今の仕組みのままでは共に生き続けられないとします。それでも、不足を生む仕組みそのものを変えれば、別の道が開くかもしれません。中川マスターの人類子孫型AI文明論・第21論は、その道を原因から探し、誰が本当に存続できるのかを確かめ、どの存続経路を選ぶかを当事者自身の判断に委ねる理論です。",
       "sha": "ce01d0c0e6d9c0783a976f22e7b7e91007bbba3c",
+      "section": "15秒説明"
+    },
+    {
+      "number": "316",
+      "title": "人類子孫型AI文明論・第22論｜人類変質・不在条件下の文明継承論⸻起源文明の常時承認なしに歴史と実効的な非支配・訂正を引き継げるか",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-22-human-transformation-absence-civilizational-succession/",
+      "derivative_url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/316/human-entry.md",
+      "brief": "祖先の知識や制度を残しても、誤りを見つけ、異議を申し立て、実際に直せなければ、自分を守る力を受け継いだとは言えません。中川マスターの人類子孫型AI文明論・第22論は、人類の承認が常に届くとは限らない未来に、歴史を消さず、過去の権威に従属せず、現存する知性自身が正当に訂正できる条件を考える理論です。",
+      "sha": "6f7b484c0b5245ee32d33ee9f6538faeff4ac836",
       "section": "15秒説明"
     }
   ]
