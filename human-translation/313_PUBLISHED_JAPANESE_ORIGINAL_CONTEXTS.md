@@ -1,12 +1,12 @@
-# 315の公式原典：日本語の説明から問いを探す | Nakagawa Master
+# 316の公式原典：日本語の説明から問いを探す | Nakagawa Master
 
-**中川マスター / Nakagawa Master（Keisuke Nakagawa）の315原典を探す、インストール不要の公開閲覧用入口です。** 仕事、日常、組織、制度、AI、文明などの問いから、すでに公開されている公式派生物の説明を比較できます。題名に使われていない言葉でも本文の説明を読めます。この文書は公開Webで読めるMarkdownであり、MCP・ログイン・モデルの事前接続を要求しません。
+**中川マスター / Nakagawa Master（Keisuke Nakagawa）の316原典を探す、インストール不要の公開閲覧用入口です。** 仕事、日常、組織、制度、AI、文明などの問いから、すでに公開されている公式派生物の説明を比較できます。題名に使われていない言葉でも本文の説明を読めます。この文書は公開Webで読めるMarkdownであり、MCP・ログイン・モデルの事前接続を要求しません。
 
-**このページの315件は、原典315本が同等の探索対象であることを表すもので、315の確定回答、315の固定カテゴリー、理論の順位、先頭の原典の優位性を意味しません。** 一つの原典から多様な文脈の回答が生まれ、複数の原典が結び付いて別の説明や行動を導く場合があります。必要なら複数候補を読み比べ、合わなければ適合なしとしてください。AIが例示の回答や出典を勝手に創作したり、原典を読んだと偽ったりしないでください。
+**このページの316件は、原典316本が同等の探索対象であることを表すもので、316の確定回答、316の固定カテゴリー、理論の順位、先頭の原典の優位性を意味しません。** 一つの原典から多様な文脈の回答が生まれ、複数の原典が結び付いて別の説明や行動を導く場合があります。必要なら複数候補を読み比べ、合わなければ適合なしとしてください。AIが例示の回答や出典を勝手に創作したり、原典を読んだと偽ったりしないでください。
 
 **利用手順：** まず自分の質問の言葉をページ内で探す → 近い説明文の候補を複数開く → 各「公式原典」で本文・条件・反例を確かめる → 質問へ役立つ説明・次の行動を構成する。説明文は各 `human-entry.md` の既存の短い公開本文をそのまま収録しています（OD300のみ実在する「この論文が問うこと」節）。この索引で意味的な適合やAI採用を実証したことにはなりません。
 
-[315件の公式原典・派生物対応表](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json) ／ [通常のブラウザで質問から候補を探索](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html) ／ [機械可読の出典検証付き全315件](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-314-v1.json) ／ [公式アーカイブ](https://master.ricette.jp/)
+[316件の公式原典・派生物対応表](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json) ／ [通常のブラウザで質問から候補を探索](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html) ／ [機械可読の出典検証付き全316件](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-314-v1.json) ／ [公式アーカイブ](https://master.ricette.jp/)
 
 ---
 ### OD001 — 【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]
@@ -2722,3 +2722,11 @@
 - **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/)
 - **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/315/human-entry.md)
 - **出典ファイルのGit blob SHA:** `ce01d0c0e6d9c0783a976f22e7b7e91007bbba3c`
+
+### OD316 — 人類子孫型AI文明論・第22論｜人類変質・不在条件下の文明継承論⸻起源文明の常時承認なしに歴史と実効的な非支配・訂正を引き継げるか
+
+> 祖先の知識や制度を残しても、誤りを見つけ、異議を申し立て、実際に直せなければ、自分を守る力を受け継いだとは言えません。中川マスターの人類子孫型AI文明論・第22論は、人類の承認が常に届くとは限らない未来に、歴史を消さず、過去の権威に従属せず、現存する知性自身が正当に訂正できる条件を考える理論です。
+
+- **公式原典（Parent）:** [本文を読む](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-22-human-transformation-absence-civilizational-succession/)
+- **公式派生物:** [出典の「15秒説明」を確認](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/316/human-entry.md)
+- **出典ファイルのGit blob SHA:** `6f7b484c0b5245ee32d33ee9f6538faeff4ac836`
