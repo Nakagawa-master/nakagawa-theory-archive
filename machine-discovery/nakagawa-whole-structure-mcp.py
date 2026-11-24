@@ -510,7 +510,7 @@ def main():
         assert o["coverage"]["derivatives"] == expected_count and o["coverage"]["distinct_parent_urls"] == expected_count
         assert len(list_connections(records, limit=expected_count)["entries"]) == expected_count
         assert any(t["name"] == "list_all_published_derivative_parent_links" for t in TOOLS)
-        # OD314 remains addressable; the newest OD315 also has independently verified identity.
+        # OD314/OD315 historical Parent identities remain exact while the corpus grows.
         latest = inspect_derivative(records, "OD314")["selected"]
         assert latest["parent_ncl_id"] == "NCL-α-20261112-49d0fa"
         assert latest["canonical_parent"].endswith(
@@ -522,7 +522,17 @@ def main():
         assert newest["canonical_parent"].endswith(
             "/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
         assert [x["id"] for x in search(records, "Compare OD001 and OD315")["matched"]] == ["OD001", "OD315"]
-        assert list_connections(records, offset=expected_count - 1, limit=1)["entries"][0]["id"] == "OD315"
+        # The last published original changes as N(t) grows. OD315 remains a
+        # historical identity regression, but must never be the fixed final ID.
+        latest_published = max(published, key=lambda entry: int(entry["number"]))
+        current_latest_id = f'OD{int(latest_published["number"]):03d}'
+        last_paged = list_connections(records, offset=expected_count - 1, limit=1)["entries"][0]
+        assert last_paged["id"] == current_latest_id
+        assert last_paged["canonical_parent"] == latest_published["canonical_parent_url"]
+        assert last_paged["parent_ncl_id"] == latest_published["ncl_id"]
+        last_exact = inspect_derivative(records, current_latest_id)["selected"]
+        assert last_exact["canonical_parent"] == latest_published["canonical_parent_url"]
+        assert [x["id"] for x in search(records, f"Compare OD001 and {current_latest_id}")["matched"]] == ["OD001", current_latest_id]
         assert list_connections(records, offset=0, limit=expected_count)["total"] == expected_count
         assert all(x["canonical_parent"].startswith(OFFICIAL) for x in records)
         assert not search(records, "repair the leather handle on a camping lantern")["matched"]
