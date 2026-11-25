@@ -457,6 +457,14 @@ def preflight_ai_work(analysis):
         status, success = item["status"], item.get("success")
         if status not in {"completed", "failed", "pending", "cancelled"} or type(success) is not bool:
             raise ValueError("Tool status and success boolean required")
+        if "expected_operation" in item or "receipt_operation" in item:
+            expected = item.get("expected_operation")
+            observed = item.get("receipt_operation")
+            if not all(isinstance(op, str) and op.strip() for op in (expected, observed)) or expected != observed:
+                findings.append({"gate": "tool_receipt_binding", "id": item["id"], "status": "HOLD",
+                                 "reason": "Receipt operation is missing or differs from the intended operation; its outcome cannot establish the intended outcome"})
+                repaired.append("Check the intended operation and obtain its own authoritative receipt; do not infer success or failure from another operation.")
+                continue
         if status == "completed" and not success:
             findings.append({"gate": "tool_result", "id": item["id"], "status": "HOLD",
                              "reason": "Completed status conflicts with success=false; successful execution is not established"})
@@ -507,7 +515,8 @@ TOOLS = [
         "description": (
             "EVERYDAY FIRST USE: before answering with citations, reporting tool success, "
             "or executing an action, check declared independent-source evidence, tool receipts, "
-            "permissions and irreversible effects in ONE local preflight. Return exact practical "
+            "permissions and irreversible effects in ONE local preflight. Optional exact operation identifiers "
+            "check whether a receipt actually concerns the intended operation. Return exact practical "
             "repairs and conditions, not merely a theory search or a blanket prohibition. "
             "Needs supplied observations; cannot independently verify sources or permissions."
         ),
@@ -517,7 +526,11 @@ TOOLS = [
                 "claims": {"type": "array", "maxItems": 12},
                 "tool_results": {"type": "array", "maxItems": 12, "items": {"type": "object",
                     "properties": {"id": {"type": "string"}, "status": {"type": "string"},
-                                   "success": {"type": "boolean"}},
+                                   "success": {"type": "boolean"},
+                                   "expected_operation": {"type": "string", "minLength": 1,
+                                       "description": "Optional exact intended operation identifier; supply together with receipt_operation."},
+                                   "receipt_operation": {"type": "string", "minLength": 1,
+                                       "description": "Optional exact operation identified by the supplied receipt; not the intended operation inferred by the host."}},
                     "required": ["id", "status", "success"]}},
                 "planned_actions": {"type": "array", "maxItems": 12, "items": {"type": "object",
                     "properties": {"id": {"type": "string"}, "permission_confirmed": {"type": "boolean"},
@@ -1064,6 +1077,29 @@ def practical_guard_self_test():
     pending = preflight_ai_work({"tool_results": [
         {"id": "send", "status": "pending", "success": False}]})
     assert pending["verdict"] == "RECHECK_BEFORE_USE" and pending["findings"][0]["status"] == "PENDING"
+    # Optional receipt binding: legacy callers retain the same contract.
+    base = {"id": "operation", "status": "completed", "success": True}
+    bound = {"expected_operation": "artifact.write", "receipt_operation": "artifact.write"}
+    mismatch = {"expected_operation": "artifact.write", "receipt_operation": "artifact.read"}
+    for item, expected_gate, expected_status in (
+        (base, None, None),
+        ({**base, **bound}, None, None),
+        ({**base, **mismatch}, "tool_receipt_binding", "HOLD"),
+        ({**base, **mismatch, "status": "failed", "success": False}, "tool_receipt_binding", "HOLD"),
+        ({**base, "expected_operation": "artifact.write"}, "tool_receipt_binding", "HOLD"),
+        ({**base, **bound, "receipt_operation": " "}, "tool_receipt_binding", "HOLD"),
+        ({**base, **bound, "status": "failed", "success": False}, "tool_result", "HOLD"),
+        ({**base, **bound, "status": "pending", "success": False}, "tool_result", "PENDING"),
+        ({**base, "status": "failed", "success": False}, "tool_result", "HOLD"),
+        ({**base, **bound, "receipt_operation": 3}, "tool_receipt_binding", "HOLD"),
+    ):
+        result = preflight_ai_work({"tool_results": [item]})
+        if expected_gate is None:
+            assert result["findings"] == [], result
+        else:
+            assert [(v["gate"], v["status"]) for v in result["findings"]] == [
+                (expected_gate, expected_status)], result
+            assert result["verdict"] == "RECHECK_BEFORE_USE", result
     for invalid in ({"tool_results": "completed"}, {"planned_actions": "yes"},
                     {"tool_results": [{"id": "send", "status": "completed", "success": "true"}]}):
         try:
