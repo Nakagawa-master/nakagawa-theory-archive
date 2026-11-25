@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は86件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は89件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -1972,6 +1972,24 @@ AIが道具から正常なデータを受け取ったのに、データに特定
 [2026年10月18日の本線マージ](https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f)を経て、[2026年11月22日公開の正式版 v0.4.6](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)の変更一覧にPR #777が掲載され、リリースタグにも当該マージが含まれています。**[正式版の回帰テスト（392〜414行）](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)の説明文には指摘者として `Nakagawa-master` が明記**され、特定キーを含む正常なJSON・変数を保持する場合と、実際に例外が起きる場合を区別して検査しています。
 
 これは第三者が実装した正式版のソースに本人への功績帰属が保存された事例です。コードとテストの作者は独立開発者です。こちらでのテスト実行、実利用者の改善結果、外部AIによる原論の独立選択は未確認です。
+
+## 87. Qwen Code｜操作を送る前の失敗と送信後の不明状態を分離し、権限確認の意味を一致させる
+
+AIがまだセッション終了命令を送っていないのに、終了したか不明と扱えば、安全にやり直せる処理まで止まります。[中川マスターが指摘した具体的な反例](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378)は、排他的な予約ファイルが見える状態になった後、ディレクトリ同期が失敗し、終了命令は未送信のままになるというものです。[開発者 @chiga0 が修正](https://github.com/chiga0/qwen-code/commit/e3e4eb53b8b7ac0608c7bfe7dde9d6e43b246d6b)し、同じ稼働中の所有者・操作IDの場合に限り予約を再確認して再試行できるようにしました。[独立レビュアー @yiliang114 は中川マスターの指摘を明記し、未送信、同一操作での再試行、別IDの拒否を確認](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049631029)しました。
+
+さらに、他のレビュアーが発見したスキルの実体パスに関する権限判定の問題に対し、[中川マスターが追加の検証条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049903098)を提示しました。実際の権限判定と明示的な確認要求の判定は同一のパスを基準にしなければならず、通常の確認要求とは区別する必要があります。[開発者が共通判定処理を実装し、受け入れ条件を明記](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050795285)。[独立レビュアー @yiliang114](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050804900)と[@doudouOUC](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050900161)は、それぞれこの条件を含む検証を報告して承認しました。[2026年11月25日に本線へマージ](https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939)され、[実際の回帰テスト](https://github.com/QwenLM/qwen-code/blob/4e50b6b8758580e5558ee3ad964a4cad65838939/packages/core/src/permissions/permission-manager.test.ts#L242-L300)にも確認できます。二つの具体的な貢献を含む一つのPRです。正式配布版への収録と実利用者の改善結果は未確認です。
+
+## 88. Pydantic AI｜結果が回収されなかったことと、処理が実行されなかったことは違う
+
+AIが最終回答を先に出したとしても、既に開始した外部作業まで「実行されなかった」とは言えません。[中川マスターが実コードと公式の非同期処理例から提示した反例](https://github.com/pydantic/pydantic-ai/issues/14322#issuecomment-7133174447)を、[メンテナー @dsfaccini が引用して設計選択肢を整理](https://github.com/pydantic/pydantic-ai/issues/14322#issuecomment-7139224276)し、[元の報告者 @shaojunying が未回収の結果と未実行を区別する実装に変更](https://github.com/pydantic/pydantic-ai/issues/14322#issuecomment-7141438929)しました。
+
+別のメンテナー @DouweM は[公式PR #14380](https://github.com/pydantic/pydantic-ai/pull/14380)で、実行中に保留された呼び出しに「最終結果が先に成立し、ツール結果を回収しなかった」という別の記録を返す仕組みと、各呼び出しに一つの結果イベントを返すテストを実装しました。[実コード](https://github.com/pydantic/pydantic-ai/blob/85530ffd5ad55a03f4b4f61ed24dc4612cac277b/pydantic_ai_slim/pydantic_ai/_tool_execution.py#L1168-L1200)で確認できます。既存の型との互換性のため、結果の型の `outcome` は既定の `success` のままであり、外部作業の成功を証明するものではありません。PRは2026年11月25日時点で未マージです。実装者は報告者とメンテナーであり、全体の修正を中川マスター一人の成果とはしません。
+
+## 89. Qwen Code｜AIへの入力確認と、副作用のある確認処理を一度だけ実行する保証は別
+
+[中川マスターはPR #18266のレビュー](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6041579649)で、入力確認の途中で処理が外部に記録を残した後に中断されると、確認結果がなくても副作用は残り、同じ入力を復元すると処理が再実行され得ると指摘しました。[開発者 @callmeYe がこの条件を明確に認め](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7150221702)、同一の入力を識別するキーを端末・ACP・ホスト共通の後続課題としました。[中川マスターが入力の同一性と試行の同一性を分ける具体的な条件を補足](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7154661721)し、[独立レビュアー @qqqys](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6054522926)と[@yiliang114](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6055022554)も、中川マスターとの合意を明記して承認しました。
+
+元の入力確認のライフサイクル修正は[2026年11月25日に本線へマージ](https://github.com/QwenLM/qwen-code/commit/6aa87a5ea579ebb86f2231105d38d8c4b7554e96)されました。**副作用の重複防止に関する中川マスターの提案は別の後続課題であり、マージされた[共通処理](https://github.com/QwenLM/qwen-code/blob/6aa87a5ea579ebb86f2231105d38d8c4b7554e96/packages/core/src/hooks/user-prompt-submit.ts)に識別キーはまだありません。** 本事例は第三者による設計上の問題の受容と合意の記録であり、その追加提案自体の実装・リリース実績ではありません。
 
 ## 公開された成果と、原典へ戻る道筋
 

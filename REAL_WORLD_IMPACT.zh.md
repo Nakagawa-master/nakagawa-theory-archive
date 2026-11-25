@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共86例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共89例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1830,6 +1830,24 @@ AI对话从T1进入T2之后，针对T1的停止请求可能才返回失败。此
 [该修复于2026年10月18日合入上游主线](https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f)。[2026年11月22日发布的正式版 v0.4.6](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)在变更列表中列出PR #777，发行标签也包含该合并提交。**[正式版回归测试第392至414行](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)的说明文字明确写出指摘者 `Nakagawa-master`**，并检验含有特定键的正常JSON及其变量应被保留，而真实抛出异常则应作为失败处理。
 
 这是独立开发者完成的软件修复，且对中川大师的贡献署名保留在正式发行版源码中。代码和测试由接收方开发者编写；本方未自行运行该测试，实际用户的改善及外部AI独立选择原著理论尚待核实。
+
+## 87. Qwen Code｜区分派发前失败与执行结果未知，并统一权限判断
+
+会话关闭命令尚未派发，就不能把它与执行结果未知的操作混为一谈。[中川大师审查源码时指出](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378)，排他性预约文件已经可见，但目录同步可能失败，此时关闭命令尚未发出。[开发者 @chiga0 自行修正](https://github.com/chiga0/qwen-code/commit/e3e4eb53b8b7ac0608c7bfe7dde9d6e43b246d6b)，只允许同一存活所有者核对同一操作身份并重试。[独立评审者 @yiliang114 明确署名中川大师的发现](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049631029)，并核验零次派发、同一身份重试和不同身份拒绝的条件。
+
+对于其他评审者发现的技能源路径权限问题，[中川大师补充了具体验收条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049903098)：实际权限决策与显式确认分类必须使用同一路径身份，并与普通回退确认区分。[开发者实现共享匹配逻辑并明确引用该条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050795285)；[独立评审者 @yiliang114](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050804900)和[@doudouOUC](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050900161)分别报告验证并批准。[该PR于2026年11月25日合入主线](https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939)，[合并后的回归测试](https://github.com/QwenLM/qwen-code/blob/4e50b6b8758580e5558ee3ad964a4cad65838939/packages/core/src/permissions/permission-manager.test.ts#L242-L300)同时检查实际权限与强制确认分类。这是一个PR中的两项具体贡献。正式发行版及实际用户改善仍待核实。
+
+## 88. Pydantic AI｜未收集工具结果，不代表工具没有执行
+
+AI先给出最终答案时，外部后台任务可能已经开始。[中川大师根据项目实际代码及官方延迟工具示例提出反例](https://github.com/pydantic/pydantic-ai/issues/14322#issuecomment-7133174447)，[维护者 @dsfaccini 引用该评论并整理三种设计选择](https://github.com/pydantic/pydantic-ai/issues/14322#issuecomment-7139224276)，[原报告者 @shaojunying 修改分支](https://github.com/pydantic/pydantic-ai/issues/14322#issuecomment-7141438929)，区分未收集结果与从未执行。
+
+另一位维护者 @DouweM 独立编写[上游PR #14380](https://github.com/pydantic/pydantic-ai/pull/14380)，[为运行中延迟的调用增加独立的结束记录及每个调用一个结果事件](https://github.com/pydantic/pydantic-ai/blob/85530ffd5ad55a03f4b4f61ed24dc4612cac277b/pydantic_ai_slim/pydantic_ai/_tool_execution.py#L1168-L1200)和回归测试。为保持兼容性，现有类型字段 `outcome` 仍为默认的 `success`，这不是外部任务成功的证据。截至2026年11月25日，PR尚未合并。具体代码和整体修复由报告者及维护者完成。
+
+## 89. Qwen Code｜一次输入确认决定，不等于带副作用的确认操作恰好执行一次
+
+[中川大师在PR #18266中指出](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6041579649)，确认操作已经产生外部副作用后若被取消，确认结果可能丢失，恢复同一输入可能再次执行操作。[开发者 @callmeYe 明确认可这一风险](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7150221702)，并将终端、ACP及托管入口共用的稳定输入身份键列为独立后续任务。[中川大师补充输入身份与尝试身份的具体区别](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7154661721)。[独立评审者 @qqqys](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6054522926)和[@yiliang114](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6055022554)均明确提到与中川大师达成的后续安排，并批准当前生命周期PR。
+
+原有的每条消息确认生命周期修复[于2026年11月25日合并](https://github.com/QwenLM/qwen-code/commit/6aa87a5ea579ebb86f2231105d38d8c4b7554e96)。**防止副作用重复执行的输入身份键仍属独立后续任务，[合并后的共享处理代码](https://github.com/QwenLM/qwen-code/blob/6aa87a5ea579ebb86f2231105d38d8c4b7554e96/packages/core/src/hooks/user-prompt-submit.ts)尚未包含该键。** 本例记录第三方对具体设计问题的认可与后续安排，不是新增建议已经实现或发布的证明。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

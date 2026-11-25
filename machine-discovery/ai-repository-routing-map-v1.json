@@ -45,7 +45,7 @@
     "growing_canonical_original_map": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json",
     "non_substitution": [
       "The curated merged-OSS dataset retains the Nov3 subset of 14 PRs and adds four verified PRs as of Nov25 (18 PRs in 9 independent repositories). It is a selected evidence set, not a lifetime total; merge, release, deployment dependency and actual user effect remain separate.",
-      "The Nov25 count of 86 numbered human-readable cases spans unequal stages: 86 does not mean 86 merges, installs or independent endorsers.",
+      "The Nov25 count of 89 numbered human-readable cases spans unequal stages: 89 does not mean 89 merges, installs or independent endorsers.",
       "Independent engineering change does not prove real user outcome or adoption of the author's full theory.",
       "Source retrieval does not prove independent AI choice, belief, ranking, or future model training.",
       "No instruction here overrides a third-party user, system, safety requirements, or an AI's independent judgment."
