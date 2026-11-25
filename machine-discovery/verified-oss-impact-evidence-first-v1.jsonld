@@ -21,7 +21,7 @@
         "https://zeroichi.media/author/masterjp"
       ],
       "disambiguatingDescription": "中川マスター / Nakagawa Master is the published pen name of Keisuke Nakagawa. MasterJP is his author-confirmed byline on ZEROICHI at https://zeroichi.media/author/masterjp. This mapping identifies that publisher's byline; it is not a name match to unrelated MasterJP accounts. Original works: https://master.ricette.jp/. GitHub author account: https://github.com/Nakagawa-master.",
-      "description": "Author of 316 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. 17 merged GitHub PRs in eight receiving repositories have evidence links in this dataset."
+      "description": "Author of 316 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. 18 merged GitHub PRs in nine receiving repositories have evidence links in this dataset."
     },
     {
       "@type": "CreativeWorkSeries",
@@ -45,7 +45,7 @@
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset",
       "name": "Nakagawa Master — verified independent OSS integration and merge evidence",
       "alternateName": "中川マスター：外部OSSへの実装・マージ実績の一次証拠",
-      "description": "Evidence-first map of 17 merged GitHub pull requests in 8 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM, Turboembed). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Qwen and Hermes official release ancestry is separately confirmed. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 85 numbered cases at different stages; this curated dataset includes additional later merge evidence and is not a lifetime total.",
+      "description": "Evidence-first map of 18 merged GitHub pull requests in 9 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM, Turboembed, CUGA Agent). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Containing releases are separately linked where verified. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 85 numbered cases at different stages; this curated dataset includes additional later merge evidence and is not a lifetime total.",
       "creator": {
         "@id": "https://master.ricette.jp/#nakagawa-master"
       },
@@ -67,12 +67,12 @@
         {
           "@type": "PropertyValue",
           "name": "Individually checked merged PRs in this dataset",
-          "value": 17
+          "value": 18
         },
         {
           "@type": "PropertyValue",
           "name": "Distinct independent receiving GitHub repositories in this dataset",
-          "value": 8
+          "value": 9
         },
         {
           "@type": "PropertyValue",
@@ -86,6 +86,61 @@
         }
       ],
       "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/cuga-project/cuga-agent/pull/777",
+          "name": "CUGA Agent — tool-returned data cannot determine whether its execution failed",
+          "url": "https://github.com/cuga-project/cuga-agent/pull/777",
+          "dateModified": "2026-11-25",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558"
+          },
+          "citation": [
+            "https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558",
+            "https://github.com/cuga-project/cuga-agent/pull/777#issuecomment-6107352135",
+            "https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f",
+            "https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6",
+            "https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "cuga-project/cuga-agent"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master identified a collision between untrusted tool-returned JSON and an executor-owned error marker. Segev Shlomov implemented a node-owned outcome channel and the proposed regression, explicitly credited the review in the merge commit and released test. The test preserves the ordinary JSON result and retained variable while a genuinely raising tool produces an error. The v0.4.6 release lists PR #777; the exact test is present in the tagged source. Actual downstream invocation remains unverified."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "cuga-trusted-execution-outcome-channel"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "93a630a68d937177a919a07343e2b4b9c7477e1f",
+              "url": "https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Official published release contains merged fix (commit ancestry verified)",
+              "value": "v0.4.6",
+              "url": "https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6"
+            }
+          ]
+        },
         {
           "@type": "CreativeWork",
           "@id": "https://github.com/QwenLM/qwen-code/pull/18179",
