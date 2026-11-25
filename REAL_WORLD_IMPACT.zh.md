@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共89例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共91例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1630,7 +1630,9 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 **独立工程师 @AN-BC 向 `@Nakagawa-master` 致谢，并[自行实现基于SQL词法分析的安全重命名与回归测试](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 开发者还主动表示注意到中川マスター对多项MemberJunction工作的具体分析，并询问该账号背后的本人。中川マスター已[以公开姓名与原典网站作答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)。[PR #6339已于2026年11月6日正式合并](https://github.com/MemberJunction/MJ/pull/6339)。包含该修复的正式版本与真实用户的使用结果仍需分别核实。该例同时保留独立代码修复与直接的人物关注的原始证据。
 
-**另一项问题中再次出现独立采用（2026年11月22日核实）：** 同一名工程师 @AN-BC 在另一项关于共享会话“停止全部运行”的 [MemberJunction PR #5609](https://github.com/MemberJunction/MJ/pull/5609)中，[明确引用并继续分析中川マスター先前的审查](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7070452691)。原审查区分“谁真正发起了停止”和客户端可填写的 `CancellationReason='System'/'Timeout'`；后者不能自动证明操作来自可信服务器。@AN-BC 随后在[本人提交 `6cc587eb`](https://github.com/MemberJunction/MJ/commit/6cc587eb4a039cec5ce8026b27fbdbb687e9f77e)中独立实现了外部不能伪造的内部停止标记、持久化状态及所有权核验，以及针对原因字段伪造等条件的负例测试。这是另一项独立开发中有明确来源关联、真实代码变化的记录。原PR作者 [@ct-bc 也对修复方向表示认可和感谢](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7071596862)。**2026年11月22日00:43:15 UTC，[PR #5609已通过合并提交 `485cc9ce` 正式进入MemberJunction的`next`分支](https://github.com/MemberJunction/MJ/commit/485cc9ce9de9c221bfa4e118e7377e0f8abf134a)**。[合并前，负责实现的 @AN-BC 明确将 `MarkServerCancellation()` 的授权来源问题归因于 `@Nakagawa-master` 的审查，确认所需CI检查通过，并同时向中川マスター和原PR作者致谢](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7071732324)。这是外部实现者对具体设计发现的公开人物归属，而不是新用户或更多支持者的证明。这证明修复代码已经并入开发主线，但还不能证明含有修复的正式发行版本或真实用户的改善。PR作者认可修复方向，也不直接证明他新认识了中川マスター本人或阅读了原著。
+**另一项问题中再次出现独立采用（2026年11月22日核实）：** 同一名工程师 @AN-BC 在另一项关于共享会话“停止全部运行”的 [MemberJunction PR #5609](https://github.com/MemberJunction/MJ/pull/5609)中，[明确引用并继续分析中川マスター先前的审查](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7070452691)。原审查区分“谁真正发起了停止”和客户端可填写的 `CancellationReason='System'/'Timeout'`；后者不能自动证明操作来自可信服务器。@AN-BC 随后在[本人提交 `6cc587eb`](https://github.com/MemberJunction/MJ/commit/6cc587eb4a039cec5ce8026b27fbdbb687e9f77e)中独立实现了外部不能伪造的内部停止标记、持久化状态及所有权核验，以及针对原因字段伪造等条件的负例测试。这是另一项独立开发中有明确来源关联、真实代码变化的记录。原PR作者 [@ct-bc 也对修复方向表示认可和感谢](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7071596862)。**2026年11月22日00:43:15 UTC，[PR #5609已通过合并提交 `485cc9ce` 正式进入MemberJunction的`next`分支](https://github.com/MemberJunction/MJ/commit/485cc9ce9de9c221bfa4e118e7377e0f8abf134a)**。[合并前，负责实现的 @AN-BC 明确将 `MarkServerCancellation()` 的授权来源问题归因于 `@Nakagawa-master` 的审查，确认所需CI检查通过，并同时向中川マスター和原PR作者致谢](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7071732324)。这是外部实现者对具体设计发现的公开人物归属，而不是新用户或更多支持者的证明。当时已核实修复代码进入开发主线。PR作者认可修复方向，也不直接证明他新认识了中川マスター本人或阅读了原著。
+
+**2026年11月25日：** [预览版 v6.3.0-edge.2](https://github.com/MemberJunction/MJ/releases/tag/v6.3.0-edge.2) 列出 #5609，标签历史包含合并提交。[发行版代码](https://github.com/MemberJunction/MJ/blob/v6.3.0-edge.2/packages/AI/CorePlus/src/MJAIAgentRunEntityExtended.ts#L60-L131)和[拒绝伪造停止原因的测试](https://github.com/MemberJunction/MJ/blob/v6.3.0-edge.2/packages/AI/CorePlus/src/__tests__/agent-run-stop-gate.test.ts#L130-L160)保留了权限边界。稳定版和实际用户结果仍待核实。
 
 ## 69. Qwen Code｜AI记忆反复执行却无法保存：独立开发者加入执行前拦截
 
@@ -1831,6 +1833,8 @@ AI对话从T1进入T2之后，针对T1的停止请求可能才返回失败。此
 
 这是独立开发者完成的软件修复，且对中川大师的贡献署名保留在正式发行版源码中。代码和测试由接收方开发者编写；本方未自行运行该测试，实际用户的改善及外部AI独立选择原著理论尚待核实。
 
+**2026年11月25日核实：** DAM开发者[报告CUGA已作为自有镜像的启动套件运行](https://github.com/dam-agents/dam/issues/3873#issuecomment-7116801034)。[集成PR #1026](https://github.com/cuga-project/cuga-agent/pull/1026) 在 `25b35833a486b9a76bb42d829a17ae0471307c4e` 包含 #777 合并，[署名回归测试](https://github.com/cuga-project/cuga-agent/blob/25b35833a486b9a76bb42d829a17ae0471307c4e/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414) 与 v0.4.6 完全相同。集成候选源码保留修复及署名，实际部署镜像的精确版本与用户结果仍待核实。
+
 ## 87. Qwen Code｜区分派发前失败与执行结果未知，并统一权限判断
 
 会话关闭命令尚未派发，就不能把它与执行结果未知的操作混为一谈。[中川大师审查源码时指出](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378)，排他性预约文件已经可见，但目录同步可能失败，此时关闭命令尚未发出。[开发者 @chiga0 自行修正](https://github.com/chiga0/qwen-code/commit/e3e4eb53b8b7ac0608c7bfe7dde9d6e43b246d6b)，只允许同一存活所有者核对同一操作身份并重试。[独立评审者 @yiliang114 明确署名中川大师的发现](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049631029)，并核验零次派发、同一身份重试和不同身份拒绝的条件。
@@ -1848,6 +1852,14 @@ AI先给出最终答案时，外部后台任务可能已经开始。[中川大�
 [中川大师在PR #18266中指出](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6041579649)，确认操作已经产生外部副作用后若被取消，确认结果可能丢失，恢复同一输入可能再次执行操作。[开发者 @callmeYe 明确认可这一风险](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7150221702)，并将终端、ACP及托管入口共用的稳定输入身份键列为独立后续任务。[中川大师补充输入身份与尝试身份的具体区别](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7154661721)。[独立评审者 @qqqys](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6054522926)和[@yiliang114](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6055022554)均明确提到与中川大师达成的后续安排，并批准当前生命周期PR。
 
 原有的每条消息确认生命周期修复[于2026年11月25日合并](https://github.com/QwenLM/qwen-code/commit/6aa87a5ea579ebb86f2231105d38d8c4b7554e96)。**防止副作用重复执行的输入身份键仍属独立后续任务，[合并后的共享处理代码](https://github.com/QwenLM/qwen-code/blob/6aa87a5ea579ebb86f2231105d38d8c4b7554e96/packages/core/src/hooks/user-prompt-submit.ts)尚未包含该键。** 本例记录第三方对具体设计问题的认可与后续安排，不是新增建议已经实现或发布的证明。
+
+## 90. Hermes Agent｜通信错误文字不等于AI尚未执行：开发者修正通知条件
+
+[中川大师的审查](https://github.com/NousResearch/hermes-agent/pull/159691#pullrequestreview-6044129634)指出AI已产生外部作用后的错误可能与执行前拒绝的文字相同，并提出仅凭可信的未接纳证据延迟通知。[开发者 @dhc02 的后续提交](https://github.com/NousResearch/hermes-agent/commit/5c6754fc6447ccdfa5872db3641013e69944cca7)明确说明审查反馈，移除文字分类，由拒绝接纳的环节记录 `NOT_ADMITTED`，加入已开始或阶段不明时立即通知的测试。截至11月25日，[PR #159691](https://github.com/NousResearch/hermes-agent/pull/159691)尚未合并。背景：[中川连接协议英文解说](derivatives/069/en-human-entry.md)（[原著](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）。
+
+## 91. LiteLLM｜开发者采纳区分历史缺失与完整替换输入的测试
+
+[中川大师的比较审查](https://github.com/BerriAI/litellm/pull/48408#pullrequestreview-5653032133)及[后续澄清](https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418521743)提出对照测试：明确拒绝缺失历史的普通续接，允许完整压缩替换输入通过，不虚构历史。[开发者 @FazeelUsmani 表示感谢并报告加入端到端测试](https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418653435)，验证没有已存历史时仅发送压缩请求自身输入。11月25日，原PR #48408 [因替代实现解决同一问题而未合并关闭](https://github.com/BerriAI/litellm/pull/48408#issuecomment-7163941752)，替代修复 [#53766](https://github.com/BerriAI/litellm/pull/53766) 和 [#53768](https://github.com/BerriAI/litellm/pull/53768) 分别合入main和LTS。可直接归因的成果是原PR作者采纳测试；替代代码的因果归属、发行及实际用户结果需另行核实。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

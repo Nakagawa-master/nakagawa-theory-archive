@@ -6,7 +6,7 @@
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
-**公開された外部作用事例：89件**。[各事例の元の指摘、受け手の応答・実装・現在の段階](REAL_WORLD_IMPACT.md)を、第三者自身の一次資料につないでいます。
+**公開された外部作用事例：91件**。[各事例の元の指摘、受け手の応答・実装・現在の段階](REAL_WORLD_IMPACT.md)を、第三者自身の一次資料につないでいます。
 
 
 ## AI・仕事・人生の問題を構造から読み解く
@@ -47,7 +47,7 @@
 
 **外部AI技術メディアにも、出所を明記した独立編集記事として取り上げられました。** [The Daily AI Pulse掲載の英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)です。掲載媒体はAIエンジニア向けに一次資料・技術的重要性・証拠の限界を審査し、人間編集者が公開を判断する[編集手順](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md)を持つ出版プロジェクト。マスターが元の企画を提案した後、**受け手編集者 @GadDev が自ら記事・翻訳を制作し、本番サイトへ配信**しました。[公開された企画と独立編集・公開の経緯を一次資料で確認](INDEPENDENT_MEDIA_COVERAGE.md)。
 
-[世界最先端のOSSで起きた89件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
+[世界最先端のOSSで起きた91件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
 
 別の媒体側編集記録として、[AI NewsのQwen Code記事（2026年10月23日マージ・PR #193）](https://github.com/022740mix-spec/AI-News/pull/193)でも、外部技術助言と独立実装者の貢献が区別して紹介されています。[一次資料と後続の編集返信を確認する](INDEPENDENT_MEDIA_COVERAGE.md#もう一つの実在する媒体側編集ai-news-のqwen-code記事2026年10月23日)。
 
@@ -55,7 +55,7 @@
 
 **直すべきだったのは、画面上の正常さではなく、実際に誰へ何が届き、何が成立したかです。** たとえば[Hermes Agentでは、実行結果が正しい会話に届かなかったり未配達のまま送信済みになる問題](https://github.com/NousResearch/hermes-agent/pull/146708)について、中川マスターのソースに沿う条件を別の開発者たちが引き継ぎ、[後継修正が正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)され、[公式版v0.22.6に収録](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6)されました。
 
-**89件の人間向けの段階別実例**：[日本語](REAL_WORLD_IMPACT.md)／[英語](REAL_WORLD_IMPACT.en.md)／[中国語](REAL_WORLD_IMPACT.zh.md)。機械が出所を調べられる[機械可読の外部作用記録](machine-discovery/external-effect-evidence-index-v1.json)、[外部プロジェクトのマージを裏付ける一次証拠](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)もあります。
+**91件の人間向けの段階別実例**：[日本語](REAL_WORLD_IMPACT.md)／[英語](REAL_WORLD_IMPACT.en.md)／[中国語](REAL_WORLD_IMPACT.zh.md)。機械が出所を調べられる[機械可読の外部作用記録](machine-discovery/external-effect-evidence-index-v1.json)、[外部プロジェクトのマージを裏付ける一次証拠](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)もあります。
 
 ## まず、具体的な問題から
 

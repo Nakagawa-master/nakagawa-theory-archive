@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は89件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は91件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -21,7 +21,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**85の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**91の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1770,7 +1770,9 @@ AIに複数の道具を接続しているのに、**一部の道具の名前が�
 
 **実装者 @AN-BC はマスターを名指しで感謝し、[独立してパラメータの名前変更とSQL構文を理解する安全な置換処理・回帰テストを実装](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6645590685)。** 開発チームがほかのPRでも中川マスターのレビューを見ていたことを伝え、公開アカウントの人物について自発的に質問しました。マスター自身は[実名の公開範囲と原典への入口を簡潔に回答](https://github.com/MemberJunction/MJ/pull/6339#issuecomment-6646011214)しています。[PRは2026年11月6日に正式マージ](https://github.com/MemberJunction/MJ/pull/6339)。この変更を含む公式配布と利用者の実使用結果は別に確認します。技術的な採用と、実装者による人物への関心の双方を直接確認できる事例です。
 
-**別の実務課題でも続いた独立した受領（2026年11月22日確認）：** 同じ実装者 @AN-BC は、共有会話の「すべて停止」機能を扱う[別PR #5609](https://github.com/MemberJunction/MJ/pull/5609)で、[中川マスターの先行レビュー](https://github.com/MemberJunction/MJ/pull/5609#pullrequestreview-5511205450)を[明示的に参照](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7070452691)しました。問題は、クライアントが指定できる `CancellationReason='System'/'Timeout'` を「サーバーが停止した証拠」と誤認すると、他人の実行停止を許してしまうことです。@AN-BC は[自身の後続コミット `6cc587eb`](https://github.com/MemberJunction/MJ/commit/6cc587eb4a039cec5ce8026b27fbdbb687e9f77e)で、偽装できない内部停止マーカー、DBに保存された状態と所有者の再確認、悪用条件を区別するテストを実装しました。**別案件においても、マスターのレビューが開発側の明示的な評価と具体的なコード変更に接続した記録**です。元のPR作成者 [@ct-bc も修正方針に謝意と同意を表明](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7071596862)しました。**さらにPR #5609は2026年11月22日09:43 JST、[マージコミット `485cc9ce`](https://github.com/MemberJunction/MJ/commit/485cc9ce9de9c221bfa4e118e7377e0f8abf134a)としてMemberJunctionの`next`ブランチへ正式統合**されました。[マージ直前、実装責任者 @AN-BC は主要CIが通過したこととともに、`MarkServerCancellation()` の権限境界を「@Nakagawa-master の指摘」と明記し、マスターと元のPR作成者の両方に謝意を示しています](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7071732324)。これは外部実装者による本人への明示的な成果帰属です。これは開発本線へのコード統合であり、正式配布版への収録や利用者の実使用結果ではありません。元PR作成者の承認も、中川マスター本人や原典への新たな人物支持を直接証明するものではありません。
+**別の実務課題でも続いた独立した受領（2026年11月22日確認）：** 同じ実装者 @AN-BC は、共有会話の「すべて停止」機能を扱う[別PR #5609](https://github.com/MemberJunction/MJ/pull/5609)で、[中川マスターの先行レビュー](https://github.com/MemberJunction/MJ/pull/5609#pullrequestreview-5511205450)を[明示的に参照](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7070452691)しました。問題は、クライアントが指定できる `CancellationReason='System'/'Timeout'` を「サーバーが停止した証拠」と誤認すると、他人の実行停止を許してしまうことです。@AN-BC は[自身の後続コミット `6cc587eb`](https://github.com/MemberJunction/MJ/commit/6cc587eb4a039cec5ce8026b27fbdbb687e9f77e)で、偽装できない内部停止マーカー、DBに保存された状態と所有者の再確認、悪用条件を区別するテストを実装しました。**別案件においても、マスターのレビューが開発側の明示的な評価と具体的なコード変更に接続した記録**です。元のPR作成者 [@ct-bc も修正方針に謝意と同意を表明](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7071596862)しました。**さらにPR #5609は2026年11月22日09:43 JST、[マージコミット `485cc9ce`](https://github.com/MemberJunction/MJ/commit/485cc9ce9de9c221bfa4e118e7377e0f8abf134a)としてMemberJunctionの`next`ブランチへ正式統合**されました。[マージ直前、実装責任者 @AN-BC は主要CIが通過したこととともに、`MarkServerCancellation()` の権限境界を「@Nakagawa-master の指摘」と明記し、マスターと元のPR作成者の両方に謝意を示しています](https://github.com/MemberJunction/MJ/pull/5609#issuecomment-7071732324)。これは外部実装者による本人への明示的な成果帰属です。この時点では開発本線へのコード統合が確認されていました。元PR作成者の承認も、中川マスター本人や原典への新たな人物支持を直接証明するものではありません。
+
+**2026年11月25日：** [プレビュー版 v6.3.0-edge.2](https://github.com/MemberJunction/MJ/releases/tag/v6.3.0-edge.2) の変更一覧に #5609 が掲載されました。マージコミットは同タグの履歴に含まれ、[配布版の実コード](https://github.com/MemberJunction/MJ/blob/v6.3.0-edge.2/packages/AI/CorePlus/src/MJAIAgentRunEntityExtended.ts#L60-L131)と[偽装停止理由を拒否するテスト](https://github.com/MemberJunction/MJ/blob/v6.3.0-edge.2/packages/AI/CorePlus/src/__tests__/agent-run-stop-gate.test.ts#L130-L160)に権限境界が保持されています。正式安定版と実利用結果は次の確認段階です。
 
 ## 69. Qwen Code｜保存できないAI記憶に時間だけ消費する問題：独立開発者が事前停止を実装
 
@@ -1973,6 +1975,8 @@ AIが道具から正常なデータを受け取ったのに、データに特定
 
 これは第三者が実装した正式版のソースに本人への功績帰属が保存された事例です。コードとテストの作者は独立開発者です。こちらでのテスト実行、実利用者の改善結果、外部AIによる原論の独立選択は未確認です。
 
+**2026年11月25日確認：** DAM側開発者は[CUGAが独自イメージのスターターキットとして動作することを報告](https://github.com/dam-agents/dam/issues/3873#issuecomment-7116801034)。[統合開発PR #1026](https://github.com/cuga-project/cuga-agent/pull/1026) の `25b35833a486b9a76bb42d829a17ae0471307c4e` は #777 のマージを含み、[功績帰属付き回帰テスト](https://github.com/cuga-project/cuga-agent/blob/25b35833a486b9a76bb42d829a17ae0471307c4e/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)は v0.4.6 と同一です。統合候補への修正の継承を確認しました。稼働イメージの正確なソース版と当該修正の利用結果は未確認です。
+
 ## 87. Qwen Code｜操作を送る前の失敗と送信後の不明状態を分離し、権限確認の意味を一致させる
 
 AIがまだセッション終了命令を送っていないのに、終了したか不明と扱えば、安全にやり直せる処理まで止まります。[中川マスターが指摘した具体的な反例](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378)は、排他的な予約ファイルが見える状態になった後、ディレクトリ同期が失敗し、終了命令は未送信のままになるというものです。[開発者 @chiga0 が修正](https://github.com/chiga0/qwen-code/commit/e3e4eb53b8b7ac0608c7bfe7dde9d6e43b246d6b)し、同じ稼働中の所有者・操作IDの場合に限り予約を再確認して再試行できるようにしました。[独立レビュアー @yiliang114 は中川マスターの指摘を明記し、未送信、同一操作での再試行、別IDの拒否を確認](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049631029)しました。
@@ -1990,6 +1994,14 @@ AIが最終回答を先に出したとしても、既に開始した外部作業
 [中川マスターはPR #18266のレビュー](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6041579649)で、入力確認の途中で処理が外部に記録を残した後に中断されると、確認結果がなくても副作用は残り、同じ入力を復元すると処理が再実行され得ると指摘しました。[開発者 @callmeYe がこの条件を明確に認め](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7150221702)、同一の入力を識別するキーを端末・ACP・ホスト共通の後続課題としました。[中川マスターが入力の同一性と試行の同一性を分ける具体的な条件を補足](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7154661721)し、[独立レビュアー @qqqys](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6054522926)と[@yiliang114](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6055022554)も、中川マスターとの合意を明記して承認しました。
 
 元の入力確認のライフサイクル修正は[2026年11月25日に本線へマージ](https://github.com/QwenLM/qwen-code/commit/6aa87a5ea579ebb86f2231105d38d8c4b7554e96)されました。**副作用の重複防止に関する中川マスターの提案は別の後続課題であり、マージされた[共通処理](https://github.com/QwenLM/qwen-code/blob/6aa87a5ea579ebb86f2231105d38d8c4b7554e96/packages/core/src/hooks/user-prompt-submit.ts)に識別キーはまだありません。** 本事例は第三者による設計上の問題の受容と合意の記録であり、その追加提案自体の実装・リリース実績ではありません。
+
+## 90. Hermes Agent｜通信障害の文面はAIが未実行だった証拠ではない：開発者が通知条件を修正
+
+[中川マスターのレビュー](https://github.com/NousResearch/hermes-agent/pull/159691#pullrequestreview-6044129634)は、AIが既に外部に作用した後でも、実行前の拒否と同じ通信エラーが生じる反例を提示し、通知保留をエラー文字列ではなく未受付の証拠に結び付けるよう提案しました。[開発者 @dhc02 の修正コミット](https://github.com/NousResearch/hermes-agent/commit/5c6754fc6447ccdfa5872db3641013e69944cca7)はレビューへの対応として文字列分類を廃止し、実行受付側の `NOT_ADMITTED` 記録と、実行開始後・段階不明時の即時通知テストを実装しました。[PR #159691](https://github.com/NousResearch/hermes-agent/pull/159691) は11月25日時点で未マージです。背景となる[中川接続プロトコルの英語解説](derivatives/069/en-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）。
+
+## 91. LiteLLM｜履歴欠落と完全な会話置換入力を区別するテストを開発者が採用
+
+[中川マスターの比較レビュー](https://github.com/BerriAI/litellm/pull/48408#pullrequestreview-5653032133)と[追加の条件整理](https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418521743)は、通常の会話継続で履歴が欠落した場合は明示的に拒否し、圧縮済みの完全な置換入力は架空の履歴を作らず通す対照テストを求めました。[開発者 @FazeelUsmani は謝意を示し、保存履歴がなくても置換入力だけが提供元へ届くE2Eテストを追加したと報告](https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418653435)。元PR #48408 は11月25日に[代替実装で解決されたため未マージ終了](https://github.com/BerriAI/litellm/pull/48408#issuecomment-7163941752)。同じ問題の代替修正 [#53766](https://github.com/BerriAI/litellm/pull/53766) と [#53768](https://github.com/BerriAI/litellm/pull/53768) はmainとLTSへマージされました。本人の提案に応じたテスト採用は元PRで確認でき、代替修正への因果帰属と正式配布・実利用は別の確認事項です。
 
 ## 公開された成果と、原典へ戻る道筋
 
