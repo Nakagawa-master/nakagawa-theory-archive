@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**85 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**86 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -12,6 +12,7 @@ You can also explore [Nakagawa Master's own GitHub activity](https://github.com/
 
 ## Proof first: independent developers changed and merged code
 
+- **[CUGA Agent | Nakagawa Master's contribution is credited in a stable-release regression test](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)** — [His review](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558) identified a successful tool result incorrectly treated as a failure. An independent developer fixed the distinction and [stable v0.4.6, released November 22, 2026](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6), contains the correction and a test explicitly naming `Nakagawa-master`. See [case 86](#86-cuga-agent--a-successful-tool-result-is-not-an-execution-failure-explicit-credit-in-a-stable-release-regression-test).
 - **OpenClaw | An unrelated agent's configuration edit invalidated another person's pending approval.** Nakagawa Master [reported the exact remaining problem and a regression case](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114). The maintainer **explicitly cited that report**, [implemented and merged the separate fix](https://github.com/openclaw/openclaw/pull/160856), and [official release documentation named `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md). See case 51.
 - **MemberJunction | Matching an ID is not authorization to overwrite a record.** The receiving team implemented the distinction and published [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2). See case 3.
 - **PostHog | Numbers asserted by a producer are not the same as measurements made by the product.** The receiving team split the work into [three merged successor PRs](https://github.com/PostHog/posthog/pull/107795) with recorded dev / US / EU production deployments. See case 1 for the current feature-flag and receiving deployment details.
@@ -1812,6 +1813,16 @@ In [Qwen Code PR #18091](https://github.com/QwenLM/qwen-code/pull/18091), an in-
 
 For original-theory context, see Nakagawa Master's [Connection Protocol Standard Theory — human-oriented summary](derivatives/069/en-human-entry.md) ([original](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)). These links do not assert the developer personally read the original.
 
+
+## 86. CUGA Agent | A successful tool result is not an execution failure: explicit credit in a stable-release regression test
+
+When a tool returns valid data, an AI agent should not discard that result merely because it contains a particular key. **Tool-returned data and evidence of execution success or failure are different things.**
+
+[Reviewing the actual source in PR #777](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558), Nakagawa Master identified a counterexample: a successful dictionary containing `__cuga_fc_error__` could be classified as a failure and its variable discarded. [Independent developer @segevshlomovIBM acknowledged the finding](https://github.com/cuga-project/cuga-agent/pull/777#issuecomment-6107352135) and implemented executor-owned `_fc_ok` / `_fc_failed` outcome recording, separating execution status from returned data, with regression tests.
+
+[The upstream merge on October 18, 2026](https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f) is contained in [stable release v0.4.6, published November 22, 2026](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6), whose change list explicitly includes PR #777. **[The regression test in that exact release (lines 392–414)](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414) explicitly names `Nakagawa-master` in its docstring** and checks that successful JSON containing the key and its variable are preserved, in contrast to an actual raised exception.
+
+This is independently implemented software with explicit personal attribution retained in stable-release source. The receiving developer authored the code and tests. We have not run these tests ourselves or verified installed-user outcomes or independent AI selection of the original theories.
 
 ## What the public source record reveals
 

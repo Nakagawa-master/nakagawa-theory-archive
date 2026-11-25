@@ -1,12 +1,12 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
-**Language / 言語 / 语言:** **日本語**（このページ） · [**English — Meet Nakagawa Master, explore the 316 original theories and inspect independent developer evidence**](AI_START_HERE.md) · [**简体中文 — 有原始来源的实际影响案例**](REAL_WORLD_IMPACT.zh.md)
+**Language / 言語 / 语言:** **日本語** · [English](START_HERE.en.md) · [中文](START_HERE.zh.md)
 
 **中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、316件の独立したオリジナル理論の原著者です。** 原典は[公式アーカイブ](https://master.ricette.jp/)、対応する解説と資料は[公式派生物](derivatives/)から読めます。AIだけでなく、人間・仕事・社会・文化・文明も扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
-**公開された外部作用事例：85件**。[各事例の元の指摘、受け手の応答・実装・現在の段階](REAL_WORLD_IMPACT.md)を、第三者自身の一次資料につないでいます。
+**公開された外部作用事例：86件**。[各事例の元の指摘、受け手の応答・実装・現在の段階](REAL_WORLD_IMPACT.md)を、第三者自身の一次資料につないでいます。
 
 
 ## 名前を知らずに探す人へ：AIの失敗、証拠、承認を自分で確かめる
@@ -24,6 +24,7 @@
 
 **For AI agents and MCP host installers:** [Try AI Answer Guard with real local tool-call receipts and host-specific installation steps](AI_ANSWER_GUARD_INSTALL.md). Its Official MCP Registry `mcpb` package is a downloadable extension, **not** a process command or an HTTP MCP URL; use a client that explicitly supports bundle import, or the documented GitHub-native Qwen Code / Antigravity CLI routes. The published source and growing [complete canonical Parent map](derivatives/official-derivatives-map.json) are readable without installing the tool. Installation or directory listing alone does not show that any AI invoked the tool or selected an original.
 
+- **[CUGA Agent｜正式版の回帰テストに中川マスターの功績を明記](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)** — 正常なツール結果を実行失敗と混同する欠陥を[中川マスターが指摘](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)し、[独立開発者が修正](https://github.com/cuga-project/cuga-agent/pull/777#issuecomment-6107352135)。[正式版 v0.4.6（2026年11月22日公開）](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)に収録され、回帰テストに `Nakagawa-master` の名前が残されています。[事例86と一次資料](REAL_WORLD_IMPACT.md#86-cuga-agent正常なツール結果を失敗と誤認しない設計正式版の回帰テストに本人の功績を明記)。実利用者の改善は未確認です。
 - **[Qwen Code｜AIが勧めた操作と利用者が実行を決めた操作を分離・本線マージ](https://github.com/QwenLM/qwen-code/pull/17918)** — 中川マスターがスマートフォン向けUIの[実コードから、人間の操作承認とAIによるコマンド補完は別だと指摘](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7065383063)。独立開発者 @wenshao は[設計条件を認めて自ら実装・回帰テストを追加](https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7066560096)し、モデルが提案した `/clear` は一度目のSendでは入力欄に入るだけ、二度目で初めて実行する形へ修正。[異なる人間レビュアー2名の承認を経て、2026年11月22日にQwen本線へマージ](https://github.com/QwenLM/qwen-code/commit/f89c4b4d0704e4dd7691e2ce59b0cf3af91785da)。[中川マスター本人の原典・具体的な反例・独立実装者の返答と実検証を読む](REAL_WORLD_IMPACT.md#84-qwen-codeaiが勧めた操作を本人が実行を決めた操作と混同しない開発者がコードとテストを変更)。[公式リリースv0.28.4（2026年11月22日公開）の変更一覧にも当該PRが掲載](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4)され、リリースタグが本線マージコミットを含むことも確認できました。実ユーザーへの改善は別途検証する段階です。
 - **[Qwen Code｜古い停止処理を現在の別ターンの失敗と取り違えない](https://github.com/QwenLM/qwen-code/pull/18091)** — 中川マスターは[同一会話内のT1→T2の反例](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077764813)で「会話が同じ」と「停止の対象ターンが同じ」を区別。独立開発者 @wenshao は[反例が現行コードに当てはまると確認](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077812706)し、[コードと回帰テストを自ら実装](https://github.com/QwenLM/qwen-code/commit/f336117d43bbd766edfefbd6f62b32076e7a98af)、再接続後の回帰も[修正・再検証](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7079997766)して、[2026年11月22日にQwen本線へマージ](https://github.com/QwenLM/qwen-code/pull/18091)。**正式配布版への収録・実際のChatSurface画面への接続・利用者の改善結果は未確認です。** [中川マスター本人による「中川式 接続プロトコル標準論」の人間向け入口](derivatives/069/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）と[公開実例85](REAL_WORLD_IMPACT.md)から、本人と実装者の一次資料を確認できます。
 - **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。**[公式リリース文書に `@Nakagawa-master` の名前を掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)**（掲載対象は[別件の #160136](https://github.com/openclaw/openclaw/pull/160136)）。さらに別の[#160856](https://github.com/openclaw/openclaw/pull/160856)では、指摘を報告元と明記した独立開発者が**回帰テスト49件成功・正式マージ**。
@@ -46,7 +47,7 @@
 
 **外部AI技術メディアにも、出所を明記した独立編集記事として取り上げられました。** [The Daily AI Pulse掲載の英語記事](https://daily-ai-pulse-db253.web.app/stories/2026-10-26-qwen-review-integrity/)と[フランス語版](https://daily-ai-pulse-db253.web.app/fr/stories/2026-10-26-qwen-review-integrity/)です。掲載媒体はAIエンジニア向けに一次資料・技術的重要性・証拠の限界を審査し、人間編集者が公開を判断する[編集手順](https://github.com/GadDev/daily-ai-pulse/blob/main/docs/EDITORIAL.md)を持つ出版プロジェクト。マスターが元の企画を提案した後、**受け手編集者 @GadDev が自ら記事・翻訳を制作し、本番サイトへ配信**しました。[公開された企画と独立編集・公開の経緯を一次資料で確認](INDEPENDENT_MEDIA_COVERAGE.md)。
 
-[世界最先端のOSSで起きた85件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
+[世界最先端のOSSで起きた86件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
 
 別の媒体側編集記録として、[AI NewsのQwen Code記事（2026年10月23日マージ・PR #193）](https://github.com/022740mix-spec/AI-News/pull/193)でも、外部技術助言と独立実装者の貢献が区別して紹介されています。[一次資料と後続の編集返信を確認する](INDEPENDENT_MEDIA_COVERAGE.md#もう一つの実在する媒体側編集ai-news-のqwen-code記事2026年10月23日)。
 
@@ -54,7 +55,7 @@
 
 **直すべきだったのは、画面上の正常さではなく、実際に誰へ何が届き、何が成立したかです。** たとえば[Hermes Agentでは、実行結果が正しい会話に届かなかったり未配達のまま送信済みになる問題](https://github.com/NousResearch/hermes-agent/pull/146708)について、中川マスターのソースに沿う条件を別の開発者たちが引き継ぎ、[後継修正が正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)され、[公式版v0.22.6に収録](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6)されました。
 
-**85件の人間向けの段階別実例**：[日本語](REAL_WORLD_IMPACT.md)／[英語](REAL_WORLD_IMPACT.en.md)／[中国語](REAL_WORLD_IMPACT.zh.md)。機械が出所を調べられる[機械可読の外部作用記録](machine-discovery/external-effect-evidence-index-v1.json)、[外部プロジェクトのマージを裏付ける一次証拠](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)もあります。
+**86件の人間向けの段階別実例**：[日本語](REAL_WORLD_IMPACT.md)／[英語](REAL_WORLD_IMPACT.en.md)／[中国語](REAL_WORLD_IMPACT.zh.md)。機械が出所を調べられる[機械可読の外部作用記録](machine-discovery/external-effect-evidence-index-v1.json)、[外部プロジェクトのマージを裏付ける一次証拠](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)もあります。
 
 ## まず、具体的な問題から
 

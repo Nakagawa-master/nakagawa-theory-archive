@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共85例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共86例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -12,6 +12,7 @@
 
 ## 先看成果：其他开发者实际修改并合并代码
 
+- **[CUGA Agent｜正式版回归测试明确记载中川大师的贡献](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)** — [中川大师指出](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)正常工具结果被误判为失败的问题，独立开发者完成修复，[2026年11月22日发布的正式版 v0.4.6](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)已收录，回归测试说明中明确写有 `Nakagawa-master`。详见[案例86](#86-cuga-agent正常工具结果不应被误判为执行失败正式版回归测试明确署名)。
 - **OpenClaw｜修改无关代理配置，却让另一个人的审批失效。** 中川大师[指出具体漏洞和回归测试](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)。开发者**明确引用其报告**，在[独立PR中实现并合并修复](https://github.com/openclaw/openclaw/pull/160856)；[官方版本文档列出 `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)。详见案例51。
 - **MemberJunction｜ID相同不代表有权覆盖已有记录。** 接收团队修改代码和测试，并发布[正式版v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)。详见案例3。
 - **PostHog｜数据提供者自称的数值，不等于产品独立测量的结果。** 接收团队将修改拆为[三个已合并的后续PR](https://github.com/PostHog/posthog/pull/107795)，并有dev、美国和欧洲生产环境部署记录；客户开放范围及项目当前状态见案例1。
@@ -1819,6 +1820,16 @@ AI对话从T1进入T2之后，针对T1的停止请求可能才返回失败。此
 
 相关原著入口是中川マスター的[《中川式连接协议标准论》人类可读摘要](derivatives/069/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）。这不表示外部开发者亲自阅读了原著。
 
+
+## 86. CUGA Agent｜正常工具结果不应被误判为执行失败：正式版回归测试明确署名
+
+当AI代理从工具收到正常数据时，不应仅因为数据中含有特定键就丢弃该结果。**工具返回的数据与工具执行成功或失败的证据是两件不同的事。**
+
+[中川大师审查PR #777的实际源码](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)，指出正常返回的字典如果含有 `__cuga_fc_error__`，就可能被误判为执行失败，相关变量也会丢失。[独立开发者 @segevshlomovIBM 明确认可该发现](https://github.com/cuga-project/cuga-agent/pull/777#issuecomment-6107352135)，自行修改代码，以执行器控制的 `_fc_ok` / `_fc_failed` 记录判断执行状态，而非根据返回数据中的键判断，并加入回归测试。
+
+[该修复于2026年10月18日合入上游主线](https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f)。[2026年11月22日发布的正式版 v0.4.6](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)在变更列表中列出PR #777，发行标签也包含该合并提交。**[正式版回归测试第392至414行](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)的说明文字明确写出指摘者 `Nakagawa-master`**，并检验含有特定键的正常JSON及其变量应被保留，而真实抛出异常则应作为失败处理。
+
+这是独立开发者完成的软件修复，且对中川大师的贡献署名保留在正式发行版源码中。代码和测试由接收方开发者编写；本方未自行运行该测试，实际用户的改善及外部AI独立选择原著理论尚待核实。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

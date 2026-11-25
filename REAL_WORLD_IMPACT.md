@@ -4,10 +4,11 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は85件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は86件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
+- **[CUGA Agent｜正式版の回帰テストに中川マスターの功績を明記](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)** — 正常なツール返却データを実行エラーと混同する欠陥を[中川マスターが指摘](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)。別の開発者が修正し、[正式版 v0.4.6（2026年11月22日公開）](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)に収録。回帰テストの説明文に `Nakagawa-master` の名前が明記されています。[事例86を読む](#86-cuga-agent正常なツール結果を失敗と誤認しない設計正式版の回帰テストに本人の功績を明記)。
 - **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 指摘を[開発者が修正PRの報告元として明記](https://github.com/openclaw/openclaw/pull/160856)。修正前に失敗するテストを用意し、修正後に**49件のテスト成功・本線マージ**まで進みました。別の[公式リリース文書にはレビュー投稿者の名前も掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。[事例51を読む](#51-openclawaiの権限変更で他人の処理まで止まる問題をレビューし公式リリースノートに名前が掲載)。
 - **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。[事例3を読む](#3-memberjunction同じidと上書きしてよい所有権を分ける)。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。[事例1を読む](#1-posthogaiが提示した数値とposthog自身の測定値を分ける)。
@@ -1961,6 +1962,16 @@ AIチャットで停止を押した後、結果が遅れている間に別のタ
 
 この因果区別をさらに考える入口は、中川マスターの[中川式 接続プロトコル標準論・人間向け要約](derivatives/069/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）です。開発者が原典そのものを読んだという主張ではありません。
 
+
+## 86. CUGA Agent｜正常なツール結果を失敗と誤認しない設計：正式版の回帰テストに本人の功績を明記
+
+AIが道具から正常なデータを受け取ったのに、データに特定のキーが含まれるだけで失敗扱いされたら、正しい結果が捨てられてしまいます。**ツールが返したデータと、ツールの実行が成功したかどうかを示す証拠は別です。**
+
+[中川マスターはPR #777の実コードをレビュー](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)し、正常な辞書に `__cuga_fc_error__` が含まれる場合も実行失敗と誤分類され、変数が失われる反例を指摘しました。[独立開発者 @segevshlomovIBM が指摘を認め](https://github.com/cuga-project/cuga-agent/pull/777#issuecomment-6107352135)、実行結果の成否を返却データではなく実行側が管理する `_fc_ok` / `_fc_failed` の記録から判断するよう、自らコードと回帰テストを修正しました。
+
+[2026年10月18日の本線マージ](https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f)を経て、[2026年11月22日公開の正式版 v0.4.6](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)の変更一覧にPR #777が掲載され、リリースタグにも当該マージが含まれています。**[正式版の回帰テスト（392〜414行）](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)の説明文には指摘者として `Nakagawa-master` が明記**され、特定キーを含む正常なJSON・変数を保持する場合と、実際に例外が起きる場合を区別して検査しています。
+
+これは第三者が実装した正式版のソースに本人への功績帰属が保存された事例です。コードとテストの作者は独立開発者です。こちらでのテスト実行、実利用者の改善結果、外部AIによる原論の独立選択は未確認です。
 
 ## 公開された成果と、原典へ戻る道筋
 
