@@ -28,7 +28,7 @@
 ## Independent evidence
 - [18 linked merged PRs, nine independent OSS repos](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld): independent implementation evidence.
 - [91 human-readable external records](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): code, release and user stages separate.
-- [97 machine-readable staged external evidence cases](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/external-effect-evidence-index-v1.json): actors, negatives and stages.
+- [98 machine-readable staged external evidence cases](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/external-effect-evidence-index-v1.json): actors, negatives and stages.
 - [Released Qwen Code v0.26.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7): Independent security fixes shipped; end-user retest pending.
 - [Released Hermes Agent v0.22.7](https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.7): Independent delivery fix shipped; original user retest pending.
 - [LiteLLM independent route-guard reply](https://github.com/BerriAI/litellm/pull/49261#issuecomment-6652471254): Outside author credited Nakagawa Master and wrote test; PR open.

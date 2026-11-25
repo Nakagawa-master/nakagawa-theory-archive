@@ -6082,6 +6082,54 @@
         "persona_relay": "NOT_VERIFIED",
         "independent_unconnected_ai_original_selection": "NOT_VERIFIED"
       }
+    },
+    {
+      "case_id": "gemini-cli-30109-dual-budget-search-evidence",
+      "topic": "Preserve search-coverage and refinement notices when UTF-8 byte limits differ from character limits.",
+      "external_repository": "google-gemini/gemini-cli",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/google-gemini/gemini-cli/pull/30109#issuecomment-7167186490",
+        "at_utc": "2026-11-25T15:39:42Z",
+        "at_head": "302c0cf395468402cb3f214095c003e1798b4e0c",
+        "summary": "A concrete Japanese/emoji counterexample showed the downstream byte cap could remove the search-specific coverage notice even when the formatter met its character cap. Proposed a dual budget with reserved notice space.",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/google-gemini/gemini-cli/pull/30109#issuecomment-7170549833",
+        "actor": "paolo-perrone",
+        "at_utc": "2026-11-25T18:10:48Z",
+        "relationship": "Independent PR author explicitly confirmed the issue and identified their corrective commit."
+      },
+      "implementation": {
+        "url": "https://github.com/paolo-perrone/gemini-cli/commit/8788e2caa0bb04f4bdd9ef683c04275aa4ee03b3",
+        "code_tests_present": true,
+        "changed_files": [
+          "packages/core/src/tools/grep-utils.ts",
+          "packages/core/src/tools/grep-utils.test.ts"
+        ],
+        "summary": "Character and UTF-8 byte budgets account for headers, whole lines, file paths and reserved notice space; two new Japanese regression tests cover both match lines and names-only mode. Five isolated source-level fixtures checked byte and character bounds and actual displayed counts; no full CLI or provider execution."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "status": {
+        "checked_utc_date": "2026-11-25",
+        "pr": "https://github.com/google-gemini/gemini-cli/pull/30109",
+        "head": "8788e2caa0bb04f4bdd9ef683c04275aa4ee03b3",
+        "upstream": "OPEN_NOT_MERGED",
+        "ci": "Three workflow runs action_required; not a passing CI claim."
+      },
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "compression is not semantic preservation; distinguish collected evidence from model-visible projection",
+        "canonical_source": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/en-human-entry.md"
+      },
+      "not_claimed": [
+        "upstream merge",
+        "release",
+        "installed-user behavior",
+        "developer read or endorsed entire theory",
+        "consumer Gemini Search behavior change"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
