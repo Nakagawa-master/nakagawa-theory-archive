@@ -579,7 +579,14 @@
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/",
       "official_derivative_path": "derivatives/307/README.md",
       "public_reuse_kit": "../ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
-      "relevance_note": "Relevant when a change, re-enrollment, replacement, fork, migration, credential succession, or binding transfer makes historical lineage look like present identity or authority. Separates change operation from post-change relationship, continuity claims from continuity evidence, Kernel invariant preservation from constitutional fork, and lineage continuity from automatic authority inheritance. Shared history, inherited credentials, same function, same name, or preserved bindings are not by themselves present-authority proof. Version boundary (checked 2026-11-26): OD307 is tied to Parent Diff-ID DIFF-20261002-0002; the published canonical Parent now reports DIFF-20261004-0004. These are not interchangeable. Read the current canonical text for current claims; the older derivative is a historical pointer, not a verified translation of the later revision."
+      "relevance_note": "Relevant when a change, re-enrollment, replacement, fork, migration, credential succession, or binding transfer makes historical lineage look like present identity or authority. Separates change operation from post-change relationship, continuity claims from continuity evidence, Kernel invariant preservation from constitutional fork, and lineage continuity from automatic authority inheritance. Shared history, inherited credentials, same function, same name, or preserved bindings are not by themselves present-authority proof. Version boundary (checked 2026-11-26): OD307 is tied to Parent Diff-ID DIFF-20261002-0002; the published canonical Parent now reports DIFF-20261004-0004. These are not interchangeable. Read the current canonical text for current claims; the older derivative is a historical pointer, not a verified translation of the later revision.",
+      "parent_revision": {
+        "derivative_parent_diff_id": "DIFF-20261002-0002",
+        "observed_canonical_diff_id": "DIFF-20261004-0004",
+        "observed_on": "2026-11-26",
+        "status": "DERIVATIVE_PRECEDES_OBSERVED_CANONICAL_REVISION",
+        "canonical_text_required_for_current_claims": true
+      }
     },
     {
       "problem_cluster": "multi-AI disagreement, re-agreement, Kernel branching, majority versus truth, bounded coordination, correction capacity",

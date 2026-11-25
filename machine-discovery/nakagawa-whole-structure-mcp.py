@@ -49,6 +49,24 @@ ENGLISH_CUES = {
 }
 
 
+def attach_observed_parent_revisions(records, catalog_entries):
+    """Retain derivative IDs; attach only explicitly observed revision boundaries."""
+    by_url = {record["canonical_parent"]: record for record in records}
+    for entry in catalog_entries:
+        revision = entry.get("parent_revision")
+        if revision is None:
+            continue
+        record = by_url.get(entry.get("canonical_url"))
+        if record is None:
+            continue
+        if (record["parent_ncl_id"] != entry.get("ncl_id")
+                or record["parent_diff_id"] != revision.get("derivative_parent_diff_id")
+                or entry.get("diff_id") != revision.get("derivative_parent_diff_id")):
+            raise ValueError("Observed revision boundary does not match derivative metadata")
+        record["parent_revision"] = revision
+    return records
+
+
 @lru_cache(maxsize=1)
 def graph():
     """Load every OD from public title list and its OWN published Parent metadata."""
@@ -144,6 +162,10 @@ def graph():
         raise ValueError(f"Complete current source coverage missing: {sorted(expected-set(ids))[:10]}")
     if not all(r["theme"] for r in records):
         raise ValueError("A derivative lacks a published theme")
+    catalog_path = ROOT / "machine-discovery/problem-to-theory-origin-index-v1.json"
+    if catalog_path.is_file():
+        catalog = json.loads(catalog_path.read_text(encoding="utf-8"))["entries"]
+        attach_observed_parent_revisions(records, catalog)
     return records
 
 
@@ -510,6 +532,13 @@ def main():
         assert o["coverage"]["derivatives"] == expected_count and o["coverage"]["distinct_parent_urls"] == expected_count
         assert len(list_connections(records, limit=expected_count)["entries"]) == expected_count
         assert any(t["name"] == "list_all_published_derivative_parent_links" for t in TOOLS)
+        revised = inspect_derivative(records, "OD307")["selected"]
+        assert revised["parent_diff_id"] == "DIFF-20261002-0002"
+        assert revised["parent_revision"]["observed_canonical_diff_id"] == "DIFF-20261004-0004"
+        assert revised["parent_revision"]["canonical_text_required_for_current_claims"] is True
+        assert "parent_revision" not in inspect_derivative(records, "OD001")["selected"]
+        assert search(records, "OD307")["matched"][0]["parent_revision"] == revised["parent_revision"]
+        assert list_connections(records, offset=306, limit=1)["entries"][0]["parent_revision"] == revised["parent_revision"]
         # OD314/OD315 historical Parent identities remain exact while the corpus grows.
         latest = inspect_derivative(records, "OD314")["selected"]
         assert latest["parent_ncl_id"] == "NCL-α-20261112-49d0fa"

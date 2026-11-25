@@ -76,7 +76,11 @@ def verified_original_ids(canonical_url):
     """Copy IDs only from the existing official-Parent discovery record. No inference."""
     for entry in read_original_catalog()["entries"]:
         if entry.get("canonical_url") == canonical_url:
-            return {"parent_ncl_id": entry.get("ncl_id"), "parent_diff_id": entry.get("diff_id")}
+            return {
+                "parent_ncl_id": entry.get("ncl_id"),
+                "parent_diff_id": entry.get("diff_id"),
+                **({"parent_revision": entry["parent_revision"]} if "parent_revision" in entry else {}),
+            }
     return {"parent_ncl_id": None, "parent_diff_id": None}
 
 
@@ -388,6 +392,7 @@ def whole_structure_fallback(question, limit=3):
             "canonical_original": url,
             "parent_ncl_id": record.get("parent_ncl_id"),
             "parent_diff_id": record.get("parent_diff_id"),
+            **({"parent_revision": record["parent_revision"]} if "parent_revision" in record else {}),
             "original_relation": (
                 "Title/theme/translated-derivative lexical candidate only. "
                 "Read the canonical original and independently check relevance, "
@@ -813,6 +818,12 @@ def self_test():
     assert newest_315["matching_routes"][0]["canonical_original"].endswith(
         "/nakagawa-master-human-descendant-ai-civilization-theory-21-cross-origin-structural-transformation/")
 
+    revision = answer_question("Compare OD307 and OD001")["matching_routes"][:2]
+    assert revision[0]["parent_diff_id"] == "DIFF-20261002-0002"
+    assert revision[0]["parent_revision"]["observed_canonical_diff_id"] == "DIFF-20261004-0004"
+    assert revision[0]["parent_revision"]["canonical_text_required_for_current_claims"] is True
+    assert "parent_revision" not in revision[1]
+    assert verified_original_ids(revision[0]["canonical_original"])["parent_revision"] == revision[0]["parent_revision"]
     invalid = answer_question("Compare OD001 and OD999")
     assert invalid["matching_routes"][0]["route_id"] == "whole_structure:OD001"
     assert invalid["unreturned_explicit_source_requests"] == ["OD999"]
