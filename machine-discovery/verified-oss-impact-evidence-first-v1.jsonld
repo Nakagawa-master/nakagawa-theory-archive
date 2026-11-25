@@ -21,7 +21,7 @@
         "https://zeroichi.media/author/masterjp"
       ],
       "disambiguatingDescription": "中川マスター / Nakagawa Master is the published pen name of Keisuke Nakagawa. MasterJP is his author-confirmed byline on ZEROICHI at https://zeroichi.media/author/masterjp. This mapping identifies that publisher's byline; it is not a name match to unrelated MasterJP accounts. Original works: https://master.ricette.jp/. GitHub author account: https://github.com/Nakagawa-master.",
-      "description": "Author of 316 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. 14 merged GitHub PRs in eight receiving repositories have evidence links in this dataset."
+      "description": "Author of 316 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. 17 merged GitHub PRs in eight receiving repositories have evidence links in this dataset."
     },
     {
       "@type": "CreativeWorkSeries",
@@ -45,11 +45,11 @@
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset",
       "name": "Nakagawa Master — verified independent OSS integration and merge evidence",
       "alternateName": "中川マスター：外部OSSへの実装・マージ実績の一次証拠",
-      "description": "Evidence-first map of 14 merged GitHub pull requests in 8 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM, Turboembed). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Qwen and Hermes official release ancestry is separately confirmed. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 61 cases at different stages.",
+      "description": "Evidence-first map of 17 merged GitHub pull requests in 8 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM, Turboembed). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Qwen and Hermes official release ancestry is separately confirmed. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 85 numbered cases at different stages; this curated dataset includes additional later merge evidence and is not a lifetime total.",
       "creator": {
         "@id": "https://master.ricette.jp/#nakagawa-master"
       },
-      "dateModified": "2026-11-03",
+      "dateModified": "2026-11-25",
       "inLanguage": [
         "ja",
         "en"
@@ -67,7 +67,7 @@
         {
           "@type": "PropertyValue",
           "name": "Individually checked merged PRs in this dataset",
-          "value": 14
+          "value": 17
         },
         {
           "@type": "PropertyValue",
@@ -77,7 +77,7 @@
         {
           "@type": "PropertyValue",
           "name": "Documented cases in the linked human impact record, across various evidence stages",
-          "value": 77
+          "value": 85
         },
         {
           "@type": "PropertyValue",
@@ -86,6 +86,175 @@
         }
       ],
       "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/QwenLM/qwen-code/pull/18179",
+          "name": "Qwen Code — distinguish pre-dispatch durability from execution, and explicit confirmation from fallback confirmation",
+          "url": "https://github.com/QwenLM/qwen-code/pull/18179",
+          "dateModified": "2026-11-25",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378"
+          },
+          "citation": [
+            "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378",
+            "https://github.com/chiga0/qwen-code/commit/e3e4eb53b8b7ac0608c7bfe7dde9d6e43b246d6b",
+            "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049903098",
+            "https://github.com/chiga0/qwen-code/commit/1ce7c02b50efe6502e06669050c0c3de6a42a4eb",
+            "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050795285",
+            "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050804900",
+            "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050900161",
+            "https://github.com/QwenLM/qwen-code/blob/4e50b6b8758580e5558ee3ad964a4cad65838939/packages/core/src/permissions/permission-manager.test.ts#L242-L300",
+            "https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "QwenLM/qwen-code"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master identified the retirement pre-dispatch boundary and later proposed the explicit-ask versus fallback-ask acceptance condition. Contributor chiga0 authored both corresponding changes; yiliang114 and doudouOUC independently credited and verified the latter condition, including mutation checks. Upstream main merged on 2026-11-25. One PR, two corrections; no verified containing release, installed-user effect or whole-theory endorsement."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "qwen-turn-resource-retirement-and-confirmation"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "4e50b6b8758580e5558ee3ad964a4cad65838939",
+              "url": "https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Containing release",
+              "value": "Not verified as of 2026-11-25"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/QwenLM/qwen-code/pull/17918",
+          "name": "Qwen Code — suggestion insertion is not execution consent",
+          "url": "https://github.com/QwenLM/qwen-code/pull/17918",
+          "dateModified": "2026-11-25",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7065383063"
+          },
+          "citation": [
+            "https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7065383063",
+            "https://github.com/QwenLM/qwen-code/pull/17918#issuecomment-7066560096",
+            "https://github.com/QwenLM/qwen-code/commit/f89c4b4d0704e4dd7691e2ce59b0cf3af91785da",
+            "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4",
+            "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.28.4"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "QwenLM/qwen-code"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master identified the distinction between a model suggestion and a human decision to execute. Wenshao implemented and tested first-send insertion and subsequent explicit send. Upstream merged and release notes list the PR. Actual user behavior is not verified."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "qwen-suggestion-command-consent"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "f89c4b4d0704e4dd7691e2ce59b0cf3af91785da",
+              "url": "https://github.com/QwenLM/qwen-code/commit/f89c4b4d0704e4dd7691e2ce59b0cf3af91785da"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Official published release lists merged PR",
+              "value": "v0.28.4",
+              "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/pydantic/pydantic-ai/pull/12677",
+          "name": "Pydantic AI — preserve distinct spilled tool results across history compaction",
+          "url": "https://github.com/pydantic/pydantic-ai/pull/12677",
+          "dateModified": "2026-11-25",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398"
+          },
+          "citation": [
+            "https://github.com/pydantic/pydantic-ai/pull/12677#pullrequestreview-5795751398",
+            "https://github.com/pydantic/pydantic-ai/commit/8330ac3f1c14a967f78ec43496e7cb027ceaec58",
+            "https://github.com/pydantic/pydantic-ai/releases/tag/v2.70.0",
+            "https://github.com/robinbril/lode/blob/60c13b883f976c13f111966e5d74f93859faea02/ai-architecture/pydantic-ai-agent-in-python/tests/harness/tool_output_limits/test_tool_output_limits.py#L1976-L2020",
+            "https://github.com/vstorm-co/agenticos/issues/2136#issuecomment-7135269047",
+            "https://github.com/vstorm-co/agenticos/blob/bb09fedf19b10f897c6a55dbdcd76a212dc9a275/backend/uv.lock#L3711-L3769"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "pydantic/pydantic-ai"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master reviewed the history-compaction inverse for reused tool-call identifiers; gouyu-hou implemented the correction. Upstream merged and v2.70.0 release notes list the PR. Separate downstream source redistribution includes the specific regression test; an AgenticOS operator reported production deployment with a later containing dependency. These are distribution/dependency receipts, not proof the repaired branch executed or that a model selected the author's theory."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "pydantic-spill-identity-compaction"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "8330ac3f1c14a967f78ec43496e7cb027ceaec58",
+              "url": "https://github.com/pydantic/pydantic-ai/commit/8330ac3f1c14a967f78ec43496e7cb027ceaec58"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Official published release lists merged PR",
+              "value": "v2.70.0",
+              "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.70.0"
+            }
+          ]
+        },
         {
           "@type": "CreativeWork",
           "@id": "https://github.com/QwenLM/qwen-code/pull/15757",
