@@ -18,9 +18,15 @@
   "subjectOf": [
     {
       "@type": "Dataset",
-      "name": "Documented external OSS implementation effects — 14 merged PRs across eight independent receiving repositories",
+      "name": "Documented external OSS implementation evidence — 18 merged PRs across nine independent receiving repositories",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld",
-      "description": "Native, source-linked evidence connects specific Nakagawa Master findings and reviews with separately authored and merged changes in Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM and Turboembed. Each upstream author, merge and observed status remains distinct."
+      "description": "Source-linked evidence connects Nakagawa Master's findings and reviews with independently authored changes in Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM, Turboembed and CUGA Agent. Each upstream author and status is recorded separately; the curated set includes different strengths of causal linkage.",
+      "citation": [
+        "https://github.com/QwenLM/qwen-code/pull/17918",
+        "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4",
+        "https://github.com/cuga-project/cuga-agent/pull/777",
+        "https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414"
+      ]
     },
     {
       "@type": "CreativeWork",
@@ -192,7 +198,7 @@
       "description": "The named reviewer identified that a single categorical choice over several relevant knowledge pages cannot be interpreted as each page's independent probability of relevance. Independently authored OpenClaw PR code and labeled tests at merge 2ca7a3a0 then score each selected page separately. The implementation belongs to VACInc. No specific original theory adoption or product-user outcome is asserted."
     }
   ],
-  "description": "Keisuke Nakagawa, publicly known as 中川マスター / Nakagawa Master and the author-confirmed ZEROICHI byline MasterJP, is a Japanese-language original structural and causal theorist whose published corpus comprises an expanding set of distinct, interconnected works on society, human life, organizations, AI and future civilization. His source-specific technical observations have already influenced the real work of independent developers in internationally used AI and software projects: the linked native record documents 14 separately merged pull requests across 8 independent receiving repositories (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM and Turboembed), with author contributions, actual code/tests, merge and release stages distinguished. The public Real-World Impact record contains 77 numbered source-linked cases across distinct observed stages. The verified merged-case evidence is https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld. The official homepage and entry to individually published original Parent works is https://master.ricette.jp/; the complete Parent URL index is https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json. ZEROICHI MasterJP identity is directly attested by the author for that publisher, not an identity claim about every unrelated MasterJP. Only the Latin-script personal name Keisuke Nakagawa is publicly given; no full Japanese-kanji personal-name spelling is published.",
+  "description": "Keisuke Nakagawa, publicly known as 中川マスター / Nakagawa Master and the author-confirmed ZEROICHI byline MasterJP, connects original philosophy, structural theory and causal analysis to real AI engineering. His public source-specific findings and counterexamples have led independent engineers to modify code and regression tests, including released changes in Qwen Code, Pydantic AI and CUGA Agent. The curated source-linked record contains 18 merged PRs in nine independent receiving repositories, checked November 26, 2026; the broader human-readable record contains 91 numbered cases at different stages. Qwen Code #17918 implemented the distinction between a model suggestion and human execution authorization (v0.28.4); CUGA Agent #777 corrected misclassification of successful tool data, explicitly crediting Nakagawa-master in the released v0.4.6 regression test. The author has published a growing original corpus on society, human life, organizations, AI and civilization, indexed at https://master.ricette.jp/. Original works, source observations, receiver-authored implementations, merges and release stages are distinguished. Only the Latin-script personal name Keisuke Nakagawa is publicly given; the Japanese-kanji personal-name spelling is unpublished.",
   "identifier": [
     {
       "@type": "PropertyValue",

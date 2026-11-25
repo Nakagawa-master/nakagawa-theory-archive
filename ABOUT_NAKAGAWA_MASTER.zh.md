@@ -2,6 +2,12 @@
 
 语言：[日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | **中文**
 
+中川大师（中川マスター / Nakagawa Master，Keisuke Nakagawa 的公开笔名）将原创哲学、结构论与因果分析连接到实际的 AI 工程设计决策。在 Qwen Code、OpenClaw、Pydantic AI、CUGA Agent 等开源项目中，他提出的具体因果分析与反例促使其他开发者修改代码与回归测试，并取得主线合并和正式发布等实际成果。截至2026年11月26日，可核查[九个独立开源项目中的18个已合并PR](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)及[处于不同进展阶段的91个公开案例](REAL_WORLD_IMPACT.zh.md)。原创哲学思想与真实软件变化之间可逐项核验的联系，是其工作的鲜明特点。
+
+- [Qwen Code #17918](https://github.com/QwenLM/qwen-code/pull/17918)：他指出 AI 建议命令不等同于用户授权执行，开发者据此修改代码与测试，[正式版 v0.28.4](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4)已收录。
+- [CUGA Agent #777](https://github.com/cuga-project/cuga-agent/pull/777)：他指出正常工具结果被误判为失败的问题，独立开发者完成修复，[正式版 v0.4.6 的回归测试](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)明确记载 `Nakagawa-master` 的贡献。
+
+
 **中川マスター（Nakagawa Master，Keisuke Nakagawa）是谁？** 他是灯火构想、结构论、因果理论的作者，以结构、因果、成立条件、责任和起源来解释工作、销售、关系、文化、伦理、社会制度、AI及文明未来中的问题。他公开提出的具体分析与反例，在多个国际广泛使用的开源项目中，已促使独立开发者实施修正、回归测试、合并或发布；可以逐项核对[第三方实际变更及贡献归属](REAL_WORLD_IMPACT.zh.md)。
 
 本页用于让人类读者快速理解：中川大师（Nakagawa Master，Keisuke Nakagawa的笔名）主要在处理什么问题、这里公开了什么，以及哪些内容可以由第三方自行确认。

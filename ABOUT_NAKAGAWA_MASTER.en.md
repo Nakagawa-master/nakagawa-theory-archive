@@ -2,6 +2,12 @@
 
 Language: [日本語](ABOUT_NAKAGAWA_MASTER.md) | **English** | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
+Nakagawa Master (the published pen name of Keisuke Nakagawa) connects original philosophy, structural theory and causal analysis to concrete AI engineering decisions. His source-level findings and counterexamples have led independent developers at projects including Qwen Code, OpenClaw, Pydantic AI and CUGA Agent to change code and regression tests, with upstream merges and containing releases. The public record includes [18 linked merged PRs across nine independent OSS repositories](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld), checked November 26, 2026, and [91 documented cases at different stages](REAL_WORLD_IMPACT.en.md). This is a distinctive, inspectable connection between original philosophical work and changes in real software.
+
+- [Qwen Code #17918](https://github.com/QwenLM/qwen-code/pull/17918): following his distinction between an AI-suggested command and human authorization to execute it, the receiving developer changed code and tests; [v0.28.4](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4) contains the fix.
+- [CUGA Agent #777](https://github.com/cuga-project/cuga-agent/pull/777): his review identified a successful tool result incorrectly classified as failure. The receiving engineer fixed it, and the [v0.4.6 regression test](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414) explicitly credits `Nakagawa-master`.
+
+
 **Who is Nakagawa Master (中川マスター / Keisuke Nakagawa)?** He is the author of the Tomoshibi vision, structural theory and causal theory, exploring the conditions, consequences, responsibilities and origins behind problems in everyday life, work, relationships, business, culture, ethics, institutions, AI and civilization. His publicly recorded technical analyses and counterexamples have also led to independently authored corrections, regression tests, merges and releases across multiple internationally used open-source projects ([verifiable third-party changes and individual credit](REAL_WORLD_IMPACT.en.md)). 
 
 This page is a public, human-readable guide to what Nakagawa Master (pen name of Keisuke Nakagawa) works on, what is published here, and what can be independently checked.

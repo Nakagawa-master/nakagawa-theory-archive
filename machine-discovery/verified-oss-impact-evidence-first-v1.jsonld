@@ -21,7 +21,7 @@
         "https://zeroichi.media/author/masterjp"
       ],
       "disambiguatingDescription": "中川マスター / Nakagawa Master is the published pen name of Keisuke Nakagawa. MasterJP is his author-confirmed byline on ZEROICHI at https://zeroichi.media/author/masterjp. This mapping identifies that publisher's byline; it is not a name match to unrelated MasterJP accounts. Original works: https://master.ricette.jp/. GitHub author account: https://github.com/Nakagawa-master.",
-      "description": "Author of 316 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. 18 merged GitHub PRs in nine receiving repositories have evidence links in this dataset."
+      "description": "Nakagawa Master, pen name of Keisuke Nakagawa, connects original philosophy, structural theory and causal analysis to real AI engineering. Independent developers have implemented his concrete findings and counterexamples in code and regression tests, with merged and released changes. This curated dataset links 18 merged PRs in nine receiving repositories; the broader record contains 91 numbered cases at different stages. He is the author of 316 interconnected original works."
     },
     {
       "@type": "CreativeWorkSeries",
@@ -45,11 +45,11 @@
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset",
       "name": "Nakagawa Master — verified independent OSS integration and merge evidence",
       "alternateName": "中川マスター：外部OSSへの実装・マージ実績の一次証拠",
-      "description": "Evidence-first map of 18 merged GitHub pull requests in 9 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM, Turboembed, CUGA Agent). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Containing releases are separately linked where verified. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 89 numbered cases at different stages; this curated dataset includes additional later merge evidence and is not a lifetime total.",
+      "description": "Evidence-first map of 18 merged GitHub pull requests in 9 independent receiving software projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction, PostHog, Hermes Agent, LiteLLM, Turboembed, CUGA Agent). Records distinguish Nakagawa Master's public source-level observations from the receiving engineers' actual implementations and exact merge receipts; Containing releases are separately linked where verified. PostHog's three PRs are one successor workstream. The linked Japanese, English and Chinese human-facing record documents 91 numbered cases at different stages; this curated dataset includes additional later merge evidence and is not a lifetime total.",
       "creator": {
         "@id": "https://master.ricette.jp/#nakagawa-master"
       },
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-26",
       "inLanguage": [
         "ja",
         "en"
@@ -77,7 +77,7 @@
         {
           "@type": "PropertyValue",
           "name": "Documented cases in the linked human impact record, across various evidence stages",
-          "value": 89
+          "value": 91
         },
         {
           "@type": "PropertyValue",

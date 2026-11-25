@@ -2,6 +2,12 @@
 
 言語: **日本語** | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
+中川マスター（Nakagawa Master、Keisuke Nakagawaの筆名）は、哲学・構造論・因果理論を、現実のAI開発の設計判断に接続する原著者です。Qwen Code、OpenClaw、Pydantic AI、CUGA Agentなどの公開開発で、本人が指摘した因果構造や具体的な反例を受け、別の開発者がコードと回帰テストを書き換え、本線マージや正式リリースに至っています。2026年11月26日の照合では、[外部の9つのOSSリポジトリにおける18件のマージ済みPRの一次資料](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[異なる進展段階を含む91件の公開事例](REAL_WORLD_IMPACT.md)があります。哲学・思想の射程と現実の実装を同時に追えることが、この活動の特徴です。
+
+- [Qwen Code #17918](https://github.com/QwenLM/qwen-code/pull/17918)：AIが提案したコマンドと人間が実行を許可したコマンドを区別する指摘を受け、開発者が実装・テストを変更。[正式版v0.28.4](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4)に収録。
+- [CUGA Agent #777](https://github.com/cuga-project/cuga-agent/pull/777)：正常なツール結果を失敗と誤認する問題を指摘。独立開発者が修正し、[正式版v0.4.6の回帰テスト](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)に `Nakagawa-master` の功績が明記されています。
+
+
 **中川マスター（Nakagawa Master／Keisuke Nakagawa）とは。** 灯火構想、構造論、因果理論を軸に、仕事・営業・組織・人間関係・文化・倫理・社会制度・AI・文明の未来までを、現象の背後にある成立条件、因果、責任、起源から読み解く理論の著者です。公開された具体的な分析や反例は、世界的に利用される複数のオープンソース開発で、独立した開発者による修正・テスト・マージ・リリースなどに実際につながっています（[一次資料付きの第三者変更記録](REAL_WORLD_IMPACT.md)）。
 
 このページは、中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）が何を扱い、何を公開し、どこまで外部から確認できるのかを、人間が短時間で把握するための公開案内です。
