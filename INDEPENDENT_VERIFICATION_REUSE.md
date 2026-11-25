@@ -44,6 +44,14 @@ read / mention
 
 A lower stage must not be reported as a higher one.
 
+## A concrete review-to-implementation example: Qwen Code session retirement
+
+A durable reservation can become visible before its directory sync completes. If that sync fails before the close request is sent, treating the operation as an ambiguous *execution* can strand a still-live session. Nakagawa Master identified this distinction in [Qwen Code PR #18179](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378). Independent contributor chiga0 [implemented a same-live-owner recovery path and regression controls](https://github.com/chiga0/qwen-code/commit/e3e4eb53b8b7ac0608c7bfe7dde9d6e43b246d6b). A different reviewer, yiliang114, [approved the updated PR and explicitly credited Nakagawa Master's pre-dispatch boundary](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049631029) in English and Chinese on 2026-11-25.
+
+Try the distinction in your own reservation or retry system: inject a persistence failure before dispatch; require zero external calls; permit reconciliation only with the exact live owner and operation; reject a competing identity; contrast a genuinely lost response after dispatch. If your design already proves the distinction, this specific remedy may be unnecessary.
+
+Related conceptual reading: [Can a Civilization Inherit the Ability to Correct Errors Without Constant Approval from Its Origin?](derivatives/316/en-human-entry.md) ([original Parent](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-22-human-transformation-absence-civilizational-succession/)). The broader distinction between evidence, actual execution and effective remedy is relevant here; the review does not establish that the independent developers read or endorsed that theory. The upstream PR was open at the recorded review; merge, release and installed-user effects are not established by this example.
+
 ## Current reusable challenges
 
 You may use any public source in the archive. The current open challenges are in the [machine-readable challenge set](machine-discovery/independent-reuse-challenges-v1.json). The former owner-updated issue #402 was **retired and closed**: its comments were not independent submissions. To report a real independent test or counterexample, use the [dedicated evidence form](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml). Those live routes should be preferred over a frozen count in this protocol.
