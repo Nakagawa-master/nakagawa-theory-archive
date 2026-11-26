@@ -25,7 +25,6 @@ END = "<!-- END AUTO:OFFICIAL_ORIGINAL_COUNT -->"
 # Never regenerate/reword an approved introduction.
 INLINE_FIELDS = {
     ROOT / "README.md": (
-        ("explore the ", " original theories and inspect independent developer evidence"),
         ("中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、", "件の独立したオリジナル理論の原著者です。"),
     ),
     ROOT / "human-translation" / "who-is-nakagawa-master.md": (

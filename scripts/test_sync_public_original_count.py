@@ -21,6 +21,23 @@ def main():
     categories = counts.CATEGORIES.read_text(encoding="utf-8")
     assert counts.sync_categories(categories, entries) == categories
 
+    # The approved README intro has one live original-count sentence.
+    # Updating the count must not resurrect a withdrawn English introduction.
+    readme_path = counts.ROOT / "README.md"
+    readme = readme_path.read_text(encoding="utf-8")
+    assert counts.update_inline_numbers(readme, readme_path, n) == readme
+    assert len(counts.INLINE_FIELDS[readme_path]) == 1
+    prefix, suffix = counts.INLINE_FIELDS[readme_path][0]
+    expected = readme.replace(prefix + str(n) + suffix, prefix + str(n + 1) + suffix, 1)
+    assert expected != readme
+    assert counts.update_inline_numbers(readme, readme_path, n + 1) == expected
+    try:
+        counts.update_inline_numbers(readme.replace(prefix + str(n) + suffix, "", 1), readme_path, n)
+    except ValueError as exc:
+        assert "expected exactly one approved count sentence" in str(exc)
+    else:
+        raise AssertionError("Missing approved README count went unnoticed")
+
     # In memory only: no new "official" post, derivative or Git commit invented.
     candidate = copy.deepcopy(entries[-1])
     candidate.update({
