@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共99例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共100例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -1818,7 +1818,7 @@ AI对话从T1进入T2之后，针对T1的停止请求可能才返回失败。此
 
 **独立开发者 @wenshao [亲自确认反例适用于现有实现](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077812706)，[直接回复中川マスター已完成修正](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078123649)，并[自行提交代码和回归测试](https://github.com/QwenLM/qwen-code/commit/f336117d43bbd766edfefbd6f62b32076e7a98af)。** 新实现核对activeTurnId与停止请求派发时的target.turnId，避免T1的迟到错误影响当前T2，同时保留真正针对当前轮次的警告。开发者报告了10个相关测试文件共289项通过及TypeScript检查成功。
 
-**目前已从独立开发者采纳设计、实现并修复回归，推进到Qwen Code上游正式合并。** 开发者在A→B→A控制器重建对照中曾发现第一次修复会误抑制真正的停止失败，随后[@wenshao在`dc24ed25`自行修正](https://github.com/QwenLM/qwen-code/commit/dc24ed250de7d531a200b738af152b10315cfa27)，并[报告新一轮三臂验证通过](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7079997766)，包括作者报告的10个文件293项测试通过。[PR #18091于2026年11月22日14:12:46 UTC正式合并至上游](https://github.com/QwenLM/qwen-code/pull/18091)，可核对[合并提交`65308c97`](https://github.com/QwenLM/qwen-code/commit/65308c972fcfa95a3078adde578af996609fac63)。**上游合并不等同于已经进入正式发布版，也不自动证明ChatSurface已用于实际界面或受到影响的用户问题已解决。** 截至11月22日，后三者仍需独立核实。代码及测试的作者为Qwen开发者。
+**目前已从独立开发者采纳设计、实现并修复回归，推进到Qwen Code上游正式合并。** 开发者在A→B→A控制器重建对照中曾发现第一次修复会误抑制真正的停止失败，随后[@wenshao在`dc24ed25`自行修正](https://github.com/QwenLM/qwen-code/commit/dc24ed250de7d531a200b738af152b10315cfa27)，并[报告新一轮三臂验证通过](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7079997766)，包括作者报告的10个文件293项测试通过。[PR #18091于2026年11月22日14:12:46 UTC正式合并至上游](https://github.com/QwenLM/qwen-code/pull/18091)，可核对[合并提交`65308c97`](https://github.com/QwenLM/qwen-code/commit/65308c972fcfa95a3078adde578af996609fac63)。**已收录于[2026年11月26日发布的正式版 v0.28.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)。** 实际界面接入与受影响用户的改善仍待核实。代码及测试的作者为Qwen开发者。
 
 相关原著入口是中川マスター的[《中川式连接协议标准论》人类可读摘要](derivatives/069/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）。这不表示外部开发者亲自阅读了原著。
 
@@ -1839,7 +1839,7 @@ AI对话从T1进入T2之后，针对T1的停止请求可能才返回失败。此
 
 会话关闭命令尚未派发，就不能把它与执行结果未知的操作混为一谈。[中川大师审查源码时指出](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378)，排他性预约文件已经可见，但目录同步可能失败，此时关闭命令尚未发出。[开发者 @chiga0 自行修正](https://github.com/chiga0/qwen-code/commit/e3e4eb53b8b7ac0608c7bfe7dde9d6e43b246d6b)，只允许同一存活所有者核对同一操作身份并重试。[独立评审者 @yiliang114 明确署名中川大师的发现](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049631029)，并核验零次派发、同一身份重试和不同身份拒绝的条件。
 
-对于其他评审者发现的技能源路径权限问题，[中川大师补充了具体验收条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049903098)：实际权限决策与显式确认分类必须使用同一路径身份，并与普通回退确认区分。[开发者实现共享匹配逻辑并明确引用该条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050795285)；[独立评审者 @yiliang114](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050804900)和[@doudouOUC](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050900161)分别报告验证并批准。[该PR于2026年11月25日合入主线](https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939)，[合并后的回归测试](https://github.com/QwenLM/qwen-code/blob/4e50b6b8758580e5558ee3ad964a4cad65838939/packages/core/src/permissions/permission-manager.test.ts#L242-L300)同时检查实际权限与强制确认分类。这是一个PR中的两项具体贡献。正式发行版及实际用户改善仍待核实。
+对于其他评审者发现的技能源路径权限问题，[中川大师补充了具体验收条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049903098)：实际权限决策与显式确认分类必须使用同一路径身份，并与普通回退确认区分。[开发者实现共享匹配逻辑并明确引用该条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050795285)；[独立评审者 @yiliang114](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050804900)和[@doudouOUC](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050900161)分别报告验证并批准。[该PR于2026年11月25日合入主线](https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939)，[合并后的回归测试](https://github.com/QwenLM/qwen-code/blob/4e50b6b8758580e5558ee3ad964a4cad65838939/packages/core/src/permissions/permission-manager.test.ts#L242-L300)同时检查实际权限与强制确认分类。这是一个PR中的两项具体贡献。**已收录于[2026年11月26日发布的正式版 v0.28.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)。** 实际用户改善仍待核实。
 
 ## 88. Pydantic AI｜未收集工具结果，不代表工具没有执行
 
@@ -1851,7 +1851,7 @@ AI先给出最终答案时，外部后台任务可能已经开始。[中川大�
 
 [中川大师在PR #18266中指出](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6041579649)，确认操作已经产生外部副作用后若被取消，确认结果可能丢失，恢复同一输入可能再次执行操作。[开发者 @callmeYe 明确认可这一风险](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7150221702)，并将终端、ACP及托管入口共用的稳定输入身份键列为独立后续任务。[中川大师补充输入身份与尝试身份的具体区别](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7154661721)。[独立评审者 @qqqys](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6054522926)和[@yiliang114](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6055022554)均明确提到与中川大师达成的后续安排，并批准当前生命周期PR。
 
-原有的每条消息确认生命周期修复[于2026年11月25日合并](https://github.com/QwenLM/qwen-code/commit/6aa87a5ea579ebb86f2231105d38d8c4b7554e96)。**防止副作用重复执行的输入身份键仍属独立后续任务，[合并后的共享处理代码](https://github.com/QwenLM/qwen-code/blob/6aa87a5ea579ebb86f2231105d38d8c4b7554e96/packages/core/src/hooks/user-prompt-submit.ts)尚未包含该键。** 本例记录第三方对具体设计问题的认可与后续安排，不是新增建议已经实现或发布的证明。
+原有的每条消息确认生命周期修复[于2026年11月25日合并](https://github.com/QwenLM/qwen-code/commit/6aa87a5ea579ebb86f2231105d38d8c4b7554e96)。**防止副作用重复执行的输入身份键仍属独立后续任务，[合并后的共享处理代码](https://github.com/QwenLM/qwen-code/blob/6aa87a5ea579ebb86f2231105d38d8c4b7554e96/packages/core/src/hooks/user-prompt-submit.ts)尚未包含该键。** 原有生命周期修复已收录于[2026年11月26日发布的正式版 v0.28.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)；新增建议仍处于设计共识阶段。
 
 ## 90. Hermes Agent｜通信错误文字不等于AI尚未执行：开发者修正通知条件
 
@@ -1867,11 +1867,11 @@ AI先给出最终答案时，外部后台任务可能已经开始。[中川大�
 
 ## 93. Qwen Code｜最后一次健康观测不能证明当前可接纳新的AI工作
 
-服务器过载导致监测停止时，使用缓存的健康记录接纳新工作可能危及现有会话。[中川大师提出反例](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7068115980)后，[开发者 @wenshao 实现观测中断判断及回归测试](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7114341037)，保留现有会话控制，并要求连续及时健康的采样后才恢复接纳。[对照验证报告28项检查通过](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7128562081)，[2026年11月24日合入主线](https://github.com/QwenLM/qwen-code/commit/0515985df5ba61296a93bc906dc89685838b0478)。正式发行版仍待确认。
+服务器过载导致监测停止时，使用缓存的健康记录接纳新工作可能危及现有会话。[中川大师提出反例](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7068115980)后，[开发者 @wenshao 实现观测中断判断及回归测试](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7114341037)，保留现有会话控制，并要求连续及时健康的采样后才恢复接纳。[对照验证报告28项检查通过](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7128562081)，[2026年11月24日合入主线](https://github.com/QwenLM/qwen-code/commit/0515985df5ba61296a93bc906dc89685838b0478)。**已收录于[2026年11月26日发布的正式版 v0.28.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)。** 实际用户改善仍待核实。
 
 ## 94. Qwen Code｜保留签名必须保留被签名的原文：回归测试及主线合并
 
-压缩对话时若截断带签名的推理文本，却保留签名，会改变被签名的重放单元。[中川大师提出4001字符的具体反例](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7123922421)，[开发者 @wenshao 采用逐字节保留签名文本的实现及回归测试](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7124620152)，保持无签名文本的长度限制。[另一位审查者 @qqqys 明确标注来源并验证回归](https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509)。[2026年11月24日合入主线](https://github.com/QwenLM/qwen-code/commit/72de09254745b0f998e7403b34efc6e4bb78b600)。真实签名验证服务及发行版本另行核实。
+压缩对话时若截断带签名的推理文本，却保留签名，会改变被签名的重放单元。[中川大师提出4001字符的具体反例](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7123922421)，[开发者 @wenshao 采用逐字节保留签名文本的实现及回归测试](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7124620152)，保持无签名文本的长度限制。[另一位审查者 @qqqys 明确标注来源并验证回归](https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509)。[2026年11月24日合入主线](https://github.com/QwenLM/qwen-code/commit/72de09254745b0f998e7403b34efc6e4bb78b600)。**已收录于[2026年11月26日发布的正式版 v0.28.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)。** 真实签名验证服务上的表现仍待核实。
 
 ## 95. Pydantic AI｜权限检查必须发现同一文本进入不同指令通道
 
@@ -1892,6 +1892,12 @@ AI先给出最终答案时，外部后台任务可能已经开始。[中川大�
 ## 99. Qwen Code｜MCP连接错误诊断不应显示或保存上游秘密内容
 
 将异常MCP响应正文复制到错误或日志，可能保留敏感内容。[中川大师指出转录路径](https://github.com/QwenLM/qwen-code/pull/17183#pullrequestreview-5903325534)，[开发者 @darkhipo 将诊断限定为HTTP状态、规范化媒体类型及安全数字代码](https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7149163476)，并[修正另一GET-SSE日志路径，加入合成秘密标记的反向测试](https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7155422115)。截至2026年11月26日PR尚未合并。
+
+## 100. Hermes Agent｜删除会话时同时清除两个持久副本中的保留路由
+
+插件尚未注册时暂存的路由也必须随会话删除。[中川大师指出反例](https://github.com/NousResearch/hermes-agent/pull/160253#pullrequestreview-6067448397)：只删除已解析路由会让暂存路由留在下一次完整保存中。[开发者 @teknium1 直接确认并说明修复](https://github.com/NousResearch/hermes-agent/pull/160253#issuecomment-7181260258)，[自行提交代码和回归测试](https://github.com/NousResearch/hermes-agent/commit/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce)。
+
+修复在同一锁内删除已解析及暂存路由，即使只有暂存路由也执行保存，并覆盖其他删除及过期路径。开发者报告[三项回归测试](https://github.com/NousResearch/hermes-agent/blob/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce/tests/gateway/test_held_route_late_platform.py#L315-L370)在修复前失败、修复后通过，并使用真实网关及隔离目录进行对照。删除API返回成功后，旧版本的state.db已删除记录，但sessions.json仍保留路由；修复后两处均删除，无关路由保留。该对照中，已有退役标记在修复前就阻止了重启后复活。**截至2026年11月26日，已由独立开发者实现并报告实际运行验证**；[PR #160253](https://github.com/NousResearch/hermes-agent/pull/160253)仍未合并或发布。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

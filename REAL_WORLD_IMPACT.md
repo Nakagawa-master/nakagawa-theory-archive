@@ -4,7 +4,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は99件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は100件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -21,7 +21,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**99の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**100の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1960,7 +1960,7 @@ AIチャットで停止を押した後、結果が遅れている間に別のタ
 
 **独立開発者 @wenshao は[この反例が現行実装に当てはまることを自ら確認](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7077812706)し、[マスター本人宛てに修正を明示](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7078123649)、[コードと回帰テストを変更](https://github.com/QwenLM/qwen-code/commit/f336117d43bbd766edfefbd6f62b32076e7a98af)しました。** 変更後はactiveTurnIdと停止要求時のtarget.turnIdを照合し、T1の遅延失敗をT2に誤表示せず、対象が今も同じターンなら警告を表示します。開発者は関連10ファイルの289テスト成功と型チェック成功を報告しています。
 
-**現在は独立開発者による設計採用・実装から、Qwen Code本線への正式マージまで到達しました。** 開発者自身のA→B→A再接続検証で、一度は真正な停止エラーが消える回帰が見つかりましたが、[独立開発者 @wenshao が`dc24ed25`で修正](https://github.com/QwenLM/qwen-code/commit/dc24ed250de7d531a200b738af152b10315cfa27)し、[三条件の再検証を報告](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7079997766)。関連10ファイル293テスト成功は開発者の報告です。[PR #18091は2026年11月22日14:12:46 UTCに本線へマージ](https://github.com/QwenLM/qwen-code/pull/18091)され、[統合コミット`65308c97`](https://github.com/QwenLM/qwen-code/commit/65308c972fcfa95a3078adde578af996609fac63)で確認できます。**本線マージと、当該変更を含む正式リリース・実際のChatSurfaceへの接続・利用者本人の効果は別の段階です。** 2026年11月22日現在、後三者は未確認です。コードとテストの著作はQwen開発者に帰属します.
+**現在は独立開発者による設計採用・実装から、Qwen Code本線への正式マージまで到達しました。** 開発者自身のA→B→A再接続検証で、一度は真正な停止エラーが消える回帰が見つかりましたが、[独立開発者 @wenshao が`dc24ed25`で修正](https://github.com/QwenLM/qwen-code/commit/dc24ed250de7d531a200b738af152b10315cfa27)し、[三条件の再検証を報告](https://github.com/QwenLM/qwen-code/pull/18091#issuecomment-7079997766)。関連10ファイル293テスト成功は開発者の報告です。[PR #18091は2026年11月22日14:12:46 UTCに本線へマージ](https://github.com/QwenLM/qwen-code/pull/18091)され、[統合コミット`65308c97`](https://github.com/QwenLM/qwen-code/commit/65308c972fcfa95a3078adde578af996609fac63)で確認できます。**[正式版 v0.28.6（2026年11月26日公開）](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)に収録**され、タグが当該マージを含むことも確認しました。実際のChatSurfaceへの接続・利用者本人の効果は未確認です。コードとテストの著作はQwen開発者に帰属します.
 
 この因果区別をさらに考える入口は、中川マスターの[中川式 接続プロトコル標準論・人間向け要約](derivatives/069/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)）です。開発者が原典そのものを読んだという主張ではありません。
 
@@ -1981,7 +1981,7 @@ AIが道具から正常なデータを受け取ったのに、データに特定
 
 AIがまだセッション終了命令を送っていないのに、終了したか不明と扱えば、安全にやり直せる処理まで止まります。[中川マスターが指摘した具体的な反例](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378)は、排他的な予約ファイルが見える状態になった後、ディレクトリ同期が失敗し、終了命令は未送信のままになるというものです。[開発者 @chiga0 が修正](https://github.com/chiga0/qwen-code/commit/e3e4eb53b8b7ac0608c7bfe7dde9d6e43b246d6b)し、同じ稼働中の所有者・操作IDの場合に限り予約を再確認して再試行できるようにしました。[独立レビュアー @yiliang114 は中川マスターの指摘を明記し、未送信、同一操作での再試行、別IDの拒否を確認](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049631029)しました。
 
-さらに、他のレビュアーが発見したスキルの実体パスに関する権限判定の問題に対し、[中川マスターが追加の検証条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049903098)を提示しました。実際の権限判定と明示的な確認要求の判定は同一のパスを基準にしなければならず、通常の確認要求とは区別する必要があります。[開発者が共通判定処理を実装し、受け入れ条件を明記](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050795285)。[独立レビュアー @yiliang114](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050804900)と[@doudouOUC](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050900161)は、それぞれこの条件を含む検証を報告して承認しました。[2026年11月25日に本線へマージ](https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939)され、[実際の回帰テスト](https://github.com/QwenLM/qwen-code/blob/4e50b6b8758580e5558ee3ad964a4cad65838939/packages/core/src/permissions/permission-manager.test.ts#L242-L300)にも確認できます。二つの具体的な貢献を含む一つのPRです。正式配布版への収録と実利用者の改善結果は未確認です。
+さらに、他のレビュアーが発見したスキルの実体パスに関する権限判定の問題に対し、[中川マスターが追加の検証条件](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6049903098)を提示しました。実際の権限判定と明示的な確認要求の判定は同一のパスを基準にしなければならず、通常の確認要求とは区別する必要があります。[開発者が共通判定処理を実装し、受け入れ条件を明記](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050795285)。[独立レビュアー @yiliang114](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050804900)と[@doudouOUC](https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050900161)は、それぞれこの条件を含む検証を報告して承認しました。[2026年11月25日に本線へマージ](https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939)され、[実際の回帰テスト](https://github.com/QwenLM/qwen-code/blob/4e50b6b8758580e5558ee3ad964a4cad65838939/packages/core/src/permissions/permission-manager.test.ts#L242-L300)にも確認できます。二つの具体的な貢献を含む一つのPRです。**[正式版 v0.28.6（2026年11月26日公開）](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)に収録**されました。実利用者の改善結果は未確認です。
 
 ## 88. Pydantic AI｜結果が回収されなかったことと、処理が実行されなかったことは違う
 
@@ -1993,7 +1993,7 @@ AIが最終回答を先に出したとしても、既に開始した外部作業
 
 [中川マスターはPR #18266のレビュー](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6041579649)で、入力確認の途中で処理が外部に記録を残した後に中断されると、確認結果がなくても副作用は残り、同じ入力を復元すると処理が再実行され得ると指摘しました。[開発者 @callmeYe がこの条件を明確に認め](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7150221702)、同一の入力を識別するキーを端末・ACP・ホスト共通の後続課題としました。[中川マスターが入力の同一性と試行の同一性を分ける具体的な条件を補足](https://github.com/QwenLM/qwen-code/pull/18266#issuecomment-7154661721)し、[独立レビュアー @qqqys](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6054522926)と[@yiliang114](https://github.com/QwenLM/qwen-code/pull/18266#pullrequestreview-6055022554)も、中川マスターとの合意を明記して承認しました。
 
-元の入力確認のライフサイクル修正は[2026年11月25日に本線へマージ](https://github.com/QwenLM/qwen-code/commit/6aa87a5ea579ebb86f2231105d38d8c4b7554e96)されました。**副作用の重複防止に関する中川マスターの提案は別の後続課題であり、マージされた[共通処理](https://github.com/QwenLM/qwen-code/blob/6aa87a5ea579ebb86f2231105d38d8c4b7554e96/packages/core/src/hooks/user-prompt-submit.ts)に識別キーはまだありません。** 本事例は第三者による設計上の問題の受容と合意の記録であり、その追加提案自体の実装・リリース実績ではありません。
+元の入力確認のライフサイクル修正は[2026年11月25日に本線へマージ](https://github.com/QwenLM/qwen-code/commit/6aa87a5ea579ebb86f2231105d38d8c4b7554e96)されました。**副作用の重複防止に関する中川マスターの提案は別の後続課題であり、マージされた[共通処理](https://github.com/QwenLM/qwen-code/blob/6aa87a5ea579ebb86f2231105d38d8c4b7554e96/packages/core/src/hooks/user-prompt-submit.ts)に識別キーはまだありません。** 元のライフサイクル修正は[正式版 v0.28.6（2026年11月26日公開）](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)に収録。追加提案については設計合意の段階です。
 
 ## 90. Hermes Agent｜通信障害の文面はAIが未実行だった証拠ではない：開発者が通知条件を修正
 
@@ -2009,11 +2009,11 @@ AIの成果物一覧を読み込んでいる途中で作業場所を切り替え
 
 ## 93. Qwen Code｜最後に健康だったという記録で、現在もAI処理を増やせると判断しない
 
-サーバーが高負荷で監視自体を実行できなくなったとき、最後の正常記録を根拠に新規AI処理を受け入れると、既存の操作まで止まり得ます。[中川マスターの反例](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7068115980)を受け、[開発者 @wenshao が観測途絶を別の状態として検出し、新規処理を拒否するコードと回帰試験を追加](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7114341037)しました。既存会話の操作は維持し、正常観測が連続してから再開する設計です。[修正後の比較検証](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7128562081)では28項目の成功が報告され、[2026年11月24日に本線マージ](https://github.com/QwenLM/qwen-code/commit/0515985df5ba61296a93bc906dc89685838b0478)されました。正式版への収録は次の確認段階です。
+サーバーが高負荷で監視自体を実行できなくなったとき、最後の正常記録を根拠に新規AI処理を受け入れると、既存の操作まで止まり得ます。[中川マスターの反例](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7068115980)を受け、[開発者 @wenshao が観測途絶を別の状態として検出し、新規処理を拒否するコードと回帰試験を追加](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7114341037)しました。既存会話の操作は維持し、正常観測が連続してから再開する設計です。[修正後の比較検証](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7128562081)では28項目の成功が報告され、[2026年11月24日に本線マージ](https://github.com/QwenLM/qwen-code/commit/0515985df5ba61296a93bc906dc89685838b0478)されました。**[正式版 v0.28.6（2026年11月26日公開）](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)に収録**されました。実利用者の改善は未確認です。
 
 ## 94. Qwen Code｜署名だけを残して署名対象の文章を変えてはいけない：回帰試験を追加し正式マージ
 
-AI会話の圧縮時に署名付きの推論文を短くし、署名だけを残すと、後で元の署名対象として扱えなくなります。[中川マスターが4,001文字の具体的な反例を指摘](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7123922421)。[開発者 @wenshao は署名付き部分の本文を変更しない処理と、その反例の回帰試験を追加](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7124620152)しました。署名のない文章の長さ制限は維持しています。[別のレビュアー @qqqys も出所を明記して検証](https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509)し、[2026年11月24日に本線マージ](https://github.com/QwenLM/qwen-code/commit/72de09254745b0f998e7403b34efc6e4bb78b600)されました。署名を実際に検証する外部提供元での動作・配布版は別の確認段階です。
+AI会話の圧縮時に署名付きの推論文を短くし、署名だけを残すと、後で元の署名対象として扱えなくなります。[中川マスターが4,001文字の具体的な反例を指摘](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7123922421)。[開発者 @wenshao は署名付き部分の本文を変更しない処理と、その反例の回帰試験を追加](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7124620152)しました。署名のない文章の長さ制限は維持しています。[別のレビュアー @qqqys も出所を明記して検証](https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509)し、[2026年11月24日に本線マージ](https://github.com/QwenLM/qwen-code/commit/72de09254745b0f998e7403b34efc6e4bb78b600)されました。**[正式版 v0.28.6（2026年11月26日公開）](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6)に収録**されました。署名を実際に検証する外部提供元での動作は未確認です。
 
 ## 95. Pydantic AI｜AIの権限検査で、同じ文章が別の指示経路にも入った場合を見逃さない
 
@@ -2034,6 +2034,12 @@ AIの自動実行予定を管理する画面が空のままでも、別の端末
 ## 99. Qwen Code｜AI接続エラーの診断で、接続先の秘密情報を表示・保存しない
 
 外部MCPサーバーが予期しない応答を返した際に、その本文をエラーやログへ転記すると、接続先の秘密情報まで残るおそれがあります。[中川マスターが転記経路を指摘](https://github.com/QwenLM/qwen-code/pull/17183#pullrequestreview-5903325534)し、[開発者 @darkhipo は診断をHTTP状態・正規化された形式・安全な数値コードに限定](https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7149163476)。[別のGET-SSE経路も修正し、架空の秘密文字列が表示・内部ログに出ない回帰試験を追加](https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7155422115)しました。2026年11月26日現在、PRは未マージです。
+
+## 100. Hermes Agent｜削除済みセッションへの経路が保存ファイルに残る問題を修正
+
+プラグイン未登録のため保留されている経路は、セッションを削除したときにも消える必要があります。[中川マスターが、通常の経路だけを削除して保留経路が次の全体保存で残る反例を指摘](https://github.com/NousResearch/hermes-agent/pull/160253#pullrequestreview-6067448397)。[開発者 @teknium1 は本人宛てに確認・修正を明示](https://github.com/NousResearch/hermes-agent/pull/160253#issuecomment-7181260258)し、[コードと回帰テストを実装](https://github.com/NousResearch/hermes-agent/commit/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce)しました。
+
+通常・保留の両経路を同じロック内で除去し、保留のみの場合も保存するよう修正。関連する削除・期限切れ処理にも適用しました。[回帰テスト3件](https://github.com/NousResearch/hermes-agent/blob/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce/tests/gateway/test_held_route_late_platform.py#L315-L370)に加え、開発者は実ゲートウェイを起動した修正前後の比較を報告しました。削除APIの成功直後、修正前はstate.dbから消えてもsessions.jsonに経路が残り、修正後は双方から消えました。無関係の経路は維持され、再起動時の復活は既存の退役マーカーにより修正前から防止されていました。**2026年11月26日現在、開発者による実装・実動検証の段階**で、[PR #160253](https://github.com/NousResearch/hermes-agent/pull/160253)は未マージです。
 
 ## 公開された成果と、原典へ戻る道筋
 

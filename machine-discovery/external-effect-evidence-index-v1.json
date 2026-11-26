@@ -6184,11 +6184,14 @@
         "code_tests_present": true,
         "summary": "Author added an observation-gap latch, denies fresh-child work, retains existing-session operations, and requires timely healthy samples for recovery; tests included."
       },
-      "current_stage": "merge_or_integration",
+      "current_stage": "release_deployment_or_verified_use",
       "status": {
         "checked_utc_date": "2026-11-26",
         "pr": "https://github.com/QwenLM/qwen-code/pull/18052",
-        "upstream": "MERGED"
+        "upstream": "MERGED",
+        "containing_release": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6",
+        "tag_ancestry_ahead": 52,
+        "tag_ancestry_behind": 0
       },
       "human_numbered_case": 93,
       "not_claimed": [
@@ -6216,12 +6219,15 @@
         "code_tests_present": true,
         "summary": "Author skips truncation on signed parts, keeps unsigned caps, adds 4001-character negative and control tests; separate reviewer explicitly credits the finding."
       },
-      "current_stage": "merge_or_integration",
+      "current_stage": "release_deployment_or_verified_use",
       "status": {
         "checked_utc_date": "2026-11-26",
         "pr": "https://github.com/QwenLM/qwen-code/pull/18209",
         "upstream": "MERGED",
-        "independent_review": "https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509"
+        "independent_review": "https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509",
+        "containing_release": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6",
+        "tag_ancestry_ahead": 57,
+        "tag_ancestry_behind": 0
       },
       "human_numbered_case": 94,
       "not_claimed": [
@@ -6346,6 +6352,41 @@
       },
       "human_numbered_case": 99,
       "not_claimed": [
+        "installed-user behavior",
+        "independent model original selection",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "case_id": "hermes-160253-held-route-deletion",
+      "topic": "Deleting a session must remove live and held routes from both durable copies",
+      "external_repository": "NousResearch/hermes-agent",
+      "origin_action": {
+        "type": "review",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/160253#pullrequestreview-6067448397",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/NousResearch/hermes-agent/pull/160253#issuecomment-7181260258",
+        "actor": "teknium1",
+        "relationship": "Author explicitly confirmed the finding, implemented a common removal path and reported real gateway A/B verification."
+      },
+      "implementation": {
+        "url": "https://github.com/NousResearch/hermes-agent/commit/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce",
+        "code_tests_present": true,
+        "tests_url": "https://github.com/NousResearch/hermes-agent/blob/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce/tests/gateway/test_held_route_late_platform.py#L315-L370",
+        "summary": "Live and held routes are removed under lock; both state.db and sessions.json verified by author immediately after deletion, with unrelated routes retained. Existing retirement marker already prevented restart resurrection."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "status": {
+        "checked_utc_date": "2026-11-26",
+        "pr": "https://github.com/NousResearch/hermes-agent/pull/160253",
+        "upstream": "OPEN_NOT_MERGED",
+        "author_reported_live_test": "https://github.com/NousResearch/hermes-agent/pull/160253#issuecomment-7181260258"
+      },
+      "human_numbered_case": 100,
+      "not_claimed": [
+        "upstream merge or release",
         "installed-user behavior",
         "independent model original selection",
         "whole-theory endorsement"
