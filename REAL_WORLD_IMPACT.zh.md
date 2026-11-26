@@ -1897,7 +1897,7 @@ AI先给出最终答案时，外部后台任务可能已经开始。[中川大�
 
 插件尚未注册时暂存的路由也必须随会话删除。[中川大师指出反例](https://github.com/NousResearch/hermes-agent/pull/160253#pullrequestreview-6067448397)：只删除已解析路由会让暂存路由留在下一次完整保存中。[开发者 @teknium1 直接确认并说明修复](https://github.com/NousResearch/hermes-agent/pull/160253#issuecomment-7181260258)，[自行提交代码和回归测试](https://github.com/NousResearch/hermes-agent/commit/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce)。
 
-修复在同一锁内删除已解析及暂存路由，即使只有暂存路由也执行保存，并覆盖其他删除及过期路径。开发者报告[三项回归测试](https://github.com/NousResearch/hermes-agent/blob/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce/tests/gateway/test_held_route_late_platform.py#L315-L370)在修复前失败、修复后通过，并使用真实网关及隔离目录进行对照。删除API返回成功后，旧版本的state.db已删除记录，但sessions.json仍保留路由；修复后两处均删除，无关路由保留。该对照中，已有退役标记在修复前就阻止了重启后复活。**截至2026年11月26日，已由独立开发者实现并报告实际运行验证**；[PR #160253](https://github.com/NousResearch/hermes-agent/pull/160253)仍未合并或发布。
+修复在同一锁内删除已解析及暂存路由，即使只有暂存路由也执行保存，并覆盖其他删除及过期路径。开发者报告[三项回归测试](https://github.com/NousResearch/hermes-agent/blob/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce/tests/gateway/test_held_route_late_platform.py#L315-L370)在修复前失败、修复后通过，并使用真实网关及隔离目录进行对照。删除API返回成功后，旧版本的state.db已删除记录，但sessions.json仍保留路由；修复后两处均删除，无关路由保留。该对照中，已有退役标记在修复前就阻止了重启后复活。独立开发者实现并报告实际运行验证后，**[于2026年11月26日正式合入主线](https://github.com/NousResearch/hermes-agent/commit/5d3c913320579d76f8cc27b626968d904ad5d2b0)**。正式发行版及实际用户改善仍待核实。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

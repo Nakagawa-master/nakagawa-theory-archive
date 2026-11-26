@@ -6377,16 +6377,20 @@
         "tests_url": "https://github.com/NousResearch/hermes-agent/blob/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce/tests/gateway/test_held_route_late_platform.py#L315-L370",
         "summary": "Live and held routes are removed under lock; both state.db and sessions.json verified by author immediately after deletion, with unrelated routes retained. Existing retirement marker already prevented restart resurrection."
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "current_stage": "merge_or_integration",
       "status": {
         "checked_utc_date": "2026-11-26",
         "pr": "https://github.com/NousResearch/hermes-agent/pull/160253",
-        "upstream": "OPEN_NOT_MERGED",
-        "author_reported_live_test": "https://github.com/NousResearch/hermes-agent/pull/160253#issuecomment-7181260258"
+        "upstream": "MERGED",
+        "author_reported_live_test": "https://github.com/NousResearch/hermes-agent/pull/160253#issuecomment-7181260258",
+        "merge_commit": "5d3c913320579d76f8cc27b626968d904ad5d2b0",
+        "merged_at_utc": "2026-11-26T08:08:26Z",
+        "latest_stable_checked": "v0.23.4",
+        "containing_release": "NOT_VERIFIED"
       },
       "human_numbered_case": 100,
       "not_claimed": [
-        "upstream merge or release",
+        "containing release",
         "installed-user behavior",
         "independent model original selection",
         "whole-theory endorsement"

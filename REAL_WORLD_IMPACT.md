@@ -2039,7 +2039,7 @@ AIの自動実行予定を管理する画面が空のままでも、別の端末
 
 プラグイン未登録のため保留されている経路は、セッションを削除したときにも消える必要があります。[中川マスターが、通常の経路だけを削除して保留経路が次の全体保存で残る反例を指摘](https://github.com/NousResearch/hermes-agent/pull/160253#pullrequestreview-6067448397)。[開発者 @teknium1 は本人宛てに確認・修正を明示](https://github.com/NousResearch/hermes-agent/pull/160253#issuecomment-7181260258)し、[コードと回帰テストを実装](https://github.com/NousResearch/hermes-agent/commit/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce)しました。
 
-通常・保留の両経路を同じロック内で除去し、保留のみの場合も保存するよう修正。関連する削除・期限切れ処理にも適用しました。[回帰テスト3件](https://github.com/NousResearch/hermes-agent/blob/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce/tests/gateway/test_held_route_late_platform.py#L315-L370)に加え、開発者は実ゲートウェイを起動した修正前後の比較を報告しました。削除APIの成功直後、修正前はstate.dbから消えてもsessions.jsonに経路が残り、修正後は双方から消えました。無関係の経路は維持され、再起動時の復活は既存の退役マーカーにより修正前から防止されていました。**2026年11月26日現在、開発者による実装・実動検証の段階**で、[PR #160253](https://github.com/NousResearch/hermes-agent/pull/160253)は未マージです。
+通常・保留の両経路を同じロック内で除去し、保留のみの場合も保存するよう修正。関連する削除・期限切れ処理にも適用しました。[回帰テスト3件](https://github.com/NousResearch/hermes-agent/blob/dd3af5cae0d2ae84fa1aac13c3ee46a92c7a9fce/tests/gateway/test_held_route_late_platform.py#L315-L370)に加え、開発者は実ゲートウェイを起動した修正前後の比較を報告しました。削除APIの成功直後、修正前はstate.dbから消えてもsessions.jsonに経路が残り、修正後は双方から消えました。無関係の経路は維持され、再起動時の復活は既存の退役マーカーにより修正前から防止されていました。**[2026年11月26日に本線へ正式マージ](https://github.com/NousResearch/hermes-agent/commit/5d3c913320579d76f8cc27b626968d904ad5d2b0)**されました。正式配布版への収録と実利用者の効果は未確認です。
 
 ## 公開された成果と、原典へ戻る道筋
 
