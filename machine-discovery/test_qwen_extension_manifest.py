@@ -41,6 +41,9 @@ def main():
     assert "preflight_ai_answer_and_action" in command_text
     assert "Do not execute the planned external operation" in command_text
     assert "no concrete observation" in command_text
+    assert all(field in command_text for field in ("expected_operation", "receipt_operation"))
+    assert "never copy one identifier into the other" in command_text
+    assert "operation binding was not checked" in command_text
     assert "!{" not in command_text, "No shell injection/execution in first-use command"
     gemini_cfg = gemini["mcpServers"]["ai-answer-guard"]
     assert gemini_cfg["command"] == "python3"
@@ -68,7 +71,7 @@ def main():
          "params": {"_meta": {
              "io.modelcontextprotocol/protocolVersion": "2026-07-28",
              "io.modelcontextprotocol/clientCapabilities": {}}}},
-        # Two real read-only MCP calls, matching the custom command's everyday
+        # Real read-only MCP calls, matching the custom command's everyday
         # first-use scenario; not a simulated Qwen model or human installation.
         {"jsonrpc": "2.0", "id": 3, "method": "tools/call",
          "params": {"_meta": {
@@ -84,6 +87,24 @@ def main():
              "name": "preflight_ai_answer_and_action",
              "arguments": {"tool_results": [
                  {"id": "send-complete", "status": "completed", "success": True}]}}},
+        # Same status, different operation: the guard must hold rather than
+        # treating a successful read as a successful write.
+        {"jsonrpc": "2.0", "id": 5, "method": "tools/call",
+         "params": {"_meta": {
+             "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+             "io.modelcontextprotocol/clientCapabilities": {}},
+             "name": "preflight_ai_answer_and_action",
+             "arguments": {"tool_results": [
+                 {"id": "write", "status": "completed", "success": True,
+                  "expected_operation": "artifact.write", "receipt_operation": "artifact.read"}]}}},
+        {"jsonrpc": "2.0", "id": 6, "method": "tools/call",
+         "params": {"_meta": {
+             "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+             "io.modelcontextprotocol/clientCapabilities": {}},
+             "name": "preflight_ai_answer_and_action",
+             "arguments": {"tool_results": [
+                 {"id": "write", "status": "completed", "success": True,
+                  "expected_operation": "artifact.write", "receipt_operation": "artifact.write"}]}}},
     ]
     node = shutil.which("node")
     assert node, "Qwen extension launcher needs the Node runtime required by Qwen Code"
@@ -129,6 +150,11 @@ def main():
     assert failed["verdict"] == "RECHECK_BEFORE_USE" and failed["hold_count"] == 1, failed
     assert completed["verdict"] == "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS"
     assert completed["hold_count"] == 0, completed
+    mismatched = json.loads(replies[5]["result"]["content"][0]["text"])
+    matched = json.loads(replies[6]["result"]["content"][0]["text"])
+    assert mismatched["verdict"] == "RECHECK_BEFORE_USE" and mismatched["hold_count"] == 1, mismatched
+    assert mismatched["findings"][0]["gate"] == "tool_receipt_binding", mismatched
+    assert matched["verdict"] == "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS" and matched["hold_count"] == 0, matched
     assert [tool["name"] for tool in replies[2]["result"]["tools"][:2]] == ["preflight_ai_answer_and_action", "audit_citation_independence"]
     assert "list_all_published_derivative_parent_links" in {
         tool["name"] for tool in replies[2]["result"]["tools"]}
@@ -136,7 +162,7 @@ def main():
         tool["name"] for tool in replies[2]["result"]["tools"]}
     assert "list_all_314_derivative_parent_links" in {
         tool["name"] for tool in replies[2]["result"]["tools"]}
-    print("PASS: Qwen first-use command and real failed/completed MCP receipt calls; Node/Python fallback, no stray stdout; same 11 tools and 315 originals")
+    print("PASS: Qwen first-use command and real failed/completed and matching/mismatching-operation MCP receipt calls; Node/Python fallback, no stray stdout; same 11 tools and 315 originals")
 
 if __name__ == "__main__":
     main()
