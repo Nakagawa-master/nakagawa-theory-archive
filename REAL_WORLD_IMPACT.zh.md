@@ -12,6 +12,7 @@
 
 ## 先看成果：其他开发者实际修改并合并代码
 
+- **[CUGA Agent｜正式版回归测试明确记载中川大师的贡献](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)** — [中川大师指出](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)正常工具结果被误判为失败的问题，独立开发者完成修复，[2026年11月22日发布的正式版 v0.4.6](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)已收录，回归测试说明中明确写有 `Nakagawa-master`。详见[案例86](#86-cuga-agent正常工具结果不应被误判为执行失败正式版回归测试明确署名)。
 - **OpenClaw｜修改无关代理配置，却让另一个人的审批失效。** 中川大师[指出具体漏洞和回归测试](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)。开发者**明确引用其报告**，在[独立PR中实现并合并修复](https://github.com/openclaw/openclaw/pull/160856)；[官方版本文档列出 `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)。详见案例51。
 - **MemberJunction｜ID相同不代表有权覆盖已有记录。** 接收团队修改代码和测试，并发布[正式版v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)。详见案例3。
 - **PostHog｜数据提供者自称的数值，不等于产品独立测量的结果。** 接收团队将修改拆为[三个已合并的后续PR](https://github.com/PostHog/posthog/pull/107795)，并有dev、美国和欧洲生产环境部署记录；客户开放范围及项目当前状态见案例1。
