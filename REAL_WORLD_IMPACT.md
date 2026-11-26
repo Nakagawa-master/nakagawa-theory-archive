@@ -4,12 +4,11 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は91件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
+**公開記録は99件。** 世界中の開発者が関わる先端AI・ソフトウェアの現場で、**因果・構造分析による問題の発見・指摘・提案が、実際のコード修正やテスト、さらには正式リリースにまでつながっています**。数十万のGitHubスターを集めるAIエージェント「OpenClaw」、世界的な開発者向け分析基盤「PostHog」、企業向けAIアプリ基盤「MemberJunction」、アリババ系QwenのAI開発ツール「Qwen Code」、Pythonの著名なPydantic開発チームが手がけるAIエージェント基盤「PydanticAI」など、異なるプロジェクトで起きた変化を、元の議論と実装記録から確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
-- **[CUGA Agent｜正式版の回帰テストに中川マスターの功績を明記](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)** — 正常なツール返却データを実行エラーと混同する欠陥を[中川マスターが指摘](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)。別の開発者が修正し、[正式版 v0.4.6（2026年11月22日公開）](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)に収録。回帰テストの説明文に `Nakagawa-master` の名前が明記されています。[事例86を読む](#86-cuga-agent正常なツール結果を失敗と誤認しない設計正式版の回帰テストに本人の功績を明記)。
-- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 指摘を[開発者が修正PRの報告元として明記](https://github.com/openclaw/openclaw/pull/160856)。修正前に失敗するテストを用意し、修正後に**49件のテスト成功・本線マージ**まで進みました。別の[公式リリース文書には中川マスター（@Nakagawa-master）の名前が明記](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md#L4775)されています。[事例51を読む](#51-openclawaiの権限変更で他人の処理まで止まる問題をレビューし公式リリースノートに名前が掲載)。
+- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 指摘を[開発者が修正PRの報告元として明記](https://github.com/openclaw/openclaw/pull/160856)。修正前に失敗するテストを用意し、修正後に**49件のテスト成功・本線マージ**まで進みました。別の[公式リリース文書にはレビュー投稿者の名前も掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。[事例51を読む](#51-openclawaiの権限変更で他人の処理まで止まる問題をレビューし公式リリースノートに名前が掲載)。
 - **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。[事例3を読む](#3-memberjunction同じidと上書きしてよい所有権を分ける)。
 - **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。[事例1を読む](#1-posthogaiが提示した数値とposthog自身の測定値を分ける)。
 - **[Qwen Code｜読み取りだけのコマンドを拒否する一方、保護ファイルへの書き込みを見逃す権限判定](https://github.com/QwenLM/qwen-code/pull/15681)** — 当初の `2>&1` 誤拒否とは別に、実際の `>&protected.txt` の書込先を解析器が `&protected.txt` と誤認すると、特定ファイルへの書込禁止が一致しない点が[レビューで指摘されました](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)。[元の報告者が実際の権限判定で修正前 `allow`／修正後 `deny` を検証](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)し、自ら修正・回帰テストを実装した[#15681 が2026年11月1日にマージ](https://github.com/QwenLM/qwen-code/pull/15681)。**[11月2日公開のQwen Code正式版 v0.26.6のリリースノートには #15681 と独立実装者 @Suaroman が明記](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6)**され、タグはマージコミットの子孫です。
@@ -21,7 +20,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**91の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**99の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -2002,6 +2001,38 @@ AIが最終回答を先に出したとしても、既に開始した外部作業
 ## 91. LiteLLM｜履歴欠落と完全な会話置換入力を区別するテストを開発者が採用
 
 [中川マスターの比較レビュー](https://github.com/BerriAI/litellm/pull/48408#pullrequestreview-5653032133)と[追加の条件整理](https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418521743)は、通常の会話継続で履歴が欠落した場合は明示的に拒否し、圧縮済みの完全な置換入力は架空の履歴を作らず通す対照テストを求めました。[開発者 @FazeelUsmani は謝意を示し、保存履歴がなくても置換入力だけが提供元へ届くE2Eテストを追加したと報告](https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418653435)。元PR #48408 は11月25日に[代替実装で解決されたため未マージ終了](https://github.com/BerriAI/litellm/pull/48408#issuecomment-7163941752)。同じ問題の代替修正 [#53766](https://github.com/BerriAI/litellm/pull/53766) と [#53768](https://github.com/BerriAI/litellm/pull/53768) はmainとLTSへマージされました。本人の提案に応じたテスト採用は元PRで確認でき、代替修正への因果帰属と正式配布・実利用は別の確認事項です。
+
+## 92. Qwen Code｜読み込み完了と、現在の作業場所の正しい一覧を区別する設計が正式版へ
+
+AIの成果物一覧を読み込んでいる途中で作業場所を切り替えると、以前の読み込み完了通知が新しい一覧の完了を誤って示すことがあります。[中川マスターの設計指摘](https://github.com/QwenLM/qwen-code/pull/18036#issuecomment-7065608301)に対し、[開発者 @wenshao は設計を変更](https://github.com/QwenLM/qwen-code/pull/18036#issuecomment-7066468132)。作業場所と読み込み世代の両方で結果を識別し、A→B→Aの切り替えでも古い結果を復活させない条件を採用しました。[後続実装 #18071](https://github.com/QwenLM/qwen-code/pull/18071)は2026年11月22日に[本線マージ](https://github.com/QwenLM/qwen-code/commit/2a51378a1dd84eea8e357cf9c7dddc54e6dbf76d)され、[正式版 v0.28.4](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4)に収録されています。実際の導入者の改善結果は次の確認段階です。
+
+## 93. Qwen Code｜最後に健康だったという記録で、現在もAI処理を増やせると判断しない
+
+サーバーが高負荷で監視自体を実行できなくなったとき、最後の正常記録を根拠に新規AI処理を受け入れると、既存の操作まで止まり得ます。[中川マスターの反例](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7068115980)を受け、[開発者 @wenshao が観測途絶を別の状態として検出し、新規処理を拒否するコードと回帰試験を追加](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7114341037)しました。既存会話の操作は維持し、正常観測が連続してから再開する設計です。[修正後の比較検証](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7128562081)では28項目の成功が報告され、[2026年11月24日に本線マージ](https://github.com/QwenLM/qwen-code/commit/0515985df5ba61296a93bc906dc89685838b0478)されました。正式版への収録は次の確認段階です。
+
+## 94. Qwen Code｜署名だけを残して署名対象の文章を変えてはいけない：回帰試験を追加し正式マージ
+
+AI会話の圧縮時に署名付きの推論文を短くし、署名だけを残すと、後で元の署名対象として扱えなくなります。[中川マスターが4,001文字の具体的な反例を指摘](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7123922421)。[開発者 @wenshao は署名付き部分の本文を変更しない処理と、その反例の回帰試験を追加](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7124620152)しました。署名のない文章の長さ制限は維持しています。[別のレビュアー @qqqys も出所を明記して検証](https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509)し、[2026年11月24日に本線マージ](https://github.com/QwenLM/qwen-code/commit/72de09254745b0f998e7403b34efc6e4bb78b600)されました。署名を実際に検証する外部提供元での動作・配布版は別の確認段階です。
+
+## 95. Pydantic AI｜AIの権限検査で、同じ文章が別の指示経路にも入った場合を見逃さない
+
+権限のないツール出力が、AIへのシステム指示にも複製される場合、片方だけを検査すると問題を見逃します。[中川マスターのレビュー](https://github.com/pydantic/pydantic-ai/pull/14442#pullrequestreview-6066332669)に対し、[開発者 @DouweM が本人の代理で投稿したCLAIの返信](https://github.com/pydantic/pydantic-ai/pull/14442#issuecomment-7179532863)で指摘を認め、[コミット 7b861c3](https://github.com/pydantic/pydantic-ai/commit/7b861c3fdd3a21cf0e33c99e587eccc3ac40ec1e)に検査コードと回帰試験を追加しました。同じマーカーがシステム指示とツール出力の双方にある場合を違反として検出し、無関係なシステム指示なら正常とする対照試験です。2026年11月26日現在、PRは未マージです。[認識完全性の人間向け解説](derivatives/301/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)）。
+
+## 96. Gemini CLI｜日本語の検索結果で「表示しきれていない」という通知が消える問題を開発者が修正
+
+検索結果を文字数だけで制限すると、日本語などのUTF-8バイト数が後段の上限を超え、検索の範囲や省略を伝える重要な通知が失われます。[中川マスターがこの逆例と修正条件を提示](https://github.com/google-gemini/gemini-cli/pull/30109#issuecomment-7167186490)した後、[開発者 @paolo-perrone が指摘を認め](https://github.com/google-gemini/gemini-cli/pull/30109#issuecomment-7170549833)、[文字数・バイト数の両上限と日本語の検索行・ファイル名のテストを実装](https://github.com/paolo-perrone/gemini-cli/commit/8788e2caa0bb04f4bdd9ef683c04275aa4ee03b3)しました。2026年11月26日現在、PRは未マージです。[認識完全性の人間向け解説](derivatives/301/human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)）。
+
+## 97. Qwen Code｜今は予定がないことと、今後も自動実行が起きないことを分ける設計を採用
+
+AIの自動実行予定を管理する画面が空のままでも、別の端末から新しい予定が登録されることがあります。[中川マスターの指摘](https://github.com/QwenLM/qwen-code/pull/18112#issuecomment-7080703072)に対し、開発者は既存の会話内ツールと別端末のREST操作を区別しました。[その差を踏まえた後続設計](https://github.com/QwenLM/qwen-code/pull/18112#issuecomment-7126910072)について、[開発者 @wenshao は保存成立後に作業場所・会話を特定する通知を送り、正しい範囲だけ再取得する条件を採用](https://github.com/QwenLM/qwen-code/pull/18112#issuecomment-7127245625)しました。予定の内容は通知に含めず、常時ポーリングも追加しない設計です。この追加条件は別PRでの実装予定であり、2026年11月26日現在は設計採用の段階です。
+
+## 98. Qwen Code｜作業場所のログアウトと、共有アカウント全体への作用を区別する設計判断
+
+一つの作業場所からログアウトしても、認証情報が共有されていれば別の作業場所にも影響します。[中川マスターが操作の入口と実際の作用範囲のずれを指摘](https://github.com/QwenLM/qwen-code/pull/18007#issuecomment-7058772806)し、[開発者 @wenshao は一つのQWEN_HOMEに一つのGoogleアカウントという設計を選択](https://github.com/QwenLM/qwen-code/pull/18007#issuecomment-7058853108)。共有範囲を利用者に示し、ログアウト後に別プロセスが古い認証情報を復活させない条件を示しました。元PRは未マージのまま終了しました。ここで確認された成果は、第三者の具体的な設計判断の変更です。
+
+## 99. Qwen Code｜AI接続エラーの診断で、接続先の秘密情報を表示・保存しない
+
+外部MCPサーバーが予期しない応答を返した際に、その本文をエラーやログへ転記すると、接続先の秘密情報まで残るおそれがあります。[中川マスターが転記経路を指摘](https://github.com/QwenLM/qwen-code/pull/17183#pullrequestreview-5903325534)し、[開発者 @darkhipo は診断をHTTP状態・正規化された形式・安全な数値コードに限定](https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7149163476)。[別のGET-SSE経路も修正し、架空の秘密文字列が表示・内部ログに出ない回帰試験を追加](https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7155422115)しました。2026年11月26日現在、PRは未マージです。
 
 ## 公開された成果と、原典へ戻る道筋
 

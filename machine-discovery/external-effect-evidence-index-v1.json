@@ -6130,6 +6130,226 @@
         "developer read or endorsed entire theory",
         "consumer Gemini Search behavior change"
       ]
+    },
+    {
+      "case_id": "qwen-18036-18071-scan-ownership",
+      "topic": "Current workspace and scan-generation ownership versus transport completion",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/18036#issuecomment-7065608301",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/18036#issuecomment-7066468132",
+        "actor": "wenshao",
+        "relationship": "The author adopted ScanOwner and delayed-event controls in design; successor #18071 implemented the guard and merged."
+      },
+      "implementation": {
+        "url": "https://github.com/QwenLM/qwen-code/commit/2a51378a1dd84eea8e357cf9c7dddc54e6dbf76d",
+        "code_tests_present": true,
+        "summary": "The author adopted ScanOwner and delayed-event controls in design; successor #18071 implemented the guard and merged."
+      },
+      "current_stage": "release_deployment_or_verified_use",
+      "status": {
+        "checked_utc_date": "2026-11-26",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/18036",
+        "upstream": "MERGED",
+        "successor": "https://github.com/QwenLM/qwen-code/pull/18071",
+        "containing_release": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4"
+      },
+      "human_numbered_case": 92,
+      "not_claimed": [
+        "installed-user behavior",
+        "independent model original selection",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "case_id": "qwen-18052-observation-gap-admission",
+      "topic": "Last-known healthy sample is not current admission authority",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7068115980",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7114341037",
+        "actor": "wenshao",
+        "relationship": "Author added an observation-gap latch, denies fresh-child work, retains existing-session operations, and requires timely healthy samples for recovery; tests included."
+      },
+      "implementation": {
+        "url": "https://github.com/QwenLM/qwen-code/commit/0515985df5ba61296a93bc906dc89685838b0478",
+        "code_tests_present": true,
+        "summary": "Author added an observation-gap latch, denies fresh-child work, retains existing-session operations, and requires timely healthy samples for recovery; tests included."
+      },
+      "current_stage": "merge_or_integration",
+      "status": {
+        "checked_utc_date": "2026-11-26",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/18052",
+        "upstream": "MERGED"
+      },
+      "human_numbered_case": 93,
+      "not_claimed": [
+        "installed-user behavior",
+        "independent model original selection",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "case_id": "qwen-18209-signed-replay-unit",
+      "topic": "Signature preservation requires byte-exact signed text",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7123922421",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7124620152",
+        "actor": "wenshao",
+        "relationship": "Author skips truncation on signed parts, keeps unsigned caps, adds 4001-character negative and control tests; separate reviewer explicitly credits the finding."
+      },
+      "implementation": {
+        "url": "https://github.com/QwenLM/qwen-code/commit/72de09254745b0f998e7403b34efc6e4bb78b600",
+        "code_tests_present": true,
+        "summary": "Author skips truncation on signed parts, keeps unsigned caps, adds 4001-character negative and control tests; separate reviewer explicitly credits the finding."
+      },
+      "current_stage": "merge_or_integration",
+      "status": {
+        "checked_utc_date": "2026-11-26",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/18209",
+        "upstream": "MERGED",
+        "independent_review": "https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509"
+      },
+      "human_numbered_case": 94,
+      "not_claimed": [
+        "installed-user behavior",
+        "independent model original selection",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "case_id": "pydantic-14442-duplicate-instruction-voice",
+      "topic": "Observe same marker in system instructions and tool output",
+      "external_repository": "pydantic/pydantic-ai",
+      "origin_action": {
+        "type": "review",
+        "url": "https://github.com/pydantic/pydantic-ai/pull/14442#pullrequestreview-6066332669",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/pydantic/pydantic-ai/pull/14442#issuecomment-7179532863",
+        "actor": "DouweM",
+        "relationship": "Author's CLAI-posted reply acknowledges duplicate-marker counterexample. Reader includes top-level instructions; regression rejects none-authority marker in system and tool voices, unrelated instructions control passes."
+      },
+      "implementation": {
+        "url": "https://github.com/pydantic/pydantic-ai/commit/7b861c3fdd3a21cf0e33c99e587eccc3ac40ec1e",
+        "code_tests_present": true,
+        "summary": "Author's CLAI-posted reply acknowledges duplicate-marker counterexample. Reader includes top-level instructions; regression rejects none-authority marker in system and tool voices, unrelated instructions control passes."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "status": {
+        "checked_utc_date": "2026-11-26",
+        "pr": "https://github.com/pydantic/pydantic-ai/pull/14442",
+        "upstream": "OPEN_NOT_MERGED"
+      },
+      "human_numbered_case": 95,
+      "not_claimed": [
+        "installed-user behavior",
+        "independent model original selection",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "case_id": "qwen-18112-durable-schedule-discovery",
+      "topic": "Empty observation does not establish no future autonomous work",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/18112#issuecomment-7080703072",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/18112#issuecomment-7127245625",
+        "actor": "wenshao",
+        "relationship": "Author accepted scoped post-commit invalidation and re-read criteria for durable REST changes, intended as a separate follow-up; not implementation."
+      },
+      "current_stage": "explicit_third_party_response_or_restatement",
+      "status": {
+        "checked_utc_date": "2026-11-26",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/18112",
+        "upstream": "DESIGN_ADOPTED_OPEN"
+      },
+      "human_numbered_case": 97,
+      "not_claimed": [
+        "installed-user behavior",
+        "independent model original selection",
+        "whole-theory endorsement",
+        "implemented change"
+      ]
+    },
+    {
+      "case_id": "qwen-18007-shared-oauth-effect-scope",
+      "topic": "Workspace admission versus QWEN_HOME-wide credential effect",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/18007#issuecomment-7058772806",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/18007#issuecomment-7058853108",
+        "actor": "wenshao",
+        "relationship": "Author explicitly chooses one Google identity per QWEN_HOME, profile-level logout, scope disclosure and stale-refresh prevention. Original PR closed unmerged; no confirmed successor implementation."
+      },
+      "current_stage": "explicit_third_party_response_or_restatement",
+      "status": {
+        "checked_utc_date": "2026-11-26",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/18007",
+        "upstream": "DESIGN_ADOPTED_CLOSED_UNMERGED"
+      },
+      "human_numbered_case": 98,
+      "not_claimed": [
+        "installed-user behavior",
+        "independent model original selection",
+        "whole-theory endorsement",
+        "implemented change"
+      ]
+    },
+    {
+      "case_id": "qwen-17183-mcp-diagnostic-confidentiality",
+      "topic": "MCP diagnostic must not reproduce arbitrary upstream text",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "review",
+        "url": "https://github.com/QwenLM/qwen-code/pull/17183#pullrequestreview-5903325534",
+        "origin": "Nakagawa Master"
+      },
+      "third_party_response": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7149163476",
+        "actor": "darkhipo",
+        "relationship": "Author limits error content to status/media type/numeric code and fixes GET-SSE raw body logging in follow-up 7155422115, with synthetic-secret negative tests."
+      },
+      "implementation": {
+        "url": "https://github.com/QwenLM/qwen-code/commit/12a9d3b03f280926a648934dd494234275986106",
+        "code_tests_present": true,
+        "summary": "Author limits error content to status/media type/numeric code and fixes GET-SSE raw body logging in follow-up 7155422115, with synthetic-secret negative tests."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "status": {
+        "checked_utc_date": "2026-11-26",
+        "pr": "https://github.com/QwenLM/qwen-code/pull/17183",
+        "upstream": "OPEN_NOT_MERGED",
+        "follow_up": "https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7155422115"
+      },
+      "human_numbered_case": 99,
+      "not_claimed": [
+        "installed-user behavior",
+        "independent model original selection",
+        "whole-theory endorsement"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
