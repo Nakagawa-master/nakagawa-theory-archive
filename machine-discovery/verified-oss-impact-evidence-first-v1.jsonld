@@ -146,7 +146,7 @@
           "@id": "https://github.com/QwenLM/qwen-code/pull/18179",
           "name": "Qwen Code — distinguish pre-dispatch durability from execution, and explicit confirmation from fallback confirmation",
           "url": "https://github.com/QwenLM/qwen-code/pull/18179",
-          "dateModified": "2026-11-25",
+          "dateModified": "2026-11-26",
           "isBasedOn": {
             "@type": "CreativeWork",
             "url": "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6040947378"
@@ -160,7 +160,8 @@
             "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050804900",
             "https://github.com/QwenLM/qwen-code/pull/18179#pullrequestreview-6050900161",
             "https://github.com/QwenLM/qwen-code/blob/4e50b6b8758580e5558ee3ad964a4cad65838939/packages/core/src/permissions/permission-manager.test.ts#L242-L300",
-            "https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939"
+            "https://github.com/QwenLM/qwen-code/commit/4e50b6b8758580e5558ee3ad964a4cad65838939",
+            "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -179,7 +180,7 @@
             {
               "@type": "PropertyValue",
               "name": "Observed contribution and implementation authorship",
-              "value": "Nakagawa Master identified the retirement pre-dispatch boundary and later proposed the explicit-ask versus fallback-ask acceptance condition. Contributor chiga0 authored both corresponding changes; yiliang114 and doudouOUC independently credited and verified the latter condition, including mutation checks. Upstream main merged on 2026-11-25. One PR, two corrections; no verified containing release, installed-user effect or whole-theory endorsement."
+              "value": "Nakagawa Master identified the retirement pre-dispatch boundary and later proposed the explicit-ask versus fallback-ask acceptance condition. Contributor chiga0 authored both corresponding changes; yiliang114 and doudouOUC independently credited and verified the latter condition, including mutation checks. Upstream main merged on 2026-11-25. One PR, two corrections; stable v0.28.6 contains the merge (official release and native commit ancestry verified November 26). Installed-user effect and whole-theory endorsement remain unverified."
             },
             {
               "@type": "PropertyValue",
@@ -194,8 +195,9 @@
             },
             {
               "@type": "PropertyValue",
-              "name": "Containing release",
-              "value": "Not verified as of 2026-11-25"
+              "name": "Official published release contains merged fix (commit ancestry verified)",
+              "value": "v0.28.6",
+              "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6"
             }
           ]
         },
