@@ -4,7 +4,7 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共91例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
+**公开记录共99例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -12,7 +12,6 @@
 
 ## 先看成果：其他开发者实际修改并合并代码
 
-- **[CUGA Agent｜正式版回归测试明确记载中川大师的贡献](https://github.com/cuga-project/cuga-agent/blob/v0.4.6/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py#L392-L414)** — [中川大师指出](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)正常工具结果被误判为失败的问题，独立开发者完成修复，[2026年11月22日发布的正式版 v0.4.6](https://github.com/cuga-project/cuga-agent/releases/tag/v0.4.6)已收录，回归测试说明中明确写有 `Nakagawa-master`。详见[案例86](#86-cuga-agent正常工具结果不应被误判为执行失败正式版回归测试明确署名)。
 - **OpenClaw｜修改无关代理配置，却让另一个人的审批失效。** 中川大师[指出具体漏洞和回归测试](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)。开发者**明确引用其报告**，在[独立PR中实现并合并修复](https://github.com/openclaw/openclaw/pull/160856)；[官方版本文档列出 `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)。详见案例51。
 - **MemberJunction｜ID相同不代表有权覆盖已有记录。** 接收团队修改代码和测试，并发布[正式版v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)。详见案例3。
 - **PostHog｜数据提供者自称的数值，不等于产品独立测量的结果。** 接收团队将修改拆为[三个已合并的后续PR](https://github.com/PostHog/posthog/pull/107795)，并有dev、美国和欧洲生产环境部署记录；客户开放范围及项目当前状态见案例1。
@@ -1860,6 +1859,38 @@ AI先给出最终答案时，外部后台任务可能已经开始。[中川大�
 ## 91. LiteLLM｜开发者采纳区分历史缺失与完整替换输入的测试
 
 [中川大师的比较审查](https://github.com/BerriAI/litellm/pull/48408#pullrequestreview-5653032133)及[后续澄清](https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418521743)提出对照测试：明确拒绝缺失历史的普通续接，允许完整压缩替换输入通过，不虚构历史。[开发者 @FazeelUsmani 表示感谢并报告加入端到端测试](https://github.com/BerriAI/litellm/pull/48408#issuecomment-6418653435)，验证没有已存历史时仅发送压缩请求自身输入。11月25日，原PR #48408 [因替代实现解决同一问题而未合并关闭](https://github.com/BerriAI/litellm/pull/48408#issuecomment-7163941752)，替代修复 [#53766](https://github.com/BerriAI/litellm/pull/53766) 和 [#53768](https://github.com/BerriAI/litellm/pull/53768) 分别合入main和LTS。可直接归因的成果是原PR作者采纳测试；替代代码的因果归属、发行及实际用户结果需另行核实。
+
+## 92. Qwen Code｜读取完成不等于当前工作区的列表正确：设计进入正式版
+
+切换工作区时，旧读取的完成事件可能错误地结束新的列表加载。[中川大师的设计审查](https://github.com/QwenLM/qwen-code/pull/18036#issuecomment-7065608301)促使[开发者 @wenshao 采用工作区及扫描世代的双重归属条件](https://github.com/QwenLM/qwen-code/pull/18036#issuecomment-7066468132)，覆盖 A→B→A 切换反例。[后续实现 #18071](https://github.com/QwenLM/qwen-code/pull/18071)于[2026年11月22日合入主线](https://github.com/QwenLM/qwen-code/commit/2a51378a1dd84eea8e357cf9c7dddc54e6dbf76d)，并收入[正式版 v0.28.4](https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4)。实际安装用户的改善仍待核实。
+
+## 93. Qwen Code｜最后一次健康观测不能证明当前可接纳新的AI工作
+
+服务器过载导致监测停止时，使用缓存的健康记录接纳新工作可能危及现有会话。[中川大师提出反例](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7068115980)后，[开发者 @wenshao 实现观测中断判断及回归测试](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7114341037)，保留现有会话控制，并要求连续及时健康的采样后才恢复接纳。[对照验证报告28项检查通过](https://github.com/QwenLM/qwen-code/pull/18052#issuecomment-7128562081)，[2026年11月24日合入主线](https://github.com/QwenLM/qwen-code/commit/0515985df5ba61296a93bc906dc89685838b0478)。正式发行版仍待确认。
+
+## 94. Qwen Code｜保留签名必须保留被签名的原文：回归测试及主线合并
+
+压缩对话时若截断带签名的推理文本，却保留签名，会改变被签名的重放单元。[中川大师提出4001字符的具体反例](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7123922421)，[开发者 @wenshao 采用逐字节保留签名文本的实现及回归测试](https://github.com/QwenLM/qwen-code/pull/18209#issuecomment-7124620152)，保持无签名文本的长度限制。[另一位审查者 @qqqys 明确标注来源并验证回归](https://github.com/QwenLM/qwen-code/pull/18209#pullrequestreview-6038204509)。[2026年11月24日合入主线](https://github.com/QwenLM/qwen-code/commit/72de09254745b0f998e7403b34efc6e4bb78b600)。真实签名验证服务及发行版本另行核实。
+
+## 95. Pydantic AI｜权限检查必须发现同一文本进入不同指令通道
+
+无指令权限的工具输出可能被复制到系统指令，单查一个通道会漏检。[中川大师提出审查意见](https://github.com/pydantic/pydantic-ai/pull/14442#pullrequestreview-6066332669)后，[开发者 @DouweM 通过代其发布的CLAI回复确认问题](https://github.com/pydantic/pydantic-ai/pull/14442#issuecomment-7179532863)，并在[提交 7b861c3](https://github.com/pydantic/pydantic-ai/commit/7b861c3fdd3a21cf0e33c99e587eccc3ac40ec1e)中修正检查器及回归测试：同一标记进入系统指令和工具输出时报告违规，无关系统指令仍通过。截至2026年11月26日PR尚未合并。[认识完整性的人类向解说](derivatives/301/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)）。
+
+## 96. Gemini CLI｜开发者修正日语搜索结果中省略提示消失的问题
+
+只计算字符数可能使日语或表情符号较多的搜索结果超过后续UTF-8字节上限，导致省略提示消失。[中川大师提出反例与修正条件](https://github.com/google-gemini/gemini-cli/pull/30109#issuecomment-7167186490)，[开发者 @paolo-perrone 确认问题](https://github.com/google-gemini/gemini-cli/pull/30109#issuecomment-7170549833)，[实现字符数和字节数的双重上限，并加入日语匹配行及文件名测试](https://github.com/paolo-perrone/gemini-cli/commit/8788e2caa0bb04f4bdd9ef683c04275aa4ee03b3)。截至2026年11月26日PR尚未合并。[认识完整性的人类向解说](derivatives/301/zh-human-entry.md)（[原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)）。
+
+## 97. Qwen Code｜当前计划为空，不等于未来不会出现自主执行：设计采纳
+
+当前计划面板为空时，其他客户端仍可创建新的自动任务。[中川大师指出问题](https://github.com/QwenLM/qwen-code/pull/18112#issuecomment-7080703072)，并[提出区分会话内工具和持久REST变更的后续设计](https://github.com/QwenLM/qwen-code/pull/18112#issuecomment-7126910072)。[开发者 @wenshao 采纳提交后按工作区及会话通知重新读取的条件](https://github.com/QwenLM/qwen-code/pull/18112#issuecomment-7127245625)，通知不含任务内容，也不增加空闲轮询。该新增条件计划由后续PR实现，截至2026年11月26日为设计采纳阶段。
+
+## 98. Qwen Code｜工作区准入与共享账号作用范围必须区分：设计决定
+
+共享凭据时，从一个工作区登出也会影响其他工作区。[中川大师指出准入范围与实际作用范围不一致](https://github.com/QwenLM/qwen-code/pull/18007#issuecomment-7058772806)。[开发者 @wenshao 选择一个QWEN_HOME对应一个Google身份](https://github.com/QwenLM/qwen-code/pull/18007#issuecomment-7058853108)，明确共享影响并提出防止旧刷新恢复凭据的条件。原PR未合并关闭；已确认的成果是第三方的具体设计决定，而非正式发行的实现。
+
+## 99. Qwen Code｜MCP连接错误诊断不应显示或保存上游秘密内容
+
+将异常MCP响应正文复制到错误或日志，可能保留敏感内容。[中川大师指出转录路径](https://github.com/QwenLM/qwen-code/pull/17183#pullrequestreview-5903325534)，[开发者 @darkhipo 将诊断限定为HTTP状态、规范化媒体类型及安全数字代码](https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7149163476)，并[修正另一GET-SSE日志路径，加入合成秘密标记的反向测试](https://github.com/QwenLM/qwen-code/pull/17183#issuecomment-7155422115)。截至2026年11月26日PR尚未合并。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

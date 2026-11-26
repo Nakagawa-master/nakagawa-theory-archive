@@ -171,7 +171,13 @@ def verify() -> tuple[int, int, int]:
         ctx = item.get("published_derivative_context_not_parent_text", {})
         require(all(isinstance(ctx.get(lang), str) and ctx[lang].strip() for lang in ("ja", "en", "zh")),
                 f"Incomplete JA/EN/ZH published derivative source contexts: OD{od}")
-    require("## 名前を知らずに探す人へ" in (ROOT / "README.md").read_text(encoding="utf-8"),
+    # The approved top page uses a different heading; validate the actual route,
+    # ordinary problem language and both usable entry links, not a retired label.
+    top = (ROOT / "README.md").read_text(encoding="utf-8")
+    require("## AI・仕事・人生の問題を構造から読み解く" in top and
+            "著者名や理論名を知らずに原典を探したい" in top and
+            "(machine-discovery/question-source-explorer.html)" in top and
+            "(human-translation/SEARCH_FROM_A_REAL_QUESTION.md)" in top,
             "Top repository must expose actual ordinary no-author-name problem queries")
     require("24の実問題" not in explorer and "24-problem" not in explorer,
             "Question explorer has stale 24-item user/AI-facing problem counts")
