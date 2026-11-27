@@ -465,6 +465,14 @@ def preflight_ai_work(analysis):
                                  "reason": "Receipt operation is missing or differs from the intended operation; its outcome cannot establish the intended outcome"})
                 repaired.append("Check the intended operation and obtain its own authoritative receipt; do not infer success or failure from another operation.")
                 continue
+        if "expected_attempt_id" in item or "receipt_attempt_id" in item:
+            expected_attempt = item.get("expected_attempt_id")
+            observed_attempt = item.get("receipt_attempt_id")
+            if not all(isinstance(value, str) and value.strip() for value in (expected_attempt, observed_attempt)) or expected_attempt != observed_attempt:
+                findings.append({"gate": "tool_attempt_binding", "id": item["id"], "status": "HOLD",
+                                 "reason": "Receipt attempt is missing or differs from the intended invocation; a prior attempt cannot establish this attempt's outcome"})
+                repaired.append("Obtain the intended invocation's own authoritative receipt; do not reuse a prior attempt's success or failure.")
+                continue
         if status == "completed" and not success:
             findings.append({"gate": "tool_result", "id": item["id"], "status": "HOLD",
                              "reason": "Completed status conflicts with success=false; successful execution is not established"})
@@ -516,7 +524,7 @@ TOOLS = [
             "EVERYDAY FIRST USE: before answering with citations, reporting tool success, "
             "or executing an action, check declared independent-source evidence, tool receipts, "
             "permissions and irreversible effects in ONE local preflight. Optional exact operation identifiers "
-            "check whether a receipt actually concerns the intended operation. Return exact practical "
+            "check whether a receipt actually concerns the intended operation. Optional attempt IDs distinguish separate invocations of that operation. Return exact practical "
             "repairs and conditions, not merely a theory search or a blanket prohibition. "
             "Needs supplied observations; cannot independently verify sources or permissions."
         ),
@@ -530,7 +538,11 @@ TOOLS = [
                                    "expected_operation": {"type": "string", "minLength": 1,
                                        "description": "Optional exact intended operation identifier; supply together with receipt_operation."},
                                    "receipt_operation": {"type": "string", "minLength": 1,
-                                       "description": "Optional exact operation identified by the supplied receipt; not the intended operation inferred by the host."}},
+                                       "description": "Optional exact operation identified by the supplied receipt; not the intended operation inferred by the host."},
+                                   "expected_attempt_id": {"type": "string", "minLength": 1,
+                                       "description": "Optional actual invocation/attempt identity for the intended action; supply together with receipt_attempt_id."},
+                                   "receipt_attempt_id": {"type": "string", "minLength": 1,
+                                       "description": "Optional invocation identity independently observed in the actual receipt; never infer it from the intended attempt."}},
                     "required": ["id", "status", "success"]}},
                 "planned_actions": {"type": "array", "maxItems": 12, "items": {"type": "object",
                     "properties": {"id": {"type": "string"}, "permission_confirmed": {"type": "boolean"},
@@ -1094,6 +1106,27 @@ def practical_guard_self_test():
         ({**base, **bound, "receipt_operation": 3}, "tool_receipt_binding", "HOLD"),
     ):
         result = preflight_ai_work({"tool_results": [item]})
+        if expected_gate is None:
+            assert result["findings"] == [], result
+        else:
+            assert [(v["gate"], v["status"]) for v in result["findings"]] == [
+                (expected_gate, expected_status)], result
+            assert result["verdict"] == "RECHECK_BEFORE_USE", result
+    # Identical operation names do not bind a receipt to a new invocation.
+    attempt = {"expected_attempt_id": "B", "receipt_attempt_id": "B"}
+    for fields, expected_gate, expected_status in (
+        ({}, None, None),
+        (attempt, None, None),
+        ({**attempt, "receipt_attempt_id": "A"}, "tool_attempt_binding", "HOLD"),
+        ({"expected_attempt_id": "B"}, "tool_attempt_binding", "HOLD"),
+        ({"receipt_attempt_id": "A"}, "tool_attempt_binding", "HOLD"),
+        ({"expected_attempt_id": " ", "receipt_attempt_id": " "}, "tool_attempt_binding", "HOLD"),
+        ({"expected_attempt_id": 4, "receipt_attempt_id": 4}, "tool_attempt_binding", "HOLD"),
+        ({**attempt, "status": "failed", "success": False}, "tool_result", "HOLD"),
+        ({**attempt, "status": "pending", "success": False}, "tool_result", "PENDING"),
+        ({**attempt, "receipt_operation": "artifact.read"}, "tool_receipt_binding", "HOLD"),
+    ):
+        result = preflight_ai_work({"tool_results": [{**base, **bound, **fields}]})
         if expected_gate is None:
             assert result["findings"] == [], result
         else:
