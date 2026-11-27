@@ -198,3 +198,21 @@ These links provide context for the tests; this page does not replace or amend t
 各テストの期待結果・実測・build/commit・環境・結果区分・秘匿済み証拠・制約を記録します。ローカルのPASSは、そのbuildと条件でテストが通ったことだけを示します。production安全性、第三者導入、理論体系全体への支持を意味しません。第三者が独立して実施した結果を報告する場合は、公開できる証拠の範囲を明記して [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) を使ってください。このテスト仕様を外部導入実績として報告しないでください。
 
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
+
+## Real Git: failed checkpoint restoration may already have changed files
+
+Run [git-partial-restore-probe.py](machine-discovery/git-partial-restore-probe.py) with Python 3 and Git as an ordinary POSIX user (not root). It creates and cleans up its own temporary repositories; no existing workspace, credentials, or network are used.
+
+```sh
+python3 machine-discovery/git-partial-restore-probe.py
+```
+
+Three actual Git controls on Git 2.47.3: missing checkpoint (restore 128; current tracked content and untracked file remain); restore succeeds but cleanup is refused by directory permissions (restore 0 / clean 1; tracked checkpoint content already restored, untracked file remains); complete restore and clean (0 / 0; checkpoint content, untracked file absent). A different filesystem that cannot reproduce the permission control reports a mismatch, not a pass.
+
+For an agent that performs these two steps, test both the workspace observation and the control flow: on a cleanup failure, preserve existing conversation history, do not replay tools, explicitly warn about possible partial change. Do not infer safe automatic rollback. Non-fit: a genuinely atomic restoration mechanism with independently verified rollback, or a workflow that does not clean untracked files.
+
+Source: [Nakagawa Master's source-specific review](https://github.com/google-gemini/gemini-cli/pull/30496#issuecomment-7218783614), and [the PR author's explicit follow-up decision](https://github.com/google-gemini/gemini-cli/pull/30496#issuecomment-7219106835). The related [original on epistemic integrity](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) distinguishes reality, observation and subsequent judgment. The author agreed to handle the warning and regression in a separate follow-up; no implementation, merge, full CLI integration test, or affected-user recovery is claimed for this additional finding.
+
+日本語：復元処理がエラーを返しても、作業ファイルが元のままとは限りません。上記の実Git試験は、復元前の失敗・部分的な復元・完全な復元を区別します。
+
+中文：恢复失败并不意味着工作区没有变化。此真实 Git 检查区分恢复前失败、部分恢复与完整恢复；不需要网络，也不会操作现有项目。

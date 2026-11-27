@@ -61,6 +61,7 @@
 
 | 本当に困っていること | ここから試す |
 | --- | --- |
+| AIのチェックポイント復元が失敗した。ファイルは本当に変更されていないか | [実Gitで3条件を追試する](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md#real-git-failed-checkpoint-restoration-may-already-have-changed-files) |
 | AIは完了したと言うが、実際の送信・実行・承認に確信がない | [AI Answer Guardの実検査をMCPなしで試す](QUICKSTART.md) |
 | 10本の記事を見たが、元の根拠は同じ一件かもしれない | [独立した根拠を区別するPythonテスト](machine-discovery/evidence-root-check.py) |
 | AIが同じ名前の道具を間違う・書込権限を誤認する | [Qwen実修正の条件を自分で検証](WHY_THIS_IMPACT_MATTERS.md#導入者が自分で確かめられる修正条件) |
